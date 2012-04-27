@@ -13,45 +13,42 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.modules.user.models.*',
     ),
     'modules' => array(
-    // uncomment the following to enable the Gii tool
-    /*
-      'gii'=>array(
-      'class'=>'system.gii.GiiModule',
-      'password'=>'Enter Your Password Here',
-      // If removed, Gii defaults to localhost only. Edit carefully to taste.
-      'ipFilters'=>array('127.0.0.1','::1'),
-      ),
-     */
+        // uncomment the following to enable the Gii tool
+
+        'gii' => array(
+            'class' => 'system.gii.GiiModule',
+            'password' => 'password',
+            // If removed, Gii defaults to localhost only. Edit carefully to taste.
+            'ipFilters' => array('127.0.0.1', '::1'),
+        ),
     ),
     // application components
     'components' => array(
         'user' => array(
-            // enable cookie-based authentication
+            'class' => 'application.modules.user.components.YumWebUser',
             'allowAutoLogin' => true,
+            'loginUrl' => array('//user/user/login'),
         ),
         // uncomment the following to enable URLs in path-format
+
+        'urlManager' => array(
+            'urlFormat' => 'path',
+            'rules' => array(
+                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+            ),
+        ),
         
-          'urlManager'=>array(
-          'urlFormat'=>'path',
-          'rules'=>array(
-          '<controller:\w+>/<id:\d+>'=>'<controller>/view',
-          '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-          '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-          ),
-          ),
-         
-
-
-
         /*
           'db'=>array(
           'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
           ),
          */
 
-        // uncomment the following to use a MySQL database
 
         'db' => array(
             'connectionString' => 'mysql:host=localhost;dbname=yc',
@@ -59,6 +56,9 @@ return array(
             'username' => 'root',
             'password' => 'passweird',
             'charset' => 'utf8',
+            'tablePrefix' => '',
+            'enableProfiling' => true,
+            'enableParamLogging' => true,
         ),
         'errorHandler' => array(
             // use 'site/error' action to display errors
@@ -71,12 +71,14 @@ return array(
                     'class' => 'CFileLogRoute',
                     'levels' => 'error, warning',
                 ),
-            // uncomment the following to show log messages on web pages
-            /*
-              array(
-              'class'=>'CWebLogRoute',
-              ),
-             */
+//                array(
+//                    'class' => 'CWebLogRoute',
+//                    'levels' => 'trace,info, error, warning',
+//                ),
+                array(
+                    'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
+                    //'ipFilters' => array('127.0.0.1', '192.168.1.215'),
+                ),
             ),
         ),
     ),
@@ -85,5 +87,41 @@ return array(
     'params' => array(
         // this is used in contact page
         'adminEmail' => 'webmaster@example.com',
+    ),
+    //yum submodules
+    'modules' => array(
+        'user' => array(
+            'debug' => false,
+            'usersTable' => 'user',
+            'translationTable' => 'translation',
+        ),
+        'usergroup' => array(
+            'usergroupTable' => 'user_group',
+            'usergroupMessagesTable' => 'user_group_message',
+        ),
+        'membership' => array(
+            'membershipTable' => 'membership',
+            'paymentTable' => 'payment',
+        ),
+        'friendship' => array(
+            'friendshipTable' => 'friendship',
+        ),
+        'profile' => array(
+            'privacySettingTable' => 'privacy_setting',
+            'profileFieldsGroupTable' => 'profile_field_group',
+            'profileFieldsTable' => 'profile_field',
+            'profileTable' => 'profile',
+            'profileCommentTable' => 'profile_comment',
+            'profileVisitTable' => 'profile_visit',
+        ),
+        'role' => array(
+            'rolesTable' => 'role',
+            'userHasRoleTable' => 'user_role',
+            'actionTable' => 'action',
+            'permissionTable' => 'permission',
+        ),
+        'messages' => array(
+            'messagesTable' => 'message',
+        ),
     ),
 );
