@@ -25,7 +25,10 @@
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</div><!-- header -->
         
-        <?php $this->widget('application.modules.user.components.LoginWidget'); ?>
+        <?php 
+        //TODO Beautify the login widget
+        //$this->widget('application.modules.user.components.LoginWidget'); 
+        ?>
 
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
