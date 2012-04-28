@@ -529,3 +529,346 @@ REQUEST_URI=/yii/cms/index.php
 in /var/www/html/yii/cms/protected/modules/user/components/LoginWidget.php (14)
 in /var/www/html/yii/cms/protected/views/layouts/main.php (28)
 in /var/www/html/yii/cms/protected/views/layouts/column1.php (5)
+2012/04/28 10:09:23 [error] [php] include(CrudController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(326): createComponent()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/crud/admin&model=User
+in /var/www/html/yii/cms/index.php (16)
+2012/04/28 10:10:39 [error] [php] include(CrudController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(326): createComponent()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/crud/admin&model=User
+in /var/www/html/yii/cms/index.php (16)
+2012/04/28 10:10:40 [error] [php] include(CrudController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(326): createComponent()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/crud/admin&model=User
+in /var/www/html/yii/cms/index.php (16)
+2012/04/28 10:10:41 [error] [php] include(CrudController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(326): createComponent()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/crud/admin&model=User
+in /var/www/html/yii/cms/index.php (16)
+2012/04/28 10:12:40 [error] [php] include(CrudController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(326): createComponent()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/crud/admin&model=User
+in /var/www/html/yii/cms/index.php (16)
+2012/04/28 10:12:41 [error] [php] include(CrudController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(326): createComponent()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/crud/admin&model=User
+in /var/www/html/yii/cms/index.php (16)
+2012/04/28 10:12:49 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/html/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(326): YiiBase::createComponent(Array, 'crud', NULL)
+#1 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('crud/admin&mode...')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:12:50 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/html/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(326): YiiBase::createComponent(Array, 'crud', NULL)
+#1 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('crud/admin&mode...')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:12:51 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/html/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(326): YiiBase::createComponent(Array, 'crud', NULL)
+#1 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('crud/admin&mode...')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:12:51 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/html/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(326): YiiBase::createComponent(Array, 'crud', NULL)
+#1 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('crud/admin&mode...')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:12:51 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/html/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(326): YiiBase::createComponent(Array, 'crud', NULL)
+#1 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('crud/admin&mode...')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:12:52 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/html/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(326): YiiBase::createComponent(Array, 'crud', NULL)
+#1 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('crud/admin&mode...')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:12:52 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/html/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(326): YiiBase::createComponent(Array, 'crud', NULL)
+#1 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('crud/admin&mode...')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:12:52 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/html/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(326): YiiBase::createComponent(Array, 'crud', NULL)
+#1 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('crud/admin&mode...')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:12:52 [error] [exception.CException] exception 'CException' with message 'Object configuration must be an array containing a "class" element.' in /var/www/html/yii/framework/YiiBase.php:195
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(326): YiiBase::createComponent(Array, 'crud', NULL)
+#1 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('crud/admin&mode...')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:13:29 [error] [exception.CException] exception 'CException' with message 'CrudController and its behaviors do not have a method or closure named "model".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('model', Array)
+#1 [internal function]: CrudController->model()
+#2 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(94): call_user_func(Array)
+#3 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(81): CrudController->getModelByClass('CrudController')
+#4 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(15): CrudController->setModelClass('CrudController')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(275): CrudController->init()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:13:30 [error] [exception.CException] exception 'CException' with message 'CrudController and its behaviors do not have a method or closure named "model".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('model', Array)
+#1 [internal function]: CrudController->model()
+#2 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(94): call_user_func(Array)
+#3 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(81): CrudController->getModelByClass('CrudController')
+#4 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(15): CrudController->setModelClass('CrudController')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(275): CrudController->init()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:13:31 [error] [exception.CException] exception 'CException' with message 'CrudController and its behaviors do not have a method or closure named "model".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('model', Array)
+#1 [internal function]: CrudController->model()
+#2 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(94): call_user_func(Array)
+#3 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(81): CrudController->getModelByClass('CrudController')
+#4 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(15): CrudController->setModelClass('CrudController')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(275): CrudController->init()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:13:32 [error] [exception.CException] exception 'CException' with message 'CrudController and its behaviors do not have a method or closure named "model".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('model', Array)
+#1 [internal function]: CrudController->model()
+#2 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(94): call_user_func(Array)
+#3 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(81): CrudController->getModelByClass('CrudController')
+#4 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(15): CrudController->setModelClass('CrudController')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(275): CrudController->init()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:13:32 [error] [exception.CException] exception 'CException' with message 'CrudController and its behaviors do not have a method or closure named "model".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('model', Array)
+#1 [internal function]: CrudController->model()
+#2 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(94): call_user_func(Array)
+#3 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(81): CrudController->getModelByClass('CrudController')
+#4 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(15): CrudController->setModelClass('CrudController')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(275): CrudController->init()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:13:32 [error] [exception.CException] exception 'CException' with message 'CrudController and its behaviors do not have a method or closure named "model".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('model', Array)
+#1 [internal function]: CrudController->model()
+#2 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(94): call_user_func(Array)
+#3 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(81): CrudController->getModelByClass('CrudController')
+#4 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(15): CrudController->setModelClass('CrudController')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(275): CrudController->init()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/crud/admin&model=User
+---
+2012/04/28 10:14:30 [error] [exception.CException] exception 'CException' with message 'CrudController and its behaviors do not have a method or closure named "model".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('model', Array)
+#1 [internal function]: CrudController->model()
+#2 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(94): call_user_func(Array)
+#3 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(81): CrudController->getModelByClass('CrudController')
+#4 /var/www/html/yii/cms/protected/extensions/ds/crudify/components/CrudController.php(15): CrudController->setModelClass('CrudController')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(275): CrudController->init()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('crud/admin&mode...')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/index.php/crud/admin&model=User
+---
+2012/04/28 04:38:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "adsas".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('adsas')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('adsas')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/user/adsas')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/user/user/adsas
+---
+2012/04/28 05:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "p3admin".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('p3admin')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/p3admin
+---
+2012/04/28 05:09:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "module".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('module')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/module
+---
+2012/04/28 11:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/giixModel".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/giixModel')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/gii/giixModel
+HTTP_REFERER=http://localhost/yii/cms/gii/default/index
+---
+2012/04/28 11:09:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/giixCrud".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/giixCrud')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/gii/giixCrud
+HTTP_REFERER=http://localhost/yii/cms/gii/default/index
+---
+2012/04/28 11:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/giixModel".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/giixModel')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/gii/giixModel
+HTTP_REFERER=http://localhost/yii/cms/gii/default/index
+---
+2012/04/28 05:28:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "p3admin".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('p3admin')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/p3admin
+---
+2012/04/28 05:28:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "p3admin".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('p3admin')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/p3admin
+---
+2012/04/28 06:59:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---
+2012/04/28 07:00:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 07:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+HTTP_REFERER=http://localhost/yii/cms/login
+---

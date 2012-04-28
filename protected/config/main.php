@@ -13,20 +13,25 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
-        'application.modules.user.models.*',
+//        'application.modules.user.models.*',
+        'ext.gtc.components.*',
+        'ext.giix-components.*', // giix components
+    ),
+    'behaviors' => array(
+    // ...
     ),
     // application components
     'components' => array(
-        'user' => array(
-            'class' => 'application.modules.user.components.YumWebUser',
-            'allowAutoLogin' => true,
-            'loginUrl' => array('//user/user/login'),
-        ),
+//        'user' => array(
+//            'class' => 'application.modules.user.components.YumWebUser',
+//            'allowAutoLogin' => true,
+//            'loginUrl' => array('//user/login'),
+//        ),
         // uncomment the following to enable URLs in path-format
 
         'urlManager' => array(
-            'showScriptName' => false,//hides index.php in URL
-            'caseSensitive' => false,
+            'showScriptName' => false, //hides index.php in URL
+            'caseSensitive' => true,
             'urlFormat' => 'path',
             'rules' => array(
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
@@ -81,42 +86,46 @@ return array(
     ),
     //yum submodules
     'modules' => array(
-        'user' => array(
-            'debug' => FALSE,
-            'usersTable' => 'user',
-            'translationTable' => 'translation',
-        ),
-        'usergroup' => array(
-            'usergroupTable' => 'user_group',
-            'usergroupMessagesTable' => 'user_group_message',
-        ),
-        'membership' => array(
-            'membershipTable' => 'membership',
-            'paymentTable' => 'payment',
-        ),
-        'friendship' => array(
-            'friendshipTable' => 'friendship',
-        ),
-        'profile' => array(
-            'privacySettingTable' => 'privacy_setting',
-            'profileFieldsGroupTable' => 'profile_field_group',
-            'profileFieldsTable' => 'profile_field',
-            'profileTable' => 'profile',
-            'profileCommentTable' => 'profile_comment',
-            'profileVisitTable' => 'profile_visit',
-        ),
-        'role' => array(
-            'rolesTable' => 'role',
-            'userHasRoleTable' => 'user_role',
-            'actionTable' => 'action',
-            'permissionTable' => 'permission',
-        ),
-        'messages' => array(
-            'messagesTable' => 'message',
-        ),
+//        'user' => array(
+//            'debug' => FALSE,
+//            'usersTable' => 'user',
+//            'translationTable' => 'translation',
+//        ),
+//        'usergroup' => array(
+//            'usergroupTable' => 'user_group',
+//            'usergroupMessagesTable' => 'user_group_message',
+//        ),
+//        'membership' => array(
+//            'membershipTable' => 'membership',
+//            'paymentTable' => 'payment',
+//        ),
+//        'friendship' => array(
+//            'friendshipTable' => 'friendship',
+//        ),
+//        'profile' => array(
+//            'privacySettingTable' => 'privacy_setting',
+//            'profileFieldsGroupTable' => 'profile_field_group',
+//            'profileFieldsTable' => 'profile_field',
+//            'profileTable' => 'profile',
+//            'profileCommentTable' => 'profile_comment',
+//            'profileVisitTable' => 'profile_visit',
+//        ),
+//        'role' => array(
+//            'rolesTable' => 'role',
+//            'userHasRoleTable' => 'user_role',
+//            'actionTable' => 'action',
+//            'permissionTable' => 'permission',
+//        ),
+//        'messages' => array(
+//            'messagesTable' => 'message',
+//        ),
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',
+            'generatorPaths' => array(
+                'ext.giix-core', // giix generators
+                'ext.gtc', // extensions/Gii Template 
+            ),
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters' => array('127.0.0.1', '::1'),
         ),

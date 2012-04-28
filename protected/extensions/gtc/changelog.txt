@@ -1,0 +1,75 @@
+Gii Template Collection Change Log
+==================================
+
+Version 0.6 - to be released
+-----------
+
+FullModel
+- Enh: At first, the model is split into two files: a BaseModel.php file 
+and a Model.php file extending from the BaseModel. This makes it possible
+to override the BaseModel when the database schema changes, without 
+overriding any business logic that should go into the Model.php file. (thyseus)
+- Enh: To disable this behavior, choose the 'singlefile' template instead of the (thyseus)
+default. 
+- Enh: It will include the CSaveRelationsBehavior to add additional functions for MANY_MANY relations (thyseus)
+- Enh: It adds the __toString() php magic function to the Base Model class (thyseus)
+- Chg: All comments are removed except for the first comment describing the attributes of the model (thyseus)
+
+FullCrud
+- Attribute labels gets a Yii::t('app', <label>) wrapper to make easier i18n possible (thyseus)
+- Chg: If a column is called <em> create_time, createtime, update_time, updatetime or timestamp </em> the CTimestampBehavior shipped with zii will automatically added as a behavior (thyseus)
+- Chg: If a column is called <em> created_by, createdby, user, user_id, owner or owner_id </em> the OwnerBehavior shipped with the gii-template-collection will automatically added as a behavior (thyseus)
+- Chg: Removed GHelper (schmunk)
+- Enh: Added model relations to view templates (schmunk)
+- Enh: Added demo schema (MySQL) (schmunk)
+- Enh: Added resolveController method to helper (schmunk)
+
+
+Version 0.5
+-----------
+- Fix: Relation incorrectly referenced $this->model instead of $this->_model in one place, causing problems when the 'model' option was set to a model class name instead of a model instance. (rawtaz)
+- Chg: Changed vendors/ to components/ since it now contains Gtc-related components and not vendors anymore
+- New: added views/buttons.php for easier rendering of forms from another model into a form after generation
+- New: Relation widget can now inject user contributed function values into htmlOption's template property. This is useful for example if one want to build a hierarchy of relation widgets inside one another, or just generally control how the entire row for each of the related records is rendered. Relation widget's $functionsInHtmlOptionsTemplate property may be true or an array of function names, see source file documentation for more information. (rawtaz)
+- Chg: Enable use of named user functions in Relation's template (one can now use {myFuncName} instead of just {funcX}). Also, the user functions are now evaluated under the context of the controller that called the relation widget ($this refers to the controller instead of as before the relation widget). Note: The old way of writing {funcX} still works, for backwards compatibility. However, it is not recommended as naming the functions is clearer. (rawtaz)
+- Added support for enabling/disabling Ajax Validation, Session Persistency and used AUTH schema for fullCrud Generator (thyseus)
+- Added support for generating TWO models, model and modelBase (see issue #4)
+- Chg: Add missing translation for "Belonging" in controllers' _form.php. Also add translation calls around the related model name in the same place as "Belonging" and in the relation widget after "Add new". The latter makes it easy for the user to get a nice translated link in the relation widget, without having to supply a showAddButton option to the relation widget call; All they need to do is att a translation for the model's class name. (rawtaz)
+- Chg: Switch from CAdvancedArBehavior to CSaveRelationsBehavior for the MANY_MANY relations support. The provided CSaveRelationsBehavior is the latest version from http://www.yiiframework.com/extension/save-relations-ar-behavior/ (currently 1.0.3). For backwards compatibility/convenience the old CAdvancedArBehavior.php is still provided in the vendors/ folder. However this file is no longer automatically placed in extensions/ and will probably be removed in the future. (rawtaz)
+- Fix: Add missing translation for "Update" in "update" view. (robregonm)
+- Fix: Add missing translation call for "Add new". Neutralized from "Add a new" to lessen the effect of words' gender mismatch. Note: I only added Swedish translation, the other ones need to be added. (rawtaz)
+- New: Added Swedish translation. (rawtaz)
+- New: Added cancel button to Create and Update form (thyseus)
+- New: Make Form entries persistant with $_SESSION (thyseus)
+- Chg: Move Relation Widget and CAdvancedArBehavior to extensions folder, not components/ anymore because ext.Relation looks better than application.components.Relation and there is no default Path alias for components (thyseus)
+- Fix: Relation: Make the widget not add a delimiter after the last field when concatenating multiple fields. (rawtaz)
+- Fix: Relation: Dropdownlist support for MANY_MANY bugfixes
+- Fix: FullModel: A bug in the model template made Gii/Yii look for the CAdvancedArBehavior directly (not via path alias). (rawtaz)  
+- New: Added support for generating activeDropDownList's for ENUM mysql column fields
+- Fix: Add missing translation for "Fields with - are required". (robregonm)
+- Fix: Fix translation when generating "view" file. (robregonm)
+- Fix: Added returnUrl verification to actionDelete. Added unsetAttributtes to actionAdmin. (robregonm)
+
+
+Version 0.4
+-----------
+<Censored by the Council of Galaxy Hitchhiking>
+
+
+Version 0.3
+-----------
+- Fix: Datepicker is now working
+- Relation Generation is much improved
+- Removed even more Comments
+
+Version 0.2
+-----------
+FullCrud: 
+- Ajax Validation is enabled for all forms 
+- Disabled the comparison Operator hint in the admin view 
+- Moved the "Create" and "Update" Button out of the _form view
+- Relation Widget now generates correct 'fields' attributes
+- Updated CAdvancedArBehavior to latest version 0.3
+- Added MANY_MANY listing of related objects to view.php view
+Controller Generation:
+- The Controller now saves MANY_MANY Relations automatically by passing the relation over to the CAdvancedArBehavior

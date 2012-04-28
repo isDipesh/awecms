@@ -18,7 +18,6 @@
     </head>
 
     <body>
-
         <div class="container" id="page">
 
             <div id="header">
@@ -28,7 +27,7 @@
             <?php
             //TODO Beautify the login widget
             if (Yii::app()->user->isGuest)
-                $this->widget('application.modules.user.components.LoginWidget');
+                //$this->widget('application.modules.user.components.LoginWidget');
             ?>
 
             <div id="mainmenu">
@@ -38,7 +37,7 @@
                         array('label' => 'Home', 'url' => array('/site/index')),
                         array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
                         array('label' => 'Contact', 'url' => array('/site/contact')),
-                        array('label' => 'Login', 'url' => array('/login'), 'visible' => Yii::app()->user->isGuest),
+                        array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
                         array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                     ),
                 ));

@@ -4,7 +4,9 @@ $this->pageTitle = Yii::app()->name . ' - Login';
 
 <h1>Login</h1>
 
+
 <div class="form">
+
     <?php
     $form = $this->beginWidget('CActiveForm', array(
         'id' => 'login-form',
