@@ -3041,3 +3041,52 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/yii/cms/user/
 ---
+2012/04/28 20:45:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "changepassword".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('changepassword')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('changepassword')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/default/ch...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/user/default/changepassword
+HTTP_REFERER=http://localhost/yii/cms/user/
+---
+2012/04/28 20:46:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('edit')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('edit')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/default/ed...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/user/default/edit
+HTTP_REFERER=http://localhost/yii/cms/user
+---
+2012/04/28 20:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('edit')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('edit')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/default/ed...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/user/default/edit
+HTTP_REFERER=http://localhost/yii/cms/user/
+---
+2012/04/28 20:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/edit')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/edit
+---
+2012/04/28 20:51:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/edit')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/edit
+---
