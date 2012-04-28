@@ -59,6 +59,7 @@ class YiiDebugToolbarPanelServer extends YiiDebugToolbarPanel
     public function getPhpInfoContent()
     {
         ob_start();
+        date_default_timezone_set('GMT');
         phpinfo(INFO_MODULES);
         $info = ob_get_clean();
 

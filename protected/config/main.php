@@ -15,16 +15,6 @@ return array(
         'application.components.*',
         'application.modules.user.models.*',
     ),
-    'modules' => array(
-        // uncomment the following to enable the Gii tool
-
-        'gii' => array(
-            'class' => 'system.gii.GiiModule',
-            'password' => 'password',
-            // If removed, Gii defaults to localhost only. Edit carefully to taste.
-            'ipFilters' => array('127.0.0.1', '::1'),
-        ),
-    ),
     // application components
     'components' => array(
         'user' => array(
@@ -35,6 +25,8 @@ return array(
         // uncomment the following to enable URLs in path-format
 
         'urlManager' => array(
+            'showScriptName' => false,//hides index.php in URL
+            'caseSensitive' => false,
             'urlFormat' => 'path',
             'rules' => array(
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
@@ -42,7 +34,6 @@ return array(
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ),
         ),
-        
         /*
           'db'=>array(
           'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -77,7 +68,7 @@ return array(
 //                ),
                 array(
                     'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
-                    //'ipFilters' => array('127.0.0.1', '192.168.1.215'),
+                //'ipFilters' => array('127.0.0.1', '192.168.1.215'),
                 ),
             ),
         ),
@@ -91,7 +82,7 @@ return array(
     //yum submodules
     'modules' => array(
         'user' => array(
-            'debug' => false,
+            'debug' => FALSE,
             'usersTable' => 'user',
             'translationTable' => 'translation',
         ),
@@ -122,6 +113,12 @@ return array(
         ),
         'messages' => array(
             'messagesTable' => 'message',
+        ),
+        'gii' => array(
+            'class' => 'system.gii.GiiModule',
+            'password' => 'password',
+            // If removed, Gii defaults to localhost only. Edit carefully to taste.
+            'ipFilters' => array('127.0.0.1', '::1'),
         ),
     ),
 );
