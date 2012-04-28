@@ -3090,3 +3090,896 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/yii/cms/user/edit
 ---
+2012/04/28 21:01:42 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.user.components.LoginWidget" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('application.mod...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(LoginController), 'application.mod...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('application.mod...', Array)
+#3 /var/www/html/yii/cms/protected/views/layouts/main.php(30): CBaseController->widget('application.mod...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(LoginController), '/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#11 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/yii/cms/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#14 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(LoginController), '/var/www/html/y...', Array, true)
+#16 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#17 /var/www/html/yii/cms/protected/modules/user/controllers/LoginController.php(28): CController->render('/user/login', Array)
+#18 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#19 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#20 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#21 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/login')
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#26 {main}
+REQUEST_URI=/yii/cms/user/login
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/04/28 21:01:44 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.user.components.LoginWidget" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('application.mod...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(LoginController), 'application.mod...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('application.mod...', Array)
+#3 /var/www/html/yii/cms/protected/views/layouts/main.php(30): CBaseController->widget('application.mod...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(LoginController), '/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#11 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/yii/cms/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#14 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(LoginController), '/var/www/html/y...', Array, true)
+#16 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#17 /var/www/html/yii/cms/protected/modules/user/controllers/LoginController.php(28): CController->render('/user/login', Array)
+#18 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#19 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#20 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#21 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/login')
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#26 {main}
+REQUEST_URI=/yii/cms/user/login
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/04/28 21:01:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---
+2012/04/28 21:19:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---
+2012/04/28 21:19:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---
+2012/04/28 21:19:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---
+2012/04/28 21:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---
+2012/04/28 21:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/main.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/main.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/screen.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/print.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/print.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.cookie.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.cookie.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/form.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/form.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---
+2012/04/28 21:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/main.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/main.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/print.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/print.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.cookie.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.cookie.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/screen.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/form.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/form.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---
+2012/04/28 21:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/screen.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/main.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/main.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/print.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/print.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/form.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/form.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.cookie.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.cookie.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---
+2012/04/28 21:25:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/screen.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/form.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/form.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/print.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/print.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/main.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/main.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.css
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.cookie.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.cookie.js
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/04/28 21:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/main.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/main.css
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/04/28 21:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/screen.css
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/04/28 21:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/form.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/form.css
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/04/28 21:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.js
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/04/28 21:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.css
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/04/28 21:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/print.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/print.css
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/04/28 21:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.js
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/04/28 21:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.cookie.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.cookie.js
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/04/28 21:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.js
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/04/28 21:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.cookie.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.cookie.js
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/04/28 21:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/print.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/print.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/print.css
+HTTP_REFERER=http://localhost/yii/cms/assets/29cd1e26/jquery.cookie.js
+---
+2012/04/28 21:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.css
+HTTP_REFERER=http://localhost/yii/cms/assets/29cd1e26/jquery.cookie.js
+---
+2012/04/28 21:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.js
+HTTP_REFERER=http://localhost/yii/cms/assets/29cd1e26/jquery.cookie.js
+---
+2012/04/28 21:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/form.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/form.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/form.css
+HTTP_REFERER=http://localhost/yii/cms/assets/29cd1e26/jquery.cookie.js
+---
+2012/04/28 21:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/29cd1e26/jquery.cookie.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/29cd1e26...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/29cd1e26/jquery.cookie.js
+HTTP_REFERER=http://localhost/yii/cms/assets/29cd1e26/jquery.cookie.js
+---
+2012/04/28 21:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/screen.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/screen.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/screen.css
+HTTP_REFERER=http://localhost/yii/cms/assets/29cd1e26/jquery.cookie.js
+---
+2012/04/28 21:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/main.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/main.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/main.css
+HTTP_REFERER=http://localhost/yii/cms/assets/29cd1e26/jquery.cookie.js
+---
+2012/04/28 21:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/e1182461/yii.debugtoolbar.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/e1182461...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/e1182461/yii.debugtoolbar.js
+HTTP_REFERER=http://localhost/yii/cms/assets/29cd1e26/jquery.cookie.js
+---
+2012/04/28 21:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---
+2012/04/28 21:30:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:30:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:30:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:30:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:30:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:31:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:31:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:31:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:32:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:32:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:32:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:32:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:32:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:32:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:34:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:34:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:34:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:34:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:35:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/detail".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('controller/deta...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/
+---
+2012/04/28 21:48:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/etc".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/etc')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/etc
+---
+2012/04/28 21:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "etc".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('etc')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/etc
+---
+2012/04/28 21:50:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('profile/edit')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/profile/edit
+HTTP_REFERER=http://localhost/yii/cms/profile
+---
+2012/04/28 21:50:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "profile/changepassword".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('profile/changep...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/profile/changepassword
+HTTP_REFERER=http://localhost/yii/cms/profile
+---
+2012/04/28 21:51:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('logout')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/logout
+HTTP_REFERER=http://localhost/yii/cms/profile
+---

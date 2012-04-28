@@ -32,6 +32,7 @@ return array(
             'caseSensitive' => true,
             'urlFormat' => 'path',
             'rules' => array(
+                '<_a:(login|register|profile.*|logout)>' => 'user/<_a>',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
