@@ -3,7 +3,7 @@ $this->breadcrumbs=array(
 	UserModule::t("Profile"),
 );
 ?><h2><?php echo UserModule::t('Your profile'); ?></h2>
-<?php echo $this->renderPartial('menu'); ?>
+<?php echo $this->renderPartial('/profile/menu'); ?>
 
 <?php if(Yii::app()->user->hasFlash('profileMessage')): ?>
 <div class="success">

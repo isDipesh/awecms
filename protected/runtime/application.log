@@ -1092,3 +1092,1952 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/yii/cms/login
 ---
+2012/04/28 14:55:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('users')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/users
+---
+2012/04/28 15:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('users')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/users
+---
+2012/04/28 15:05:31 [error] [exception.CException] exception 'CException' with message 'Alias "user.UserModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('user.UserModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('user.UserModule', 'user', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('user')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('user')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 15:05:33 [error] [exception.CException] exception 'CException' with message 'Alias "user.UserModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('user.UserModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('user.UserModule', 'user', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('user')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('user')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 15:05:33 [error] [exception.CException] exception 'CException' with message 'Alias "user.UserModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('user.UserModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('user.UserModule', 'user', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('user')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('user')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 15:10:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/view".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/view')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/1
+---
+2012/04/28 15:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/view".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/view')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/1
+---
+2012/04/28 15:17:59 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.isAdmin" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('isAdmin')
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(9): CWebUser->__get('isAdmin')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 15:18:00 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.isAdmin" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('isAdmin')
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(9): CWebUser->__get('isAdmin')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 15:18:04 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isAdmin".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(9): CComponent->__call('isAdmin', Array)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(9): CWebUser->isAdmin()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 15:18:04 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isAdmin".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(9): CComponent->__call('isAdmin', Array)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(9): CWebUser->isAdmin()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 15:19:08 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.isAdmin" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('isAdmin')
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(9): CWebUser->__get('isAdmin')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 15:19:58 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(10): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (10)
+2012/04/28 15:19:59 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(10): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (10)
+2012/04/28 15:20:27 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(10): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (10)
+2012/04/28 15:20:42 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:43 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:43 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:44 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:44 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:44 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:44 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:45 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:45 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:45 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:46 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:46 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:46 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:47 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:20:47 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:21:55 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (25)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 15:28:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "userlogin".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('userlogin')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/userlogin
+---
+2012/04/28 15:30:47 [error] [php] Use of undefined constant login - assumed 'login' (/var/www/html/yii/cms/protected/modules/user/views/user/login.php:21)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(14): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/views/user/login.php (21)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (14)
+2012/04/28 15:32:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('login')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('login')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/user/login')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/user/user/login
+HTTP_REFERER=http://localhost/yii/cms/user/login
+---
+2012/04/28 16:13:09 [error] [exception.CException] exception 'CException' with message 'DefaultController and its behaviors do not have a method or closure named "loadUser".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): CComponent->__call('loadUser', Array)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): DefaultController->loadUser()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:14:26 [error] [php] include(ProfileController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (29)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 16:14:27 [error] [php] include(ProfileController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (29)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 16:14:28 [error] [php] include(ProfileController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (29)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 16:14:29 [error] [php] include(ProfileController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (29)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 16:14:38 [error] [php] include(ProfileController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (29)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 16:14:43 [error] [exception.CException] exception 'CException' with message 'Profile and its behaviors do not have a method or closure named "loadUser".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('loadUser', Array)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(30): CActiveRecord->__call('loadUser', Array)
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(30): Profile->loadUser()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:14:44 [error] [exception.CException] exception 'CException' with message 'Profile and its behaviors do not have a method or closure named "loadUser".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('loadUser', Array)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(30): CActiveRecord->__call('loadUser', Array)
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(30): Profile->loadUser()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:15:07 [error] [exception.CException] exception 'CException' with message 'Property "Profile.profile" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('profile')
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CActiveRecord->__get('profile')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:15:08 [error] [exception.CException] exception 'CException' with message 'Property "Profile.profile" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('profile')
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CActiveRecord->__get('profile')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:15:23 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(34): CController->render('profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:15:24 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(34): CController->render('profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:17:35 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController._model" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CComponent->__get('_model')
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): DefaultController->loadUser()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:17:36 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController._model" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CComponent->__get('_model')
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): DefaultController->loadUser()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:17:57 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(35): CController->render('profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:17:58 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(35): CController->render('profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:18:47 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(35): CController->render('profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:18:48 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(35): CController->render('profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:25:12 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(35): CController->render('profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 16:41:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/profilefield".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/profilefie...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/profilefield
+---
+2012/04/28 16:41:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/profileFie...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/user/profileField
+---
+2012/04/28 16:41:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/profilefield".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/profilefie...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/profilefield
+---
+2012/04/28 16:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/list".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/list')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/list
+---
+2012/04/28 16:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('registration')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/registration
+---
+2012/04/28 20:03:30 [error] [exception.CException] exception 'CException' with message 'DefaultController and its behaviors do not have a method or closure named "loadUser".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(31): CComponent->__call('loadUser', Array)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(31): DefaultController->loadUser()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:11:31 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:11:32 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:11:32 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:12:36 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile/profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile/profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('profile/profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:12:36 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "profile/profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('profile/profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('profile/profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:14:44 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('user/profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:14:58 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/profile/profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/profile/pr...', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('user/profile/pr...', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:14:59 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/profile/profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/profile/pr...', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('user/profile/pr...', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:15:06 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/index".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/index', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('user/index', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:15:07 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/index".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/index', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('user/index', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:15:07 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/index".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/index', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('user/index', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:15:21 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:15:22 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:15:34 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(38): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:16:00 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/user/logins".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/user/logins', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(16): CController->render('/user/logins', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 20:16:41 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php:19)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (19)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:16:42 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php:19)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (19)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:16:43 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php:19)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (19)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:16:43 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php:19)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (19)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:17:00 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php:19)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (19)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:17:00 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php:19)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (19)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:20:54 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:21:42 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:21:43 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:24:44 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:24:45 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:24:45 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:24:46 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:24:46 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:24:47 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:24:47 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:24:48 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:24:48 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:24:48 [error] [php] require() [<a href='function.require'>function.require</a>]: Filename cannot be empty (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:25:10 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:881
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:25:10 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:881
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:25:11 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:881
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:25:12 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:881
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:25:12 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:881
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:25:39 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:882
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:26:40 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:882
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/04/28 20:28:39 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php:31)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (31)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/28 20:28:50 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:882
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:28:51 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:882
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:28:51 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:882
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:28:52 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:882
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:28:53 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:882
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:28:53 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:882
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:28:53 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:882
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:28:54 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "user/login".' in /var/www/html/yii/framework/web/CController.php:882
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('user/login', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('user/login', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:29:57 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController._m" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): CComponent->__set('_m', Object(User))
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:29:58 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController._m" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): CComponent->__set('_m', Object(User))
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:29:58 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController._m" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): CComponent->__set('_m', Object(User))
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:29:59 [error] [exception.CException] exception 'CException' with message 'Property "DefaultController._m" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(29): CComponent->__set('_m', Object(User))
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:30:16 [error] [exception.CException] exception 'CException' with message 'Property "User.rememberMe" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('rememberMe')
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('rememberMe')
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1347): CHtml::resolveValue(Object(User), 'rememberMe')
+#3 /var/www/html/yii/cms/protected/modules/user/views/user/login.php(44): CHtml::activeCheckBox(Object(User), 'rememberMe')
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/user/login', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/user/login', Array)
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#11 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#16 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:30:17 [error] [exception.CException] exception 'CException' with message 'Property "User.rememberMe" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('rememberMe')
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('rememberMe')
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1347): CHtml::resolveValue(Object(User), 'rememberMe')
+#3 /var/www/html/yii/cms/protected/modules/user/views/user/login.php(44): CHtml::activeCheckBox(Object(User), 'rememberMe')
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/user/login', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/user/login', Array)
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#11 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#16 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:30:17 [error] [exception.CException] exception 'CException' with message 'Property "User.rememberMe" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('rememberMe')
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('rememberMe')
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1347): CHtml::resolveValue(Object(User), 'rememberMe')
+#3 /var/www/html/yii/cms/protected/modules/user/views/user/login.php(44): CHtml::activeCheckBox(Object(User), 'rememberMe')
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/user/login', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/user/login', Array)
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#11 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#16 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:30:18 [error] [exception.CException] exception 'CException' with message 'Property "User.rememberMe" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('rememberMe')
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('rememberMe')
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1347): CHtml::resolveValue(Object(User), 'rememberMe')
+#3 /var/www/html/yii/cms/protected/modules/user/views/user/login.php(44): CHtml::activeCheckBox(Object(User), 'rememberMe')
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/user/login', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/user/login', Array)
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#11 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#16 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:30:18 [error] [exception.CException] exception 'CException' with message 'Property "User.rememberMe" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('rememberMe')
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2044): CActiveRecord->__get('rememberMe')
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1347): CHtml::resolveValue(Object(User), 'rememberMe')
+#3 /var/www/html/yii/cms/protected/modules/user/views/user/login.php(44): CHtml::activeCheckBox(Object(User), 'rememberMe')
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/user/login', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/user/login', Array)
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#11 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#15 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#16 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#18 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:30:41 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/user/profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/user/profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/user/profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:30:43 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/user/profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/user/profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/user/profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:30:44 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/user/profile".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/user/profile', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/user/profile', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:31:26 [error] [php] Undefined variable: dataProvider (/var/www/html/yii/cms/protected/modules/user/views/user/index.php:15)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/index.php (15)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+2012/04/28 20:31:27 [error] [php] Undefined variable: dataProvider (/var/www/html/yii/cms/protected/modules/user/views/user/index.php:15)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/index.php (15)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+2012/04/28 20:31:27 [error] [php] Undefined variable: dataProvider (/var/www/html/yii/cms/protected/modules/user/views/user/index.php:15)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): DefaultController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/user/
+in /var/www/html/yii/cms/protected/modules/user/views/user/index.php (15)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (33)
+2012/04/28 20:31:49 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "menu".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/views/profile/profile.php(6): CController->renderPartial('menu')
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/profile/profil...', Array, true)
+#6 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/profile/profil...', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:31:50 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "menu".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/views/profile/profile.php(6): CController->renderPartial('menu')
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/profile/profil...', Array, true)
+#6 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/profile/profil...', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:31:50 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "menu".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/views/profile/profile.php(6): CController->renderPartial('menu')
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/profile/profil...', Array, true)
+#6 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/profile/profil...', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/user/
+---
+2012/04/28 20:31:51 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "menu".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/user/views/profile/profile.php(6): CController->renderPartial('menu')
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('/profile/profil...', Array, true)
+#6 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(33): CController->render('/profile/profil...', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/user/
+---

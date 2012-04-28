@@ -92,6 +92,7 @@ class ProfileController extends Controller
 	 */
 	public function loadUser()
 	{
+            //Yii::app()->db->
 		if($this->_model===null)
 		{
 			if(Yii::app()->user->id)

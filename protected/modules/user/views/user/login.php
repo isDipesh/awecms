@@ -18,7 +18,7 @@ $this->breadcrumbs=array(
 <p><?php echo UserModule::t("Please fill out the following form with your login credentials:"); ?></p>
 
 <div class="form">
-<?php echo CHtml::beginForm(); ?>
+<?php echo CHtml::beginForm(Yii::app()->getModule('user')->loginUrl); ?>
 
 	<p class="note"><?php echo UserModule::t('Fields with <span class="required">*</span> are required.'); ?></p>
 	
