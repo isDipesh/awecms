@@ -872,3 +872,223 @@ Stack trace:
 REQUEST_URI=/yii/cms/login
 HTTP_REFERER=http://localhost/yii/cms/login
 ---
+2012/04/28 15:26:59 [error] [exception.CException] exception 'CException' with message 'Alias "user.UserModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('user.UserModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('user.UserModule', 'user', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('user')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('user')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/index.php/user
+---
+2012/04/28 15:27:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'yc'' in /var/www/html/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/yii/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#7 /var/www/html/yii/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('User')
+#8 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(18): CActiveDataProvider->__construct('User', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/index.php/user
+---
+2012/04/28 15:27:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'yc'' in /var/www/html/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/yii/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#7 /var/www/html/yii/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('User')
+#8 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(18): CActiveDataProvider->__construct('User', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/index.php/user
+---
+2012/04/28 15:27:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'yc'' in /var/www/html/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/yii/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#7 /var/www/html/yii/framework/web/CActiveDataProvider.php(75): CActiveRecord::model('User')
+#8 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(18): CActiveDataProvider->__construct('User', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/index.php/user
+---
+2012/04/28 15:29:29 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/UserModule.php:178)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): DefaultController->renderInternal()
+#1 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#3 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#4 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/index.php/user
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (178)
+in /var/www/html/yii/cms/protected/modules/user/views/user/index.php (8)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+2012/04/28 15:29:30 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/UserModule.php:178)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): DefaultController->renderInternal()
+#1 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#3 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#4 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/index.php/user
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (178)
+in /var/www/html/yii/cms/protected/modules/user/views/user/index.php (8)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+2012/04/28 15:29:31 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/UserModule.php:178)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): DefaultController->renderInternal()
+#1 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#3 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#4 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/index.php/user
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (178)
+in /var/www/html/yii/cms/protected/modules/user/views/user/index.php (8)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+2012/04/28 15:29:32 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/UserModule.php:178)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): DefaultController->renderInternal()
+#1 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#3 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#4 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/index.php/user
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (178)
+in /var/www/html/yii/cms/protected/modules/user/views/user/index.php (8)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+2012/04/28 15:29:33 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/modules/user/UserModule.php:178)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): DefaultController->renderInternal()
+#1 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#3 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#4 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/index.php/user
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (178)
+in /var/www/html/yii/cms/protected/modules/user/views/user/index.php (8)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+2012/04/28 15:30:06 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Asia/Katmandu' for 'NPT/5.0/no DST' instead (/var/www/html/yii/framework/base/CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CDataColumn.php(139): CDataColumn->evaluateExpression()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(138): CDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(517): CDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(490): CGridView->renderTableRow()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(400): CGridView->renderTableBody()
+#5 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#6 unknown(0): CGridView->renderSection()
+#7 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(126): CGridView->renderContent()
+#9 /var/www/html/yii/framework/web/CBaseController.php(174): CGridView->run()
+#10 /var/www/html/yii/cms/protected/modules/user/views/user/index.php(31): DefaultController->widget()
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#12 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): DefaultController->renderInternal()
+#13 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile()
+#14 /var/www/html/yii/framework/web/CController.php(870): DefaultController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(783): DefaultController->renderPartial()
+#16 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(22): DefaultController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#18 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#20 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(16): CWebApplication->run()
+REQUEST_URI=/yii/cms/user
+in /var/www/html/yii/cms/protected/modules/user/views/user/index.php (31)
+in /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php (47)
+in /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php (22)
+2012/04/28 09:46:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/28 14:46:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login
+---

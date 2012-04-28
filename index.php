@@ -3,6 +3,8 @@
 // remove the following line when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG',true);
 
+date_default_timezone_set('GMT');
+
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';

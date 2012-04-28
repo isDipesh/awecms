@@ -8,27 +8,25 @@ return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'My CMS',
     // preloading 'log' component
-    'preload' => array('log'),
+    'preload' => array(
+        'log',
+    ),
     // autoloading model and component classes
     'import' => array(
         'application.models.*',
         'application.components.*',
-//        'application.modules.user.models.*',
+        'application.modules.user.models.*',
+        'application.modules.user.components.*',
         'ext.gtc.components.*',
         'ext.giix-components.*', // giix components
     ),
     'behaviors' => array(
     // ...
     ),
+    'aliases' => array(
+    ),
     // application components
     'components' => array(
-//        'user' => array(
-//            'class' => 'application.modules.user.components.YumWebUser',
-//            'allowAutoLogin' => true,
-//            'loginUrl' => array('//user/login'),
-//        ),
-        // uncomment the following to enable URLs in path-format
-
         'urlManager' => array(
             'showScriptName' => false, //hides index.php in URL
             'caseSensitive' => true,
@@ -39,13 +37,6 @@ return array(
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ),
         ),
-        /*
-          'db'=>array(
-          'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-          ),
-         */
-
-
         'db' => array(
             'connectionString' => 'mysql:host=localhost;dbname=yc',
             'emulatePrepare' => true,
@@ -67,15 +58,16 @@ return array(
                     'class' => 'CFileLogRoute',
                     'levels' => 'error, warning',
                 ),
-//                array(
-//                    'class' => 'CWebLogRoute',
-//                    'levels' => 'trace,info, error, warning',
-//                ),
                 array(
                     'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
                 //'ipFilters' => array('127.0.0.1', '192.168.1.215'),
                 ),
             ),
+        ),
+        'user' => array(
+            // enable cookie-based authentication
+            'allowAutoLogin' => true,
+            'loginUrl' => array('/user/login'),
         ),
     ),
     // application-level parameters that can be accessed
@@ -86,39 +78,7 @@ return array(
     ),
     //yum submodules
     'modules' => array(
-//        'user' => array(
-//            'debug' => FALSE,
-//            'usersTable' => 'user',
-//            'translationTable' => 'translation',
-//        ),
-//        'usergroup' => array(
-//            'usergroupTable' => 'user_group',
-//            'usergroupMessagesTable' => 'user_group_message',
-//        ),
-//        'membership' => array(
-//            'membershipTable' => 'membership',
-//            'paymentTable' => 'payment',
-//        ),
-//        'friendship' => array(
-//            'friendshipTable' => 'friendship',
-//        ),
-//        'profile' => array(
-//            'privacySettingTable' => 'privacy_setting',
-//            'profileFieldsGroupTable' => 'profile_field_group',
-//            'profileFieldsTable' => 'profile_field',
-//            'profileTable' => 'profile',
-//            'profileCommentTable' => 'profile_comment',
-//            'profileVisitTable' => 'profile_visit',
-//        ),
-//        'role' => array(
-//            'rolesTable' => 'role',
-//            'userHasRoleTable' => 'user_role',
-//            'actionTable' => 'action',
-//            'permissionTable' => 'permission',
-//        ),
-//        'messages' => array(
-//            'messagesTable' => 'message',
-//        ),
+        'user',
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',
