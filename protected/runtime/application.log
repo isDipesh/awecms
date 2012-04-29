@@ -4209,3 +4209,656 @@ Stack trace:
 REQUEST_URI=/yii/cms/admin
 in /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php (11)
 in /var/www/html/yii/cms/index.php (18)
+2012/04/29 09:13:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:17:41 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:17:44 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:22:53 [error] [exception.CException] exception 'CException' with message 'The layout path "application.modules.layouts" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CWebModule->setLayoutPath('application.mod...')
+#1 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:23:02 [error] [exception.CException] exception 'CException' with message 'The layout path "application.modules.admin.layouts" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CWebModule->setLayoutPath('application.mod...')
+#1 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:23:03 [error] [exception.CException] exception 'CException' with message 'The layout path "application.modules.admin.layouts" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CWebModule->setLayoutPath('application.mod...')
+#1 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:23:26 [error] [exception.CException] exception 'CException' with message 'The layout path "application.modules.admin.views.layouts" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CWebModule->setLayoutPath('application.mod...')
+#1 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:23:27 [error] [exception.CException] exception 'CException' with message 'The layout path "application.modules.admin.views.layouts" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CWebModule->setLayoutPath('application.mod...')
+#1 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:23:27 [error] [exception.CException] exception 'CException' with message 'The layout path "application.modules.admin.views.layouts" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CWebModule->setLayoutPath('application.mod...')
+#1 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:23:40 [error] [exception.CException] exception 'CException' with message 'The layout path "application.modules" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CWebModule->setLayoutPath('application.mod...')
+#1 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:23:47 [error] [exception.CException] exception 'CException' with message 'The layout path "application" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CWebModule->setLayoutPath('application')
+#1 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:23:47 [error] [exception.CException] exception 'CException' with message 'The layout path "application" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CWebModule->setLayoutPath('application')
+#1 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:23:48 [error] [exception.CException] exception 'CException' with message 'The layout path "application" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CWebModule->setLayoutPath('application')
+#1 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:31:19 [error] [exception.CException] exception 'CException' with message 'The layout path "application" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/framework/base/CComponent.php(153): CWebModule->setLayoutPath('application')
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CComponent->__set('layoutPath', 'application')
+#2 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#3 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#4 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 09:31:20 [error] [exception.CException] exception 'CException' with message 'The layout path "application" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:156
+Stack trace:
+#0 /var/www/html/yii/framework/base/CComponent.php(153): CWebModule->setLayoutPath('application')
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(16): CComponent->__set('layoutPath', 'application')
+#2 /var/www/html/yii/framework/base/CModule.php(91): AdminModule->init()
+#3 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('admin', NULL, Array)
+#4 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('admin.AdminModu...', 'admin', NULL, Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('admin')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('admin')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 10:07:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adminhtml".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('adminhtml')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adminhtml
+---
+2012/04/29 10:09:17 [error] [exception.CException] exception 'CException' with message 'Property "AdminhtmlModule.language" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(483): CComponent->__set('language', 'en')
+#1 /var/www/html/yii/framework/base/CModule.php(87): CModule->configure(Array)
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('adminhtml', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('adminhtml.Admin...', 'adminhtml', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('adminhtml')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('adminhtml')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('adminhtml')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/adminhtml
+---
+2012/04/29 10:09:18 [error] [exception.CException] exception 'CException' with message 'Property "AdminhtmlModule.language" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(483): CComponent->__set('language', 'en')
+#1 /var/www/html/yii/framework/base/CModule.php(87): CModule->configure(Array)
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('adminhtml', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('adminhtml.Admin...', 'adminhtml', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('adminhtml')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('adminhtml')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('adminhtml')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/adminhtml
+---
+2012/04/29 10:09:19 [error] [exception.CException] exception 'CException' with message 'Property "AdminhtmlModule.language" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(483): CComponent->__set('language', 'en')
+#1 /var/www/html/yii/framework/base/CModule.php(87): CModule->configure(Array)
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('adminhtml', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('adminhtml.Admin...', 'adminhtml', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('adminhtml')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('adminhtml')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('adminhtml')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/adminhtml
+---
+2012/04/29 10:09:19 [error] [exception.CException] exception 'CException' with message 'Property "AdminhtmlModule.language" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(483): CComponent->__set('language', 'en')
+#1 /var/www/html/yii/framework/base/CModule.php(87): CModule->configure(Array)
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('adminhtml', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('adminhtml.Admin...', 'adminhtml', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('adminhtml')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('adminhtml')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('adminhtml')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/adminhtml
+---
+2012/04/29 10:11:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/adminhtml.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('css/adminhtml.c...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/css/adminhtml.css
+HTTP_REFERER=http://localhost/yii/cms/adminhtml/privilege/login
+---
+2012/04/29 15:56:56 [error] [php] include(CommonAR.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/adminhtml/models/AdminhtmlCAR.php(4): spl_autoload_call()
+#1 /var/www/html/yii/framework/YiiBase.php(418): include()
+#2 unknown(0): autoload()
+#3 /var/www/html/yii/cms/protected/modules/adminhtml/models/AdminhtmlAdmin.php(22): spl_autoload_call()
+#4 /var/www/html/yii/framework/YiiBase.php(418): include()
+#5 unknown(0): autoload()
+#6 /var/www/html/yii/cms/protected/modules/adminhtml/components/AdminIdentity.php(41): spl_autoload_call()
+#7 /var/www/html/yii/cms/protected/modules/adminhtml/components/AdminIdentity.php(22): AdminIdentity->getAuthModel()
+#8 /var/www/html/yii/cms/protected/modules/adminhtml/models/AdminhtmlLoginForm.php(54): AdminIdentity->authenticate()
+#9 /var/www/html/yii/framework/validators/CInlineValidator.php(43): AdminhtmlLoginForm->authenticate()
+#10 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute()
+#11 /var/www/html/yii/framework/base/CModel.php(158): CInlineValidator->validate()
+#12 /var/www/html/yii/cms/protected/modules/adminhtml/controllers/PrivilegeController.php(126): AdminhtmlLoginForm->validate()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PrivilegeController->actionLogin()
+#14 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/CController.php(287): PrivilegeController->runAction()
+#16 /var/www/html/yii/framework/web/CController.php(266): PrivilegeController->runActionWithFilters()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(276): PrivilegeController->run()
+#18 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/adminhtml/privilege/login
+in /var/www/html/yii/cms/protected/modules/adminhtml/models/AdminhtmlCAR.php (4)
+in /var/www/html/yii/cms/protected/modules/adminhtml/models/AdminhtmlAdmin.php (22)
+in /var/www/html/yii/cms/protected/modules/adminhtml/components/AdminIdentity.php (41)
+2012/04/29 16:06:43 [error] [php] include(CommonAR.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/adminhtml/models/AdminhtmlCAR.php(4): spl_autoload_call()
+#1 /var/www/html/yii/framework/YiiBase.php(418): include()
+#2 unknown(0): autoload()
+#3 /var/www/html/yii/cms/protected/modules/adminhtml/models/AdminhtmlAdmin.php(22): spl_autoload_call()
+#4 /var/www/html/yii/framework/YiiBase.php(418): include()
+#5 unknown(0): autoload()
+#6 /var/www/html/yii/cms/protected/modules/adminhtml/components/AdminIdentity.php(41): spl_autoload_call()
+#7 /var/www/html/yii/cms/protected/modules/adminhtml/components/AdminIdentity.php(22): AdminIdentity->getAuthModel()
+#8 /var/www/html/yii/cms/protected/modules/adminhtml/models/AdminhtmlLoginForm.php(54): AdminIdentity->authenticate()
+#9 /var/www/html/yii/framework/validators/CInlineValidator.php(43): AdminhtmlLoginForm->authenticate()
+#10 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute()
+#11 /var/www/html/yii/framework/base/CModel.php(158): CInlineValidator->validate()
+#12 /var/www/html/yii/cms/protected/modules/adminhtml/controllers/PrivilegeController.php(126): AdminhtmlLoginForm->validate()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PrivilegeController->actionLogin()
+#14 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/CController.php(287): PrivilegeController->runAction()
+#16 /var/www/html/yii/framework/web/CController.php(266): PrivilegeController->runActionWithFilters()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(276): PrivilegeController->run()
+#18 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/adminhtml/privilege/login
+in /var/www/html/yii/cms/protected/modules/adminhtml/models/AdminhtmlCAR.php (4)
+in /var/www/html/yii/cms/protected/modules/adminhtml/models/AdminhtmlAdmin.php (22)
+in /var/www/html/yii/cms/protected/modules/adminhtml/components/AdminIdentity.php (41)
+2012/04/29 17:53:04 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/modules/shop/assets/css" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(3): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 17:53:19 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/modules/admin/assets/css" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(3): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 17:53:20 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/modules/admin/assets/css" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(3): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(DefaultController), '/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 18:01:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/cf63a0bd/admin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/cf63a0bd...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/cf63a0bd/admin.css
+HTTP_REFERER=http://localhost/yii/cms/admin
+---
+2012/04/29 18:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/64e1b195admin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/64e1b195...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/64e1b195admin.css
+HTTP_REFERER=http://localhost/yii/cms/admin
+---
+2012/04/29 18:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/64e1b195admin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/64e1b195...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/64e1b195admin.css
+HTTP_REFERER=http://localhost/yii/cms/admin
+---
+2012/04/29 18:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/64e1b195admin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/64e1b195...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/64e1b195admin.css
+HTTP_REFERER=http://localhost/yii/cms/admin
+---
+2012/04/29 19:07:22 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.username" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('username')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(27): CWebUser->__get('username')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 19:07:24 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.username" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('username')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(27): CWebUser->__get('username')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 19:07:25 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.username" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('username')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(27): CWebUser->__get('username')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 19:07:25 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.username" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('username')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(27): CWebUser->__get('username')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 19:08:43 [error] [php] Object of class UserModule could not be converted to string (/var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php:27)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(785): DefaultController->renderFile()
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): DefaultController->render()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(287): DefaultController->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(266): DefaultController->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin
+in /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php (27)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php (14)
+in /var/www/html/yii/cms/index.php (18)
+2012/04/29 19:09:28 [error] [exception.CException] exception 'CException' with message 'Property "UserModule.username" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(106): CComponent->__get('username')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(28): CModule->__get('username')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 19:09:29 [error] [exception.CException] exception 'CException' with message 'Property "UserModule.username" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(106): CComponent->__get('username')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(28): CModule->__get('username')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 19:11:05 [error] [exception.CException] exception 'CException' with message 'Property "UserModule.model" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(106): CComponent->__get('model')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(28): CModule->__get('model')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 19:11:06 [error] [exception.CException] exception 'CException' with message 'Property "UserModule.model" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(106): CComponent->__get('model')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(28): CModule->__get('model')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 19:12:30 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.lastLoginTime" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('lastLoginTime')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(28): CWebUser->__get('lastLoginTime')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 19:20:20 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.profile" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('profile')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(28): CWebUser->__get('profile')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/04/29 19:20:20 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.profile" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('profile')
+#1 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(28): CWebUser->__get('profile')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(14): CController->render('index')
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin
+---

@@ -6,6 +6,7 @@
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
+    'language' => 'en',
     'name' => 'My CMS',
     // preloading 'log' component
     'preload' => array(
@@ -27,6 +28,9 @@ return array(
     ),
     // application components
     'components' => array(
+        'assetManager' => array(
+            'linkAssets' => true,
+        ),
         'cache' => array(
             'class' => 'system.caching.CFileCache',
         ),
@@ -72,10 +76,10 @@ return array(
                     'class' => 'CFileLogRoute',
                     'levels' => 'error, warning',
                 ),
-                array(
-                    'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
-                //'ipFilters' => array('127.0.0.1', '192.168.1.215'),
-                ),
+//                array(
+//                    'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
+//                //'ipFilters' => array('127.0.0.1', '192.168.1.215'),
+//                ),
             ),
         ),
         'user' => array(
@@ -94,6 +98,9 @@ return array(
     'modules' => array(
         'user',
         'admin',
+        'adminhtml' => array(
+        //'language'  => 'en',
+        ),
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',
