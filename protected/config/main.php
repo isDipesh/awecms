@@ -27,6 +27,19 @@ return array(
     ),
     // application components
     'components' => array(
+        'cache' => array(
+            'class' => 'system.caching.CFileCache',
+        ),
+        'settings' => array(
+            'class' => 'CmsSettings',
+            'cacheComponentId' => 'cache',
+            'cacheId' => 'global_website_settings',
+            'cacheTime' => 84000,
+            'tableName' => '{{settings}}',
+            'dbComponentId' => 'db',
+            'createTable' => true,
+            'dbEngine' => 'InnoDB',
+        ),
         'urlManager' => array(
             'showScriptName' => false, //hides index.php in URL
             'caseSensitive' => true,
