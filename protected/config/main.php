@@ -81,7 +81,7 @@ return array(
         'user' => array(
             // enable cookie-based authentication
             'allowAutoLogin' => true,
-            'loginUrl' => array('/user/login'),
+            'loginUrl' => array('/login'),
         ),
     ),
     // application-level parameters that can be accessed

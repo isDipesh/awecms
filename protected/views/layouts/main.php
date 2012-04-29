@@ -27,8 +27,9 @@
             <?php
             //TODO Beautify the login widget
             if (Yii::app()->user->isGuest)
-                //$this->widget('application.modules.user.components.LoginWidget');
-            ?>
+            //$this->widget('application.modules.user.components.LoginWidget');
+                
+                ?>
 
             <div id="mainmenu">
                 <?php
@@ -38,7 +39,8 @@
                         array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
                         array('label' => 'Contact', 'url' => array('/site/contact')),
                         array('label' => 'Login', 'url' => array('/user/login'), 'visible' => Yii::app()->user->isGuest),
-                        array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
+                        array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/logout'), 'visible' => !Yii::app()->user->isGuest),
+                        array('label' => 'Dashboard', 'url' => array('/admin'), 'visible' => (Yii::app()->hasModule('user') && Yii::app()->getModule('user')->isAdmin())),
                     ),
                 ));
                 ?>
@@ -49,17 +51,19 @@
                     'links' => $this->breadcrumbs,
                 ));
                 ?><!-- breadcrumbs -->
-<?php endif ?>
+            <?php endif ?>
 
-<?php echo $content; ?>
+            <?php echo $content; ?>
 
             <div class="clear"></div>
 
             <div id="footer">
-                Copyright &copy; <?php date_default_timezone_set('GMT');
-echo date('Y'); ?> by My Company.<br/>
+                Copyright &copy; <?php
+            date_default_timezone_set('GMT');
+            echo date('Y');
+            ?> by My Company.<br/>
                 All Rights Reserved.<br/>
-<?php echo Yii::powered(); ?>
+                <?php echo Yii::powered(); ?>
             </div><!-- footer -->
 
         </div><!-- page -->
