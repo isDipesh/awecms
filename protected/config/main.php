@@ -93,6 +93,7 @@ return array(
     //yum submodules
     'modules' => array(
         'user',
+        'admin',
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',

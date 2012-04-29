@@ -3983,3 +3983,35 @@ Stack trace:
 REQUEST_URI=/yii/cms/logout
 HTTP_REFERER=http://localhost/yii/cms/profile
 ---
+2012/04/29 06:26:29 [error] [exception.CException] exception 'CException' with message 'Alias "CommandGenerator.widgets.ddeditor.DDEditor" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('CommandGenerato...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(CommandGenerator), 'CommandGenerato...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('CommandGenerato...', Array)
+#3 /var/www/html/yii/cms/protected/extensions/gtc/command/views/__comment.php(9): CBaseController->widget('CommandGenerato...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(CommandGenerator), '/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/widgets/CTabView.php(207): CController->renderPartial('__comment', Array)
+#9 /var/www/html/yii/framework/web/widgets/CTabView.php(139): CTabView->renderBody()
+#10 /var/www/html/yii/framework/web/CBaseController.php(174): CTabView->run()
+#11 /var/www/html/yii/cms/protected/extensions/gtc/command/views/index.php(18): CBaseController->widget('system.web.widg...', Array)
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#13 /var/www/html/yii/cms/protected/extensions/yii-debug-toolbar/components/YiiDebugViewRenderer.php(47): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CBaseController.php(94): YiiDebugViewRenderer->renderFile(Object(CommandGenerator), '/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#16 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#17 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
+#18 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#19 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#20 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#21 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/command')
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#26 {main}
+REQUEST_URI=/yii/cms/gii/command
+HTTP_REFERER=http://localhost/yii/cms/gii/module
+---
