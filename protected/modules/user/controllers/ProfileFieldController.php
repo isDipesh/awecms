@@ -34,7 +34,7 @@ class ProfileFieldController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('create','update','view','admin','delete'),
-				'users'=>Yii::app()->getModule('user')->getAdmins(),
+				'users'=>UserModule::getAdmins(),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -455,7 +455,7 @@ class ProfileFieldController extends Controller
 	{
 		$dataProvider=new CActiveDataProvider('ProfileField', array(
 			'pagination'=>array(
-				'pageSize'=>Yii::app()->getModule('user')->fields_page_size,
+				'pageSize'=>Yii::app()->controller->module->fields_page_size,
 			),
 			'sort'=>array(
 				'defaultOrder'=>'position',
