@@ -12137,3 +12137,221 @@ Stack trace:
 REQUEST_URI=/yii/cms/admin/profileField/admin
 HTTP_REFERER=http://localhost/yii/cms/admin/user
 ---
+2012/05/02 21:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/02 21:24:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/02 21:25:52 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "/user/_menu".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/views/user/index.php(13): CController->renderPartial('/user/_menu', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php(50): CController->render('index', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/cms/admin/user/
+---
+2012/05/02 21:25:52 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "/user/_menu".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/views/user/index.php(13): CController->renderPartial('/user/_menu', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php(50): CController->render('index', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user')
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/cms/admin/user/
+---
+2012/05/02 21:26:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php:152
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php(99): UserController->loadModel()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionUpdate()
+#2 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#6 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user/upda...')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/admin/user/update
+---
+2012/05/02 21:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profileField".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('profileField')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('profileField')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user/prof...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/user/profileField
+---
+2012/05/02 21:27:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "list".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('list')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('list')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user/list')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/user/list
+---
+2012/05/02 21:40:05 [error] [exception.CException] exception 'CException' with message 'UserController cannot find the requested view "_menu".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/views/user/create.php(12): CController->renderPartial('_menu', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php(91): CController->render('create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/user/crea...')
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/cms/admin/user/create
+HTTP_REFERER=http://localhost/yii/cms/admin/
+---
+2012/05/02 21:40:13 [error] [exception.CException] exception 'CException' with message 'ProfileFieldController cannot find the requested view "_menu".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/views/profileField/create.php(11): CController->renderPartial('_menu', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileFieldController.php(357): CController->render('create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileFieldController->actionCreate()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/profileFi...')
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/cms/admin/profileField/create
+HTTP_REFERER=http://localhost/yii/cms/admin/
+---
+2012/05/02 21:42:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/02 21:42:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/02 21:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/http://gii/model".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/http://gi...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/http://gii/model
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/02 21:42:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/02 21:42:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/02 21:54:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/02 21:54:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---

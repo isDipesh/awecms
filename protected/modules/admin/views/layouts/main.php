@@ -20,7 +20,7 @@
         <div id="main_container">
             <header>
                 <h1>
-                    <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Yii::app()->name, array('/profile/edit')); ?>
+                    <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Yii::app()->name, array('/')); ?>
                 </h1>
                 <nav id="header_right">
                     <ul id="header_links">
@@ -46,7 +46,45 @@
                 </nav>
 
             </header>
+            <?php
+            //print_r(Admin::getModules());
 
+            $specialModules = array('admin', 'user', 'gii');
+            $adminModule = Yii::app()->getModule('admin');
+
+
+
+
+            $menuConfig['Users']['List Users'] = "/admin/user/";
+            $menuConfig['Users']['Add User'] = "/admin/user/create/";
+            $menuConfig['Users']['View Profile Fields'] = "/admin/profileField/";
+            $menuConfig['Users']['Add Profile Field'] = "/admin/profileField/create/";
+            $menuConfig['Gii']['Create Model'] = "http://gii/model/";
+            $menuConfig['Gii']['Create CRUD'] = "http://gii/crud/";
+
+
+            foreach (Yii::app()->getModules() as $key => $value) {
+                //echo $key;
+                //print_r($value);
+            }
+
+
+
+            ?>
+            <nav id="left_sidebar">
+                <?php
+                foreach ($menuConfig as $menuName => $menuHeads) {
+                    echo '<div class="accordion"><div class="head">' . $menuName . ':</div><div class="accordion_items">';
+                    foreach ($menuHeads as $menu => $link) {
+                        echo CHtml::link(AdminModule::t($menu), array($link));
+                        echo '<br/>';
+                    }
+                    echo '</div></div>';
+                }
+                ?>
+
+
+            </nav>
 
             <?php
             echo $content;

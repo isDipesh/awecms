@@ -6,16 +6,7 @@ $this->breadcrumbs=array(
 ?>
 <h1><?php echo UserModule::t("Manage Users"); ?></h1>
 
-<?php echo $this->renderPartial('/user/_menu', array(
-		'list'=> array(
-			CHtml::link(UserModule::t('Create User'),array('create')),
-		),
-	));
-?>
-
 <?php 
-//print_r($dataProvider);
-//die();
 $this->widget('zii.widgets.grid.CGridView', array(
 	'dataProvider'=>$dataProvider,
 	'columns'=>array(
