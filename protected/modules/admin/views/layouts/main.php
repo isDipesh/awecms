@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="<?php echo Yii::app()->language?>">
+<html lang="<?php echo Yii::app()->language ?>">
     <head>
         <meta charset=utf-8" />
         <title>Dashboard : <?php echo Yii::app()->name ?></title>
         <?php $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.admin.assets')) . '/'; ?>
         <link rel="stylesheet" type="text/css" href="<?php echo $assetsUrl; ?>admin.css?<?php echo time() ?>"/>
         <script type="text/javascript">
-            //accordion open/close toggle
             jQuery(document).ready(function(){
                 $('.accordion .head').click(function() {
                     $(this).next().toggle('slow');
@@ -14,37 +13,50 @@
                 }).next().hide();
             });
         </script>
-
     </head>
 
     <body>
 
         <div id="main_container">
-            <header id="header">
+            <header>
                 <h1>
-                    <?php echo CHtml::link(UserModule::t('Dashboard') . ' : ' . Yii::app()->name, array('/profile/edit')); ?>
+                    <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Yii::app()->name, array('/profile/edit')); ?>
                 </h1>
-                <div id="header_right">
+                <nav id="header_right">
                     <ul id="header_links">
-                        <li><?php echo UserModule::t('Welcome') . ' ' . Yii::app()->user->name; ?></li> |
-                        <li><?php echo CHtml::link(UserModule::t('Account Settings'), array('/profile/edit')); ?></li> |
-                        <li><?php echo CHtml::link(UserModule::t('Logout'), array('/logout')); ?></li> |
+                        <li><?php echo AdminModule::t('Welcome') . ' ' . Yii::app()->user->name; ?></li> |
+                        <li><?php echo CHtml::link(AdminModule::t('Account Settings'), array('/profile/edit')); ?></li> |
+                        <li><?php echo CHtml::link(AdminModule::t('Logout'), array('/user/logout')); ?></li> |
                     </ul>
-                    <?php echo CHtml::link(UserModule::t('Visit Website'), array('/')); ?>
-                </div>
-                <nav>
+                    <?php echo CHtml::link(AdminModule::t('Visit Website'), array('/')); ?>
                 </nav>
-                
+                <nav>
+                    <div class="grid_5 sidebar" style="overflow: auto">
+                        <?php
+//                        $this->widget('application.widgets.NavBar', array(
+//                            'tryDefault' => FALSE,
+//                            'context' => 'admin',
+//                            'items' => array(
+//                                array('label' => 'Admin Home', 'url' => array('/admin/index/index')),
+//                            ),
+//                        ));
+                        ?>
+                    </div>
+
+                </nav>
+
             </header>
 
-            <nav id="left_sidebar">
 
-            </nav>
+            <?php
+            echo $content;
+            ?>
+
 
 
         </div>
         <footer>
-            
+
         </footer>
     </body>
 </html>

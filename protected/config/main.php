@@ -28,6 +28,7 @@ return array(
     ),
     // application components
     'components' => array(
+        'metadata' => array('class' => 'Metadata'),
         'assetManager' => array(
             'linkAssets' => true,
         ),
@@ -98,9 +99,6 @@ return array(
     'modules' => array(
         'user',
         'admin',
-        'adminhtml' => array(
-        //'language'  => 'en',
-        ),
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',

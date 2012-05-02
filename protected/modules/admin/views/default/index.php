@@ -1,15 +1,33 @@
-<?php
-$this->breadcrumbs=array(
-	$this->module->id,
-);
-?>
-<h1><?php echo $this->uniqueId . '/' . $this->action->id; ?></h1>
 
-<p>
-This is the view content for action "<?php echo $this->action->id; ?>".
-The action belongs to the controller "<?php echo get_class($this); ?>"
-in the "<?php echo $this->module->id; ?>" module.
-</p>
-<p>
-You may customize this page by editing <tt><?php echo __FILE__; ?></tt>
-</p>
+
+
+<?php
+//print_r(Admin::getModules());
+
+$specialModules = array('admin', 'user', 'gii');
+$adminModule = Yii::app()->getModule('admin');
+
+
+$menuConfig['Users']['Manage Users'] = "http://users/manage/";
+$menuConfig['Users']['Delete Users'] = "http://users/delete/";
+$menuConfig['Gii']['Create Model'] = "http://gii/model/";
+$menuConfig['Gii']['Create CRUD'] = "http://gii/crud/";
+
+
+foreach (Yii::app()->getModules() as $key => $value) {
+    //echo $key;
+    //print_r($value);
+}
+
+foreach ($menuConfig as $menuName => $menuHeads) {
+    echo $menuName . '<br/>';
+    foreach ($menuHeads as $menu => $link) {
+        echo $menu."<br/>";
+    }
+}
+
+//print_r($adminModule->getModules());
+?>
+<nav id="left_sidebar">
+
+</nav>
