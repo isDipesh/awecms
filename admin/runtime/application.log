@@ -1,0 +1,104 @@
+2012/04/30 04:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/04/30 04:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/04/30 04:33:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/04/30 04:33:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/04/30 04:33:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/04/30 04:33:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/04/30 04:33:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/04/30 04:33:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/04/30 04:33:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/04/30 04:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/04/30 04:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(25): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/05/02 08:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
+2012/05/02 09:31:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/backend/index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/backend/
+---
