@@ -20,7 +20,6 @@ return array(
         'application.modules.user.components.*',
         'ext.gtc.components.*',
         'ext.giix-components.*', // giix components
-        'application.extensions.nestedset.*', // import nested set extension
     ),
     'behaviors' => array(
     // ...
@@ -111,7 +110,7 @@ return array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',
             'generatorPaths' => array(
-                'ext.giix-core', // giix generators
+               // 'ext.giix-core', // giix generators
                 'ext.gtc', // extensions/Gii Template 
             ),
         // If removed, Gii defaults to localhost only. Edit carefully to taste.

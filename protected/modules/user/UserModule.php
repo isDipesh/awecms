@@ -83,9 +83,9 @@ class UserModule extends CWebModule {
      */
     //public $cacheEnable = false;
 
-    public $tableUsers = '{{users}}';
-    public $tableProfiles = '{{profiles}}';
-    public $tableProfileFields = '{{profiles_fields}}';
+    public $tableUsers = '{{user}}';
+    public $tableProfiles = '{{profile}}';
+    public $tableProfileFields = '{{profile_field}}';
     static private $_user;
     static private $_admin;
     static private $_admins;
@@ -209,6 +209,7 @@ class UserModule extends CWebModule {
      * @return user object or false
      */
     public static function user($id = 0) {
+
         if ($id)
             return User::model()->active()->findbyPk($id);
         else {

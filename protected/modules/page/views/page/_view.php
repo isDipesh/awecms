@@ -1,49 +1,62 @@
 <div class="view">
 
-	<?php echo GxHtml::encode($data->getAttributeLabel('id')); ?>:
-	<?php echo GxHtml::link(GxHtml::encode($data->id), array('view', 'id' => $data->id)); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
 	<br />
 
-	<?php echo GxHtml::encode($data->getAttributeLabel('author')); ?>:
-		<?php echo GxHtml::encode(GxHtml::valueEx($data->author0)); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('author')); ?>:</b>
+	<?php echo CHtml::encode($data->author); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('title')); ?>:
-	<?php echo GxHtml::encode($data->title); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
+	<?php echo CHtml::encode($data->title); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('content')); ?>:
-	<?php echo GxHtml::encode($data->content); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
+	<?php echo CHtml::encode($data->content); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('excerpt')); ?>:
-	<?php echo GxHtml::encode($data->excerpt); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('excerpt')); ?>:</b>
+	<?php echo CHtml::encode($data->excerpt); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('status')); ?>:
-	<?php echo GxHtml::encode($data->status); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
+	<?php echo CHtml::encode($data->status); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('created_at')); ?>:
-	<?php echo GxHtml::encode($data->created_at); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('created_at')); ?>:</b>
+	<?php echo CHtml::encode($data->created_at); ?>
 	<br />
+
 	<?php /*
-	<?php echo GxHtml::encode($data->getAttributeLabel('modified_at')); ?>:
-	<?php echo GxHtml::encode($data->modified_at); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('modified_at')); ?>:</b>
+	<?php echo CHtml::encode($data->modified_at); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('parent')); ?>:
-		<?php echo GxHtml::encode(GxHtml::valueEx($data->parent0)); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('parent')); ?>:</b>
+	<?php echo CHtml::encode($data->parent); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('order')); ?>:
-	<?php echo GxHtml::encode($data->order); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('order')); ?>:</b>
+	<?php echo CHtml::encode($data->order); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('type')); ?>:
-	<?php echo GxHtml::encode($data->type); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('type')); ?>:</b>
+	<?php echo CHtml::encode($data->type); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('comment_status')); ?>:
-	<?php echo GxHtml::encode($data->comment_status); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('comment_status')); ?>:</b>
+	<?php echo CHtml::encode($data->comment_status); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('permission')); ?>:
-	<?php echo GxHtml::encode($data->permission); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('permission')); ?>:</b>
+	<?php echo CHtml::encode($data->permission); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('password')); ?>:
-	<?php echo GxHtml::encode($data->password); ?>
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('password')); ?>:</b>
+	<?php echo CHtml::encode($data->password); ?>
 	<br />
+
 	*/ ?>
 
 </div>

@@ -59,7 +59,7 @@
             $menuConfig['Users']['Add User'] = "/admin/user/create/";
             $menuConfig['Users']['View Profile Fields'] = "/admin/profileField/";
             $menuConfig['Users']['Add Profile Field'] = "/admin/profileField/create/";
-            $menuConfig['Gii']['Create Model'] = "http://gii/model/";
+            $menuConfig['Settings']['Site'] = "/admin/settings";
             $menuConfig['Gii']['Create CRUD'] = "http://gii/crud/";
 
 

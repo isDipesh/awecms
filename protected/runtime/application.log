@@ -5008,3 +5008,1408 @@ REQUEST_URI=/yii/cms/page/page/create
 in /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php (26)
 in /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php (119)
 in /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php (165)
+2012/05/03 17:38:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.pages' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `pages`.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 17:38:47 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pages" for active record class "Page" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Page))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Page')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(13): CActiveRecord->__construct()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.pages' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `pages`.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 17:38:48 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pages" for active record class "Page" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Page))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Page')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(13): CActiveRecord->__construct()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.pages' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `pages`.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 17:38:48 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pages" for active record class "Page" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Page))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Page')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(13): CActiveRecord->__construct()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.pages' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `pages`.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 17:38:49 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pages" for active record class "Page" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Page))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Page')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(13): CActiveRecord->__construct()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.pages' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `pages`.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 17:38:49 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pages" for active record class "Page" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Page))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Page')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(13): CActiveRecord->__construct()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.pages' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `pages`.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 17:38:49 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pages" for active record class "Page" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Page))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Page')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(13): CActiveRecord->__construct()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.pages' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `pages`.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 17:38:49 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pages" for active record class "Page" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Page))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Page')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(13): CActiveRecord->__construct()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.pages' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `pages`.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 17:38:50 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pages" for active record class "Page" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Page))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Page')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(13): CActiveRecord->__construct()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.pages' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `pages`.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 17:38:51 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pages" for active record class "Page" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Page))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Page')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(13): CActiveRecord->__construct()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.pages' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `pages`.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 17:38:52 [error] [exception.CDbException] exception 'CDbException' with message 'The table "pages" for active record class "Page" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Page))
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(394): CActiveRecord::model('Page')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(13): CActiveRecord->__construct()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:59 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('page/page/creat...')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:38:59 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('page/page/creat...')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:39:00 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('page/page/creat...')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:39:00 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('page/page/creat...')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/
+---
+2012/05/03 17:39:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (219)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (171)
+2012/05/03 17:39:03 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/UserModule.php(219): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/UserModule.php(171): UserModule::user()
+#4 /var/www/html/yii/cms/protected/views/layouts/main.php(43): UserModule::isAdmin()
+#5 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#11 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/yii/cms/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#14 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(751): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#16 /var/www/html/yii/cms/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/03 17:41:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (219)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (171)
+2012/05/03 17:41:35 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/UserModule.php(219): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/UserModule.php(171): UserModule::user()
+#4 /var/www/html/yii/cms/protected/views/layouts/main.php(43): UserModule::isAdmin()
+#5 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#11 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/yii/cms/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#14 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(751): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#16 /var/www/html/yii/cms/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/03 17:41:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (219)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (171)
+2012/05/03 17:41:36 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/UserModule.php(219): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/UserModule.php(171): UserModule::user()
+#4 /var/www/html/yii/cms/protected/views/layouts/main.php(43): UserModule::isAdmin()
+#5 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#11 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/yii/cms/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#14 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(751): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#16 /var/www/html/yii/cms/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/03 17:41:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (219)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (171)
+2012/05/03 17:41:36 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/UserModule.php(219): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/UserModule.php(171): UserModule::user()
+#4 /var/www/html/yii/cms/protected/views/layouts/main.php(43): UserModule::isAdmin()
+#5 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#11 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/yii/cms/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#14 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(751): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#16 /var/www/html/yii/cms/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/03 17:41:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (219)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (171)
+2012/05/03 17:41:36 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/UserModule.php(219): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/UserModule.php(171): UserModule::user()
+#4 /var/www/html/yii/cms/protected/views/layouts/main.php(43): UserModule::isAdmin()
+#5 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#11 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/yii/cms/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#14 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(751): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#16 /var/www/html/yii/cms/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/03 17:45:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (219)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (171)
+2012/05/03 17:45:58 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/UserModule.php(219): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/UserModule.php(171): UserModule::user()
+#4 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(15): UserModule::isAdmin()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/05/03 17:49:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (223)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (171)
+2012/05/03 17:49:24 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/UserModule.php(223): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/UserModule.php(171): UserModule::user()
+#4 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(15): UserModule::isAdmin()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/05/03 17:49:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (223)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (171)
+2012/05/03 17:49:25 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/UserModule.php(223): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/UserModule.php(171): UserModule::user()
+#4 /var/www/html/yii/cms/protected/modules/user/controllers/DefaultController.php(15): UserModule::isAdmin()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user')
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/cms/user
+---
+2012/05/03 17:50:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (223)
+in /var/www/html/yii/cms/protected/modules/user/UserModule.php (171)
+2012/05/03 17:50:15 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/UserModule.php(223): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/UserModule.php(171): UserModule::user()
+#4 /var/www/html/yii/cms/protected/views/layouts/main.php(43): UserModule::isAdmin()
+#5 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#11 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/yii/cms/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#14 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(751): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#16 /var/www/html/yii/cms/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#18 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/03 17:51:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/components/UserIdentity.php (27)
+in /var/www/html/yii/cms/protected/modules/user/models/UserLogin.php (52)
+2012/05/03 17:51:27 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/components/UserIdentity.php(27): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/models/UserLogin.php(52): UserIdentity->authenticate()
+#4 /var/www/html/yii/framework/validators/CInlineValidator.php(43): UserLogin->authenticate('password', Array)
+#5 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#6 /var/www/html/yii/framework/base/CModel.php(158): CValidator->validate(Object(UserLogin), NULL)
+#7 /var/www/html/yii/cms/protected/modules/user/controllers/LoginController.php(19): CModel->validate()
+#8 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#9 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#10 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/login')
+#14 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/cms/login
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/05/03 17:52:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yc.users' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `users`.
+in /var/www/html/yii/cms/protected/modules/user/models/User.php (28)
+in /var/www/html/yii/cms/protected/modules/user/components/UserIdentity.php (27)
+in /var/www/html/yii/cms/protected/modules/user/models/UserLogin.php (52)
+2012/05/03 17:52:44 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{users}}" for active record class "User" cannot be found in the database.' in /var/www/html/yii/framework/db/ar/CActiveRecord.php:2264
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(User))
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CActiveRecord::model('User')
+#2 /var/www/html/yii/cms/protected/modules/user/components/UserIdentity.php(27): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/models/UserLogin.php(52): UserIdentity->authenticate()
+#4 /var/www/html/yii/framework/validators/CInlineValidator.php(43): UserLogin->authenticate('password', Array)
+#5 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#6 /var/www/html/yii/framework/base/CModel.php(158): CValidator->validate(Object(UserLogin), NULL)
+#7 /var/www/html/yii/cms/protected/modules/user/controllers/LoginController.php(17): CModel->validate()
+#8 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#9 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#10 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/login')
+#14 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/cms/login
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/05/03 17:55:38 [error] [exception.CException] exception 'CException' with message 'Property "UserModule.tableUser" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(106): CComponent->__get('tableUser')
+#1 /var/www/html/yii/cms/protected/modules/user/models/User.php(28): CModule->__get('tableUser')
+#2 /var/www/html/yii/cms/protected/modules/user/components/UserIdentity.php(27): User::model()
+#3 /var/www/html/yii/cms/protected/modules/user/models/UserLogin.php(52): UserIdentity->authenticate()
+#4 /var/www/html/yii/framework/validators/CInlineValidator.php(43): UserLogin->authenticate('password', Array)
+#5 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(UserLogin), 'password')
+#6 /var/www/html/yii/framework/base/CModel.php(158): CValidator->validate(Object(UserLogin), NULL)
+#7 /var/www/html/yii/cms/protected/modules/user/controllers/LoginController.php(17): CModel->validate()
+#8 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): LoginController->actionLogin()
+#9 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#10 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/login')
+#14 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/cms/login
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/05/03 18:07:48 [error] [exception.CException] exception 'CException' with message 'Alias "applications.modules.page.models.Page" is invalid. Make sure it points to an existing directory or file.' in /var/www/html/yii/framework/YiiBase.php:343
+Stack trace:
+#0 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('applications.mo...', true)
+#1 /var/www/html/yii/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(GiixCrudCode), 'model')
+#3 /var/www/html/yii/framework/base/CModel.php(158): CValidator->validate(Object(GiixCrudCode), NULL)
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(158): CModel->validate()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/giixCrud')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/gii/giixCrud
+HTTP_REFERER=http://localhost/yii/cms/gii/giixCrud
+---
+2012/05/03 18:10:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/admin".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/admin')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/page/admin
+---
+2012/05/03 18:10:55 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "label".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('label', Array)
+#1 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(119): CActiveRecord->__call('label', Array)
+#2 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(119): User->label(1)
+#3 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(165): GxActiveRecord->getRelationLabel('author')
+#4 /var/www/html/yii/framework/web/helpers/CHtml.php(1161): GxActiveRecord->getAttributeLabel('author')
+#5 /var/www/html/yii/framework/web/helpers/CHtml.php(1186): CHtml::activeLabel(Object(Page), 'author', Array)
+#6 /var/www/html/yii/framework/web/widgets/CActiveForm.php(560): CHtml::activeLabelEx(Object(Page), 'author', Array)
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(17): CActiveForm->labelEx(Object(Page), 'author')
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(19): CController->renderPartial('_form', Array)
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#16 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(27): CController->render('create', Array)
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#18 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/03 18:12:09 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "label".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('label', Array)
+#1 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(119): CActiveRecord->__call('label', Array)
+#2 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(119): User->label(1)
+#3 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(165): GxActiveRecord->getRelationLabel('author')
+#4 /var/www/html/yii/framework/web/helpers/CHtml.php(1161): GxActiveRecord->getAttributeLabel('author')
+#5 /var/www/html/yii/framework/web/helpers/CHtml.php(1186): CHtml::activeLabel(Object(Page), 'author', Array)
+#6 /var/www/html/yii/framework/web/widgets/CActiveForm.php(560): CHtml::activeLabelEx(Object(Page), 'author', Array)
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(17): CActiveForm->labelEx(Object(Page), 'author')
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(19): CController->renderPartial('_form', Array)
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#16 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(27): CController->render('create', Array)
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#18 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/03 18:12:10 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "label".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('label', Array)
+#1 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(119): CActiveRecord->__call('label', Array)
+#2 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(119): User->label(1)
+#3 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(165): GxActiveRecord->getRelationLabel('author')
+#4 /var/www/html/yii/framework/web/helpers/CHtml.php(1161): GxActiveRecord->getAttributeLabel('author')
+#5 /var/www/html/yii/framework/web/helpers/CHtml.php(1186): CHtml::activeLabel(Object(Page), 'author', Array)
+#6 /var/www/html/yii/framework/web/widgets/CActiveForm.php(560): CHtml::activeLabelEx(Object(Page), 'author', Array)
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(17): CActiveForm->labelEx(Object(Page), 'author')
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(19): CController->renderPartial('_form', Array)
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#16 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(27): CController->render('create', Array)
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#18 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/03 18:12:10 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "label".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('label', Array)
+#1 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(119): CActiveRecord->__call('label', Array)
+#2 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(119): User->label(1)
+#3 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(165): GxActiveRecord->getRelationLabel('author')
+#4 /var/www/html/yii/framework/web/helpers/CHtml.php(1161): GxActiveRecord->getAttributeLabel('author')
+#5 /var/www/html/yii/framework/web/helpers/CHtml.php(1186): CHtml::activeLabel(Object(Page), 'author', Array)
+#6 /var/www/html/yii/framework/web/widgets/CActiveForm.php(560): CHtml::activeLabelEx(Object(Page), 'author', Array)
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(17): CActiveForm->labelEx(Object(Page), 'author')
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(19): CController->renderPartial('_form', Array)
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#16 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(27): CController->render('create', Array)
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#18 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/03 18:12:33 [error] [php] include(GxController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(3): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (3)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 18:12:34 [error] [php] include(GxController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(3): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (3)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 18:12:34 [error] [php] include(GxController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(3): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (3)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 18:13:08 [error] [php] include(GxController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(3): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (3)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 18:13:08 [error] [php] include(GxController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(3): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (3)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 18:13:08 [error] [php] include(GxController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(3): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (3)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 18:13:23 [error] [php] include(GxController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(3): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (3)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 18:13:28 [error] [php] include(GxController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(3): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (3)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 18:14:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/page".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/page/page
+---
+2012/05/03 18:14:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/page".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/page/page
+---
+2012/05/03 18:22:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/create".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/03 18:22:48 [error] [php] include(GxController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(3): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (3)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/03 18:24:03 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "label".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('label', Array)
+#1 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(119): CActiveRecord->__call('label', Array)
+#2 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(119): User->label(1)
+#3 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(165): GxActiveRecord->getRelationLabel('author')
+#4 /var/www/html/yii/framework/web/helpers/CHtml.php(1161): GxActiveRecord->getAttributeLabel('author')
+#5 /var/www/html/yii/framework/web/widgets/CActiveForm.php(545): CHtml::activeLabel(Object(Page), 'author', Array)
+#6 /var/www/html/yii/cms/protected/modules/page/views/page/_search.php(14): CActiveForm->label(Object(Page), 'author')
+#7 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(37): CController->renderPartial('_search', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('admin', Array, true)
+#15 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(73): CController->render('admin', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#17 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/admin')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/page/page/admin
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/03 18:28:11 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.page/models.Page" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/gtc/fullCrud/FullCrudCode.php(38): YiiBase::import('application.mod...', true)
+#1 /var/www/html/yii/framework/validators/CInlineValidator.php(43): FullCrudCode->validateModel('model', Array)
+#2 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(FullCrudCode), 'model')
+#3 /var/www/html/yii/framework/base/CModel.php(158): CValidator->validate(Object(FullCrudCode), NULL)
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(158): CModel->validate()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/fullCrud')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/gii/fullCrud
+HTTP_REFERER=http://localhost/yii/cms/gii/fullCrud
+---
+2012/05/03 18:31:01 [error] [exception.CException] exception 'CException' with message 'Property "User._label" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('_label')
+#1 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(318): CActiveRecord->__get('_label')
+#2 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(480): Relation->getRelatedData()
+#3 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(666): Relation->renderBelongsToSelection()
+#4 /var/www/html/yii/framework/web/CBaseController.php(174): Relation->run()
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): CBaseController->widget('Relation', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): CController->renderPartial('_form', Array)
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#12 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#14 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): CController->render('create', Array)
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#16 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#23 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#26 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/03 18:34:26 [error] [php] include(Relation.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): import()
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): PageController->createWidget()
+#3 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): PageController->widget()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): PageController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(749): PageController->renderPartial()
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): PageController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PageController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PageController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(257): PageController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): PageController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/views/page/_form.php (106)
+in /var/www/html/yii/cms/protected/modules/page/views/page/create.php (16)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (85)
+2012/05/03 18:34:27 [error] [php] include(Relation.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): import()
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): PageController->createWidget()
+#3 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): PageController->widget()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): PageController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(749): PageController->renderPartial()
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): PageController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PageController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PageController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(257): PageController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): PageController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/views/page/_form.php (106)
+in /var/www/html/yii/cms/protected/modules/page/views/page/create.php (16)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (85)
+2012/05/03 18:34:27 [error] [php] include(Relation.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): import()
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): PageController->createWidget()
+#3 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): PageController->widget()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): PageController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(749): PageController->renderPartial()
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): PageController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PageController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PageController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(257): PageController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): PageController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/views/page/_form.php (106)
+in /var/www/html/yii/cms/protected/modules/page/views/page/create.php (16)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (85)
+2012/05/03 18:34:28 [error] [php] include(Relation.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): import()
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): PageController->createWidget()
+#3 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): PageController->widget()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): PageController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(749): PageController->renderPartial()
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): PageController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PageController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PageController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(257): PageController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): PageController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/views/page/_form.php (106)
+in /var/www/html/yii/cms/protected/modules/page/views/page/create.php (16)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (85)
+2012/05/03 18:34:28 [error] [php] include(Relation.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): import()
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): PageController->createWidget()
+#3 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): PageController->widget()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): PageController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(749): PageController->renderPartial()
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): PageController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PageController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PageController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(257): PageController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): PageController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/views/page/_form.php (106)
+in /var/www/html/yii/cms/protected/modules/page/views/page/create.php (16)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (85)
+2012/05/03 18:34:29 [error] [php] include(Relation.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): import()
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): PageController->createWidget()
+#3 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): PageController->widget()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): PageController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(749): PageController->renderPartial()
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): PageController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PageController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PageController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(257): PageController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): PageController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/views/page/_form.php (106)
+in /var/www/html/yii/cms/protected/modules/page/views/page/create.php (16)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (85)
+2012/05/03 18:34:29 [error] [php] include(Relation.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): import()
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): PageController->createWidget()
+#3 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): PageController->widget()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): PageController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(749): PageController->renderPartial()
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): PageController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PageController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PageController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(257): PageController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): PageController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/views/page/_form.php (106)
+in /var/www/html/yii/cms/protected/modules/page/views/page/create.php (16)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (85)
+2012/05/03 18:34:29 [error] [php] include(Relation.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): import()
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): PageController->createWidget()
+#3 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): PageController->widget()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): PageController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(749): PageController->renderPartial()
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): PageController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PageController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PageController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(257): PageController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): PageController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/views/page/_form.php (106)
+in /var/www/html/yii/cms/protected/modules/page/views/page/create.php (16)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (85)
+2012/05/03 18:34:30 [error] [php] include(Relation.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): import()
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget()
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): PageController->createWidget()
+#3 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): PageController->widget()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): PageController->renderPartial()
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): PageController->renderInternal()
+#10 /var/www/html/yii/framework/web/CController.php(832): PageController->renderFile()
+#11 /var/www/html/yii/framework/web/CController.php(749): PageController->renderPartial()
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): PageController->render()
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PageController->runAction()
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PageController->filterAccessControl()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#20 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(257): PageController->runActionWithFilters()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): PageController->run()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/page/create
+in /var/www/html/yii/cms/protected/modules/page/views/page/_form.php (106)
+in /var/www/html/yii/cms/protected/modules/page/views/page/create.php (16)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (85)
+2012/05/03 18:34:51 [error] [exception.CException] exception 'CException' with message 'Property "User._label" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('_label')
+#1 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(318): CActiveRecord->__get('_label')
+#2 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(480): Relation->getRelatedData()
+#3 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(666): Relation->renderBelongsToSelection()
+#4 /var/www/html/yii/framework/web/CBaseController.php(174): Relation->run()
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): CBaseController->widget('Relation', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): CController->renderPartial('_form', Array)
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#12 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#14 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): CController->render('create', Array)
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#16 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#23 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#26 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/03 18:34:52 [error] [exception.CException] exception 'CException' with message 'Property "User._label" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('_label')
+#1 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(318): CActiveRecord->__get('_label')
+#2 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(480): Relation->getRelatedData()
+#3 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(666): Relation->renderBelongsToSelection()
+#4 /var/www/html/yii/framework/web/CBaseController.php(174): Relation->run()
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): CBaseController->widget('Relation', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): CController->renderPartial('_form', Array)
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#12 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#14 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): CController->render('create', Array)
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#16 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#23 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#26 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/03 18:34:52 [error] [exception.CException] exception 'CException' with message 'Property "User._label" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('_label')
+#1 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(318): CActiveRecord->__get('_label')
+#2 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(480): Relation->getRelatedData()
+#3 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(666): Relation->renderBelongsToSelection()
+#4 /var/www/html/yii/framework/web/CBaseController.php(174): Relation->run()
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): CBaseController->widget('Relation', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): CController->renderPartial('_form', Array)
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#12 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#14 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): CController->render('create', Array)
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#16 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#23 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#26 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/03 18:35:32 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/03 18:37:49 [error] [exception.CException] exception 'CException' with message 'Alias "applications.modules.page.models.Page" is invalid. Make sure it points to an existing directory or file.' in /var/www/html/yii/framework/YiiBase.php:343
+Stack trace:
+#0 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('applications.mo...', true)
+#1 /var/www/html/yii/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /var/www/html/yii/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(158): CModel->validate()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/gii/crud
+HTTP_REFERER=http://localhost/yii/cms/gii/crud
+---
+2012/05/03 18:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/settings".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/settings
+HTTP_REFERER=http://localhost/yii/cms/admin/user
+---
