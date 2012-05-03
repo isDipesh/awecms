@@ -3,3 +3,4 @@ protected/runtime/*
 protected/data/*.db
 protected/tests/report/*
 *.swp
+/protected/modules/cms/messages/.svn/

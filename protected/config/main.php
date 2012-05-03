@@ -77,10 +77,10 @@ return array(
                     'class' => 'CFileLogRoute',
                     'levels' => 'error, warning',
                 ),
-//                array(
-//                    'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
-//                //'ipFilters' => array('127.0.0.1', '192.168.1.215'),
-//                ),
+                array(
+                    'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
+                //'ipFilters' => array('127.0.0.1', '192.168.1.215'),
+                ),
             ),
         ),
         'user' => array(
@@ -107,7 +107,7 @@ return array(
                 'ext.gtc', // extensions/Gii Template 
             ),
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
-            'ipFilters' => array('127.0.0.1', '::1'),
+            //'ipFilters' => array('127.0.0.1', '::1'),
         ),
     ),
 );
