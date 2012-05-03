@@ -185,7 +185,8 @@ class Cms extends CActiveRecord
     
     public function getParents()
     {
-        $cond = $_GET['id'] ? 'id!='.$_GET['id'] : null;
+        $cond = '';
+        if (isset($_GET['id'])) $cond = $_GET['id'] ? 'id!='.$_GET['id'] : null;
         $models = Cms::model()->findAllByAttributes(array('type'=>self::PAGESET),$cond);
         $list = array();
         foreach ($models as $model)
@@ -304,13 +305,14 @@ class Cms extends CActiveRecord
             $lst = $list;
             $list = array();
         }
-        return $lst;
+        return $list;
     }
     
     /*** validator for URL (on update) ***/
     function isTaken()
     {
         $this->normalizeUrl();
+        $idCond = '';
         $params = array(
             ':url'=>$this->url,
             ':type_link'=>self::LINK,

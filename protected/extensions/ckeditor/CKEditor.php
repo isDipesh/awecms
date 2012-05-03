@@ -87,8 +87,9 @@ class CKEditor extends CInputWidget{
              $suffix = empty($lang) ? 'en' : ($p !== false) ? strtolower(substr($lang, 0, $p)) : strtolower($lang);
              if (in_array($suffix, $this->allowedLanguages)) $this->language = $suffix;
           }
-        if(isset($this->allowedLanguages[$language]))
-            $this->language=$language;
+          
+//        if(isset($this->allowedLanguages[$language]))
+//            $this->language=$language;
     }
 
     public function getLanguage(){

@@ -20,6 +20,7 @@ return array(
         'application.modules.user.components.*',
         'ext.gtc.components.*',
         'ext.giix-components.*', // giix components
+        'application.extensions.nestedset.*', // import nested set extension
     ),
     'behaviors' => array(
     // ...
@@ -69,6 +70,8 @@ return array(
         'errorHandler' => array(
             // use 'site/error' action to display errors
             'errorAction' => 'site/error',
+            //'class' => 'application.modules.cms.components.CmsHandler',
+            //'class' => 'site/error',
         ),
         'log' => array(
             'class' => 'CLogRouter',
@@ -77,10 +80,10 @@ return array(
                     'class' => 'CFileLogRoute',
                     'levels' => 'error, warning',
                 ),
-                array(
-                    'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
+                //array(
+                  //  'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
                 //'ipFilters' => array('127.0.0.1', '192.168.1.215'),
-                ),
+                //),
             ),
         ),
         'user' => array(
@@ -97,7 +100,12 @@ return array(
     ),
     //yum submodules
     'modules' => array(
+        'cms' => array(
+            // this layout will be set by default if no layout set for page
+            'defaultLayout' => 'cms', // this layout will be set by default if no layout set for page
+        ),
         'user',
+        'page',
         'admin',
         'gii' => array(
             'class' => 'system.gii.GiiModule',
@@ -106,8 +114,8 @@ return array(
                 'ext.giix-core', // giix generators
                 'ext.gtc', // extensions/Gii Template 
             ),
-            // If removed, Gii defaults to localhost only. Edit carefully to taste.
-            //'ipFilters' => array('127.0.0.1', '::1'),
+        // If removed, Gii defaults to localhost only. Edit carefully to taste.
+        //'ipFilters' => array('127.0.0.1', '::1'),
         ),
     ),
 );

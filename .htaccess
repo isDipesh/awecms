@@ -1,9 +1,10 @@
+Options +FollowSymLinks
+IndexIgnore */*
 RewriteEngine on
 
-
+# if a directory or a file exists, use it directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteRule ^(.*)\?*$ index.php/$1 [L,QSA]
-
-RewriteRule ^(.*)/login$ $1/apple [L]
+# otherwise forward it to index.php
+RewriteRule . index.php
