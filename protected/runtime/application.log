@@ -6413,3 +6413,433 @@ Stack trace:
 REQUEST_URI=/yii/cms/admin/settings
 HTTP_REFERER=http://localhost/yii/cms/admin/user
 ---
+2012/05/03 19:02:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/settings".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/settings
+HTTP_REFERER=http://localhost/yii/cms/admin/user
+---
+2012/05/03 19:02:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/settings".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/settings
+HTTP_REFERER=http://localhost/yii/cms/admin/user
+---
+2012/05/03 19:02:31 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(22): CController->render('index')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/settings
+HTTP_REFERER=http://localhost/yii/cms/admin/user
+---
+2012/05/03 19:02:32 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(22): CController->render('index')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/settings
+HTTP_REFERER=http://localhost/yii/cms/admin/user
+---
+2012/05/03 19:02:32 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(22): CController->render('index')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/settings
+HTTP_REFERER=http://localhost/yii/cms/admin/user
+---
+2012/05/03 19:02:32 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(22): CController->render('index')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/settings
+HTTP_REFERER=http://localhost/yii/cms/admin/user
+---
+2012/05/03 19:16:26 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:26 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:26 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:27 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:27 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:27 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:27 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:27 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:28 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:28 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:28 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:28 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:28 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:28 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:29 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:29 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:16:29 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:17:08 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('redirect', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->redirect('/')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:17:09 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('redirect', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->redirect('/')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:17:09 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('redirect', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->redirect('/')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:17:09 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('redirect', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->redirect('/')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:17:10 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('redirect', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->redirect('/')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:17:10 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): CComponent->__call('redirect', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(26): AdminModule->redirect('/')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:29:05 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(25): CComponent->__call('redirect', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(25): AdminModule->redirect('/')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:29:06 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(25): CComponent->__call('redirect', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(25): AdminModule->redirect('/')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:29:06 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "redirect".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(25): CComponent->__call('redirect', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(25): AdminModule->redirect('/')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:29:18 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(27): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(27): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:29:18 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(27): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(27): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
+2012/05/03 19:29:18 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(27): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(27): AdminModule->render('/user/login', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(SettingsController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings
+---
