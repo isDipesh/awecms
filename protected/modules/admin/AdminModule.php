@@ -20,31 +20,31 @@ class AdminModule extends CWebModule {
         if (parent::beforeControllerAction($controller, $action)) {
 
 
-            if (Yii::app()->user->isGuest) {
-                $model = new UserLogin;
-                //$this->redirect('/');
-                //die();
-                $this->render('/user/login', array('model' => $model));
-            } elseif (UserModule::isAdmin()) {
-
-                $dataProvider = new CActiveDataProvider('User', array(
-                            'criteria' => array(
-                                'condition' => 'status>' . User::STATUS_BANED,
-                            ),
-                            'pagination' => array(
-                                'pageSize' => Yii::app()->controller->module->user_page_size,
-                            ),
-                        ));
-                $this->render('/user/index', array(
-                    'dataProvider' => $dataProvider,
-                ));
-            } else {
-                $this->_model = Yii::app()->controller->module->user();
-                $this->render('/profile/profile', array(
-                    'model' => $this->_model,
-                    'profile' => $this->_model->profile,
-                ));
-            }
+//            if (Yii::app()->user->isGuest) {
+//                $model = new UserLogin;
+//                //$this->redirect('/');
+//                //die();
+//                $this->render('/user/login', array('model' => $model));
+//            } elseif (Yii::app()->getModule('user')->isAdmin()) {
+//
+//                $dataProvider = new CActiveDataProvider('User', array(
+//                            'criteria' => array(
+//                                'condition' => 'status>' . User::STATUS_BANED,
+//                            ),
+//                            'pagination' => array(
+//                                'pageSize' => Yii::app()->getModule('user')->user_page_size,
+//                            ),
+//                        ));
+//                $this->render('/user/index', array(
+//                    'dataProvider' => $dataProvider,
+//                ));
+//            } else {
+//                $this->_model = Yii::app()->getModule('user')->user();
+//                $this->render('/profile/profile', array(
+//                    'model' => $this->_model,
+//                    'profile' => $this->_model->profile,
+//                ));
+//            }
 
 
             // this method is called before any module controller action is performed

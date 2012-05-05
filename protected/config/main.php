@@ -105,6 +105,7 @@ return array(
         ),
         'user',
         'page',
+        'student',
         'admin',
         'gii' => array(
             'class' => 'system.gii.GiiModule',

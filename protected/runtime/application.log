@@ -6843,3 +6843,245 @@ Stack trace:
 #7 {main}
 REQUEST_URI=/yii/cms/admin/settings
 ---
+2012/05/05 07:31:11 [error] [php] include(UserModule.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(28): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin
+in /var/www/html/yii/cms/protected/modules/admin/AdminModule.php (28)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 07:33:47 [error] [exception.CException] exception 'CException' with message 'Property "AdminModule.user_page_size" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(106): CComponent->__get('user_page_size')
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(35): CModule->__get('user_page_size')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/05 07:33:48 [error] [exception.CException] exception 'CException' with message 'Property "AdminModule.user_page_size" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(106): CComponent->__get('user_page_size')
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(35): CModule->__get('user_page_size')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/05 07:33:48 [error] [exception.CException] exception 'CException' with message 'Property "AdminModule.user_page_size" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(106): CComponent->__get('user_page_size')
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(35): CModule->__get('user_page_size')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/05 07:33:49 [error] [exception.CException] exception 'CException' with message 'Property "AdminModule.user_page_size" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(106): CComponent->__get('user_page_size')
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(35): CModule->__get('user_page_size')
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/05 07:34:16 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(40): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(40): AdminModule->render('/user/index', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/05 07:34:17 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(40): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(40): AdminModule->render('/user/index', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/05 07:35:10 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(40): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(40): AdminModule->render('/user/index', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/05 07:35:11 [error] [exception.CException] exception 'CException' with message 'AdminModule and its behaviors do not have a method or closure named "render".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(40): CComponent->__call('render', Array)
+#1 /var/www/html/yii/cms/protected/modules/admin/AdminModule.php(40): AdminModule->render('/user/index', Array)
+#2 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/05 07:42:28 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.student.models.Page" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(59): YiiBase::import('application.mod...', true)
+#1 /var/www/html/yii/framework/validators/CInlineValidator.php(43): CrudCode->validateModel('model', Array)
+#2 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 /var/www/html/yii/framework/base/CModel.php(158): CValidator->validate(Object(CrudCode), NULL)
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(158): CModel->validate()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/crud')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/gii/crud
+HTTP_REFERER=http://localhost/yii/cms/gii/crud
+---
+2012/05/05 07:50:18 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/admin/views/default/index.php:5)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(749): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(22): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin
+in /var/www/html/yii/cms/protected/modules/admin/views/default/index.php (5)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 07:50:19 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/admin/views/default/index.php:5)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): DefaultController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(749): DefaultController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(22): DefaultController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): DefaultController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): DefaultController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin
+in /var/www/html/yii/cms/protected/modules/admin/views/default/index.php (5)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 07:50:40 [error] [php] include(Lookup.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/views/default/index.php(29): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): DefaultController->renderInternal()
+#3 /var/www/html/yii/framework/web/CController.php(832): DefaultController->renderFile()
+#4 /var/www/html/yii/framework/web/CController.php(749): DefaultController->renderPartial()
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(22): DefaultController->render()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#8 /var/www/html/yii/framework/web/CController.php(277): DefaultController->runAction()
+#9 /var/www/html/yii/framework/web/CController.php(257): DefaultController->runActionWithFilters()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin
+in /var/www/html/yii/cms/protected/modules/admin/views/default/index.php (29)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 07:50:40 [error] [php] include(Lookup.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/views/default/index.php(29): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): DefaultController->renderInternal()
+#3 /var/www/html/yii/framework/web/CController.php(832): DefaultController->renderFile()
+#4 /var/www/html/yii/framework/web/CController.php(749): DefaultController->renderPartial()
+#5 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(22): DefaultController->render()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#8 /var/www/html/yii/framework/web/CController.php(277): DefaultController->runAction()
+#9 /var/www/html/yii/framework/web/CController.php(257): DefaultController->runActionWithFilters()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin
+in /var/www/html/yii/cms/protected/modules/admin/views/default/index.php (29)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 07:57:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/giixCrud".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/giixCrud')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/gii/giixCrud
+---
+2012/05/05 08:00:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yc`.`page`, CONSTRAINT `page_ibfk_2` FOREIGN KEY (`parent`) REFERENCES `page` (`id`)). The SQL statement executed was: INSERT INTO `page` (`status`, `order`, `type`, `comment_status`, `permission`, `author`, `title`, `content`, `excerpt`, `created_at`, `modified_at`, `parent`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12). Bound with :yp0='published', :yp1=0, :yp2='post', :yp3='open', :yp4='all', :yp5=1, :yp6='Title Here', :yp7='The content goes here.', :yp8='Summary', :yp9='2012-05-05', :yp10='2012-05-05', :yp11=0, :yp12='password'.
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (72)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 08:00:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yc`.`page`, CONSTRAINT `page_ibfk_2` FOREIGN KEY (`parent`) REFERENCES `page` (`id`)). The SQL statement executed was: INSERT INTO `page` (`status`, `order`, `type`, `comment_status`, `permission`, `author`, `title`, `content`, `excerpt`, `created_at`, `modified_at`, `parent`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12). Bound with :yp0='published', :yp1=0, :yp2='post', :yp3='open', :yp4='all', :yp5=1, :yp6='Title Here', :yp7='The content goes here.', :yp8='Summary', :yp9='2012-05-05', :yp10='2012-05-05', :yp11=0, :yp12='password'' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1014): CDbCommand->execute()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(72): CActiveRecord->save()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#14 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/create
+---
