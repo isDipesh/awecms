@@ -7085,3 +7085,226 @@ Stack trace:
 REQUEST_URI=/yii/cms/page/page/create
 HTTP_REFERER=http://localhost/yii/cms/page/page/create
 ---
+2012/05/05 08:07:15 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/
+---
+2012/05/05 08:10:08 [error] [exception.CException] exception 'CException' with message 'Property "User._label" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('_label')
+#1 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(318): CActiveRecord->__get('_label')
+#2 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(480): Relation->getRelatedData()
+#3 /var/www/html/yii/cms/protected/extensions/gtc/components/Relation.php(666): Relation->renderBelongsToSelection()
+#4 /var/www/html/yii/framework/web/CBaseController.php(174): Relation->run()
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(106): CBaseController->widget('Relation', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/page/views/page/create.php(16): CController->renderPartial('_form', Array)
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#12 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('create', Array, true)
+#14 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(85): CController->render('create', Array)
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#16 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(1088): CFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#23 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#25 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/creat...')
+#26 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/05 08:12:10 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/
+---
+2012/05/05 08:12:20 [error] [exception.CException] exception 'CException' with message 'Alias "PortletGenerator.widgets.ddeditor.DDEditor" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('PortletGenerato...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PortletGenerator), 'PortletGenerato...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('PortletGenerato...', Array)
+#3 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/__comment.php(9): CBaseController->widget('PortletGenerato...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CTabView.php(207): CController->renderPartial('__comment', Array)
+#8 /var/www/html/yii/framework/web/widgets/CTabView.php(139): CTabView->renderBody()
+#9 /var/www/html/yii/framework/web/CBaseController.php(174): CTabView->run()
+#10 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/index.php(18): CBaseController->widget('system.web.widg...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#15 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/portlet')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/gii/portlet
+HTTP_REFERER=http://localhost/yii/cms/gii/fullCrud
+---
+2012/05/05 11:09:05 [error] [php] Invalid argument supplied for foreach() (/var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php:97)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(751): UserController->renderFile()
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php(50): UserController->render()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UserController->runAction()
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): UserController->filterAccessControl()
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(257): UserController->runActionWithFilters()
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): UserController->run()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/user
+in /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php (97)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 12:47:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/view/id/3".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/admin/vie...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/admin/view/id/3
+HTTP_REFERER=http://localhost/yii/cms/admin/user
+---
+2012/05/05 12:47:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/view/id/3".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/admin/vie...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/admin/view/id/3
+HTTP_REFERER=http://localhost/yii/cms/admin/user
+---
+2012/05/05 13:35:49 [error] [php] print_r() expects at least 1 parameter, 0 given (/var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php:76)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): UserController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(751): UserController->renderFile()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php(50): UserController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UserController->runAction()
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): UserController->filterAccessControl()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(257): UserController->runActionWithFilters()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(276): UserController->run()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/user
+in /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php (76)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 13:36:50 [error] [php] Undefined index: Users (/var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php:72)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(751): UserController->renderFile()
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php(50): UserController->render()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UserController->runAction()
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): UserController->filterAccessControl()
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(257): UserController->runActionWithFilters()
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): UserController->run()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/user
+in /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php (72)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 13:36:51 [error] [php] Undefined index: Users (/var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php:72)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(751): UserController->renderFile()
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php(50): UserController->render()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UserController->runAction()
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): UserController->filterAccessControl()
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(257): UserController->runActionWithFilters()
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): UserController->run()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/user
+in /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php (72)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 13:52:47 [error] [php] Use of undefined constant fillspace - assumed 'fillspace' (/var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php:85)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(751): UserController->renderFile()
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php(50): UserController->render()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): UserController->runAction()
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1088): CAccessControlFilter->filter()
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): UserController->filterAccessControl()
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(257): UserController->runActionWithFilters()
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): UserController->run()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/user
+in /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php (85)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 14:45:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "server".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('server')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('server')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/server
+HTTP_REFERER=http://localhost/yii/cms/admin/settings
+---

@@ -13,22 +13,25 @@
                 }).next().hide();
             });
         </script>
+        <style type="text/css">
+        </style>
     </head>
 
     <body>
 
         <div id="main_container">
             <header>
-                <h1>
+                <h2 id="title">
                     <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Yii::app()->name, array('/')); ?>
-                </h1>
+                </h2>
                 <nav id="header_right">
                     <ul id="header_links">
                         <li><?php echo AdminModule::t('Welcome') . ' ' . Yii::app()->user->name; ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Account Settings'), array('/profile/edit')); ?></li> |
-                        <li><?php echo CHtml::link(AdminModule::t('Logout'), array('/user/logout')); ?></li> |
+                        <li><?php echo CHtml::link(AdminModule::t('Visit Website'), array('/')); ?></li> |
+                        <li><?php echo CHtml::link(AdminModule::t('Logout'), array('/user/logout')); ?></li>
                     </ul>
-                    <?php echo CHtml::link(AdminModule::t('Visit Website'), array('/')); ?>
+
                 </nav>
                 <nav>
                     <div class="grid_5 sidebar" style="overflow: auto">
@@ -46,49 +49,57 @@
                 </nav>
 
             </header>
+            <div class="clear"></div>
             <?php
             //print_r(Admin::getModules());
 
             $specialModules = array('admin', 'user', 'gii');
             $adminModule = Yii::app()->getModule('admin');
 
+            //specify menu items here
+            $menuItems['Users'] = array(
+                array('List Users', array('/admin/user/')),
+                array('Add User', array('/admin/user/create'))
+            );
 
+            $menuItems['Settings'] = array(
+                array('App', array('/admin/settings/')),
+                array('Server', array('/admin/settings/server'))
+            );
 
-
-            $menuConfig['Users']['List Users'] = "/admin/user/";
-            $menuConfig['Users']['Add User'] = "/admin/user/create/";
-            $menuConfig['Users']['View Profile Fields'] = "/admin/profileField/";
-            $menuConfig['Users']['Add Profile Field'] = "/admin/profileField/create/";
-            $menuConfig['Settings']['Site'] = "/admin/settings";
-            $menuConfig['Gii']['Create CRUD'] = "http://gii/crud/";
-
-
-            foreach (Yii::app()->getModules() as $key => $value) {
-                //echo $key;
-                //print_r($value);
+            //reading the menu items into an array
+            $menuConfig = array();
+            foreach ($menuItems as $menuName => $menuItem) {
+                $menuConfig[$menuName] = '';
+                foreach ($menuItem as $menuLink) {
+                    $menuConfig[$menuName].=CHtml::link(AdminModule::t($menuLink[0]), $menuLink[1]) . "<br/>";
+                }
             }
-
-
-
             ?>
             <nav id="left_sidebar">
                 <?php
-                foreach ($menuConfig as $menuName => $menuHeads) {
-                    echo '<div class="accordion"><div class="head">' . $menuName . ':</div><div class="accordion_items">';
-                    foreach ($menuHeads as $menu => $link) {
-                        echo CHtml::link(AdminModule::t($menu), array($link));
-                        echo '<br/>';
-                    }
-                    echo '</div></div>';
-                }
+                $this->widget('zii.widgets.jui.CJuiAccordion', array(
+                    'panels' => $menuConfig,
+                    'options' => array(
+                        'collapsible' => true,
+                        'active' => 0,
+                        'animated' => 'slide',
+                        'navigation' => true,
+                        'collapsible' => false,
+                    ),
+                    'htmlOptions' => array(
+                        'style' => 'width:220px;'
+                    ),
+                ));
                 ?>
 
 
             </nav>
-
-            <?php
-            echo $content;
-            ?>
+            <div id="main_wrapper">
+                <?php
+                echo $content;
+                ?>
+            </div>
 
 
 
