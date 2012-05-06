@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/var/www/html/yii/cms/protected/modules/admin/AdminModule.php</file>
+        <file>file:/var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php</file>
+        <file>file:/var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php</file>
+        <file>file:/var/www/html/yii/cms/protected/modules/admin/controllers/UserController.php</file>
+        <file>file:/var/www/html/yii/cms/protected/modules/admin/views/user/index.php</file>
+        <file>file:/var/www/html/yii/cms/protected/modules/admin/assets/admin.css</file>
+        <file>file:/var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php</file>
+        <file>file:/var/www/html/yii/cms/protected/components/CmsSettings.php</file>
+        <file>file:/var/www/html/yii/cms/protected/config/main.php</file>
+        <file>file:/var/www/html/yii/cms/protected/components/Awecms.php</file>
+    </open-files>
 </project-private>

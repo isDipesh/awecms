@@ -17,36 +17,12 @@ class AdminModule extends CWebModule {
     }
 
     public function beforeControllerAction($controller, $action) {
+
+        if (!Yii::app()->getModule('user')->isAdmin()) {
+            throw new CHttpException(403, 'Action is forbidden.');
+        }
+
         if (parent::beforeControllerAction($controller, $action)) {
-
-
-//            if (Yii::app()->user->isGuest) {
-//                $model = new UserLogin;
-//                //$this->redirect('/');
-//                //die();
-//                $this->render('/user/login', array('model' => $model));
-//            } elseif (Yii::app()->getModule('user')->isAdmin()) {
-//
-//                $dataProvider = new CActiveDataProvider('User', array(
-//                            'criteria' => array(
-//                                'condition' => 'status>' . User::STATUS_BANED,
-//                            ),
-//                            'pagination' => array(
-//                                'pageSize' => Yii::app()->getModule('user')->user_page_size,
-//                            ),
-//                        ));
-//                $this->render('/user/index', array(
-//                    'dataProvider' => $dataProvider,
-//                ));
-//            } else {
-//                $this->_model = Yii::app()->getModule('user')->user();
-//                $this->render('/profile/profile', array(
-//                    'model' => $this->_model,
-//                    'profile' => $this->_model->profile,
-//                ));
-//            }
-
-
             // this method is called before any module controller action is performed
             $controller->layout = 'main';
             return true;

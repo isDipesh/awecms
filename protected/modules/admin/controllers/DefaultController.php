@@ -14,7 +14,7 @@ class DefaultController extends Controller {
 
 
         //Yii::app()->clientScript->registerCssFile(Yii::app()->clientScript->getCoreScriptUrl() . '/jui/css/base/jquery-ui.css');
-        Yii::app()->getClientScript()->registerCoreScript( 'jquery.ui' );
+        Yii::app()->getClientScript()->registerCoreScript('jquery.ui');
 
 //        } else {//finally it should be him, the admin
 //            $this->render('index');
