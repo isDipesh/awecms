@@ -51,58 +51,31 @@
             </header>
             <div class="clear"></div>
             <?php
-            //print_r(Admin::getModules());
-
-            $specialModules = array('admin', 'user', 'gii');
-            $adminModule = Yii::app()->getModule('admin');
-
-            //specify menu items here
-            $menuItems['Users'] = array(
-                array('List Users', array('/admin/user/')),
-                array('Add User', array('/admin/user/create'))
-            );
-
-            $menuItems['Settings'] = array(
-                array('App', array('/admin/settings/')),
-                array('Server', array('/admin/settings/server'))
-            );
-
-            //reading the menu items into an array
-            $menuConfig = array();
-            foreach ($menuItems as $menuName => $menuItem) {
-                $menuConfig[$menuName] = '';
-                foreach ($menuItem as $menuLink) {
-                    $menuConfig[$menuName].=CHtml::link(AdminModule::t($menuLink[0]), $menuLink[1]) . "<br/>";
-                }
-            }
             ?>
             <nav id="left_sidebar">
-                <?php
-                $this->widget('zii.widgets.jui.CJuiAccordion', array(
-                    'panels' => $menuConfig,
-                    'options' => array(
-                        'collapsible' => true,
-                        'active' => 0,
-                        'animated' => 'slide',
-                        'navigation' => true,
-                        'collapsible' => false,
-                    ),
-                    'htmlOptions' => array(
-                        'style' => 'width:220px;'
-                    ),
-                ));
-                ?>
+            <?php
+            $this->widget('zii.widgets.jui.CJuiAccordion', array(
+                'panels' => AdminModule::getMenuConfig(),
+                'options' => array(
+                    'collapsible' => true,
+                    'active' => 0,
+                    'animated' => 'slide',
+                    'navigation' => true,
+                    'collapsible' => false,
+                ),
+                'htmlOptions' => array(
+                    'style' => 'width:220px;'
+                ),
+            ));
+            ?>
 
 
             </nav>
             <div id="main_wrapper">
-                <?php
-                echo $content;
-                ?>
+<?php
+echo $content;
+?>
             </div>
-
-
-
         </div>
         <footer>
 

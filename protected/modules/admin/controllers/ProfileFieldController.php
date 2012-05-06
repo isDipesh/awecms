@@ -10,36 +10,6 @@ class ProfileFieldController extends Controller {
     public $defaultAction = 'admin';
 
     /**
-     * @return array action filters
-     */
-    public function filters() {
-        return CMap::mergeArray(parent::filters(), array(
-                    'accessControl', // perform access control for CRUD operations
-                ));
-    }
-
-    /**
-     * Specifies the access control rules.
-     * This method is used by the 'accessControl' filter.
-     * @return array access control rules
-     */
-    public function accessRules() {
-        return array(
-            array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('*'),
-                'users' => array('*'),
-            ),
-            array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions' => array('create', 'update', 'view', 'admin', 'delete'),
-                'users' => Yii::app()->getModule('user')->getAdmins(),
-            ),
-            array('deny', // deny all users
-                'users' => array('*'),
-            ),
-        );
-    }
-
-    /**
      * Displays a particular model.
      */
     public function actionView() {
