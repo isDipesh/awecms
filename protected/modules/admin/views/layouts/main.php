@@ -2,7 +2,7 @@
 <html lang="<?php echo Yii::app()->language ?>">
     <head>
         <meta charset=utf-8" />
-        <title>Dashboard : <?php echo Yii::app()->name ?></title>
+        <title>Dashboard : <?php echo Awecms::getSiteName() ?></title>
         <?php $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.admin.assets')) . '/'; ?>
         <link rel="stylesheet" type="text/css" href="<?php echo $assetsUrl; ?>admin.css?<?php echo time() ?>"/>
         <script type="text/javascript">
@@ -22,7 +22,7 @@
         <div id="main_container">
             <header>
                 <h2 id="title">
-                    <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Yii::app()->name, array('/')); ?>
+                    <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Awecms::getSiteName(), array('/admin')); ?>
                 </h2>
                 <nav id="header_right">
                     <ul id="header_links">

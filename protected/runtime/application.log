@@ -7308,3 +7308,128 @@ Stack trace:
 REQUEST_URI=/yii/cms/admin/settings/server
 HTTP_REFERER=http://localhost/yii/cms/admin/settings
 ---
+2012/05/05 15:33:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "server".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('server')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('server')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/server
+HTTP_REFERER=http://localhost/yii/cms/admin/settings
+---
+2012/05/05 15:33:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/settingss".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/settingss')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/settingss
+---
+2012/05/05 15:57:10 [error] [php] include(CmsSettings.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/base/CModule.php(387): createComponent()
+#2 /var/www/html/yii/framework/base/CModule.php(104): CWebApplication->getComponent()
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(10): CWebApplication->__get()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): SettingsController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (10)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 15:57:11 [error] [php] include(CmsSettings.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/base/CModule.php(387): createComponent()
+#2 /var/www/html/yii/framework/base/CModule.php(104): CWebApplication->getComponent()
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(10): CWebApplication->__get()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): SettingsController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (10)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 15:57:11 [error] [php] include(CmsSettings.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/base/CModule.php(387): createComponent()
+#2 /var/www/html/yii/framework/base/CModule.php(104): CWebApplication->getComponent()
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(10): CWebApplication->__get()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): SettingsController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (10)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 15:57:11 [error] [php] include(CmsSettings.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/base/CModule.php(387): createComponent()
+#2 /var/www/html/yii/framework/base/CModule.php(104): CWebApplication->getComponent()
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(10): CWebApplication->__get()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): SettingsController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (10)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 16:02:27 [error] [php] Undefined variable: categoryName (/var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:10)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): SettingsController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (10)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 16:02:27 [error] [php] Undefined variable: categoryName (/var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:10)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): SettingsController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (10)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/05 19:08:31 [error] [php] Non-static method Awecms::getSiteName() should not be called statically, assuming $this from incompatible context (/var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php:5)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(751): DefaultController->renderFile()
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(22): DefaultController->render()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(277): DefaultController->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(257): DefaultController->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): DefaultController->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/
+in /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php (5)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php (22)
+in /var/www/html/yii/cms/index.php (18)
