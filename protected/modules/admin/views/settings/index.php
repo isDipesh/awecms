@@ -5,4 +5,7 @@ $this->breadcrumbs = array(
 );
 ?>
 
-<?php echo $this->renderPartial('_form', array('settings' => $settings)); ?>
+<?php
+
+$this->widget('EDynamicForm', array('id' => 'id', 'class' => 'settings', 'model' => $settings));
+?>

@@ -12,10 +12,14 @@ class EDynamicForm extends CWidget {
     public $action = null;
     public $method = 'post';
     public $model = null;
+    public $class = null;
 
     // you put as many properties as needed
     public function init() {
-        // init procedures here
+        if ($this->class)
+            $this->class = $this->class . " dynamicForm";
+        else
+            $this->class = "dynamicForm";
     }
 
     public function getlabel($name) {
@@ -31,17 +35,17 @@ class EDynamicForm extends CWidget {
     public function run() {
 
         //begin form
-        echo CHtml::beginForm($this->action, $this->method, array('id' => $this->id,
+        echo CHtml::beginForm($this->action, $this->method, array(
+            'id' => $this->id,
             'enctype' => $this->enctype,
+            'class' => $this->class,
         ));
 
-        //write attributes
 
         foreach ($this->model as $item) {
 
             $name = Awecms::generateFriendlyName($item["key"]);
 
-            //print_r($item);
             switch ($item['type']) {
                 case 'textfield':
                     echo $this->getFullTextField($item);
