@@ -47,10 +47,18 @@ class AdminModule extends CWebModule {
             array('Add Profile Fields', array('/admin/profileField/create')),
         );
 
-        $menuItems['Settings'] = array(
-            array('Basic Site Settings', array('/admin/settings/')),
-            array('Server Settings', array('/admin/settings/server')),
-        );
+//        $menuItems['Settings'] = array(
+//            array('Basic Site Settings', array('/admin/settings/')),
+//            array('Server Settings', array('/admin/settings/server')),
+//        );
+
+
+        //for settings
+        foreach (Settings::getCategories() as $settingsCategory) {
+            $menuItems['Settings'][] = array(Awecms::generateFriendlyName($settingsCategory), array('/admin/settings/' . $settingsCategory));
+        }
+
+        //$menuItems['Settings'] = $a;
 
         //reading the menu items into an array
         $menuConfig = array();

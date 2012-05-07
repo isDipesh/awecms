@@ -16,6 +16,7 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.extensions.*',
         'application.modules.user.models.*',
         'application.modules.user.components.*',
         'ext.gtc.components.*',

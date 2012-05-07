@@ -1,10 +1,9 @@
-
 <div class="form">
-    <?php $form = $this->beginWidget('CActiveForm'); ?>
-    
 
-    
+    <?php
+    //Settings::set('all');
+    //die();
+    ?>
 
-
-    <?php $this->endWidget(); ?>
+    <?php $this->widget('EDynamicForm', array('id' => 'id', 'model' => $settings)); ?>
 </div>

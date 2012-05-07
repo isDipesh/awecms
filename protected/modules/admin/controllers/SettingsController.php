@@ -2,11 +2,20 @@
 
 class SettingsController extends Controller {
 
-    public function actionIndex() {
+    public $defaultAction = 'site';
+
+    public function actionSite() {
+
         $dataProvider = array(
-            'settings' => Settings::get('system'),
+            'settings' => Settings::get('site'),
         );
         $this->render('index', $dataProvider);
+    }
+
+    public function beforeAction($action) {
+        //Yii::app()->catchAllRequest = "hey" ;
+
+        return true;
     }
 
 }

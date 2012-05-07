@@ -2,11 +2,11 @@
 
 class Settings {
 
-    private static $_settingsTable = '{{settings}}';
+    private static $_settingsTable = '{{setting}}';
     protected static $_dbComponentId = 'db';
 
-    public static function get($category = 'system', $key = null) {
-        $sql = 'SELECT `key`, `value`, `serialized` FROM ' . Settings::getSettingsTable() . ' WHERE `category`=:cat';
+    public static function get($category = 'site', $key = null) {
+        $sql = 'SELECT `key`, `value`, `type` FROM ' . Settings::getSettingsTable() . ' WHERE `category`=:cat';
         if ($key) {
             $sql .= " AND `key`='" . $key . "'";
         }
@@ -14,57 +14,62 @@ class Settings {
         $command = $connection->createCommand($sql);
         $command->bindParam(':cat', $category);
         $resultItems = $command->queryAll();
-        //return $resultItems;
         $result = array();
         foreach ($resultItems as $item) {
-            //$resultItem
+            //TODO
+            $resultItem['type'] = $item['type'];
             $resultItem['key'] = $item['key'];
-            if ($item['serialized'])
+            if ($item['type'] == 'array' || $item['type'] == 'object')
                 $resultItem['value'] = @unserialize($item['value']);
             else
                 $resultItem['value'] = $item['value'];
             $result[] = $resultItem;
         }
+
         if ($key) {
-            return $result[0]['value'];
+            if (count($result))
+                return $result[0]['value'];
+            else
+                return;
         }
         //return Awecms::array_to_object($result);
         return $result;
     }
 
-    public static function set($category = 'system', $key = '', $value = '') {
+    public static function set($category = 'system', $key = '', $value = null, $forcedType = null) {
+        //calling set without value will nullify the value column
         if (is_array($key)) {
             foreach ($key as $keyItem) {
-                Settings::finalSet($category, $keyItem[0], $keyItem[1]);
+                Settings::finalSet($category, $keyItem[0], $keyItem[1], $forcedType);
             }
         } else {
-            Settings::finalSet($category, $key, $value);
+            Settings::finalSet($category, $key, $value, $forcedType);
         }
     }
 
-    private static function finalSet($category, $key, $value) {
-        $serialized = 0;
+    private static function finalSet($category, $key, $value, $type) {
         $connection = Settings::getDbComponent();
         $command = $connection->createCommand('SELECT id FROM ' . Settings::getSettingsTable() . ' WHERE `category`=:cat AND `key`=:key LIMIT 1');
         $command->bindParam(':cat', $category);
         $command->bindParam(':key', $key);
         $result = $command->queryRow();
+        if (!$type)
+            $type = Awecms::typeOf($value);
 
-        //serialize if it's an array
-        if (is_array($value)) {
+        //serialize if it's an array or object
+        if (in_array($type, array('array', 'object'))) {
             $value = @serialize($value);
-            $serialized = 1;
         }
 
         if (!empty($result))
-            $command = $connection->createCommand('UPDATE ' . Settings::getSettingsTable() . ' SET `value`=:value, `serialized`=:serialized WHERE `category`=:cat AND `key`=:key');
+            $command = $connection->createCommand('UPDATE ' . Settings::getSettingsTable() . ' SET `value`=:value, `type`=:type WHERE `category`=:cat AND `key`=:key');
         else
-            $command = $connection->createCommand('INSERT INTO ' . Settings::getSettingsTable() . ' (`category`,`key`,`value`,`serialized`) VALUES(:cat,:key,:value,:serialized)');
+            $command = $connection->createCommand('INSERT INTO ' . Settings::getSettingsTable() . ' (`category`,`key`,`value`,`type`) VALUES(:cat,:key,:value,:type)');
 
         $command->bindParam(':cat', $category);
         $command->bindParam(':key', $key);
         $command->bindParam(':value', $value);
-        $command->bindParam(':serialized', $serialized);
+        $command->bindParam(':type', $type);
         $command->execute();
     }
 
@@ -77,7 +82,7 @@ class Settings {
     }
 
     public static function getCategories() {
-        return array('system','admin','themes');
+        return array('system', 'admin', 'themes');
     }
 
     public function attributeNames() {

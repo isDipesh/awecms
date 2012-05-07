@@ -72,6 +72,10 @@ header a{
     color: 036;
 }
 
+.right{
+    float:right;
+}
+
 #yw0{
     padding: 0;
 }

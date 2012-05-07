@@ -2,11 +2,9 @@
 
 class Awecms {
 
-
-
     public static function getSiteName() {
-        if (Awecms::get('system', 'site_name'))
-            return Awecms::get('system', 'site_name');
+        if (Settings::get('site', 'site_name'))
+            return Settings::get('site', 'site_name');
         else
             return Yii::app()->name;
     }
@@ -21,6 +19,36 @@ class Awecms {
             }
         }
         return $obj;
+    }
+
+    public static function generateFriendlyName($name) {
+        return ucwords(trim(strtolower(str_replace(array('-', '_', '.'), ' ', preg_replace('/(?<![A-Z])[A-Z]/', ' \0', $name)))));
+    }
+
+    public static function typeOf($var) {
+        if (is_string($var)) {
+
+            if (preg_match('/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/', $var))
+                return 'email';
+
+            //if url
+            if (preg_match('/^https?:\/\/[a-z0-9-]+(\.[a-z0-9-]+)+/i', $var)) {
+                //check for image url
+                // Parse the url into individual components
+                $url_parse = parse_url($var);
+                // could be any kind of weird site like an ftp or something, restrict to http and https
+                if (($url_parse['scheme'] == 'http') || ($url_parse['scheme'] == 'https')) {
+                    // basename() strips off any preceding directories
+                    $file = pathinfo(basename($url_parse["path"]));
+                    if (isset($file['extension']) && in_array($file['extension'], array('jpg', 'png', 'gif', 'jpeg'))) {
+                        return 'image_url';
+                    }
+                }
+                return 'url';
+            }
+            return 'textfield';
+        }
+        return (gettype($var));
     }
 
 }
