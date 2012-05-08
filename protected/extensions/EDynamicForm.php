@@ -53,12 +53,17 @@ class EDynamicForm extends CWidget {
                     break;
                 case 'boolean':
                     echo $this->getlabel($item['key']);
+                    echo CHtml::hiddenField($item['key'],0);
                     echo CHtml::checkBox($item['key'], $item['value']);
                     echo "<br/>";
                     break;
                 case 'image_url':
                     echo $this->getFullTextField($item);
                     echo "<a class=\"right\" href=\"{$item["value"]}\" target=\"_blank\"><img src=\"{$item["value"]}\" title=\"{$name}\" alt=\"{$name}\" /></a>";
+                    echo "<br/>";
+                    break;
+                case 'email':
+                    echo $this->getFullTextField($item);
                     echo "<br/>";
                     break;
                 case 'textarea':
@@ -73,6 +78,7 @@ class EDynamicForm extends CWidget {
                     break;
             }
         }
+        echo CHtml::submitButton('Submit!');
         echo CHtml::submitButton('Submit!');
         echo CHtml::endForm();
     }

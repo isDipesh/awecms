@@ -39,15 +39,16 @@ class Settings {
     public static function set($category = 'system', $key = '', $value = null, $forcedType = null) {
         //calling set without value will nullify the value column
         if (is_array($key)) {
-            foreach ($key as $keyItem) {
-                Settings::finalSet($category, $keyItem[0], $keyItem[1], $forcedType);
+            foreach ($key as $index => $keyItem) {
+                Settings::finalSet($category, $index, $keyItem, $forcedType);
             }
         } else {
             Settings::finalSet($category, $key, $value, $forcedType);
         }
     }
 
-    private static function finalSet($category, $key, $value, $type) {
+    public static function finalSet($category, $key, $value, $type) {
+
         $connection = Settings::getDbComponent();
         $command = $connection->createCommand('SELECT id FROM ' . Settings::getSettingsTable() . ' WHERE `category`=:cat AND `key`=:key LIMIT 1');
         $command->bindParam(':cat', $category);
@@ -62,14 +63,15 @@ class Settings {
         }
 
         if (!empty($result))
-            $command = $connection->createCommand('UPDATE ' . Settings::getSettingsTable() . ' SET `value`=:value, `type`=:type WHERE `category`=:cat AND `key`=:key');
-        else
+            $command = $connection->createCommand('UPDATE ' . Settings::getSettingsTable() . ' SET `value`=:value WHERE `category`=:cat AND `key`=:key');
+        else {
             $command = $connection->createCommand('INSERT INTO ' . Settings::getSettingsTable() . ' (`category`,`key`,`value`,`type`) VALUES(:cat,:key,:value,:type)');
+            $command->bindParam(':type', $type);
+        }
 
         $command->bindParam(':cat', $category);
         $command->bindParam(':key', $key);
         $command->bindParam(':value', $value);
-        $command->bindParam(':type', $type);
         $command->execute();
     }
 

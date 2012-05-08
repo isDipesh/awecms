@@ -5,12 +5,21 @@ class SettingsController extends Controller {
     public $defaultAction = 'site';
 
     public function actionSite() {
-
-        $this->missingAction('site');
+        $this->showSettings('site');
     }
 
     public function missingAction($actionID) {
-        
+        $categories = Settings::getCategories();
+        if (in_array($actionID, $categories))
+            $this->showSettings($actionID);
+        else
+            throw new CHttpException(404, 'No such category exists for settings!');
+    }
+
+    public function showSettings($actionID) {
+        if (isset($_POST)) {
+            Settings::set($actionID, Awecms::removeSubmitFromPost($_POST));
+        }
         $this->layout = 'main';
         $dataProvider = array(
             'settings' => Settings::get($actionID),

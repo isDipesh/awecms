@@ -11704,3 +11704,81 @@ Stack trace:
 #7 {main}
 REQUEST_URI=/yii/cms/admin/settings/system
 ---
+2012/05/08 09:47:43 [error] [php] Missing argument 4 for Settings::finalSet(), called in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php on line 18 and defined (/var/www/html/yii/cms/protected/components/Settings.php:50)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionSite()
+#1 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/
+in /var/www/html/yii/cms/protected/components/Settings.php (50)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (18)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (9)
+2012/05/08 09:52:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: UPDATE setting SET `value`=:value WHERE `category`=:cat AND `key`=:key. Bound with :cat='site', :key='site_name', :value='My Site', :type='textfield'.
+in /var/www/html/yii/cms/protected/components/Settings.php (74)
+in /var/www/html/yii/cms/protected/components/Settings.php (43)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (19)
+2012/05/08 09:52:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: UPDATE setting SET `value`=:value WHERE `category`=:cat AND `key`=:key. Bound with :cat='site', :key='site_name', :value='My Site', :type='textfield'' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/Settings.php(74): CDbCommand->execute()
+#1 /var/www/html/yii/cms/protected/components/Settings.php(43): Settings::finalSet('site', 'site_name', 'My Site', NULL)
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(19): Settings::set('site', Array)
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(9): SettingsController->showSettings('site')
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionSite()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/admin/settings/
+HTTP_REFERER=http://localhost/yii/cms/admin/settings/
+---
+2012/05/08 09:53:09 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: UPDATE setting SET `value`=:value WHERE `category`=:cat AND `key`=:key. Bound with :cat='site', :key='site_name', :value='My Site', :type='textfield'.
+in /var/www/html/yii/cms/protected/components/Settings.php (76)
+in /var/www/html/yii/cms/protected/components/Settings.php (43)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (19)
+2012/05/08 09:53:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: UPDATE setting SET `value`=:value WHERE `category`=:cat AND `key`=:key. Bound with :cat='site', :key='site_name', :value='My Site', :type='textfield'' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/Settings.php(76): CDbCommand->execute()
+#1 /var/www/html/yii/cms/protected/components/Settings.php(43): Settings::finalSet('site', 'site_name', 'My Site', NULL)
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(19): Settings::set('site', Array)
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(9): SettingsController->showSettings('site')
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionSite()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/admin/settings/
+HTTP_REFERER=http://localhost/yii/cms/admin/settings/
+---
+2012/05/08 10:21:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No such category exists for settings!' in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:20
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('settings')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('settings')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/settings
+---
+2012/05/08 10:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No such category exists for settings!' in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:20
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('system')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('system')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/system
+---

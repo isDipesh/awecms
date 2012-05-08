@@ -1,5 +1,6 @@
 <?php
 
+//collection of helper methods
 class Awecms {
 
     public static function getSiteName() {
@@ -19,6 +20,14 @@ class Awecms {
             }
         }
         return $obj;
+    }
+
+    //removes submit input from POST
+    function removeSubmitFromPost($post) {
+        unset($post['yt0']);
+        unset($post['yt1']);
+        unset($post['yt2']);
+        return $post;
     }
 
     public static function generateFriendlyName($name) {
