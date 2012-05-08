@@ -13,6 +13,7 @@ class EDynamicForm extends CWidget {
     public $method = 'post';
     public $model = null;
     public $class = null;
+    public $selector = false;
 
     // you put as many properties as needed
     public function init() {
@@ -27,13 +28,10 @@ class EDynamicForm extends CWidget {
     }
 
     public function getFullTextField($item) {
-        $s = $this->getlabel($item['key']);
-        $s .= CHtml::textField($item['key'], $item['value'], (array('class' => 'row', 'size' => strlen($item['value']) + 5)));
-        return $s;
+        return CHtml::textField($item['key'], $item['value'], (array('class' => 'row', 'size' => strlen($item['value']) + 5)));
     }
 
     public function run() {
-
         //begin form
         echo CHtml::beginForm($this->action, $this->method, array(
             'id' => $this->id,
@@ -44,16 +42,21 @@ class EDynamicForm extends CWidget {
 
         foreach ($this->model as $item) {
 
+            if ($this->selector)
+                echo CHtml::checkBox('selector_' . $item['key']);
+
             $name = Awecms::generateFriendlyName($item["key"]);
 
+            echo $this->getlabel($item['key']);
+
             switch ($item['type']) {
+                //add new types here
                 case 'textfield':
                     echo $this->getFullTextField($item);
                     echo "<br/>";
                     break;
                 case 'boolean':
-                    echo $this->getlabel($item['key']);
-                    echo CHtml::hiddenField($item['key'],0);
+                    echo CHtml::hiddenField($item['key'], 0);
                     echo CHtml::checkBox($item['key'], $item['value']);
                     echo "<br/>";
                     break;
@@ -67,9 +70,7 @@ class EDynamicForm extends CWidget {
                     echo "<br/>";
                     break;
                 case 'textarea':
-                    echo $this->getlabel($item['key']);
                     echo CHtml::textArea($item['key'], $item['value']);
-
                     echo "<br/>";
                 case 'NULL':
                     break;
@@ -78,7 +79,6 @@ class EDynamicForm extends CWidget {
                     break;
             }
         }
-        echo CHtml::submitButton('Submit!');
         echo CHtml::submitButton('Submit!');
         echo CHtml::endForm();
     }

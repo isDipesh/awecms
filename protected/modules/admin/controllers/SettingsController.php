@@ -17,8 +17,9 @@ class SettingsController extends Controller {
     }
 
     public function showSettings($actionID) {
-        if (isset($_POST)) {
-            Settings::set($actionID, Awecms::removeSubmitFromPost($_POST));
+        if (!empty($_POST)) {
+            Awecms::getSelections($_POST);
+            Settings::set($actionID, Awecms::removeMetaFromPost($_POST));
         }
         $this->layout = 'main';
         $dataProvider = array(

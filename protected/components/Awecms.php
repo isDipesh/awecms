@@ -22,11 +22,16 @@ class Awecms {
         return $obj;
     }
 
-    //removes submit input from POST
-    function removeSubmitFromPost($post) {
-        unset($post['yt0']);
-        unset($post['yt1']);
-        unset($post['yt2']);
+    //removes submit and selection data from POST
+    function removeMetaFromPost($post) {
+        foreach ($post as $key => $item) {
+            //unset values for submit buttons - yt0, yt1, yt2, ...
+            if (preg_match("/^yt\d+$/", $key))
+                unset($post[$key]);
+            //unset selectors
+            if (preg_match("/^selector_+/", $key))
+                unset($post[$key]);
+        }
         return $post;
     }
 
@@ -36,10 +41,8 @@ class Awecms {
 
     public static function typeOf($var) {
         if (is_string($var)) {
-
             if (preg_match('/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/', $var))
                 return 'email';
-
             //if url
             if (preg_match('/^https?:\/\/[a-z0-9-]+(\.[a-z0-9-]+)+/i', $var)) {
                 //check for image url
@@ -58,6 +61,17 @@ class Awecms {
             return 'textfield';
         }
         return (gettype($var));
+    }
+
+    public static function getSelections($post) {
+        $return = array();
+        foreach ($post as $key => $item) {
+            //only process selectors
+            if (preg_match("/^selector_(.+)/", $key, $matches)) {
+                $return[] = $matches[1];
+            }
+        }
+        print_r($return);
     }
 
 }

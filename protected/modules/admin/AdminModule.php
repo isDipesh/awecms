@@ -58,8 +58,6 @@ class AdminModule extends CWebModule {
             $menuItems['Settings'][] = array(Awecms::generateFriendlyName($settingsCategory), array('/admin/settings/' . $settingsCategory));
         }
 
-        //$menuItems['Settings'] = $a;
-
         //reading the menu items into an array
         $menuConfig = array();
         foreach ($menuItems as $menuName => $menuItem) {
