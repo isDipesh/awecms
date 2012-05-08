@@ -82,7 +82,15 @@ class Settings {
     }
 
     public static function getCategories() {
-        return array('system', 'admin', 'themes');
+        $sql = 'SELECT DISTINCT category from ' . Settings::getSettingsTable();
+        $connection = Settings::getDbComponent();
+        $command = $connection->createCommand($sql);
+        $resultItems = $command->queryAll();
+        $result = array();
+        foreach ($resultItems as $resultItem) {
+            $result[] = $resultItem['category'];
+        }
+        return $result;
     }
 
     public function attributeNames() {

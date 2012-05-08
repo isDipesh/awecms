@@ -6,15 +6,16 @@ class SettingsController extends Controller {
 
     public function actionSite() {
 
-        $dataProvider = array(
-            'settings' => Settings::get('site'),
-        );
-        $this->render('index', $dataProvider);
+        $this->missingAction('site');
     }
 
-    public function beforeAction($action) {
-        //Yii::app()->catchAllRequest = "hey" ;
-
+    public function missingAction($actionID) {
+        
+        $this->layout = 'main';
+        $dataProvider = array(
+            'settings' => Settings::get($actionID),
+        );
+        $this->render('index', $dataProvider);
         return true;
     }
 

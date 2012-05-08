@@ -8,4 +8,5 @@ $this->breadcrumbs = array(
 <?php
 
 $this->widget('EDynamicForm', array('id' => 'id', 'class' => 'settings', 'model' => $settings));
+//Yii::app()->catchall
 ?>

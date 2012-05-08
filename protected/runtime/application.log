@@ -11433,3 +11433,274 @@ Stack trace:
 REQUEST_URI=/yii/cms/admin/settings/system
 HTTP_REFERER=http://localhost/yii/cms/admin/
 ---
+2012/05/07 14:50:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sites".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('sites')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(278): CController->run('sites')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(137): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/sites
+---
+2012/05/08 05:33:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.css".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.css
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:33:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.js')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.js
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.js')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.js
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:34:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.css".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.css
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.js')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.js
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:34:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.css".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.css
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.css".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.css
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:34:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.js')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.js
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:34:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.js')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.js
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:34:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.css".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.css
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:34:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.css".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.css')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.css
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 05:34:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prettify.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('prettify.js')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/prettify.js
+HTTP_REFERER=http://localhost/yii/cms/git.php
+---
+2012/05/08 08:47:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "asdasd".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('asdasd')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('asdasd')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/asdasd
+---
+2012/05/08 08:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sites".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(16): CController->missingAction('sites')
+#1 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('sites')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('sites')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#6 {main}
+REQUEST_URI=/yii/cms/admin/settings/sites
+---
+2012/05/08 08:59:37 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('settings/index', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('settings/index', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('sites')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('sites')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/sites
+---
+2012/05/08 08:59:38 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('settings/index', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('settings/index', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('sites')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('sites')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/sites
+---
+2012/05/08 08:59:38 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('settings/index', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('settings/index', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('sites')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('sites')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/sites
+---
+2012/05/08 09:00:08 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('settings/index', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('settings/index', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('system')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('system')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/system
+---
+2012/05/08 09:00:30 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "/admin/settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('/admin/settings...', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('/admin/settings...', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('system')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('system')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/system
+---
+2012/05/08 09:00:30 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "/admin/settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('/admin/settings...', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('/admin/settings...', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('system')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('system')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/system
+---
+2012/05/08 09:00:31 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "/admin/settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('/admin/settings...', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('/admin/settings...', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('system')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('system')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/system
+---
+2012/05/08 09:00:31 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "/admin/settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('/admin/settings...', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('/admin/settings...', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('system')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('system')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/system
+---
+2012/05/08 09:00:44 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "/admin/views/settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('/admin/views/se...', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('/admin/views/se...', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('system')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('system')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/system
+---
+2012/05/08 09:00:44 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "/admin/views/settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('/admin/views/se...', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('/admin/views/se...', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('system')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('system')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/system
+---
+2012/05/08 09:00:44 [error] [exception.CException] exception 'CException' with message 'SettingsController cannot find the requested view "/admin/views/settings/index".' in /var/www/html/yii/framework/web/CController.php:841
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('/admin/views/se...', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): CController->render('/admin/views/se...', Array)
+#2 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('system')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('system')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/system
+---
