@@ -4,8 +4,8 @@
 class Awecms {
 
     public static function getSiteName() {
-        if (Settings::get('site', 'site_name'))
-            return Settings::get('site', 'site_name');
+        if (Settings::get('site', 'name'))
+            return Settings::get('site', 'name');
         else
             return Yii::app()->name;
     }

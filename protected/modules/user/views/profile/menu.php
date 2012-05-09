@@ -2,7 +2,7 @@
     <?php
     if (UserModule::isAdmin()) {
         ?>
-        <li><?php echo CHtml::link(UserModule::t('Manage User'), array('/admin/user')); ?></li>
+        <li><?php echo CHtml::link(UserModule::t('Manage Users'), array('/admin/user')); ?></li>
         <?php
     }
     ?>

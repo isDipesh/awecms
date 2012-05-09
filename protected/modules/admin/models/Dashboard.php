@@ -10,7 +10,7 @@ class Dashboard extends BaseDashboard {
 
     public function getMenuItems() {
         $menuItems = array();
-        $dashboardRecords = $this->findAll();
+        $dashboardRecords = $this->findAllByAttributes(array('enabled'=>1));
         foreach ($dashboardRecords as $dashboardRecord) {
             $menuItems[$dashboardRecord->category][] = array($dashboardRecord->name, array($dashboardRecord->path));
         }

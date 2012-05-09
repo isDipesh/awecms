@@ -924,3 +924,1117 @@ Stack trace:
 REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
 HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
 ---
+2012/05/09 19:26:05 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:26:07 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:26:10 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:26:13 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/login".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/login')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/login
+---
+2012/05/09 19:29:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Action is forbidden.' in /var/www/html/yii/cms/protected/modules/admin/AdminModule.php:22
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/05/09 19:31:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:04 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/CController.php:716)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#1 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(277): ProfileController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(257): ProfileController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): ProfileController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/profile
+in /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php (7)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:33:05 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/CController.php:716)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#1 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(277): ProfileController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(257): ProfileController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): ProfileController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/profile
+in /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php (7)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:33:05 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/CController.php:716)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#1 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(277): ProfileController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(257): ProfileController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): ProfileController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/profile
+in /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php (7)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:33:06 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/CController.php:716)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#1 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(277): ProfileController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(257): ProfileController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): ProfileController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/profile
+in /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php (7)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:33:06 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/CController.php:716)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#1 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(277): ProfileController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(257): ProfileController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): ProfileController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/profile
+in /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php (7)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:33:06 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/CController.php:716)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#1 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(277): ProfileController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(257): ProfileController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): ProfileController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/profile
+in /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php (7)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:33:06 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/CController.php:716)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#1 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(277): ProfileController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(257): ProfileController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): ProfileController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/profile
+in /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php (7)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:33:07 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/CController.php:716)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#1 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(277): ProfileController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(257): ProfileController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): ProfileController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/profile
+in /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php (7)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:33:07 [error] [php] strpos() expects parameter 1 to be string, array given (/var/www/html/yii/framework/web/CController.php:716)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#1 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(277): ProfileController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(257): ProfileController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): ProfileController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/profile
+in /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php (7)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:33:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/settings".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/settings')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/settings')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/settings".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/settings')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/settings')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/settings".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/settings')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/settings')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "/profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "//profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('//profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('//profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "//profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('//profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('//profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "//profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('//profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('//profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "//profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('//profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('//profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "//profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('//profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('//profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "//profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('//profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('//profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "//profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('//profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('//profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:33:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "//profile/edit".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('//profile/edit')
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('//profile/edit')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:34:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('edit')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('edit')
+#2 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/user/profile/e...')
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/user/profile/e...')
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:34:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('edit')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('edit')
+#2 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/user/profile/e...')
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/user/profile/e...')
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:34:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('edit')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('edit')
+#2 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/user/profile/e...')
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/user/profile/e...')
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:34:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('edit')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('edit')
+#2 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/user/profile/e...')
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/user/profile/e...')
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:34:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('edit')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('edit')
+#2 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/user/profile/e...')
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/user/profile/e...')
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:34:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('edit')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('edit')
+#2 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/user/profile/e...')
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/user/profile/e...')
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:34:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('edit')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('edit')
+#2 /var/www/html/yii/framework/web/CController.php(721): CWebApplication->runController('/user/profile/e...')
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/ProfileController.php(7): CController->forward('/user/profile/e...')
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): ProfileController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:35:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:35:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:36:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:43:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/profile".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/profile')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/profile
+---
+2012/05/09 19:48:21 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:48:26 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 19:49:42 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 20:02:46 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/components/images" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/JToggleColumn.php(99): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/cms/protected/components/JToggleColumn.php(129): JToggleColumn->getAssetsUrl()
+#2 /var/www/html/yii/cms/protected/components/JToggleColumn.php(113): JToggleColumn->initDefaultButtons()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(326): JToggleColumn->init()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/html/yii/cms/protected/modules/admin/views/dashboard/index.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php(61): CController->render('index', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DashboardController->actionIndex()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/09 20:02:52 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/components/images" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/JToggleColumn.php(99): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/cms/protected/components/JToggleColumn.php(129): JToggleColumn->getAssetsUrl()
+#2 /var/www/html/yii/cms/protected/components/JToggleColumn.php(113): JToggleColumn->initDefaultButtons()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(326): JToggleColumn->init()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/html/yii/cms/protected/modules/admin/views/dashboard/index.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php(61): CController->render('index', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DashboardController->actionIndex()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/09 20:02:53 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/components/images" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/JToggleColumn.php(99): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/cms/protected/components/JToggleColumn.php(129): JToggleColumn->getAssetsUrl()
+#2 /var/www/html/yii/cms/protected/components/JToggleColumn.php(113): JToggleColumn->initDefaultButtons()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(326): JToggleColumn->init()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/html/yii/cms/protected/modules/admin/views/dashboard/index.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php(61): CController->render('index', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DashboardController->actionIndex()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/09 20:02:53 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/components/images" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/JToggleColumn.php(99): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/cms/protected/components/JToggleColumn.php(129): JToggleColumn->getAssetsUrl()
+#2 /var/www/html/yii/cms/protected/components/JToggleColumn.php(113): JToggleColumn->initDefaultButtons()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(326): JToggleColumn->init()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/html/yii/cms/protected/modules/admin/views/dashboard/index.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php(61): CController->render('index', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DashboardController->actionIndex()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/09 20:02:54 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/components/images" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/JToggleColumn.php(99): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/cms/protected/components/JToggleColumn.php(129): JToggleColumn->getAssetsUrl()
+#2 /var/www/html/yii/cms/protected/components/JToggleColumn.php(113): JToggleColumn->initDefaultButtons()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(326): JToggleColumn->init()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/html/yii/cms/protected/modules/admin/views/dashboard/index.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php(61): CController->render('index', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DashboardController->actionIndex()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/09 20:02:54 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/components/images" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/JToggleColumn.php(99): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/cms/protected/components/JToggleColumn.php(129): JToggleColumn->getAssetsUrl()
+#2 /var/www/html/yii/cms/protected/components/JToggleColumn.php(113): JToggleColumn->initDefaultButtons()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(326): JToggleColumn->init()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/html/yii/cms/protected/modules/admin/views/dashboard/index.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php(61): CController->render('index', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DashboardController->actionIndex()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/09 20:02:55 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/components/images" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/JToggleColumn.php(99): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/cms/protected/components/JToggleColumn.php(129): JToggleColumn->getAssetsUrl()
+#2 /var/www/html/yii/cms/protected/components/JToggleColumn.php(113): JToggleColumn->initDefaultButtons()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(326): JToggleColumn->init()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/html/yii/cms/protected/modules/admin/views/dashboard/index.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php(61): CController->render('index', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DashboardController->actionIndex()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/09 20:05:41 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/components/images" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/JToggleColumn.php(99): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/cms/protected/components/JToggleColumn.php(129): JToggleColumn->getAssetsUrl()
+#2 /var/www/html/yii/cms/protected/components/JToggleColumn.php(113): JToggleColumn->initDefaultButtons()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(326): JToggleColumn->init()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/html/yii/cms/protected/modules/admin/views/dashboard/index.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php(61): CController->render('index', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DashboardController->actionIndex()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/09 20:05:42 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/components/images" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/JToggleColumn.php(99): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/cms/protected/components/JToggleColumn.php(129): JToggleColumn->getAssetsUrl()
+#2 /var/www/html/yii/cms/protected/components/JToggleColumn.php(113): JToggleColumn->initDefaultButtons()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(326): JToggleColumn->init()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/html/yii/cms/protected/modules/admin/views/dashboard/index.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php(61): CController->render('index', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DashboardController->actionIndex()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/09 20:05:42 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/components/images" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/JToggleColumn.php(99): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/cms/protected/components/JToggleColumn.php(129): JToggleColumn->getAssetsUrl()
+#2 /var/www/html/yii/cms/protected/components/JToggleColumn.php(113): JToggleColumn->initDefaultButtons()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(326): JToggleColumn->init()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(284): CGridView->initColumns()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#7 /var/www/html/yii/cms/protected/modules/admin/views/dashboard/index.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('index', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php(61): CController->render('index', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DashboardController->actionIndex()
+#14 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#21 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/09 20:06:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "toggle".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('toggle')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('toggle')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/toggle/id/9/attribute/enabled?ajax=dashboard-grid
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/
+---
+2012/05/09 20:09:10 [error] [php] Missing argument 2 for GxController::loadModel(), called in /var/www/html/yii/cms/protected/components/Controller.php on line 30 and defined (/var/www/html/yii/cms/protected/extensions/giix-components/GxController.php:81)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(277): DashboardController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(257): DashboardController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(279): DashboardController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/dashboard/toggle/id/3/attribute/enabled?ajax=dashboard-grid
+in /var/www/html/yii/cms/protected/extensions/giix-components/GxController.php (81)
+in /var/www/html/yii/cms/protected/components/Controller.php (30)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 20:11:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(297): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('toggle')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/toggle/id/3/attribute/enabled?ajax=dashboard-grid
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/
+---
+2012/05/09 20:15:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(297): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('toggle')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/toggle/id/4/attribute/enabled/dashboard
+---
+2012/05/09 20:15:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in /var/www/html/yii/cms/protected/components/Controller.php:40
+Stack trace:
+#0 [internal function]: Controller->actionToggle('4', 'enabled', '')
+#1 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(DashboardController), Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(DashboardController), Object(ReflectionMethod), Array)
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('toggle')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard...')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/toggle/id/4/attribute/enabled/model
+---
+2012/05/09 20:16:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in /var/www/html/yii/cms/protected/components/Controller.php:40
+Stack trace:
+#0 [internal function]: Controller->actionToggle('7', 'enabled', '')
+#1 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(DashboardController), Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(DashboardController), Object(ReflectionMethod), Array)
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('toggle')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard...')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/toggle/id/7/attribute/enabled/model
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/
+---
+2012/05/09 20:16:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in /var/www/html/yii/cms/protected/components/Controller.php:40
+Stack trace:
+#0 [internal function]: Controller->actionToggle('7', 'enabled', '')
+#1 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(DashboardController), Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(DashboardController), Object(ReflectionMethod), Array)
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('toggle')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard...')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/toggle/id/7/attribute/enabled/model
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/
+---
+2012/05/09 20:16:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in /var/www/html/yii/cms/protected/components/Controller.php:40
+Stack trace:
+#0 [internal function]: Controller->actionToggle('7', 'enabled', '')
+#1 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(DashboardController), Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(DashboardController), Object(ReflectionMethod), Array)
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('toggle')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard...')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/toggle/id/7/attribute/enabled/model
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/
+---
+2012/05/09 20:16:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(297): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('toggle')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/toggle/id/7/attribute/enabled/dashboard?ajax=dashboard-grid
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/
+---
+2012/05/09 20:20:48 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 20:20:51 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 20:20:57 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 20:21:01 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 20:21:03 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 20:21:06 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 20:21:08 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 20:21:11 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
