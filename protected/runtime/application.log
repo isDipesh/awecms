@@ -12343,3 +12343,35 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/yii/cms/admin/settings/my
 ---
+2012/05/09 11:07:04 [error] [exception.CException] exception 'CException' with message 'Alias "application.modules.admin.models.Dashboard" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/gtc/fullCrud/FullCrudCode.php(38): YiiBase::import('application.mod...', true)
+#1 /var/www/html/yii/framework/validators/CInlineValidator.php(43): FullCrudCode->validateModel('model', Array)
+#2 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(FullCrudCode), 'model')
+#3 /var/www/html/yii/framework/base/CModel.php(158): CValidator->validate(Object(FullCrudCode), NULL)
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(158): CModel->validate()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('gii/fullCrud')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/gii/fullCrud
+HTTP_REFERER=http://localhost/yii/cms/gii/fullCrud
+---
+2012/05/09 11:10:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(297): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('delete')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/delete
+---
