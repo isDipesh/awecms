@@ -7,7 +7,6 @@ class ProfileFieldController extends Controller {
      */
     private $_model;
     private static $_widgets = array();
-    public $defaultAction = 'admin';
 
     /**
      * Displays a particular model.
@@ -407,7 +406,7 @@ class ProfileFieldController extends Controller {
     /**
      * Manages all models.
      */
-    public function actionAdmin() {
+    public function actionIndex() {
         $dataProvider = new CActiveDataProvider('ProfileField', array(
                     'pagination' => array(
                         'pageSize' => Yii::app()->getModule('user')->fields_page_size,
@@ -417,7 +416,7 @@ class ProfileFieldController extends Controller {
                     ),
                 ));
 
-        $this->render('admin', array(
+        $this->render('index', array(
             'dataProvider' => $dataProvider,
         ));
     }

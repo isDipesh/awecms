@@ -1,17 +1,10 @@
 <?php
 $this->breadcrumbs=array(
-	UserModule::t('Profile Fields')=>array('admin'),
+	UserModule::t('Profile Fields') => array('/admin/profileField'),
 	UserModule::t('Manage'),
 );
 ?>
 <h1><?php echo UserModule::t('Manage Profile Fields'); ?></h1>
-
-<?php echo $this->renderPartial('_menu', array(
-		'list'=> array(
-			CHtml::link(UserModule::t('Create Profile Field'),array('create')),
-		),
-	));
-?>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'dataProvider'=>$dataProvider,

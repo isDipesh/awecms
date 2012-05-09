@@ -72,7 +72,17 @@
 
 
             </nav>
+            
             <div id="main_wrapper">
+                
+                <?php if (isset($this->breadcrumbs)): ?>
+                <?php
+                $this->widget('zii.widgets.CBreadcrumbs', array(
+                    'links' => $this->breadcrumbs,
+                    'homeLink' => '<a href="'.Yii::app()->baseUrl.'/admin">Dashboard</a>'
+                ));
+                ?><!-- breadcrumbs -->
+            <?php endif ?>
 <?php
 echo $content;
 ?>

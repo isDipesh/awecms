@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs = array(
-    $model->label(2) => array('index'),
-    Yii::t('app', 'Create'),
+    AdminModule::t('Items') => array('/admin/dashboard/'),
+    Yii::t('app', 'Add'),
 );
 
 $this->menu = array(

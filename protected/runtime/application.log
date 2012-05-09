@@ -2067,3 +2067,131 @@ Stack trace:
 REQUEST_URI=/yii/cms/
 HTTP_REFERER=http://localhost/yii/cms/admin/dashboard
 ---
+2012/05/09 21:09:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Action is forbidden.' in /var/www/html/yii/cms/protected/modules/admin/AdminModule.php:22
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(256): AdminModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin
+---
+2012/05/09 21:14:21 [error] [php] Array to string conversion (/var/www/html/yii/framework/zii/widgets/CBreadcrumbs.php:113)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php(83): DefaultController->widget()
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): DefaultController->renderInternal()
+#3 /var/www/html/yii/framework/web/CController.php(751): DefaultController->renderFile()
+#4 /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php(19): DefaultController->render()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(277): DefaultController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(257): DefaultController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(279): DefaultController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin
+in /var/www/html/yii/cms/protected/modules/admin/views/layouts/main.php (83)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DefaultController.php (19)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 21:19:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/09 21:19:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/09 21:25:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/09 21:25:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/09 21:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/09 21:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/09 21:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/update/id/2
+---
+2012/05/09 21:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/update/id/2
+---
+2012/05/09 21:28:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/update/id/2
+---
+2012/05/09 21:28:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/update/id/2
+---
+2012/05/09 21:29:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/user".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/admin/use...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/admin/user
+HTTP_REFERER=http://localhost/yii/cms/admin/user
+---

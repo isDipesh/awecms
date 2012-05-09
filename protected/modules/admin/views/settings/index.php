@@ -2,6 +2,7 @@
 
 $this->breadcrumbs = array(
     'Settings',
+    Yii::t('app', Awecms::generateFriendlyName($action)),
 );
 
 echo CHtml::link('Add settings field', array('/admin/settings/add/' . $action));

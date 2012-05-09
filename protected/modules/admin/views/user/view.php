@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-	UserModule::t('Users')=>array('admin'),
+	UserModule::t('Users')=>array('/admin/user'),
 	$model->username,
 );
 ?>
