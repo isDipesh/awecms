@@ -10,7 +10,7 @@ $this->menu = array(
 );
 ?>
 
-<h1><?php echo Yii::t('app', 'Create') . ' ' . GxHtml::encode($model->label() . ' Item'); ?></h1>
+<h1><?php echo Yii::t('app', 'Add') . ' ' . GxHtml::encode($model->label() . ' Item'); ?></h1>
 
 <?php
 $this->renderPartial('_form', array(

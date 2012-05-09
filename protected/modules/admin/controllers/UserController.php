@@ -2,7 +2,6 @@
 
 class UserController extends Controller {
 
-    public $defaultAction = 'admin';
     private $_model;
 
     public function init() {
@@ -12,7 +11,7 @@ class UserController extends Controller {
     /**
      * Manages all models.
      */
-    public function actionAdmin() {
+    public function actionIndex() {
         $dataProvider = new CActiveDataProvider('User', array(
                     'pagination' => array(
                         'pageSize' => Yii::app()->getModule('user')->user_page_size,

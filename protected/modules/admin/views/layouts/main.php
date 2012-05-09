@@ -22,6 +22,7 @@
         <div id="main_container">
             <header>
                 <h2 id="title">
+                    <?php Admin::getDashboardMenu(); ?>
                     <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Awecms::getSiteName(), array('/admin')); ?>
                 </h2>
                 <nav id="header_right">
@@ -55,7 +56,7 @@
             <nav id="left_sidebar">
             <?php
             $this->widget('zii.widgets.jui.CJuiAccordion', array(
-                'panels' => AdminModule::getMenuConfig(),
+                'panels' => Admin::getDashboardMenu(),
                 'options' => array(
                     'collapsible' => true,
                     'active' => 0,
