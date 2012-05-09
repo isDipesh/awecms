@@ -10,12 +10,13 @@ class Controller extends CController {
      * @var string the default layout for the controller view. Defaults to '//layouts/column1',
      * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
      */
-    public $layout = '//layouts/column1';
+    public $layout = '//layouts/column2';
 
     /**
      * @var array context menu items. This property will be assigned to {@link CMenu::items}.
      */
     public $menu = array();
+    private $_pageTitle;
 
     /**
      * @var array the breadcrumbs of the current page. The value of this property will
@@ -38,6 +39,18 @@ class Controller extends CController {
         }
         else
             throw new CHttpException(400, 'Invalid request. Please do not repeat this request again.');
+    }
+
+    public function getPageTitle() {
+        if ($this->_pageTitle !== null)
+            return $this->_pageTitle;
+        else {
+            $name = ucfirst(basename($this->getId()));
+            if ($this->getAction() !== null && strcasecmp($this->getAction()->getId(), $this->defaultAction))
+                return $this->_pageTitle = Awecms::getSiteName() . ' - ' . ucfirst($this->getAction()->getId()) . ' ' . $name;
+            else
+                return $this->_pageTitle = Awecms::getSiteName() . ' - ' . $name;
+        }
     }
 
 }

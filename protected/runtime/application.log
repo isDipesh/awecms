@@ -2038,3 +2038,32 @@ in /var/www/html/yii/cms/index.php (18)
 2012/05/09 20:21:11 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
 in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
 in /var/www/html/yii/cms/index.php (18)
+2012/05/09 20:52:24 [error] [exception.CException] exception 'CException' with message 'Property "SiteController._pageTitle" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/Controller.php(44): CComponent->__get('_pageTitle')
+#1 /var/www/html/yii/framework/base/CComponent.php(112): Controller->getPageTitle()
+#2 /var/www/html/yii/cms/protected/views/layouts/main.php(17): CComponent->__get('pageTitle')
+#3 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#7 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#9 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 /var/www/html/yii/cms/protected/views/layouts/column1.php(5): CBaseController->endContent()
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(751): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/cms/protected/controllers/SiteController.php(32): CController->render('index')
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#16 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#20 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('')
+#21 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/cms/
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard
+---
