@@ -18,63 +18,64 @@
  */
 abstract class BaseDashboard extends GxActiveRecord {
 
-	public static function model($className=__CLASS__) {
-		return parent::model($className);
-	}
+    public static function model($className = __CLASS__) {
+        return parent::model($className);
+    }
 
-	public function tableName() {
-		return 'dashboard';
-	}
+    public function tableName() {
+        return 'dashboard';
+    }
 
-	public static function label($n = 1) {
-		return Yii::t('app', 'Dashboard|Dashboards', $n);
-	}
+    public static function label($n = 1) {
+        return Yii::t('app', 'Dashboard|Dashboards', $n);
+    }
 
-	public static function representingColumn() {
-		return 'category';
-	}
+    public static function representingColumn() {
+        return 'category';
+    }
 
-	public function rules() {
-		return array(
-			array('category, name, path, enabled', 'required'),
-			array('enabled', 'numerical', 'integerOnly'=>true),
-			array('category, name', 'length', 'max'=>50),
-			array('path', 'length', 'max'=>100),
-			array('id, category, name, path, enabled', 'safe', 'on'=>'search'),
-		);
-	}
+    public function rules() {
+        return array(
+            array('category, name, path, enabled', 'required'),
+            array('enabled', 'numerical', 'integerOnly' => true),
+            array('category, name', 'length', 'max' => 50),
+            array('path', 'length', 'max' => 100),
+            array('category, name, path, enabled', 'safe', 'on' => 'search'),
+        );
+    }
 
-	public function relations() {
-		return array(
-		);
-	}
+    public function relations() {
+        return array(
+        );
+    }
 
-	public function pivotModels() {
-		return array(
-		);
-	}
+    public function pivotModels() {
+        return array(
+        );
+    }
 
-	public function attributeLabels() {
-		return array(
-			'id' => Yii::t('app', 'ID'),
-			'category' => Yii::t('app', 'Category'),
-			'name' => Yii::t('app', 'Name'),
-			'path' => Yii::t('app', 'Path'),
-			'enabled' => Yii::t('app', 'Enabled'),
-		);
-	}
+    public function attributeLabels() {
+        return array(
+            'id' => Yii::t('app', 'ID'),
+            'category' => Yii::t('app', 'Category'),
+            'name' => Yii::t('app', 'Name'),
+            'path' => Yii::t('app', 'Path'),
+            'enabled' => Yii::t('app', 'Enabled'),
+        );
+    }
 
-	public function search() {
-		$criteria = new CDbCriteria;
+    public function search() {
+        $criteria = new CDbCriteria;
 
-		$criteria->compare('id', $this->id);
-		$criteria->compare('category', $this->category, true);
-		$criteria->compare('name', $this->name, true);
-		$criteria->compare('path', $this->path, true);
-		$criteria->compare('enabled', $this->enabled);
+        $criteria->compare('id', $this->id);
+        $criteria->compare('category', $this->category, true);
+        $criteria->compare('name', $this->name, true);
+        $criteria->compare('path', $this->path, true);
+        $criteria->compare('enabled', $this->enabled);
 
-		return new CActiveDataProvider($this, array(
-			'criteria' => $criteria,
-		));
-	}
+        return new CActiveDataProvider($this, array(
+                    'criteria' => $criteria,
+                ));
+    }
+
 }
