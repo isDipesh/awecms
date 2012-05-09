@@ -16,7 +16,6 @@ class Settings {
         $resultItems = $command->queryAll();
         $result = array();
         foreach ($resultItems as $item) {
-            //TODO
             $resultItem['type'] = $item['type'];
             $resultItem['key'] = $item['key'];
             if ($item['type'] == 'array' || $item['type'] == 'object')
@@ -36,7 +35,7 @@ class Settings {
         return $result;
     }
 
-    public static function set($category = 'system', $key = '', $value = null, $forcedType = null) {
+    public static function set($category, $key, $value = null, $forcedType = null) {
         //calling set without value will nullify the value column
         if (is_array($key)) {
             foreach ($key as $index => $keyItem) {
@@ -54,7 +53,7 @@ class Settings {
         $command->bindParam(':cat', $category);
         $command->bindParam(':key', $key);
         $result = $command->queryRow();
-        if (!$type)
+        if (empty($type))
             $type = Awecms::typeOf($value);
 
         //serialize if it's an array or object
@@ -68,7 +67,6 @@ class Settings {
             $command = $connection->createCommand('INSERT INTO ' . Settings::getSettingsTable() . ' (`category`,`key`,`value`,`type`) VALUES(:cat,:key,:value,:type)');
             $command->bindParam(':type', $type);
         }
-
         $command->bindParam(':cat', $category);
         $command->bindParam(':key', $key);
         $command->bindParam(':value', $value);
@@ -77,6 +75,21 @@ class Settings {
 
     protected static function getDbComponent() {
         return Yii::app()->getComponent(Settings::$_dbComponentId);
+    }
+
+    public static function delete($category, $keys = null) {
+        //if $key is not array, make it one
+        if (!is_array($keys))
+            $keys = (array) $keys;
+        $sql = "DELETE FROM `" . Settings::getSettingsTable() . "` WHERE `category`='" . $category . "'";
+        if ($keys) {
+            $sql.=" AND `key`='";
+            $sql.=implode("' OR `key`='", $keys);
+            $sql.="'";
+        }
+        $connection = Settings::getDbComponent();
+        $command = $connection->createCommand($sql);
+        $result = $command->execute();
     }
 
     public static function getSettingsTable() {

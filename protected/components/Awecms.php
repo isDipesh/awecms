@@ -23,7 +23,7 @@ class Awecms {
     }
 
     //removes submit and selection data from POST
-    function removeMetaFromPost($post) {
+    public static function removeMetaFromPost($post) {
         foreach ($post as $key => $item) {
             //unset values for submit buttons - yt0, yt1, yt2, ...
             if (preg_match("/^yt\d+$/", $key))
@@ -39,12 +39,39 @@ class Awecms {
         return ucwords(trim(strtolower(str_replace(array('-', '_', '.'), ' ', preg_replace('/(?<![A-Z])[A-Z]/', ' \0', $name)))));
     }
 
+    public static function isUrl($url) {
+        /* Make sure it's a properly formatted URL. */
+        // From: http://www.daniweb.com/web-development/php/threads/290866
+        // Scheme
+        $url_regex = '^(https?|s?ftp\:\/\/)|(mailto\:)';
+        // User and password (optional)
+        $url_regex .= '([a-z0-9\+!\*\(\)\,\;\?&=\$_\.\-]+(\:[a-z0-9\+!\*\(\)\,\;\?&=\$_\.\-]+)?@)?';
+        // Hostname or IP
+        // http://x = allowed (ex. http://localhost, http://routerlogin)
+        $url_regex .= '[a-z0-9\+\$_\-]+(\.[a-z0-9\+\$_\-]+)*';
+        // http://x.x = minimum
+        // $url_regex .= "[a-z0-9\+\$_\-]+(\.[a-z0-9+\$_\-]+)+";
+        // http://x.xx(x) = minimum
+        // $url_regex .= "([a-z0-9\+\$_\-]+\.)*[a-z0-9\+\$_\-]{2,3}";
+        // use only one of the above
+        // Port (optional)
+        $url_regex .= '(\:[0-9]{2,5})?';
+        // Path (optional)
+        // $urlregex .= '(\/([a-z0-9\+\$_\-]\.\?)+)*\/?';
+        // GET Query (optional)
+        $url_regex .= '(\?[a-z\+&\$_\.\-][a-z0-9\;\:@\/&%=\+\$_\.\-]*)?';
+        // Anchor (optional)
+        // $urlregex .= '(\#[a-z_\.\-][a-z0-9\+\$_\.\-]*)?$';
+        return preg_match('/' . $url_regex . '/i', $url);
+    }
+
     public static function typeOf($var) {
         if (is_string($var)) {
+
             if (preg_match('/^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/', $var))
                 return 'email';
             //if url
-            if (preg_match('/^https?:\/\/[a-z0-9-]+(\.[a-z0-9-]+)+/i', $var)) {
+            if (Awecms::isUrl($var)) {
                 //check for image url
                 // Parse the url into individual components
                 $url_parse = parse_url($var);
@@ -71,7 +98,15 @@ class Awecms {
                 $return[] = $matches[1];
             }
         }
-        print_r($return);
+        return $return;
+    }
+
+    public static function generatePairs($array) {
+        $return = array();
+        foreach ($array as $item) {
+            $return[$item] = Awecms::generateFriendlyName($item);
+        }
+        return $return;
     }
 
 }

@@ -11872,3 +11872,474 @@ REQUEST_URI=/yii/cms/admin/settings/site
 in /var/www/html/yii/cms/protected/components/Awecms.php (72)
 in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (21)
 in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (8)
+2012/05/08 16:14:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `key`='slogan'' at line 1. The SQL statement executed was: DELETE FROM setting WHERE `category`='site' WHERE `key`='slogan'.
+in /var/www/html/yii/cms/protected/components/Settings.php (89)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (20)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (14)
+2012/05/08 16:14:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `key`='slogan'' at line 1. The SQL statement executed was: DELETE FROM setting WHERE `category`='site' WHERE `key`='slogan'' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/Settings.php(89): CDbCommand->execute()
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(20): Settings::delete('site', 'slogan')
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(14): SettingsController->showSettings('jpt')
+#3 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('jpt')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('jpt')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/cms/admin/settings/jpt
+---
+2012/05/08 16:15:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No such category exists for settings!' in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:16
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('jpt')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('jpt')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/jpt
+---
+2012/05/08 16:44:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No such category exists for settings!' in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:16
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('user')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('user')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/user
+HTTP_REFERER=http://localhost/yii/cms/admin/settings/user
+---
+2012/05/08 16:44:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No such category exists for settings!' in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:16
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('user')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('user')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/user
+---
+2012/05/09 03:29:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(297): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/add/site
+HTTP_REFERER=http://localhost/yii/cms/admin/settings/site
+---
+2012/05/09 03:30:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(297): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/add/
+---
+2012/05/09 03:31:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(297): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/add
+---
+2012/05/09 03:31:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(297): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/add
+---
+2012/05/09 03:31:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(297): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/add/site
+---
+2012/05/09 03:35:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:322
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(297): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/settings/add/site
+HTTP_REFERER=http://localhost/yii/cms/admin/settings/site/addsadsa
+---
+2012/05/09 04:03:20 [error] [php] Undefined offset: 0 (/var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:37)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (37)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 04:10:23 [error] [php] Undefined variable: action (/var/www/html/yii/cms/protected/modules/admin/views/settings/index.php:9)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): SettingsController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(749): SettingsController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(43): SettingsController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/views/settings/index.php (9)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (43)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 04:11:34 [error] [php] Undefined variable: action (/var/www/html/yii/cms/protected/modules/admin/views/settings/index.php:9)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): SettingsController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(749): SettingsController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(43): SettingsController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/views/settings/index.php (9)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (43)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 04:12:10 [error] [php] Undefined variable: action (/var/www/html/yii/cms/protected/modules/admin/views/settings/index.php:9)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): SettingsController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(749): SettingsController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(44): SettingsController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/views/settings/index.php (9)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (44)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 04:12:20 [error] [php] Undefined variable: action (/var/www/html/yii/cms/protected/modules/admin/views/settings/index.php:9)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): SettingsController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(749): SettingsController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(44): SettingsController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/views/settings/index.php (9)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (44)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 04:13:21 [error] [php] Undefined variable: settings (/var/www/html/yii/cms/protected/modules/admin/views/settings/index.php:10)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): SettingsController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(749): SettingsController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(47): SettingsController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/views/settings/index.php (10)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 04:13:22 [error] [php] Undefined variable: settings (/var/www/html/yii/cms/protected/modules/admin/views/settings/index.php:10)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): SettingsController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(749): SettingsController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(47): SettingsController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/views/settings/index.php (10)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 04:16:14 [error] [php] Undefined variable: settings (/var/www/html/yii/cms/protected/modules/admin/views/settings/add.php:10)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): SettingsController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(749): SettingsController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(47): SettingsController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/views/settings/add.php (10)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 06:36:06 [error] [exception.CException] exception 'CException' with message 'SettingsController contains improperly nested widget tags in its view "/var/www/html/yii/cms/protected/modules/admin/views/settings/add.php". A CActiveForm widget does not have an endWidget() call.' in /var/www/html/yii/framework/web/CBaseController.php:102
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#1 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('add', Array, true)
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(47): CController->render('add', Array)
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/settings/add/site
+---
+2012/05/09 06:45:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/09 06:45:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/09 08:06:43 [error] [exception.CException] exception 'CException' with message 'SettingsController contains improperly nested widget tags in its view "/var/www/html/yii/cms/protected/modules/admin/views/settings/add.php". A CActiveForm widget does not have an endWidget() call.' in /var/www/html/yii/framework/web/CBaseController.php:102
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#1 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('add', Array, true)
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(47): CController->render('add', Array)
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/settings/add/site
+HTTP_REFERER=http://localhost/yii/cms/admin/settings/site
+---
+2012/05/09 08:45:35 [error] [php] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array (/var/www/html/yii/cms/protected/modules/admin/views/settings/add.php:13)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): SettingsController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(832): SettingsController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(749): SettingsController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(47): SettingsController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/views/settings/add.php (13)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 08:45:36 [error] [php] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #2 is not an array (/var/www/html/yii/cms/protected/modules/admin/views/settings/add.php:13)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): SettingsController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(832): SettingsController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(749): SettingsController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(47): SettingsController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/views/settings/add.php (13)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 08:50:50 [error] [php] Missing argument 3 for CHtml::dropDownList(), called in /var/www/html/yii/cms/protected/modules/admin/views/settings/add.php on line 15 and defined (/var/www/html/yii/framework/web/helpers/CHtml.php:763)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): SettingsController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(832): SettingsController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(749): SettingsController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(47): SettingsController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#5 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/modules/admin/views/settings/add.php (15)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 09:31:22 [error] [php] Non-static method Awecms::removeMetaFromPost() should not be called statically, assuming $this from incompatible context (/var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:46)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (46)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 09:35:18 [error] [php] Undefined index: category_name (/var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:46)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add
+in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php (46)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/09 10:04:17 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: No ending delimiter '^' found (/var/www/html/yii/cms/protected/components/Awecms.php:72)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/components/Settings.php(46): finalSet()
+#1 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(49): set()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(277): SettingsController->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(257): SettingsController->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): SettingsController->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/settings/add/site
+in /var/www/html/yii/cms/protected/components/Awecms.php (72)
+in /var/www/html/yii/cms/protected/components/Settings.php (58)
+in /var/www/html/yii/cms/protected/components/Settings.php (46)
+2012/05/09 10:19:13 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.onsubmit" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('onsubmit', 'alert(1)')
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SettingsController), 'CActiveForm', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(190): CBaseController->createWidget('CActiveForm', Array)
+#3 /var/www/html/yii/cms/protected/modules/admin/views/settings/add.php(10): CBaseController->beginWidget('CActiveForm', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('add', Array, true)
+#8 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(53): CController->render('add', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#10 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/admin/settings/add/site
+---
+2012/05/09 10:19:18 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.submit" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('submit', 'alert(1)')
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SettingsController), 'CActiveForm', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(190): CBaseController->createWidget('CActiveForm', Array)
+#3 /var/www/html/yii/cms/protected/modules/admin/views/settings/add.php(9): CBaseController->beginWidget('CActiveForm', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('add', Array, true)
+#8 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(53): CController->render('add', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#10 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/admin/settings/add/site
+---
+2012/05/09 10:19:43 [error] [exception.CException] exception 'CException' with message 'CForm and its behaviors do not have a method or closure named "init".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(148): CComponent->__call('init', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(148): CForm->init()
+#2 /var/www/html/yii/framework/web/CBaseController.php(190): CBaseController->createWidget('CForm', Array)
+#3 /var/www/html/yii/cms/protected/modules/admin/views/settings/add.php(9): CBaseController->beginWidget('CForm', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(832): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(749): CController->renderPartial('add', Array, true)
+#8 /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php(53): CController->render('add', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SettingsController->actionAdd()
+#10 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('add')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/admin/settings/add/site
+---
+2012/05/09 10:48:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No such category exists for settings!' in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:16
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('my')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('my')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/my
+---
