@@ -27,6 +27,9 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+            
+            print_r(Settings::set('user','registration_enabled',true));
+            print_r(Settings::set('user','logo','https://ssl.gstatic.com/gb/images/j_e6a6aca6.png'));
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
