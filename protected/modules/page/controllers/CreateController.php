@@ -2,7 +2,7 @@
 
 class CreateController extends GxController {
 
-	public function actionCreate() {
+	public function actionIndex() {
 		$model = new Page;
 
 		$this->performAjaxValidation($model, 'page-form');
@@ -18,6 +18,6 @@ class CreateController extends GxController {
 			}
 		}
 
-		$this->render('create', array( 'model' => $model));
+		$this->render('/create', array( 'model' => $model));
 	}
 }

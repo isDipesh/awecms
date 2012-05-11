@@ -11,7 +11,7 @@ $this->menu = array(
 );
 ?>
 
-<h1><?php echo Yii::t('app', 'Create') . ' ' . GxHtml::encode($model->label()); ?></h1>
+<h1><?php echo Yii::t('app', 'Create a new page')?></h1>
 
 <?php
 $this->renderPartial('/_form', array(

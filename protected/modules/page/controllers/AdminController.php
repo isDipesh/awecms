@@ -2,16 +2,16 @@
 
 class AdminController extends GxController {
 
-public function actionAdmin() {
-$model = new Page('search');
-$model->unsetAttributes();
+    public function actionIndex() {
+        $model = new Page('search');
+        $model->unsetAttributes();
 
-if (isset($_GET['Page']))
-$model->setAttributes($_GET['Page']);
+        if (isset($_GET['Page']))
+            $model->setAttributes($_GET['Page']);
 
-$this->render('admin', array(
-'model' => $model,
-));
-}
+        $this->render('/admin', array(
+            'model' => $model,
+        ));
+    }
 
 }

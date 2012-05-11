@@ -15,7 +15,7 @@ class UpdateController extends GxController {
 			}
 		}
 
-		$this->render('update', array(
+		$this->render('/update', array(
 				'model' => $model,
 				));
 	}

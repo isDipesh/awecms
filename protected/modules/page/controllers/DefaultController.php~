@@ -1,9 +1,0 @@
-<?php
-
-public function actionDefault() {
-$dataProvider = new CActiveDataProvider('Page');
-$this->render('index', array(
-'dataProvider' => $dataProvider,
-));
-}
-}

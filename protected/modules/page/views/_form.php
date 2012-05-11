@@ -3,7 +3,6 @@
 
 <?php $form = $this->beginWidget('GxActiveForm', array(
 	'id' => 'page-form',
-	'enableAjaxValidation' => true,
 ));
 ?>
 
@@ -15,7 +14,7 @@
 
 		<div class="row">
 		<?php echo $form->labelEx($model,'title'); ?>
-		<?php echo $form->textField($model, 'title'); ?>
+		<?php echo $form->textField($model, 'title',array('size'=>100)); ?>
 		<?php echo $form->error($model,'title'); ?>
 		</div><!-- row -->
 		<div class="row">
