@@ -32,7 +32,7 @@ You may optionally enter a comparison operator (&lt;, &lt;=, &gt;, &gt;=, &lt;&g
 
 <?php echo GxHtml::link(Yii::t('app', 'Advanced Search'), '#', array('class' => 'search-button')); ?>
 <div class="search-form">
-<?php $this->renderPartial('_search', array(
+<?php $this->renderPartial('/_search', array(
 	'model' => $model,
 )); ?>
 </div><!-- search-form -->

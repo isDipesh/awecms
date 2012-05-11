@@ -114,6 +114,7 @@ return array(
             'generatorPaths' => array(
                 'ext.giix-core', // giix generators
                 'ext.gtc', // extensions/Gii Template 
+                'application.gii',
             ),
         // If removed, Gii defaults to localhost only. Edit carefully to taste.
         //'ipFilters' => array('127.0.0.1', '::1'),

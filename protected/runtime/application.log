@@ -6663,3 +6663,854 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/yii/cms/admin/users
 ---
+2012/05/11 15:57:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/page/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/page/creat...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page/admin
+---
+2012/05/11 15:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/page/
+---
+2012/05/11 15:59:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/
+---
+2012/05/11 15:59:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/
+---
+2012/05/11 15:59:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/
+---
+2012/05/11 15:59:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/index".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/index')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/page/index
+---
+2012/05/11 16:00:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/index".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/index')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/page/index
+---
+2012/05/11 16:01:35 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "admin".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('admin', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/AdminController.php(14): CController->render('admin', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): AdminController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/admin')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/admin
+---
+2012/05/11 16:02:11 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:02:26 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/create/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:02:27 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/create/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:03:48 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/default/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/default/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/default/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:03:49 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/default/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/default/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/default/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:03:50 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/default/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/default/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/default/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:04:46 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:12:06 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:12:06 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:12:07 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:12:07 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:13:45 [error] [exception.CException] exception 'CException' with message 'CreateController and its behaviors do not have a method or closure named "setViewPath".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(26): CComponent->__call('setViewPath', Array)
+#1 /var/www/html/yii/cms/protected/modules/page/PageModule.php(26): CreateController->setViewPath('default')
+#2 /var/www/html/yii/framework/web/CController.php(256): PageModule->beforeControllerAction(Object(CreateController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:13:46 [error] [exception.CException] exception 'CException' with message 'CreateController and its behaviors do not have a method or closure named "setViewPath".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(26): CComponent->__call('setViewPath', Array)
+#1 /var/www/html/yii/cms/protected/modules/page/PageModule.php(26): CreateController->setViewPath('default')
+#2 /var/www/html/yii/framework/web/CController.php(256): PageModule->beforeControllerAction(Object(CreateController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:13:46 [error] [exception.CException] exception 'CException' with message 'CreateController and its behaviors do not have a method or closure named "setViewPath".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(26): CComponent->__call('setViewPath', Array)
+#1 /var/www/html/yii/cms/protected/modules/page/PageModule.php(26): CreateController->setViewPath('default')
+#2 /var/www/html/yii/framework/web/CController.php(256): PageModule->beforeControllerAction(Object(CreateController), Object(CInlineAction))
+#3 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:14:15 [error] [exception.CException] exception 'CException' with message 'Property "CreateController.viewPath" is read only.' in /var/www/html/yii/framework/base/CComponent.php:171
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(26): CComponent->__set('viewPath', 'default')
+#1 /var/www/html/yii/framework/web/CController.php(256): PageModule->beforeControllerAction(Object(CreateController), Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#6 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:14:15 [error] [exception.CException] exception 'CException' with message 'Property "CreateController.viewPath" is read only.' in /var/www/html/yii/framework/base/CComponent.php:171
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(26): CComponent->__set('viewPath', 'default')
+#1 /var/www/html/yii/framework/web/CController.php(256): PageModule->beforeControllerAction(Object(CreateController), Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#6 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:14:15 [error] [exception.CException] exception 'CException' with message 'Property "CreateController.viewPath" is read only.' in /var/www/html/yii/framework/base/CComponent.php:171
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(26): CComponent->__set('viewPath', 'default')
+#1 /var/www/html/yii/framework/web/CController.php(256): PageModule->beforeControllerAction(Object(CreateController), Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#6 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:14:55 [error] [exception.CException] exception 'CException' with message 'The view path "default" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:133
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(19): CWebModule->setViewPath('default')
+#1 /var/www/html/yii/framework/base/CModule.php(91): PageModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('page', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/create')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:14:56 [error] [exception.CException] exception 'CException' with message 'The view path "default" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:133
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(19): CWebModule->setViewPath('default')
+#1 /var/www/html/yii/framework/base/CModule.php(91): PageModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('page', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/create')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:14:57 [error] [exception.CException] exception 'CException' with message 'The view path "default" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:133
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(19): CWebModule->setViewPath('default')
+#1 /var/www/html/yii/framework/base/CModule.php(91): PageModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('page', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/create')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:15:28 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:15:38 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:15:39 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:15:39 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:15:39 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:15:40 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:15:49 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:15:49 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:15:50 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:16:01 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:16:02 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:16:08 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:16:09 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:18:13 [error] [exception.CException] exception 'CException' with message 'The view path "application.modules.page.views" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:133
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(19): CWebModule->setViewPath('application.mod...')
+#1 /var/www/html/yii/framework/base/CModule.php(91): PageModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('page', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/create')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:18:14 [error] [exception.CException] exception 'CException' with message 'The view path "application.modules.page.views" is not a valid directory.' in /var/www/html/yii/framework/web/CWebModule.php:133
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/PageModule.php(19): CWebModule->setViewPath('application.mod...')
+#1 /var/www/html/yii/framework/base/CModule.php(91): PageModule->init()
+#2 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('page', NULL, Array)
+#3 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#4 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/create')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:21:16 [error] [exception.CException] exception 'CException' with message 'Property "CreateController.viewPath" is read only.' in /var/www/html/yii/framework/base/CComponent.php:171
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CComponent->__set('viewPath', '/')
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:21:17 [error] [exception.CException] exception 'CException' with message 'Property "CreateController.viewPath" is read only.' in /var/www/html/yii/framework/base/CComponent.php:171
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CComponent->__set('viewPath', '/')
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:21:17 [error] [exception.CException] exception 'CException' with message 'Property "CreateController.viewPath" is read only.' in /var/www/html/yii/framework/base/CComponent.php:171
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CComponent->__set('viewPath', '/')
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:31:10 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/default/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/default/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/default/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:31:11 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/default/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/default/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/default/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:31:11 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/default/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/default/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/default/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:31:43 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/default/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/default/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/default/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:31:44 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/default/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/default/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/default/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:31:50 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/default/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/default/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/default/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:31:51 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/default/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/default/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/default/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:32:50 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:32:51 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:33:28 [error] [exception.CException] exception 'CException' with message 'CreateController cannot find the requested view "_form".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/create.php(19): CController->renderPartial('_form', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(836): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('/create', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(21): CController->render('/create', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/page/create
+---
+2012/05/11 16:39:13 [error] [php] include(PageController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php(6): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(347): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(335): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages
+in /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php (6)
+in /var/www/html/yii/cms/index.php (18)

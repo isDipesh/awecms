@@ -1,19 +1,15 @@
 <?php
-
-$this->breadcrumbs = array(
-	Page::label(2),
-	Yii::t('app', 'Index'),
-);
-
-$this->menu = array(
-	array('label'=>Yii::t('app', 'Create') . ' ' . Page::label(), 'url' => array('create')),
-	array('label'=>Yii::t('app', 'Manage') . ' ' . Page::label(2), 'url' => array('admin')),
+$this->breadcrumbs=array(
+	$this->module->id,
 );
 ?>
+<h1><?php echo $this->uniqueId . '/' . $this->action->id; ?></h1>
 
-<h1><?php echo GxHtml::encode(Page::label(2)); ?></h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); 
+<p>
+This is the view content for action "<?php echo $this->action->id; ?>".
+The action belongs to the controller "<?php echo get_class($this); ?>"
+in the "<?php echo $this->module->id; ?>" module.
+</p>
+<p>
+You may customize this page by editing <tt><?php echo __FILE__; ?></tt>
+</p>

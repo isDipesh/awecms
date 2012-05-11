@@ -2,7 +2,7 @@
 
 class AdminController extends GxController {
 
-public function actionAdmin() {
+public function actionIndex() {
 $model = new Page('search');
 $model->unsetAttributes();
 

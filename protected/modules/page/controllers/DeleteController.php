@@ -2,7 +2,7 @@
 
 class DeleteController extends GxController {
 
-	public function actionDelete($id) {
+	public function actionIndex($id) {
 		if (Yii::app()->getRequest()->getIsPostRequest()) {
 			$this->loadModel($id, 'Page')->delete();
 
