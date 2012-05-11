@@ -3,7 +3,7 @@
 Yii::import('application.modules.page.controllers.*');
 Yii::import('application.modules.page.models.*');
 
-class PagesController extends Controller{
+class PagesController extends PageController {
 
     public function init() {
     }

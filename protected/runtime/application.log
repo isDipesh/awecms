@@ -6663,6 +6663,7 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/yii/cms/admin/users
 ---
+<<<<<<< HEAD
 2012/05/11 15:57:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "page/page/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
 Stack trace:
 #0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/page/creat...')
@@ -7555,3 +7556,5 @@ Stack trace:
 #7 {main}
 REQUEST_URI=/yii/cms/page
 ---
+=======
+>>>>>>> parent of 3412cfd... generated page model
