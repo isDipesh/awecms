@@ -105,7 +105,7 @@ return array(
             'defaultLayout' => 'cms', // this layout will be set by default if no layout set for page
         ),
         'user',
-        'page',
+        //'page',
         'student',
         'admin',
         'gii' => array(
