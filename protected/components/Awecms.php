@@ -109,6 +109,8 @@ class Awecms {
         return $return;
     }
 
-}
+    public static function getControllerIdFromClassName($className) {
+        return strtolower(str_replace('Controller', '', $className));
+    }
 
-?>
+}

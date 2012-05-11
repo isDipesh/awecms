@@ -12,7 +12,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model, 'author'); ?>
-		<?php echo $form->dropDownList($model, 'author', GxHtml::listDataEx(User::model()->findAllAttributes(null, true)), array('prompt' => Yii::t('app', 'All'))); ?>
+		<?php echo $form->dropDownList($model, 'author', GxHtml::listDataEx(User::model()->findAllAttributes('', true)), array('prompt' => Yii::t('app', 'All'))); ?>
 	</div>
 
 	<div class="row">

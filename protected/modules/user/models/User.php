@@ -27,6 +27,30 @@ class User extends CActiveRecord {
         return parent::model($className);
     }
 
+    public function findAllAttributes($attributes = null, $withPk = false, $condition = '', $params = array()) {
+        $criteria = $this->getCommandBuilder()->createCriteria($condition, $params);
+        if (is_null($attributes))
+            $attributes = $this->representingColumn();
+        if ($withPk) {
+            $pks = self::model(get_class($this))->getTableSchema()->primaryKey;
+            if (!is_array($pks))
+                $pks = array($pks);
+            if (!is_array($attributes))
+                $attributes = array($attributes);
+            $attributes = array_merge($pks, $attributes);
+        }
+        $criteria->select = array_filter($attributes);
+        return parent::findAll($criteria);
+    }
+
+    public static function representingColumn() {
+        return 'username';
+    }
+
+    public static function label($n = 1) {
+        return Yii::t('app', 'User|Users', $n);
+    }
+
     /**
      * @return string the associated database table name
      */

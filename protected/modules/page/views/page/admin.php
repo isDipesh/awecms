@@ -46,7 +46,7 @@ You may optionally enter a comparison operator (&lt;, &lt;=, &gt;, &gt;=, &lt;&g
 		array(
 				'name'=>'author',
 				'value'=>'GxHtml::valueEx($data->author0)',
-				'filter'=>GxHtml::listDataEx(User::model()->findAllAttributes(null, true)),
+		//		'filter'=>GxHtml::listDataEx(User::model()->findAllAttributes(null, true)),
 				),
 		'title',
 		'content',

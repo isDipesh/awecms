@@ -14,10 +14,11 @@ class AdminModule extends CWebModule {
             'user.models.*',
             'user.components.*',
         ));
+
+        //TODO implement catch-all to automate external module implementation inside admin module
     }
 
     public function beforeControllerAction($controller, $action) {
-
         if (!Yii::app()->getModule('user')->isAdmin()) {
             throw new CHttpException(403, 'Action is forbidden.');
         }
