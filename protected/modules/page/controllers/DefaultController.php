@@ -1,9 +1,9 @@
 <?php
 
-class DefaultController extends Controller
-{
-	public function actionIndex()
-	{
-		$this->render('index');
-	}
+public function actionIndex() {
+$dataProvider = new CActiveDataProvider('Page');
+$this->render('index', array(
+'dataProvider' => $dataProvider,
+));
+}
 }
