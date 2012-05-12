@@ -20,4 +20,5 @@ class CreateController extends GxController {
 
 		$this->render('/create', array( 'model' => $model));
 	}
+        
 }

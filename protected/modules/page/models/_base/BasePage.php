@@ -48,8 +48,8 @@ abstract class BasePage extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('author, title, content, excerpt, created_at, modified_at, parent, password', 'required'),
-			array('author, parent, order', 'numerical', 'integerOnly'=>true),
+			array('title, content, excerpt, created_at, modified_at, parent, password', 'required'),
+			array('parent, order', 'numerical', 'integerOnly'=>true),
 			array('status, type, comment_status, permission, password', 'length', 'max'=>20),
 			array('status, order, type, comment_status, permission', 'default', 'setOnEmpty' => true, 'value' => null),
 			array('id, author, title, content, excerpt, status, created_at, modified_at, parent, order, type, comment_status, permission, password', 'safe', 'on'=>'search'),

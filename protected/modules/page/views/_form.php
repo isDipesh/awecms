@@ -17,11 +17,16 @@
 		<?php echo $form->textField($model, 'title',array('size'=>100)); ?>
 		<?php echo $form->error($model,'title'); ?>
 		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model, 'content'); ?>
-		<?php echo $form->error($model,'content'); ?>
-		</div><!-- row -->
+                
+                <?php
+                
+                $this->widget('ext.editme.ExtEditMe',array(
+                    'model'=>$model,
+                    'attribute'=>'content',
+                ))
+                
+                ?>
+                
 		<div class="row">
 		<?php echo $form->labelEx($model,'excerpt'); ?>
 		<?php echo $form->textArea($model, 'excerpt'); ?>

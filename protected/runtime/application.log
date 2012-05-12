@@ -7558,3 +7558,209 @@ REQUEST_URI=/yii/cms/page
 ---
 =======
 >>>>>>> parent of 3412cfd... generated page model
+2012/05/11 20:38:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/11 20:38:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/11 20:38:40 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/11 20:38:44 [warning] [application] Failed to set unsafe attribute "id" of "Dashboard".
+in /var/www/html/yii/cms/protected/modules/admin/controllers/DashboardController.php (57)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 07:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/c6d25b51/js/form.js".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('assets/c6d25b51...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/c6d25b51/js/form.js
+HTTP_REFERER=http://localhost/yii/cms/admin/profileField/create
+---
+2012/05/12 07:34:54 [error] [php] Undefined index: path (/var/www/html/yii/cms/protected/components/Awecms.php:81)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(32): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(277): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(279): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/components/Awecms.php (81)
+in /var/www/html/yii/cms/protected/components/Settings.php (57)
+in /var/www/html/yii/cms/protected/components/Settings.php (45)
+2012/05/12 07:37:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No such category exists for settings!' in /var/www/html/yii/cms/protected/modules/admin/controllers/SettingsController.php:16
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): SettingsController->missingAction('news')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('news')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/settings/...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/settings/news
+---
+2012/05/12 07:46:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('create')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('create')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/default/cr...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/default/create
+HTTP_REFERER=http://localhost/yii/cms/page
+---
+2012/05/12 07:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('create')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('create')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/default/cr...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/default/create
+HTTP_REFERER=http://localhost/yii/cms/page
+---
+2012/05/12 07:54:15 [error] [php] include(PageController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php(6): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(347): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(335): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages
+in /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php (6)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 07:54:50 [error] [php] require(/var/www/html/yii/cms/protected/modules/page/views/page//create.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(836): PagesController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(753): PagesController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(21): PagesController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PagesController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): PagesController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): PagesController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): PagesController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (21)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 07:54:51 [error] [php] require(/var/www/html/yii/cms/protected/modules/page/views/page//create.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/web/CBaseController.php:127)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(836): PagesController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(753): PagesController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(21): PagesController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PagesController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(277): PagesController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(257): PagesController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): PagesController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (21)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 09:25:02 [warning] [application] Failed to set unsafe attribute "pages" of "Page".
+in /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php (11)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 09:25:47 [warning] [application] Failed to set unsafe attribute "pages" of "Page".
+in /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php (11)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 09:25:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yc`.`page`, CONSTRAINT `page_ibfk_1` FOREIGN KEY (`author`) REFERENCES `user` (`id`)). The SQL statement executed was: INSERT INTO `page` (`status`, `order`, `type`, `comment_status`, `permission`, `title`, `content`, `excerpt`, `created_at`, `modified_at`, `parent`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11). Bound with :yp0='published', :yp1=0, :yp2='post', :yp3='open', :yp4='all', :yp5='Page Title Here', :yp6='<p>
+	Content Here</p>
+', :yp7='the excerpt', :yp8='2012-05-05', :yp9='2012-05-05', :yp10=1, :yp11='password'.
+in /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 09:25:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yc`.`page`, CONSTRAINT `page_ibfk_1` FOREIGN KEY (`author`) REFERENCES `user` (`id`)). The SQL statement executed was: INSERT INTO `page` (`status`, `order`, `type`, `comment_status`, `permission`, `title`, `content`, `excerpt`, `created_at`, `modified_at`, `parent`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11). Bound with :yp0='published', :yp1=0, :yp2='post', :yp3='open', :yp4='all', :yp5='Page Title Here', :yp6='<p>
+	Content Here</p>
+', :yp7='the excerpt', :yp8='2012-05-05', :yp9='2012-05-05', :yp10=1, :yp11='password'' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(943): CDbCommand->execute()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(737): CActiveRecord->insert(NULL)
+#2 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(13): CActiveRecord->save()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/create
+---
+2012/05/12 09:26:15 [warning] [application] Failed to set unsafe attribute "pages" of "Page".
+in /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php (11)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 09:26:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yc`.`page`, CONSTRAINT `page_ibfk_1` FOREIGN KEY (`author`) REFERENCES `user` (`id`)). The SQL statement executed was: INSERT INTO `page` (`status`, `order`, `type`, `comment_status`, `permission`, `title`, `content`, `excerpt`, `created_at`, `modified_at`, `parent`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11). Bound with :yp0='published', :yp1=0, :yp2='post', :yp3='open', :yp4='all', :yp5='Page Title Here', :yp6='<p>
+	Content Here</p>
+', :yp7='the excerpt', :yp8='2012-05-05', :yp9='2012-05-05', :yp10=1, :yp11='password'.
+in /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php (13)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 09:26:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`yc`.`page`, CONSTRAINT `page_ibfk_1` FOREIGN KEY (`author`) REFERENCES `user` (`id`)). The SQL statement executed was: INSERT INTO `page` (`status`, `order`, `type`, `comment_status`, `permission`, `title`, `content`, `excerpt`, `created_at`, `modified_at`, `parent`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11). Bound with :yp0='published', :yp1=0, :yp2='post', :yp3='open', :yp4='all', :yp5='Page Title Here', :yp6='<p>
+	Content Here</p>
+', :yp7='the excerpt', :yp8='2012-05-05', :yp9='2012-05-05', :yp10=1, :yp11='password'' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(943): CDbCommand->execute()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(737): CActiveRecord->insert(NULL)
+#2 /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php(13): CActiveRecord->save()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CreateController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/create
+---
+2012/05/12 09:27:44 [warning] [application] Failed to set unsafe attribute "pages" of "Page".
+in /var/www/html/yii/cms/protected/modules/page/controllers/CreateController.php (11)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 09:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('view')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('view')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/create/vie...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/create/view/id/4
+HTTP_REFERER=http://localhost/yii/cms/page/create
+---
+2012/05/12 09:28:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('view')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('view')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/default/vi...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/default/view/id/4
+HTTP_REFERER=http://localhost/yii/cms/page/
+---
