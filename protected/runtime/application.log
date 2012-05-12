@@ -7829,3 +7829,1379 @@ Stack trace:
 REQUEST_URI=/yii/cms/page/page/create
 HTTP_REFERER=http://localhost/yii/cms/page/page
 ---
+2012/05/12 11:11:11 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/page/creat...')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/page/creat...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/12 11:11:11 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/page/creat...')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/page/creat...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/12 11:52:59 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/
+---
+2012/05/12 11:57:31 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/
+---
+2012/05/12 11:57:31 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/
+---
+2012/05/12 11:57:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asd
+---
+2012/05/12 11:58:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asd
+---
+2012/05/12 11:58:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asd
+---
+2012/05/12 11:58:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asd
+---
+2012/05/12 11:58:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asd
+---
+2012/05/12 11:58:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asd
+---
+2012/05/12 11:58:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asd
+---
+2012/05/12 12:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:20:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas
+---
+2012/05/12 12:22:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:22:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:22:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:25:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:32:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:34:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:52:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:52:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:52:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:52:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:52:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:52:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:52:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:52:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:52:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adas/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adas/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adas/asd
+---
+2012/05/12 12:54:06 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:56:04 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:56:05 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:56:05 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:56:05 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:56:05 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:56:05 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:56:06 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:56:06 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:56:06 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:57:35 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:57:35 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:57:35 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:57:36 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:57:36 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:57:36 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:57:36 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:57:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asd
+---
+2012/05/12 12:57:54 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 12:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 12:59:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 12:59:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 12:59:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 12:59:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 12:59:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 12:59:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:00:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:00:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:01:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:02:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:04:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:04:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:04:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:04:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:04:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:04:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:04:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:04:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:04:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/asd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('login/asd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/login/asd
+---
+2012/05/12 13:04:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:05:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:05:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:05:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:05:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:05:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:06:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 13:07:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adsads".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adsads')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adsads
+---
+2012/05/12 13:08:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adsads".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adsads')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adsads
+---
+2012/05/12 13:08:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adsads".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adsads')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adsads
+---
+2012/05/12 13:08:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adsads".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adsads')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adsads
+---
+2012/05/12 13:08:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "adsads".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('adsads')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/adsads
+---
+2012/05/12 13:08:44 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---

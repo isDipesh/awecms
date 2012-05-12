@@ -3,7 +3,6 @@
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'language' => 'en',
-    'name' => 'My CMS',
     // preloading 'log' component
     'preload' => array(
         'log',
@@ -26,7 +25,8 @@ return array(
     ),
     // application components
     'components' => array(
-        'metadata' => array('class' => 'Metadata'),
+        'errorHandler' => array(
+        ),
         'assetManager' => array(
             'linkAssets' => true,
         ),
@@ -55,9 +55,9 @@ return array(
             'enableParamLogging' => true,
         ),
         'errorHandler' => array(
-            // use 'site/error' action to display errors
-            'errorAction' => 'site/error',
-        //'class' => 'application.modules.cms.components.CmsHandler',
+            'errorAction' => 'slug/error',
+            //'class' => 'application.controllers.SlugHandler',
+            //'errorAction' => 'slug/handle',
         //'class' => 'site/error',
         ),
         'log' => array(

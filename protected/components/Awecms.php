@@ -113,4 +113,26 @@ class Awecms {
         return strtolower(str_replace('Controller', '', $className));
     }
 
+    public static function doesTableExist($tableName) {
+        $tableExists = new CDbCommand(Yii::app()->getDb(), "
+            show tables like '$tableName'
+        ");
+        try {
+            $exists = $tableExists->queryColumn();
+        } catch (Exception $e) {
+            $exists = false;
+        }
+        return $exists ? true : false;
+    }
+    
+    public static function zdnd($d){
+        print_r($d);
+        die();
+    }
+    
+    public static function x($m){
+        print_r($m);
+        echo"<br/>";
+    }
+
 }

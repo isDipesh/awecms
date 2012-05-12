@@ -14,6 +14,6 @@ $this->breadcrumbs = array(
     echo '<pre>';
     var_dump($_SERVER);
     ?>
-    
+
 
 </div>
