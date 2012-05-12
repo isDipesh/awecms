@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-    AdminModule::t('Items') => array('/admin/dashboard/'),
+    AdminModule::t('Items') => array('/admin/dashboard'),
     Yii::t('app', 'Add'),
 );
 

@@ -1,21 +1,21 @@
 <?php
 $this->breadcrumbs = array(
-    AdminModule::t('Items') => array('/admin/dashboard'),
+    $model->label(2) => array('/admin/slug'),
     Yii::t('app', 'Manage'),
 );
 ?>
 
-<h1><?php echo Yii::t('app', 'Manage') . ' ' . GxHtml::encode($model->label(1)); ?></h1>
+<h1><?php echo Yii::t('app', 'Manage') . ' ' . GxHtml::encode($model->label(2)); ?></h1>
+
 
 <?php
 $this->widget('zii.widgets.grid.CGridView', array(
-    'id' => 'dashboard-grid',
+    'id' => 'slug-grid',
     'dataProvider' => $model->search(),
     'filter' => $model,
     'columns' => array(
         'id',
-        'category',
-        'name',
+        'slug',
         'path',
         array(
             'class' => 'JToggleColumn',

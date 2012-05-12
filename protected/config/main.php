@@ -25,8 +25,6 @@ return array(
     ),
     // application components
     'components' => array(
-        'errorHandler' => array(
-        ),
         'assetManager' => array(
             'linkAssets' => true,
         ),
@@ -55,10 +53,7 @@ return array(
             'enableParamLogging' => true,
         ),
         'errorHandler' => array(
-            'errorAction' => 'slug/error',
-            //'class' => 'application.controllers.SlugHandler',
-            //'errorAction' => 'slug/handle',
-        //'class' => 'site/error',
+            'errorAction' => 'slug/handle',
         ),
         'log' => array(
             'class' => 'CLogRouter',

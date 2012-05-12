@@ -12,12 +12,14 @@ class SlugController extends Controller {
     /**
      * This is the action to handle external exceptions.
      */
-    public function actionError() {
+    public function actionHandle() {
         if ($error = Yii::app()->errorHandler->error) {
             if (Yii::app()->request->isAjaxRequest)
                 echo $error['message'];
-            else
+            else {
+                $this->pageTitle='Error';
                 $this->render('/error', $error);
+            }
         }
     }
 
