@@ -7808,3 +7808,11 @@ Stack trace:
 #7 {main}
 REQUEST_URI=/yii/cms/page
 ---
+2012/05/12 10:51:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/admin".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/admin')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/admin
+---
