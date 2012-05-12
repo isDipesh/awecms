@@ -53,7 +53,7 @@ return array(
             'enableParamLogging' => true,
         ),
         'errorHandler' => array(
-            'errorAction' => 'slug/handle',
+            'errorAction' => 'site/error',
         ),
         'log' => array(
             'class' => 'CLogRouter',

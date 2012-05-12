@@ -9794,3 +9794,223 @@ Stack trace:
 #7 {main}
 REQUEST_URI=/yii/cms/page
 ---
+2012/05/12 16:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdf".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asdf')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asdf
+---
+2012/05/12 16:05:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdf".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asdf')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asdf
+---
+2012/05/12 16:11:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdf".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asdf')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asdf
+---
+2012/05/12 16:11:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:12:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:12:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:13:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:15:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:15:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:16:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:16:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:16:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:16:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:17:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:18:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:18:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:18:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUserss".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUserss')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUserss
+---
+2012/05/12 16:19:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUserss".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUserss')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUserss
+---
+2012/05/12 16:19:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUserss".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUserss')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUserss
+---
+2012/05/12 16:19:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:21:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:21:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/12 16:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/dashboards".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admin/dashboard...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/dashboards
+---
+2012/05/12 16:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admins".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('admins')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admins
+---
+2012/05/12 16:30:30 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---

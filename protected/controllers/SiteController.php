@@ -30,6 +30,23 @@ class SiteController extends Controller {
         // using the default layout 'protected/views/layouts/main.php'
         $this->render('index');
     }
+    
+    public function actionError() {
+        $slugModel = new Slug;
+        $slug = $slugModel->findByAttributes(array('slug' => Yii::app()->getRequest()->pathInfo, 'enabled' => 1));
+        if ($slug) {
+            $this->forward('admin/user');
+        } else {
+            if ($error = Yii::app()->errorHandler->error) {
+                if (Yii::app()->request->isAjaxRequest)
+                    echo $error['message'];
+                else {
+                    $this->pageTitle = 'Error';
+                    $this->render('/error', $error);
+                }
+            }
+        }
+    }
 
     /**
      * Displays the contact page
