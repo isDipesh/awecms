@@ -7764,3 +7764,23 @@ Stack trace:
 REQUEST_URI=/yii/cms/page/default/view/id/4
 HTTP_REFERER=http://localhost/yii/cms/page/
 ---
+2012/05/12 10:31:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('admin')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('admin')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/default/ad...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/default/admin
+HTTP_REFERER=http://localhost/yii/cms/page/
+---
+2012/05/12 10:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('index')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/index
+HTTP_REFERER=http://localhost/yii/cms/page/admin/index
+---
