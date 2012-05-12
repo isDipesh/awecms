@@ -25,7 +25,8 @@ $this->widget('zii.widgets.grid.CGridView', array(
             'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
         ),
         array(
-            'class' => 'CButtonColumnWithoutView',
+            'class' => 'CButtonColumn',
+            'template' => '{update} {delete}',
         ),
     ),
 ));
