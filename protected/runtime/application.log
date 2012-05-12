@@ -7816,3 +7816,16 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/yii/cms/category/admin
 ---
+2012/05/12 11:09:07 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page/page/creat...')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page/page/creat...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/create
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
