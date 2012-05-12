@@ -1,9 +1,5 @@
 <?php
 
-// uncomment the following to define a path alias
-// Yii::setPathOfAlias('local','path/to/local-folder');
-// This is the main Web application configuration. Any writable
-// CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'language' => 'en',
@@ -36,16 +32,6 @@ return array(
         ),
         'cache' => array(
             'class' => 'system.caching.CFileCache',
-        ),
-        'settings' => array(
-            'class' => 'CmsSettings',
-            'cacheComponentId' => 'cache',
-            'cacheId' => 'global_website_settings',
-            'cacheTime' => 84000,
-            'tableName' => '{{settings}}',
-            'dbComponentId' => 'db',
-            'createTable' => true,
-            'dbEngine' => 'InnoDB',
         ),
         'urlManager' => array(
             'showScriptName' => false, //hides index.php in URL
@@ -93,22 +79,11 @@ return array(
             'loginUrl' => array('/login'),
         ),
     ),
-    // application-level parameters that can be accessed
-    // using Yii::app()->params['paramName']
-    'params' => array(
-        // this is used in contact page
-        'adminEmail' => 'webmaster@example.com',
-    ),
-    //yum submodules
     'modules' => array(
-        'cms' => array(
-            // this layout will be set by default if no layout set for page
-            'defaultLayout' => 'cms', // this layout will be set by default if no layout set for page
-        ),
         'user',
-        'page',
-        'student',
         'admin',
+        'category',
+        'page',
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',
