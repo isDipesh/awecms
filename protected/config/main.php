@@ -35,11 +35,16 @@ return array(
             'showScriptName' => false, //hides index.php in URL
             'caseSensitive' => true,
             'urlFormat' => 'path',
+            //'urlSuffix' => '.html',
+            //'useStrictParsing' => true,
             'rules' => array(
+                'category/<action:(\w+)>' => 'category/category/<action>',
+                //'<m:\w+>/<action:(\w+)>' => '<m>/<m>/<action>',
                 '<_a:(login|registration|profile.*|logout)>' => 'user/<_a>',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+            //'' => array('site/index', 'urlSuffix' => ''),//
             ),
         ),
         'db' => array(

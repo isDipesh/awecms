@@ -10014,3 +10014,2008 @@ Stack trace:
 #7 {main}
 REQUEST_URI=/yii/cms/page
 ---
+2012/05/12 16:33:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:33:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:33:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:33:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:34:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:34:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:40:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:41:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:41:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:41:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:41:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug1')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug1
+---
+2012/05/12 16:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdasd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asdasd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asdasd
+---
+2012/05/12 16:42:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdasd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asdasd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asdasd
+---
+2012/05/12 16:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdasd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asdasd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asdasd
+---
+2012/05/12 16:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "asdasd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('asdasd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/asdasd
+---
+2012/05/12 16:42:33 [error] [php] Undefined variable: app (/var/www/html/yii/cms/protected/controllers/SiteController.php:29)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(277): SiteController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): SiteController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (29)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 16:42:34 [error] [php] Undefined variable: app (/var/www/html/yii/cms/protected/controllers/SiteController.php:29)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(277): SiteController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): SiteController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (29)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 16:42:34 [error] [php] Undefined variable: app (/var/www/html/yii/cms/protected/controllers/SiteController.php:29)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(277): SiteController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): SiteController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (29)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 16:42:34 [error] [php] Undefined variable: app (/var/www/html/yii/cms/protected/controllers/SiteController.php:29)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(277): SiteController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(279): SiteController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (29)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 16:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageusers".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageusers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageusers
+---
+2012/05/12 16:44:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageapple".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageapple')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageapple
+---
+2012/05/12 16:44:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageaasdd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageaasdd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageaasdd
+---
+2012/05/12 16:44:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug2".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug2')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug2
+---
+2012/05/12 16:44:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageaasdd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageaasdd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageaasdd
+---
+2012/05/12 16:45:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageaasdd".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('manageaasdd')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageaasdd
+---
+2012/05/12 16:45:05 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "indexs".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('indexs', NULL, true)
+#1 /var/www/html/yii/cms/protected/controllers/SiteController.php(24): CController->render('indexs')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/12 17:29:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/manage".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/manage')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/manage
+---
+2012/05/12 17:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/admin".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/admin')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/admin
+---
+2012/05/12 17:37:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/category/view/id/1".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/category/view/id/1
+HTTP_REFERER=http://localhost/yii/cms/category/category
+---
+2012/05/12 17:37:55 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/html/yii/framework/web/CController.php:845
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(753): CController->renderPartial('index', Array, true)
+#1 /var/www/html/yii/cms/protected/modules/category/controllers/DefaultController.php(88): CController->render('index', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1092): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/12 17:38:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 17:38:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 17:39:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/creates".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/creates
+---
+2012/05/12 17:39:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 17:41:36 [error] [exception.CException] exception 'CException' with message 'Alias "page.PageModule" is invalid. Make sure it points to an existing PHP file.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('page.PageModule', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('page.PageModule', 'page', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(334): CModule->getModule('page')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController('page')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('page')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page
+---
+2012/05/12 17:42:05 [error] [php] include(PageController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:418)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php(6): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(347): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(335): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(273): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages
+in /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php (6)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:42:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/12 17:43:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/category".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/category
+---
+2012/05/12 17:44:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "category".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('category')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('category')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/12 17:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 17:44:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "category".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('category')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('category')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/12 17:50:19 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:20 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:21 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:21 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:21 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:21 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:22 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:22 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:22 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:22 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:27 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:30 [error] [php] Undefined offset: 0 (/var/www/html/yii/framework/web/CUrlManager.php:655)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#1 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#2 /var/www/html/yii/framework/base/CApplication.php(503): CWebApplication->getComponent()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(136): CWebApplication->getUrlManager()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/index.php (18)
+2012/05/12 17:50:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('index')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/index
+---
+2012/05/12 17:50:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.html".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('index.html')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/index.html
+---
+2012/05/12 17:50:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "category".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('category')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('category')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category
+---
+2012/05/12 17:51:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/category.html".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/category.html
+---
+2012/05/12 17:51:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/category.html".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/category.html
+---
+2012/05/12 17:51:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/category.html".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/category.html
+---
+2012/05/12 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/category.html".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/category.html
+---
+2012/05/12 17:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/category.html".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/category.html
+---
+2012/05/12 17:51:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/category.html".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/category.html
+---
+2012/05/12 18:00:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category".' in /var/www/html/yii/framework/web/CUrlManager.php:371
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(136): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category
+---
+2012/05/12 18:01:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "category".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('category')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('category')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category.html
+---
+2012/05/12 18:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "category".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('category')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('category')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category.html
+---
+2012/05/12 18:01:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/html/yii/framework/web/CUrlManager.php:371
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(136): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/site
+---
+2012/05/12 18:01:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in /var/www/html/yii/framework/web/CUrlManager.php:371
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(136): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/site/index
+---
+2012/05/12 18:02:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in /var/www/html/yii/framework/web/CUrlManager.php:371
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(136): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/site/index
+---
+2012/05/12 18:02:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "".' in /var/www/html/yii/framework/web/CUrlManager.php:371
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(136): CUrlManager->parseUrl(Object(CHttpRequest))
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/12 18:15:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "category".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('category')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('category')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category
+---
+2012/05/12 18:16:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/default".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/defaul...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/12 18:16:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:17:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:18:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:18:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/12 18:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "categorry/category".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('categorry/categ...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/categorry/category
+---
+2012/05/12 18:20:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "slug".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('slug')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/slug
+---
+2012/05/12 18:24:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category\category".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category\catego...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/12 18:24:43 [error] [exception.CException] exception 'CException' with message 'The URL pattern "<category/_c:(category)>" for route "<_c>/category/category/create" is not a valid regular expression.' in /var/www/html/yii/framework/web/CUrlManager.php:700
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(268): CUrlRule->__construct('<_c>/category/c...', '<category/_c:(c...')
+#1 /var/www/html/yii/framework/web/CUrlManager.php(227): CUrlManager->createUrlRule('<_c>/category/c...', '<category/_c:(c...')
+#2 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#3 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#4 /var/www/html/yii/framework/base/CApplication.php(503): CModule->getComponent('urlManager')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(136): CApplication->getUrlManager()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/cms/category/category
+---
+2012/05/12 18:25:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/12 18:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:26:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:26:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:26:54 [error] [exception.CException] exception 'CException' with message 'The URL pattern "<_a:(category/)><_c:(.*)>" for route "/category/category/<_c>" is not a valid regular expression.' in /var/www/html/yii/framework/web/CUrlManager.php:700
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(268): CUrlRule->__construct('/category/categ...', '<_a:(category/)...')
+#1 /var/www/html/yii/framework/web/CUrlManager.php(227): CUrlManager->createUrlRule('/category/categ...', '<_a:(category/)...')
+#2 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#3 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#4 /var/www/html/yii/framework/base/CApplication.php(503): CModule->getComponent('urlManager')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(136): CApplication->getUrlManager()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:26:55 [error] [exception.CException] exception 'CException' with message 'The URL pattern "<_a:(category/)><_c:(.*)>" for route "/category/category/<_c>" is not a valid regular expression.' in /var/www/html/yii/framework/web/CUrlManager.php:700
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(268): CUrlRule->__construct('/category/categ...', '<_a:(category/)...')
+#1 /var/www/html/yii/framework/web/CUrlManager.php(227): CUrlManager->createUrlRule('/category/categ...', '<_a:(category/)...')
+#2 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#3 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#4 /var/www/html/yii/framework/base/CApplication.php(503): CModule->getComponent('urlManager')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(136): CApplication->getUrlManager()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:27:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:27:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:27:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:27:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:27:29 [error] [exception.CException] exception 'CException' with message 'The URL pattern "category<_c:(*)>" for route "/category/category/<_c>" is not a valid regular expression.' in /var/www/html/yii/framework/web/CUrlManager.php:700
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(268): CUrlRule->__construct('/category/categ...', 'category<_c:(*)...')
+#1 /var/www/html/yii/framework/web/CUrlManager.php(227): CUrlManager->createUrlRule('/category/categ...', 'category<_c:(*)...')
+#2 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#3 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#4 /var/www/html/yii/framework/base/CApplication.php(503): CModule->getComponent('urlManager')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(136): CApplication->getUrlManager()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:27:29 [error] [exception.CException] exception 'CException' with message 'The URL pattern "category<_c:(*)>" for route "/category/category/<_c>" is not a valid regular expression.' in /var/www/html/yii/framework/web/CUrlManager.php:700
+Stack trace:
+#0 /var/www/html/yii/framework/web/CUrlManager.php(268): CUrlRule->__construct('/category/categ...', 'category<_c:(*)...')
+#1 /var/www/html/yii/framework/web/CUrlManager.php(227): CUrlManager->createUrlRule('/category/categ...', 'category<_c:(*)...')
+#2 /var/www/html/yii/framework/web/CUrlManager.php(207): CUrlManager->processRules()
+#3 /var/www/html/yii/framework/base/CModule.php(388): CUrlManager->init()
+#4 /var/www/html/yii/framework/base/CApplication.php(503): CModule->getComponent('urlManager')
+#5 /var/www/html/yii/framework/web/CWebApplication.php(136): CApplication->getUrlManager()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#8 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:27:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:27:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:27:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/12 18:27:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 06:58:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:01:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:01:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "abouts".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('abouts')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/abouts
+---
+2012/05/13 07:03:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /var/www/html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /var/www/html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /var/www/html/yii/framework/web/CController.php(296): CAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CViewAction))
+#4 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('page')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('site/page')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/about
+---
+2012/05/13 07:03:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /var/www/html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /var/www/html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /var/www/html/yii/framework/web/CController.php(296): CAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CViewAction))
+#4 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('page')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('site/page')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/about
+---
+2012/05/13 07:03:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /var/www/html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /var/www/html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /var/www/html/yii/framework/web/CController.php(296): CAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CViewAction))
+#4 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('page')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('site/page')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/about
+---
+2012/05/13 07:03:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /var/www/html/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /var/www/html/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /var/www/html/yii/framework/web/CController.php(296): CAction->runWithParams(Array)
+#3 /var/www/html/yii/framework/web/CController.php(277): CController->runAction(Object(CViewAction))
+#4 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('page')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('site/page')
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii/cms/about
+---
+2012/05/13 07:04:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('about')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/about
+---
+2012/05/13 07:04:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "a/about".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('a/about')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/a/about
+---
+2012/05/13 07:04:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "a/about".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('a/about')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/a/about
+---
+2012/05/13 07:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/app".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/app')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/app
+---
+2012/05/13 07:07:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/app".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/app')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/app
+---
+2012/05/13 07:08:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('about')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/about
+---
+2012/05/13 07:08:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/app".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/app')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/1
+---
+2012/05/13 07:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/app".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/app')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/1
+---
+2012/05/13 07:08:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/app".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/app')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/1
+---
+2012/05/13 07:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "1".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('1')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('1')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/1
+---
+2012/05/13 07:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/13 07:12:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/13 07:12:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/
+---
+2012/05/13 07:12:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1092): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/category/admin
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/05/13 07:12:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1092): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/category/admin
+HTTP_REFERER=http://localhost/yii/cms/category/admin
+---
+2012/05/13 07:12:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1092): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/category/admin
+HTTP_REFERER=http://localhost/yii/cms/category/admin
+---
+2012/05/13 07:12:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1092): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/category/admin
+HTTP_REFERER=http://localhost/yii/cms/category/admin
+---
+2012/05/13 07:12:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1092): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/category/admin
+HTTP_REFERER=http://localhost/yii/cms/category/admin
+---
+2012/05/13 07:12:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1092): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/category/admin
+HTTP_REFERER=http://localhost/yii/cms/category/admin
+---
+2012/05/13 07:12:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1092): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/category/admin
+HTTP_REFERER=http://localhost/yii/cms/category/admin
+---
+2012/05/13 07:13:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1092): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/category/admin
+HTTP_REFERER=http://localhost/yii/cms/category/admin
+---
+2012/05/13 07:13:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:157
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1092): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/category/admin
+HTTP_REFERER=http://localhost/yii/cms/category/admin
+---
+2012/05/13 07:15:55 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 28 (/var/www/html/yii/framework/web/CUrlManager.php:725)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): CategoryController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/main.php(45): CategoryController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#12 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CategoryController->renderFile()
+#13 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#14 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#15 /var/www/html/yii/framework/web/CBaseController.php(207): CContentDecorator->run()
+#16 /var/www/html/yii/framework/web/CBaseController.php(301): CategoryController->endWidget()
+#17 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CategoryController->endContent()
+#18 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#19 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#20 /var/www/html/yii/framework/web/CController.php(755): CategoryController->renderFile()
+#21 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(100): CategoryController->render()
+#22 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionAdmin()
+#23 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#24 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#25 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#26 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#27 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#28 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#29 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#30 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#31 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#32 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#33 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#34 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/admin
+in /var/www/html/yii/cms/protected/views/layouts/main.php (45)
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (21)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (100)
+2012/05/13 07:16:21 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 28 (/var/www/html/yii/framework/web/CUrlManager.php:725)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/cms/protected/modules/category/views/category/_search.php(4): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#4 /var/www/html/yii/framework/web/CController.php(836): CategoryController->renderFile()
+#5 /var/www/html/yii/cms/protected/modules/category/views/category/admin.php(37): CategoryController->renderPartial()
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(836): CategoryController->renderFile()
+#9 /var/www/html/yii/framework/web/CController.php(753): CategoryController->renderPartial()
+#10 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(100): CategoryController->render()
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#18 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/admin
+in /var/www/html/yii/cms/protected/modules/category/views/category/_search.php (4)
+in /var/www/html/yii/cms/protected/modules/category/views/category/admin.php (37)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (100)
+2012/05/13 07:19:58 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 28 (/var/www/html/yii/framework/web/CUrlManager.php:725)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): SiteController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/main.php(45): SiteController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#12 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): SiteController->renderFile()
+#13 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#14 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#15 /var/www/html/yii/framework/web/CBaseController.php(207): CContentDecorator->run()
+#16 /var/www/html/yii/framework/web/CBaseController.php(301): SiteController->endWidget()
+#17 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): SiteController->endContent()
+#18 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#19 /var/www/html/yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#20 /var/www/html/yii/framework/web/CController.php(755): SiteController->renderFile()
+#21 /var/www/html/yii/cms/protected/controllers/SiteController.php(24): SiteController->render()
+#22 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#23 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#24 /var/www/html/yii/framework/web/CController.php(277): SiteController->runAction()
+#25 /var/www/html/yii/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(279): SiteController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#29 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/views/layouts/main.php (45)
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (21)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (24)
+2012/05/13 07:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category
+---
+2012/05/13 07:22:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "(?J)category/category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('(?J)category/ca...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:23:02 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 28 (/var/www/html/yii/framework/web/CUrlManager.php:725)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): CategoryController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/column2.php(16): CategoryController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(755): CategoryController->renderFile()
+#13 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(53): CategoryController->render()
+#14 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionCreate()
+#15 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#17 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#19 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#25 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/create
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (16)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (53)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 07:31:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:31:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:31:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:37:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "$1".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('$1')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('$1')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:37:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "$1".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('$1')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('$1')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:37:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "$1".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('$1')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('$1')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:37:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "$1".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('$1')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('$1')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:37:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "$1".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('$1')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('$1')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:37:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "$1".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('$1')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('$1')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:37:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "$1".' in /var/www/html/yii/framework/web/CController.php:455
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(262): CController->missingAction('$1')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(279): CController->run('$1')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:43:43 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 28 (/var/www/html/yii/framework/web/CUrlManager.php:725)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): CategoryController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/column2.php(16): CategoryController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(755): CategoryController->renderFile()
+#13 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(53): CategoryController->render()
+#14 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionCreate()
+#15 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#17 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#19 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#25 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/create
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (16)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (53)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 07:48:29 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 28 (/var/www/html/yii/framework/web/CUrlManager.php:727)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): CategoryController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/column2.php(16): CategoryController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(755): CategoryController->renderFile()
+#13 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(53): CategoryController->render()
+#14 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionCreate()
+#15 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#17 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#19 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#25 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/create
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (16)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (53)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 07:49:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:283
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController('category/create')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 07:50:12 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 20 (/var/www/html/yii/framework/web/CUrlManager.php:728)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): CategoryController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/column2.php(16): CategoryController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(755): CategoryController->renderFile()
+#13 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(53): CategoryController->render()
+#14 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionCreate()
+#15 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#17 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#19 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#25 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/create
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (16)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (53)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 07:50:13 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 20 (/var/www/html/yii/framework/web/CUrlManager.php:728)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): CategoryController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/column2.php(16): CategoryController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(755): CategoryController->renderFile()
+#13 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(53): CategoryController->render()
+#14 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionCreate()
+#15 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#17 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#19 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#25 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/create
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (16)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (53)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 07:50:13 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 20 (/var/www/html/yii/framework/web/CUrlManager.php:728)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): CategoryController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/column2.php(16): CategoryController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(755): CategoryController->renderFile()
+#13 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(53): CategoryController->render()
+#14 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionCreate()
+#15 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#17 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#19 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#25 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/create
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (16)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (53)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 07:52:24 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 18 (/var/www/html/yii/framework/web/CUrlManager.php:728)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): CategoryController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/column2.php(16): CategoryController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(755): CategoryController->renderFile()
+#13 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(53): CategoryController->render()
+#14 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionCreate()
+#15 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#17 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#19 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#25 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/create
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (16)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (53)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 07:52:33 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 18 (/var/www/html/yii/framework/web/CUrlManager.php:728)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): CategoryController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/column2.php(16): CategoryController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(755): CategoryController->renderFile()
+#13 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(53): CategoryController->render()
+#14 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionCreate()
+#15 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#17 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#19 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#25 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/create
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (16)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (53)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 07:52:33 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 18 (/var/www/html/yii/framework/web/CUrlManager.php:728)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/web/CController.php(929): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1095): CategoryController->createUrl()
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(381): normalizeUrl()
+#4 /var/www/html/yii/framework/zii/widgets/CMenu.php(240): link()
+#5 /var/www/html/yii/framework/zii/widgets/CMenu.php(208): CMenu->renderMenuItem()
+#6 /var/www/html/yii/framework/zii/widgets/CMenu.php(172): CMenu->renderMenuRecursive()
+#7 /var/www/html/yii/framework/zii/widgets/CMenu.php(159): CMenu->renderMenu()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CMenu->run()
+#9 /var/www/html/yii/cms/protected/views/layouts/column2.php(16): CategoryController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): CategoryController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(755): CategoryController->renderFile()
+#13 /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php(53): CategoryController->render()
+#14 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CategoryController->actionCreate()
+#15 /var/www/html/yii/framework/web/CController.php(296): CInlineAction->runWithParams()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CategoryController->runAction()
+#17 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(1092): CAccessControlFilter->filter()
+#19 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CategoryController->filterAccessControl()
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#21 /var/www/html/yii/framework/web/CController.php(281): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(257): CategoryController->runActionWithFilters()
+#23 /var/www/html/yii/framework/web/CWebApplication.php(279): CategoryController->run()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(138): CWebApplication->runController()
+#25 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#26 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/category/create
+in /var/www/html/yii/cms/protected/views/layouts/column2.php (16)
+in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (53)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 16:54:31 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Compilation failed: two named subpatterns have the same name at offset 18 (/var/www/html/yii/framework/web/CUrlManager.php:725)
+Stack trace:
+#0 /var/www/html/yii/framework/base/CApplication.php(524): CUrlManager->createUrl()
+#1 /var/www/html/yii/framework/gii/GiiModule.php(126): CWebApplication->createUrl()
+#2 /var/www/html/yii/framework/base/CModule.php(91): GiiModule->init()
+#3 /var/www/html/yii/framework/YiiBase.php(208): GiiModule->__construct()
+#4 /var/www/html/yii/framework/base/CModule.php(283): createComponent()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(331): CWebApplication->getModule()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/gii
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 16:55:12 [error] [exception.CException] exception 'CException' with message 'Alias "PortletGenerator.widgets.ddeditor.DDEditor" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('PortletGenerato...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PortletGenerator), 'PortletGenerato...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('PortletGenerato...', Array)
+#3 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/__comment.php(9): CBaseController->widget('PortletGenerato...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CTabView.php(213): CController->renderPartial('__comment', Array)
+#8 /var/www/html/yii/framework/web/widgets/CTabView.php(145): CTabView->renderBody()
+#9 /var/www/html/yii/framework/web/CBaseController.php(174): CTabView->run()
+#10 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/index.php(18): CBaseController->widget('system.web.widg...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/portlet')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/gii/portlet
+HTTP_REFERER=http://localhost/yii/cms/gii/default/index
+---
+2012/05/13 17:22:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "$1".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('$1')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('$1')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('category/catego...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/category/create
+---
+2012/05/13 17:22:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "category/createXDEBUG_SESSION_START=netbeans-xdebug".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('category/create...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/category/createXDEBUG_SESSION_START=netbeans-xdebug
+---
+2012/05/13 20:06:49 [error] [php] include(PageController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php(6): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages/admin
+in /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php (6)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/13 20:06:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/category".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/category')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/category
+---
+2012/05/13 20:07:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/category/admin".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/category/...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/category/admin
+---
+2012/05/13 20:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/category/category".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/category/...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/category/category
+---
+2012/05/13 20:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/category/create".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/category/...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/category/create
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/
+---
