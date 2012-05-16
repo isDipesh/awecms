@@ -25,11 +25,9 @@ class SiteController extends Controller {
     }
 
     public function actionError() {
-        $slugModel = new Slug;
-        $slug = $slugModel->findByAttributes(array('slug' => Yii::app()->getRequest()->pathInfo, 'enabled' => 1));
-        if ($slug) {
-            $this->forward($slug->path);
-        } else {
+        if ($path = Slug::getPath(Yii::app()->getRequest()->pathInfo))
+            $this->forward($path);
+        else {
             if ($error = Yii::app()->errorHandler->error) {
                 if (Yii::app()->request->isAjaxRequest)
                     echo $error['message'];

@@ -3,6 +3,7 @@
 class AdminModule extends CWebModule {
 
     public $name = "Admin";
+    public $menuItems = array();
 
     public function init() {
         // this method is called when the module is being created
@@ -29,6 +30,19 @@ class AdminModule extends CWebModule {
 
     public static function t($a) {
         return $a;
+    }
+
+    public function getMainMenu() {
+        $menuItems = array();
+        $menuItems = CMap::mergeArray($menuItems, $this->menuItems);
+        foreach (array_keys($this->getModules()) as $name) {
+            $module = $this->getModule($name);
+            if (!isset($module->menuItems)) {
+                continue;
+            }
+            $menuItems = CMap::mergeArray($menuItems, $module->menuItems);
+        }
+        return $menuItems;
     }
 
 }

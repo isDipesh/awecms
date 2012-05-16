@@ -875,3 +875,479 @@ REQUEST_URI=/yii/cms/admin/categories
 in /var/www/html/yii/cms/protected/views/layouts/column2.php (21)
 in /var/www/html/yii/cms/protected/modules/category/controllers/CategoryController.php (100)
 in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "fileUploader".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('fileUploader')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/fileUploader
+---
+2012/05/16 17:05:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "fileUploaders".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('fileUploaders')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('fileUploaders')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/fileUpload...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/site/fileUploaders
+---
+2012/05/16 17:05:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "fileUploaders".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('fileUploaders')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('fileUploaders')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/fileUpload...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/site/fileUploaders
+---
+2012/05/16 17:06:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "upload/protected/components/images/checked.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('upload/protecte...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/upload/protected/components/images/checked.png
+HTTP_REFERER=http://localhost/yii/cms/site/fileUploader
+---
+2012/05/16 17:09:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3cb835f9/js/i18n/elfinder.en.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/3cb835f9...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/3cb835f9/js/i18n/elfinder.en.js
+HTTP_REFERER=http://localhost/yii/cms/site/fileUploader
+---
+2012/05/16 17:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3cb835f9/js/i18n/elfinder.en.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/3cb835f9...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/3cb835f9/js/i18n/elfinder.en.js
+HTTP_REFERER=http://localhost/yii/cms/site/fileUploader
+---
+2012/05/16 17:10:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3cb835f9/js/i18n/elfinder.en.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/3cb835f9...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/3cb835f9/js/i18n/elfinder.en.js
+HTTP_REFERER=http://localhost/yii/cms/site/fileUploader
+---
+2012/05/16 17:10:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3cb835f9/js/i18n/elfinder.en.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/3cb835f9...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/3cb835f9/js/i18n/elfinder.en.js
+HTTP_REFERER=http://localhost/yii/cms/site/fileUploader
+---
+2012/05/16 17:10:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "fileUploaderConnector".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('fileUploaderCon...')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('fileUploaderCon...')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/fileUpload...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/site/fileUploaderConnector?elfinder_connector_options=YToxOntzOjU6InJvb3RzIjthOjE6e2k6MDthOjY6e3M6NjoiZHJpdmVyIjtzOjE1OiJMb2NhbEZpbGVTeXN0ZW0iO3M6NDoicGF0aCI7YjowO3M6MzoiVVJMIjtzOjE1OiIveWlpL2Ntcy91cGxvYWQiO3M6NzoidG1iUGF0aCI7czo4OiIvLnRodW1icyI7czoxMDoibWltZURldGVjdCI7czo4OiJpbnRlcm5hbCI7czoxMzoiYWNjZXNzQ29udHJvbCI7czo2OiJhY2Nlc3MiO319fQ%3D%3D&cmd=open&target=l1_YXNzZXRz&init=1&tree=1&_=1337188209142
+HTTP_REFERER=http://localhost/yii/cms/site/fileUploader
+---
+2012/05/16 17:10:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3cb835f9/js/i18n/elfinder.en.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/3cb835f9...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/3cb835f9/js/i18n/elfinder.en.js
+HTTP_REFERER=http://localhost/yii/cms/site/fileUploader
+---
+2012/05/16 17:10:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/3cb835f9/js/i18n/elfinder.en.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/3cb835f9...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/3cb835f9/js/i18n/elfinder.en.js
+HTTP_REFERER=http://localhost/yii/cms/site/fileUploader
+---
+2012/05/16 17:10:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ext.ezzeelfinder.ElFinderConnectorAction/elfinder_connector_options/YToxOntzOjU6InJvb3RzIjthOjE6e2k6MDthOjY6e3M6NjoiZHJpdmVyIjtzOjE1OiJMb2NhbEZpbGVTeXN0ZW0iO3M6NDoicGF0aCI7YjowO3M6MzoiVVJMIjtzOjE1OiIveWlpL2Ntcy91cGxvYWQiO3M6NzoidG1iUGF0aCI7czo4OiIvLnRodW1icyI7czoxMDoibWltZURldGVjdCI7czo4OiJpbnRlcm5hbCI7czoxMzoiYWNjZXNzQ29udHJvbCI7czo2OiJhY2Nlc3MiO319fQ==".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ext.ezzeelfinde...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/ext.ezzeelfinder.ElFinderConnectorAction/elfinder_connector_options/YToxOntzOjU6InJvb3RzIjthOjE6e2k6MDthOjY6e3M6NjoiZHJpdmVyIjtzOjE1OiJMb2NhbEZpbGVTeXN0ZW0iO3M6NDoicGF0aCI7YjowO3M6MzoiVVJMIjtzOjE1OiIveWlpL2Ntcy91cGxvYWQiO3M6NzoidG1iUGF0aCI7czo4OiIvLnRodW1icyI7czoxMDoibWltZURldGVjdCI7czo4OiJpbnRlcm5hbCI7czoxMzoiYWNjZXNzQ29udHJvbCI7czo2OiJhY2Nlc3MiO319fQ%3D%3D?cmd=open&target=&init=1&tree=1&_=1337188251627
+HTTP_REFERER=http://localhost/yii/cms/site/fileUploader
+---
+2012/05/16 17:12:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "fileUploader".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('fileUploader')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('fileUploader')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/fileUpload...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/site/fileUploader
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/05/16 17:32:08 [error] [php] Non-static method Slug::set() should not be called statically, assuming $this from incompatible context (/var/www/html/yii/cms/protected/controllers/SiteController.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:32:09 [error] [php] Non-static method Slug::set() should not be called statically, assuming $this from incompatible context (/var/www/html/yii/cms/protected/controllers/SiteController.php:25)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#1 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:32:19 [error] [php] Illegal offset type in isset or empty (/var/www/html/yii/framework/db/ar/CActiveRecord.php:757)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:32:20 [error] [php] Illegal offset type in isset or empty (/var/www/html/yii/framework/db/ar/CActiveRecord.php:757)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:33:26 [error] [php] Illegal offset type in isset or empty (/var/www/html/yii/framework/db/ar/CActiveRecord.php:757)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:33:27 [error] [php] Illegal offset type in isset or empty (/var/www/html/yii/framework/db/ar/CActiveRecord.php:757)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:37:17 [error] [php] Illegal offset type in isset or empty (/var/www/html/yii/framework/db/ar/CActiveRecord.php:757)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:38:15 [error] [php] Illegal offset type in isset or empty (/var/www/html/yii/framework/db/ar/CActiveRecord.php:757)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:38:15 [error] [php] Illegal offset type in isset or empty (/var/www/html/yii/framework/db/ar/CActiveRecord.php:757)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:38:19 [error] [php] Illegal offset type in isset or empty (/var/www/html/yii/framework/db/ar/CActiveRecord.php:757)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:38:20 [error] [php] Illegal offset type in isset or empty (/var/www/html/yii/framework/db/ar/CActiveRecord.php:757)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:38:55 [error] [php] Illegal offset type in isset or empty (/var/www/html/yii/framework/db/ar/CActiveRecord.php:757)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:40:15 [error] [php] property_exists() expects parameter 2 to be string, array given (/var/www/html/yii/framework/db/ar/CActiveRecord.php:754)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/models/Slug.php(13): Slug->insert()
+#1 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:40:15 [error] [php] property_exists() expects parameter 2 to be string, array given (/var/www/html/yii/framework/db/ar/CActiveRecord.php:754)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/models/Slug.php(13): Slug->insert()
+#1 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:40:16 [error] [php] property_exists() expects parameter 2 to be string, array given (/var/www/html/yii/framework/db/ar/CActiveRecord.php:754)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/models/Slug.php(13): Slug->insert()
+#1 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:40:58 [error] [php] property_exists() expects parameter 2 to be string, array given (/var/www/html/yii/framework/db/ar/CActiveRecord.php:754)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/models/Slug.php(13): Slug->insert()
+#1 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:40:58 [error] [php] property_exists() expects parameter 2 to be string, array given (/var/www/html/yii/framework/db/ar/CActiveRecord.php:754)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/models/Slug.php(13): Slug->insert()
+#1 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:40:59 [error] [php] property_exists() expects parameter 2 to be string, array given (/var/www/html/yii/framework/db/ar/CActiveRecord.php:754)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/models/Slug.php(13): Slug->insert()
+#1 /var/www/html/yii/cms/protected/controllers/SiteController.php(25): set()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (13)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/16 17:48:41 [error] [php] Non-static method CActiveRecord::findByAttributes() should not be called statically (/var/www/html/yii/cms/protected/models/Slug.php:21)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#1 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/
+in /var/www/html/yii/cms/protected/models/Slug.php (21)
+in /var/www/html/yii/cms/protected/models/Slug.php (21)
+in /var/www/html/yii/cms/protected/controllers/SiteController.php (25)
+2012/05/16 17:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/16 17:54:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
+2012/05/16 17:54:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUserss".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('manageUserss')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUserss
+---
+2012/05/16 17:55:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUserss".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('manageUserss')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUserss
+---
+2012/05/16 17:55:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUserss".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('manageUserss')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUserss
+---
+2012/05/16 17:55:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUserss".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('manageUserss')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUserss
+---
+2012/05/16 17:55:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUserss".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('manageUserss')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUserss
+---
+2012/05/16 17:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUserss".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('manageUserss')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUserss
+---
+2012/05/16 17:56:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "manageUsers".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('manageUsers')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/manageUsers
+---
