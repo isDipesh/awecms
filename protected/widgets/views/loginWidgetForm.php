@@ -4,7 +4,7 @@
 		->registerScriptFile( $assetUrl . '/userLogin.js' )    
 ?>
 
-<div class="login form">
+<div class="login form" style="display:none">
 	<?php if(Yii::app()->user->hasFlash('loginMessage')): ?>
 		<div class="success"><?php echo Yii::app()->user->getFlash('loginMessage'); ?></div>
 	<?php endif; ?>
