@@ -3,14 +3,15 @@
 class Settings {
 
     private static $_settingsTable = '{{setting}}';
+    public static $categoryField = 'category';
     protected static $_dbComponentId = 'db';
 
     public static function get($category = 'site', $key = null) {
-        $sql = 'SELECT `key`, `value`, `type` FROM ' . Settings::getSettingsTable() . ' WHERE `category`=:cat';
+        $sql = 'SELECT `key`, `value`, `type` FROM ' . self::getSettingsTable() . ' WHERE `' . self::$categoryField . '`=:cat';
         if ($key) {
             $sql .= " AND `key`='" . $key . "'";
         }
-        $connection = Settings::getDbComponent();
+        $connection = self::getDbComponent();
         $command = $connection->createCommand($sql);
         $command->bindParam(':cat', $category);
         $resultItems = $command->queryAll();
@@ -39,17 +40,17 @@ class Settings {
         //calling set without value will nullify the value column
         if (is_array($key)) {
             foreach ($key as $index => $keyItem) {
-                Settings::finalSet($category, $index, $keyItem, $forcedType);
+                self::finalSet($category, $index, $keyItem, $forcedType);
             }
         } else {
-            Settings::finalSet($category, $key, $value, $forcedType);
+            self::finalSet($category, $key, $value, $forcedType);
         }
     }
 
     public static function finalSet($category, $key, $value, $type) {
 
-        $connection = Settings::getDbComponent();
-        $command = $connection->createCommand('SELECT id FROM ' . Settings::getSettingsTable() . ' WHERE `category`=:cat AND `key`=:key LIMIT 1');
+        $connection = self::getDbComponent();
+        $command = $connection->createCommand('SELECT id FROM ' . self::getSettingsTable() . ' WHERE `' . self::$categoryField . '`=:cat AND `key`=:key LIMIT 1');
         $command->bindParam(':cat', $category);
         $command->bindParam(':key', $key);
         $result = $command->queryRow();
@@ -62,9 +63,9 @@ class Settings {
         }
 
         if (!empty($result))
-            $command = $connection->createCommand('UPDATE ' . Settings::getSettingsTable() . ' SET `value`=:value WHERE `category`=:cat AND `key`=:key');
+            $command = $connection->createCommand('UPDATE ' . self::getSettingsTable() . ' SET `value`=:value WHERE `' . self::$categoryField . '`=:cat AND `key`=:key');
         else {
-            $command = $connection->createCommand('INSERT INTO ' . Settings::getSettingsTable() . ' (`category`,`key`,`value`,`type`) VALUES(:cat,:key,:value,:type)');
+            $command = $connection->createCommand('INSERT INTO ' . self::getSettingsTable() . ' (`' . self::$categoryField . '`,`key`,`value`,`type`) VALUES(:cat,:key,:value,:type)');
             $command->bindParam(':type', $type);
         }
         $command->bindParam(':cat', $category);
@@ -74,36 +75,36 @@ class Settings {
     }
 
     protected static function getDbComponent() {
-        return Yii::app()->getComponent(Settings::$_dbComponentId);
+        return Yii::app()->getComponent(self::$_dbComponentId);
     }
 
     public static function delete($category, $keys = null) {
         //if $key is not array, make it one
         if (!is_array($keys))
             $keys = (array) $keys;
-        $sql = "DELETE FROM `" . Settings::getSettingsTable() . "` WHERE `category`='" . $category . "'";
+        $sql = "DELETE FROM `" . self::getSettingsTable() . "` WHERE `" . self::$categoryField . "`='" . $category . "'";
         if ($keys) {
             $sql.=" AND `key`='";
             $sql.=implode("' OR `key`='", $keys);
             $sql.="'";
         }
-        $connection = Settings::getDbComponent();
+        $connection = self::getDbComponent();
         $command = $connection->createCommand($sql);
         $result = $command->execute();
     }
 
     public static function getSettingsTable() {
-        return Settings::$_settingsTable;
+        return self::$_settingsTable;
     }
 
     public static function getCategories() {
-        $sql = 'SELECT DISTINCT category from ' . Settings::getSettingsTable();
-        $connection = Settings::getDbComponent();
+        $sql = 'SELECT DISTINCT ' . self::$categoryField . ' from ' . self::getSettingsTable();
+        $connection = self::getDbComponent();
         $command = $connection->createCommand($sql);
         $resultItems = $command->queryAll();
         $result = array();
         foreach ($resultItems as $resultItem) {
-            $result[] = $resultItem['category'];
+            $result[] = $resultItem[self::$categoryField];
         }
         return $result;
     }

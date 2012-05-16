@@ -19,17 +19,12 @@ class AdminModule extends CWebModule {
     }
 
     public function beforeControllerAction($controller, $action) {
+        // this method is called before any module controller action is performed
         if (!Yii::app()->getModule('user')->isAdmin()) {
             throw new CHttpException(403, 'Action is forbidden.');
         }
-
-        if (parent::beforeControllerAction($controller, $action)) {
-            // this method is called before any module controller action is performed
-            $controller->layout = 'main';
-            return true;
-        }
-        else
-            return false;
+        $controller->layout = 'main';
+        return true;
     }
 
     public static function t($a) {

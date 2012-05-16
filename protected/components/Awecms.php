@@ -78,7 +78,8 @@ class Awecms {
                 // could be any kind of weird site like an ftp or something, restrict to http and https
                 if (($url_parse['scheme'] == 'http') || ($url_parse['scheme'] == 'https')) {
                     // basename() strips off any preceding directories
-                    $file = pathinfo(basename($url_parse["path"]));
+                    if (isset($url_parse["path"]))
+                        $file = pathinfo(basename($url_parse["path"]));
                     if (isset($file['extension']) && in_array($file['extension'], array('jpg', 'png', 'gif', 'jpeg'))) {
                         return 'image_url';
                     }
@@ -124,13 +125,13 @@ class Awecms {
         }
         return $exists ? true : false;
     }
-    
-    public static function zdnd($d){
+
+    public static function zdnd($d) {
         print_r($d);
         die();
     }
-    
-    public static function x($m){
+
+    public static function x($m) {
         print_r($m);
         echo"<br/>";
     }

@@ -37,6 +37,16 @@
                 <nav>
                     <div class="grid_5 sidebar" style="overflow: auto">
                         <?php
+                        $this->beginWidget('zii.widgets.CPortlet', array(
+                            'title' => 'Operations',
+                        ));
+                        $this->widget('zii.widgets.CMenu', array(
+                            'items' => $this->menu,
+                            'htmlOptions' => array('class' => 'operations'),
+                        ));
+                        $this->endWidget();
+                        ?>
+                        <?php
 //                        $this->widget('application.widgets.NavBar', array(
 //                            'tryDefault' => FALSE,
 //                            'context' => 'admin',
@@ -54,38 +64,38 @@
             <?php
             ?>
             <nav id="left_sidebar">
-            <?php
-            $this->widget('zii.widgets.jui.CJuiAccordion', array(
-                'panels' => Admin::getDashboardMenu(),
-                'options' => array(
-                    'collapsible' => true,
-                    'active' => 0,
-                    'animated' => 'slide',
-                    'navigation' => true,
-                    'collapsible' => false,
-                ),
-                'htmlOptions' => array(
-                    'style' => 'width:220px;'
-                ),
-            ));
-            ?>
+                <?php
+                $this->widget('zii.widgets.jui.CJuiAccordion', array(
+                    'panels' => Admin::getDashboardMenu(),
+                    'options' => array(
+                        'collapsible' => true,
+                        'active' => 0,
+                        'animated' => 'slide',
+                        'navigation' => true,
+                        'collapsible' => false,
+                    ),
+                    'htmlOptions' => array(
+                        'style' => 'width:220px;'
+                    ),
+                ));
+                ?>
 
 
             </nav>
-            
+
             <div id="main_wrapper">
-                
+
                 <?php if (isset($this->breadcrumbs)): ?>
+                    <?php
+                    $this->widget('zii.widgets.CBreadcrumbs', array(
+                        'links' => $this->breadcrumbs,
+                        'homeLink' => '<a href="' . Yii::app()->baseUrl . '/admin">Dashboard</a>'
+                    ));
+                    ?><!-- breadcrumbs -->
+                <?php endif ?>
                 <?php
-                $this->widget('zii.widgets.CBreadcrumbs', array(
-                    'links' => $this->breadcrumbs,
-                    'homeLink' => '<a href="'.Yii::app()->baseUrl.'/admin">Dashboard</a>'
-                ));
-                ?><!-- breadcrumbs -->
-            <?php endif ?>
-<?php
-echo $content;
-?>
+                echo $content;
+                ?>
             </div>
         </div>
         <footer>
