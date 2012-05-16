@@ -1351,3 +1351,206 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/yii/cms/manageUsers
 ---
+2012/05/16 18:23:52 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/widgets/views/assets" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/widgets/LoginWidget.php(74): CAssetManager->publish('/var/www/html/y...', false, -1, true)
+#1 /var/www/html/yii/cms/protected/widgets/LoginWidget.php(87): LoginWidget->publishAssets()
+#2 /var/www/html/yii/framework/web/CBaseController.php(174): LoginWidget->run()
+#3 /var/www/html/yii/cms/protected/views/layouts/main.php(25): CBaseController->widget('LoginWidget')
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
+#8 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CBaseController->endContent()
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/cms/protected/controllers/SiteController.php(24): CController->render('index')
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/16 18:24:22 [error] [exception.CException] exception 'CException' with message 'LoginWidget cannot find the view "loginWidgetDone".' in /var/www/html/yii/framework/web/widgets/CWidget.php:246
+Stack trace:
+#0 /var/www/html/yii/cms/protected/widgets/LoginWidget.php(113): CWidget->render('loginWidgetDone', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(174): LoginWidget->run()
+#2 /var/www/html/yii/cms/protected/views/layouts/main.php(25): CBaseController->widget('LoginWidget')
+#3 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
+#7 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#9 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CBaseController->endContent()
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/cms/protected/controllers/SiteController.php(24): CController->render('index')
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#16 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#20 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#21 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/16 18:24:24 [error] [exception.CException] exception 'CException' with message 'LoginWidget cannot find the view "loginWidgetDone".' in /var/www/html/yii/framework/web/widgets/CWidget.php:246
+Stack trace:
+#0 /var/www/html/yii/cms/protected/widgets/LoginWidget.php(113): CWidget->render('loginWidgetDone', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(174): LoginWidget->run()
+#2 /var/www/html/yii/cms/protected/views/layouts/main.php(25): CBaseController->widget('LoginWidget')
+#3 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
+#7 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#9 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CBaseController->endContent()
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/cms/protected/controllers/SiteController.php(24): CController->render('index')
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#16 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#20 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#21 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/16 18:24:24 [error] [exception.CException] exception 'CException' with message 'LoginWidget cannot find the view "loginWidgetDone".' in /var/www/html/yii/framework/web/widgets/CWidget.php:246
+Stack trace:
+#0 /var/www/html/yii/cms/protected/widgets/LoginWidget.php(113): CWidget->render('loginWidgetDone', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(174): LoginWidget->run()
+#2 /var/www/html/yii/cms/protected/views/layouts/main.php(25): CBaseController->widget('LoginWidget')
+#3 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
+#7 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#9 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CBaseController->endContent()
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/cms/protected/controllers/SiteController.php(24): CController->render('index')
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#16 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#20 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#21 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/16 18:26:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/16 18:26:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/16 18:26:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/05/16 18:26:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/05/16 18:26:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/05/16 18:26:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/05/16 18:27:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/05/16 18:27:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/05/16 18:28:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---
+2012/05/16 18:28:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/site/index
+---

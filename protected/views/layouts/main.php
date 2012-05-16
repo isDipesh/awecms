@@ -22,6 +22,7 @@
 
             <div id="header">
                 <div id="logo"><?php echo CHtml::encode(Awecms::getSiteName()); ?></div>
+                <?php $this->widget('LoginWidget'); ?>
             </div><!-- header -->
 
             <?php
