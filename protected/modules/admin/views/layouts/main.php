@@ -5,6 +5,7 @@
         <title>Dashboard : <?php echo Awecms::getSiteName() ?></title>
         <?php $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.admin.assets')) . '/'; ?>
         <link rel="stylesheet" type="text/css" href="<?php echo $assetsUrl; ?>admin.css?<?php echo time() ?>"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/common.css"/>
         <script type="text/javascript">
             jQuery(document).ready(function(){
                 $('.accordion .head').click(function() {

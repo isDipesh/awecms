@@ -63,7 +63,7 @@ abstract class BasePage extends GxActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => Yii::t('app', 'ID'),
-            'user_id' => Yii::t('app', 'User'),
+            'user_id' => Yii::t('app', 'Author'),
             'title' => Yii::t('app', 'Title'),
             'content' => Yii::t('app', 'Content'),
             'status' => Yii::t('app', 'Status'),

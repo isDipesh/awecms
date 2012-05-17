@@ -9,19 +9,10 @@
     ?>
 
     <?php echo $form->errorSummary($model); ?>
+    
     <div class="row">
-        <?php echo $form->labelEx($model, 'user_id'); ?>
-        <?php
-        //TODO show this if superuser
-        echo $form->dropDownList($model, 'user_id', CHtml::listData(
-                        User::model()->findAll(), 'id', 'username'), array('prompt' => 'Select a user')
-        );
-        ?>
-        <?php echo $form->error($model, 'user_id'); ?>
-    </div><!-- row -->
-    <div class="row">
-        <?php echo $form->labelEx($model, 'title'); ?>
-        <?php echo $form->textArea($model, 'title'); ?>
+        <?php echo $form->labelEx($model, 'Enter title here',array('id'=>'label_title')); ?>
+        <?php echo $form->textField($model, 'title'); ?>
         <?php echo $form->error($model, 'title'); ?>
     </div><!-- row -->
     <div class="row">
@@ -63,6 +54,17 @@
         <?php echo $form->checkBox($model, 'tags_enabled'); ?>
         <?php echo $form->error($model, 'tags_enabled'); ?>
     </div><!-- row -->
+    <div class="row">
+        <?php echo $form->labelEx($model, 'user_id'); ?>
+        <?php
+        //TODO show this if superuser
+        echo $form->dropDownList($model, 'user_id', CHtml::listData(
+                        User::model()->findAll(), 'id', 'username'), array('prompt' => 'Select a user')
+        );
+        ?>
+        <?php echo $form->error($model, 'user_id'); ?>
+    </div><!-- row -->
+    
     <div class="row">
         <?php echo $form->labelEx($model, 'permission'); ?>
         <?php echo $form->dropDownList($model, 'permission', Awecms::generatePairs($model->permissions)); ?>
