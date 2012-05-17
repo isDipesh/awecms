@@ -6,14 +6,7 @@
         <?php $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.admin.assets')) . '/'; ?>
         <link rel="stylesheet" type="text/css" href="<?php echo $assetsUrl; ?>admin.css?<?php echo time() ?>"/>
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/common.css"/>
-        <script type="text/javascript">
-            jQuery(document).ready(function(){
-                $('.accordion .head').click(function() {
-                    $(this).next().toggle('slow');
-                    return false;
-                }).next().hide();
-            });
-        </script>
+        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js?<?php echo time() ?>"></script>
         <style type="text/css">
         </style>
     </head>

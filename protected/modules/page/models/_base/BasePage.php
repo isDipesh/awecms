@@ -69,7 +69,7 @@ abstract class BasePage extends GxActiveRecord {
             'status' => Yii::t('app', 'Status'),
             'created_at' => Yii::t('app', 'Created At'),
             'modified_at' => Yii::t('app', 'Modified At'),
-            'parent' => Yii::t('app', 'Parent'),
+            'parent' => Yii::t('app', 'Parent Page'),
             'order' => Yii::t('app', 'Order'),
             'type' => Yii::t('app', 'Type'),
             'comment_status' => Yii::t('app', 'Comment Status'),

@@ -62,6 +62,7 @@ class PageController extends GxController {
 
         if (isset($_POST['Page'])) {
             $model->setAttributes($_POST['Page']);
+            
 
             if ($model->save()) {
                 $this->redirect(array('view', 'id' => $model->id));

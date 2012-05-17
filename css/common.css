@@ -1,6 +1,11 @@
 .label_floating{
-    font-size: 1.7em;
-    padding: 8px 10px;
+    padding: 6px 5px;
+    position: absolute;
+    color: #BBBBBB;
+}
+
+#input_title{
+    
 }
 
 .portlet
