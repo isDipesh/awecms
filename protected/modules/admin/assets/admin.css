@@ -92,3 +92,34 @@ header a{
 .ui-accordion-content{
     padding: 0 2.2em !important;
 }
+
+#sidebar {
+    padding: 20px 20px 20px 0;
+}
+
+.portlet-decoration {
+    background: none repeat scroll 0 0 #B7D6E7;
+    border-left: 5px solid #6FACCF;
+    padding: 3px 8px;
+}
+
+.portlet-title {
+    color: #298DCD;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.portlet-content {
+    background: none repeat scroll 0 0 #EFFDFF;
+    font-size: 0.9em;
+    margin: 0 0 15px;
+    padding: 5px 8px;
+}
+
+.portlet-content ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}

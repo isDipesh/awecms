@@ -14,7 +14,7 @@ class DashboardController extends GxController {
                 if (Yii::app()->getRequest()->getIsAjaxRequest())
                     Yii::app()->end();
                 else
-                    $this->redirect(array('.'));
+                    $this->redirect(array('/admin/dashboard'));
             }
         }
 
@@ -30,7 +30,7 @@ class DashboardController extends GxController {
             $model->setAttributes($_POST['Dashboard']);
 
             if ($model->save()) {
-                $this->redirect(array('.'));
+                $this->redirect(array('/admin/dashboard'));
             }
         }
 
@@ -44,7 +44,7 @@ class DashboardController extends GxController {
             $this->loadModel($id, 'Dashboard')->delete();
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest())
-                $this->redirect(array('admin'));
+                $this->redirect(array('/admin/dashboard'));
         } else
             throw new CHttpException(400, Yii::t('app', 'Your request is invalid.'));
     }

@@ -40,12 +40,12 @@
                         array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
                         array('label' => 'Contact', 'url' => array('/site/contact')),
                         array('label' => 'Login', 'url' => array('/user/login'), 'visible' => Yii::app()->user->isGuest),
-                        array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/logout'), 'visible' => !Yii::app()->user->isGuest),
                         array('label' => 'Dashboard', 'url' => array('/admin'), 'visible' => (Yii::app()->hasModule('user') && Yii::app()->getModule('user')->isAdmin())),
                     ),
                 ));
                 ?>
             </div><!-- mainmenu -->
+
             <?php if (isset($this->breadcrumbs)): ?>
                 <?php
                 $this->widget('zii.widgets.CBreadcrumbs', array(

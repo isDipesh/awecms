@@ -35,27 +35,7 @@
 
                 </nav>
                 <nav>
-                    <div class="grid_5 sidebar" style="overflow: auto">
-                        <?php
-                        $this->beginWidget('zii.widgets.CPortlet', array(
-                            'title' => 'Operations',
-                        ));
-                        $this->widget('zii.widgets.CMenu', array(
-                            'items' => $this->menu,
-                            'htmlOptions' => array('class' => 'operations'),
-                        ));
-                        $this->endWidget();
-                        ?>
-                        <?php
-//                        $this->widget('application.widgets.NavBar', array(
-//                            'tryDefault' => FALSE,
-//                            'context' => 'admin',
-//                            'items' => array(
-//                                array('label' => 'Admin Home', 'url' => array('/admin/index/index')),
-//                            ),
-//                        ));
-                        ?>
-                    </div>
+                    
 
                 </nav>
 
@@ -84,7 +64,27 @@
             </nav>
 
             <div id="main_wrapper">
-
+<div class="right" style="overflow: auto">
+                        <?php
+                        $this->beginWidget('zii.widgets.CPortlet', array(
+                            'title' => 'Operations',
+                        ));
+                        $this->widget('zii.widgets.CMenu', array(
+                            'items' => $this->menu,
+                            'htmlOptions' => array('class' => 'operations'),
+                        ));
+                        $this->endWidget();
+                        ?>
+                        <?php
+//                        $this->widget('application.widgets.NavBar', array(
+//                            'tryDefault' => FALSE,
+//                            'context' => 'admin',
+//                            'items' => array(
+//                                array('label' => 'Admin Home', 'url' => array('/admin/index/index')),
+//                            ),
+//                        ));
+                        ?>
+                    </div>
                 <?php if (isset($this->breadcrumbs)): ?>
                     <?php
                     $this->widget('zii.widgets.CBreadcrumbs', array(
@@ -96,6 +96,7 @@
                 <?php
                 echo $content;
                 ?>
+                    
             </div>
         </div>
         <footer>

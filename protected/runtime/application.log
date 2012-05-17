@@ -1652,3 +1652,1728 @@ Stack trace:
 REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
 HTTP_REFERER=http://localhost/yii/cms/modules
 ---
+2012/05/16 19:44:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/categoriess".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/categorie...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/admin/categoriess
+---
+2012/05/16 19:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/categoriess
+---
+2012/05/16 19:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/categoriess
+---
+2012/05/16 21:19:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/16 21:19:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/17 14:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page
+---
+2012/05/17 14:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page
+---
+2012/05/17 14:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 14:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 14:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 14:39:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/dashboard...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/admin/dashboard/update
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update/id/3
+---
+2012/05/17 14:39:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update
+---
+2012/05/17 14:39:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/dashboard/update
+---
+2012/05/17 14:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "manage".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('manage')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('manage')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/man...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/pages/manage
+---
+2012/05/17 14:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/manage
+---
+2012/05/17 14:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/manage
+---
+2012/05/17 14:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('page')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/pag...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/pages/page/manage
+---
+2012/05/17 14:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/page/manage
+---
+2012/05/17 14:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/page/manage
+---
+2012/05/17 14:46:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Action is forbidden.' in /var/www/html/yii/cms/protected/modules/admin/AdminModule.php:25
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(264): AdminModule->beforeControllerAction(Object(PagesController), Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 14:46:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 14:46:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:01:57 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.0" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('0', 'user_id')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(72): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:06 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user_id" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user_id', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(72): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:07 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user_id" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user_id', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(72): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:08 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user_id" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user_id', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(72): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:08 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user_id" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user_id', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(72): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:30 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user_id" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user_id', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:31 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user_id" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user_id', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:31 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user_id" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user_id', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:32 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user_id" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user_id', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:32 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user_id" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user_id', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:32 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user_id" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user_id', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:47 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.user" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('user', 'a')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(322): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:52 [error] [exception.CException] exception 'CException' with message 'Either "name" or "value" must be specified for CDataColumn.' in /var/www/html/yii/framework/zii/widgets/grid/CDataColumn.php:86
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(335): CDataColumn->init()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#2 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#3 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#11 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#20 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#21 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:02:55 [error] [exception.CException] exception 'CException' with message 'Either "name" or "value" must be specified for CDataColumn.' in /var/www/html/yii/framework/zii/widgets/grid/CDataColumn.php:86
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(335): CDataColumn->init()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(293): CGridView->initColumns()
+#2 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#3 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#5 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#6 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#9 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#11 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#20 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#21 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:03:16 [error] [exception.CException] exception 'CException' with message 'Property "Page.a" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('a')
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2145): CActiveRecord->__get('a')
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1875): CHtml::resolveValue(Object(Page), 'a')
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(Page), 'a', Array)
+#4 /var/www/html/yii/framework/zii/widgets/grid/CDataColumn.php(105): CHtml::activeTextField(Object(Page), 'a', Array)
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(110): CDataColumn->renderFilterCellContent()
+#6 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(462): CGridColumn->renderFilterCell()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(440): CGridView->renderFilter()
+#8 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(410): CGridView->renderTableHeader()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(126): CBaseListView->renderContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(174): CBaseListView->run()
+#14 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#16 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#17 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#18 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#19 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): CController->render('admin', Array)
+#20 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionAdmin()
+#21 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#24 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#25 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#26 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#28 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#30 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages')
+#31 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#32 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#33 {main}
+REQUEST_URI=/yii/cms/admin/pages
+---
+2012/05/17 15:03:45 [error] [php] Use of undefined constant s - assumed 's' (/var/www/html/yii/framework/base/CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(142): CDataColumn->renderDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(529): CDataColumn->renderDataCell()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(502): CGridView->renderTableRow()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(412): CGridView->renderTableBody()
+#4 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(126): CGridView->renderContent()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CGridView->run()
+#9 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): PagesController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(870): PagesController->renderFile()
+#13 /var/www/html/yii/framework/web/CController.php(783): PagesController->renderPartial()
+#14 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): PagesController->render()
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PagesController->actionAdmin()
+#16 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#18 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#21 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /var/www/html/yii/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(276): PagesController->run()
+#25 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages
+in /var/www/html/yii/cms/protected/modules/page/views/page/admin.php (73)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (100)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/17 15:03:56 [error] [php] call_user_func_array() expects parameter 1 to be a valid callback, no array or string given (/var/www/html/yii/framework/base/CComponent.php:612)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(142): CDataColumn->renderDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(529): CDataColumn->renderDataCell()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(502): CGridView->renderTableRow()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(412): CGridView->renderTableBody()
+#4 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(126): CGridView->renderContent()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CGridView->run()
+#9 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): PagesController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(870): PagesController->renderFile()
+#13 /var/www/html/yii/framework/web/CController.php(783): PagesController->renderPartial()
+#14 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): PagesController->render()
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PagesController->actionAdmin()
+#16 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#18 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#21 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /var/www/html/yii/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(276): PagesController->run()
+#25 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages
+in /var/www/html/yii/cms/protected/modules/page/views/page/admin.php (73)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (100)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/17 15:03:57 [error] [php] call_user_func_array() expects parameter 1 to be a valid callback, no array or string given (/var/www/html/yii/framework/base/CComponent.php:612)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(142): CDataColumn->renderDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(529): CDataColumn->renderDataCell()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(502): CGridView->renderTableRow()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(412): CGridView->renderTableBody()
+#4 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(158): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(126): CGridView->renderContent()
+#8 /var/www/html/yii/framework/web/CBaseController.php(174): CGridView->run()
+#9 /var/www/html/yii/cms/protected/modules/page/views/page/admin.php(73): PagesController->widget()
+#10 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#11 /var/www/html/yii/framework/web/CBaseController.php(96): PagesController->renderInternal()
+#12 /var/www/html/yii/framework/web/CController.php(870): PagesController->renderFile()
+#13 /var/www/html/yii/framework/web/CController.php(783): PagesController->renderPartial()
+#14 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(100): PagesController->render()
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PagesController->actionAdmin()
+#16 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#18 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#21 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /var/www/html/yii/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#24 /var/www/html/yii/framework/web/CWebApplication.php(276): PagesController->run()
+#25 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages
+in /var/www/html/yii/cms/protected/modules/page/views/page/admin.php (73)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (100)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/17 15:04:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/4/attribute/tags_enabled/model/Page?ajax=page-grid
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:05:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/pages?ajax=page-grid
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:05:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/application.modules.page.models.Page?ajax=page-grid
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:07:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/application.modules.page.models.Page?ajax=page-grid
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:08:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/application.modules.page.models.Page
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/application.modules.page.models.Page
+---
+2012/05/17 15:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/application.modules.page.models.Page
+---
+2012/05/17 15:08:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/application.modules.page.models.Page
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:08:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/application.modules.page.models.Page
+---
+2012/05/17 15:08:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/application.modules.page.models.Page
+---
+2012/05/17 15:08:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:08:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:08:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "toggles".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('toggles')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggles')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggles/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggles/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggles/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/toggl...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/page/page/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:09:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle/id/1/attribute/tags_enabled/model/a
+---
+2012/05/17 15:10:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/toggl...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/page/page/toggle/id/1/attribute/tags_enabled/model/page
+---
+2012/05/17 15:10:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle/id/1/attribute/tags_enabled/model/page
+---
+2012/05/17 15:10:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle/id/1/attribute/tags_enabled/model/page
+---
+2012/05/17 15:10:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/toggl...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/page/page/toggle/id/1/attribute/tags_enabled/model/page
+---
+2012/05/17 15:10:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle/id/1/attribute/tags_enabled/model/page
+---
+2012/05/17 15:10:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle/id/1/attribute/tags_enabled/model/page
+---
+2012/05/17 15:10:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tggle".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('tggle')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('tggle')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/tggle')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/page/tggle
+---
+2012/05/17 15:10:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page/tggle
+---
+2012/05/17 15:10:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page/tggle
+---
+2012/05/17 15:10:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/toggl...')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/page/page/toggle
+---
+2012/05/17 15:10:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle
+---
+2012/05/17 15:10:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle
+---
+2012/05/17 15:10:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/toggl...')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/page/page/toggle
+---
+2012/05/17 15:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle
+---
+2012/05/17 15:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle
+---
+2012/05/17 15:11:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/toggl...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/toggle
+---
+2012/05/17 15:11:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle
+---
+2012/05/17 15:11:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle
+---
+2012/05/17 15:12:00 [error] [php] include(page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(382): spl_autoload_call()
+#1 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(26): model()
+#2 /var/www/html/yii/cms/protected/extensions/giix-components/GxController.php(84): model()
+#3 /var/www/html/yii/cms/protected/components/Controller.php(31): PagesController->loadModel()
+#4 unknown(0): PagesController->actionToggle()
+#5 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): PagesController->run()
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/page?ajax=page-grid
+in /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php (26)
+in /var/www/html/yii/cms/protected/extensions/giix-components/GxController.php (84)
+in /var/www/html/yii/cms/protected/components/Controller.php (31)
+2012/05/17 15:12:11 [error] [php] include(page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(382): spl_autoload_call()
+#1 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(26): model()
+#2 /var/www/html/yii/cms/protected/extensions/giix-components/GxController.php(84): model()
+#3 /var/www/html/yii/cms/protected/components/Controller.php(31): PagesController->loadModel()
+#4 unknown(0): PagesController->actionToggle()
+#5 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): PagesController->run()
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/page?ajax=page-grid
+in /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php (26)
+in /var/www/html/yii/cms/protected/extensions/giix-components/GxController.php (84)
+in /var/www/html/yii/cms/protected/components/Controller.php (31)
+2012/05/17 15:12:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in /var/www/html/yii/cms/protected/components/Controller.php:41
+Stack trace:
+#0 [internal function]: Controller->actionToggle('1', 'tags_enabled', 'page')
+#1 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PagesController), Object(ReflectionMethod), Array)
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/tog...')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/page
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:12:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/page
+---
+2012/05/17 15:12:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/page
+---
+2012/05/17 15:12:47 [error] [php] include(page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(382): spl_autoload_call()
+#1 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(26): model()
+#2 /var/www/html/yii/cms/protected/extensions/giix-components/GxController.php(84): model()
+#3 /var/www/html/yii/cms/protected/components/Controller.php(31): PagesController->loadModel()
+#4 unknown(0): PagesController->actionToggle()
+#5 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): PagesController->run()
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/page?ajax=page-grid
+in /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php (26)
+in /var/www/html/yii/cms/protected/extensions/giix-components/GxController.php (84)
+in /var/www/html/yii/cms/protected/components/Controller.php (31)
+2012/05/17 15:14:30 [error] [php] include(application.modules.page.models.Page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(382): spl_autoload_call()
+#1 /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php(26): model()
+#2 /var/www/html/yii/cms/protected/extensions/giix-components/GxController.php(84): model()
+#3 /var/www/html/yii/cms/protected/components/Controller.php(31): PagesController->loadModel()
+#4 unknown(0): PagesController->actionToggle()
+#5 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): PagesController->run()
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages/toggle/id/1/attribute/tags_enabled/model/application.modules.page.models.Page?ajax=page-grid
+in /var/www/html/yii/cms/protected/extensions/giix-components/GxActiveRecord.php (26)
+in /var/www/html/yii/cms/protected/extensions/giix-components/GxController.php (84)
+in /var/www/html/yii/cms/protected/components/Controller.php (31)
+2012/05/17 15:27:11 [error] [exception.CException] exception 'CException' with message 'Property "Page.name" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(16): CActiveRecord->__get('name')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/update.php(21): CController->renderPartial('_form', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('update', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(73): CController->render('update', Array)
+#11 [internal function]: PageController->actionUpdate('1')
+#12 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PagesController), Object(ReflectionMethod), Array)
+#14 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/upd...')
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#26 {main}
+REQUEST_URI=/yii/cms/admin/pages/update/id/1
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:27:28 [error] [exception.CException] exception 'CException' with message 'Property "Page.user" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('user')
+#1 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(16): CActiveRecord->__get('user')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/update.php(21): CController->renderPartial('_form', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('update', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(73): CController->render('update', Array)
+#11 [internal function]: PageController->actionUpdate('1')
+#12 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PagesController), Object(ReflectionMethod), Array)
+#14 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/upd...')
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#26 {main}
+REQUEST_URI=/yii/cms/admin/pages/update/id/1
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:30:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.user_id' in 'where clause'. The SQL statement executed was: SELECT `user`.`id` AS `t1_c0`, `user`.`username` AS `t1_c1`, `user`.`email` AS `t1_c3`, `user`.`createtime` AS `t1_c5`, `user`.`lastvisit` AS `t1_c6`, `user`.`superuser` AS `t1_c7`, `user`.`status` AS `t1_c8` FROM `user` `user`  WHERE (`user`.`user_id`=:ypl0). Bound with :ypl0='1'.
+in /var/www/html/yii/cms/protected/modules/page/views/page/_form.php (16)
+in /var/www/html/yii/cms/protected/modules/page/views/page/update.php (21)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (73)
+2012/05/17 15:30:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.user_id' in 'where clause'. The SQL statement executed was: SELECT `user`.`id` AS `t1_c0`, `user`.`username` AS `t1_c1`, `user`.`email` AS `t1_c3`, `user`.`createtime` AS `t1_c5`, `user`.`lastvisit` AS `t1_c6`, `user`.`superuser` AS `t1_c7`, `user`.`status` AS `t1_c8` FROM `user` `user`  WHERE (`user`.`user_id`=:ypl0). Bound with :ypl0='1'' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveFinder.php(823): CDbCommand->queryAll()
+#2 /var/www/html/yii/framework/db/ar/CActiveFinder.php(534): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/html/yii/framework/db/ar/CActiveFinder.php(167): CJoinElement->lazyFind(Object(Page))
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(273): CActiveFinder->lazyFind(Object(Page))
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(142): CActiveRecord->getRelated('user')
+#6 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(16): CActiveRecord->__get('user')
+#7 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/views/page/update.php(21): CController->renderPartial('_form', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('update', Array, true)
+#15 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(73): CController->render('update', Array)
+#16 [internal function]: PageController->actionUpdate('1')
+#17 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#18 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PagesController), Object(ReflectionMethod), Array)
+#19 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#20 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#22 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#26 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#28 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/upd...')
+#29 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#30 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#31 {main}
+REQUEST_URI=/yii/cms/admin/pages/update/id/1
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:31:09 [error] [exception.CException] exception 'CException' with message 'Property "User.name" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(16): CActiveRecord->__get('name')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/views/page/update.php(21): CController->renderPartial('_form', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('update', Array, true)
+#10 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(73): CController->render('update', Array)
+#11 [internal function]: PageController->actionUpdate('1')
+#12 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PagesController), Object(ReflectionMethod), Array)
+#14 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#23 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/upd...')
+#24 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#26 {main}
+REQUEST_URI=/yii/cms/admin/pages/update/id/1
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 15:33:29 [error] [exception.CException] exception 'CException' with message 'Property "User.name" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('name')
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(1797): CActiveRecord->__get('name')
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1761): CHtml::value(Object(User), 'name')
+#3 /var/www/html/yii/cms/protected/modules/page/views/page/_form.php(23): CHtml::listData(Array, 'id', 'name')
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/update.php(21): CController->renderPartial('_form', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('update', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(73): CController->render('update', Array)
+#13 [internal function]: PageController->actionUpdate('1')
+#14 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PagesController), Object(ReflectionMethod), Array)
+#16 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('update')
+#25 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/upd...')
+#26 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii/cms/admin/pages/update/id/1
+HTTP_REFERER=http://localhost/yii/cms/admin/pages
+---
+2012/05/17 16:26:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:337
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('toggle')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/toggl...')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/page/page/toggle
+---
+2012/05/17 16:26:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle
+---
+2012/05/17 16:26:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page/toggle
+---
+2012/05/17 16:45:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 16:45:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 16:45:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 16:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 16:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 16:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 16:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 16:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 16:59:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/17 16:59:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/17 16:59:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/17 17:00:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/17 17:00:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/
+---
+2012/05/17 17:00:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/site/page?view=about
+---
+2012/05/17 17:00:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/site/page?view=about
+---
