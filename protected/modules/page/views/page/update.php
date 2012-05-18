@@ -1,22 +1,18 @@
 <?php
+$this->breadcrumbs['Pages'] = array('index');
+$this->breadcrumbs[$model->id] = array('view','id'=>$model->id);
+$this->breadcrumbs[] = Yii::t('app', 'Update');
 
-$this->breadcrumbs = array(
-	$model->label(2) => array('index'),
-	GxHtml::valueEx($model) => array('view', 'id' => GxActiveRecord::extractPkValue($model, true)),
-	Yii::t('app', 'Update'),
-);
-
-$this->menu = array(
-	array('label' => Yii::t('app', 'List') . ' ' . $model->label(2), 'url'=>array('index')),
-	array('label' => Yii::t('app', 'Create') . ' ' . $model->label(), 'url'=>array('create')),
-	array('label' => Yii::t('app', 'View') . ' ' . $model->label(), 'url'=>array('view', 'id' => GxActiveRecord::extractPkValue($model, true))),
-	array('label' => Yii::t('app', 'Manage') . ' ' . $model->label(2), 'url'=>array('admin')),
+if(!isset($this->menu) || $this->menu === array())
+$this->menu=array(
+	array('label'=>Yii::t('app', 'Delete') , 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	//array('label'=>Yii::t('app', 'Create') , 'url'=>array('create')),
+	//array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
 );
 ?>
 
-<h1><?php echo Yii::t('app', 'Update') . ' ' . GxHtml::encode($model->label()) . ' ' . GxHtml::encode(GxHtml::valueEx($model)); ?></h1>
-
+<h1> <?php echo Yii::t('app', 'Update');?> <?php echo Yii::t('app', 'Page');?> #<?php echo $model->id; ?> </h1>
 <?php
 $this->renderPartial('_form', array(
-		'model' => $model));
+			'model'=>$model));
 ?>

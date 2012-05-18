@@ -29,7 +29,7 @@
 <?php endif; ?>
 <?php foreach($relations as $name=>$relation): ?>
  * @property <?php
-	if (preg_match("~^array\(self::([^,]+), '([^']+)', '([^']+)'\)$~", $relation, $matches))
+    if (preg_match("~^array\(self::([^,]+), '([^']+)', '([^']+)'\)$~", $relation, $matches))
     {
         $relationType = $matches[1];
         $relationModel = $matches[2];
@@ -50,103 +50,95 @@
             default:
                 echo 'mixed $'.$name."\n";
         }
-	}
+    }
     ?>
 <?php endforeach; ?>
  */
-abstract class <?php echo 'Base' . $modelClass; ?> extends <?php echo $this->baseClass; ?>
-{
-	public static function model($className=__CLASS__)
-	{
-		return parent::model($className);
-	}
+abstract class <?php echo 'Base' . $modelClass; ?> extends <?php echo $this->baseClass; ?> {
+    
+    public static function model($className = __CLASS__) {
+        return parent::model($className);
+    }
 
-	public function tableName()
-	{
-		return '<?php echo $tableName; ?>';
-	}
+    public function tableName() {
+        return '<?php echo $tableName; ?>';
+    }
 
-	public function rules()
-	{
-		return array(
+    public function rules() {
+        return array(
 <?php
-		foreach($rules as $rule) {
-			echo "\t\t\t$rule,\n";
-		}
+        foreach($rules as $rule) {
+            echo "            $rule,\n";
+        }
 ?>
-			array('<?php echo implode(', ', array_keys($columns)); ?>', 'safe', 'on'=>'search'),
-		);
-	}
+            array('<?php echo implode(', ', array_keys($columns)); ?>', 'safe', 'on' => 'search'),
+        );
+    }
 
-	public function relations()
-	{
-		return array(
+    public function relations() {
+        return array(
 <?php
-		foreach($relations as $name=>$relation) {
-			echo "\t\t\t'$name' => $relation,\n";
-		}
+        foreach($relations as $name=>$relation) {
+            echo "            '$name' => $relation,\n";
+        }
 ?>
-		);
-	}
+        );
+    }
 
-	public function attributeLabels()
-	{
-		return array(
+    public function attributeLabels() {
+        return array(
 <?php
-		foreach($labels as $name=>$label) {
-			echo "\t\t\t'$name' => Yii::t('app', '$label'),\n";
-		}
+        foreach($labels as $name=>$label) {
+            echo "            '$name' => Yii::t('app', '$label'),\n";
+        }
 ?>
-		);
-	}
+        );
+    }
 
-
-	public function search()
-	{
-		$criteria=new CDbCriteria;
+    public function search() {
+        $criteria = new CDbCriteria;
 
 <?php
-		foreach($columns as $name=>$column)
-		{
-			if($column->type==='string' and !$column->isForeignKey)
-			{
-				echo "\t\t\$criteria->compare('$name', \$this->$name, true);\n";
-			}
-			else
-			{
-				echo "\t\t\$criteria->compare('$name', \$this->$name);\n";
-			}
-		}
-		echo "\n";
+        foreach($columns as $name=>$column)
+        {
+            if($column->type==='string' and !$column->isForeignKey)
+            {
+                echo "        \$criteria->compare('$name', \$this->$name, true);\n";
+            }
+            else
+            {
+                echo "        \$criteria->compare('$name', \$this->$name);\n";
+            }
+        }
+        echo "\n";
 ?>
-		return new CActiveDataProvider(get_class($this), array(
-			'criteria'=>$criteria,
-		));
-	}
-	
-	public function get_label()
-	{
-		<?php 
-		// TODO: found no better solution for the PK
-		foreach($columns as $name=>$column) {
-			if ($column->isPrimaryKey) {
-				echo "return '#'.\$this->{$column->name};";
-			}
-		}			
-		?>
-		
-		
-		<?php
-		 // I would suggest to overwrite this method in the model class
+        return new CActiveDataProvider(get_class($this), array(
+                    'criteria' => $criteria,
+                ));
+    }
+    
+    public function get_label() {
+        <?php 
+        // TODO: found no better solution for the PK
+        foreach($columns as $name=>$column) {
+            if ($column->isPrimaryKey) {
+                echo "return '#' . \$this->{$column->name};";
+            }
+        }
+        ?>
 
-		 /*	foreach($columns AS $col){
-					//if no name attribute is found, use the first string value in the table
-					if($col->type == 'string') {
-						echo 'return $this->'.$col->name.';';
-						break;
-					}
-				} */
-			?>
-	}
-	
+    }
+<?php
+         // I would suggest to overwrite this method in the model class
+
+         /*    foreach($columns AS $col){
+                    //if no name attribute is found, use the first string value in the table
+                    if($col->type == 'string') {
+                        echo 'return $this->'.$col->name.';';
+                        break;
+                    }
+                } */
+
+?>
+
 }

@@ -3686,3 +3686,342 @@ Stack trace:
 REQUEST_URI=/yii/cms/js/admin.js?1337281884
 HTTP_REFERER=http://localhost/yii/cms/admin/pages/update/id/1
 ---
+2012/05/18 04:53:45 [error] [php] Declaration of OwnerBehavior::beforeSave() should be compatible with that of CActiveRecordBehavior::beforeSave() (/var/www/html/yii/cms/protected/extensions/gtc/components/OwnerBehavior.php:38)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/base/CComponent.php(327): createComponent()
+#2 /var/www/html/yii/framework/base/CComponent.php(298): Page->attachBehavior()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(384): Page->attachBehaviors()
+#4 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(66): model()
+#5 /var/www/html/yii/cms/protected/extensions/gtc/fullCrud/FullCrudCode.php(39): FullCrudCode->validateModel()
+#6 /var/www/html/yii/framework/validators/CInlineValidator.php(43): FullCrudCode->validateModel()
+#7 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute()
+#8 /var/www/html/yii/framework/base/CModel.php(158): CInlineValidator->validate()
+#9 /var/www/html/yii/framework/gii/CCodeGenerator.php(160): FullCrudCode->validate()
+#10 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): FullCrudGenerator->prepare()
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): FullCrudGenerator->actionIndex()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /var/www/html/yii/framework/web/CController.php(287): FullCrudGenerator->runAction()
+#14 /var/www/html/yii/framework/web/CController.php(266): FullCrudGenerator->runActionWithFilters()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): FullCrudGenerator->run()
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/gii/fullCrud
+in /var/www/html/yii/cms/protected/extensions/gtc/fullCrud/FullCrudCode.php (39)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/18 04:54:20 [error] [exception.CException] exception 'CException' with message 'Alias "page.modules.page.models.Page" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/gtc/fullCrud/FullCrudCode.php(38): YiiBase::import('page.modules.pa...', true)
+#1 /var/www/html/yii/framework/validators/CInlineValidator.php(43): FullCrudCode->validateModel('model', Array)
+#2 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(FullCrudCode), 'model')
+#3 /var/www/html/yii/framework/base/CModel.php(158): CValidator->validate(Object(FullCrudCode), NULL)
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(160): CModel->validate()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/fullCrud')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/gii/fullCrud
+HTTP_REFERER=http://localhost/yii/cms/gii/fullCrud
+---
+2012/05/18 04:54:36 [error] [exception.CException] exception 'CException' with message 'Alias "page.modules.page.models.Page" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/gtc/fullCrud/FullCrudCode.php(38): YiiBase::import('page.modules.pa...', true)
+#1 /var/www/html/yii/framework/validators/CInlineValidator.php(43): FullCrudCode->validateModel('model', Array)
+#2 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(FullCrudCode), 'model')
+#3 /var/www/html/yii/framework/base/CModel.php(158): CValidator->validate(Object(FullCrudCode), NULL)
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(160): CModel->validate()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/fullCrud')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/gii/fullCrud
+HTTP_REFERER=http://localhost/yii/cms/gii/fullCrud
+---
+2012/05/18 04:56:04 [error] [php] Declaration of OwnerBehavior::beforeSave() should be compatible with that of CActiveRecordBehavior::beforeSave() (/var/www/html/yii/cms/protected/extensions/gtc/components/OwnerBehavior.php:38)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/base/CComponent.php(327): createComponent()
+#2 /var/www/html/yii/framework/base/CComponent.php(298): Page->attachBehavior()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(384): Page->attachBehaviors()
+#4 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(66): model()
+#5 /var/www/html/yii/cms/protected/extensions/gtc/fullCrud/FullCrudCode.php(39): FullCrudCode->validateModel()
+#6 /var/www/html/yii/framework/validators/CInlineValidator.php(43): FullCrudCode->validateModel()
+#7 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute()
+#8 /var/www/html/yii/framework/base/CModel.php(158): CInlineValidator->validate()
+#9 /var/www/html/yii/framework/gii/CCodeGenerator.php(160): FullCrudCode->validate()
+#10 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): FullCrudGenerator->prepare()
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): FullCrudGenerator->actionIndex()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /var/www/html/yii/framework/web/CController.php(287): FullCrudGenerator->runAction()
+#14 /var/www/html/yii/framework/web/CController.php(266): FullCrudGenerator->runActionWithFilters()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): FullCrudGenerator->run()
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/gii/fullCrud
+in /var/www/html/yii/cms/protected/extensions/gtc/fullCrud/FullCrudCode.php (39)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/18 04:56:21 [error] [php] Declaration of OwnerBehavior::beforeSave() should be compatible with that of CActiveRecordBehavior::beforeSave() (/var/www/html/yii/cms/protected/extensions/gtc/components/OwnerBehavior.php:38)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/base/CComponent.php(327): createComponent()
+#2 /var/www/html/yii/framework/base/CComponent.php(298): Page->attachBehavior()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(384): Page->attachBehaviors()
+#4 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(66): model()
+#5 /var/www/html/yii/cms/protected/extensions/gtc/fullCrud/FullCrudCode.php(39): FullCrudCode->validateModel()
+#6 /var/www/html/yii/framework/validators/CInlineValidator.php(43): FullCrudCode->validateModel()
+#7 /var/www/html/yii/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute()
+#8 /var/www/html/yii/framework/base/CModel.php(158): CInlineValidator->validate()
+#9 /var/www/html/yii/framework/gii/CCodeGenerator.php(160): FullCrudCode->validate()
+#10 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): FullCrudGenerator->prepare()
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): FullCrudGenerator->actionIndex()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#13 /var/www/html/yii/framework/web/CController.php(287): FullCrudGenerator->runAction()
+#14 /var/www/html/yii/framework/web/CController.php(266): FullCrudGenerator->runActionWithFilters()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(276): FullCrudGenerator->run()
+#16 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/gii/fullCrud
+in /var/www/html/yii/cms/protected/extensions/gtc/fullCrud/FullCrudCode.php (39)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/18 05:01:41 [error] [php] include(OwnerBehavior.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/base/CComponent.php(327): createComponent()
+#2 /var/www/html/yii/framework/base/CComponent.php(298): Page->attachBehavior()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(384): Page->attachBehaviors()
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(398): model()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): Page->getMetaData()
+#6 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(63): Page->__construct()
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PagesController->actionCreate()
+#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#10 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#12 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#14 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#16 /var/www/html/yii/framework/web/CWebApplication.php(276): PagesController->run()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#18 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages/create
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/18 05:01:43 [error] [php] include(OwnerBehavior.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): import()
+#1 /var/www/html/yii/framework/base/CComponent.php(327): createComponent()
+#2 /var/www/html/yii/framework/base/CComponent.php(298): Page->attachBehavior()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(384): Page->attachBehaviors()
+#4 /var/www/html/yii/framework/db/ar/CActiveRecord.php(398): model()
+#5 /var/www/html/yii/framework/db/ar/CActiveRecord.php(78): Page->getMetaData()
+#6 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(63): Page->__construct()
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PagesController->actionCreate()
+#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#10 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#12 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#14 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#16 /var/www/html/yii/framework/web/CWebApplication.php(276): PagesController->run()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#18 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages/create
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/18 05:15:13 [error] [exception.CException] exception 'CException' with message 'PagesController and its behaviors do not have a method or closure named "performAjaxValidation".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(42): CComponent->__call('performAjaxVali...', Array)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(42): PagesController->performAjaxValidation(Object(Page), 'page-form')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/cre...')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/admin/pages/create
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/create
+---
+2012/05/18 05:15:14 [error] [exception.CException] exception 'CException' with message 'PagesController and its behaviors do not have a method or closure named "performAjaxValidation".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(42): CComponent->__call('performAjaxVali...', Array)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(42): PagesController->performAjaxValidation(Object(Page), 'page-form')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/cre...')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/admin/pages/create
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/create
+---
+2012/05/18 05:16:20 [error] [php] include(GXController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(3): spl_autoload_call()
+#1 /var/www/html/yii/framework/YiiBase.php(423): include()
+#2 unknown(0): autoload()
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php(6): spl_autoload_call()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages/create
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (3)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php (6)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/18 05:17:05 [error] [exception.CException] exception 'CException' with message 'PagesController and its behaviors do not have a method or closure named "performAjaxValidation".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(42): CComponent->__call('performAjaxVali...', Array)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(42): PagesController->performAjaxValidation(Object(Page), 'page-form')
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PageController->actionCreate()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/cre...')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/admin/pages/create
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/create
+---
+2012/05/18 05:19:21 [error] [php] include(ActiveRecord.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/models/_base/BasePage.php(29): spl_autoload_call()
+#1 /var/www/html/yii/framework/YiiBase.php(397): include()
+#2 unknown(0): autoload()
+#3 /var/www/html/yii/cms/protected/modules/page/models/Page.php(5): spl_autoload_call()
+#4 /var/www/html/yii/framework/YiiBase.php(423): include()
+#5 unknown(0): autoload()
+#6 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(40): spl_autoload_call()
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): PagesController->actionCreate()
+#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): PagesController->runAction()
+#10 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#12 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): PagesController->filterAccessControl()
+#13 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#14 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#15 /var/www/html/yii/framework/web/CController.php(266): PagesController->runActionWithFilters()
+#16 /var/www/html/yii/framework/web/CWebApplication.php(276): PagesController->run()
+#17 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#18 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages/create
+in /var/www/html/yii/cms/protected/modules/page/models/_base/BasePage.php (29)
+in /var/www/html/yii/cms/protected/modules/page/models/Page.php (5)
+in /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php (40)
+2012/05/18 05:22:23 [error] [exception.CException] exception 'CException' with message 'PagesController and its behaviors do not have a method or closure named "loadModel".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(35): CComponent->__call('loadModel', Array)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(35): PagesController->loadModel('7', 'Page')
+#2 [internal function]: PageController->actionView('7')
+#3 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PagesController), Object(ReflectionMethod), Array)
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/vie...')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/admin/pages/view/id/7
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/create
+---
+2012/05/18 05:51:12 [error] [exception.CException] exception 'CException' with message 'PagesController and its behaviors do not have a method or closure named "loadModel".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(35): CComponent->__call('loadModel', Array)
+#1 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(35): PagesController->loadModel('7', 'Page')
+#2 [internal function]: PageController->actionView('7')
+#3 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PagesController), Object(ReflectionMethod), Array)
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/pages/vie...')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/admin/pages/view/id/7
+HTTP_REFERER=http://localhost/yii/cms/admin/pages/create
+---
+2012/05/18 05:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/fullModel".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/fullModel')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/gii/fullModel
+HTTP_REFERER=http://localhost/yii/cms/gii/fullCrud
+---
+2012/05/18 05:54:23 [error] [exception.CException] exception 'CException' with message 'Fatal Error: Class 'CSaveRelationsBehavior' could not be found in your application! Add 'ext.gtc.components.*' to your import paths.' in /var/www/html/yii/cms/protected/extensions/gtc/fullModel/FullModelCode.php:14
+Stack trace:
+#0 /var/www/html/yii/framework/web/CFormModel.php(40): FullModelCode->init()
+#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#2 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/fullModel')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/gii/fullModel
+HTTP_REFERER=http://localhost/yii/cms/gii/
+---

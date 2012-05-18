@@ -41,16 +41,25 @@ class Controller extends CController {
             throw new CHttpException(400, 'Invalid request. Please do not repeat this request again.');
     }
 
-    public function getPageTitle() {
-        if ($this->_pageTitle !== null)
-            return $this->_pageTitle;
-        else {
-            $name = ucfirst(basename($this->getId()));
-            if ($this->getAction() !== null && strcasecmp($this->getAction()->getId(), $this->defaultAction))
-                return $this->_pageTitle = Awecms::getSiteName() . ' - ' . ucfirst($this->getAction()->getId()) . ' ' . $name;
-            else
-                return $this->_pageTitle = Awecms::getSiteName() . ' - ' . $name;
-        }
-    }
+//    public function getPageTitle() {
+//        if ($this->_pageTitle !== null)
+//            return $this->_pageTitle;
+//        else {
+//            $name = ucfirst(basename($this->getId()));
+//            if ($this->getAction() !== null && strcasecmp($this->getAction()->getId(), $this->defaultAction))
+//                return $this->_pageTitle = Awecms::getSiteName() . ' - ' . ucfirst($this->getAction()->getId()) . ' ' . $name;
+//            else
+//                return $this->_pageTitle = Awecms::getSiteName() . ' - ' . $name;
+//        }
+//    }
+    
+    protected function performAjaxValidation($model)
+	{
+		if(isset($_POST['ajax']) && $_POST['ajax']==='page-form')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+	}
 
 }

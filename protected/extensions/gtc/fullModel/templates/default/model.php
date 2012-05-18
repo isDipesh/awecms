@@ -18,104 +18,96 @@
 Yii::setPathOfAlias('<?php echo $modelClass; ?>', dirname(__FILE__));
 Yii::import('<?php echo $modelClass; ?>.*');
 
-class <?php echo $modelClass; ?> extends <?php echo 'Base' . $modelClass."\n"; ?>
-{
-	// Add your model-specific methods here. This file will not be overriden by gtc except you force it.
-	public static function model($className=__CLASS__)
-	{
-		return parent::model($className);
-	}
+class <?php echo $modelClass; ?> extends <?php echo 'Base' . $modelClass; ?> {
 
-	public function init()
-	{
-		return parent::init();
-	}
+    // Add your model-specific methods here. This file will not be overriden by gtc except you force it.
+        
+    public static function model($className = __CLASS__) {
+        return parent::model($className);
+    }
 
-	public function __toString() {
-		return (string) $this-><?php
-			$found = false;
-		foreach($columns as $name => $column) {
-			if(!$found 
-					&& $column->type != 'datetime'
-					&& $column->type==='string' 
-					&& !$column->isPrimaryKey) {
-				echo $column->name;
-				$found = true;
-			}
-		}
+    public function init() {
+        return parent::init();
+    }
 
-		// if the columns contains no column of type 'string', return the
-		// first column (usually the primary key)
-		if(!$found)
-			echo reset($columns)->name; 
-		?>;
+    public function __toString() {
+        return (string) $this-><?php
+            $found = false;
+        foreach($columns as $name => $column) {
+            if(!$found 
+                    && $column->type != 'datetime'
+                    && $column->type==='string' 
+                    && !$column->isPrimaryKey){
+                echo $column->name;
+                $found = true;
+            }
+        }
+        // if the columns contains no column of type 'string', return the
+        // first column (usually the primary key)
+        if(!$found)
+            echo reset($columns)->name; 
+        ?>;
+    }
 
-	}
-
-	public function behaviors() 
-	{
-		<?php
-			$behaviors = 'return array_merge(parent::behaviors(),array(';
-					foreach($columns as $name => $column) {
-					if(in_array($column->name, array(
-								'create_time',
-								'createtime',
-								'created_at',
-								'createdat',
-								'changed',
-								'changed_at',
-								'updatetime',
-								'update_time',
-								'timestamp'))) {
-					$behaviors .= sprintf("\n\t\t'CTimestampBehavior' => array(
-				'class' => 'zii.behaviors.CTimestampBehavior',
-				'createAttribute' => %s,
-				'updateAttribute' => %s,
-				\t),\n", $this->getCreatetimeAttribute($columns),
-						$this->getUpdatetimeAttribute($columns));
-					break; // once a column is found, we are done
-					}
-					}
-					foreach($columns as $name => $column) {
-						if(in_array($column->name, array(
-										'user_id',
-										'userid',
-										'ownerid',
-										'owner_id',
-										'created_by',
-										'createdby'))) {
-							$behaviors .= sprintf("\n\t\t'OwnerBehavior' => array(
-								'class' => 'OwnerBehavior',
-							'ownerColumn' => '%s',
-							\t),\n", $column->name);
-							break; // once a column is found, we are done
-
-						}
-					}
+    public function behaviors() {
+        <?php
+            $behaviors = 'return array_merge(parent::behaviors(), array(';
+                    foreach($columns as $name => $column) {
+                    if(in_array($column->name, array(
+                                'create_time',
+                                'createtime',
+                                'created_at',
+                                'createdat',
+                                'changed',
+                                'changed_at',
+                                'updatetime',
+                                'update_time',
+                                'timestamp'))) {
+                    $behaviors .= sprintf("\n                    'CTimestampBehavior' => array(
+                        'class' => 'zii.behaviors.CTimestampBehavior',
+                        'createAttribute' => %s,
+                        'updateAttribute' => %s,
+                    ),\n", $this->getCreatetimeAttribute($columns),
+                        $this->getUpdatetimeAttribute($columns));
+                    break; // once a column is found, we are done
+                    }
+                    }
+                                        
+//                    foreach($columns as $name => $column) {
+//                        if(in_array($column->name, array(
+//                                        'user_id',
+//                                        'userid',
+//                                        'ownerid',
+//                                        'owner_id',
+//                                        'created_by',
+//                                        'createdby'))) {
+//                            $behaviors .= sprintf("\n        'OwnerBehavior' => array(
+//                                'class' => 'OwnerBehavior',
+//                            'ownerColumn' => '%s',
+//                                ),\n", $column->name);
+//                            break; // once a column is found, we are done
+//
+//                        }
+//                    }
 
 
-					$behaviors .= "\n));\n";
-					echo $behaviors;
-					?>
-	}
+                    $behaviors .= "                ));\n";
+                    echo $behaviors;
+                    ?>
+    }
 
-
-
-
-	public function rules() 
-	{
-		return array_merge(
-				/*array('column1, column2', 'rule'),*/
-				parent::rules()
-				);
-	}
-	
-	/*
-	// customize this function ...
-	public function get_label()
-	{
-		return '#'.$this->id;		
-	}
-	*/
+    public function rules() {
+        return array_merge(
+                        /* array('column1, column2', 'rule'), */
+                        parent::rules()
+        );
+    }
+    
+    /*
+    // customize this function ...
+    public function get_label() {
+        return '#'.$this->id;        
+    }
+    */
 
 }

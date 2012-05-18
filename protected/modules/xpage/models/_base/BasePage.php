@@ -26,7 +26,7 @@
  * @property integer $views
  *
  */
-abstract class BasePage extends GxActiveRecord {
+abstract class BasePage extends CActiveRecord {
 
     public static function model($className = __CLASS__) {
         return parent::model($className);
@@ -46,7 +46,7 @@ abstract class BasePage extends GxActiveRecord {
 
     public function rules() {
         return array(
-            array('title, created_at, modified_at, type, views', 'required'),
+            array('title, type', 'required'),
             array('user_id, parent, order, tags_enabled, views', 'numerical', 'integerOnly' => true),
             array('status, type, comment_status, permission, password', 'length', 'max' => 20),
             array('content', 'safe'),
