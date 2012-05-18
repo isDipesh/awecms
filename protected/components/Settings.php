@@ -11,6 +11,7 @@ class Settings {
         if ($key) {
             $sql .= " AND `key`='" . $key . "'";
         }
+        
         $connection = self::getDbComponent();
         $command = $connection->createCommand($sql);
         $command->bindParam(':cat', $category);

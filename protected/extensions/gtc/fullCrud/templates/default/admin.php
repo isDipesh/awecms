@@ -37,19 +37,19 @@ echo "<?php echo Yii::t('app', '" . $this->pluralize($this->class2name($this->mo
 $model = new $this->modelClass;
 echo "<ul>";
 foreach ($model->relations() AS $key => $relation) {
-	echo "<li>" .
-	Yii::t("app", substr(str_replace("Relation", "", $relation[0]), 1)) . " " .
-	CHtml::link(Yii::t("app", $relation[1]), array($this->codeProvider->resolveController($relation) . '/admin')) . // TODO: render dynamic links
-	" </li>";
+    echo "<li>" .
+    Yii::t("app", substr(str_replace("Relation", "", $relation[0]), 1)) . " " .
+    CHtml::link(Yii::t("app", $relation[1]), array($this->codeProvider->resolveController($relation) . '/admin')) . // TODO: render dynamic links
+    " </li>";
 }
 echo "</ul>";
 ?>
 
 
 <?php echo "<?php echo CHtml::link(Yii::t('app', 'Advanced Search'),'#',array('class'=>'search-button')); ?>"; ?>
-<div class="search-form" style="display:none">
-	<?php echo "<?php \$this->renderPartial('_search',array(
-	'model'=>\$model,
+<div class="search-form" style="display: none">
+    <?php echo "<?php \$this->renderPartial('_search',array(
+    'model'=>\$model,
 )); ?>\n"; ?>
 </div>
 
@@ -64,16 +64,16 @@ $this->widget('zii.widgets.grid.CGridView', array(
 <?php
 $count = 0;
 foreach ($this->tableSchema->columns as $column) {
-	if (++$count == 7)
-		echo "\t\t/*\n";
+    if (++$count == 7)
+        echo "        /*\n";
 
-	if (strtoupper($column->dbType) == 'TEXT')
-		echo "#";
-	echo "\t\t" . $this->codeProvider->generateValueField($this->modelClass, $column) . ",\n";
+    if (strtoupper($column->dbType) == 'TEXT')
+        echo "#";
+    echo "        " . $this->codeProvider->generateValueField($this->modelClass, $column) . ",\n";
 }
 
 if ($count >= 7)
-	echo "\t\t*/\n";
+    echo "        */\n";
 ?>
 
 array(

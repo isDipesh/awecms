@@ -2,17 +2,13 @@
 
 class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseControllerClass."\n"; ?>
 {
-	public $layout='//layouts/column2';
-
-	public function filters()
-	{
+	public function filters() {
 		return array(
 			'accessControl', 
 		);
 	}	
 
-	public function accessRules()
-	{
+	public function accessRules() {
 		return array(
 			array('allow',  
 				'actions'=>array('index','view'),
@@ -23,7 +19,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 				'users'=>array('@'),
 			),
 			array('allow', 
-				'actions'=>array('admin','delete'),
+				'actions'=>array('*'),
 				'users'=>array('admin'),
 			),
 			array('deny',  
@@ -32,7 +28,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 		);
 	}
 	
-	public function beforeAction($action){
+	public function beforeAction($action) {
 		parent::beforeAction($action);
 		// map identifcationColumn to id
 		if (!isset($_GET['id']) && isset($_GET['<?php echo $this->identificationColumn; ?>'])) {
@@ -50,16 +46,14 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 		return true;
 	}
 	
-	public function actionView($id)
-	{
+	public function actionView($id)	{
 		$model = $this->loadModel($id);
 		$this->render('view',array(
 			'model' => $model,
 		));
 	}
 
-	public function actionCreate()
-	{
+	public function actionCreate() {
 		$model = new <?php echo $this->modelClass; ?>;
 
 		<?php if($this->validation == 1 || $this->validation == 3) { ?>
@@ -99,8 +93,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 	}
 
 
-	public function actionUpdate($id)
-	{
+	public function actionUpdate($id) {
 		$model = $this->loadModel($id);
 
 		<?php if($this->validation == 1 || $this->validation == 3) { ?>
@@ -142,8 +135,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 					));
 	}
 
-	public function actionDelete($id)
-	{
+	public function actionDelete($id) {
 		if(Yii::app()->request->isPostRequest)
 		{
 			try {
@@ -162,16 +154,14 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 					Yii::t('app', 'Invalid request. Please do not repeat this request again.'));
 	}
 
-	public function actionIndex()
-	{
+	public function actionIndex() {
 		$dataProvider=new CActiveDataProvider('<?php echo $this->modelClass; ?>');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
 	}
 
-	public function actionAdmin()
-	{
+	public function actionAdmin() {
 		$model=new <?php echo $this->modelClass; ?>('search');
 		$model->unsetAttributes();
 
@@ -183,20 +173,11 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 		));
 	}
 
-	public function loadModel($id)
-	{
+	public function loadModel($id) {
 		$model=<?php echo $this->modelClass; ?>::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,Yii::t('app', 'The requested page does not exist.'));
 		return $model;
 	}
 
-	protected function performAjaxValidation($model)
-	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='<?php echo $this->class2id($this->modelClass); ?>-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-	}
 }

@@ -28,9 +28,9 @@ return false;
 
 <ul></ul>
 
-<?php echo CHtml::link(Yii::t('app', 'Advanced Search'),'#',array('class'=>'search-button')); ?><div class="search-form" style="display:none">
-	<?php $this->renderPartial('_search',array(
-	'model'=>$model,
+<?php echo CHtml::link(Yii::t('app', 'Advanced Search'),'#',array('class'=>'search-button')); ?><div class="search-form" style="display: none">
+    <?php $this->renderPartial('_search',array(
+    'model'=>$model,
 )); ?>
 </div>
 
@@ -41,27 +41,27 @@ $this->widget('zii.widgets.grid.CGridView', array(
 'filter'=>$model,
 'columns'=>array(
 
-		'id',
-		'user_id',
-#		'title',
-		'content',
-		'status',
-		'created_at',
-		/*
-		'modified_at',
-		'parent',
-		'order',
-		'type',
-		'comment_status',
-		array(
-					'name'=>'tags_enabled',
-					'value'=>'$data->tags_enabled?Yii::t(\'app\',\'Yes\'):Yii::t(\'app\', \'No\')',
-							'filter'=>array('0'=>Yii::t('app','No'),'1'=>Yii::t('app','Yes')),
-							),
-		'permission',
-		'password',
-		'views',
-		*/
+        'id',
+        'user_id',
+#        'title',
+        'content',
+        'status',
+        'created_at',
+        /*
+        'modified_at',
+        'parent',
+        'order',
+        'type',
+        'comment_status',
+        array(
+                    'name'=>'tags_enabled',
+                    'value'=>'$data->tags_enabled?Yii::t(\'app\',\'Yes\'):Yii::t(\'app\', \'No\')',
+                            'filter'=>array('0'=>Yii::t('app','No'),'1'=>Yii::t('app','Yes')),
+                            ),
+        'permission',
+        'password',
+        'views',
+        */
 
 array(
 'class'=>'CButtonColumn',

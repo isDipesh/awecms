@@ -6,7 +6,7 @@
 <?php
 $form=$this->beginWidget('CActiveForm', array(
 'id'=>'page-form',
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>true,
 	'enableClientValidation'=>true,
 	)); 
 

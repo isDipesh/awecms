@@ -62,7 +62,8 @@ class PageController extends Controller
 	{
 		$model = new Page;
 
-		
+				$this->performAjaxValidation($model, 'page-form');
+    
 		if(isset($_POST['Page'])) {
 			$model->attributes = $_POST['Page'];
 
@@ -89,6 +90,7 @@ class PageController extends Controller
 	{
 		$model = $this->loadModel($id);
 
+				$this->performAjaxValidation($model, 'page-form');
 		
 		if(isset($_POST['Page']))
 		{
@@ -160,5 +162,14 @@ class PageController extends Controller
 		if($model===null)
 			throw new CHttpException(404,Yii::t('app', 'The requested page does not exist.'));
 		return $model;
+	}
+
+	protected function performAjaxValidation($model)
+	{
+		if(isset($_POST['ajax']) && $_POST['ajax']==='page-form')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
 	}
 }

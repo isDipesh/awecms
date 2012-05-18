@@ -40,6 +40,7 @@ return array(
             //'useStrictParsing' => true,
             'rules' => array(
                 'category/<action:(\w+)>' => 'category/category/<action>',
+                'news/<action:(\w+)>' => 'news/news/<action>',
                 //'<m:\w+>/<action:(\w+)>' => '<m>/<m>/<action>',
                 '<_a:(login|registration|profile.*|logout)>' => 'user/<_a>',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
@@ -84,6 +85,7 @@ return array(
         'user',
         'admin',
         'category',
+        'news',
         'page',
         'gii' => array(
             'class' => 'system.gii.GiiModule',
