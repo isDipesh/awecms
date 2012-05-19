@@ -8,9 +8,13 @@ class AweCrudCode extends CrudCode {
 
 	public $authtype = 'auth_none';
 
-	public $enable_ajax_validation = 0;
+	public $validation = 0;
 
-	public $baseControllerClass = 'GxController';
+	public $baseControllerClass = 'Controller';
+        
+        public $identificationColumn = '';
+        
+        public $isJToggleColumnEnabled = true;
 
 
 }

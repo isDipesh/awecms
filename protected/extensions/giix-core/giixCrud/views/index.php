@@ -82,7 +82,9 @@ $('#{$class}_model').bind('keyup change', function(){
 		<?php echo $form->error($model,'authtype'); ?>
 	</div>
 
-	<div class="row sticky">
+
+
+	<div class="row">
 		<?php echo $form->labelEx($model, 'enable_ajax_validation'); ?>
 		<?php echo $form->dropDownList($model, 'enable_ajax_validation', array(
 					1 => 'Enable ajax Validation',

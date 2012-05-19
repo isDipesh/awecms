@@ -1,215 +1,7 @@
-2012/05/19 10:07:01 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixModel.GiixModelCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+2012/05/19 13:48:32 [error] [exception.CException] exception 'CException' with message 'CCodeForm and its behaviors do not have a method or closure named "checkBoxEx".' in /var/www/html/yii/framework/base/CComponent.php:266
 Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:08:07 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixModel.GiixModelCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:08:08 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixModel.GiixModelCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:08:08 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixModel.GiixModelCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:09:17 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixCrud.GiixCrudCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweCrud
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:09:24 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixCrud.GiixCrudCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweCrud
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:10:33 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixCrud.GiixCrudCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweCrud
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:10:35 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixCrud.GiixCrudCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweCrud
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:10:35 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixCrud.GiixCrudCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweCrud
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:10:35 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixCrud.GiixCrudCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweCrud
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:10:35 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixCrud.GiixCrudCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweCrud
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:10:35 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixCrud.GiixCrudCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweCrud
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:10:35 [error] [exception.CException] exception 'CException' with message 'Alias "ext.giix-core.giixCrud.GiixCrudCode" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(153): YiiBase::import('ext.giix-core.g...', true)
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#10 {main}
-REQUEST_URI=/yii/cms/gii/AweCrud
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:12:06 [error] [exception.CException] exception 'CException' with message 'AweModelGenerator and its behaviors do not have a method or closure named "getTables".' in /var/www/html/yii/framework/base/CComponent.php:266
-Stack trace:
-#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/views/index.php(84): CComponent->__call('getTables', Array)
-#1 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/views/index.php(84): AweModelGenerator->getTables()
+#0 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/views/index.php(94): CComponent->__call('checkBoxEx', Array)
+#1 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/views/index.php(94): CCodeForm->checkBoxEx(Object(AweCrudCode), 'isJToggleColumn...')
 #2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
 #3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
 #4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
@@ -220,86 +12,29 @@ Stack trace:
 #9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
 #10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
 #11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
 #13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
 #14 /var/www/html/yii/cms/index.php(18): CApplication->run()
 #15 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
+REQUEST_URI=/yii/cms/gii/AweCrud
 ---
-2012/05/19 10:14:39 [error] [exception.CException] exception 'CException' with message 'Property "AweModelCode.identificationColumn" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+2012/05/19 13:48:33 [error] [exception.CException] exception 'CException' with message 'CCodeForm and its behaviors do not have a method or closure named "checkBoxEx".' in /var/www/html/yii/framework/base/CComponent.php:266
 Stack trace:
-#0 /var/www/html/yii/framework/web/helpers/CHtml.php(2145): CComponent->__get('identificationC...')
-#1 /var/www/html/yii/framework/web/helpers/CHtml.php(1875): CHtml::resolveValue(Object(AweModelCode), 'identificationC...')
-#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(AweModelCode), 'identificationC...', Array)
-#3 /var/www/html/yii/framework/web/widgets/CActiveForm.php(655): CHtml::activeTextField(Object(AweModelCode), 'identificationC...', Array)
-#4 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/views/index.php(116): CActiveForm->textField(Object(AweModelCode), 'identificationC...', Array)
-#5 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#6 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#7 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#8 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
-#9 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
-#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#11 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#12 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#13 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#14 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#15 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#16 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#17 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#18 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
+#0 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/views/index.php(94): CComponent->__call('checkBoxEx', Array)
+#1 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/views/index.php(94): CCodeForm->checkBoxEx(Object(AweCrudCode), 'isJToggleColumn...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/gii/AweCrud
 ---
-2012/05/19 10:14:40 [error] [exception.CException] exception 'CException' with message 'Property "AweModelCode.identificationColumn" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
-Stack trace:
-#0 /var/www/html/yii/framework/web/helpers/CHtml.php(2145): CComponent->__get('identificationC...')
-#1 /var/www/html/yii/framework/web/helpers/CHtml.php(1875): CHtml::resolveValue(Object(AweModelCode), 'identificationC...')
-#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1205): CHtml::activeInputField('text', Object(AweModelCode), 'identificationC...', Array)
-#3 /var/www/html/yii/framework/web/widgets/CActiveForm.php(655): CHtml::activeTextField(Object(AweModelCode), 'identificationC...', Array)
-#4 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/views/index.php(116): CActiveForm->textField(Object(AweModelCode), 'identificationC...', Array)
-#5 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#6 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#7 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#8 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
-#9 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
-#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#11 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#12 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#13 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#14 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#15 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#16 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#17 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#18 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/default/index
----
-2012/05/19 10:16:19 [warning] [application] Failed to set unsafe attribute "identificationColumn" of "AweModelCode".
-in /var/www/html/yii/cms/index.php (18)
-2012/05/19 10:16:28 [warning] [application] Failed to set unsafe attribute "identificationColumn" of "AweModelCode".
-in /var/www/html/yii/cms/index.php (18)
-2012/05/19 10:23:45 [warning] [application] Failed to set unsafe attribute "identificationColumn" of "AweModelCode".
-in /var/www/html/yii/cms/index.php (18)
-2012/05/19 10:23:48 [warning] [application] Failed to set unsafe attribute "identificationColumn" of "AweModelCode".
-in /var/www/html/yii/cms/index.php (18)
-2012/05/19 10:24:15 [warning] [application] Failed to set unsafe attribute "identificationColumn" of "AweModelCode".
-in /var/www/html/yii/cms/index.php (18)
-2012/05/19 10:25:45 [warning] [application] Failed to set unsafe attribute "identificationColumn" of "AweModelCode".
-in /var/www/html/yii/cms/index.php (18)
-2012/05/19 10:43:34 [error] [php] Undefined variable: colum (/var/www/html/yii/cms/protected/extensions/awegen/AweModel/templates/default/basemodel.php:23)
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): AweModelGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): AweModelGenerator->actionIndex()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#4 /var/www/html/yii/framework/web/CController.php(287): AweModelGenerator->runAction()
-#5 /var/www/html/yii/framework/web/CController.php(266): AweModelGenerator->runActionWithFilters()
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): AweModelGenerator->run()
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
-REQUEST_URI=/yii/cms/gii/AweModel
-in /var/www/html/yii/cms/protected/extensions/awegen/AweModel/templates/default/basemodel.php (23)
-in /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php (90)
-in /var/www/html/yii/cms/index.php (18)
