@@ -7,7 +7,8 @@ class FullModelGenerator extends CCodeGenerator {
      * Returns the table names in an array.
      * The array is used to build the autocomplete field.
      * An '*' is appended to the end of the list to allow the generation
-     * of models for all tables.
+     * of models for all tables./var/www/html/yii/cms/protected/extensions/giix-core/giixCrud
+/var/www/html/yii/cms/protected/extensions/giix-core/giixModel
      * @return array the names of all tables in the schema, plus an '*'
      */
     protected function getTables() {

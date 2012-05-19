@@ -14,7 +14,7 @@
  * @property string $path
  *
  */
-abstract class BaseSlug extends GxActiveRecord {
+abstract class BaseSlug extends CActiveRecord {
 
     public static function model($className = __CLASS__) {
         return parent::model($className);

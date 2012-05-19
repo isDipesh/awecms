@@ -15,8 +15,8 @@ class CodeProvider {
         return $controller;
     }
 
-    static public function generateActiveField($model, $column) {
-        die();
+    static public function generateActiveField($fullCrudCode, $column) {
+        $model = $fullCrudCode->modelClass;
         if (strtoupper($column->dbType) == 'TINYINT(1)'
                 || strtoupper($column->dbType) == 'BIT'
                 || strtoupper($column->dbType) == 'BOOL'
@@ -118,52 +118,55 @@ class CodeProvider {
      * @param CDbColumnSchema $column
      */
     public function generateValueField($modelClass, $column, $view = false) {
-        if ($column->isForeignKey) {
 
-            $model = CActiveRecord::model($modelClass);
-            $table = $model->getTableSchema();
-            $fk = $table->foreignKeys[$column->name];
-
-            // We have to look into relations to find the correct model class (i.e. if models are generated with table prefix)
-            // TODO: do not repeat yourself (foreach) - this is a hotfix
-            foreach ($model->relations() as $key => $value) {
-                if (strcasecmp($value[2], $column->name) == 0)
-                    $relation = $value;
-            }
-            $fmodel = CActiveRecord::model($relation[1]);
-            $fmodelName = $relation[1];
-
-            $modelTable = ucfirst($fmodel->tableName());
-            $fcolumns = $fmodel->attributeNames();
-
-            if (method_exists($fmodel, 'get_label')) {
-                $fcolumns[1] = "_label";
-            }
-
-            //$rel = $model->getActiveRelation($column->name);
-            $relname = strtolower($fk[0]);
-            foreach ($model->relations() as $key => $value) {
-                if (strcasecmp($value[2], $column->name) == 0)
-                    $relname = $key;
-            }
-            //return("\$model->{$relname}->{$fcolumns[1]}");
-            //return("CHtml::value(\$model,\"{$relname}.{$fcolumns[1]}\")");
-            //return("{$relname}.{$fcolumns[1]}");
-            if ($view === true) {
-                return "array(
-                    'name'=>'{$column->name}',
-                    'value'=>CHtml::value(\$model,'{$relname}.{$fcolumns[1]}'),
-                    )";
-            } elseif ($view == 'search')
-                return "\$form->dropDownList(\$model,'{$column->name}',CHtml::listData({$fmodelName}::model()->findAll(), '{$fmodel->getTableSchema()->primaryKey}', '{$fcolumns[1]}'),array('prompt'=>Yii::t('app', 'All')))";
-            else
-                return "array(
-                    'name'=>'{$column->name}',
-                    'value'=>'CHtml::value(\$data,\\'{$relname}.{$fcolumns[1]}\\')',
-                            'filter'=>CHtml::listData({$fmodelName}::model()->findAll(), '{$fcolumns[0]}', '{$fcolumns[1]}'),
-                            )";
-            //{$relname}.{$fcolumns[1]}
-        } else if (strtoupper($column->dbType) == 'BOOLEAN'
+//        if ($column->isForeignKey) {
+//
+//            $model = CActiveRecord::model($modelClass);
+//            $table = $model->getTableSchema();
+//            $fk = $table->foreignKeys[$column->name];
+//
+//            // We have to look into relations to find the correct model class (i.e. if models are generated with table prefix)
+//            // TODO: do not repeat yourself (foreach) - this is a hotfix
+//            foreach ($model->relations() as $key => $value) {
+//                if (strcasecmp($value[2], $column->name) == 0)
+//                    $relation = $value;
+//            }
+//            $fmodel = CActiveRecord::model($relation[1]);
+//            $fmodelName = $relation[1];
+//
+//            $modelTable = ucfirst($fmodel->tableName());
+//            $fcolumns = $fmodel->attributeNames();
+//
+//            if (method_exists($fmodel, 'get_label')) {
+//                $fcolumns[1] = "_label";
+//            }
+//
+//            //$rel = $model->getActiveRelation($column->name);
+//            $relname = strtolower($fk[0]);
+//            foreach ($model->relations() as $key => $value) {
+//                if (strcasecmp($value[2], $column->name) == 0)
+//                    $relname = $key;
+//            }
+//            //return("\$model->{$relname}->{$fcolumns[1]}");
+//            //return("CHtml::value(\$model,\"{$relname}.{$fcolumns[1]}\")");
+//            //return("{$relname}.{$fcolumns[1]}");
+//            if ($view === true) {
+//                return "array(
+//                    'name'=>'{$column->name}',
+//                    'value'=>CHtml::value(\$model,'{$relname}.{$fcolumns[1]}'),
+//                    )";
+//            } elseif ($view == 'search')
+//                return "\$form->dropDownList(\$model,'{$column->name}',CHtml::listData({$fmodelName}::model()->findAll(), '{$fmodel->getTableSchema()->primaryKey}', '{$fcolumns[1]}'),array('prompt'=>Yii::t('app', 'All')))";
+//            else
+//                return "array(
+//                    'name'=>'{$column->name}',
+//                    'value'=>'CHtml::value(\$data,\\'{$relname}.{$fcolumns[1]}\\')',
+//                            'filter'=>CHtml::listData({$fmodelName}::model()->findAll(), '{$fcolumns[0]}', '{$fcolumns[1]}'),
+//                            )";
+//            //{$relname}.{$fcolumns[1]}
+//        } else 
+//            
+        if (strtoupper($column->dbType) == 'BOOLEAN'
                 or strtoupper($column->dbType) == 'TINYINT(1)' or
                 strtoupper($column->dbType) == 'BIT') {
             if ($view) {

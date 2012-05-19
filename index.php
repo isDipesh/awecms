@@ -1,7 +1,7 @@
 <?php
 
 // remove the following line when in production mode
-defined('YII_DEBUG') or define('YII_DEBUG', true);
+    defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 date_default_timezone_set('GMT');
 

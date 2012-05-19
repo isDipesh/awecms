@@ -10,6 +10,7 @@ class FullCrudCode extends CrudCode {
     public $identificationColumn = null;
     public $baseControllerClass='Controller';
     public $codeProvider;
+    public $isJToggleColumnEnabled = true;
 
     public function prepare() {
         $this->codeProvider = new CodeProvider;

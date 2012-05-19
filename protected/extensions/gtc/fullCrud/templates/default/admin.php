@@ -69,7 +69,7 @@ foreach ($this->tableSchema->columns as $column) {
 
     if (strtoupper($column->dbType) == 'TEXT')
         echo "#";
-    echo "        " . $this->codeProvider->generateValueField($this->modelClass, $column) . ",\n";
+    echo "        " . $this->codeProvider->generateValueField($this, $column) . ",\n";
 }
 
 if ($count >= 7)
