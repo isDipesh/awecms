@@ -18,22 +18,16 @@ class AweModelCode extends ModelCode {
      * @var string The base model class name.
      */
     public $baseModelClass;
-
-    /**
-     * @var boolean Use JToggleColumn Extension for Boolean fields?
-     */
-    public $isJToggleColumnEnabled = true;
-    public $identificationColumn = null;
     public $tables;
+    
+    public $booleanTypes = array('tinyint(1)', 'boolean', 'bool');
+    public $create_time = array('create_time', 'createtime', 'created_at', 'createdat', 'created_time', 'createdtime');
+    public $update_time = array('changed', 'changed_at', 'updatetime', 'modified_at', 'updated_at', 'update_time', 'timestamp', 'updatedat');
+    public $time_fields;
 
     public function init() {
+        $this->time_fields = array_merge($this->create_time, $this->update_time);
         parent::init();
-    }
-
-    public function rules() {
-        return array_merge(parent::rules(), array(
-                    array('identificationColumn', 'safe'),
-                ));
     }
 
     public function prepare() {
@@ -72,40 +66,27 @@ class AweModelCode extends ModelCode {
             $tableName = $this->removePrefix($table->name);
             $className = $this->generateClassName($table->name);
 
-            if (!$this->identificationColumn)
-                $this->identificationColumn = $this->guessIdentificationColumn(
-                        $table->columns);
-
-            if (!array_key_exists(
-                            $this->identificationColumn, $table->columns))
-                $this->addError('identificationColumn', 'The specified column can not be found in the models attributes. <br /> Please specify a valid attribute. If unsure, leave the field empty.');
-
-
             $params = array(
                 'tableName' => $schema === '' ? $tableName : $schema . '.' . $tableName,
                 'modelClass' => $className,
                 'columns' => $table->columns,
                 'labels' => $this->generateLabels($table),
                 'rules' => $this->generateRules($table),
-                'relations' => isset($this->relations[$className]) ? $this->relations[$className] : array(),
+                    //'relations' => isset($this->relations[$className]) ? $this->relations[$className] : array(),
             );
 
-            if ($this->template != 'singlefile')
-                $this->files[] = new CCodeFile(
-                                Yii::getPathOfAlias($this->modelPath) . '/' . 'Base' . $className . '.php',
-                                $this->render($templatePath . '/basemodel.php', $params)
-                );
+            $this->files[] = new CCodeFile(
+                            Yii::getPathOfAlias($this->modelPath) . '/' . 'Base' . $className . '.php',
+                            $this->render($templatePath . '/basemodel.php', $params)
+            );
         }
     }
 
     public function requiredTemplates() {
-        if ($this->template == 'singlefile')
-            return array('model.php');
-        else
-            return array(
-                'model.php',
-                'basemodel.php',
-            );
+        return array(
+            'model.php',
+            'basemodel.php',
+        );
     }
 
     public function getBehaviors($columns) {
@@ -114,19 +95,8 @@ class AweModelCode extends ModelCode {
             $behaviors .= "'CSaveRelationsBehavior', array(
 				'class' => 'CSaveRelationsBehavior'),";
 
-        foreach ($columns as $name => $column) {
-            if (in_array($column->name, array(
-                        'create_time',
-                        'createtime',
-                        'created_at',
-                        'createdat',
-                        'changed',
-                        'changed_at',
-                        'updatetime',
-                        'modified_at',
-                        'updated_at',
-                        'update_time',
-                        'timestamp'))) {
+        foreach ($columns as $column) {
+            if (in_array($column->name, $this->time_fields)) {
                 $behaviors .= sprintf("\n\t\t'CTimestampBehavior' => array(
 				'class' => 'zii.behaviors.CTimestampBehavior',
 				'createAttribute' => %s,
@@ -135,23 +105,6 @@ class AweModelCode extends ModelCode {
                 break; // once a column is found, we are done
             }
         }
-//					foreach($columns as $name => $column) {
-//						if(in_array($column->name, array(
-//										'user_id',
-//										'userid',
-//										'ownerid',
-//										'owner_id',
-//										'created_by',
-//										'createdby'))) {
-//							$behaviors .= sprintf("\n\t\t'OwnerBehavior' => array(
-//								'class' => 'OwnerBehavior',
-//							'ownerColumn' => '%s',
-//							\t),\n", $column->name);
-//							break; // once a column is found, we are done
-//
-//						}
-//					}
-
 
         $behaviors .= "\n);\n";
         return $behaviors;
@@ -166,12 +119,18 @@ class AweModelCode extends ModelCode {
         $length = array();
         $safe = array();
         foreach ($table->columns as $column) {
-            if ($column->isPrimaryKey && $table->sequenceName !== null)
+            if ($column->autoIncrement && $table->sequenceName !== null)
                 continue;
+            //find timestamp fields
+            $t = in_array($column->name, $this->time_fields);
+            //find if boolean types
+            $b = in_array($column->dbType, $this->booleanTypes);
             $r = !$column->allowNull && $column->defaultValue === null;
-            if ($r)
+            //null and timestamp fields are not required, also boolean fields need not be mentioned as required
+            if ($r && !$t & !$b)
                 $required[] = $column->name;
-            else
+            //null fields
+            if (!$r)
                 $null[] = $column->name;
             if ($column->type === 'integer')
                 $integers[] = $column->name;
@@ -179,10 +138,6 @@ class AweModelCode extends ModelCode {
                 $numerical[] = $column->name;
             else if ($column->type === 'string' && $column->size > 0) {
                 $length[$column->size][] = $column->name;
-                if ($column->name == $this->identificationColumn) {
-                    $rules[] = "array('{$column->name}', 'unique')";
-                    $rules[] = "array('{$column->name}', 'identificationColumnValidator')";
-                }
             } else if (!$column->isPrimaryKey && !$r)
                 $safe[] = $column->name;
         }
@@ -200,45 +155,23 @@ class AweModelCode extends ModelCode {
         }
         if ($safe !== array())
             $rules[] = "array('" . implode(', ', $safe) . "', 'safe')";
-
-
         return $rules;
     }
 
     function getCreatetimeAttribute($columns) {
-        foreach (array('create_time', 'createtime', 'created_at', 'createdat', 'timestamp') as $try)
+        foreach ($this->create_time as $try)
             foreach ($columns as $column)
                 if ($try == $column->name)
                     return sprintf("'%s'", $column->name);
-
         return 'null';
     }
 
     function getUpdatetimeAttribute($columns) {
-        foreach (array('update_time', 'updatetime', 'changed', 'changed_at', 'modified_at', 'updated_at') as $try)
+        foreach ($this->update_time as $try)
             foreach ($columns as $column)
                 if ($try == $column->name)
                     return sprintf("'%s'", $column->name);
-
         return 'null';
-    }
-
-    public function guessIdentificationColumn($columns) {
-        $found = false;
-        foreach ($columns as $name => $column) {
-            if (!$found
-                    && $column->type != 'datetime'
-                    && $column->type === 'string'
-                    && !$column->isPrimaryKey) {
-                return $column->name;
-                $found = true;
-            }
-        }
-
-        // if the columns contains no column of type 'string', return the
-        // first column (usually the primary key)
-        if (!$found)
-            return reset($columns)->name;
     }
 
 }

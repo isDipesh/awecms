@@ -5,19 +5,22 @@ Yii::import('system.gii.generators.crud.CrudCode');
 class AweCrudCode extends CrudCode {
 
     public $authtype = 'no_access_control';
-    public $validation = 0;
+    public $validation = 2;
     public $baseControllerClass = 'Controller';
     public $identificationColumn = '';
     public $isJToggleColumnEnabled = true;
+    
     public $dateTypes = array('datetime', 'date', 'time');
     public $booleanTypes = array('tinyint(1)', 'boolean', 'bool');
     public $emailFields = array('email', 'e-mail', 'email_address', 'e-mail_address', 'emailaddress', 'e-mailaddress');
     public $imageFields = array('image', 'picture', 'photo', 'pic', 'profile_pic', 'profile_picture', 'avatar', 'profilepic', 'profilepicture');
-    public $urlFields = array('url', 'link', 'uri');
+    public $urlFields = array('url', 'link', 'uri', 'homepage', 'webpage', 'website', 'profile_url', 'profile_link');
+    public $create_time = array('create_time', 'createtime', 'created_at', 'createdat', 'created_time', 'createdtime');
+    public $update_time = array('changed', 'changed_at', 'updatetime', 'modified_at', 'updated_at', 'update_time', 'timestamp', 'updatedat');
 
     public function rules() {
         return array_merge(parent::rules(), array(
-                    array('identificationColumn,isJToggleColumnEnabled,validation,authtype', 'safe'),
+                    array('identificationColumn, isJToggleColumnEnabled, validation, authtype', 'safe'),
                 ));
     }
 
@@ -27,6 +30,7 @@ class AweCrudCode extends CrudCode {
                 ));
     }
 
+    //used by getIdentificationColumn as callback for array_map
     private static function getName($column) {
         return $column->name;
     }
@@ -147,21 +151,20 @@ class AweCrudCode extends CrudCode {
         } else if (in_array(strtolower($column->dbType), $this->dateTypes)) {
             return ("\$this->widget('CJuiDateTimePicker',
 						 array(
-								 'model'=>\$model,
-                                                                 'name'=>'{$modelClass}[{$column->name}]',
-								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
-								 'value'=>\$model->{$column->name},
-								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
-                                                                 'mode' => '" . strtolower($column->dbType) . "',
-								 'options'=>array(
-                                                                         'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
-									 'showButtonPanel'=>true,
-									 'changeYear'=>true,
-									 'changeYear'=>true,
-									 'dateFormat'=>'yy-mm-dd',
-									 ),
-								 )
-							 );
+							'model'=>\$model,
+                                                        'name'=>'{$modelClass}[{$column->name}]',
+							'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
+							'value'=>\$model->{$column->name},
+                                                        'mode' => '" . strtolower($column->dbType) . "',
+							'options'=>array(
+                                                                        'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
+                                                                        'showButtonPanel'=>true,
+                                                                        'changeYear'=>true,
+                                                                        'changeMonth'=>true,
+                                                                        'dateFormat'=>'yy-mm-dd',
+                                                                        ),
+                                                    )
+					);
 					");
         } else {
             if (preg_match('/^(password|pass|passwd|passcode)$/i', $column->name))
@@ -186,7 +189,7 @@ class AweCrudCode extends CrudCode {
                 || strtoupper($column->dbType) == 'BIT'
                 || strtoupper($column->dbType) == 'BOOL'
                 || strtoupper($column->dbType) == 'BOOLEAN') {
-            if ($this->isJToggleColumnEnabled){
+            if ($this->isJToggleColumnEnabled) {
                 return "array(
                                         'class' => 'JToggleColumn',
 					'name' => '{$column->name}',
@@ -195,7 +198,7 @@ class AweCrudCode extends CrudCode {
                                         'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
 					)";
             }else
-            return "array(
+                return "array(
 					'name' => '{$column->name}',
 					'value' => '(\$data->{$column->name} === 0) ? Yii::t(\\'app\\', \\'No\\') : Yii::t(\\'app\\', \\'Yes\\')',
 					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),

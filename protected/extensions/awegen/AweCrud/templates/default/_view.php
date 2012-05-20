@@ -65,6 +65,7 @@
                 echo 'echo "</a>";
                  */
                 echo "</div>";
+                echo "</div>";
             } else if (in_array(strtolower($column->name), $this->urlFields)) {
                 echo "
                 <?php

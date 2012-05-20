@@ -50,9 +50,9 @@ abstract class <?php echo 'Base' . $modelClass; ?> extends <?php echo $this->bas
     public function relations() {
         return array(
 <?php
-        foreach($relations as $name=>$relation) {
-            echo "            '$name' => $relation,\n";
-        }
+//        foreach($relations as $name=>$relation) {
+//            echo "            '$name' => $relation,\n";
+//        }
 ?>
         );
     }
@@ -90,28 +90,4 @@ abstract class <?php echo 'Base' . $modelClass; ?> extends <?php echo $this->bas
                 ));
     }
     
-    public function get_label() {
-        <?php 
-        // TODO: found no better solution for the PK
-        foreach($columns as $name=>$column) {
-            if ($column->isPrimaryKey) {
-                echo "return '#' . \$this->{$column->name};";
-            }
-        }
-        ?>
-
-    }
-<?php
-         // I would suggest to overwrite this method in the model class
-
-         /*    foreach($columns AS $col){
-                    //if no name attribute is found, use the first string value in the table
-                    if($col->type == 'string') {
-                        echo 'return $this->'.$col->name.';';
-                        break;
-                    }
-                } */
-
-?>
-
 }

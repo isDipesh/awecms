@@ -32,14 +32,12 @@ abstract class BaseTest extends CActiveRecord {
 
     public function rules() {
         return array(
-            array('name', 'unique'),
-            array('name', 'identificationColumnValidator'),
-            array('name, birthdate, birthtime, enabled, status, slogan, content, created_at, changed_at, image, email, uri', 'required'),
+            array('name, birthdate, birthtime, status, slogan, content, image, email, uri', 'required'),
             array('enabled', 'numerical', 'integerOnly' => true),
             array('name', 'length', 'max' => 50),
             array('status', 'length', 'max' => 9),
+            array('image, uri', 'length', 'max' => 255),
             array('email', 'length', 'max' => 100),
-            array('uri', 'length', 'max' => 255),
             array('id, name, birthdate, birthtime, enabled, status, slogan, content, created_at, changed_at, image, email, uri', 'safe', 'on' => 'search'),
         );
     }
@@ -89,8 +87,4 @@ abstract class BaseTest extends CActiveRecord {
                 ));
     }
     
-    public function get_label() {
-        return '#' . $this->id;
-    }
-
 }

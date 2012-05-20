@@ -7,7 +7,7 @@
     $form=$this->beginWidget('CActiveForm', array(
     'id'=>'test-form',
     'enableAjaxValidation'=>false,
-    'enableClientValidation'=>false,
+    'enableClientValidation'=>true,
     ));
 
     echo $form->errorSummary($model);
@@ -23,21 +23,20 @@
             <?php echo $form->labelEx($model,'birthdate'); ?>
             <?php $this->widget('CJuiDateTimePicker',
 						 array(
-								 'model'=>$model,
-                                                                 'name'=>'Test[birthdate]',
-								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
-								 'value'=>$model->birthdate,
-								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
-                                                                 'mode' => 'date',
-								 'options'=>array(
-                                                                         'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
-									 'showButtonPanel'=>true,
-									 'changeYear'=>true,
-									 'changeYear'=>true,
-									 'dateFormat'=>'yy-mm-dd',
-									 ),
-								 )
-							 );
+							'model'=>$model,
+                                                        'name'=>'Test[birthdate]',
+							'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
+							'value'=>$model->birthdate,
+                                                        'mode' => 'date',
+							'options'=>array(
+                                                                        'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
+                                                                        'showButtonPanel'=>true,
+                                                                        'changeYear'=>true,
+                                                                        'changeMonth'=>true,
+                                                                        'dateFormat'=>'yy-mm-dd',
+                                                                        ),
+                                                    )
+					);
 					; ?>
             <?php echo $form->error($model,'birthdate'); ?>
         </div><!-- row -->
@@ -46,21 +45,20 @@
             <?php echo $form->labelEx($model,'birthtime'); ?>
             <?php $this->widget('CJuiDateTimePicker',
 						 array(
-								 'model'=>$model,
-                                                                 'name'=>'Test[birthtime]',
-								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
-								 'value'=>$model->birthtime,
-								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
-                                                                 'mode' => 'datetime',
-								 'options'=>array(
-                                                                         'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
-									 'showButtonPanel'=>true,
-									 'changeYear'=>true,
-									 'changeYear'=>true,
-									 'dateFormat'=>'yy-mm-dd',
-									 ),
-								 )
-							 );
+							'model'=>$model,
+                                                        'name'=>'Test[birthtime]',
+							'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
+							'value'=>$model->birthtime,
+                                                        'mode' => 'datetime',
+							'options'=>array(
+                                                                        'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
+                                                                        'showButtonPanel'=>true,
+                                                                        'changeYear'=>true,
+                                                                        'changeMonth'=>true,
+                                                                        'dateFormat'=>'yy-mm-dd',
+                                                                        ),
+                                                    )
+					);
 					; ?>
             <?php echo $form->error($model,'birthtime'); ?>
         </div><!-- row -->
@@ -92,58 +90,6 @@
             <?php echo $form->labelEx($model,'content'); ?>
             <?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
             <?php echo $form->error($model,'content'); ?>
-        </div><!-- row -->
-        
-        <div class="row">
-            <?php echo $form->labelEx($model,'created_at'); ?>
-            <?php $this->widget('CJuiDateTimePicker',
-						 array(
-								 'model'=>$model,
-                                                                 'name'=>'Test[created_at]',
-								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
-								 'value'=>$model->created_at,
-								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
-                                                                 'mode' => 'datetime',
-								 'options'=>array(
-                                                                         'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
-									 'showButtonPanel'=>true,
-									 'changeYear'=>true,
-									 'changeYear'=>true,
-									 'dateFormat'=>'yy-mm-dd',
-									 ),
-								 )
-							 );
-					; ?>
-            <?php echo $form->error($model,'created_at'); ?>
-        </div><!-- row -->
-        
-        <div class="row">
-            <?php echo $form->labelEx($model,'changed_at'); ?>
-            <?php $this->widget('CJuiDateTimePicker',
-						 array(
-								 'model'=>$model,
-                                                                 'name'=>'Test[changed_at]',
-								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
-								 'value'=>$model->changed_at,
-								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
-                                                                 'mode' => 'datetime',
-								 'options'=>array(
-                                                                         'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
-									 'showButtonPanel'=>true,
-									 'changeYear'=>true,
-									 'changeYear'=>true,
-									 'dateFormat'=>'yy-mm-dd',
-									 ),
-								 )
-							 );
-					; ?>
-            <?php echo $form->error($model,'changed_at'); ?>
-        </div><!-- row -->
-        
-        <div class="row">
-            <?php echo $form->labelEx($model,'modified_at'); ?>
-            <?php echo $form->textField($model,'modified_at'); ?>
-            <?php echo $form->error($model,'modified_at'); ?>
         </div><!-- row -->
         
         <div class="row">

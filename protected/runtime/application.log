@@ -29,3 +29,461 @@ Stack trace:
 REQUEST_URI=/yii/cms/test/image
 HTTP_REFERER=http://localhost/yii/cms/test/2
 ---
+2012/05/20 16:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 16:30:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 16:30:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 16:56:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 16:56:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 18:31:46 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:31:51 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:31:55 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:31:59 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:32:15 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:32:17 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:32:17 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:33:38 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:33:41 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:33:43 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:33:45 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:33:48 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:34:00 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:34:05 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:34:08 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:34:12 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:34:14 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:34:56 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:34:59 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:35:02 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:35:04 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:35:08 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:35:13 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:35:14 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:35:24 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 18:37:12 [error] [exception.CException] exception 'CException' with message 'Alias "PortletGenerator.widgets.ddeditor.DDEditor" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('PortletGenerato...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PortletGenerator), 'PortletGenerato...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('PortletGenerato...', Array)
+#3 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/__comment.php(9): CBaseController->widget('PortletGenerato...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CTabView.php(213): CController->renderPartial('__comment', Array)
+#8 /var/www/html/yii/framework/web/widgets/CTabView.php(145): CTabView->renderBody()
+#9 /var/www/html/yii/framework/web/CBaseController.php(174): CTabView->run()
+#10 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/index.php(18): CBaseController->widget('system.web.widg...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/portlet')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/gii/portlet
+HTTP_REFERER=http://localhost/yii/cms/gii/AweCrud
+---
+2012/05/20 18:37:18 [error] [exception.CException] exception 'CException' with message 'Alias "CommandGenerator.widgets.ddeditor.DDEditor" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('CommandGenerato...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(CommandGenerator), 'CommandGenerato...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('CommandGenerato...', Array)
+#3 /var/www/html/yii/cms/protected/extensions/gtc/command/views/__comment.php(9): CBaseController->widget('CommandGenerato...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CTabView.php(213): CController->renderPartial('__comment', Array)
+#8 /var/www/html/yii/framework/web/widgets/CTabView.php(145): CTabView->renderBody()
+#9 /var/www/html/yii/framework/web/CBaseController.php(174): CTabView->run()
+#10 /var/www/html/yii/cms/protected/extensions/gtc/command/views/index.php(18): CBaseController->widget('system.web.widg...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/command')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/gii/command
+HTTP_REFERER=http://localhost/yii/cms/gii/AweCrud
+---
+2012/05/20 18:37:25 [error] [exception.CException] exception 'CException' with message 'Alias "PortletGenerator.widgets.ddeditor.DDEditor" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('PortletGenerato...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PortletGenerator), 'PortletGenerato...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('PortletGenerato...', Array)
+#3 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/__comment.php(9): CBaseController->widget('PortletGenerato...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CTabView.php(213): CController->renderPartial('__comment', Array)
+#8 /var/www/html/yii/framework/web/widgets/CTabView.php(145): CTabView->renderBody()
+#9 /var/www/html/yii/framework/web/CBaseController.php(174): CTabView->run()
+#10 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/index.php(18): CBaseController->widget('system.web.widg...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/portlet')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/gii/portlet
+HTTP_REFERER=http://localhost/yii/cms/gii/AweCrud
+---
+2012/05/20 18:53:33 [error] [exception.CException] exception 'CException' with message 'AweModelCode and its behaviors do not have a method or closure named "guessIdentificationColumn".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(73): CComponent->__call('guessIdentifica...', Array)
+#1 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(73): AweModelCode->guessIdentificationColumn(Array)
+#2 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
+#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/cms/gii/AweModel
+HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
+---
+2012/05/20 18:56:36 [error] [exception.CException] exception 'CException' with message 'Property "AweModelCode.identificationColumn" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(173): CComponent->__get('identificationC...')
+#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): AweModelCode->generateRules(Object(CMysqlTableSchema))
+#2 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(35): ModelCode->prepare()
+#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/cms/gii/AweModel
+HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
+---
+2012/05/20 19:14:50 [error] [php] Undefined variable: relations (/var/www/html/yii/cms/protected/extensions/awegen/AweModel/templates/default/basemodel.php:53)
+Stack trace:
+#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
+#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(83): AweModelGenerator->prepare()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): AweModelGenerator->actionCode()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(287): AweModelGenerator->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(266): AweModelGenerator->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): AweModelGenerator->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/gii/AweModel/code/id/1
+in /var/www/html/yii/cms/protected/extensions/awegen/AweModel/templates/default/basemodel.php (53)
+in /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php (78)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 19:17:45 [error] [exception.CException] exception 'CException' with message 'Property "CMysqlColumnSchema.isAutoIncrement" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(121): CComponent->__get('isAutoIncrement')
+#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): AweModelCode->generateRules(Object(CMysqlTableSchema))
+#2 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(32): ModelCode->prepare()
+#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(83): CCodeGenerator->prepare()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionCode()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('code')
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel/co...')
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/cms/gii/AweModel/code/id/1
+HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
+---
+2012/05/20 19:19:23 [error] [exception.CException] exception 'CException' with message 'Property "CMysqlColumnSchema.isAutoIncrement" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(122): CComponent->__get('isAutoIncrement')
+#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): AweModelCode->generateRules(Object(CMysqlTableSchema))
+#2 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(32): ModelCode->prepare()
+#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(83): CCodeGenerator->prepare()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionCode()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('code')
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel/co...')
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/cms/gii/AweModel/code/id/1
+HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
+---
+2012/05/20 19:19:32 [error] [exception.CException] exception 'CException' with message 'Property "CMysqlColumnSchema.isAutoIncrement" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(122): CComponent->__get('isAutoIncrement')
+#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): AweModelCode->generateRules(Object(CMysqlTableSchema))
+#2 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(32): ModelCode->prepare()
+#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/cms/gii/AweModel
+HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
+---
+2012/05/20 19:29:46 [error] [exception.CException] exception 'CException' with message 'AweModelCode and its behaviors do not have a method or closure named "generateRules".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(219): CComponent->__call('generateRules', Array)
+#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(219): CCodeModel->generateRules(Object(CMysqlTableSchema))
+#2 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): ModelCode->generateRules(Object(CMysqlTableSchema))
+#3 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(32): ModelCode->prepare()
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/gii/AweModel
+HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
+---
+2012/05/20 19:30:37 [error] [exception.CException] exception 'CException' with message 'AweModelCode and its behaviors do not have a method or closure named "generateRules".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(219): CComponent->__call('generateRules', Array)
+#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(219): CCodeModel->generateRules(Object(CMysqlTableSchema))
+#2 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(123): ModelCode->generateRules(Object(CMysqlTableSchema))
+#3 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): AweModelCode->generateRules(Object(CMysqlTableSchema))
+#4 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(32): ModelCode->prepare()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
+#6 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/cms/gii/AweModel
+HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
+---
+2012/05/20 19:35:55 [warning] [application] Failed to set unsafe attribute "created_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 19:35:55 [warning] [application] Failed to set unsafe attribute "changed_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 19:35:55 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 19:39:26 [warning] [application] Failed to set unsafe attribute "created_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 19:39:26 [warning] [application] Failed to set unsafe attribute "changed_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 19:39:26 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 19:44:17 [warning] [application] Failed to set unsafe attribute "created_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 19:44:17 [warning] [application] Failed to set unsafe attribute "changed_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 19:44:17 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "aaaaa".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('aaaaa')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('aaaaa')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/aaaaa')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/aaaaa
+HTTP_REFERER=http://localhost/yii/cms/test/4
+---
+2012/05/20 20:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "aaaaa".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('aaaaa')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('aaaaa')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/aaaaa')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/aaaaa
+HTTP_REFERER=http://localhost/yii/cms/test/4
+---
+2012/05/20 20:23:52 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/extensions/awegen/AweCrud/AweCrudCode.php:122)
+Stack trace:
+#0 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(97): AweCrudCode->render()
+#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweCrudCode->prepare()
+#2 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): AweCrudGenerator->prepare()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): AweCrudGenerator->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): AweCrudGenerator->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): AweCrudGenerator->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): AweCrudGenerator->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/gii/AweCrud
+in /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/AweCrudCode.php (122)
+in /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/_search.php (16)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:25:52 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:25:54 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:26:04 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:26:24 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:26:28 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:26:45 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:27:33 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)

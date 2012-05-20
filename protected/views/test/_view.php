@@ -162,7 +162,7 @@
                 <b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
             </div>
 <div class="field_value">
-<img alt="<?php echo $data->name ?>" title="<?php echo $data->name ?>" src="<?php echo $data->image ?>" /></div>
+<img alt="<?php echo $data->name ?>" title="<?php echo $data->name ?>" src="<?php echo $data->image ?>" /></div></div>
         <?php
     }
     ?>

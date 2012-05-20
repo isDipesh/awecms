@@ -15,13 +15,14 @@
     ?>
     <?php
     foreach ($this->tableSchema->columns as $column) {
-        if ($column->autoIncrement)
+        //continue if it is an auto-increment field or if it's a timestamp kinda' stuff
+        if ($column->autoIncrement || in_array($column->name, array_merge($this->create_time, $this->update_time)))
             continue;
         ?>
 
         <div class="row">
             <?php echo "<?php echo " . $this->generateActiveLabel($this->modelClass, $column) . "; ?>\n"; ?>
-            <?php echo "<?php " . $this->generateField($column,$this->modelClass) . "; ?>\n"; ?>
+            <?php echo "<?php " . $this->generateField($column, $this->modelClass) . "; ?>\n"; ?>
             <?php echo "<?php echo \$form->error(\$model,'{$column->name}'); ?>\n"; ?>
         </div><!-- row -->
         <?php
