@@ -8,7 +8,7 @@
     'id'=>'test-form',
     'enableAjaxValidation'=>false,
     'enableClientValidation'=>false,
-    )); 
+    ));
 
     echo $form->errorSummary($model);
     ?>
@@ -148,7 +148,8 @@
         
         <div class="row">
             <?php echo $form->labelEx($model,'image'); ?>
-            <?php echo $form->textArea($model,'image',array('rows'=>6, 'cols'=>50)); ?>
+            <?php echo $form->textField($model,'image',array('size'=>60,'maxlength'=>255));
+if (!empty($model->image)){ ?> <div class="right"><a href="<?php echo $model->image ?>" target="_blank" title="<?php echo Awecms::generateFriendlyName('image') ?>"><img src="<?php echo $model->image ?>"  alt="<?php echo Awecms::generateFriendlyName('image') ?>" title="<?php echo Awecms::generateFriendlyName('image') ?>"/></a></div><?php }; ?>
             <?php echo $form->error($model,'image'); ?>
         </div><!-- row -->
         
@@ -165,7 +166,7 @@
         </div><!-- row -->
             <?php
 echo CHtml::Button(Yii::t('app', 'Cancel'), array(
-			'submit' => 'javascript:history.go(-1)')); 
-echo CHtml::submitButton(Yii::t('app', 'Save')); 
+			'submit' => 'javascript:history.go(-1)'));
+echo CHtml::submitButton(Yii::t('app', 'Save'));
 $this->endWidget(); ?>
 </div> <!-- form -->

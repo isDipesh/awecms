@@ -9,6 +9,11 @@ class AweCrudCode extends CrudCode {
     public $baseControllerClass = 'Controller';
     public $identificationColumn = '';
     public $isJToggleColumnEnabled = true;
+    public $dateTypes = array('datetime', 'date', 'time');
+    public $booleanTypes = array('tinyint(1)', 'boolean', 'bool');
+    public $emailFields = array('email', 'e-mail', 'email_address', 'e-mail_address', 'emailaddress', 'e-mailaddress');
+    public $imageFields = array('image', 'picture', 'photo', 'pic', 'profile_pic', 'profile_picture', 'avatar', 'profilepic', 'profilepicture');
+    public $urlFields = array('url', 'link', 'uri');
 
     public function rules() {
         return array_merge(parent::rules(), array(
@@ -70,21 +75,21 @@ class AweCrudCode extends CrudCode {
                     ),";
         }
 
-        if (in_array(strtolower($column->name), array('image', 'picture', 'photo', 'pic', 'profile_pic', 'profile_picture', 'avatar', 'profilepic', 'profilepicture'))) {
+        if (in_array(strtolower($column->name), $this->imageFields)) {
             return "array(
                         'name'=>'{$column->name}',
                         'type'=>'image'
                     ),";
         }
 
-        if (in_array(strtolower($column->name), array('email', 'e-mail', 'email_address', 'e-mail_address', 'emailaddress', 'e-mailaddress'))) {
+        if (in_array(strtolower($column->name), $this->emailFields)) {
             return "array(
                         'name'=>'{$column->name}',
                         'type'=>'email'
                     ),";
         }
 
-        if (in_array(strtolower($column->name), array('url', 'link', 'uri'))) {
+        if (in_array(strtolower($column->name), $this->urlFields)) {
             return "array(
                         'name'=>'{$column->name}',
                         'type'=>'url'
@@ -110,12 +115,22 @@ class AweCrudCode extends CrudCode {
     }
 
     public function generateField($column) {
-        if (in_array(strtolower($column->dbType), array('boolean', 'tinyint(1)', 'bool')))
+        if (in_array(strtolower($column->dbType), $this->booleanTypes))
             return "echo \$form->checkBox(\$model,'{$column->name}')";
-        else if (strtolower($column->dbType) == 'longtext')
-        //TODO integrate markitup
+        //if the column name looks like that of an image and if it's a string
+        if (in_array(strtolower($column->name), $this->imageFields) && $column->type == 'string') {
+            //find maximum length and size
+            if (($size = $maxLength = $column->size) > 60)
+                $size = 60;
+            //generate the textField
+            $string = "echo \$form->textField(\$model,'{$column->name}',array('size'=>$size,'maxlength'=>$maxLength))";
+            //also show the image and make it clickable if the field the something
+                $string .= ";\nif (!empty(\$model->{$column->name})){ ?> <div class=\"right\"><a href=\"<?php echo \$model->{$column->name} ?>\" target=\"_blank\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"><img src=\"<?php echo \$model->{$column->name} ?>\"  alt=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"/></a></div><?php }";
+            return $string;
+        } else if (strtolower($column->dbType) == 'longtext') {
+            //TODO integrate markitup
             return "echo \$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
-        else if (stripos($column->dbType, 'text') !== false)
+        } else if (stripos($column->dbType, 'text') !== false)
             return "echo \$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
         else if (substr(strtoupper($column->dbType), 0, 4) == 'ENUM') {
             $string = sprintf("echo CHtml::activeDropDownList(\$model, '%s', array(\n", $column->name);
@@ -129,8 +144,7 @@ class AweCrudCode extends CrudCode {
             $string .= '))';
 
             return $string;
-        } 
-        else if(in_array(strtolower($column->dbType),array('date','datetime','date'))){
+        } else if (in_array(strtolower($column->dbType), $this->dateTypes)) {
             return ("\$this->widget('CJuiDateTimePicker',
 						 array(
 								 'model'=>'\$model',
@@ -138,7 +152,7 @@ class AweCrudCode extends CrudCode {
 								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
 								 'value'=>\$model->{$column->name},
 								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
-                                                                 'mode' => '".strtolower($column->dbType)."',
+                                                                 'mode' => '" . strtolower($column->dbType) . "',
 								 'options'=>array(
                                                                          'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
 									 'showButtonPanel'=>true,
@@ -149,26 +163,7 @@ class AweCrudCode extends CrudCode {
 								 )
 							 );
 					");
-        }
-        else if(in_array(strtolower($column->dbType),array('date','datetime'))){
-            return ("\$this->widget('zii.widgets.jui.CJuiDatePicker',
-						 array(
-								 'model'=>'\$model',
-                                                                 'name'=>'{$column->name}',
-								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
-								 'value'=>\$model->{$column->name},
-								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
-								 'options'=>array(
-									 'showButtonPanel'=>true,
-									 'changeYear'=>true,
-									 'changeYear'=>true,
-									 'dateFormat'=>'yy-mm-dd',
-									 ),
-								 )
-							 );
-					");
-        }
-        else {
+        } else {
             if (preg_match('/^(password|pass|passwd|passcode)$/i', $column->name))
                 $inputField = 'passwordField';
             else

@@ -13,7 +13,8 @@
                 <?php
                 $datetime = strtotime($data->birthdate);
                 $dbfield = date('D, d M y H:i:s', $datetime);
-                echo $dbfield;?>
+                echo $dbfield;
+                ?>
 
         </div>
         </div>
@@ -32,7 +33,8 @@
                 <?php
                 $datetime = strtotime($data->birthtime);
                 $dbfield = date('D, d M y H:i:s', $datetime);
-                echo $dbfield;?>
+                echo $dbfield;
+                ?>
 
         </div>
         </div>
@@ -123,7 +125,8 @@
                 <?php
                 $datetime = strtotime($data->created_at);
                 $dbfield = date('D, d M y H:i:s', $datetime);
-                echo $dbfield;?>
+                echo $dbfield;
+                ?>
 
         </div>
         </div>
@@ -142,7 +145,8 @@
                 <?php
                 $datetime = strtotime($data->changed_at);
                 $dbfield = date('D, d M y H:i:s', $datetime);
-                echo $dbfield;?>
+                echo $dbfield;
+                ?>
 
         </div>
         </div>
@@ -158,9 +162,7 @@
                 <b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
             </div>
 <div class="field_value">
-                <a href="\<?php echo $data->image ?>" target="_blank" ><img alt="\<?php echo $data->name ?>" title="<?php echo $data->name ?>" src="<?php echo $data->image ?>" /></a>
-            </div>
-        </div>
+<img alt="<?php echo $data->name ?>" title="<?php echo $data->name ?>" src="<?php echo $data->image ?>" /></div>
         <?php
     }
     ?>
@@ -174,7 +176,7 @@
 <div class="field_value">
 
                 <?php
-                echo CHtml::encode($data->email);
+                echo CHtml::mailto($data->email);
                 ?>
 
             </div>
@@ -192,7 +194,7 @@
 <div class="field_value">
 
                 <?php
-                echo CHtml::encode($data->uri);
+                echo Awecms::formatUrl($data->uri,true);
                 ?>
 
             </div>

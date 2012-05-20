@@ -9,7 +9,7 @@
     'id'=>'<?php echo $this->class2id($this->modelClass); ?>-form',
     'enableAjaxValidation'=><?php echo $this->validation == 1 || $this->validation == 3 ? 'true' : 'false'; ?>,
     'enableClientValidation'=><?php echo $this->validation == 2 || $this->validation == 3 ? 'true' : 'false'; ?>,
-    )); 
+    ));
 
     echo $form->errorSummary($model);
     ?>
@@ -29,7 +29,7 @@
     ?>
     <?php echo "<?php
 echo CHtml::Button(Yii::t('app', 'Cancel'), array(
-			'submit' => 'javascript:history.go(-1)')); 
-echo CHtml::submitButton(Yii::t('app', 'Save')); 
+			'submit' => 'javascript:history.go(-1)'));
+echo CHtml::submitButton(Yii::t('app', 'Save'));
 \$this->endWidget(); ?>\n"; ?>
 </div> <!-- form -->

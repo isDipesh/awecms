@@ -140,6 +140,16 @@ class Awecms {
         return basename($path, ".php");
     }
 
+    public static function formatUrl($url, $inNewTab = false) {
+        $value = $url;
+        if (strpos($url, 'http://') !== 0 && strpos($url, 'https://') !== 0)
+            $url = 'http://' . $url;
+        $htmlOptions = array();
+        if ($inNewTab)
+            $htmlOptions['target'] = '_blank';
+        return CHtml::link(CHtml::encode($value), $url, $htmlOptions);
+    }
+
     public static function debugHead($o) {
         echo '<script type="text/javascript">
 window.addEventListener("load",

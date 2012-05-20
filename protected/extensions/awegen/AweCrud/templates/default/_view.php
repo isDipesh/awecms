@@ -22,15 +22,16 @@
             if ($column->name == 'createtime'
                     or $column->name == 'updatetime'
                     or $column->name == 'timestamp'
-                    or in_array($column->dbType, array('datetime', 'date', 'time'))) {
+                    or in_array($column->dbType, $this->dateTypes)) {
                 echo "                <?php
                 \$datetime = strtotime(\$data->" . $column->name . ");
                 \$dbfield = date('D, d M y H:i:s', \$datetime);
-                echo \$dbfield;?>
+                echo \$dbfield;
+                ?>
 
         </div>
         </div>\n";
-            } else if (in_array($column->dbType, array('tinyint(1)', 'boolean', 'bool'))) {
+            } else if (in_array($column->dbType, $this->booleanTypes)) {
                 echo "
                 <?php
                 echo CHtml::encode(\$data->{$column->name} == 1 ? 'True' : 'False');
@@ -38,7 +39,15 @@
 
             </div>
         </div>";
-                } else if (in_array($column->dbType, array('longtext'))) {
+            } else if (in_array(strtolower($column->name), $this->emailFields)) {
+                echo "
+                <?php
+                echo CHtml::mailto(\$data->{$column->name});
+                ?>
+
+            </div>
+        </div>";
+            } else if (in_array($column->dbType, array('longtext'))) {
                 echo "
                 <?php
                 echo nl2br(CHtml::encode(\$data->{$column->name}));
@@ -46,8 +55,22 @@
 
             </div>
         </div>";
-            } else if (in_array(strtolower($column->name), array('image', 'picture', 'photo', 'pic', 'profile_pic', 'profile_picture', 'avatar', 'profilepic', 'profilepicture'))) {
-                echo "                <a href=\"\<?php echo \$data->{$column->name} ?>\" target=\"_blank\" ><img alt=\"\<?php echo \$data->{$identificationColumn} ?>\" title=\"<?php echo \$data->{$identificationColumn} ?>\" src=\"<?php echo \$data->{$column->name} ?>\" /></a>
+            } else if (in_array(strtolower($column->name), $this->imageFields)) {
+                
+                /*
+                echo "                <a href=\"\<?php echo \$data->{$column->name} ?>\" target=\"_blank\" >"; 
+                */
+                echo "<img alt=\"<?php echo \$data->{$identificationColumn} ?>\" title=\"<?php echo \$data->{$identificationColumn} ?>\" src=\"<?php echo \$data->{$column->name} ?>\" />";
+                /*
+                echo 'echo "</a>";
+                 */
+                echo "</div>";
+            } else if (in_array(strtolower($column->name), $this->urlFields)) {
+                echo "
+                <?php
+                echo Awecms::formatUrl(\$data->{$column->name},true);
+                ?>
+
             </div>
         </div>";
             } else {
@@ -59,7 +82,7 @@
             </div>
         </div>";
             }
-            
+
             echo "
         <?php
     }
