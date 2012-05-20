@@ -23,8 +23,8 @@
             <?php echo $form->labelEx($model,'birthdate'); ?>
             <?php $this->widget('CJuiDateTimePicker',
 						 array(
-								 'model'=>'$model',
-                                                                 'name'=>'birthdate',
+								 'model'=>$model,
+                                                                 'name'=>'Test[birthdate]',
 								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
 								 'value'=>$model->birthdate,
 								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
@@ -46,8 +46,8 @@
             <?php echo $form->labelEx($model,'birthtime'); ?>
             <?php $this->widget('CJuiDateTimePicker',
 						 array(
-								 'model'=>'$model',
-                                                                 'name'=>'birthtime',
+								 'model'=>$model,
+                                                                 'name'=>'Test[birthtime]',
 								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
 								 'value'=>$model->birthtime,
 								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
@@ -98,8 +98,8 @@
             <?php echo $form->labelEx($model,'created_at'); ?>
             <?php $this->widget('CJuiDateTimePicker',
 						 array(
-								 'model'=>'$model',
-                                                                 'name'=>'created_at',
+								 'model'=>$model,
+                                                                 'name'=>'Test[created_at]',
 								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
 								 'value'=>$model->created_at,
 								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
@@ -121,8 +121,8 @@
             <?php echo $form->labelEx($model,'changed_at'); ?>
             <?php $this->widget('CJuiDateTimePicker',
 						 array(
-								 'model'=>'$model',
-                                                                 'name'=>'changed_at',
+								 'model'=>$model,
+                                                                 'name'=>'Test[changed_at]',
 								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
 								 'value'=>$model->changed_at,
 								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),

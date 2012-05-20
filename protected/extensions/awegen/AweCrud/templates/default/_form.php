@@ -21,7 +21,7 @@
 
         <div class="row">
             <?php echo "<?php echo " . $this->generateActiveLabel($this->modelClass, $column) . "; ?>\n"; ?>
-            <?php echo "<?php " . $this->generateField($column) . "; ?>\n"; ?>
+            <?php echo "<?php " . $this->generateField($column,$this->modelClass) . "; ?>\n"; ?>
             <?php echo "<?php echo \$form->error(\$model,'{$column->name}'); ?>\n"; ?>
         </div><!-- row -->
         <?php

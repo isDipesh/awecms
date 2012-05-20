@@ -114,7 +114,7 @@ class AweCrudCode extends CrudCode {
         return "'{$column->name}',";
     }
 
-    public function generateField($column) {
+    public function generateField($column, $modelClass) {
         if (in_array(strtolower($column->dbType), $this->booleanTypes))
             return "echo \$form->checkBox(\$model,'{$column->name}')";
         //if the column name looks like that of an image and if it's a string
@@ -125,7 +125,7 @@ class AweCrudCode extends CrudCode {
             //generate the textField
             $string = "echo \$form->textField(\$model,'{$column->name}',array('size'=>$size,'maxlength'=>$maxLength))";
             //also show the image and make it clickable if the field the something
-                $string .= ";\nif (!empty(\$model->{$column->name})){ ?> <div class=\"right\"><a href=\"<?php echo \$model->{$column->name} ?>\" target=\"_blank\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"><img src=\"<?php echo \$model->{$column->name} ?>\"  alt=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"/></a></div><?php }";
+            $string .= ";\nif (!empty(\$model->{$column->name})){ ?> <div class=\"right\"><a href=\"<?php echo \$model->{$column->name} ?>\" target=\"_blank\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"><img src=\"<?php echo \$model->{$column->name} ?>\"  alt=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"/></a></div><?php }";
             return $string;
         } else if (strtolower($column->dbType) == 'longtext') {
             //TODO integrate markitup
@@ -147,8 +147,8 @@ class AweCrudCode extends CrudCode {
         } else if (in_array(strtolower($column->dbType), $this->dateTypes)) {
             return ("\$this->widget('CJuiDateTimePicker',
 						 array(
-								 'model'=>'\$model',
-                                                                 'name'=>'{$column->name}',
+								 'model'=>\$model,
+                                                                 'name'=>'{$modelClass}[{$column->name}]',
 								 'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
 								 'value'=>\$model->{$column->name},
 								 'htmlOptions'=>array('size'=>10, 'style'=>'width:80px !important'),
@@ -177,6 +177,33 @@ class AweCrudCode extends CrudCode {
                 return "echo \$form->{$inputField}(\$model,'{$column->name}',array('size'=>$size,'maxlength'=>$maxLength))";
             }
         }
+    }
+
+    public function generateGridViewColumn($column) {
+
+        // Boolean or bit.
+        if (strtoupper($column->dbType) == 'TINYINT(1)'
+                || strtoupper($column->dbType) == 'BIT'
+                || strtoupper($column->dbType) == 'BOOL'
+                || strtoupper($column->dbType) == 'BOOLEAN') {
+            if ($this->isJToggleColumnEnabled){
+                return "array(
+                                        'class' => 'JToggleColumn',
+					'name' => '{$column->name}',
+					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+                                        'model' => get_class(\$model),
+                                        'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
+					)";
+            }else
+            return "array(
+					'name' => '{$column->name}',
+					'value' => '(\$data->{$column->name} === 0) ? Yii::t(\\'app\\', \\'No\\') : Yii::t(\\'app\\', \\'Yes\\')',
+					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+					)";
+        } else // Common column.
+            return "'{$column->name}'";
+
+        //TODO relation mappings here
     }
 
 }
