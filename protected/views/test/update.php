@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs['Tests'] = array('index');
-$this->breadcrumbs[$model->id] = array('view','id'=>$model->id);
+$this->breadcrumbs[$model->name] = array('view','id'=>$model->id);
 $this->breadcrumbs[] = Yii::t('app', 'Update');
 
 if(!isset($this->menu) || $this->menu === array())
@@ -11,7 +11,7 @@ $this->menu=array(
 );
 ?>
 
-<h1> <?php echo Yii::t('app', 'Update');?> <?php echo Yii::t('app', 'Test');?> #<?php echo $model->id; ?> </h1>
+<h1> <?php echo Yii::t('app', 'Update');?> <?php echo $model->name; ?> </h1>
 <?php
 $this->renderPartial('_form', array(
 			'model'=>$model));

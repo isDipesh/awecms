@@ -1,40 +1,753 @@
-2012/05/19 13:48:32 [error] [exception.CException] exception 'CException' with message 'CCodeForm and its behaviors do not have a method or closure named "checkBoxEx".' in /var/www/html/yii/framework/base/CComponent.php:266
+2012/05/20 08:52:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
 Stack trace:
-#0 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/views/index.php(94): CComponent->__call('checkBoxEx', Array)
-#1 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/views/index.php(94): CCodeForm->checkBoxEx(Object(AweCrudCode), 'isJToggleColumn...')
-#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
-#6 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
-#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#15 {main}
-REQUEST_URI=/yii/cms/gii/AweCrud
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
 ---
-2012/05/19 13:48:33 [error] [exception.CException] exception 'CException' with message 'CCodeForm and its behaviors do not have a method or closure named "checkBoxEx".' in /var/www/html/yii/framework/base/CComponent.php:266
+2012/05/20 08:52:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
 Stack trace:
-#0 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/views/index.php(94): CComponent->__call('checkBoxEx', Array)
-#1 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/views/index.php(94): CCodeForm->checkBoxEx(Object(AweCrudCode), 'isJToggleColumn...')
-#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
-#6 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
-#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
-#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#15 {main}
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 08:52:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 08:52:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 08:52:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 08:52:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 08:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 08:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 08:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:01:06 [error] [php] include(PageController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php(6): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CWebApplication.php(344): require()
+#2 /var/www/html/yii/framework/web/CWebApplication.php(332): CWebApplication->createController()
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/pages/create
+in /var/www/html/yii/cms/protected/modules/admin/controllers/PagesController.php (6)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 09:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:05:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:05:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:05:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:06:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:06:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:06:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:07:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:10:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/admin
+---
+2012/05/20 09:10:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/admin
+---
+2012/05/20 09:11:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:11:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:11:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/1
+---
+2012/05/20 09:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/1
+---
+2012/05/20 09:11:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/1
+---
+2012/05/20 09:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/update/1
+---
+2012/05/20 09:12:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/1
+---
+2012/05/20 09:12:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/1
+---
+2012/05/20 09:12:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/1
+---
+2012/05/20 09:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:12:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/create
+---
+2012/05/20 09:12:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/create
+---
+2012/05/20 09:12:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/create
+---
+2012/05/20 09:13:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:13:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:13:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:20:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:20:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "$data->image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('$data->image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('$data->image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/$data->ima...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/$data-%3Eimage
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:20:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:20:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "$data->image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('$data->image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('$data->image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/$data->ima...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/$data-%3Eimage
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:22:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:22:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:22:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:23:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "\data:image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('\data:image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('\data:image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/\data:imag...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/%5Cdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAyCAYAAAA0j3keAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sMCwAxBonijssAAAPaSURBVFjD7ZlfSFNxFMe/v7u5Vq00NGhp/7BoFISYFWFF1EPhW7704EsPYq/6EuJTPvggGEEFYjPKiAIJlJ5KKqIgsTcNy2ySgzSWm/9u3d3d/e7v10MxNu9P97tuywWdl42zy+5n5/zO+Z5zRzjnyCdTkGeWd0BOAOg9cOACgPN5wNPo/PPmKICGPAC6kp8pW2o7a2rgcLmQ1frjHIuBABYCAZixmD2gY+3tIA5HTiLAGcPbxkZMPX8uX2WmrucsJURRUH3jBrZWVckD5So6yXb8+nUQQuSAHG53zoHcxcXY4PXKnaGh5maQLNzU4XZjd20tig8dEn7u2bEDP6en0wMFnzzJWiQmenux5eBBnH34EEpBQWp6XK61kY650VF8fvBA0An42mlZXFWtxbOW4iqqKP7PqP1KTazI58P2M2fgKSsDCEkXBqgTE/jQ1SUXNTtAG0tLcfrePWwsLbX1CyMjI9JA0hEq8HhQ8/Tpqjo2M4zsT4z76ur+inxIA5WdO7f6L3SKTwHPNGUi+zowgDG/HzQaBTfNxDhBNQ3MMMAZS/il0kupHJCog06/fInBpiasam1iDOsKCy1uLRSCsbDwu0cRAqIoK5d9sg1fu5YehnOweBxmLAZmGIlXRikK9++3XD47PAxNRlxFps/MLFtVVNNANQ2mrsM0DGAJeIHHYxnI4qoK7ds3e41xudbPYjHEVRXxHz9Add0CsNQOX71qqdo3ly+DM7Z6IG6aMObnYSwugmpaWggA2FxejqrWVuytq0v4xvx+fLp7F6HBQfvSkWxqMAg9HJY+x6f8fvjq61N8A7W1mOzry84qLSrR5cx78qQFZiEQwGR/v/3GyONxW71EZBUtLRbf6K1bUml2JpdsbG4OeiSSGRAh2FZdbXF/HxqS79RmNIpoKAQajWauRQ6HcGv5OTUlD6QGg1LhlCNShHMTW2F9tp4hGRhJYKIoYoElRD5Cmai4CEiPRCwztKgJZgS0ubwceiSS9jqqabhfUpLdeUgU3hOdncLF7q8M+aIxtKSyEhfHxzHS0YFoKJSAJoQgNj+Pr8+eJVJW0dwMPRwGoxScUlBdx5fHj6XSJgSaevECRT6fxb9p1y5U37xplZXJSTzasyfx5ORIW5vlmm6XSwpImLKPNreGlK2Uc0uE7ciOEGj2/XuMdXfb6s45HfIB4HVDA17X10tVlnP9+hS4pYdftmWsXPacY+zOHYz39MBVVIQNXi+I02ltkITATJIcbpp4dekSiKKkzOiy+pgWnVEKPRyWnoU4Yxjv6cl+ytb6YcM7ALfzgMcg//+e+teAfgGmL5+dDgTaXAAAAABJRU5ErkJggg==
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:23:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/%5Cdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAyCAYAAAA0j3keAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sMCwAxBonijssAAAPaSURBVFjD7ZlfSFNxFMe/v7u5Vq00NGhp/7BoFISYFWFF1EPhW7704EsPYq/6EuJTPvggGEEFYjPKiAIJlJ5KKqIgsTcNy2ySgzSWm/9u3d3d/e7v10MxNu9P97tuywWdl42zy+5n5/zO+Z5zRzjnyCdTkGeWd0BOAOg9cOACgPN5wNPo/PPmKICGPAC6kp8pW2o7a2rgcLmQ1frjHIuBABYCAZixmD2gY+3tIA5HTiLAGcPbxkZMPX8uX2WmrucsJURRUH3jBrZWVckD5So6yXb8+nUQQuSAHG53zoHcxcXY4PXKnaGh5maQLNzU4XZjd20tig8dEn7u2bEDP6en0wMFnzzJWiQmenux5eBBnH34EEpBQWp6XK61kY650VF8fvBA0An42mlZXFWtxbOW4iqqKP7PqP1KTazI58P2M2fgKSsDCEkXBqgTE/jQ1SUXNTtAG0tLcfrePWwsLbX1CyMjI9JA0hEq8HhQ8/Tpqjo2M4zsT4z76ur+inxIA5WdO7f6L3SKTwHPNGUi+zowgDG/HzQaBTfNxDhBNQ3MMMAZS/il0kupHJCog06/fInBpiasam1iDOsKCy1uLRSCsbDwu0cRAqIoK5d9sg1fu5YehnOweBxmLAZmGIlXRikK9++3XD47PAxNRlxFps/MLFtVVNNANQ2mrsM0DGAJeIHHYxnI4qoK7ds3e41xudbPYjHEVRXxHz9Add0CsNQOX71qqdo3ly+DM7Z6IG6aMObnYSwugmpaWggA2FxejqrWVuytq0v4xvx+fLp7F6HBQfvSkWxqMAg9HJY+x6f8fvjq61N8A7W1mOzry84qLSrR5cx78qQFZiEQwGR/v/3GyONxW71EZBUtLRbf6K1bUml2JpdsbG4OeiSSGRAh2FZdbXF/HxqS79RmNIpoKAQajWauRQ6HcGv5OTUlD6QGg1LhlCNShHMTW2F9tp4hGRhJYKIoYoElRD5Cmai4CEiPRCwztKgJZgS0ubwceiSS9jqqabhfUpLdeUgU3hOdncLF7q8M+aIxtKSyEhfHxzHS0YFoKJSAJoQgNj+Pr8+eJVJW0dwMPRwGoxScUlBdx5fHj6XSJgSaevECRT6fxb9p1y5U37xplZXJSTzasyfx5ORIW5vlmm6XSwpImLKPNreGlK2Uc0uE7ciOEGj2/XuMdXfb6s45HfIB4HVDA17X10tVlnP9+hS4pYdftmWsXPacY+zOHYz39MBVVIQNXi+I02ltkITATJIcbpp4dekSiKKkzOiy+pgWnVEKPRyWnoU4Yxjv6cl+ytb6YcM7ALfzgMcg//+e+teAfgGmL5+dDgTaXAAAAABJRU5ErkJggg==
+---
+2012/05/20 09:23:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/%5Cdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAyCAYAAAA0j3keAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sMCwAxBonijssAAAPaSURBVFjD7ZlfSFNxFMe/v7u5Vq00NGhp/7BoFISYFWFF1EPhW7704EsPYq/6EuJTPvggGEEFYjPKiAIJlJ5KKqIgsTcNy2ySgzSWm/9u3d3d/e7v10MxNu9P97tuywWdl42zy+5n5/zO+Z5zRzjnyCdTkGeWd0BOAOg9cOACgPN5wNPo/PPmKICGPAC6kp8pW2o7a2rgcLmQ1frjHIuBABYCAZixmD2gY+3tIA5HTiLAGcPbxkZMPX8uX2WmrucsJURRUH3jBrZWVckD5So6yXb8+nUQQuSAHG53zoHcxcXY4PXKnaGh5maQLNzU4XZjd20tig8dEn7u2bEDP6en0wMFnzzJWiQmenux5eBBnH34EEpBQWp6XK61kY650VF8fvBA0An42mlZXFWtxbOW4iqqKP7PqP1KTazI58P2M2fgKSsDCEkXBqgTE/jQ1SUXNTtAG0tLcfrePWwsLbX1CyMjI9JA0hEq8HhQ8/Tpqjo2M4zsT4z76ur+inxIA5WdO7f6L3SKTwHPNGUi+zowgDG/HzQaBTfNxDhBNQ3MMMAZS/il0kupHJCog06/fInBpiasam1iDOsKCy1uLRSCsbDwu0cRAqIoK5d9sg1fu5YehnOweBxmLAZmGIlXRikK9++3XD47PAxNRlxFps/MLFtVVNNANQ2mrsM0DGAJeIHHYxnI4qoK7ds3e41xudbPYjHEVRXxHz9Add0CsNQOX71qqdo3ly+DM7Z6IG6aMObnYSwugmpaWggA2FxejqrWVuytq0v4xvx+fLp7F6HBQfvSkWxqMAg9HJY+x6f8fvjq61N8A7W1mOzry84qLSrR5cx78qQFZiEQwGR/v/3GyONxW71EZBUtLRbf6K1bUml2JpdsbG4OeiSSGRAh2FZdbXF/HxqS79RmNIpoKAQajWauRQ6HcGv5OTUlD6QGg1LhlCNShHMTW2F9tp4hGRhJYKIoYoElRD5Cmai4CEiPRCwztKgJZgS0ubwceiSS9jqqabhfUpLdeUgU3hOdncLF7q8M+aIxtKSyEhfHxzHS0YFoKJSAJoQgNj+Pr8+eJVJW0dwMPRwGoxScUlBdx5fHj6XSJgSaevECRT6fxb9p1y5U37xplZXJSTzasyfx5ORIW5vlmm6XSwpImLKPNreGlK2Uc0uE7ciOEGj2/XuMdXfb6s45HfIB4HVDA17X10tVlnP9+hS4pYdftmWsXPacY+zOHYz39MBVVIQNXi+I02ltkITATJIcbpp4dekSiKKkzOiy+pgWnVEKPRyWnoU4Yxjv6cl+ytb6YcM7ALfzgMcg//+e+teAfgGmL5+dDgTaXAAAAABJRU5ErkJggg==
+---
+2012/05/20 09:31:24 [error] [php] Undefined variable: data (/var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/_view.php:15)
+Stack trace:
+#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweCrudCode->prepare()
+#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): AweCrudGenerator->prepare()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): AweCrudGenerator->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(287): AweCrudGenerator->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(266): AweCrudGenerator->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): AweCrudGenerator->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
 REQUEST_URI=/yii/cms/gii/AweCrud
+in /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/_view.php (15)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 09:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:38:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:38:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.css
+HTTP_REFERER=http://localhost/yii/cms/test/index
+---
+2012/05/20 09:38:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/15577b41/userLogin.js".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/15577b41...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/15577b41/userLogin.js
+HTTP_REFERER=http://localhost/yii/cms/test/index
 ---

@@ -9,11 +9,10 @@ $this->menu=array(
 );
 ?>
 
-<h1> Create Test </h1>
+<h1> Create New Test </h1>
 <?php
 $this->renderPartial('_form', array(
 			'model' => $model,
 			'buttons' => 'create'));
 
 ?>
-

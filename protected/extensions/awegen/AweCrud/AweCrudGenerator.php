@@ -60,4 +60,8 @@ class AweCrudGenerator extends CCodeGenerator {
         }
     }
 
+    protected function getAuthTypes() {
+        return array_map('Awecms::getScriptName', glob(Yii::getPathOfAlias('ext.awegen.AweCrud.templates.default.auth') . '/*.php'));
+    }
+    
 }

@@ -40,12 +40,12 @@ class FullCrudCode extends CrudCode {
         parent::validateModel($attribute,$params);
     }
     
-    public function attributeLabels()
-    {
-        return array_merge(parent::attributeLabels(), array(
-                    'validation'=>'Validation method',
-                    ));
-    }
+//    public function attributeLabels()
+//    {
+//        return array_merge(parent::attributeLabels(), array(
+//                    'validation'=>'Validation method',
+//                    ));
+//    }
 
     public function init() {
         parent::init();

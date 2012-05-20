@@ -15,7 +15,7 @@ $('#{$class}_model').bind('keyup change', function(){
 });
 ");
 ?>
-<h1>AweCMS Crud Generator</h1>
+<h1>AweCMS CRUD Generator</h1>
 
 <?php $form = $this->beginWidget('CCodeForm', array('model' => $model)); ?>
 
@@ -66,7 +66,7 @@ $('#{$class}_model').bind('keyup change', function(){
 </div>
 
 
-<div class="row wide">
+<div class="row">
     <?php echo $form->labelEx($model, 'identificationColumn'); ?>
     <?php
     echo $form->textField($model, 'identificationColumn', array(
@@ -96,21 +96,16 @@ $('#{$class}_model').bind('keyup change', function(){
         'label' => 'Use JToggleColumn Extension for Boolean fields?',
         'title' => $jToggleTooltip));
     ?>
-<?php echo $form->checkBox($model, 'isJToggleColumnEnabled'); ?>
-    <div class="tooltip">
-
-    </div>
-<?php echo $form->error($model, 'baseControllerClass'); ?>
+    <?php
+    echo $form->checkBox($model, 'isJToggleColumnEnabled');
+    echo $form->error($model, 'baseControllerClass');
+    ?>
 </div>
 
 <div class="row">
-    <?php echo $form->labelEx($model, 'authtype'); ?>
     <?php
-    echo $form->dropDownList($model, 'authtype', array(
-        'auth_filter_default' => 'Yii access control(default ruleset)',
-        'auth_filter_strict' => 'Yii access control(more strict ruleset)',
-        'auth_yum' => 'Yii User Management access control',
-        'auth_none' => 'No access control'));
+    echo $form->labelEx($model, 'authtype');
+    echo $form->dropDownList($model, 'authtype', Awecms::generatePairs($this->getAuthTypes()));
     ?>
     <div class="tooltip">
         The Authentication method to be used in the Controller. Yii access Control is the 
@@ -118,7 +113,7 @@ $('#{$class}_model').bind('keyup change', function(){
         Control provides no Access control. In the future we will provide srbac and
         possibly other authtypes.
     </div>
-<?php echo $form->error($model, 'authtype'); ?>
+    <?php echo $form->error($model, 'authtype'); ?>
 </div>
 
 <div class="row">
@@ -136,17 +131,17 @@ $('#{$class}_model').bind('keyup change', function(){
         requests after blur() on the field. Since Yii 1.1.7 you can also enable
         client-side validation for most of the validation rules.
     </div>
-<?php echo $form->error($model, 'persistent_sessions'); ?>
+    <?php echo $form->error($model, 'persistent_sessions'); ?>
 </div>
 
-<div class="row sticky">
+<div class="row">
     <?php echo $form->labelEx($model, 'baseControllerClass'); ?>
-<?php echo $form->textField($model, 'baseControllerClass', array('size' => 65)); ?>
+    <?php echo $form->textField($model, 'baseControllerClass', array('size' => 65)); ?>
     <div class="tooltip">
         This is the class that the new CRUD controller class will extend from. e.g. Controller, CController.<br/>
         Please make sure the class exists and can be autoloaded.
     </div>
-<?php echo $form->error($model, 'baseControllerClass'); ?>
+    <?php echo $form->error($model, 'baseControllerClass'); ?>
 </div>
 
 <?php $this->endWidget(); ?>
