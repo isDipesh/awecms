@@ -14,28 +14,34 @@
     if (!empty(\$data->{$column->name})) {
         ?>";
             echo "
-        <div class=\"field\">
+    <div class=\"field\">
             <div class=\"field_name\">
                 <b><?php echo CHtml::encode(\$data->getAttributeLabel('{$column->name}')); ?>:</b>
             </div>
-            <div class=\"field_value\">\n";
+<div class=\"field_value\">\n";
             if ($column->name == 'createtime'
                     or $column->name == 'updatetime'
                     or $column->name == 'timestamp'
                     or in_array($column->dbType, array('datetime', 'date', 'time'))) {
-                echo "
-                <?php
+                echo "                <?php
                 \$datetime = strtotime(\$data->" . $column->name . ");
-                \$mysqldate = date('D, d M y H:i:s', \$datetime);
-                echo \$mysqldate;
-                ?>
+                \$dbfield = date('D, d M y H:i:s', \$datetime);
+                echo \$dbfield;?>
 
-            </div>
+        </div>
         </div>\n";
             } else if (in_array($column->dbType, array('tinyint(1)', 'boolean', 'bool'))) {
                 echo "
                 <?php
                 echo CHtml::encode(\$data->{$column->name} == 1 ? 'True' : 'False');
+                ?>
+
+            </div>
+        </div>";
+                } else if (in_array($column->dbType, array('longtext'))) {
+                echo "
+                <?php
+                echo nl2br(CHtml::encode(\$data->{$column->name}));
                 ?>
 
             </div>
