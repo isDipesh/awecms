@@ -43,6 +43,14 @@
                         array('label' => 'Contact', 'url' => array('/site/contact')),
                         array('label' => 'Login', 'url' => array('/user/login'), 'visible' => Yii::app()->user->isGuest),
                         array('label' => 'Dashboard', 'url' => array('/admin'), 'visible' => (Yii::app()->hasModule('user') && Yii::app()->getModule('user')->isAdmin())),
+                        array('label' => 'Products', 'url' => array('product/index'), 'items' => array(
+                                array('label' => 'New Arrivals', 'url' => array('product/new', 'tag' => 'new')),
+                                array('label' => 'Most Popular', 'url' => array('product/index', 'tag' => 'popular')),
+                            array('label' => 'Products', 'url' => array('product/index'), 'items' => array(
+                                array('label' => 'New Arrivals', 'url' => array('product/new', 'tag' => 'new')),
+                                array('label' => 'Most Popular', 'url' => array('product/index', 'tag' => 'popular')),
+                        )),
+                        )),
                     ),
                 ));
                 ?>

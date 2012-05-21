@@ -132,7 +132,10 @@ class AweCrudCode extends CrudCode {
             $string .= ";\nif (!empty(\$model->{$column->name})){ ?> <div class=\"right\"><a href=\"<?php echo \$model->{$column->name} ?>\" target=\"_blank\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"><img src=\"<?php echo \$model->{$column->name} ?>\"  alt=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"/></a></div><?php }";
             return $string;
         } else if (strtolower($column->dbType) == 'longtext') {
-            //TODO integrate markitup
+            return "\$this->widget('EMarkitupWidget', array(
+                        'model' => \$model,
+                        'attribute' => '{$column->name}',
+                        ));";
             return "echo \$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
         } else if (stripos($column->dbType, 'text') !== false)
             return "echo \$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";

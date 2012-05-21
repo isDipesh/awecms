@@ -51,7 +51,7 @@
             } else if (in_array($column->dbType, array('longtext'))) {
                 echo "
                 <?php
-                echo nl2br(CHtml::encode(\$data->{$column->name}));
+                echo nl2br(\$data->{$column->name});
                 ?>
 
             </div>

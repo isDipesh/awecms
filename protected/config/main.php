@@ -86,6 +86,7 @@ return array(
         'category',
         'news',
         'page',
+'comment',
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',

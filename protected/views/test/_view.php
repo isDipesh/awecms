@@ -106,7 +106,7 @@
 <div class="field_value">
 
                 <?php
-                echo nl2br(CHtml::encode($data->content));
+                echo nl2br($data->content);
                 ?>
 
             </div>

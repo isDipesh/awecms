@@ -1,779 +1,814 @@
-2012/05/20 16:09:34 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (21)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 16:11:01 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 16:11:14 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 16:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+2012/05/21 12:29:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /var/www/html/yii/framework/web/CWebApplication.php:280
 Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/2
----
-2012/05/20 16:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/2
----
-2012/05/20 16:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/index
----
-2012/05/20 16:30:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/index
----
-2012/05/20 16:30:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/index
----
-2012/05/20 16:56:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/index
----
-2012/05/20 16:56:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/index
----
-2012/05/20 18:31:46 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:31:51 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:31:55 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:31:59 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:32:15 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:32:17 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:32:17 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (47)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:33:38 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:33:41 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:33:43 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:33:45 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:33:48 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:34:00 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:34:05 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:34:08 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:34:12 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:34:14 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:34:56 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:34:59 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:35:02 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:35:04 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:35:08 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:35:13 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:35:14 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:35:24 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (49)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 18:37:12 [error] [exception.CException] exception 'CException' with message 'Alias "PortletGenerator.widgets.ddeditor.DDEditor" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('PortletGenerato...', true)
-#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PortletGenerator), 'PortletGenerato...', Array)
-#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('PortletGenerato...', Array)
-#3 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/__comment.php(9): CBaseController->widget('PortletGenerato...', Array)
-#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#7 /var/www/html/yii/framework/web/widgets/CTabView.php(213): CController->renderPartial('__comment', Array)
-#8 /var/www/html/yii/framework/web/widgets/CTabView.php(145): CTabView->renderBody()
-#9 /var/www/html/yii/framework/web/CBaseController.php(174): CTabView->run()
-#10 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/index.php(18): CBaseController->widget('system.web.widg...', Array)
-#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
-#15 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
-#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/portlet')
-#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#24 {main}
-REQUEST_URI=/yii/cms/gii/portlet
-HTTP_REFERER=http://localhost/yii/cms/gii/AweCrud
----
-2012/05/20 18:37:18 [error] [exception.CException] exception 'CException' with message 'Alias "CommandGenerator.widgets.ddeditor.DDEditor" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('CommandGenerato...', true)
-#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(CommandGenerator), 'CommandGenerato...', Array)
-#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('CommandGenerato...', Array)
-#3 /var/www/html/yii/cms/protected/extensions/gtc/command/views/__comment.php(9): CBaseController->widget('CommandGenerato...', Array)
-#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#7 /var/www/html/yii/framework/web/widgets/CTabView.php(213): CController->renderPartial('__comment', Array)
-#8 /var/www/html/yii/framework/web/widgets/CTabView.php(145): CTabView->renderBody()
-#9 /var/www/html/yii/framework/web/CBaseController.php(174): CTabView->run()
-#10 /var/www/html/yii/cms/protected/extensions/gtc/command/views/index.php(18): CBaseController->widget('system.web.widg...', Array)
-#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
-#15 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
-#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/command')
-#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#24 {main}
-REQUEST_URI=/yii/cms/gii/command
-HTTP_REFERER=http://localhost/yii/cms/gii/AweCrud
----
-2012/05/20 18:37:25 [error] [exception.CException] exception 'CException' with message 'Alias "PortletGenerator.widgets.ddeditor.DDEditor" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
-Stack trace:
-#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('PortletGenerato...', true)
-#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(PortletGenerator), 'PortletGenerato...', Array)
-#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('PortletGenerato...', Array)
-#3 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/__comment.php(9): CBaseController->widget('PortletGenerato...', Array)
-#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#7 /var/www/html/yii/framework/web/widgets/CTabView.php(213): CController->renderPartial('__comment', Array)
-#8 /var/www/html/yii/framework/web/widgets/CTabView.php(145): CTabView->renderBody()
-#9 /var/www/html/yii/framework/web/CBaseController.php(174): CTabView->run()
-#10 /var/www/html/yii/cms/protected/extensions/gtc/portlet/views/index.php(18): CBaseController->widget('system.web.widg...', Array)
-#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
-#15 /var/www/html/yii/framework/gii/CCodeGenerator.php(73): CController->render('index', Array)
-#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/portlet')
-#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#24 {main}
-REQUEST_URI=/yii/cms/gii/portlet
-HTTP_REFERER=http://localhost/yii/cms/gii/AweCrud
----
-2012/05/20 18:53:33 [error] [exception.CException] exception 'CException' with message 'AweModelCode and its behaviors do not have a method or closure named "guessIdentificationColumn".' in /var/www/html/yii/framework/base/CComponent.php:266
-Stack trace:
-#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(73): CComponent->__call('guessIdentifica...', Array)
-#1 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(73): AweModelCode->guessIdentificationColumn(Array)
-#2 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
-#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#6 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#7 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#8 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#11 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#12 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
----
-2012/05/20 18:56:36 [error] [exception.CException] exception 'CException' with message 'Property "AweModelCode.identificationColumn" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
-Stack trace:
-#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(173): CComponent->__get('identificationC...')
-#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): AweModelCode->generateRules(Object(CMysqlTableSchema))
-#2 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(35): ModelCode->prepare()
-#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
-#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#7 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#8 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#13 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
----
-2012/05/20 19:14:50 [error] [php] Undefined variable: relations (/var/www/html/yii/cms/protected/extensions/awegen/AweModel/templates/default/basemodel.php:53)
-Stack trace:
-#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(83): AweModelGenerator->prepare()
-#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): AweModelGenerator->actionCode()
-#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#4 /var/www/html/yii/framework/web/CController.php(287): AweModelGenerator->runAction()
-#5 /var/www/html/yii/framework/web/CController.php(266): AweModelGenerator->runActionWithFilters()
-#6 /var/www/html/yii/framework/web/CWebApplication.php(276): AweModelGenerator->run()
-#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
-REQUEST_URI=/yii/cms/gii/AweModel/code/id/1
-in /var/www/html/yii/cms/protected/extensions/awegen/AweModel/templates/default/basemodel.php (53)
-in /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php (78)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 19:17:45 [error] [exception.CException] exception 'CException' with message 'Property "CMysqlColumnSchema.isAutoIncrement" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
-Stack trace:
-#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(121): CComponent->__get('isAutoIncrement')
-#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): AweModelCode->generateRules(Object(CMysqlTableSchema))
-#2 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(32): ModelCode->prepare()
-#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
-#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(83): CCodeGenerator->prepare()
-#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionCode()
-#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#7 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#8 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('code')
-#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel/co...')
-#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#13 {main}
-REQUEST_URI=/yii/cms/gii/AweModel/code/id/1
-HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
----
-2012/05/20 19:19:23 [error] [exception.CException] exception 'CException' with message 'Property "CMysqlColumnSchema.isAutoIncrement" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
-Stack trace:
-#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(122): CComponent->__get('isAutoIncrement')
-#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): AweModelCode->generateRules(Object(CMysqlTableSchema))
-#2 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(32): ModelCode->prepare()
-#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
-#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(83): CCodeGenerator->prepare()
-#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionCode()
-#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#7 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#8 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('code')
-#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel/co...')
-#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#13 {main}
-REQUEST_URI=/yii/cms/gii/AweModel/code/id/1
-HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
----
-2012/05/20 19:19:32 [error] [exception.CException] exception 'CException' with message 'Property "CMysqlColumnSchema.isAutoIncrement" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
-Stack trace:
-#0 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(122): CComponent->__get('isAutoIncrement')
-#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): AweModelCode->generateRules(Object(CMysqlTableSchema))
-#2 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(32): ModelCode->prepare()
-#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
-#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#7 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#8 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#13 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
----
-2012/05/20 19:29:46 [error] [exception.CException] exception 'CException' with message 'AweModelCode and its behaviors do not have a method or closure named "generateRules".' in /var/www/html/yii/framework/base/CComponent.php:266
-Stack trace:
-#0 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(219): CComponent->__call('generateRules', Array)
-#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(219): CCodeModel->generateRules(Object(CMysqlTableSchema))
-#2 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): ModelCode->generateRules(Object(CMysqlTableSchema))
-#3 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(32): ModelCode->prepare()
-#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
-#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#14 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
----
-2012/05/20 19:30:37 [error] [exception.CException] exception 'CException' with message 'AweModelCode and its behaviors do not have a method or closure named "generateRules".' in /var/www/html/yii/framework/base/CComponent.php:266
-Stack trace:
-#0 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(219): CComponent->__call('generateRules', Array)
-#1 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(219): CCodeModel->generateRules(Object(CMysqlTableSchema))
-#2 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(123): ModelCode->generateRules(Object(CMysqlTableSchema))
-#3 /var/www/html/yii/framework/gii/generators/model/ModelCode.php(102): AweModelCode->generateRules(Object(CMysqlTableSchema))
-#4 /var/www/html/yii/cms/protected/extensions/awegen/AweModel/AweModelCode.php(32): ModelCode->prepare()
-#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweModelCode->prepare()
-#6 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
-#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
-#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#11 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#12 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweModel')
-#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#14 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#15 {main}
-REQUEST_URI=/yii/cms/gii/AweModel
-HTTP_REFERER=http://localhost/yii/cms/gii/AweModel
----
-2012/05/20 19:35:55 [warning] [application] Failed to set unsafe attribute "created_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 19:35:55 [warning] [application] Failed to set unsafe attribute "changed_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 19:35:55 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 19:39:26 [warning] [application] Failed to set unsafe attribute "created_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 19:39:26 [warning] [application] Failed to set unsafe attribute "changed_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 19:39:26 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 19:44:17 [warning] [application] Failed to set unsafe attribute "created_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 19:44:17 [warning] [application] Failed to set unsafe attribute "changed_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 19:44:17 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (22)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "aaaaa".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('aaaaa')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('aaaaa')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/aaaaa')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/aaaaa
-HTTP_REFERER=http://localhost/yii/cms/test/4
----
-2012/05/20 20:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "aaaaa".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('aaaaa')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('aaaaa')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/aaaaa')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/aaaaa
-HTTP_REFERER=http://localhost/yii/cms/test/4
----
-2012/05/20 20:23:52 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/extensions/awegen/AweCrud/AweCrudCode.php:122)
-Stack trace:
-#0 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(97): AweCrudCode->render()
-#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweCrudCode->prepare()
-#2 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): AweCrudGenerator->prepare()
-#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): AweCrudGenerator->actionIndex()
-#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#5 /var/www/html/yii/framework/web/CController.php(287): AweCrudGenerator->runAction()
-#6 /var/www/html/yii/framework/web/CController.php(266): AweCrudGenerator->runActionWithFilters()
-#7 /var/www/html/yii/framework/web/CWebApplication.php(276): AweCrudGenerator->run()
-#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
-REQUEST_URI=/yii/cms/gii/AweCrud
-in /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/AweCrudCode.php (122)
-in /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/_search.php (16)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:25:52 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:25:54 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:26:04 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:26:24 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:26:28 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:26:45 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:27:33 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:34:22 [warning] [application] Failed to set unsafe attribute "id" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:34:22 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:34:28 [warning] [application] Failed to set unsafe attribute "id" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:34:28 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:34:38 [warning] [application] Failed to set unsafe attribute "id" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:34:38 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
-in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/20 20:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/create
----
-2012/05/20 21:00:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/create
----
-2012/05/20 21:16:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/create
----
-2012/05/20 21:16:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/create
----
-2012/05/20 21:16:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/create
----
-2012/05/20 21:16:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
-Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/test/image
-HTTP_REFERER=http://localhost/yii/cms/test/create
----
-2012/05/21 04:52:11 [error] [exception.CException] exception 'CException' with message 'Alias "widgets.emenu.EMenu" is invalid. Make sure it points to an existing directory or file.' in /var/www/html/yii/framework/YiiBase.php:343
-Stack trace:
-#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('widgets.emenu.E...', true)
-#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'widgets.emenu.E...', Array)
-#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('widgets.emenu.E...', Array)
-#3 /var/www/html/yii/cms/protected/views/layouts/main.php(47): CBaseController->widget('widgets.emenu.E...', Array)
-#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
-#8 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
-#9 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
-#10 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
-#11 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CBaseController->endContent()
-#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#14 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#15 /var/www/html/yii/cms/protected/controllers/SiteController.php(24): CController->render('index')
-#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
-#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
-#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#24 {main}
-REQUEST_URI=/yii/cms/
----
-2012/05/21 04:52:23 [error] [exception.CException] exception 'CException' with message 'Alias "emenu.EMenu" is invalid. Make sure it points to an existing directory or file.' in /var/www/html/yii/framework/YiiBase.php:343
-Stack trace:
-#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('emenu.EMenu', true)
-#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'emenu.EMenu', Array)
-#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('emenu.EMenu', Array)
-#3 /var/www/html/yii/cms/protected/views/layouts/main.php(47): CBaseController->widget('emenu.EMenu', Array)
-#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
-#8 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
-#9 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
-#10 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
-#11 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CBaseController->endContent()
-#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#14 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#15 /var/www/html/yii/cms/protected/controllers/SiteController.php(24): CController->render('index')
-#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
-#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
-#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
-#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#24 {main}
-REQUEST_URI=/yii/cms/
----
-2012/05/21 05:29:29 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/extensions/emenu/free-css-drop-down-menu" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
-Stack trace:
-#0 /var/www/html/yii/cms/protected/extensions/emenu/EMenu.php(42): CAssetManager->publish('/var/www/html/y...')
-#1 /var/www/html/yii/framework/web/CBaseController.php(148): EMenu->init()
-#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('ext.emenu.EMenu', Array)
-#3 /var/www/html/yii/cms/protected/views/layouts/main.php(47): CBaseController->widget('ext.emenu.EMenu', Array)
-#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
-#8 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
-#9 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
-#10 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
-#11 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CBaseController->endContent()
-#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
-#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
-#14 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
-#15 /var/www/html/yii/cms/protected/controllers/SiteController.php(53): CController->render('contact', Array)
-#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
-#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
-#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
-#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('contact')
-#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/contact')
-#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#24 {main}
-REQUEST_URI=/yii/cms/site/contact
-HTTP_REFERER=http://localhost/yii/cms/site/page?view=about
----
-2012/05/21 05:34:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/85f1abd3/css/dropdown/themes/default/default.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
-Stack trace:
-#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/85f1abd3...')
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
 #1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
 #2 /var/www/html/yii/cms/index.php(18): CApplication->run()
 #3 {main}
-REQUEST_URI=/yii/cms/assets/85f1abd3/css/dropdown/themes/default/default.css
-HTTP_REFERER=http://localhost/yii/cms/site/contact
+REQUEST_URI=/yii/cms/comment
 ---
-2012/05/21 05:47:47 [error] [php] Missing argument 2 for YiiBase::t(), called in /var/www/html/yii/cms/protected/modules/admin/views/menu/create.php on line 3 and defined (/var/www/html/yii/framework/YiiBase.php:573)
+2012/05/21 12:29:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
 Stack trace:
-#0 /var/www/html/yii/framework/web/CBaseController.php(96): MenuController->renderInternal()
-#1 /var/www/html/yii/framework/web/CController.php(870): MenuController->renderFile()
-#2 /var/www/html/yii/framework/web/CController.php(783): MenuController->renderPartial()
-#3 /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php(39): MenuController->render()
-#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): MenuController->actionCreate()
-#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#6 /var/www/html/yii/framework/web/CController.php(287): MenuController->runAction()
-#7 /var/www/html/yii/framework/web/CController.php(266): MenuController->runActionWithFilters()
-#8 /var/www/html/yii/framework/web/CWebApplication.php(276): MenuController->run()
-#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
-REQUEST_URI=/yii/cms/admin/menu/create
-in /var/www/html/yii/cms/protected/modules/admin/views/menu/create.php (3)
-in /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php (39)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/21 05:47:58 [error] [php] Missing argument 2 for YiiBase::t(), called in /var/www/html/yii/cms/protected/modules/admin/views/menu/create.php on line 3 and defined (/var/www/html/yii/framework/YiiBase.php:573)
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:29:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
 Stack trace:
-#0 /var/www/html/yii/framework/web/CBaseController.php(96): MenuController->renderInternal()
-#1 /var/www/html/yii/framework/web/CController.php(870): MenuController->renderFile()
-#2 /var/www/html/yii/framework/web/CController.php(783): MenuController->renderPartial()
-#3 /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php(39): MenuController->render()
-#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): MenuController->actionCreate()
-#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#6 /var/www/html/yii/framework/web/CController.php(287): MenuController->runAction()
-#7 /var/www/html/yii/framework/web/CController.php(266): MenuController->runActionWithFilters()
-#8 /var/www/html/yii/framework/web/CWebApplication.php(276): MenuController->run()
-#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
-REQUEST_URI=/yii/cms/admin/menu/create
-in /var/www/html/yii/cms/protected/modules/admin/views/menu/create.php (3)
-in /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php (39)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/21 06:07:58 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/admin/views/menu/index.php:31)
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:29:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /var/www/html/yii/framework/web/CWebApplication.php:280
 Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(870): MenuController->renderFile()
-#1 /var/www/html/yii/framework/web/CController.php(783): MenuController->renderPartial()
-#2 /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php(9): MenuController->render()
-#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): MenuController->actionIndex()
-#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#5 /var/www/html/yii/framework/web/CController.php(287): MenuController->runAction()
-#6 /var/www/html/yii/framework/web/CController.php(266): MenuController->runActionWithFilters()
-#7 /var/www/html/yii/framework/web/CWebApplication.php(276): MenuController->run()
-#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
-REQUEST_URI=/yii/cms/admin/menu/index
-in /var/www/html/yii/cms/protected/modules/admin/views/menu/index.php (31)
-in /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php (9)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/21 06:08:59 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/admin/views/menu/index.php:12)
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 12:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
 Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(870): MenuController->renderFile()
-#1 /var/www/html/yii/framework/web/CController.php(783): MenuController->renderPartial()
-#2 /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php(9): MenuController->render()
-#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): MenuController->actionIndex()
-#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#5 /var/www/html/yii/framework/web/CController.php(287): MenuController->runAction()
-#6 /var/www/html/yii/framework/web/CController.php(266): MenuController->runActionWithFilters()
-#7 /var/www/html/yii/framework/web/CWebApplication.php(276): MenuController->run()
-#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
-REQUEST_URI=/yii/cms/admin/menu/index
-in /var/www/html/yii/cms/protected/modules/admin/views/menu/index.php (12)
-in /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php (9)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/21 06:18:10 [error] [php] Undefined variable: dataProvider (/var/www/html/yii/cms/protected/modules/admin/views/menu/index.php:15)
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
 Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(870): MenuController->renderFile()
-#1 /var/www/html/yii/framework/web/CController.php(783): MenuController->renderPartial()
-#2 /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php(82): MenuController->render()
-#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): MenuController->actionIndex()
-#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
-#5 /var/www/html/yii/framework/web/CController.php(287): MenuController->runAction()
-#6 /var/www/html/yii/framework/web/CController.php(266): MenuController->runActionWithFilters()
-#7 /var/www/html/yii/framework/web/CWebApplication.php(276): MenuController->run()
-#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
-#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
-REQUEST_URI=/yii/cms/admin/menu/index
-in /var/www/html/yii/cms/protected/modules/admin/views/menu/index.php (15)
-in /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php (82)
-in /var/www/html/yii/cms/index.php (18)
-2012/05/21 06:18:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/html/yii/framework/web/CController.php:484
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /var/www/html/yii/framework/web/CWebApplication.php:280
 Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('view')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/menu/view...')
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 12:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:29:37 [error] [exception.CException] exception 'CException' with message 'Alias "comment.models.*" is invalid. Make sure it points to an existing directory or file.' in /var/www/html/yii/framework/YiiBase.php:343
+Stack trace:
+#0 /var/www/html/yii/framework/base/CModule.php(227): YiiBase::import('comment.models....')
+#1 /var/www/html/yii/cms/protected/extensions/comment-module/CommentModule.php(56): CModule->setImport(Array)
+#2 /var/www/html/yii/framework/base/CModule.php(91): CommentModule->init()
+#3 /var/www/html/yii/framework/YiiBase.php(208): CModule->__construct('commen', NULL, Array)
+#4 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('ext.comment-mod...', 'commen', NULL, Array)
+#5 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('commen')
+#6 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('commen')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('commen')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/commen
+---
+2012/05/21 12:30:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 12:30:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:30:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:30:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 12:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 12:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 12:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 12:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 12:30:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:30:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:30:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment/comment')
 #3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
 #4 /var/www/html/yii/cms/index.php(18): CApplication->run()
 #5 {main}
-REQUEST_URI=/yii/cms/admin/menu/view/id/1
-HTTP_REFERER=http://localhost/yii/cms/admin/menu/index
+REQUEST_URI=/yii/cms/comment/comment
 ---
-2012/05/21 06:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/html/yii/framework/web/CController.php:484
+2012/05/21 12:30:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
 Stack trace:
-#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('view')
-#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
-#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/menu/view...')
-#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
-#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
-#5 {main}
-REQUEST_URI=/yii/cms/admin/menu/view/id/1
-HTTP_REFERER=http://localhost/yii/cms/admin/menu/update/id/1
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:30:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:31:06 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:31:06 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:31:06 [error] [php] include(Page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(382): spl_autoload_call()
+#1 /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php(151): model()
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1038): Comment->afterSave()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(791): Comment->insert()
+#4 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(63): Comment->save()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:31:20 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:31:20 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:31:20 [error] [php] include(Page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(382): spl_autoload_call()
+#1 /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php(151): model()
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1038): Comment->afterSave()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(791): Comment->insert()
+#4 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(63): Comment->save()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:32:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:32:13 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:13 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:13 [error] [php] Undefined index: application.modules.page.models.page (/var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php:151)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(63): Comment->save()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:33 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:33 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:33 [error] [php] Undefined index: application.modules.page.models.page (/var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php:151)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(88): Comment->save()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (88)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:40 [error] [exception.CException] exception 'CException' with message 'CommentController cannot find the requested view "create".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#1 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(98): CController->render('create', Array)
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('create')
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment/comment...')
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/cms/comment/comment/create
+---
+2012/05/21 12:32:51 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:51 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:51 [error] [php] Undefined index: application.modules.page.models.page (/var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php:151)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(63): Comment->save()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:53 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:53 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:53 [error] [php] Undefined index: application.modules.page.models.page (/var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php:151)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(63): Comment->save()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:57 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:57 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:32:57 [error] [php] Undefined index: application.modules.page.models.page (/var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php:151)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(88): Comment->save()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (88)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:33:39 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:33:39 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:33:40 [error] [php] include(Page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(382): spl_autoload_call()
+#1 /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php(151): model()
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1038): Comment->afterSave()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(791): Comment->insert()
+#4 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(88): Comment->save()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (88)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:33:59 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:33:59 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:33:59 [error] [php] Undefined index: application.modules.page.models.page (/var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php:151)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(88): Comment->save()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (88)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:34:33 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:34:33 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:34:34 [error] [php] Undefined index: application.modules.page.models.page (/var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php:151)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(88): Comment->save()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (88)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:34:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:34:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:34:49 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:34:49 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:34:49 [error] [php] include(Page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(382): spl_autoload_call()
+#1 /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php(151): model()
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1038): Comment->afterSave()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(791): Comment->insert()
+#4 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(63): Comment->save()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:35:02 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:35:02 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:35:02 [error] [php] include(Page.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(382): spl_autoload_call()
+#1 /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php(151): model()
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1038): Comment->afterSave()
+#3 /var/www/html/yii/framework/db/ar/CActiveRecord.php(791): Comment->insert()
+#4 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(63): Comment->save()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:35:26 [error] [exception.CException] exception 'CException' with message 'No scope defined in CommentModule for commentable Model Page' in /var/www/html/yii/cms/protected/extensions/comment-module/behaviors/CommentableBehavior.php:91
+Stack trace:
+#0 /var/www/html/yii/framework/base/CComponent.php(112): CommentableBehavior->getCommentInstance()
+#1 /var/www/html/yii/framework/base/CComponent.php(128): CComponent->__get('commentInstance')
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('commentInstance')
+#3 /var/www/html/yii/cms/protected/extensions/comment-module/views/comment/commentList.php(13): CActiveRecord->__get('commentInstance')
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/cms/protected/modules/page/views/page/view.php(37): CController->renderPartial('comment.views.c...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#12 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(15): CController->render('view', Array)
+#13 [internal function]: PageController->actionView('4')
+#14 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#15 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#16 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#20 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/view/...')
+#21 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/cms/page/page/view/id/4
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/21 12:35:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:35:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:35:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:35:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:35:52 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:35:52 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:35:52 [error] [php] Undefined index: page (/var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php:151)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(63): Comment->save()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:36:05 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:36:05 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:36:05 [error] [php] Undefined index: page (/var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php:151)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(88): Comment->save()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (88)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:36:26 [warning] [application] Failed to set unsafe attribute "type" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:36:26 [warning] [application] Failed to set unsafe attribute "key" of "Comment".
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (50)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:36:26 [error] [php] Undefined index: pages (/var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php:151)
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php(63): Comment->save()
+#1 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CommentController->actionCreate()
+#2 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /var/www/html/yii/framework/web/CController.php(287): CommentController->runAction()
+#4 /var/www/html/yii/framework/web/CController.php(266): CommentController->runActionWithFilters()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(276): CommentController->run()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#7 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/comment/comment/create
+in /var/www/html/yii/cms/protected/extensions/comment-module/models/Comment.php (151)
+in /var/www/html/yii/cms/protected/extensions/comment-module/controllers/CommentController.php (63)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 12:37:33 [error] [exception.CException] exception 'CException' with message 'PageController cannot find the requested view "comment.views.comment.commentList".' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/yii/cms/protected/modules/page/views/page/view.php(37): CController->renderPartial('comment.views.c...', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#5 /var/www/html/yii/cms/protected/modules/page/controllers/PageController.php(15): CController->render('view', Array)
+#6 [internal function]: PageController->actionView('4')
+#7 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#8 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#9 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/view/...')
+#14 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/cms/page/page/view/id/4
+HTTP_REFERER=http://localhost/yii/cms/page/page
+---
+2012/05/21 12:37:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:37:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:39:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment/comment/create".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment/comment...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/comment/comment/create
+---
+2012/05/21 12:39:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 12:39:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 13:38:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "comment".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 13:38:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 13:38:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/21 13:38:41 [error] [exception.CException] exception 'CException' with message 'Alias "comment.CommentModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('comment.Comment...', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('comment.Comment...', 'comment', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('comment')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('comment')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 13:38:41 [error] [exception.CException] exception 'CException' with message 'Alias "comment.CommentModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('comment.Comment...', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('comment.Comment...', 'comment', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('comment')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('comment')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 13:38:42 [error] [exception.CException] exception 'CException' with message 'Alias "comment.CommentModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('comment.Comment...', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('comment.Comment...', 'comment', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('comment')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('comment')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/comment
+---
+2012/05/21 13:38:42 [error] [exception.CException] exception 'CException' with message 'Alias "comment.CommentModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(198): YiiBase::import('comment.Comment...', true)
+#1 /var/www/html/yii/framework/base/CModule.php(283): YiiBase::createComponent('comment.Comment...', 'comment', NULL, Array)
+#2 /var/www/html/yii/framework/web/CWebApplication.php(331): CModule->getModule('comment')
+#3 /var/www/html/yii/framework/web/CWebApplication.php(270): CWebApplication->createController('comment')
+#4 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('comment')
+#5 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/cms/comment
 ---
