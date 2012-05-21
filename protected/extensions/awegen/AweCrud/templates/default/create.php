@@ -1,14 +1,16 @@
 <?php
 echo "<?php\n";
 $label=$this->pluralize($this->class2name($this->modelClass));
-echo "\$this->breadcrumbs['$label'] = array('index');\n";
-echo "\$this->breadcrumbs[] = Yii::t('app', 'Create');\n";
+echo "\$this->breadcrumbs = array(
+    Yii::t('app', '$label') => array('index'),
+    Yii::t('app', 'Create'),
+);"
 ?>
 
 if(!isset($this->menu) || $this->menu === array())
 $this->menu=array(
-	/*array('label'=>Yii::t('app', 'List'), 'url'=>array('index')),
-	array('label'=>Yii::t('app', 'Manage'), 'url'=>array('admin')),*/
+	array('label'=>Yii::t('app', 'List'), 'url'=>array('index')),
+	array('label'=>Yii::t('app', 'Manage'), 'url'=>array('admin')),
 );
 ?>
 

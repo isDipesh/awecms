@@ -487,3 +487,293 @@ in /var/www/html/yii/cms/index.php (18)
 2012/05/20 20:27:33 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
 in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
 in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:34:22 [warning] [application] Failed to set unsafe attribute "id" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:34:22 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:34:28 [warning] [application] Failed to set unsafe attribute "id" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:34:28 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:34:38 [warning] [application] Failed to set unsafe attribute "id" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:34:38 [warning] [application] Failed to set unsafe attribute "modified_at" of "Test".
+in /var/www/html/yii/cms/protected/controllers/TestController.php (92)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/20 20:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/create
+---
+2012/05/20 21:00:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/create
+---
+2012/05/20 21:16:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/create
+---
+2012/05/20 21:16:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/create
+---
+2012/05/20 21:16:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/create
+---
+2012/05/20 21:16:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('image')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('image')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('test/image')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/test/image
+HTTP_REFERER=http://localhost/yii/cms/test/create
+---
+2012/05/21 04:52:11 [error] [exception.CException] exception 'CException' with message 'Alias "widgets.emenu.EMenu" is invalid. Make sure it points to an existing directory or file.' in /var/www/html/yii/framework/YiiBase.php:343
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('widgets.emenu.E...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'widgets.emenu.E...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('widgets.emenu.E...', Array)
+#3 /var/www/html/yii/cms/protected/views/layouts/main.php(47): CBaseController->widget('widgets.emenu.E...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
+#8 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CBaseController->endContent()
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/cms/protected/controllers/SiteController.php(24): CController->render('index')
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/21 04:52:23 [error] [exception.CException] exception 'CException' with message 'Alias "emenu.EMenu" is invalid. Make sure it points to an existing directory or file.' in /var/www/html/yii/framework/YiiBase.php:343
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('emenu.EMenu', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'emenu.EMenu', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('emenu.EMenu', Array)
+#3 /var/www/html/yii/cms/protected/views/layouts/main.php(47): CBaseController->widget('emenu.EMenu', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
+#8 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CBaseController->endContent()
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/cms/protected/controllers/SiteController.php(24): CController->render('index')
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/
+---
+2012/05/21 05:29:29 [error] [exception.CException] exception 'CException' with message 'The asset "/var/www/html/yii/cms/protected/extensions/emenu/free-css-drop-down-menu" to be published does not exist.' in /var/www/html/yii/framework/web/CAssetManager.php:239
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/emenu/EMenu.php(42): CAssetManager->publish('/var/www/html/y...')
+#1 /var/www/html/yii/framework/web/CBaseController.php(148): EMenu->init()
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('ext.emenu.EMenu', Array)
+#3 /var/www/html/yii/cms/protected/views/layouts/main.php(47): CBaseController->widget('ext.emenu.EMenu', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#6 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(77): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#7 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
+#8 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(207): COutputProcessor->run()
+#10 /var/www/html/yii/framework/web/CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 /var/www/html/yii/cms/protected/views/layouts/column2.php(21): CBaseController->endContent()
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(785): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#15 /var/www/html/yii/cms/protected/controllers/SiteController.php(53): CController->render('contact', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionContact()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('contact')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/contact')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#24 {main}
+REQUEST_URI=/yii/cms/site/contact
+HTTP_REFERER=http://localhost/yii/cms/site/page?view=about
+---
+2012/05/21 05:34:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/85f1abd3/css/dropdown/themes/default/default.css".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/85f1abd3...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/85f1abd3/css/dropdown/themes/default/default.css
+HTTP_REFERER=http://localhost/yii/cms/site/contact
+---
+2012/05/21 05:47:47 [error] [php] Missing argument 2 for YiiBase::t(), called in /var/www/html/yii/cms/protected/modules/admin/views/menu/create.php on line 3 and defined (/var/www/html/yii/framework/YiiBase.php:573)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): MenuController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(870): MenuController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): MenuController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php(39): MenuController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): MenuController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): MenuController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): MenuController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): MenuController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/menu/create
+in /var/www/html/yii/cms/protected/modules/admin/views/menu/create.php (3)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php (39)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 05:47:58 [error] [php] Missing argument 2 for YiiBase::t(), called in /var/www/html/yii/cms/protected/modules/admin/views/menu/create.php on line 3 and defined (/var/www/html/yii/framework/YiiBase.php:573)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): MenuController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(870): MenuController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): MenuController->renderPartial()
+#3 /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php(39): MenuController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): MenuController->actionCreate()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): MenuController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): MenuController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(276): MenuController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/menu/create
+in /var/www/html/yii/cms/protected/modules/admin/views/menu/create.php (3)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php (39)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 06:07:58 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/admin/views/menu/index.php:31)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): MenuController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): MenuController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php(9): MenuController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): MenuController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): MenuController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): MenuController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): MenuController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/menu/index
+in /var/www/html/yii/cms/protected/modules/admin/views/menu/index.php (31)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php (9)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 06:08:59 [error] [php] Undefined variable: model (/var/www/html/yii/cms/protected/modules/admin/views/menu/index.php:12)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): MenuController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): MenuController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php(9): MenuController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): MenuController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): MenuController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): MenuController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): MenuController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/menu/index
+in /var/www/html/yii/cms/protected/modules/admin/views/menu/index.php (12)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php (9)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 06:18:10 [error] [php] Undefined variable: dataProvider (/var/www/html/yii/cms/protected/modules/admin/views/menu/index.php:15)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): MenuController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): MenuController->renderPartial()
+#2 /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php(82): MenuController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): MenuController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): MenuController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): MenuController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): MenuController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/admin/menu/index
+in /var/www/html/yii/cms/protected/modules/admin/views/menu/index.php (15)
+in /var/www/html/yii/cms/protected/modules/admin/controllers/MenuController.php (82)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/21 06:18:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('view')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/menu/view...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/menu/view/id/1
+HTTP_REFERER=http://localhost/yii/cms/admin/menu/index
+---
+2012/05/21 06:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('view')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('admin/menu/view...')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/admin/menu/view/id/1
+HTTP_REFERER=http://localhost/yii/cms/admin/menu/update/id/1
+---

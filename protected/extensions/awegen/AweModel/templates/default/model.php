@@ -14,14 +14,11 @@
 ?>
 <?php echo "<?php\n"; ?>
 
-// auto-loading fix
 Yii::setPathOfAlias('<?php echo $modelClass; ?>', dirname(__FILE__));
 Yii::import('<?php echo $modelClass; ?>.*');
 
 class <?php echo $modelClass; ?> extends <?php echo 'Base' . $modelClass; ?> {
 
-    // Add your model-specific methods here. This file will not be overriden by gtc except you force it.
-        
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -98,16 +95,8 @@ class <?php echo $modelClass; ?> extends <?php echo 'Base' . $modelClass; ?> {
 
     public function rules() {
         return array_merge(
-                        /* array('column1, column2', 'rule'), */
                         parent::rules()
         );
     }
-    
-    /*
-    // customize this function ...
-    public function get_label() {
-        return '#'.$this->id;        
-    }
-    */
 
 }

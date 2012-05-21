@@ -2,9 +2,10 @@
 
 $label = $this->pluralize($this->class2name($this->modelClass));
 echo "<?php\n";
-
-echo "\$this->breadcrumbs['$label'] = array('index');";
-echo "\$this->breadcrumbs[] = "."\$model->{$this->getIdentificationColumn()};";
+echo "\$this->breadcrumbs = array(
+    Yii::t('app', '$label') => array('index'),
+    Yii::t('app', \$model->{$this->getIdentificationColumn()}),
+);";
 ?>
 if(!isset($this->menu) || $this->menu === array()) {
 $this->menu=array(

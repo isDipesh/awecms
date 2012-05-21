@@ -17,7 +17,6 @@ return array(
         'application.modules.user.components.*',
         'ext.gtc.components.*',
         'ext.giix-components.*', // giix components
-        'ext.editme.helpers.ExtEditMeHelper',
     ),
     'behaviors' => array(
     // ...

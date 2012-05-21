@@ -32,8 +32,11 @@ abstract class BaseTest extends CActiveRecord {
 
     public function rules() {
         return array(
-            array('name, birthdate, birthtime, status, slogan, content, image, email, uri', 'required'),
+            array('birthdate, birthtime, status, slogan, content, image, email, uri', 'required'),
+            array('name', 'default', 'setOnEmpty' => true, 'value' => null),
             array('enabled', 'numerical', 'integerOnly' => true),
+            array('email', 'email'),
+            array('uri', 'url'),
             array('name', 'length', 'max' => 50),
             array('status', 'length', 'max' => 9),
             array('image, uri', 'length', 'max' => 255),

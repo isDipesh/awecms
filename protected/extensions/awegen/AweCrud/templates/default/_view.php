@@ -9,7 +9,8 @@
     echo "<h2><?php echo CHtml::link(CHtml::encode(\$data->{$identificationColumn}), array('view', '{$this->tableSchema->primaryKey}' => \$data->{$this->tableSchema->primaryKey})); ?></h2>\n";
     foreach ($this->tableSchema->columns as $column) {
         if ($column->name !== $identificationColumn && !in_array($column->dbType, array('timestamp')) && !$column->isPrimaryKey) {
-            echo "
+            if (!in_array($column->dbType,$this->booleanTypes))
+                    echo "
     <?php
     if (!empty(\$data->{$column->name})) {
         ?>";
@@ -84,7 +85,7 @@
         </div>";
             }
 
-            echo "
+            if (!in_array($column->dbType,$this->booleanTypes)) echo "
         <?php
     }
     ?>";

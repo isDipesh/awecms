@@ -1,10 +1,11 @@
 <?php
 echo "<?php\n";
 $label = $this->pluralize($this->class2name($this->modelClass));
-echo "\$this->breadcrumbs['$label'] = array('index');\n";
-//echo "\$this->breadcrumbs[\$model->{$this->getIdentificationColumn()}] = array('view','{$this->getIdentificationColumn()}'=>\$model->{$this->getIdentificationColumn()});\n";
-echo "\$this->breadcrumbs[\$model->{$this->getIdentificationColumn()}] = array('view','{$this->tableSchema->primaryKey}'=>\$model->{$this->tableSchema->primaryKey});\n";
-echo "\$this->breadcrumbs[] = Yii::t('app', 'Update');\n";
+echo "\$this->breadcrumbs = array(
+    Yii::t('app', '$label') => array('index'),
+    Yii::t('app', \$model->{$this->getIdentificationColumn()}) => array('view','{$this->tableSchema->primaryKey}'=>\$model->{$this->tableSchema->primaryKey}),
+    Yii::t('app', 'Update'),
+);";
 ?>
 
 if(!isset($this->menu) || $this->menu === array())

@@ -2,8 +2,9 @@
 $label = $this->pluralize($this->class2name($this->modelClass));
 
 echo "<?php\n";
-echo "\$this->breadcrumbs['$label'] = array('index');\n";
-echo "\$this->breadcrumbs[] = Yii::t('app', 'Index');\n";
+echo "\$this->breadcrumbs = array(
+    Yii::t('app', '$label')
+);"
 ?>
 
 if(!isset($this->menu) || $this->menu === array())

@@ -3,10 +3,8 @@ $this->breadcrumbs = array(
     AdminModule::t('Items') => array('/admin/dashboard'),
     Yii::t('app', 'Update'),
 );
-
-$this->menu = array(
-    array('label' => Yii::t('app', 'Create') . ' ' . $model->label(), 'url' => array('create')),
-    array('label' => Yii::t('app', 'Manage') . ' ' . $model->label(2), 'url' => array('index')),
+$this->menu=array(
+	array('label'=>Yii::t('app', 'Delete') , 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 );
 ?>
 

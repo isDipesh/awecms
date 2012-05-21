@@ -19,8 +19,9 @@ class AweModelCode extends ModelCode {
      */
     public $baseModelClass;
     public $tables;
-    
     public $booleanTypes = array('tinyint(1)', 'boolean', 'bool');
+    public $emailFields = array('email', 'e-mail', 'email_address', 'e-mail_address', 'emailaddress', 'e-mailaddress');
+    public $urlFields = array('url', 'link', 'uri', 'homepage', 'webpage', 'website', 'profile_url', 'profile_link');
     public $create_time = array('create_time', 'createtime', 'created_at', 'createdat', 'created_time', 'createdtime');
     public $update_time = array('changed', 'changed_at', 'updatetime', 'modified_at', 'updated_at', 'update_time', 'timestamp', 'updatedat');
     public $time_fields;
@@ -118,6 +119,8 @@ class AweModelCode extends ModelCode {
         $numerical = array();
         $length = array();
         $safe = array();
+        $email = array();
+        $url = array();
         foreach ($table->columns as $column) {
             if ($column->autoIncrement && $table->sequenceName !== null)
                 continue;
@@ -138,8 +141,15 @@ class AweModelCode extends ModelCode {
                 $numerical[] = $column->name;
             else if ($column->type === 'string' && $column->size > 0) {
                 $length[$column->size][] = $column->name;
-            } else if (!$column->isPrimaryKey && !$r)
+            } else if (!$column->isPrimaryKey && !$r) {
                 $safe[] = $column->name;
+            }
+            if (in_array($column->name, $this->emailFields)) {
+                $email[] = $column->name;
+            }
+            if (in_array($column->name, $this->urlFields)) {
+                $url[] = $column->name;
+            }
         }
         if ($required !== array())
             $rules[] = "array('" . implode(', ', $required) . "', 'required')";
@@ -149,6 +159,10 @@ class AweModelCode extends ModelCode {
             $rules[] = "array('" . implode(', ', $integers) . "', 'numerical', 'integerOnly' => true)";
         if ($numerical !== array())
             $rules[] = "array('" . implode(', ', $numerical) . "', 'numerical')";
+        if ($email !== array())
+            $rules[] = "array('" . implode(', ', $email) . "', 'email')";
+        if ($url !== array())
+            $rules[] = "array('" . implode(', ', $url) . "', 'url')";
         if ($length !== array()) {
             foreach ($length as $len => $cols)
                 $rules[] = "array('" . implode(', ', $cols) . "', 'length', 'max' => $len)";
