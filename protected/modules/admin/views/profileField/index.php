@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
 	UserModule::t('Profile Fields') => array('/admin/profileField'),
-	UserModule::t('Manage'),
+	Yii::t('app', 'Manage'),
 );
 ?>
 <h1><?php echo UserModule::t('Manage Profile Fields'); ?></h1>

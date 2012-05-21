@@ -1,13 +1,13 @@
 <?php
 $this->breadcrumbs = array(
-    AdminModule::t('Items') => array('/admin/dashboard'),
+    Yii::t('app', 'Items') => array('/admin/dashboard'),
     Yii::t('app', 'Manage'),
 );
 ?>
-
 <h1><?php echo Yii::t('app', 'Manage') . ' ' . GxHtml::encode($model->label(1)); ?></h1>
-
 <?php
+$c = new CGridView;
+
 $this->widget('zii.widgets.grid.CGridView', array(
     'id' => 'dashboard-grid',
     'dataProvider' => $model->search(),
@@ -19,7 +19,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
         'path',
         array(
             'class' => 'JToggleColumn',
-            'name' => 'enabled', // boolean model attribute (tinyint(1) with values 0 or 1)
+            'name' => 'enabled',
             'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
             'model' => get_class($model),
             'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')

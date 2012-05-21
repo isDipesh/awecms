@@ -1,10 +1,10 @@
 <?php
 $this->breadcrumbs=array(
-	UserModule::t('Users')=>array('/admin/user'),
-	UserModule::t('Manage'),
+	Yii::t('app', 'Users')=>array('/admin/user'),
+	Yii::t('app', 'Manage'),
 );
 ?>
-<h1><?php echo UserModule::t("Manage Users"); ?></h1>
+<h1><?php echo Yii::t('app', 'Manage Users'); ?></h1>
 
 <?php 
 $this->widget('zii.widgets.grid.CGridView', array(
@@ -31,7 +31,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
 		),
 		array(
 			'name' => 'lastvisit',
-			'value' => '(($data->lastvisit)?date("d.m.Y H:i:s",$data->lastvisit):UserModule::t("Not visited"))',
+			'value' => '(($data->lastvisit)?date("d.m.Y H:i:s",$data->lastvisit):Yii::t("app","Not visited"))',
 		),
 		array(
 			'name'=>'status',

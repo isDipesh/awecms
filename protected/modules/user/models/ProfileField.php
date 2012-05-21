@@ -52,8 +52,8 @@ class ProfileField extends CActiveRecord {
         // will receive user inputs.
         return array(
             array('varname, title, field_type', 'required'),
-            array('varname', 'match', 'pattern' => '/^[A-Za-z_0-9]+$/u', 'message' => UserModule::t("Variable name may consist of A-z, 0-9, underscores, begin with a letter.")),
-            array('varname', 'unique', 'message' => UserModule::t("This field already exists.")),
+            array('varname', 'match', 'pattern' => '/^[A-Za-z_0-9]+$/u', 'message' => Yii::t('app', "Variable name may only consist of A-z, 0-9, underscores, begin with a letter.")),
+            array('varname', 'unique', 'message' => Yii::t('app', "This field already exists.")),
             array('varname, field_type', 'length', 'max' => 50),
             array('field_size, field_size_min, required, position, visible', 'numerical', 'integerOnly' => true),
             array('title, match, error_message, other_validator, default, widget', 'length', 'max' => 255),
@@ -76,22 +76,22 @@ class ProfileField extends CActiveRecord {
      */
     public function attributeLabels() {
         return array(
-            'id' => UserModule::t('Id'),
-            'varname' => UserModule::t('Variable name'),
-            'title' => UserModule::t('Title'),
-            'field_type' => UserModule::t('Field Type'),
-            'field_size' => UserModule::t('Field Size'),
-            'field_size_min' => UserModule::t('Field Size min'),
-            'required' => UserModule::t('Required'),
-            'match' => UserModule::t('Match'),
-            'range' => UserModule::t('Range'),
-            'error_message' => UserModule::t('Error Message'),
-            'other_validator' => UserModule::t('Other Validator'),
-            'default' => UserModule::t('Default'),
-            'widget' => UserModule::t('Widget'),
-            'widgetparams' => UserModule::t('Widget parameters'),
-            'position' => UserModule::t('Position'),
-            'visible' => UserModule::t('Visible'),
+            'id' => Yii::t('app', 'Id'),
+            'varname' => Yii::t('app', 'Variable name'),
+            'title' => Yii::t('app', 'Title'),
+            'field_type' => Yii::t('app', 'Field Type'),
+            'field_size' => Yii::t('app', 'Field Size'),
+            'field_size_min' => Yii::t('app', 'Minimum Field Size'),
+            'required' => Yii::t('app', 'Required'),
+            'match' => Yii::t('app', 'Match'),
+            'range' => Yii::t('app', 'Range'),
+            'error_message' => Yii::t('app', 'Error Message'),
+            'other_validator' => Yii::t('app', 'Other Validator'),
+            'default' => Yii::t('app', 'Default'),
+            'widget' => Yii::t('app', 'Widget'),
+            'widgetparams' => Yii::t('app', 'Widget parameters'),
+            'position' => Yii::t('app', 'Position'),
+            'visible' => Yii::t('app', 'Visible'),
         );
     }
 
@@ -170,26 +170,26 @@ class ProfileField extends CActiveRecord {
     public static function itemAlias($type, $code = NULL) {
         $_items = array(
             'field_type' => array(
-                'INTEGER' => UserModule::t('INTEGER'),
-                'VARCHAR' => UserModule::t('VARCHAR'),
-                'TEXT' => UserModule::t('TEXT'),
-                'DATE' => UserModule::t('DATE'),
-                'FLOAT' => UserModule::t('FLOAT'),
-                'BOOL' => UserModule::t('BOOL'),
-                'BLOB' => UserModule::t('BLOB'),
-                'BINARY' => UserModule::t('BINARY'),
+                'INTEGER' => Yii::t('app', 'INTEGER'),
+                'VARCHAR' => Yii::t('app', 'VARCHAR'),
+                'TEXT' => Yii::t('app', 'TEXT'),
+                'DATE' => Yii::t('app', 'DATE'),
+                'FLOAT' => Yii::t('app', 'FLOAT'),
+                'BOOL' => Yii::t('app', 'BOOL'),
+                'BLOB' => Yii::t('app', 'BLOB'),
+                'BINARY' => Yii::t('app', 'BINARY'),
             ),
             'required' => array(
-                self::REQUIRED_NO => UserModule::t('No'),
+                self::REQUIRED_NO => Yii::t('app', 'No'),
                 self::REQUIRED_NO_SHOW_REG => UserModule::t('No, but show on registration form'),
                 self::REQUIRED_YES_SHOW_REG => UserModule::t('Yes and show on registration form'),
-                self::REQUIRED_YES_NOT_SHOW_REG => UserModule::t('Yes'),
+                self::REQUIRED_YES_NOT_SHOW_REG => Yii::t('app', 'Yes'),
             ),
             'visible' => array(
-                self::VISIBLE_ALL => UserModule::t('For all'),
-                self::VISIBLE_REGISTER_USER => UserModule::t('Registered users'),
-                self::VISIBLE_ONLY_OWNER => UserModule::t('Only owner'),
-                self::VISIBLE_NO => UserModule::t('Hidden'),
+                self::VISIBLE_ALL => Yii::t('app', 'For all'),
+                self::VISIBLE_REGISTER_USER => Yii::t('app', 'Registered users'),
+                self::VISIBLE_ONLY_OWNER => Yii::t('app', 'Owner Only'),
+                self::VISIBLE_NO => Yii::t('app', 'Hidden'),
             ),
         );
         if (isset($code))

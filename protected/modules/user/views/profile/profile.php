@@ -1,9 +1,9 @@
 <?php
-$this->pageTitle = Yii::app()->name . ' - ' . UserModule::t("Profile");
+$this->pageTitle = Yii::app()->name . ' - ' . Yii::t('app', 'Profile');
 $this->breadcrumbs = array(
-    UserModule::t("Profile"),
+    Yii::t('app', 'Profile'),
 );
-?><h2><?php echo UserModule::t('Your profile'); ?></h2>
+?><h2><?php echo Yii::t('app', 'Your profile'); ?></h2>
 <?php echo $this->renderPartial('/profile/menu'); ?>
 
     <?php if (Yii::app()->user->hasFlash('profileMessage')): ?>

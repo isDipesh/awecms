@@ -108,7 +108,7 @@ class ProfileFieldController extends Controller {
 				'val':{
 					'field_size':0,
 					'default':0,
-					'range':'1==" . UserModule::t('Yes') . ";0==" . UserModule::t('No') . "',
+					'range':'1==" . Yii::t('app', 'Yes') . ";0==" . Yii::t('app', 'No') . "',
 					'widgetparams':''
 				}
 			},
@@ -134,7 +134,7 @@ class ProfileFieldController extends Controller {
 			
 	function showWidgetList(type) {
 		$('div.widget select').empty();
-		$('div.widget select').append('<option value=\"\">" . UserModule::t('No') . "</option>');
+		$('div.widget select').append('<option value=\"\">" . Yii::t('app', 'No') . "</option>');
 		if (wgByType[type]) {
 			for (var k in wgByType[type]) {
 				$('div.widget select').append('<option value=\"'+wgByType[type][k]+'\">'+widgets[wgByType[type][k]]['label']+'</option>');
@@ -176,7 +176,7 @@ class ProfileFieldController extends Controller {
 		width: 400,
 		modal: true,
 		buttons: {
-			'" . UserModule::t('Save') . "': function() {
+			'" . Yii::t('app', 'Save') . "': function() {
 				var wparam = {};
 				var fparam = {};
 				$('#dialog-form fieldset .wparam').each(function(){
@@ -194,7 +194,7 @@ class ProfileFieldController extends Controller {
 				
 				$(this).dialog('close');
 			},
-			'" . UserModule::t('Cancel') . "': function() {
+			'" . Yii::t('app', 'Cancel') . "': function() {
 				$(this).dialog('close');
 			}
 		},
@@ -261,7 +261,7 @@ class ProfileFieldController extends Controller {
 	});
 	
 	// show all function 
-	$('div.form p.note').append('<br/><a href=\"#\" id=\"showAll\">" . UserModule::t('Show all') . "</a>');
+	$('div.form p.note').append('<br/><a href=\"#\" id=\"showAll\">" . Yii::t('app', 'Show all') . "</a>');
  	$('#showAll').click(function(){
 		$('div.row').show(500);
 		return false;
@@ -448,7 +448,7 @@ class ProfileFieldController extends Controller {
     public static function getWidgets($fieldType = '') {
         $basePath = Yii::getPathOfAlias('application.modules.user.components');
         $widgets = array();
-        $list = array('' => UserModule::t('No'));
+        $list = array('' => Yii::t('app', 'No'));
         if (self::$_widgets) {
             $widgets = self::$_widgets;
         } else {

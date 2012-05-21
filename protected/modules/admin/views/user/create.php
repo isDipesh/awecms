@@ -1,10 +1,10 @@
 <?php
 $this->breadcrumbs=array(
-	UserModule::t('Users')=>array('/admin/user'),
-	UserModule::t('Create'),
+	Yii::t('app', 'Users')=>array('/admin/user'),
+	Yii::t('app', 'Create'),
 );
 ?>
-<h1><?php echo UserModule::t("Create User"); ?></h1>
+<h1><?php echo Yii::t('app', 'Create User'); ?></h1>
 
 <?php 
 	echo $this->renderPartial('_form', array('model'=>$model,'profile'=>$profile));

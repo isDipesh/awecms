@@ -1,11 +1,11 @@
 <?php
 $this->breadcrumbs = array(
-    UserModule::t('Profile Fields') => array('/admin/profileField'),
+    Yii::t('app', 'Profile Fields') => array('/admin/profileField'),
     $model->title => array('view', 'id' => $model->id),
-    UserModule::t('Update'),
+    Yii::t('app', 'Update'),
 );
 ?>
 
-<h1><?php echo UserModule::t('Update ProfileField ') . $model->id; ?></h1>
+<h1><?php echo Yii::t('app', 'Update Profile Field ') . $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model' => $model)); ?>

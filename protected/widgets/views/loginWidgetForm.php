@@ -24,7 +24,7 @@
 
 	<div class="row">
 		<p class="hint">
-			<?php echo CHtml::link(UserModule::t("Register"),Yii::app()->getModule('user')->registrationUrl); ?> | <?php echo CHtml::link(UserModule::t("Lost Password?"),Yii::app()->getModule('user')->recoveryUrl); ?>
+			<?php echo CHtml::link(Yii::t('app', 'Register'),Yii::app()->getModule('user')->registrationUrl); ?> | <?php echo CHtml::link(Yii::t('app', 'Lost Password?'),Yii::app()->getModule('user')->recoveryUrl); ?>
 		</p>
 	</div>
 
@@ -34,7 +34,7 @@
 	</div>
 
 	<div class="row submit">
-		<?php echo CHtml::submitButton(UserModule::t("Login")); ?>
+		<?php echo CHtml::submitButton(Yii::t('app', 'Login')); ?>
 	</div>
 
 	<?php echo CHtml::endForm(); ?>

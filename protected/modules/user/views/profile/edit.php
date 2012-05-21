@@ -1,7 +1,7 @@
 <?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Profile");
 $this->breadcrumbs=array(
-	UserModule::t("Profile")=>array('profile'),
-	UserModule::t("Edit"),
+	Yii::t('app', 'Profile')=>array('profile'),
+	Yii::t('app', 'Edit'),
 );
 ?><h2><?php echo UserModule::t('Edit profile'); ?></h2>
 <?php echo $this->renderPartial('menu'); ?>
@@ -18,7 +18,7 @@ $this->breadcrumbs=array(
 	'htmlOptions' => array('enctype'=>'multipart/form-data'),
 )); ?>
 
-	<p class="note"><?php echo UserModule::t('Fields with <span class="required">*</span> are required.'); ?></p>
+	<p class="note"><?php echo Yii::t('app', 'Fields with <span class="required">*</span> are required.'); ?></p>
 
 	<?php echo $form->errorSummary(array($model,$profile)); ?>
 
@@ -58,7 +58,7 @@ $this->breadcrumbs=array(
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? UserModule::t('Create') : UserModule::t('Save')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Save')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

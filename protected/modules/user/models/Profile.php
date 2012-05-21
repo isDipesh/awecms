@@ -109,7 +109,7 @@ class Profile extends UActiveRecord
 	public function attributeLabels()
 	{
 		$labels = array(
-			'user_id' => UserModule::t('User ID'),
+			'user_id' => Yii::t('app', 'User ID'),
 		);
 		$model=$this->getFields();
 		

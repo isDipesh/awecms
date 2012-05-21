@@ -1,10 +1,10 @@
 <?php
 $this->breadcrumbs=array(
-	UserModule::t('Users')=>array('/admin/user'),
+	Yii::t('app', 'Users')=>array('/admin/user'),
 	$model->username,
 );
 ?>
-<h1><?php echo UserModule::t('View User').' "'.$model->username.'"'; ?></h1>
+<h1><?php echo Yii::t('app', 'View User').' "'.$model->username.'"'; ?></h1>
 
 <?php  
 
