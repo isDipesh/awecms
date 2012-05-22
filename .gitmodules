@@ -1,1 +1,4 @@
 
+[submodule "protected/extensions/comment-module"]
+	path = protected/extensions/comment-module
+	url = https://github.com/yiiext/comment-module.git

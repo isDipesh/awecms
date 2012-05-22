@@ -24,7 +24,6 @@ class Page extends BasePage {
                         'createAttribute' => 'created_at',
                         'updateAttribute' => 'modified_at',
                     ),
-                    
                 ));
     }
 

@@ -29,4 +29,7 @@ array(
                         'name'=>'tags_enabled',
                         'type'=>'boolean'
                     ),'permission','password','views',)));
-?>
+
+$this->widget('comments.widgets.ECommentsListWidget', array(
+    'model' => $model,
+));
