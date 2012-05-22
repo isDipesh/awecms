@@ -14,6 +14,7 @@ return array(
         'application.widgets.*',
         'application.extensions.*',
         'application.modules.user.models.*',
+        'application.modules.page.models.*',
         'application.modules.user.components.*',
         'ext.gtc.components.*',
         'ext.giix-components.*', // giix components
@@ -86,7 +87,46 @@ return array(
         'category',
         'news',
         'page',
-'comment',
+        'comments'=>array(
+        //you may override default config for all connecting models
+        'defaultModelConfig' => array(
+            //only registered users can post comments
+            'registeredOnly' => false,
+            'useCaptcha' => false,
+            //allow comment tree
+            'allowSubcommenting' => true,
+            //display comments after moderation
+            'premoderate' => false,
+            //action for postig comment
+            'postCommentAction' => 'comments/comment/postComment',
+            //super user condition(display comment list in admin view and automoderate comments)
+            'isSuperuser'=>'Yii::app()->user->checkAccess("moderate")',
+            //order direction for comments
+            'orderComments'=>'DESC',
+        ),
+        //the models for commenting
+        'commentableModels'=>array(
+            //model with individual settings
+            'Pages'=>array(
+                'registeredOnly'=>true,
+                'useCaptcha'=>true,
+                'allowSubcommenting'=>true,
+                //config for create link to view model page(page with comments)
+                'pageUrl'=>array(
+                    'route'=>'admin/citys/view',
+                    'data'=>array('id'=>'city_id'),
+                ),
+            ),
+            //model with default settings
+            //'Page',
+        ),
+        //config for user models, which is used in application
+        'userConfig'=>array(
+            'class'=>'User',
+            'nameProperty'=>'username',
+            'emailProperty'=>'email',
+        ),
+    ),
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',

@@ -52,14 +52,12 @@ class Controller extends CController {
 //                return $this->_pageTitle = Awecms::getSiteName() . ' - ' . $name;
 //        }
 //    }
-    
-    protected function performAjaxValidation($model)
-	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='page-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-	}
+
+    protected function performAjaxValidation($model) {
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'page-form') {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
+    }
 
 }

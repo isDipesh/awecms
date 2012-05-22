@@ -5,5 +5,9 @@
             <url>protected/modules/user/models/User.php</url>
             <line>30</line>
         </file>
+        <file>
+            <url>protected/extensions/awegen/AweModel/AweModelCode.php</url>
+            <line>128</line>
+        </file>
     </editor-bookmarks>
 </project-private>
