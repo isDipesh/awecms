@@ -1,66 +1,237 @@
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
-	<br />
+    <h2><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id' => $data->id)); ?></h2>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('user_id')); ?>:</b>
-	<?php echo CHtml::encode($data->user_id); ?>
-	<br />
+    <?php
+    if (!empty($data->user_id)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('user_id')); ?>:</b>
+            </div>
+<div class="field_value">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
-	<?php echo CHtml::encode($data->title); ?>
-	<br />
+                <?php
+                echo CHtml::encode($data->user_id);
+                ?>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
-	<?php echo CHtml::encode($data->content); ?>
-	<br />
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->content)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
+            </div>
+<div class="field_value">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
-	<?php echo CHtml::encode($data->status); ?>
-	<br />
+                <?php
+                echo nl2br($data->content);
+                ?>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('created_at')); ?>:</b>
-	<?php echo CHtml::encode($data->created_at); ?>
-	<br />
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->status)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
+            </div>
+<div class="field_value">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('modified_at')); ?>:</b>
-	<?php echo CHtml::encode($data->modified_at); ?>
-	<br />
+                <?php
+                echo CHtml::encode($data->status);
+                ?>
 
-	<?php /*
-	<b><?php echo CHtml::encode($data->getAttributeLabel('parent')); ?>:</b>
-	<?php echo CHtml::encode($data->parent); ?>
-	<br />
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->created_at)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('created_at')); ?>:</b>
+            </div>
+<div class="field_value">
+                <?php
+                $datetime = strtotime($data->created_at);
+                $dbfield = date('D, d M y H:i:s', $datetime);
+                echo $dbfield;
+                ?>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('order')); ?>:</b>
-	<?php echo CHtml::encode($data->order); ?>
-	<br />
+        </div>
+        </div>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('type')); ?>:</b>
-	<?php echo CHtml::encode($data->type); ?>
-	<br />
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->modified_at)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('modified_at')); ?>:</b>
+            </div>
+<div class="field_value">
+                <?php
+                $datetime = strtotime($data->modified_at);
+                $dbfield = date('D, d M y H:i:s', $datetime);
+                echo $dbfield;
+                ?>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('comment_status')); ?>:</b>
-	<?php echo CHtml::encode($data->comment_status); ?>
-	<br />
+        </div>
+        </div>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('tags_enabled')); ?>:</b>
-	<?php echo CHtml::encode($data->tags_enabled); ?>
-	<br />
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->parent)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('parent')); ?>:</b>
+            </div>
+<div class="field_value">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('permission')); ?>:</b>
-	<?php echo CHtml::encode($data->permission); ?>
-	<br />
+                <?php
+                echo CHtml::encode($data->parent);
+                ?>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('password')); ?>:</b>
-	<?php echo CHtml::encode($data->password); ?>
-	<br />
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->order)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('order')); ?>:</b>
+            </div>
+<div class="field_value">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('views')); ?>:</b>
-	<?php echo CHtml::encode($data->views); ?>
-	<br />
+                <?php
+                echo CHtml::encode($data->order);
+                ?>
 
-	*/ ?>
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->type)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('type')); ?>:</b>
+            </div>
+<div class="field_value">
 
+                <?php
+                echo CHtml::encode($data->type);
+                ?>
+
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->comment_status)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('comment_status')); ?>:</b>
+            </div>
+<div class="field_value">
+
+                <?php
+                echo CHtml::encode($data->comment_status);
+                ?>
+
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('tags_enabled')); ?>:</b>
+            </div>
+<div class="field_value">
+
+                <?php
+                echo CHtml::encode($data->tags_enabled == 1 ? 'True' : 'False');
+                ?>
+
+            </div>
+        </div>
+    <?php
+    if (!empty($data->permission)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('permission')); ?>:</b>
+            </div>
+<div class="field_value">
+
+                <?php
+                echo CHtml::encode($data->permission);
+                ?>
+
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->password)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('password')); ?>:</b>
+            </div>
+<div class="field_value">
+
+                <?php
+                echo CHtml::encode($data->password);
+                ?>
+
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->views)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('views')); ?>:</b>
+            </div>
+<div class="field_value">
+
+                <?php
+                echo CHtml::encode($data->views);
+                ?>
+
+            </div>
+        </div>
+        <?php
+    }
+    ?>
 </div>

@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Pages') => array('index'),
+    Yii::t('app', 'Zeros') => array('index'),
     Yii::t('app', 'Manage'),
 );
 if(!isset($this->menu) || $this->menu === array())
@@ -16,7 +16,7 @@ $('.search-form').toggle();
 return false;
 });
 $('.search-form form').submit(function(){
-$.fn.yiiGridView.update('page-grid', {
+$.fn.yiiGridView.update('zero-grid', {
 data: $(this).serialize()
 });
 return false;
@@ -24,7 +24,7 @@ return false;
 ");
 ?>
 
-<h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Pages'); ?> </h1>
+<h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Zeros'); ?> </h1>
 
 <?php echo CHtml::link(Yii::t('app', 'Advanced Search'),'#',array('class'=>'search-button')); ?><div class="search-form" style="display: none">
     <?php $this->renderPartial('_search',array(
@@ -32,31 +32,12 @@ return false;
 )); ?>
 </div><!-- search-form -->
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id' => 'page-grid',
+	'id' => 'zero-grid',
 	'dataProvider' => $model->search(),
 	'filter' => $model,
 	'columns' => array(
         'id',
-        'user_id',
-        'title',
-        'content',
-        'status',
-        'created_at',
-        'modified_at',
-        'parent',
-        'order',
-        'type',
-        'comment_status',
-        array(
-                                        'class' => 'JToggleColumn',
-					'name' => 'tags_enabled',
-					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
-                                        'model' => get_class($model),
-                                        'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
-					),
-        'permission',
-        'password',
-        'views',
+        'name',
 array(
 			'class' => 'CButtonColumn',
 		),

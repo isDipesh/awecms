@@ -4,22 +4,22 @@
  * This is the model base class for the table "page".
  *
  * Columns in table "page" available as properties of the model:
- 
-      * @property integer $id
-      * @property integer $user_id
-      * @property string $title
-      * @property string $content
-      * @property string $status
-      * @property string $created_at
-      * @property string $modified_at
-      * @property integer $parent
-      * @property integer $order
-      * @property string $type
-      * @property string $comment_status
-      * @property integer $tags_enabled
-      * @property string $permission
-      * @property string $password
-      * @property integer $views
+
+ * @property integer $id
+ * @property integer $user_id
+ * @property string $title
+ * @property string $content
+ * @property string $status
+ * @property string $created_at
+ * @property string $modified_at
+ * @property integer $parent
+ * @property integer $order
+ * @property string $type
+ * @property string $comment_status
+ * @property integer $tags_enabled
+ * @property string $permission
+ * @property string $password
+ * @property integer $views
  *
  * Relations of table "page" available as properties of the model:
  * @property User $user
@@ -28,7 +28,7 @@
  * @property Zero[] $zeros
  */
 abstract class BasePage extends CActiveRecord {
-    
+
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -49,19 +49,22 @@ abstract class BasePage extends CActiveRecord {
             array('id, user_id, title, content, status, created_at, modified_at, parent, order, type, comment_status, tags_enabled, permission, password, views', 'safe', 'on' => 'search'),
         );
     }
-    
+
     public function __toString() {
         return (string) $this->title;
     }
 
     public function behaviors() {
         return array(
-                    'CTimestampBehavior' => array(
-                        'class' => 'zii.behaviors.CTimestampBehavior',
-                        'createAttribute' => 'created_at',
-                        'updateAttribute' => 'modified_at',
-                    ),
-                );
+            'CTimestampBehavior' => array(
+                'class' => 'zii.behaviors.CTimestampBehavior',
+                'createAttribute' => 'created_at',
+                'updateAttribute' => 'modified_at',
+            ),
+            'activerecord-relation'=>array(
+            'class'=>'application.behaviors.EActiveRecordRelationBehavior',
+                )
+        );
     }
 
     public function relations() {
@@ -116,5 +119,5 @@ abstract class BasePage extends CActiveRecord {
                     'criteria' => $criteria,
                 ));
     }
-    
+
 }

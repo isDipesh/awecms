@@ -139,6 +139,17 @@ class AweCrudCode extends CrudCode {
         return null;
     }
 
+    public function getNMField($relation, $relatedModelClass, $modelClass) {
+        $foreign_pk = CActiveRecord::model($relation[1])->getTableSchema()->primaryKey;
+        $foreign_identificationColumn = self::getIdentificationColumnFromTableSchema(CActiveRecord::model($relation[1])->getTableSchema());
+        $friendlyName = ucfirst($relatedModelClass);
+        $str = "<label for=\"$relatedModelClass\"><?php echo Yii::t('app', '$friendlyName'); ?></label>\n";
+        $str .= "<?php echo \CHtml::checkBoxList('{$modelClass}[{$relatedModelClass}]', array_map('Awecms::getPrimaryKey',\$model->{$relatedModelClass}),
+            CHtml::listData({$relation[1]}::model()->findAll(),'{$foreign_pk}', '{$foreign_identificationColumn}'),
+            array('attributeitem' => '{$foreign_pk}', 'checkAll' => 'Check All')); ?>";
+        return $str;
+    }
+
     public function generateField($column, $modelClass) {
         if ($column->isForeignKey) {
             if ($column->isForeignKey) {
@@ -244,6 +255,10 @@ class AweCrudCode extends CrudCode {
             return "'{$column->name}'";
 
         //TODO relation mappings here
+    }
+
+    public function getRelations() {
+        return CActiveRecord::model($this->modelClass)->relations();
     }
 
 }

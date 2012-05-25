@@ -1,8 +1,8 @@
 <?php
 
-Yii::import('application.models._base.BasePage');
+Yii::import('application.models._base.BaseZero');
 
-class Page extends BasePage{
+class Zero extends BaseZero{
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -10,4 +10,5 @@ class Page extends BasePage{
     public function init() {
         return parent::init();
     }
+    
 }

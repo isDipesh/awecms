@@ -38,7 +38,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 			
 			foreach(CActiveRecord::model($this->modelClass)->relations() as $key => $relation)
 			{
-				if($relation[0] == CActiveRecord::BELONGS_TO)
+				if($relation[0] == CActiveRecord::BELONGS_TO || $relation[0] == CActiveRecord::MANY_MANY)
 				{
 				printf("\t\t\t\$model->$key = \$_POST['$this->modelClass']['$key'];\n");	
                                 // Add additional MANY_MANY Attributes to the model object
@@ -72,25 +72,14 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
         $this->performAjaxValidation($model, '<?php echo $this->class2id($this->modelClass)?>-form');
         <?php } ?>
 
-        if(isset($_POST['<?php echo $this->modelClass; ?>']))
-        {
+        if(isset($_POST['<?php echo $this->modelClass; ?>'])) {
             $model->setAttributes($_POST['<?php echo $this->modelClass; ?>']);
-
 <?php
-			
-			foreach(CActiveRecord::model($this->modelClass)->relations() as $key => $relation)
-			{
-				if($relation[0] == CActiveRecord::BELONGS_TO)
-				{
-                                //requires EActiveRecordRelationBehavior
-				printf("\t\t\t\$model->$key = \$_POST['$this->modelClass']['$key'];\n");	
-                                // Add additional MANY_MANY Attributes to the model object
-                                    //printf("\t\t\tif(isset(\$_POST['%s']['%s']))\n", $this->modelClass, $relation[1]);
-					//printf("\t\t\t\t\$model->setRelationRecords('%s', \$_POST['%s']['%s']);\n", $key, $this->modelClass, $relation[1]);
-				}
+			foreach(CActiveRecord::model($this->modelClass)->relations() as $key => $relation) {
+				if($relation[0] == CActiveRecord::BELONGS_TO || $relation[0] == CActiveRecord::MANY_MANY)
+                                    printf("\t\t\t\$model->$key = \$_POST['$this->modelClass']['$key'];\n");	
 			}
 ?>
-            
                 try {
                     if($model->save()) {
                         if (isset($_GET['returnUrl'])) {

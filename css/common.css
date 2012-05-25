@@ -1,3 +1,7 @@
+.nm_row span label{
+    display: inline;
+}
+
 .label_floating{
     padding: 6px 5px;
     position: absolute;

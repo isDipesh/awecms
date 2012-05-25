@@ -9,6 +9,10 @@ class Awecms {
         else
             return Yii::app()->name;
     }
+    
+    public static function getPrimaryKey($ar){
+        return $ar->primaryKey;
+    }
 
     public static function array_to_object($array) {
         $obj = new stdClass;

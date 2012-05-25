@@ -1,9 +1,9 @@
 <?php
-class PageController extends Controller {
+class ZeroController extends Controller {
 
 
     public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('Page');
+        $dataProvider = new CActiveDataProvider('Zero');
         $this->render('index', array(
                 'dataProvider' => $dataProvider,
         ));
@@ -11,18 +11,16 @@ class PageController extends Controller {
         
     public function actionView($id) {
         $this->render('view', array(
-                'model' => $this->loadModel($id, 'Page'),
+                'model' => $this->loadModel($id, 'Zero'),
         ));
     }
         
     public function actionCreate() {
-        $model = new Page;
-                if (isset($_POST['Page'])) {
-            $model->setAttributes($_POST['Page']);
+        $model = new Zero;
+                if (isset($_POST['Zero'])) {
+            $model->setAttributes($_POST['Zero']);
 
-			$model->user = $_POST['Page']['user'];
-			$model->parent0 = $_POST['Page']['parent0'];
-			$model->zeros = $_POST['Page']['zeros'];
+            $model->pages = $_POST['Zero']['pages'];
                 
                 try {
                     if($model->save()) {
@@ -35,8 +33,8 @@ class PageController extends Controller {
                 } catch (Exception $e) {
                         $model->addError('', $e->getMessage());
                 }
-        } elseif(isset($_GET['Page'])) {
-                        $model->attributes = $_GET['Page'];
+        } elseif(isset($_GET['Zero'])) {
+                        $model->attributes = $_GET['Zero'];
         }
 
         $this->render('create',array( 'model'=>$model));
@@ -45,11 +43,11 @@ class PageController extends Controller {
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
         
-        if(isset($_POST['Page'])) {
-            $model->setAttributes($_POST['Page']);
-			$model->user = $_POST['Page']['user'];
-			$model->parent0 = $_POST['Page']['parent0'];
-			$model->zeros = $_POST['Page']['zeros'];
+        if(isset($_POST['Zero']))
+        {
+            $model->setAttributes($_POST['Zero']);
+$model->pages = $_POST['Zero']['pages'];
+            
                 try {
                     if($model->save()) {
                         if (isset($_GET['returnUrl'])) {
@@ -89,11 +87,11 @@ class PageController extends Controller {
     }
                 
     public function actionAdmin() {
-        $model = new Page('search');
+        $model = new Zero('search');
         $model->unsetAttributes();
 
-        if (isset($_GET['Page']))
-                $model->setAttributes($_GET['Page']);
+        if (isset($_GET['Zero']))
+                $model->setAttributes($_GET['Zero']);
 
         $this->render('admin', array(
                 'model' => $model,
@@ -101,7 +99,7 @@ class PageController extends Controller {
     }
 
     public function loadModel($id) {
-            $model=Page::model()->findByPk($id);
+            $model=Zero::model()->findByPk($id);
             if($model===null)
                     throw new CHttpException(404,Yii::t('app', 'The requested page does not exist.'));
             return $model;

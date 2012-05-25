@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Pages')
+    Yii::t('app', 'Zeros')
 );
 if(!isset($this->menu) || $this->menu === array())
 $this->menu=array(
@@ -9,7 +9,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Pages</h1>
+<h1>Zeros</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Pages') => array('index'),
-    Yii::t('app', $model->title) => array('view','id'=>$model->id),
+    Yii::t('app', 'Zeros') => array('index'),
+    Yii::t('app', $model->name) => array('view','id'=>$model->id),
     Yii::t('app', 'Update'),
 );
 if(!isset($this->menu) || $this->menu === array())
@@ -12,7 +12,7 @@ $this->menu=array(
 );
 ?>
 
-<h1> <?php echo Yii::t('app', 'Update');?> <?php echo $model->title; ?> </h1>
+<h1> <?php echo Yii::t('app', 'Update');?> <?php echo $model->name; ?> </h1>
 <?php
 $this->renderPartial('_form', array(
 			'model'=>$model));

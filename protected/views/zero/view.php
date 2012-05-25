@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Pages') => array('index'),
-    Yii::t('app', $model->title),
+    Yii::t('app', 'Zeros') => array('index'),
+    Yii::t('app', $model->name),
 );if(!isset($this->menu) || $this->menu === array()) {
 $this->menu=array(
 	array('label'=>Yii::t('app', 'Update') , 'url'=>array('update', 'id'=>$model->id)),
@@ -13,7 +13,7 @@ $this->menu=array(
 }
 ?>
 
-<h1><?php echo $model->title; ?></h1>
+<h1><?php echo $model->name; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data' => $model,
@@ -22,10 +22,4 @@ array(
                         'name'=>'id', // only admin user can see person id
                         'label'=>'ID',
                         'visible'=>Yii::app()->getModule('user')->isAdmin()
-                    ),'user_id','title',array(
-                        'name'=>'content',
-                        'type'=>'ntext'
-                    ),'status','created_at','modified_at','parent','order','type','comment_status',array(
-                        'name'=>'tags_enabled',
-                        'type'=>'boolean'
-                    ),'permission','password','views',)));
+                    ),'name',)));
