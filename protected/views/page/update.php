@@ -1,9 +1,8 @@
 <?php
-$this->breadcrumbs = array(
-    Yii::t('app', 'Pages') => array('index'),
-    Yii::t('app', $model->title) => array('view','id'=>$model->id),
-    Yii::t('app', 'Update'),
-);
+$this->breadcrumbs['Pages'] = array('index');
+$this->breadcrumbs[$model->id] = array('view','id'=>$model->id);
+$this->breadcrumbs[] = Yii::t('app', 'Update');
+
 if(!isset($this->menu) || $this->menu === array())
 $this->menu=array(
 	array('label'=>Yii::t('app', 'Delete') , 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
@@ -12,7 +11,7 @@ $this->menu=array(
 );
 ?>
 
-<h1> <?php echo Yii::t('app', 'Update');?> <?php echo $model->title; ?> </h1>
+<h1> <?php echo Yii::t('app', 'Update');?> <?php echo Yii::t('app', 'Page');?> #<?php echo $model->id; ?> </h1>
 <?php
 $this->renderPartial('_form', array(
 			'model'=>$model));

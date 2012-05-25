@@ -9,7 +9,6 @@ class AweCrudCode extends CrudCode {
     public $baseControllerClass = 'Controller';
     public $identificationColumn = '';
     public $isJToggleColumnEnabled = true;
-    
     public $dateTypes = array('datetime', 'date', 'time');
     public $booleanTypes = array('tinyint(1)', 'boolean', 'bool');
     public $emailFields = array('email', 'e-mail', 'email_address', 'e-mail_address', 'emailaddress', 'e-mailaddress');
@@ -35,14 +34,10 @@ class AweCrudCode extends CrudCode {
         return $column->name;
     }
 
-    public function getIdentificationColumn() {
-        if (!empty($this->identificationColumn))
-            return $this->identificationColumn;
-
+    public static function getIdentificationColumnFromTableSchema($tableSchema) {
         $possibleIdentifiers = array('name', 'title', 'slug');
 
-
-        $columns_name = array_map('self::getName', $this->tableSchema->columns);
+        $columns_name = array_map('self::getName', $tableSchema->columns);
         foreach ($possibleIdentifiers as $possibleIdentifier) {
             if (in_array($possibleIdentifier, $columns_name))
                 return $possibleIdentifier;
@@ -54,7 +49,7 @@ class AweCrudCode extends CrudCode {
             }
         }
 
-        foreach ($this->tableSchema->columns as $column) {
+        foreach ($tableSchema->columns as $column) {
             if (!$column->isForeignKey
                     && !$column->isPrimaryKey
                     && $column->type != 'INT'
@@ -64,10 +59,16 @@ class AweCrudCode extends CrudCode {
             }
         }
 
-        if (is_array($pk = $this->tableSchema->primaryKey))
+        if (is_array($pk = $tableSchema->primaryKey))
             $pk = $pk[0];
         //every table must have a PK
         return $pk;
+    }
+
+    public function getIdentificationColumn() {
+        if (!empty($this->identificationColumn))
+            return $this->identificationColumn;
+        return self::getIdentificationColumnFromTableSchema($this->tableSchema);
     }
 
     public function getDetailViewAttribute($column) {
@@ -118,41 +119,73 @@ class AweCrudCode extends CrudCode {
         return "'{$column->name}',";
     }
 
+    public function findRelation($modelClass, $column) {
+        if (!$column->isForeignKey)
+            return null;
+        $relations = CActiveRecord::model($modelClass)->relations();
+        // Find the relation for this attribute.
+        foreach ($relations as $relationName => $relation) {
+            // For attributes on this model, relation must be BELONGS_TO.
+            if ($relation[0] == CActiveRecord::BELONGS_TO && $relation[2] == $column->name) {
+                return array(
+                    $relationName, // the relation name
+                    $relation[0], // the relation type
+                    $relation[2], // the foreign key
+                    $relation[1] // the related active record class name
+                );
+            }
+        }
+        // None found.
+        return null;
+    }
+
     public function generateField($column, $modelClass) {
-        if (in_array(strtolower($column->dbType), $this->booleanTypes))
-            return "echo \$form->checkBox(\$model,'{$column->name}')";
-        //if the column name looks like that of an image and if it's a string
-        if (in_array(strtolower($column->name), $this->imageFields) && $column->type == 'string') {
-            //find maximum length and size
-            if (($size = $maxLength = $column->size) > 60)
-                $size = 60;
-            //generate the textField
-            $string = "echo \$form->textField(\$model,'{$column->name}',array('size'=>$size,'maxlength'=>$maxLength))";
-            //also show the image and make it clickable if the field the something
-            $string .= ";\nif (!empty(\$model->{$column->name})){ ?> <div class=\"right\"><a href=\"<?php echo \$model->{$column->name} ?>\" target=\"_blank\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"><img src=\"<?php echo \$model->{$column->name} ?>\"  alt=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"/></a></div><?php }";
-            return $string;
-        } else if (strtolower($column->dbType) == 'longtext') {
-            return "\$this->widget('EMarkitupWidget', array(
+        if ($column->isForeignKey) {
+            if ($column->isForeignKey) {
+                $relation = $this->findRelation($modelClass, $column);
+                //get primary key of the foreign model
+                $foreign_pk = CActiveRecord::model($relation[3])->getTableSchema()->primaryKey;
+                $foreign_identificationColumn = self::getIdentificationColumnFromTableSchema(CActiveRecord::model($relation[3])->getTableSchema());
+                //return "echo \$form->dropDownList(\$model, '{$column->name}', CHtml::listData({$relation[3]}::model()->findAll(),'{$foreign_pk}', '{$foreign_identificationColumn}'))";
+                //requires EActiveRecordRelationBehavior
+                return "echo \$form->dropDownList(\$model, '{$relation[0]}', CHtml::listData({$relation[3]}::model()->findAll(),'{$foreign_pk}', '{$foreign_identificationColumn}'))";
+            }
+        } else {
+
+            if (in_array(strtolower($column->dbType), $this->booleanTypes))
+                return "echo \$form->checkBox(\$model,'{$column->name}')";
+            //if the column name looks like that of an image and if it's a string
+            if (in_array(strtolower($column->name), $this->imageFields) && $column->type == 'string') {
+                //find maximum length and size
+                if (($size = $maxLength = $column->size) > 60)
+                    $size = 60;
+                //generate the textField
+                $string = "echo \$form->textField(\$model,'{$column->name}',array('size'=>$size,'maxlength'=>$maxLength))";
+                //also show the image and make it clickable if the field the something
+                $string .= ";\nif (!empty(\$model->{$column->name})){ ?> <div class=\"right\"><a href=\"<?php echo \$model->{$column->name} ?>\" target=\"_blank\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"><img src=\"<?php echo \$model->{$column->name} ?>\"  alt=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\" title=\"<?php echo Awecms::generateFriendlyName('{$column->name}') ?>\"/></a></div><?php }";
+                return $string;
+            } else if (strtolower($column->dbType) == 'longtext') {
+                return "\$this->widget('EMarkitupWidget', array(
                         'model' => \$model,
                         'attribute' => '{$column->name}',
                         ));";
-            return "echo \$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
-        } else if (stripos($column->dbType, 'text') !== false)
-            return "echo \$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
-        else if (substr(strtoupper($column->dbType), 0, 4) == 'ENUM') {
-            $string = sprintf("echo CHtml::activeDropDownList(\$model, '%s', array(\n", $column->name);
+                return "echo \$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
+            } else if (stripos($column->dbType, 'text') !== false)
+                return "echo \$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
+            else if (substr(strtoupper($column->dbType), 0, 4) == 'ENUM') {
+                $string = sprintf("echo CHtml::activeDropDownList(\$model, '%s', array(\n", $column->name);
 
-            $enum_values = explode(',', substr($column->dbType, 4, strlen($column->dbType) - 1));
+                $enum_values = explode(',', substr($column->dbType, 4, strlen($column->dbType) - 1));
 
-            foreach ($enum_values as $value) {
-                $value = trim($value, "()'");
-                $string .= "\t\t\t'$value' => Yii::t('app', '" . Awecms::generateFriendlyName($value) . "') ,\n";
-            }
-            $string .= '))';
+                foreach ($enum_values as $value) {
+                    $value = trim($value, "()'");
+                    $string .= "\t\t\t'$value' => Yii::t('app', '" . Awecms::generateFriendlyName($value) . "') ,\n";
+                }
+                $string .= '))';
 
-            return $string;
-        } else if (in_array(strtolower($column->dbType), $this->dateTypes)) {
-            return ("\$this->widget('CJuiDateTimePicker',
+                return $string;
+            } else if (in_array(strtolower($column->dbType), $this->dateTypes)) {
+                return ("\$this->widget('CJuiDateTimePicker',
 						 array(
 							'model'=>\$model,
                                                         'name'=>'{$modelClass}[{$column->name}]',
@@ -169,18 +202,19 @@ class AweCrudCode extends CrudCode {
                                                     )
 					);
 					");
-        } else {
-            if (preg_match('/^(password|pass|passwd|passcode)$/i', $column->name))
-                $inputField = 'passwordField';
-            else
-                $inputField = 'textField';
+            } else {
+                if (preg_match('/^(password|pass|passwd|passcode)$/i', $column->name))
+                    $inputField = 'passwordField';
+                else
+                    $inputField = 'textField';
 
-            if ($column->type !== 'string' || $column->size === null)
-                return "echo \$form->{$inputField}(\$model,'{$column->name}')";
-            else {
-                if (($size = $maxLength = $column->size) > 60)
-                    $size = 60;
-                return "echo \$form->{$inputField}(\$model,'{$column->name}',array('size'=>$size,'maxlength'=>$maxLength))";
+                if ($column->type !== 'string' || $column->size === null)
+                    return "echo \$form->{$inputField}(\$model,'{$column->name}')";
+                else {
+                    if (($size = $maxLength = $column->size) > 60)
+                        $size = 60;
+                    return "echo \$form->{$inputField}(\$model,'{$column->name}',array('size'=>$size,'maxlength'=>$maxLength))";
+                }
             }
         }
     }

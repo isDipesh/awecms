@@ -1,12 +1,15 @@
 <?php
 
-Yii::setPathOfAlias('Menu', dirname(__FILE__));
-Yii::import('Menu.*');
+Yii::import('.');
 
-class Menu extends BaseMenu {
+class Page extends  {
 
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+
+    public function init() {
+        return parent::init();
     }
 
 }

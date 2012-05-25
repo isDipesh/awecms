@@ -2,12 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1">
         <file>
-            <url>protected/modules/user/models/User.php</url>
-            <line>30</line>
-        </file>
-        <file>
             <url>protected/extensions/awegen/AweModel/AweModelCode.php</url>
             <line>128</line>
+        </file>
+        <file>
+            <url>protected/modules/user/models/User.php</url>
+            <line>30</line>
         </file>
     </editor-bookmarks>
 </project-private>

@@ -33,8 +33,20 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
         <?php } ?>
         if (isset($_POST['<?php echo $this->modelClass; ?>'])) {
             $model->setAttributes($_POST['<?php echo $this->modelClass; ?>']);
-                
-                <?php //TODO Relationships ?>
+
+<?php
+			
+			foreach(CActiveRecord::model($this->modelClass)->relations() as $key => $relation)
+			{
+				if($relation[0] == CActiveRecord::BELONGS_TO)
+				{
+				printf("\t\t\t\$model->$key = \$_POST['$this->modelClass']['$key'];\n");	
+                                // Add additional MANY_MANY Attributes to the model object
+                                    //printf("\t\t\tif(isset(\$_POST['%s']['%s']))\n", $this->modelClass, $relation[1]);
+					//printf("\t\t\t\t\$model->setRelationRecords('%s', \$_POST['%s']['%s']);\n", $key, $this->modelClass, $relation[1]);
+				}
+			}
+?>
                 
                 try {
                     if($model->save()) {
@@ -64,6 +76,21 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
         {
             $model->setAttributes($_POST['<?php echo $this->modelClass; ?>']);
 
+<?php
+			
+			foreach(CActiveRecord::model($this->modelClass)->relations() as $key => $relation)
+			{
+				if($relation[0] == CActiveRecord::BELONGS_TO)
+				{
+                                //requires EActiveRecordRelationBehavior
+				printf("\t\t\t\$model->$key = \$_POST['$this->modelClass']['$key'];\n");	
+                                // Add additional MANY_MANY Attributes to the model object
+                                    //printf("\t\t\tif(isset(\$_POST['%s']['%s']))\n", $this->modelClass, $relation[1]);
+					//printf("\t\t\t\t\$model->setRelationRecords('%s', \$_POST['%s']['%s']);\n", $key, $this->modelClass, $relation[1]);
+				}
+			}
+?>
+            
                 try {
                     if($model->save()) {
                         if (isset($_GET['returnUrl'])) {

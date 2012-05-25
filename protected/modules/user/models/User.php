@@ -87,11 +87,18 @@ class User extends CActiveRecord {
                                 ) : array()));
     }
 
+    public function behaviors() {
+        return array(
+        
+        );
+    }
+
     /**
      * @return array relational rules.
      */
     public function relations() {
         $relations = array(
+            'pages'   => array(self::HAS_MANY, 'Page',    'user_id'),
             'profile' => array(self::HAS_ONE, 'Profile', 'user_id'),
         );
         if (isset(Yii::app()->getModule('user')->relations))

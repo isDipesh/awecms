@@ -28,7 +28,7 @@ class AweModelCode extends ModelCode {
 
     public function init() {
         $this->time_fields = array_merge($this->create_time, $this->update_time);
-        parent::init();
+        //parent::init();
     }
 
     public function prepare() {
@@ -55,7 +55,7 @@ class AweModelCode extends ModelCode {
         else
             $this->tables = array($this->getTableSchema($this->tableName));
 
-        //$this->relations = $this->generateRelations();
+        $this->relations = $this->generateRelations();
 
         foreach ($this->tables as $table) {
 
@@ -67,18 +67,27 @@ class AweModelCode extends ModelCode {
             $tableName = $this->removePrefix($table->name);
             $className = $this->generateClassName($table->name);
 
+            $this->baseModelPath = $this->modelPath . '._base';
+            $this->baseModelClass = 'Base' . $className;
+
             $params = array(
                 'tableName' => $schema === '' ? $tableName : $schema . '.' . $tableName,
                 'modelClass' => $className,
                 'columns' => $table->columns,
                 'labels' => $this->generateLabels($table),
                 'rules' => $this->generateRules($table),
-                    //'relations' => isset($this->relations[$className]) ? $this->relations[$className] : array(),
+                'relations' => isset($this->relations[$className]) ? $this->relations[$className] : array(),
+            );
+
+            $this->files = array();
+            $this->files[] = new CCodeFile(
+                            Yii::getPathOfAlias($this->modelPath . '.' . $className) . '.php',
+                            $this->render($templatePath . DIRECTORY_SEPARATOR . 'model.php', $params)
             );
 
             $this->files[] = new CCodeFile(
-                            Yii::getPathOfAlias($this->modelPath) . '/' . 'Base' . $className . '.php',
-                            $this->render($templatePath . '/basemodel.php', $params)
+                            Yii::getPathOfAlias($this->baseModelPath . '.' . $this->baseModelClass) . '.php',
+                            $this->render($templatePath . DIRECTORY_SEPARATOR . '_base' . DIRECTORY_SEPARATOR . 'basemodel.php', $params)
             );
         }
     }
@@ -86,7 +95,7 @@ class AweModelCode extends ModelCode {
     public function requiredTemplates() {
         return array(
             'model.php',
-            'basemodel.php',
+            '_base' . DIRECTORY_SEPARATOR . 'basemodel.php',
         );
     }
 

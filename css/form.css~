@@ -100,7 +100,6 @@ div.form select.error
 	border-color: #C00;
 }
 
-/*
 div.form div.success input,
 div.form div.success textarea,
 div.form div.success select,
@@ -111,7 +110,7 @@ div.form select.success
 	background: #E6EFC2;
 	border-color: #C6D880;
 }
-*/
+
 
 div.form .errorSummary
 {
