@@ -108,10 +108,10 @@ div.view
     border: 1px solid #C9E0ED;
 }
 
-div.breadcrumbs
-{
+div.breadcrumbs{
     font-size: 0.9em;
     padding: 5px 20px;
+    clear:both;
 }
 
 div.breadcrumbs span

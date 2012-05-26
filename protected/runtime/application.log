@@ -4144,3 +4144,1409 @@ Stack trace:
 REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
 HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
 ---
+2012/05/25 17:03:41 [warning] [application] Failed to set unsafe attribute "user" of "Page".
+in /var/www/html/yii/cms/protected/controllers/PageController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:03:41 [warning] [application] Failed to set unsafe attribute "parent0" of "Page".
+in /var/www/html/yii/cms/protected/controllers/PageController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:03:41 [error] [php] Undefined index: zeros (/var/www/html/yii/cms/protected/controllers/PageController.php:52)
+Stack trace:
+#0 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /var/www/html/yii/framework/web/CController.php(287): PageController->runAction()
+#3 /var/www/html/yii/framework/web/CController.php(266): PageController->runActionWithFilters()
+#4 /var/www/html/yii/framework/web/CWebApplication.php(276): PageController->run()
+#5 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#6 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/page/update/1
+in /var/www/html/yii/cms/protected/controllers/PageController.php (52)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:03:47 [warning] [application] Failed to set unsafe attribute "user" of "Page".
+in /var/www/html/yii/cms/protected/controllers/PageController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:03:47 [warning] [application] Failed to set unsafe attribute "parent0" of "Page".
+in /var/www/html/yii/cms/protected/controllers/PageController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:03:47 [warning] [application] Failed to set unsafe attribute "zeros" of "Page".
+in /var/www/html/yii/cms/protected/controllers/PageController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:03:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:03:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:03:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:03:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:03:54 [warning] [application] Failed to set unsafe attribute "user" of "Page".
+in /var/www/html/yii/cms/protected/controllers/PageController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:03:54 [warning] [application] Failed to set unsafe attribute "parent0" of "Page".
+in /var/www/html/yii/cms/protected/controllers/PageController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:03:54 [warning] [application] Failed to set unsafe attribute "zeros" of "Page".
+in /var/www/html/yii/cms/protected/controllers/PageController.php (49)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:22:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:22:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:22:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:22:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:22:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:22:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:24:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:24:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:24:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:24:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:24:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:24:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:24:51 [warning] [application] Failed to set unsafe attribute "pages" of "Zero".
+in /var/www/html/yii/cms/protected/controllers/ZeroController.php (47)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:24:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:24:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:24:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:24:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:45:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:45:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:46:43 [warning] [application] Failed to set unsafe attribute "isJToggleColumnEnabled" of "FullCrudCode".
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:46:48 [warning] [application] Failed to set unsafe attribute "isJToggleColumnEnabled" of "FullCrudCode".
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:46:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:46:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:46:55 [error] [exception.CException] exception 'CException' with message 'Property "User._label" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('_label')
+#1 /var/www/html/yii/cms/protected/views/page/view.php(22): CActiveRecord->__get('_label')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /var/www/html/yii/cms/protected/controllers/PageController.php(53): CController->render('view', Array)
+#7 [internal function]: PageController->actionView('1')
+#8 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#19 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/view')
+#20 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/cms/page/1
+HTTP_REFERER=http://localhost/yii/cms/page
+---
+2012/05/25 17:47:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:47:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:47:03 [error] [exception.CException] exception 'CException' with message 'Property "User._label" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('_label')
+#1 /var/www/html/yii/cms/protected/views/page/view.php(22): CActiveRecord->__get('_label')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /var/www/html/yii/cms/protected/controllers/PageController.php(53): CController->render('view', Array)
+#7 [internal function]: PageController->actionView('1')
+#8 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#19 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/view')
+#20 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/cms/page/1
+HTTP_REFERER=http://localhost/yii/cms/page
+---
+2012/05/25 17:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:50:40 [warning] [application] Failed to set unsafe attribute "page_nm_zero(page_id, zero_id)" of "Zero".
+in /var/www/html/yii/cms/protected/controllers/ZeroController.php (37)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:50:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:50:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:51:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:51:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:51:09 [warning] [application] Failed to set unsafe attribute "page_nm_zero(page_id, zero_id)" of "Zero".
+in /var/www/html/yii/cms/protected/controllers/ZeroController.php (37)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/25 17:51:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:51:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:51:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:51:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:51:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/admin')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/page/admin
+HTTP_REFERER=http://localhost/yii/cms/page/1
+---
+2012/05/25 17:51:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:51:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:52:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/admin')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/page/admin
+HTTP_REFERER=http://localhost/yii/cms/page/1
+---
+2012/05/25 17:52:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:52:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:52:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:52:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /var/www/html/yii/framework/web/CController.php:484
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(271): CController->missingAction('page')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('page')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/page/admin')
+#3 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/cms/page/page/admin
+---
+2012/05/25 17:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:52:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:52:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:53:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/admin')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/page/admin
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/05/25 17:53:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:53:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:53:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:168
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(131): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/admin')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii/cms/page/admin
+HTTP_REFERER=http://localhost/yii/cms/login
+---
+2012/05/25 17:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:53:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/user/update/id/3".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/user/updat...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/user/update/id/3
+HTTP_REFERER=http://localhost/yii/cms/page/1
+---
+2012/05/25 17:58:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/user/update/id/3".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/user/updat...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/user/update/id/3
+HTTP_REFERER=http://localhost/yii/cms/page/1
+---
+2012/05/25 17:58:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:58:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/user/view/id/3".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/user/view/...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/user/view/id/3
+HTTP_REFERER=http://localhost/yii/cms/page/1
+---
+2012/05/25 17:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/user/view/id/3".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/user/view/...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/user/view/id/3
+HTTP_REFERER=http://localhost/yii/cms/page/1
+---
+2012/05/25 17:59:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/view/id/3".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('user/view/id/3')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/user/view/id/3
+---
+2012/05/25 17:59:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/25 17:59:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 06:54:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 06:54:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:04:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:04:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:04:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:04:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:04:28 [error] [exception.CException] exception 'CException' with message 'Property "User._label" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('_label')
+#1 /var/www/html/yii/cms/protected/views/page/view.php(27): CActiveRecord->__get('_label')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /var/www/html/yii/cms/protected/controllers/PageController.php(53): CController->render('view', Array)
+#7 [internal function]: PageController->actionView('1')
+#8 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /var/www/html/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /var/www/html/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /var/www/html/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /var/www/html/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#19 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/view')
+#20 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/cms/page/1
+HTTP_REFERER=http://localhost/yii/cms/page
+---
+2012/05/26 08:05:09 [error] [exception.CException] exception 'CException' with message 'Property "AweCrudCode.getIdentificationColumn" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/view.php(36): CComponent->__get('getIdentificati...')
+#1 /var/www/html/yii/framework/gii/CCodeModel.php(320): require('/var/www/html/y...')
+#2 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(97): CCodeModel->render('/var/www/html/y...')
+#3 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): CrudCode->prepare()
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#7 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#8 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#10 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#13 {main}
+REQUEST_URI=/yii/cms/gii/AweCrud
+HTTP_REFERER=http://localhost/yii/cms/gii/AweCrud
+---
+2012/05/26 08:06:16 [error] [exception.CException] exception 'CException' with message 'Property "User.title" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('title')
+#1 /var/www/html/yii/cms/protected/views/page/view.php(27): CActiveRecord->__get('title')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /var/www/html/yii/cms/protected/controllers/PageController.php(15): CController->render('view', Array)
+#7 [internal function]: PageController->actionView('1')
+#8 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/view')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/page/1
+HTTP_REFERER=http://localhost/yii/cms/page
+---
+2012/05/26 08:06:17 [error] [exception.CException] exception 'CException' with message 'Property "User.title" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('title')
+#1 /var/www/html/yii/cms/protected/views/page/view.php(27): CActiveRecord->__get('title')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /var/www/html/yii/cms/protected/controllers/PageController.php(15): CController->render('view', Array)
+#7 [internal function]: PageController->actionView('1')
+#8 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/view')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/page/1
+HTTP_REFERER=http://localhost/yii/cms/page
+---
+2012/05/26 08:07:45 [error] [php] Trying to get property of non-object (/var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/view.php:36)
+Stack trace:
+#0 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweCrudCode->prepare()
+#1 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): AweCrudGenerator->prepare()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): AweCrudGenerator->actionIndex()
+#3 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /var/www/html/yii/framework/web/CController.php(287): AweCrudGenerator->runAction()
+#5 /var/www/html/yii/framework/web/CController.php(266): AweCrudGenerator->runActionWithFilters()
+#6 /var/www/html/yii/framework/web/CWebApplication.php(276): AweCrudGenerator->run()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#8 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/gii/AweCrud
+in /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/view.php (36)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/26 08:08:13 [error] [php] include(parent0.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:423)
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(382): spl_autoload_call()
+#1 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/view.php(36): model()
+#2 /var/www/html/yii/framework/gii/CCodeModel.php(320): require()
+#3 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(97): AweCrudCode->render()
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): AweCrudCode->prepare()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): AweCrudGenerator->prepare()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): AweCrudGenerator->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /var/www/html/yii/framework/web/CController.php(287): AweCrudGenerator->runAction()
+#9 /var/www/html/yii/framework/web/CController.php(266): AweCrudGenerator->runActionWithFilters()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): AweCrudGenerator->run()
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CWebApplication->run()
+REQUEST_URI=/yii/cms/gii/AweCrud
+in /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/view.php (36)
+in /var/www/html/yii/cms/index.php (18)
+2012/05/26 08:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:10:02 [error] [exception.CException] exception 'CException' with message 'AweCrudCode and its behaviors do not have a method or closure named "getIdentificationColumnFromTableSchema".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/view.php(36): CComponent->__call('getIdentificati...', Array)
+#1 /var/www/html/yii/cms/protected/extensions/awegen/AweCrud/templates/default/view.php(36): CCodeModel->getIdentificationColumnFromTableSchema(Object(CMysqlTableSchema))
+#2 /var/www/html/yii/framework/gii/CCodeModel.php(320): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/gii/generators/crud/CrudCode.php(97): CCodeModel->render('/var/www/html/y...')
+#4 /var/www/html/yii/framework/gii/CCodeGenerator.php(163): CrudCode->prepare()
+#5 /var/www/html/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('gii/AweCrud')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#14 {main}
+REQUEST_URI=/yii/cms/gii/AweCrud
+HTTP_REFERER=http://localhost/yii/cms/gii/AweCrud
+---
+2012/05/26 08:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:10:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:10:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:14:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:14:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:20:57 [error] [exception.CException] exception 'CException' with message 'Property "Zero._label" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('_label')
+#1 /var/www/html/yii/cms/protected/views/page/view.php(64): CActiveRecord->__get('_label')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/y...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/y...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/y...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /var/www/html/yii/cms/protected/controllers/PageController.php(15): CController->render('view', Array)
+#7 [internal function]: PageController->actionView('1')
+#8 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PageController), Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PageController), Object(ReflectionMethod), Array)
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('page/view')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/cms/page/1
+HTTP_REFERER=http://localhost/yii/cms/page/1
+---
+2012/05/26 08:25:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:25:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:29:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-down.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-down.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---
+2012/05/26 08:29:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/default/nav-arrow-right.png".' in /var/www/html/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('assets/images/d...')
+#1 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/yii/cms/index.php(18): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/cms/assets/images/default/nav-arrow-right.png
+HTTP_REFERER=http://localhost/yii/cms/assets/85f1abd3/css/themes/default/default.css
+---

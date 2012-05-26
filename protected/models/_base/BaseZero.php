@@ -4,15 +4,15 @@
  * This is the model base class for the table "zero".
  *
  * Columns in table "zero" available as properties of the model:
-
- * @property integer $id
- * @property string $name
+ 
+      * @property integer $id
+      * @property string $name
  *
  * Relations of table "zero" available as properties of the model:
  * @property Page[] $pages
  */
 abstract class BaseZero extends CActiveRecord {
-
+    
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -24,21 +24,16 @@ abstract class BaseZero extends CActiveRecord {
     public function rules() {
         return array(
             array('name', 'required'),
-            array('name', 'length', 'max' => 255),
             array('id, name', 'safe', 'on' => 'search'),
         );
     }
-
+    
     public function __toString() {
         return (string) $this->name;
     }
 
     public function behaviors() {
-        return array(
-            'activerecord-relation'=>array(
-            'class'=>'application.behaviors.EActiveRecordRelationBehavior',
-                )
-        );
+        return array(                );
     }
 
     public function relations() {
@@ -64,5 +59,5 @@ abstract class BaseZero extends CActiveRecord {
                     'criteria' => $criteria,
                 ));
     }
-
+    
 }

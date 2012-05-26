@@ -146,7 +146,7 @@ class AweCrudCode extends CrudCode {
         $str = "<label for=\"$relatedModelClass\"><?php echo Yii::t('app', '$friendlyName'); ?></label>\n";
         $str .= "<?php echo \CHtml::checkBoxList('{$modelClass}[{$relatedModelClass}]', array_map('Awecms::getPrimaryKey',\$model->{$relatedModelClass}),
             CHtml::listData({$relation[1]}::model()->findAll(),'{$foreign_pk}', '{$foreign_identificationColumn}'),
-            array('attributeitem' => '{$foreign_pk}', 'checkAll' => 'Check All')); ?>";
+            array('attributeitem' => '{$foreign_pk}', 'checkAll' => 'Select All')); ?>";
         return $str;
     }
 
@@ -183,12 +183,23 @@ class AweCrudCode extends CrudCode {
                 return "echo \$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
             } else if (stripos($column->dbType, 'text') !== false)
                 return "echo \$form->textArea(\$model,'{$column->name}',array('rows'=>6, 'cols'=>50))";
-            else if (substr(strtoupper($column->dbType), 0, 4) == 'ENUM') {
+            else if (substr(strtolower($column->dbType), 0, 4) == 'enum') {
                 $string = sprintf("echo CHtml::activeDropDownList(\$model, '%s', array(\n", $column->name);
 
                 $enum_values = explode(',', substr($column->dbType, 4, strlen($column->dbType) - 1));
 
                 foreach ($enum_values as $value) {
+                    $value = trim($value, "()'");
+                    $string .= "\t\t\t'$value' => Yii::t('app', '" . Awecms::generateFriendlyName($value) . "') ,\n";
+                }
+                $string .= '))';
+
+                return $string;
+            } else if (substr(strtolower($column->dbType), 0, 3) == 'set') {
+                $string = sprintf("echo CHtml::activeCheckBoxList(\$model, '%s', array(\n", $column->name);
+                $set_values = explode(',', substr($column->dbType, 4, strlen($column->dbType) - 1));
+
+                foreach ($set_values as $value) {
                     $value = trim($value, "()'");
                     $string .= "\t\t\t'$value' => Yii::t('app', '" . Awecms::generateFriendlyName($value) . "') ,\n";
                 }
@@ -259,6 +270,15 @@ class AweCrudCode extends CrudCode {
 
     public function getRelations() {
         return CActiveRecord::model($this->modelClass)->relations();
+    }
+    
+    public function resolveController($relation) {
+        $model = new $relation[1];
+        $reflection = new ReflectionClass($model);
+        $module = preg_match("/\/modules\/([a-zA-Z0-9]+)\//", $reflection->getFileName(), $matches);
+        $modulePrefix = (isset($matches[$module])) ? "/" . $matches[$module] . "/" : "/";
+        $controller = $modulePrefix . strtolower(substr($relation[1], 0, 1)) . substr($relation[1], 1);
+        return $controller;
     }
 
 }

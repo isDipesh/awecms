@@ -96,7 +96,7 @@
 <label for="zeros"><?php echo Yii::t('app', 'Zeros'); ?></label>
 <?php echo \CHtml::checkBoxList('Page[zeros]', array_map('Awecms::getPrimaryKey',$model->zeros),
             CHtml::listData(Zero::model()->findAll(),'id', 'name'),
-            array('attributeitem' => 'id', 'checkAll' => 'Check All')); ?></div>
+            array('attributeitem' => 'id', 'checkAll' => 'Select All')); ?></div>
 
     <?php
         echo CHtml::submitButton(Yii::t('app', 'Save'));

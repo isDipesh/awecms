@@ -137,9 +137,14 @@ abstract class <?php echo 'Base' . $modelClass; ?> extends <?php echo $this->bas
 //
 //                        }
 //                    }
+                    
+                    if (count($relations)){
+                        $behaviors .= "\n        'activerecord-relation' => array('class' => 'application.behaviors.EActiveRecordRelationBehavior')"."\n";
+                            
+                    }
 
 
-                    $behaviors .= "                );\n";
+                    $behaviors .= ");\n";
                     echo $behaviors;
                     ?>
     }

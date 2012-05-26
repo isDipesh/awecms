@@ -22,10 +22,39 @@ array(
                         'name'=>'id', // only admin user can see person id
                         'label'=>'ID',
                         'visible'=>Yii::app()->getModule('user')->isAdmin()
-                    ),'user_id','title',array(
+                    ),		array(
+			'name'=>'user_id',
+			'value'=>($model->user !== null)?CHtml::link($model->user->username, array('/user/user/view','id'=>$model->user->id)).' ':'n/a',
+			'type'=>'html',
+		),
+'title',array(
                         'name'=>'content',
                         'type'=>'ntext'
-                    ),'status','created_at','modified_at','parent','order','type','comment_status',array(
+                    ),'status','created_at','modified_at',		array(
+			'name'=>'parent',
+			'value'=>($model->parent0 !== null)?CHtml::link($model->parent0->title, array('/page/view','id'=>$model->parent0->id)).' ':'n/a',
+			'type'=>'html',
+			'value'=>($model->page !== null)?CHtml::link($model->page->title, array('/page/view','id'=>$model->page->id)).' ':'n/a',
+			'type'=>'html',
+		),
+'order','type','comment_status',array(
                         'name'=>'tags_enabled',
                         'type'=>'boolean'
-                    ),'permission','password','views',)));
+                    ),'permission','password','views',)));?><h2><?php echo CHtml::link(Yii::t('app','Page'), array('/page/admin'));?></h2>
+<ul><?php $foreignobj = $model->page; 
+
+					if ($foreignobj !== null) {
+					echo '<li>';
+					echo '#'.$model->page->id.' ';
+					echo CHtml::link($model->page->title, array('/page/view','id'=>$model->page->id));
+							
+					}
+					?></ul><h2><?php echo CHtml::link(Yii::t('app','Zeros'), array('/zero/admin'));?></h2>
+<ul>
+			<?php if (is_array($model->zeros)) foreach($model->zeros as $foreignobj) { 
+
+					echo '<li>';
+					echo CHtml::link($foreignobj->name, array('/zero/view','id'=>$foreignobj->id));
+							
+					}
+						?></ul>

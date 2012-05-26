@@ -15,8 +15,6 @@ class AdminModule extends CWebModule {
             'user.models.*',
             'user.components.*',
         ));
-
-        //TODO implement catch-all to automate external module implementation inside admin module
     }
 
     public function beforeControllerAction($controller, $action) {

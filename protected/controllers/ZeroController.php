@@ -20,7 +20,7 @@ class ZeroController extends Controller {
                 if (isset($_POST['Zero'])) {
             $model->setAttributes($_POST['Zero']);
 
-            $model->pages = $_POST['Zero']['pages'];
+			$model->pages = $_POST['Zero']['pages'];
                 
                 try {
                     if($model->save()) {
@@ -43,11 +43,9 @@ class ZeroController extends Controller {
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
         
-        if(isset($_POST['Zero']))
-        {
+        if(isset($_POST['Zero'])) {
             $model->setAttributes($_POST['Zero']);
-$model->pages = $_POST['Zero']['pages'];
-            
+			$model->pages = $_POST['Zero']['pages'];
                 try {
                     if($model->save()) {
                         if (isset($_GET['returnUrl'])) {

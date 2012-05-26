@@ -10,5 +10,4 @@ class Zero extends BaseZero{
     public function init() {
         return parent::init();
     }
-    
 }

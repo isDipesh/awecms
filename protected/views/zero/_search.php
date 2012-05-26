@@ -12,7 +12,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model, 'name'); ?>
-		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo CHtml::activeCheckBoxList($model, 'name', array(
+			'one' => Yii::t('app', 'One') ,
+			'two' => Yii::t('app', 'Two') ,
+			'three' => Yii::t('app', 'Three') ,
+			'five' => Yii::t('app', 'Five') ,
+)); ?>
 	</div>
 
 	<div class="row buttons">
