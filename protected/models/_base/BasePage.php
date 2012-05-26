@@ -4,31 +4,31 @@
  * This is the model base class for the table "page".
  *
  * Columns in table "page" available as properties of the model:
-
- * @property integer $id
- * @property integer $user_id
- * @property string $title
- * @property string $content
- * @property string $status
- * @property string $created_at
- * @property string $modified_at
- * @property integer $parent
- * @property integer $order
- * @property string $type
- * @property string $comment_status
- * @property integer $tags_enabled
- * @property string $permission
- * @property string $password
- * @property integer $views
+ 
+      * @property integer $id
+      * @property integer $user_id
+      * @property string $title
+      * @property string $content
+      * @property string $status
+      * @property string $created_at
+      * @property string $modified_at
+      * @property integer $parent_id
+      * @property integer $order
+      * @property string $type
+      * @property string $comment_status
+      * @property integer $tags_enabled
+      * @property string $permission
+      * @property string $password
+      * @property integer $views
  *
  * Relations of table "page" available as properties of the model:
- * @property User $user
- * @property Page $parent0
+ * @property Page $parent
  * @property Page $page
+ * @property User $user
  * @property Zero[] $zeros
  */
 abstract class BasePage extends CActiveRecord {
-
+    
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -40,38 +40,37 @@ abstract class BasePage extends CActiveRecord {
     public function rules() {
         return array(
             array('title, type, views', 'required'),
-            array('user_id, content, status, parent, order, comment_status, tags_enabled, permission, password', 'default', 'setOnEmpty' => true, 'value' => null),
-            array('user_id, parent, order, tags_enabled, views', 'numerical', 'integerOnly' => true),
+            array('user_id, content, status, parent_id, order, comment_status, tags_enabled, permission, password', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('user_id, parent_id, order, tags_enabled, views', 'numerical', 'integerOnly' => true),
             array('title', 'length', 'max' => 255),
             array('status', 'length', 'max' => 9),
             array('type, comment_status, permission, password', 'length', 'max' => 20),
             array('content', 'safe'),
-            array('id, user_id, title, content, status, created_at, modified_at, parent, order, type, comment_status, tags_enabled, permission, password, views', 'safe', 'on' => 'search'),
+            array('id, user_id, title, content, status, created_at, modified_at, parent_id, order, type, comment_status, tags_enabled, permission, password, views', 'safe', 'on' => 'search'),
         );
     }
-
+    
     public function __toString() {
         return (string) $this->title;
     }
 
     public function behaviors() {
         return array(
-            'CTimestampBehavior' => array(
-                'class' => 'zii.behaviors.CTimestampBehavior',
-                'createAttribute' => 'created_at',
-                'updateAttribute' => 'modified_at',
-            ),
-            'activerecord-relation'=>array(
-            'class'=>'application.behaviors.EActiveRecordRelationBehavior',
-                )
-        );
+                    'CTimestampBehavior' => array(
+                        'class' => 'zii.behaviors.CTimestampBehavior',
+                        'createAttribute' => 'created_at',
+                        'updateAttribute' => 'modified_at',
+                    ),
+
+        'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
+);
     }
 
     public function relations() {
         return array(
+            'parent' => array(self::BELONGS_TO, 'Page', 'parent_id'),
+            'page' => array(self::HAS_ONE, 'Page', 'parent_id'),
             'user' => array(self::BELONGS_TO, 'User', 'user_id'),
-            'parent0' => array(self::BELONGS_TO, 'Page', 'parent'),
-            'page' => array(self::HAS_ONE, 'Page', 'parent'),
             'zeros' => array(self::MANY_MANY, 'Zero', 'page_nm_zero(page_id, zero_id)'),
         );
     }
@@ -85,7 +84,7 @@ abstract class BasePage extends CActiveRecord {
             'status' => Yii::t('app', 'Status'),
             'created_at' => Yii::t('app', 'Created At'),
             'modified_at' => Yii::t('app', 'Modified At'),
-            'parent' => Yii::t('app', 'Parent'),
+            'parent_id' => Yii::t('app', 'Parent'),
             'order' => Yii::t('app', 'Order'),
             'type' => Yii::t('app', 'Type'),
             'comment_status' => Yii::t('app', 'Comment Status'),
@@ -106,7 +105,7 @@ abstract class BasePage extends CActiveRecord {
         $criteria->compare('status', $this->status, true);
         $criteria->compare('created_at', $this->created_at, true);
         $criteria->compare('modified_at', $this->modified_at, true);
-        $criteria->compare('parent', $this->parent);
+        $criteria->compare('parent_id', $this->parent_id);
         $criteria->compare('order', $this->order);
         $criteria->compare('type', $this->type, true);
         $criteria->compare('comment_status', $this->comment_status, true);
@@ -119,5 +118,5 @@ abstract class BasePage extends CActiveRecord {
                     'criteria' => $criteria,
                 ));
     }
-
+    
 }

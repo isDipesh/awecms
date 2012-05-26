@@ -20,8 +20,8 @@ class PageController extends Controller {
                 if (isset($_POST['Page'])) {
             $model->setAttributes($_POST['Page']);
 
+			$model->parent = $_POST['Page']['parent'];
 			$model->user = $_POST['Page']['user'];
-			$model->parent0 = $_POST['Page']['parent0'];
 			$model->zeros = $_POST['Page']['zeros'];
                 
                 try {
@@ -47,8 +47,8 @@ class PageController extends Controller {
         
         if(isset($_POST['Page'])) {
             $model->setAttributes($_POST['Page']);
+			$model->parent = $_POST['Page']['parent'];
 			$model->user = $_POST['Page']['user'];
-			$model->parent0 = $_POST['Page']['parent0'];
 			$model->zeros = $_POST['Page']['zeros'];
                 try {
                     if($model->save()) {

@@ -1,6 +1,31 @@
 <?php
 class TestController extends Controller {
 
+public function filters() {
+	return array(
+			'accessControl', 
+			);
+}
+
+public function accessRules() {
+	return array(
+			array('allow',
+				'actions'=>array('index','view'),
+				'users'=>array('*'),
+				),
+			array('allow', 
+				'actions'=>array('minicreate', 'create','update'),
+				'users'=>array('@'),
+				),
+			array('allow', 
+				'actions'=>array('admin','delete'),
+				'users'=>array('admin'),
+				),
+			array('deny', 
+				'users'=>array('*'),
+				),
+			);
+}
 
     public function actionIndex() {
         $dataProvider = new CActiveDataProvider('Test');
@@ -19,8 +44,8 @@ class TestController extends Controller {
         $model = new Test;
                 if (isset($_POST['Test'])) {
             $model->setAttributes($_POST['Test']);
+
                 
-                                
                 try {
                     if($model->save()) {
                     if (isset($_GET['returnUrl'])) {
@@ -42,10 +67,8 @@ class TestController extends Controller {
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
         
-        if(isset($_POST['Test']))
-        {
+        if(isset($_POST['Test'])) {
             $model->setAttributes($_POST['Test']);
-
                 try {
                     if($model->save()) {
                         if (isset($_GET['returnUrl'])) {

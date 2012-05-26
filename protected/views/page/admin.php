@@ -37,13 +37,19 @@ return false;
 	'filter' => $model,
 	'columns' => array(
         'id',
-        'user_id',
+        array(
+                			'name' => 'user_id',
+                                        'value' => 'isset($data->user->username)?$data->user->username:"N/A"'
+                ),
         'title',
         'content',
         'status',
         'created_at',
         'modified_at',
-        'parent',
+        array(
+                			'name' => 'parent_id',
+                                        'value' => 'isset($data->page->title)?$data->page->title:"N/A"'
+                ),
         'order',
         'type',
         'comment_status',

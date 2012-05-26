@@ -79,7 +79,10 @@
 
 	<div class="row">
 		<?php echo $form->label($model, 'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+		<?php $this->widget('EMarkitupWidget', array(
+                        'model' => $model,
+                        'attribute' => 'content',
+                        ));; ?>
 	</div>
 
 	<div class="row">
@@ -126,7 +129,23 @@
 
 	<div class="row">
 		<?php echo $form->label($model, 'modified_at'); ?>
-		<?php echo $form->textField($model,'modified_at'); ?>
+		<?php $this->widget('CJuiDateTimePicker',
+						 array(
+							'model'=>$model,
+                                                        'name'=>'Test[modified_at]',
+							'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
+							'value'=>$model->modified_at,
+                                                        'mode' => 'timestamp',
+							'options'=>array(
+                                                                        'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
+                                                                        'showButtonPanel'=>true,
+                                                                        'changeYear'=>true,
+                                                                        'changeMonth'=>true,
+                                                                        'dateFormat'=>'yy-mm-dd',
+                                                                        ),
+                                                    )
+					);
+					; ?>
 	</div>
 
 	<div class="row">
@@ -143,6 +162,16 @@ if (!empty($model->image)){ ?> <div class="right"><a href="<?php echo $model->im
 	<div class="row">
 		<?php echo $form->label($model, 'uri'); ?>
 		<?php echo $form->textField($model,'uri',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model, 'qualification'); ?>
+		<?php echo CHtml::activeCheckBoxList($model, 'qualification', array(
+			'SLC' => Yii::t('app', 'Slc') ,
+			'+2' => Yii::t('app', '+2') ,
+			'Bachelors' => Yii::t('app', 'Bachelors') ,
+			'Masters' => Yii::t('app', 'Masters') ,
+)); ?>
 	</div>
 
 	<div class="row buttons">

@@ -46,9 +46,9 @@
         </div><!-- row -->
         
         <div class="row">
-            <?php echo $form->labelEx($model,'parent'); ?>
-            <?php echo $form->dropDownList($model, 'parent0', CHtml::listData(Page::model()->findAll(),'id', 'title')); ?>
-            <?php echo $form->error($model,'parent'); ?>
+            <?php echo $form->labelEx($model,'parent_id'); ?>
+            <?php echo $form->dropDownList($model, 'parent', CHtml::listData(Page::model()->findAll(),'id', 'title')); ?>
+            <?php echo $form->error($model,'parent_id'); ?>
         </div><!-- row -->
         
         <div class="row">

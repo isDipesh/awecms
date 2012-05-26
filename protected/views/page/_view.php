@@ -3,7 +3,7 @@
     <h2><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id' => $data->id)); ?></h2>
 
     <?php
-    if (!empty($data->user_id)) {
+    if (!empty($data->user->username)) {
         ?>
     <div class="field">
             <div class="field_name">
@@ -12,7 +12,7 @@
 <div class="field_value">
 
                 <?php
-                echo CHtml::encode($data->user_id);
+                echo CHtml::encode($data->user->username);
                 ?>
 
             </div>
@@ -65,9 +65,7 @@
             </div>
 <div class="field_value">
                 <?php
-                $datetime = strtotime($data->created_at);
-                $dbfield = date('D, d M y H:i:s', $datetime);
-                echo $dbfield;
+                echo date('D, d M y H:i:s', strtotime($data->created_at));
                 ?>
 
         </div>
@@ -85,9 +83,7 @@
             </div>
 <div class="field_value">
                 <?php
-                $datetime = strtotime($data->modified_at);
-                $dbfield = date('D, d M y H:i:s', $datetime);
-                echo $dbfield;
+                echo date('D, d M y H:i:s', strtotime($data->modified_at));
                 ?>
 
         </div>
@@ -97,16 +93,16 @@
     }
     ?>
     <?php
-    if (!empty($data->parent)) {
+    if (!empty($data->parent->title)) {
         ?>
     <div class="field">
             <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('parent')); ?>:</b>
+                <b><?php echo CHtml::encode($data->getAttributeLabel('parent_id')); ?>:</b>
             </div>
 <div class="field_value">
 
                 <?php
-                echo CHtml::encode($data->parent);
+                echo CHtml::encode($data->parent->title);
                 ?>
 
             </div>
@@ -191,24 +187,6 @@
 
                 <?php
                 echo CHtml::encode($data->permission);
-                ?>
-
-            </div>
-        </div>
-        <?php
-    }
-    ?>
-    <?php
-    if (!empty($data->password)) {
-        ?>
-    <div class="field">
-            <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('password')); ?>:</b>
-            </div>
-<div class="field_value">
-
-                <?php
-                echo CHtml::encode($data->password);
                 ?>
 
             </div>

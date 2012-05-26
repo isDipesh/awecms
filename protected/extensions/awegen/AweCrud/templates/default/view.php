@@ -67,7 +67,7 @@ echo "?>";
                         $relatedModel = CActiveRecord::model($relation[1]);
                         $identificationColumn = AweCrudCode::getIdentificationColumnFromTableSchema($relatedModel->tableSchema);
 			echo '<h2>';
-			echo "<?php echo CHtml::link(Yii::t('app','" . ucfirst($key) . "'), array('".$controller."/admin'));?>";
+			echo "<?php echo CHtml::link(Yii::t('app','" . ucfirst($key) . "'), array('".$controller."'));?>";
 			echo "</h2>\n";
 			echo CHtml::openTag('ul');
 			echo "
@@ -87,7 +87,7 @@ echo "?>";
 			
 			#$suggestedtitle = $this->suggestName($model->tableSchema->columns);
 			echo '<h2>';
-			echo "<?php echo CHtml::link(Yii::t('app','".$relation[1]."'), array('".$controller."/admin'));?>";
+			echo "<?php echo CHtml::link(Yii::t('app','".$relation[1]."'), array('".$controller."'));?>";
 			echo "</h2>\n";
 			echo CHtml::openTag('ul');
 			echo "<?php \$foreignobj = \$model->{$key}; \n

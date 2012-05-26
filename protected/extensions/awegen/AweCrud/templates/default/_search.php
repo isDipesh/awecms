@@ -1,14 +1,13 @@
 <div class="wide form">
 
-<?php echo "<?php \$form = \$this->beginWidget('GxActiveForm', array(
+<?php echo "<?php \$form = \$this->beginWidget('CActiveForm', array(
 	'action' => Yii::app()->createUrl(\$this->route),
 	'method' => 'get',
 )); ?>\n"; ?>
 
 <?php foreach($this->tableSchema->columns as $column): ?>
 <?php
-	$field = $this->generateInputField($this->modelClass, $column);
-	if (strpos($field, 'password') !== false)
+	if (in_array(strtolower($column->name), $this->passwordFields))
 		continue;
 ?>
 	<div class="row">

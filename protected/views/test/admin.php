@@ -1,7 +1,8 @@
 <?php
-$this->breadcrumbs['Tests'] = array('index');
-$this->breadcrumbs[] = Yii::t('app', 'Manage');
-
+$this->breadcrumbs = array(
+    Yii::t('app', 'Tests') => array('index'),
+    Yii::t('app', 'Manage'),
+);
 if(!isset($this->menu) || $this->menu === array())
 $this->menu=array(
 array('label'=>Yii::t('app', 'Create') , 'url'=>array('create')),
@@ -55,6 +56,7 @@ return false;
         'image',
         'email',
         'uri',
+        'qualification',
 array(
 			'class' => 'CButtonColumn',
 		),

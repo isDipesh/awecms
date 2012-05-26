@@ -8,11 +8,23 @@
     }
     echo "<h2><?php echo CHtml::link(CHtml::encode(\$data->{$identificationColumn}), array('view', '{$this->tableSchema->primaryKey}' => \$data->{$this->tableSchema->primaryKey})); ?></h2>\n";
     foreach ($this->tableSchema->columns as $column) {
-        if ($column->name !== $identificationColumn && !in_array($column->dbType, array('timestamp')) && !$column->isPrimaryKey) {
+        if ($column->name !== $identificationColumn && !$column->isPrimaryKey && !in_array(strtolower($column->name), $this->passwordFields)) {
+            
+            $columnName = $column->name;
+            if ($column->isForeignKey) {
+                $relations = $this->getRelations();
+                foreach ($relations as $relationName => $relation){
+                if($relation[2]==$columnName){
+                $relatedModel = CActiveRecord::model($relation[1]);   
+                $columnName = $relationName.'->'.  AweCrudCode::getIdentificationColumnFromTableSchema ($relatedModel->tableSchema);
+                }
+                }
+            }
+            
             if (!in_array($column->dbType,$this->booleanTypes))
                     echo "
     <?php
-    if (!empty(\$data->{$column->name})) {
+    if (!empty(\$data->{$columnName})) {
         ?>";
             echo "
     <div class=\"field\">
@@ -20,14 +32,12 @@
                 <b><?php echo CHtml::encode(\$data->getAttributeLabel('{$column->name}')); ?>:</b>
             </div>
 <div class=\"field_value\">\n";
-            if ($column->name == 'createtime'
-                    or $column->name == 'updatetime'
-                    or $column->name == 'timestamp'
-                    or in_array($column->dbType, $this->dateTypes)) {
+            if (in_array($column->dbType, $this->dateTypes)) {
+                /*
+                echo "\techo Yii::app()->getDateFormatter()->formatDateTime(\$data->{$columnName}, 'medium', 'medium'); ?>\n\t<br />\n\n";
+                */
                 echo "                <?php
-                \$datetime = strtotime(\$data->" . $column->name . ");
-                \$dbfield = date('D, d M y H:i:s', \$datetime);
-                echo \$dbfield;
+                echo date('D, d M y H:i:s', strtotime(\$data->" . $columnName . "));
                 ?>
 
         </div>
@@ -35,15 +45,15 @@
             } else if (in_array($column->dbType, $this->booleanTypes)) {
                 echo "
                 <?php
-                echo CHtml::encode(\$data->{$column->name} == 1 ? 'True' : 'False');
+                echo CHtml::encode(\$data->{$columnName} == 1 ? 'True' : 'False');
                 ?>
 
             </div>
         </div>";
-            } else if (in_array(strtolower($column->name), $this->emailFields)) {
+            } else if (in_array(strtolower($columnName), $this->emailFields)) {
                 echo "
                 <?php
-                echo CHtml::mailto(\$data->{$column->name});
+                echo CHtml::mailto(\$data->{$columnName});
                 ?>
 
             </div>
@@ -51,34 +61,35 @@
             } else if (in_array($column->dbType, array('longtext'))) {
                 echo "
                 <?php
-                echo nl2br(\$data->{$column->name});
+                echo nl2br(\$data->{$columnName});
                 ?>
 
             </div>
         </div>";
-            } else if (in_array(strtolower($column->name), $this->imageFields)) {
+            } else if (in_array(strtolower($columnName), $this->imageFields)) {
                 
                 /*
-                echo "                <a href=\"\<?php echo \$data->{$column->name} ?>\" target=\"_blank\" >"; 
+                echo "                <a href=\"\<?php echo \$data->{$columnName} ?>\" target=\"_blank\" >"; 
                 */
-                echo "<img alt=\"<?php echo \$data->{$identificationColumn} ?>\" title=\"<?php echo \$data->{$identificationColumn} ?>\" src=\"<?php echo \$data->{$column->name} ?>\" />";
+                echo "<img alt=\"<?php echo \$data->{$identificationColumn} ?>\" title=\"<?php echo \$data->{$identificationColumn} ?>\" src=\"<?php echo \$data->{$columnName} ?>\" />";
                 /*
                 echo 'echo "</a>";
                  */
                 echo "</div>";
                 echo "</div>";
-            } else if (in_array(strtolower($column->name), $this->urlFields)) {
+            } else if (in_array(strtolower($columnName), $this->urlFields)) {
                 echo "
                 <?php
-                echo Awecms::formatUrl(\$data->{$column->name},true);
+                echo Awecms::formatUrl(\$data->{$columnName},true);
                 ?>
 
             </div>
         </div>";
-            } else {
+            }
+            else {
                 echo "
                 <?php
-                echo CHtml::encode(\$data->{$column->name});
+                echo CHtml::encode(\$data->{$columnName});
                 ?>
 
             </div>

@@ -19,8 +19,7 @@ $this->menu=array(
 	'data' => $model,
 	'attributes' => array(
 array(
-                        'name'=>'id', // only admin user can see person id
-                        'label'=>'ID',
+                        'name'=>'id',
                         'visible'=>Yii::app()->getModule('user')->isAdmin()
                     ),		array(
 			'name'=>'user_id',
@@ -31,8 +30,8 @@ array(
                         'name'=>'content',
                         'type'=>'ntext'
                     ),'status','created_at','modified_at',		array(
-			'name'=>'parent',
-			'value'=>($model->parent0 !== null)?CHtml::link($model->parent0->title, array('/page/view','id'=>$model->parent0->id)).' ':'n/a',
+			'name'=>'parent_id',
+			'value'=>($model->parent !== null)?CHtml::link($model->parent->title, array('/page/view','id'=>$model->parent->id)).' ':'n/a',
 			'type'=>'html',
 			'value'=>($model->page !== null)?CHtml::link($model->page->title, array('/page/view','id'=>$model->page->id)).' ':'n/a',
 			'type'=>'html',
@@ -40,7 +39,10 @@ array(
 'order','type','comment_status',array(
                         'name'=>'tags_enabled',
                         'type'=>'boolean'
-                    ),'permission','password','views',)));?><h2><?php echo CHtml::link(Yii::t('app','Page'), array('/page/admin'));?></h2>
+                    ),'permission',array(
+                        'name'=>'password',
+                        'visible'=>Yii::app()->getModule('user')->isAdmin()
+                    ),'views',)));?><h2><?php echo CHtml::link(Yii::t('app','Page'), array('/page'));?></h2>
 <ul><?php $foreignobj = $model->page; 
 
 					if ($foreignobj !== null) {
@@ -49,7 +51,7 @@ array(
 					echo CHtml::link($model->page->title, array('/page/view','id'=>$model->page->id));
 							
 					}
-					?></ul><h2><?php echo CHtml::link(Yii::t('app','Zeros'), array('/zero/admin'));?></h2>
+					?></ul><h2><?php echo CHtml::link(Yii::t('app','Zeros'), array('/zero'));?></h2>
 <ul>
 			<?php if (is_array($model->zeros)) foreach($model->zeros as $foreignobj) { 
 

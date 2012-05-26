@@ -1,7 +1,7 @@
 <?php
-$this->breadcrumbs['Tests'] = array('index');
-$this->breadcrumbs[] = Yii::t('app', 'Index');
-
+$this->breadcrumbs = array(
+    Yii::t('app', 'Tests')
+);
 if(!isset($this->menu) || $this->menu === array())
 $this->menu=array(
 	array('label'=>Yii::t('app', 'Create'), 'url'=>array('create')),

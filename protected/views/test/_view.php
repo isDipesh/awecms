@@ -11,9 +11,7 @@
             </div>
 <div class="field_value">
                 <?php
-                $datetime = strtotime($data->birthdate);
-                $dbfield = date('D, d M y H:i:s', $datetime);
-                echo $dbfield;
+                echo date('D, d M y H:i:s', strtotime($data->birthdate));
                 ?>
 
         </div>
@@ -31,9 +29,7 @@
             </div>
 <div class="field_value">
                 <?php
-                $datetime = strtotime($data->birthtime);
-                $dbfield = date('D, d M y H:i:s', $datetime);
-                echo $dbfield;
+                echo date('D, d M y H:i:s', strtotime($data->birthtime));
                 ?>
 
         </div>
@@ -42,9 +38,6 @@
         <?php
     }
     ?>
-    <?php
-    if (!empty($data->enabled)) {
-        ?>
     <div class="field">
             <div class="field_name">
                 <b><?php echo CHtml::encode($data->getAttributeLabel('enabled')); ?>:</b>
@@ -57,9 +50,6 @@
 
             </div>
         </div>
-        <?php
-    }
-    ?>
     <?php
     if (!empty($data->status)) {
         ?>
@@ -123,9 +113,7 @@
             </div>
 <div class="field_value">
                 <?php
-                $datetime = strtotime($data->created_at);
-                $dbfield = date('D, d M y H:i:s', $datetime);
-                echo $dbfield;
+                echo date('D, d M y H:i:s', strtotime($data->created_at));
                 ?>
 
         </div>
@@ -143,9 +131,25 @@
             </div>
 <div class="field_value">
                 <?php
-                $datetime = strtotime($data->changed_at);
-                $dbfield = date('D, d M y H:i:s', $datetime);
-                echo $dbfield;
+                echo date('D, d M y H:i:s', strtotime($data->changed_at));
+                ?>
+
+        </div>
+        </div>
+
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->modified_at)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('modified_at')); ?>:</b>
+            </div>
+<div class="field_value">
+                <?php
+                echo date('D, d M y H:i:s', strtotime($data->modified_at));
                 ?>
 
         </div>
@@ -195,6 +199,24 @@
 
                 <?php
                 echo Awecms::formatUrl($data->uri,true);
+                ?>
+
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <?php
+    if (!empty($data->qualification)) {
+        ?>
+    <div class="field">
+            <div class="field_name">
+                <b><?php echo CHtml::encode($data->getAttributeLabel('qualification')); ?>:</b>
+            </div>
+<div class="field_value">
+
+                <?php
+                echo CHtml::encode($data->qualification);
                 ?>
 
             </div>

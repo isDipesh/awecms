@@ -9,11 +9,12 @@ class AweCrudCode extends CrudCode {
     public $baseControllerClass = 'Controller';
     public $identificationColumn = '';
     public $isJToggleColumnEnabled = true;
-    public $dateTypes = array('datetime', 'date', 'time');
+    public $dateTypes = array('datetime', 'date', 'time', 'timestamp');
     public $booleanTypes = array('tinyint(1)', 'boolean', 'bool');
     public $emailFields = array('email', 'e-mail', 'email_address', 'e-mail_address', 'emailaddress', 'e-mailaddress');
     public $imageFields = array('image', 'picture', 'photo', 'pic', 'profile_pic', 'profile_picture', 'avatar', 'profilepic', 'profilepicture');
     public $urlFields = array('url', 'link', 'uri', 'homepage', 'webpage', 'website', 'profile_url', 'profile_link');
+    public $passwordFields = array('password', 'passwd', 'psswrd', 'pass', 'passcode');
     public $create_time = array('create_time', 'createtime', 'created_at', 'createdat', 'created_time', 'createdtime');
     public $update_time = array('changed', 'changed_at', 'updatetime', 'modified_at', 'updated_at', 'update_time', 'timestamp', 'updatedat');
 
@@ -72,10 +73,9 @@ class AweCrudCode extends CrudCode {
     }
 
     public function getDetailViewAttribute($column) {
-        if ($column->name == 'id') {
+        if ($column->name == 'id' || in_array($column->name, $this->passwordFields)) { // only admin user can see id and password
             return "array(
-                        'name'=>'id', // only admin user can see person id
-                        'label'=>'ID',
+                        'name'=>'{$column->name}',
                         'visible'=>Yii::app()->getModule('user')->isAdmin()
                     ),";
         }
@@ -225,7 +225,7 @@ class AweCrudCode extends CrudCode {
 					);
 					");
             } else {
-                if (preg_match('/^(password|pass|passwd|passcode)$/i', $column->name))
+                if (in_array(strtolower($column->name), $this->passwordFields))
                     $inputField = 'passwordField';
                 else
                     $inputField = 'textField';
@@ -242,6 +242,22 @@ class AweCrudCode extends CrudCode {
     }
 
     public function generateGridViewColumn($column) {
+
+        if ($column->isForeignKey) {
+            $columnName = $column->name;
+            $relations = $this->getRelations();
+            foreach ($relations as $relationName => $relation) {
+                if ($relation[2] == $columnName) {
+                    $relatedModel = CActiveRecord::model($relation[1]);
+                    $relatedColumnName = $relationName . '->' . AweCrudCode::getIdentificationColumnFromTableSchema($relatedModel->tableSchema);
+                }
+            }
+
+            return "array(
+                			'name' => '{$column->name}',
+                                        'value' => 'isset(\$data->{$relatedColumnName})?\$data->{$relatedColumnName}:\"N/A\"'
+                )";
+        }
 
         // Boolean or bit.
         if (strtoupper($column->dbType) == 'TINYINT(1)'
@@ -264,14 +280,12 @@ class AweCrudCode extends CrudCode {
 					)";
         } else // Common column.
             return "'{$column->name}'";
-
-        //TODO relation mappings here
     }
 
     public function getRelations() {
         return CActiveRecord::model($this->modelClass)->relations();
     }
-    
+
     public function resolveController($relation) {
         $model = new $relation[1];
         $reflection = new ReflectionClass($model);

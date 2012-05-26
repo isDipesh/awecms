@@ -11,6 +11,7 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.behaviors.*',
         'application.widgets.*',
         'application.extensions.*',
         'application.modules.user.models.*',

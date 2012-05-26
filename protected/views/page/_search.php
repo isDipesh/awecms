@@ -1,6 +1,6 @@
 <div class="wide form">
 
-<?php $form = $this->beginWidget('GxActiveForm', array(
+<?php $form = $this->beginWidget('CActiveForm', array(
 	'action' => Yii::app()->createUrl($this->route),
 	'method' => 'get',
 )); ?>
@@ -81,8 +81,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'parent'); ?>
-		<?php echo $form->dropDownList($model, 'parent0', CHtml::listData(Page::model()->findAll(),'id', 'title')); ?>
+		<?php echo $form->label($model, 'parent_id'); ?>
+		<?php echo $form->dropDownList($model, 'parent', CHtml::listData(Page::model()->findAll(),'id', 'title')); ?>
 	</div>
 
 	<div class="row">

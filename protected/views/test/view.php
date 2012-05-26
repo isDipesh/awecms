@@ -1,5 +1,8 @@
 <?php
-$this->breadcrumbs['Tests'] = array('index');$this->breadcrumbs[] = $model->name;if(!isset($this->menu) || $this->menu === array()) {
+$this->breadcrumbs = array(
+    Yii::t('app', 'Tests') => array('index'),
+    Yii::t('app', $model->name),
+);if(!isset($this->menu) || $this->menu === array()) {
 $this->menu=array(
 	array('label'=>Yii::t('app', 'Update') , 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>Yii::t('app', 'Delete') , 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
@@ -34,4 +37,4 @@ array(
                     ),array(
                         'name'=>'uri',
                         'type'=>'url'
-                    ),)));
+                    ),'qualification',)));?>
