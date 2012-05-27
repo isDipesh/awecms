@@ -1,35 +1,9 @@
 <?php
-class TestController extends Controller {
+class RoleController extends Controller {
 
-public function filters() {
-	return array(
-			'accessControl', 
-			);
-}
-
-public function accessRules() {
-	return array(
-			array('allow',
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-				),
-			array('allow', 
-				'actions'=>array('minicreate', 'create','update'),
-				'users'=>array('@'),
-				),
-			array('allow', 
-				'actions'=>array('admin','delete'),
-				//'users'=>array('admin'),
-                                'expression'=>'Role::is("super")',
-				),
-			array('deny', 
-				'users'=>array('*'),
-				),
-			);
-}
 
     public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('Test');
+        $dataProvider = new CActiveDataProvider('Role');
         $this->render('index', array(
                 'dataProvider' => $dataProvider,
         ));
@@ -37,15 +11,16 @@ public function accessRules() {
         
     public function actionView($id) {
         $this->render('view', array(
-                'model' => $this->loadModel($id, 'Test'),
+                'model' => $this->loadModel($id, 'Role'),
         ));
     }
         
     public function actionCreate() {
-        $model = new Test;
-                if (isset($_POST['Test'])) {
-            $model->setAttributes($_POST['Test']);
+        $model = new Role;
+                if (isset($_POST['Role'])) {
+            $model->setAttributes($_POST['Role']);
 
+			$model->users = $_POST['Role']['users'];
                 
                 try {
                     if($model->save()) {
@@ -58,8 +33,8 @@ public function accessRules() {
                 } catch (Exception $e) {
                         $model->addError('', $e->getMessage());
                 }
-        } elseif(isset($_GET['Test'])) {
-                        $model->attributes = $_GET['Test'];
+        } elseif(isset($_GET['Role'])) {
+                        $model->attributes = $_GET['Role'];
         }
 
         $this->render('create',array( 'model'=>$model));
@@ -68,8 +43,9 @@ public function accessRules() {
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
         
-        if(isset($_POST['Test'])) {
-            $model->setAttributes($_POST['Test']);
+        if(isset($_POST['Role'])) {
+            $model->setAttributes($_POST['Role']);
+			$model->users = $_POST['Role']['users'];
                 try {
                     if($model->save()) {
                         if (isset($_GET['returnUrl'])) {
@@ -109,11 +85,11 @@ public function accessRules() {
     }
                 
     public function actionAdmin() {
-        $model = new Test('search');
+        $model = new Role('search');
         $model->unsetAttributes();
 
-        if (isset($_GET['Test']))
-                $model->setAttributes($_GET['Test']);
+        if (isset($_GET['Role']))
+                $model->setAttributes($_GET['Role']);
 
         $this->render('admin', array(
                 'model' => $model,
@@ -121,7 +97,7 @@ public function accessRules() {
     }
 
     public function loadModel($id) {
-            $model=Test::model()->findByPk($id);
+            $model=Role::model()->findByPk($id);
             if($model===null)
                     throw new CHttpException(404,Yii::t('app', 'The requested page does not exist.'));
             return $model;

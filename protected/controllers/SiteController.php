@@ -21,7 +21,8 @@ class SiteController extends Controller {
     }
 
     public function actionIndex() {
-        $this->render('index');
+        echo Role::is('super');
+        //$this->render('index');
     }
 
     public function actionError() {

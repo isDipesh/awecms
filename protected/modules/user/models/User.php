@@ -100,6 +100,7 @@ class User extends CActiveRecord {
         $relations = array(
             'pages'   => array(self::HAS_MANY, 'Page',    'user_id'),
             'profile' => array(self::HAS_ONE, 'Profile', 'user_id'),
+            'roles' => array(self::MANY_MANY, 'Role', 'user_rel_role(role_id, user_id)'),
         );
         if (isset(Yii::app()->getModule('user')->relations))
             $relations = array_merge($relations, Yii::app()->getModule('user')->relations);

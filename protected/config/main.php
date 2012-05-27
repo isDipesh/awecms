@@ -19,6 +19,7 @@ return array(
         'application.modules.user.components.*',
         'ext.gtc.components.*',
         'ext.giix-components.*', // giix components
+        'application.modules.srbac.controllers.SBaseController',
     ),
     'behaviors' => array(
     // ...
@@ -27,6 +28,17 @@ return array(
     ),
     // application components
     'components' => array(
+        'authManager' => array(
+            'class' => 'application.modules.srbac.components.SDbAuthManager',
+// The database component used
+            'connectionID' => 'db',
+// The itemTable name (default:authitem)
+            'itemTable' => 'items',
+// The assignmentTable name (default:authassignment)
+            'assignmentTable' => 'assignments',
+// The itemChildTable name (default:authitemchild)
+            'itemChildTable' => 'itemchildren',
+        ),
         'assetManager' => array(
             'linkAssets' => true,
         ),
@@ -70,10 +82,6 @@ return array(
                     'class' => 'CFileLogRoute',
                     'levels' => 'error, warning',
                 ),
-            //array(
-            //  'class' => 'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
-            //'ipFilters' => array('127.0.0.1', '192.168.1.215'),
-            //),
             ),
         ),
         'user' => array(
@@ -87,42 +95,44 @@ return array(
         'admin',
         'category',
         'news',
-       // 'page',
-        'comments'=>array(
-        //you may override default config for all connecting models
-        'defaultModelConfig' => array(
-            //only registered users can post comments
-            'registeredOnly' => false,
-            'useCaptcha' => false,
-            //allow comment tree
-            'allowSubcommenting' => true,
-            //display comments after moderation
-            'premoderate' => false,
-            //action for postig comment
-            'postCommentAction' => 'comments/comment/postComment',
-            //super user condition(display comment list in admin view and automoderate comments)
-            'isSuperuser'=>'Yii::app()->user->checkAccess("moderate")',
-            //order direction for comments
-            'orderComments'=>'ASC',
-        ),
-        //the models for commenting
-        'commentableModels'=>array(
-            //model with individual settings
-            'Page'=>array(
-                'registeredOnly'=>false,
-                'useCaptcha'=>false,
-                'allowSubcommenting'=>true,
+        'role',
+        
+        // 'page',
+        'comments' => array(
+            //you may override default config for all connecting models
+            'defaultModelConfig' => array(
+                //only registered users can post comments
+                'registeredOnly' => false,
+                'useCaptcha' => false,
+                //allow comment tree
+                'allowSubcommenting' => true,
+                //display comments after moderation
+                'premoderate' => false,
+                //action for postig comment
+                'postCommentAction' => 'comments/comment/postComment',
+                //super user condition(display comment list in admin view and automoderate comments)
+                'isSuperuser' => 'Yii::app()->user->checkAccess("moderate")',
+                //order direction for comments
+                'orderComments' => 'ASC',
             ),
+            //the models for commenting
+            'commentableModels' => array(
+                //model with individual settings
+                'Page' => array(
+                    'registeredOnly' => false,
+                    'useCaptcha' => false,
+                    'allowSubcommenting' => true,
+                ),
             //model with default settings
             //'Page',
+            ),
+            //config for user models, which is used in application
+            'userConfig' => array(
+                'class' => 'User',
+                'nameProperty' => 'username',
+                'emailProperty' => 'email',
+            ),
         ),
-        //config for user models, which is used in application
-        'userConfig'=>array(
-            'class'=>'User',
-            'nameProperty'=>'username',
-            'emailProperty'=>'email',
-        ),
-    ),
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',
