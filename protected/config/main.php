@@ -15,6 +15,8 @@ return array(
         'application.widgets.*',
         'application.extensions.*',
         'application.modules.user.models.*',
+        'application.modules.role.models.*',
+        'application.modules.role.components.*',
         'application.modules.page.models.*',
         'application.modules.user.components.*',
         'ext.gtc.components.*',
@@ -96,7 +98,6 @@ return array(
         'category',
         'news',
         'role',
-        
         // 'page',
         'comments' => array(
             //you may override default config for all connecting models

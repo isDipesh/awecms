@@ -21,7 +21,7 @@ class SiteController extends Controller {
     }
 
     public function actionIndex() {
-        echo Role::is('super');
+        print_r(Role::is('moderator'));
         //$this->render('index');
     }
 

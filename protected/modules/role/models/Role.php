@@ -73,7 +73,9 @@ class Role extends CActiveRecord {
     }
 
     public static function is($role) {
-        return in_array($role, User::model()->findByPk(Yii::app()->user->id)->roles);
+        $isRole =  in_array($role, User::model()->findByPk(Yii::app()->user->id)->roles);
+        $isActive = Role::model()->findByAttributes(array('name'=>$role))->active;
+        return $isRole && $isActive;
     }
 
 }
