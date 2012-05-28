@@ -6,6 +6,7 @@ class DefaultController extends Controller {
         $this->render('view', array(
             'model' => $this->loadModel($id, 'Role'),
         ));
+        
     }
 
     public function actionCreate() {
