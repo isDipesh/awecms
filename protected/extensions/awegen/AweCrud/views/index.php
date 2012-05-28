@@ -110,8 +110,7 @@ $('#{$class}_model').bind('keyup change', function(){
     <div class="tooltip">
         The Authentication method to be used in the Controller. Yii access Control is the 
         default accessControl of Yii using the Controller accessRules() method. No access 
-        Control provides no Access control. In the future we will provide srbac and
-        possibly other authtypes.
+        Control provides no Access control.
     </div>
     <?php echo $form->error($model, 'authtype'); ?>
 </div>

@@ -18,10 +18,10 @@ return array(
         'application.modules.role.models.*',
         'application.modules.role.components.*',
         'application.modules.page.models.*',
+        'application.modules.menu.models.*',
         'application.modules.user.components.*',
         'ext.gtc.components.*',
         'ext.giix-components.*', // giix components
-        'application.modules.srbac.controllers.SBaseController',
     ),
     'behaviors' => array(
     // ...
@@ -30,17 +30,6 @@ return array(
     ),
     // application components
     'components' => array(
-        'authManager' => array(
-            'class' => 'application.modules.srbac.components.SDbAuthManager',
-// The database component used
-            'connectionID' => 'db',
-// The itemTable name (default:authitem)
-            'itemTable' => 'items',
-// The assignmentTable name (default:authassignment)
-            'assignmentTable' => 'assignments',
-// The itemChildTable name (default:authitemchild)
-            'itemChildTable' => 'itemchildren',
-        ),
         'assetManager' => array(
             'linkAssets' => true,
         ),
@@ -98,6 +87,7 @@ return array(
         'category',
         'news',
         'role',
+        'menu',
         // 'page',
         'comments' => array(
             //you may override default config for all connecting models

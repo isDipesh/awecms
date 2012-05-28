@@ -5,3 +5,4 @@ protected/tests/report/*
 *.swp
 /protected/modules/cms/messages/.svn/
 /.quarantine/
+/protected/extensions/atMenu/at-menu/.hg/
