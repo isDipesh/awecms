@@ -33,7 +33,6 @@ class AtHerList extends CWidget
 	        	padding-left:15px;
 	        	padding-right:5px;
 				width:50px;
-				background-image:url('/images/AtHerList/draggable.png');
 				background-repeat:no-repeat;
 				background-position:0 1px;
 	        }

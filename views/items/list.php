@@ -10,7 +10,7 @@ $this->breadcrumbs=array(
 <!--<div class="wrapsover">
 <div class="wraps" style=""> width:528px;height:340px;overflow: auto -->
 <?php // Yii::app()->clientScript->registerScriptFile("http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");?>
-<?php Yii::app()->clientScript->registerScriptFile("/libs/json/json2.min.js");?>
+<?php Yii::app()->clientScript->registerScriptFile($this->module->assetsDirectory."/libs/json/json2.min.js");?>
 <?php $this->widget('mext.AtNestedSortable')?>	
 <?php 
 $this->widget('mext.AtHerList',array('model'=>$model,'actid'=>$actid));
