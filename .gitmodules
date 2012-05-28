@@ -1,0 +1,3 @@
+[submodule "protected/modules/menu"]
+	path = protected/modules/menu
+	url = git@github.com:xtranophilist/yii-menu.git
