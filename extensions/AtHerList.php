@@ -41,6 +41,7 @@ class AtHerList extends CWidget
 			}
 			#".$this->id." .item-wraper:hover{
 				background-color:#c6c6ff;
+				cursor:move;
 			}
 			#".$this->id." .item-wraper.active{
 				background-color:#DDDDDD;

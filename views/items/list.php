@@ -1,62 +1,33 @@
 <?php
-$this->breadcrumbs=array(
-	'Items'=>array('/menu/items'),
-	'List',
-);?>
+$this->breadcrumbs = array(
+    'Menu' => array('/menu/'),
+    'Menu Items',
+);
+?>
 
-<a href="<?php echo $this->createUrl('/menu/items/new',array('id'=>$id));?>"><?php echo MenuModule::t("New",array(),"actions");?></a>
+<a href="<?php echo $this->createUrl('/menu/items/new', array('id' => $id)); ?>"><?php echo MenuModule::t("New", array(), "actions"); ?></a>
 <br/><br/>
 
-<!--<div class="wrapsover">
-<div class="wraps" style=""> width:528px;height:340px;overflow: auto -->
-<?php // Yii::app()->clientScript->registerScriptFile("http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");?>
-<?php Yii::app()->clientScript->registerScriptFile($this->module->assetsDirectory."/libs/json/json2.min.js");?>
-<?php $this->widget('mext.AtNestedSortable')?>	
-<?php 
-$this->widget('mext.AtHerList',array('model'=>$model,'actid'=>$actid));
-
- 
+<?php Yii::app()->clientScript->registerScriptFile($this->module->assetsDirectory . "/libs/json/json2.min.js"); ?>
+<?php $this->widget('mext.AtNestedSortable') ?>	
+<?php
+$this->widget('mext.AtHerList', array('model' => $model, 'actid' => $actid));
 ?>
-	 
-<!--  </div>
-</div>-->
-
 
 <script type="text/javascript">
-
-$('ol.sortable').nestedSortable({
-//	disableNesting: 'no-nest',
-	forcePlaceholderSize: true,
-	handle: 'div',
-	items: 'li',
-	opacity: .6,
-	placeholder: 'placeholder',
-	tabSize: 10,
-//	tolerance: 'pointer',
-//	toleranceElement: '> div'
-	
-});
+    $('ol.sortable').nestedSortable({
+        disableNesting: 'no-nest',
+        forcePlaceholderSize: true,
+        placeholder: 'placeholder',
+        update: function () {
+            list = $(this).nestedSortable('toArray', {startDepthCount: 0});
+            $.post('<?php echo $this->createUrl('/'.Yii::app()->controller->module->id.'/ajax/save') ?>',
+            {list: list },
+            function(data){
+                $("#result").hide().html(data).fadeIn('slow')
+            },
+            "html"
+        );
+        }
+    });
 </script>
-
-
-
-
-
-
-
-
-<?php 
-
-/*
-$this->widget('zii.widgets.CListView', array(
-    'dataProvider'=>$dataProvider,
-	'id'=>'menu-items-list',
-	'itemsTagName'=>'table',
-    'itemView'=>'_list',  
-    'sortableAttributes'=>array(
-        'title'=>'Title',
-		'description'=>'Description',
-    ),
-));
-
-*/
