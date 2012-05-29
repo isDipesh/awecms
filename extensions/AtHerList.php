@@ -65,8 +65,16 @@ class AtHerList extends CWidget {
             Yii::app()->clientScript->registerCss('AtHerList', $css);
         }
     }
+    
+    public function customSort($a,$b) {
+          return $a->depth>$b->depth;
+     }
 
     public function run() {
+        
+        //sort model first to move deeper items to last
+        usort($this->model, 'self::customSort');
+        
         echo '<div class="header-wraper" style="height:20px">';
         echo '<span style="padding-left:40px"></span><b>Title</b>';
         echo '<div style="float:right;width:200px;text-align:center;"><b>Active</b></div>';
@@ -76,7 +84,7 @@ class AtHerList extends CWidget {
         foreach ($this->model As $row):
             if (in_array($row->id, $this->_processed))
                 continue;
-            echo '<li id="list_' . $row->id . '">';
+
             $this->getRender($row);
             if ($row->children()) {
                 echo "<ol>";
@@ -91,10 +99,7 @@ class AtHerList extends CWidget {
 
     public function getchildren($model) {
         foreach ($model As $row):
-            echo '<li id="list_' . $row->id . '">';
-
             $this->getRender($row);
-
             if ($row->children()) {
                 echo "<ol>";
                 $this->getchildren($row->children());
@@ -106,6 +111,7 @@ class AtHerList extends CWidget {
 
     public function getRender($row) {
         $this->_processed[] = $row->id;
+        echo '<li id="list_' . $row->id . '">';
         ?>
         <div style="height:20px;" class="item-wraper <?php echo ($this->activeId == $row->id) ? 'active' : ''; ?>">
             <b><label><?php echo $row->name; ?></label></b>
