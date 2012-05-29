@@ -42,17 +42,22 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'parent_id'); ?>
-        <?php echo $form->dropDownList($model, 'parent', CHtml::listData(MenuItem::model()->findAll(), 'id', 'name'), array('prompt'=>'None')); ?>
+        <?php echo $form->dropDownList($model, 'parent', CHtml::listData(MenuItem::model()->findAll(), 'id', 'name'), array('prompt' => 'None')); ?>
         <?php echo $form->error($model, 'parent_id'); ?>
     </div><!-- row -->
 
-    <div class="row">
-        <?php echo $form->labelEx($model, 'menu_id'); ?>
-        <?php echo $form->dropDownList($model, 'menu', CHtml::listData(Menu::model()->findAll(), 'id', 'name')); ?>
-        <?php echo $form->error($model, 'menu_id'); ?>
-    </div><!-- row -->
-
     <?php
+    if (isset($menuId))
+        echo $form->hiddenField($model, 'menu', array('value' => $menuId));
+    else {
+        ?>
+        <div class="row">
+            <?php echo $form->labelEx($model, 'menu_id'); ?>
+            <?php echo $form->dropDownList($model, 'menu', CHtml::listData(Menu::model()->findAll(), 'id', 'name')); ?>
+            <?php echo $form->error($model, 'menu_id'); ?>
+        </div>
+        <?php
+    }
     echo CHtml::submitButton(Yii::t('app', 'Save'));
     echo CHtml::Button(Yii::t('app', 'Cancel'), array(
         'submit' => 'javascript:history.go(-1)'));

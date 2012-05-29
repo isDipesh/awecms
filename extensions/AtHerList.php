@@ -69,8 +69,7 @@ class AtHerList extends CWidget {
     public function run() {
         echo '<div class="header-wraper" style="height:20px">';
         echo '<span style="padding-left:40px"></span><b>Title</b>';
-        echo '<div style="float:right;width:130px;text-align:center;"><b><= Actions =></b></div>';
-        echo '<div style="float:right;width:60px;text-align:center;"><b>Active</b></div>';
+        echo '<div style="float:right;width:200px;text-align:center;"><b>Active</b></div>';
         echo "</div>";
         echo '<ol id="' . $this->id . '" class="sortable ui-sortable">
             ';
@@ -110,8 +109,7 @@ class AtHerList extends CWidget {
         ?>
         <div style="height:20px;" class="item-wraper <?php echo ($this->actid == $row->id) ? 'active' : ''; ?>">
             <b><label><?php echo $row->name; ?></label></b>
-            <div class="right"><a href="<?php echo $row->id; ?>">Remove</a></div>
-            <div class="right"><a href="/menu/items/edit/id/<?php echo $row->id; ?>">Edit</a></div>
+            <div class="right"><a href="<?php echo Yii::app()->createUrl('/' . Yii::app()->getModule('menu')->id . '/item/edit/' . $row->id); ?>">Edit</a></div>
             <div class="right"><input type="checkbox" disabled="disabled" <?php echo($row->enabled) ? "checked" : ""; ?>/></div>
         </div>
         <?php
