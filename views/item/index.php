@@ -18,7 +18,8 @@ $this->widget('mext.AtHerList', array('model' => $model, 'actid' => ''));
     $('ol.sortable').nestedSortable({
         disableNesting: 'no-nest',
         forcePlaceholderSize: true,
-        placeholder: 'placeholder',
+	items: 'li',
+	placeholder: 'placeholder',
         update: function () {
             list = $(this).nestedSortable('toArray', {startDepthCount: 0});
             $.post('<?php echo $this->createUrl('/' . $this->module->id . '/ajax/save') ?>',
