@@ -16,7 +16,6 @@
         <div id="main_container">
             <header>
                 <h2 id="title">
-                    <?php Admin::getDashboardMenu(); ?>
                     <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Awecms::getSiteName(), array('/admin')); ?>
                 </h2>
                 <nav id="header_right">
@@ -29,7 +28,7 @@
 
                 </nav>
                 <nav>
-                    
+
 
                 </nav>
 
@@ -58,27 +57,18 @@
             </nav>
 
             <div id="main_wrapper">
-<div class="right" style="overflow: auto">
-                        <?php
-                        $this->beginWidget('zii.widgets.CPortlet', array(
-                            'title' => 'Operations',
-                        ));
-                        $this->widget('zii.widgets.CMenu', array(
-                            'items' => $this->menu,
-                            'htmlOptions' => array('class' => 'operations'),
-                        ));
-                        $this->endWidget();
-                        ?>
-                        <?php
-//                        $this->widget('application.widgets.NavBar', array(
-//                            'tryDefault' => FALSE,
-//                            'context' => 'admin',
-//                            'items' => array(
-//                                array('label' => 'Admin Home', 'url' => array('/admin/index/index')),
-//                            ),
-//                        ));
-                        ?>
-                    </div>
+                <div class="right" style="overflow: auto">
+                    <?php
+                    $this->beginWidget('zii.widgets.CPortlet', array(
+                        'title' => 'Operations',
+                    ));
+                    $this->widget('zii.widgets.CMenu', array(
+                        'items' => $this->menu,
+                        'htmlOptions' => array('class' => 'operations'),
+                    ));
+                    $this->endWidget();
+                    ?>
+                </div>
                 <?php if (isset($this->breadcrumbs)): ?>
                     <?php
                     $this->widget('zii.widgets.CBreadcrumbs', array(
@@ -90,7 +80,7 @@
                 <?php
                 echo $content;
                 ?>
-                    
+
             </div>
         </div>
         <footer>

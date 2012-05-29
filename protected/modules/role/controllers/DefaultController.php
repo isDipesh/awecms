@@ -6,7 +6,6 @@ class DefaultController extends Controller {
         $this->render('view', array(
             'model' => $this->loadModel($id, 'Role'),
         ));
-        
     }
 
     public function actionCreate() {
@@ -94,14 +93,4 @@ class DefaultController extends Controller {
         return $model;
     }
 
-    public function beforeAction($action) {
-        $this->pageTitle = Yii::app()->name . ' - Role Management';
-        if ($this->module !== null) {
-            $this->breadcrumbs[$this->module->Id] = array('/' . $this->module->Id);
-        }
-        return true;
-    }
-
 }
-
-//End of Controller Class

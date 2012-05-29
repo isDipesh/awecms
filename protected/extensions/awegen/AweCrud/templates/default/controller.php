@@ -22,7 +22,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
         
     public function actionView($id) {
         $this->render('view', array(
-                'model' => $this->loadModel($id, '<?php echo $this->modelClass; ?>'),
+                'model' => $this->loadModel($id),
         ));
     }
         
@@ -112,7 +112,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
         }
         else
             throw new CHttpException(400,
-                Yii::t('app', 'Invalid request. Please do not repeat this request again.'));
+                Yii::t('app', 'Invalid request.'));
     }
                 
     public function actionAdmin() {
@@ -134,13 +134,4 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
             return $model;
     }
 
-
-
-    public function beforeAction($action) {
-            if ($this->module !== null) {
-                    $this->breadcrumbs[$this->module->Id] = array('/'.$this->module->Id);
-            }
-            return true;
-    }
-        
-}//End of Controller Class
+}

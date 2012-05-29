@@ -6,8 +6,6 @@ $this->breadcrumbs = array(
 ?>
 <h1><?php echo Yii::t('app', 'Manage') . ' ' . GxHtml::encode($model->label(1)); ?></h1>
 <?php
-$c = new CGridView;
-
 $this->widget('zii.widgets.grid.CGridView', array(
     'id' => 'dashboard-grid',
     'dataProvider' => $model->search(),
