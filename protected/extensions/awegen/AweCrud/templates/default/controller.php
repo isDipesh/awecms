@@ -40,10 +40,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 			{
 				if($relation[0] == CActiveRecord::BELONGS_TO || $relation[0] == CActiveRecord::MANY_MANY)
 				{
-				printf("\t\t\t\$model->$key = \$_POST['$this->modelClass']['$key'];\n");	
-                                // Add additional MANY_MANY Attributes to the model object
-                                    //printf("\t\t\tif(isset(\$_POST['%s']['%s']))\n", $this->modelClass, $relation[1]);
-					//printf("\t\t\t\t\$model->setRelationRecords('%s', \$_POST['%s']['%s']);\n", $key, $this->modelClass, $relation[1]);
+				printf("\t\t\t if (isset(\$_POST['$this->modelClass']['$key'])) \$model->$key = \$_POST['$this->modelClass']['$key'];\n");	
 				}
 			}
 ?>

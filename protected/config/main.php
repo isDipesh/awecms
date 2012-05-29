@@ -1,6 +1,6 @@
 <?php
 
-return array(
+$config = array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'language' => 'en',
     // preloading 'log' component
@@ -14,12 +14,6 @@ return array(
         'application.behaviors.*',
         'application.widgets.*',
         'application.extensions.*',
-        'application.modules.user.models.*',
-        'application.modules.role.models.*',
-        'application.modules.role.components.*',
-        'application.modules.page.models.*',
-        'application.modules.menu.models.*',
-        'application.modules.user.components.*',
         'ext.gtc.components.*',
         'ext.giix-components.*', // giix components
     ),
@@ -40,17 +34,10 @@ return array(
             'showScriptName' => false, //hides index.php in URL
             'caseSensitive' => true,
             'urlFormat' => 'path',
-            //'urlSuffix' => '.html',
-            //'useStrictParsing' => true,
             'rules' => array(
-                'category/<action:(\w+)>' => 'category/category/<action>',
-                'news/<action:(\w+)>' => 'news/news/<action>',
-                //'<m:\w+>/<action:(\w+)>' => '<m>/<m>/<action>',
-                '<_a:(login|registration|profile.*|logout)>' => 'user/<_a>',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-            //'' => array('site/index', 'urlSuffix' => ''),//
             ),
         ),
         'db' => array(
@@ -75,55 +62,8 @@ return array(
                 ),
             ),
         ),
-        'user' => array(
-            // enable cookie-based authentication
-            'allowAutoLogin' => true,
-            'loginUrl' => array('/login'),
-        ),
     ),
     'modules' => array(
-        'user',
-        'admin',
-        'category',
-        'news',
-        'role',
-        'menu',
-        // 'page',
-        'comments' => array(
-            //you may override default config for all connecting models
-            'defaultModelConfig' => array(
-                //only registered users can post comments
-                'registeredOnly' => false,
-                'useCaptcha' => false,
-                //allow comment tree
-                'allowSubcommenting' => true,
-                //display comments after moderation
-                'premoderate' => false,
-                //action for postig comment
-                'postCommentAction' => 'comments/comment/postComment',
-                //super user condition(display comment list in admin view and automoderate comments)
-                'isSuperuser' => 'Yii::app()->user->checkAccess("moderate")',
-                //order direction for comments
-                'orderComments' => 'ASC',
-            ),
-            //the models for commenting
-            'commentableModels' => array(
-                //model with individual settings
-                'Page' => array(
-                    'registeredOnly' => false,
-                    'useCaptcha' => false,
-                    'allowSubcommenting' => true,
-                ),
-            //model with default settings
-            //'Page',
-            ),
-            //config for user models, which is used in application
-            'userConfig' => array(
-                'class' => 'User',
-                'nameProperty' => 'username',
-                'emailProperty' => 'email',
-            ),
-        ),
         'gii' => array(
             'class' => 'system.gii.GiiModule',
             'password' => 'password',
@@ -137,3 +77,16 @@ return array(
         ),
     ),
 );
+
+$modules_dir = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'modules' . DIRECTORY_SEPARATOR;
+$handle = opendir($modules_dir);
+while (false !== ($file = readdir($handle))) {
+    if ($file != "." && $file != ".." && is_dir($modules_dir . $file)) {
+        $configFile = $modules_dir . $file . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'main.php';
+        if (file_exists($configFile))
+            $config = CMap::mergeArray($config, require ($configFile));
+    }
+}
+closedir($handle);
+
+return $config;

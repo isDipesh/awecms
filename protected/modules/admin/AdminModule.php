@@ -26,8 +26,8 @@ class AdminModule extends CWebModule {
         return true;
     }
 
-    public static function t($a) {
-        return $a;
+    public static function t($str = '', $params = array(), $dic = 'menu') {
+        return Yii::t("AdminModule." . $dic, $str, $params);
     }
 
     public function getMainMenu() {
