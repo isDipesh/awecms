@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs = array(
     'Menus' => array('/' . $this->module->id),
-    $model->menu->name => array('/' . $this->module->id . '/item/' . $model->menu->id),
+    Menu::model()->findByPk($model->menu_id)->name => array('/' . $this->module->id . '/item/' . $model->menu_id),
     Yii::t('app', $model->name)
 );
 ?>

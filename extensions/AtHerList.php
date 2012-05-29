@@ -3,7 +3,7 @@
 class AtHerList extends CWidget {
 
     public $model;
-    public $actid = 2;
+    public $activeId = 2;
     public $id = "at-her-list-1";
     public $css = true;
     private $_processed = array();
@@ -107,7 +107,7 @@ class AtHerList extends CWidget {
     public function getRender($row) {
         $this->_processed[] = $row->id;
         ?>
-        <div style="height:20px;" class="item-wraper <?php echo ($this->actid == $row->id) ? 'active' : ''; ?>">
+        <div style="height:20px;" class="item-wraper <?php echo ($this->activeId == $row->id) ? 'active' : ''; ?>">
             <b><label><?php echo $row->name; ?></label></b>
             <div class="right"><a href="<?php echo Yii::app()->createUrl('/' . Yii::app()->getModule('menu')->id . '/item/edit/' . $row->id); ?>">Edit</a></div>
             <div class="right"><input type="checkbox" disabled="disabled" <?php echo($row->enabled) ? "checked" : ""; ?>/></div>

@@ -3,11 +3,12 @@
 
 class ItemController extends Controller {
 
-    public function actionIndex($id) {
+    public function actionIndex($id, $activeId = '') {
         $model = MenuItem::model()->findAllByAttributes(array('menu_id' => $id));
         $this->render('index', array(
             'model' => $model,
-            'id' => $id
+            'id' => $id,
+            'activeId' => $activeId
         ));
     }
 
@@ -22,11 +23,7 @@ class ItemController extends Controller {
 
             try {
                 if ($model->save()) {
-                    if (isset($_GET['returnUrl'])) {
-                        $this->redirect($_GET['returnUrl']);
-                    } else {
-                        $this->redirect(array('/' . $this->module->id . '/item/' . $model->menu_id));
-                    }
+                    $this->redirect(array('/' . $this->module->id . '/item', 'id' => $model->menu_id, 'activeId' => $model->id));
                 }
             } catch (Exception $e) {
                 $model->addError('', $e->getMessage());
@@ -46,11 +43,7 @@ class ItemController extends Controller {
             $model->parent = $_POST['MenuItem']['parent'];
             try {
                 if ($model->save()) {
-                    if (isset($_GET['returnUrl'])) {
-                        $this->redirect($_GET['returnUrl']);
-                    } else {
-                        $this->redirect(array('view', 'id' => $model->id));
-                    }
+                    $this->redirect(array('/' . $this->module->id . '/item', 'id' => $model->menu_id, 'activeId' => $model->id));
                 }
             } catch (Exception $e) {
                 $model->addError('', $e->getMessage());
@@ -63,15 +56,17 @@ class ItemController extends Controller {
     }
 
     public function actionDelete($id) {
+        $model = $this->loadModel($id);
+        $menuId = $model->menu_id;
         if (Yii::app()->request->isPostRequest) {
             try {
-                $this->loadModel($id)->delete();
+                $model->delete();
             } catch (Exception $e) {
                 throw new CHttpException(500, $e->getMessage());
             }
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
-                $this->redirect(array('/' . $this->module->id . '/item/' . $model->menu_id));
+                $this->redirect(array('/' . $this->module->id . '/item/' . $menuId));
             }
         }
         else

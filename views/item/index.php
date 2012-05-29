@@ -11,7 +11,7 @@ $this->breadcrumbs = array(
 <?php Yii::app()->clientScript->registerScriptFile($this->module->assetsDirectory . "/libs/json/json2.min.js"); ?>
 <?php $this->widget('mext.AtNestedSortable') ?>	
 <?php
-$this->widget('mext.AtHerList', array('model' => $model, 'actid' => ''));
+$this->widget('mext.AtHerList', array('model' => $model, 'activeId' => $activeId));
 ?>
 
 <script type="text/javascript">
