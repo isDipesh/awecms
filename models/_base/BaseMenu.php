@@ -12,7 +12,6 @@
       * @property integer $rtl
       * @property integer $upward
       * @property string $theme
-      * @property string $items
       * @property string $description
  *
  * Relations of table "menu" available as properties of the model:
@@ -30,12 +29,12 @@ abstract class BaseMenu extends CActiveRecord {
 
     public function rules() {
         return array(
-            array('name, description', 'required'),
-            array('enabled, vertical, rtl, upward, theme, items', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('name', 'required'),
+            array('enabled, vertical, rtl, upward, theme, description', 'default', 'setOnEmpty' => true, 'value' => null),
             array('enabled, vertical, rtl, upward', 'numerical', 'integerOnly' => true),
             array('name, theme', 'length', 'max' => 100),
-            array('items', 'safe'),
-            array('id, name, enabled, vertical, rtl, upward, theme, items, description', 'safe', 'on' => 'search'),
+            array('description', 'safe'),
+            array('id, name, enabled, vertical, rtl, upward, theme, description', 'safe', 'on' => 'search'),
         );
     }
     
@@ -51,7 +50,7 @@ abstract class BaseMenu extends CActiveRecord {
 
     public function relations() {
         return array(
-            'menuItem' => array(self::HAS_ONE, 'MenuItem', 'menu_id'),
+            'menuItems' => array(self::HAS_MANY, 'MenuItem', 'menu_id'),
         );
     }
 
@@ -61,10 +60,9 @@ abstract class BaseMenu extends CActiveRecord {
             'name' => Yii::t('app', 'Name'),
             'enabled' => Yii::t('app', 'Enabled'),
             'vertical' => Yii::t('app', 'Vertical'),
-            'rtl' => Yii::t('app', 'Rtl'),
+            'rtl' => Yii::t('app', 'Right to Left'),
             'upward' => Yii::t('app', 'Upward'),
             'theme' => Yii::t('app', 'Theme'),
-            'items' => Yii::t('app', 'Items'),
             'description' => Yii::t('app', 'Description'),
         );
     }
@@ -79,7 +77,6 @@ abstract class BaseMenu extends CActiveRecord {
         $criteria->compare('rtl', $this->rtl);
         $criteria->compare('upward', $this->upward);
         $criteria->compare('theme', $this->theme, true);
-        $criteria->compare('items', $this->items, true);
         $criteria->compare('description', $this->description, true);
 
         return new CActiveDataProvider(get_class($this), array(

@@ -4,8 +4,9 @@ class AjaxController extends Controller {
 
     public function actionSave() {
         print_r($_POST['list']);
+        die();
         $i = 0;
-        foreach ($_GET['listItem'] as $key => $value) {
+        foreach ($_POST['list'] as $key => $value) {
             $item_id = $key;
             $parent_id = $value;
             $order = $i;

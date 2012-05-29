@@ -14,19 +14,15 @@ class MenuModule extends CWebModule {
             'menu.components.*',
         ));
         $this->assetsDirectory = Yii::app()->assetManager->publish(dirname(__FILE__) . '/assets');
-
-        //Yii::app()->clientScript->registerCssFile($assetsDirectory . '/css/blog.css');
-
-
-
-
         Yii::setPathOfAlias('mext', dirname(__FILE__) . '/extensions');
-        Yii::app()->clientScript->registerCssFile($this->assetsDirectory.'/css/menu/menustyle.css');
+        Yii::app()->clientScript->registerCssFile($this->assetsDirectory . '/css/menu/menustyle.css');
     }
 
     public function beforeControllerAction($controller, $action) {
         if (parent::beforeControllerAction($controller, $action)) {
-
+            if (!Yii::app()->getModule('user')->isAdmin()) {
+                throw new CHttpException(403, 'Action is forbidden.');
+            }
             return true;
         }
         else
