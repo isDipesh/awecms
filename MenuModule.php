@@ -2,7 +2,7 @@
 
 class MenuModule extends CWebModule {
 
-    public $defaultController = "list";
+    public $defaultController = "menu";
     public $assetsDirectory;
 
     public function init() {
