@@ -65,16 +65,21 @@ class AtHerList extends CWidget {
             Yii::app()->clientScript->registerCss('AtHerList', $css);
         }
     }
-    
-    public function customSort($a,$b) {
-          return $a->depth>$b->depth;
-     }
+
+    public function depthSort($a, $b) {
+        return $a->depth > $b->depth;
+    }
+
+    public function leftSort($a, $b) {
+        return $a->left > $b->left;
+    }
 
     public function run() {
-        
+
         //sort model first to move deeper items to last
-        usort($this->model, 'self::customSort');
-        
+        usort($this->model, 'self::depthSort');
+        usort($this->model, 'self::leftSort');
+
         echo '<div class="header-wraper" style="height:20px">';
         echo '<span style="padding-left:40px"></span><b>Title</b>';
         echo '<div style="float:right;width:200px;text-align:center;"><b>Active</b></div>';
@@ -84,15 +89,16 @@ class AtHerList extends CWidget {
         foreach ($this->model As $row):
             if (in_array($row->id, $this->_processed))
                 continue;
-
             $this->getRender($row);
             if ($row->children()) {
                 echo "<ol>";
-                $this->getchildren($row->children());
+                $children = $row->children;
+                usort($children, 'self::depthSort');
+                usort($children, 'self::leftSort');
+                $this->getchildren($children);
                 echo "</ol>";
             }
             echo "</li>";
-
         endforeach;
         echo '</ol>';
     }

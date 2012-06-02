@@ -42,19 +42,27 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'parent_id'); ?>
-        <?php echo $form->dropDownList($model, 'parent', CHtml::listData(MenuItem::model()->findAll(), 'id', 'name'), array('prompt' => 'None')); ?>
-        <?php echo $form->error($model, 'parent_id'); ?>
+        <?php //show all menu items but current one
+        $allModels = MenuItem::model()->findAll();
+        foreach ($allModels as $key => $aModel){
+            if ($aModel->id == $model->id)
+                unset($allModels[$key]);
+        }
+        echo $form->dropDownList($model, 'parent', CHtml::listData($allModels, 'id', 'name'), array('prompt' => 'None'));
+        ?>
+<?php echo $form->error($model, 'parent_id'); ?>
     </div><!-- row -->
 
     <?php
+    //menu selection available only for edit
     if (isset($menuId))
         echo $form->hiddenField($model, 'menu', array('value' => $menuId));
     else {
         ?>
         <div class="row">
             <?php echo $form->labelEx($model, 'menu_id'); ?>
-            <?php echo $form->dropDownList($model, 'menu', CHtml::listData(Menu::model()->findAll(), 'id', 'name')); ?>
-            <?php echo $form->error($model, 'menu_id'); ?>
+        <?php echo $form->dropDownList($model, 'menu', CHtml::listData(Menu::model()->findAll(), 'id', 'name')); ?>
+        <?php echo $form->error($model, 'menu_id'); ?>
         </div>
         <?php
     }
