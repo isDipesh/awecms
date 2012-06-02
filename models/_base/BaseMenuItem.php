@@ -90,7 +90,7 @@ abstract class BaseMenuItem extends CActiveRecord {
 
     public function getMaxRight() {
         return Yii::app()->db->createCommand()
-                ->select('MAX(`right`)')
+                ->select('MAX(`rgt`)')
                 ->from($this->tableName())
                 ->queryScalar();
     }

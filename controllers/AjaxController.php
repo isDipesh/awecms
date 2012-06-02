@@ -13,8 +13,8 @@ class AjaxController extends Controller {
             $menuItem = MenuItem::model()->findByPk($item['item_id']);
             $menuItem->parent = $item['parent_id'];
             $menuItem->depth = $item['depth'];
-            $menuItem->left = $item['left'];
-            $menuItem->right = $item['right'];
+            $menuItem->lft = $item['left'];
+            $menuItem->rgt = $item['right'];
             $menuItem->save();
         }
     }

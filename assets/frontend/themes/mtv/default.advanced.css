@@ -84,12 +84,12 @@
 	/* Non-first-level abstract */
 	ul.dropdown ul li.hover,
 	ul.dropdown ul li:hover {
-	 background: #4c4c4c url(../../../../images/mtv.com/comnav-arrowover.png) 100% 50% no-repeat;
+	 background: #4c4c4c url(images/comnav-arrowover.png) 100% 50% no-repeat;
 	}
 
 	ul.dropdown ul ul li.hover,
 	ul.dropdown ul ul li:hover {
-	 background: #595959 url(../../../../images/mtv.com/comnav-arrowover2.png) 100% 50% no-repeat;
+	 background: #595959 url(images/comnav-arrowover2.png) 100% 50% no-repeat;
 	}
 
 
@@ -100,21 +100,19 @@
 	ul.dropdown ul a.open,
 	ul.dropdown ul li:hover > a.dir {
 	 border-top-color: #5b5b5b;
-     background-image: url(../../../../images/mtv.com/comnav-arrowover.png);
+     background-image: url(images/comnav-arrowover.png);
 	}
 
 	ul.dropdown ul ul a.open,
 	ul.dropdown ul ul li:hover > a.dir { /* ? merge with ul.dropdown ul a.dir:hover */
 	 border-top-color: #595959;
-	 background: #595959 url(../../../../images/mtv.com/comnav-arrowover2.png) 100% 50% no-repeat;
+	 background: #595959 url(images/comnav-arrowover2.png) 100% 50% no-repeat;
 	 color: #fff;
 	}
 
 	/* Override UPPER TWO definitions */
 	ul.dropdown ul a.open:hover,
 	ul.dropdown ul li:hover > a.dir:hover { /* ? merge with ul.dropdown ul a.dir:hover */
-	 background: #4698ca url(../../../../images/mtv.com/comnav-arrowon.png) 100% 50% no-repeat;
+	 background: #4698ca url(images/comnav-arrowon.png) 100% 50% no-repeat;
 	 color: #fff;
 	}
-
-

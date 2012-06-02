@@ -22,7 +22,6 @@
 
 
 ul.dropdown {
- background: transparent url(../../../../images/vimeo.com/box1-bottom-left.png) 0 100% no-repeat;
  font: normal 14px/normal Tahoma, Verdana, Arial, Helvetica, sans-serif;
 }
 
@@ -36,12 +35,12 @@ ul.dropdown {
 
 	ul.dropdown li.first {
 	 padding-left: 15px;
-	 background: transparent url(../../../../images/vimeo.com/box1-bottom2.png) 0 100% no-repeat;
+	 background: transparent url(images/box1-bottom2.png) 0 100% no-repeat;
 	}
 
 	ul.dropdown li.last {
 	 padding-right: 15px;
-	 background: transparent url(../../../../images/vimeo.com/box1-bottom2.png) 100% 100% no-repeat;
+	 background: transparent url(images/box1-bottom2.png) 100% 100% no-repeat;
 	}
 
 	ul.dropdown li.hover,
@@ -61,7 +60,7 @@ ul.dropdown {
 	 left: -21px;
 	 width: 150px;
 	 padding: 0 16px;
-	 background: url(../../../../images/vimeo.com/box1-top.png) 50% 0 no-repeat;
+	 background: url(images/box1-top.png) 50% 0 no-repeat;
 	}
 
 	ul.dropdown li.last ul {
@@ -83,13 +82,13 @@ ul.dropdown {
 
 		ul.dropdown ul li.last {
 		 padding-bottom: 10px;
-		 background: transparent url(../../../../images/vimeo.com/box1-bottom.png) 50% 100% no-repeat;
+		 background: transparent url(images/box1-bottom.png) 50% 100% no-repeat;
 		}
 
 		ul.dropdown ul li.first ul {
 		 top: 0;
 		 padding: 0 16px 0 0;
-		 background-image: url(../../../../images/vimeo.com/box1-outwards-top-right.png);
+		 background-image: url(images/box1-outwards-top-right.png);
 		}
 
 		ul.dropdown ul li.first li.first {
@@ -112,12 +111,12 @@ ul.dropdown {
 		 top: -12px;
 		 left: 100%;
 		 padding: 16px 0 0;
-		 background: transparent url(../../../../images/vimeo.com/box1-top-left.png) 0 0 no-repeat;
+		 background: transparent url(images/box1-top-left.png) 0 0 no-repeat;
 		}
 
 			ul.dropdown ul ul li.first {
 			 padding-top: 10px;
-			 background: #172322 url(../../../../images/vimeo.com/box1-top-right.png) 100% 0 no-repeat;
+			 background: #172322 url(images/box1-top-right.png) 100% 0 no-repeat;
 			}
 
 
@@ -139,7 +138,7 @@ ul.dropdown form input.text {
  height: 18px;
  padding: 2px 25px 2px 5px;
  border-width: 0;
- background: transparent url(../../../../images/vimeo.com/bg_search-field.png) 0 0 no-repeat;
+ background: transparent url(images/bg_search-field.png) 0 0 no-repeat;
  color: #969696;
  font: normal 14px/17px Tahoma, Verdana, Arial, Helvetica, sans-serif;
  vertical-align: middle;
@@ -162,7 +161,7 @@ ul.dropdown form input.button {
 
 ul.dropdown *.dir {
  padding-right: 20px;
- background-image: url(../../../../images/vimeo.com/nav-arrow-down.png);
+ background-image: url(images/nav-arrow-down.png);
  background-position: 100% 50%;
  background-repeat: no-repeat;
 }
@@ -172,7 +171,7 @@ ul.dropdown *.dir {
 
 ul.dropdown-horizontal ul *.dir {
  padding-right: 15px;
- background-image: url(../../../../images/vimeo.com/nav-arrow-right.png);
+ background-image: url(images/nav-arrow-right.png);
  background-position: 95% 50%;
  background-repeat: no-repeat;
 }

@@ -23,8 +23,8 @@ class ItemController extends Controller {
             
             //pushing newly added item to last
             $maxRight = $model->getMaxRight();
-            $model->left = $maxRight+1;
-            $model->right = $maxRight+2;
+            $model->lft = $maxRight+1;
+            $model->rgt = $maxRight+2;
 
             try {
                 if ($model->save()) {

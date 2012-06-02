@@ -71,7 +71,7 @@ class AtHerList extends CWidget {
     }
 
     public function leftSort($a, $b) {
-        return $a->left > $b->left;
+        return $a->lft > $b->lft;
     }
 
     public function run() {
