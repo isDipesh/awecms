@@ -20,11 +20,11 @@ class ItemController extends Controller {
                 $model->menu = $_POST['MenuItem']['menu'];
             if (isset($_POST['MenuItem']['parent']))
                 $model->parent = $_POST['MenuItem']['parent'];
-            
+
             //pushing newly added item to last
             $maxRight = $model->getMaxRight();
-            $model->lft = $maxRight+1;
-            $model->rgt = $maxRight+2;
+            $model->lft = $maxRight + 1;
+            $model->rgt = $maxRight + 2;
 
             try {
                 if ($model->save()) {

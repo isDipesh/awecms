@@ -13,32 +13,32 @@
  * @link		http://www.lwis.net/
  * @copyright	2008 Live Web Institute
  *
- */
+*/
 
 @import "default.css";
 
 
 ul.dropdown li a { /* Moved from 'custom' section */
- display: block;
- padding: 7px 12px;
+    display: block;
+    padding: 7px 12px;
 }
 
 
 /* ------------- Override default */
 
 ul.dropdown li {
- padding: 0;
+    padding: 0;
 }
 
 
 /* ------------- Reinitiate default: post-override activities  */
 
 ul.dropdown li.dir {
- padding: 7px 20px 7px 12px;
+    padding: 7px 20px 7px 12px;
 }
 
 ul.dropdown ul li.dir {
- padding-right: 15px;
+    padding-right: 15px;
 }
 
 
@@ -52,17 +52,17 @@ ul.dropdown li {
 /* Especially for IE6 or lower */
 
 ul.dropdown ul a {
- padding: 4px 5px 4px 12px;
- /*width: 139px;*/
+    padding: 4px 5px 4px 12px;
+    /*width: 139px;*/
 }
 
 ul.dropdown ul a:hover {
- padding: 3px 5px 3px 11px;
- border: solid 1px #ddd;
- background-color: #eee;
- font-weight: bold;
+    padding: 3px 5px 3px 11px;
+    border: solid 1px #ddd;
+    background-color: #eee;
+    font-weight: bold;
 }
 
 ul.dropdown ul a.dir {
- /*width: 129px;*/
+    /*width: 129px;*/
 }

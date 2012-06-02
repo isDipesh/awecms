@@ -16,129 +16,129 @@
  * Module Classes: *.dir {} *.on {} *.open {} li.hover {} li.first {} li.last {}
  * Expected directory tag - li
  *
- */
+*/
 
 
 /*------------------------------------------------------------------------------------------------------/
-	@section	Style Framework  */
+        @section	Style Framework  */
 
 
-	/* First-level expected directory tag - li */
+/* First-level expected directory tag - li */
 
-	ul.dropdown li {
-	 padding: 5px;
-	}
+ul.dropdown li {
+    padding: 5px;
+}
 
-	ul.dropdown *.dir {
-	 padding-right: 30px;
-	 background-image: none;
-	 background-position: 100% 50%;
-	 background-repeat: no-repeat;
-	}
+ul.dropdown *.dir {
+    padding-right: 30px;
+    background-image: none;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
 
-		/* Non-first level */
-		ul.dropdown ul *.dir {
-		 padding-right: 15px;
-		 background-image: url(../../../../images/mtv.com/nav-arrow-right.png);
-		 background-position: 100% 50%;
-		 background-repeat: no-repeat;
-		}
+/* Non-first level */
+ul.dropdown ul *.dir {
+    padding-right: 15px;
+    background-image: url(images/nav-arrow-right.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
 
-		ul.dropdown ul ul *.dir {
-		 background-image: url(../../../../images/mtv.com/nav-arrow-right2.png);
-		}
+ul.dropdown ul ul *.dir {
+    background-image: url(images/nav-arrow-right2.png);
+}
 
 
-	/* Components override */
+/* Components override */
 
-	ul.dropdown-vertical *.dir {
-	 background-image: url(../../../../images/mtv.com/nav-arrow-right.png);
-	}
+ul.dropdown-vertical *.dir {
+    background-image: url(images/nav-arrow-right.png);
+}
 
-	ul.dropdown-vertical-rtl *.dir {
-	 padding-right: 15px;
-	 background-image: url(../../../../images/mtv.com/nav-arrow-left.png);
-	 background-position: 0 50%;
-	}
+ul.dropdown-vertical-rtl *.dir {
+    padding-right: 15px;
+    background-image: url(images/nav-arrow-left.png);
+    background-position: 0 50%;
+}
 
 
 
 /*------------------------------------------------------------------------------------------------------/
-	@section	Base Drop-Down Styling  */
+        @section	Base Drop-Down Styling  */
 
 
 
-	/* ALL LEVELS (incl. first) */
+/* ALL LEVELS (incl. first) */
 
-	ul.dropdown {
-	 font: bold 17px/normal Arial, Helvetica, sans-serif;
-	}
+ul.dropdown {
+    font: bold 17px/normal Arial, Helvetica, sans-serif;
+}
 
-		ul.dropdown li {
-		 background-color: #333;
-		 color: #fff;
-		}
+ul.dropdown li {
+    background-color: #333;
+    color: #fff;
+}
 
-		ul.dropdown li.hover,
-		ul.dropdown li:hover {
-		}
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+}
 
-		/* Links */
+/* Links */
 
-		ul.dropdown a:link,
-		ul.dropdown a:visited { color: #fff; text-decoration: none;}
-		ul.dropdown a:hover {
-		 border-top-color: #5db1e0 !important;
-		 border-left-color: #5db1e0;
-		 background-color: #4498c7;
-		 color: #fff;
-		}
+ul.dropdown a:link,
+ul.dropdown a:visited { color: #fff; text-decoration: none;}
+ul.dropdown a:hover {
+    border-top-color: #5db1e0 !important;
+    border-left-color: #5db1e0;
+    background-color: #4498c7;
+    color: #fff;
+}
 
-		ul.dropdown ul a.dir:hover { /* proposal */
-		 background-color: #4698ca;
-		 background-image: url(../../../../images/mtv.com/comnav-arrowon.png);
-		 color: #fff;
-		}
+ul.dropdown ul a.dir:hover { /* proposal */
+    background-color: #4698ca;
+    background-image: url(images/comnav-arrowon.png);
+    color: #fff;
+}
 
-		ul.dropdown a:active {
-		 background: #058acf url(../../../../images/mtv.com/nav-sub-press.png) 0 0 repeat-x !important;
-		 color: #fff;
-		}
+ul.dropdown a:active {
+    background: #058acf url(images/nav-sub-press.png) 0 0 repeat-x !important;
+    color: #fff;
+}
 
 
-		/* NON-FIRST LEVEL */
+/* NON-FIRST LEVEL */
 
-		ul.dropdown ul {
-		 left: auto;
-		 right: 0;
-		 width: 150px;
-		 margin-top: -1px;
-		 border-top: 1px solid #1a1a1a;
-		 border-left: solid 1px #4c4c4c;
-		 font: bold 11px/1em Tahoma, Geneva, Verdana, sans-serif;
-		}
+ul.dropdown ul {
+    left: auto;
+    right: 0;
+    width: 150px;
+    margin-top: -1px;
+    border-top: 1px solid #1a1a1a;
+    border-left: solid 1px #4c4c4c;
+    font: bold 11px/1em Tahoma, Geneva, Verdana, sans-serif;
+}
 
-			ul.dropdown ul li {
-			 background-color: #3a3a3a;
-			}
+ul.dropdown ul li {
+    background-color: #3a3a3a;
+}
 
-		ul.dropdown ul ul {
-		 top: 0;
-		 right: auto;
-		 left: 100%;
-		 margin-top: 0;
-		 border-top: none;
-		 border-left: none;
-		 font-weight: normal;
-		}
+ul.dropdown ul ul {
+    top: 0;
+    right: auto;
+    left: 100%;
+    margin-top: 0;
+    border-top: none;
+    border-left: none;
+    font-weight: normal;
+}
 
-			ul.dropdown ul ul li {
-			 background-color: #4c4c4c;
-			}
+ul.dropdown ul ul li {
+    background-color: #4c4c4c;
+}
 
-		ul.dropdown ul ul ul li {
-		 background-color: #595959;
-		}
+ul.dropdown ul ul ul li {
+    background-color: #595959;
+}
 
 
 
@@ -146,9 +146,9 @@
 
 ul.dropdown li a,
 ul.dropdown *.dir {
- border-style: solid;
- border-width: 1px;
- border-color: #404040 #1a1a1a #1a1a1a #505050;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #404040 #1a1a1a #1a1a1a #505050;
 }
 
 ul.dropdown ul li a,

@@ -13,54 +13,54 @@
  * @link		http://www.lwis.net/
  * @copyright	2008 Live Web Institute
  *
- */
+*/
 
 @import "default.ultimate.css";
 
 
 ul.dropdown {
- width: 760px;
- background: url(../../../../images/default/grad2.png) 0 100% repeat-x;
- border-bottom: solid 1px #ccc;
+    width: 760px;
+    background: url(images/grad2.png) 0 100% repeat-x;
+    border-bottom: solid 1px #ccc;
 }
 
-	ul.dropdown li,
-	ul.dropdown li a {
-	 border: none;
-	 background: url(../../../../images/default/grad2.png) 0 100% repeat-x;
-	}
+ul.dropdown li,
+ul.dropdown li a {
+    border: none;
+    background: url(images/grad2.png) 0 100% repeat-x;
+}
 
-	ul.dropdown li.hover,
-	ul.dropdown li:hover {
-	 background: #f6f6f6;
-	 color: #000;
-	}
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+    background: #f6f6f6;
+    color: #000;
+}
 
-	ul.dropdown li a:active {
-	 background: none;
-	}
+ul.dropdown li a:active {
+    background: none;
+}
 
-	ul.dropdown ul {
-	 width: 760px;
-	 margin-top: -1px;
-	 border-top: solid 1px #ccc;
-	 background-color: #f6f6f6;
-	}
-		
-		ul.dropdown ul li,
-		ul.dropdown ul li a,
-		ul.dropdown ul *.dir {
-		 background: transparent;
-		}
+ul.dropdown ul {
+    width: 760px;
+    margin-top: -1px;
+    border-top: solid 1px #ccc;
+    background-color: #f6f6f6;
+}
 
-		ul.dropdown ul li.hover {
-		 margin: 0;
-		 border: none;
-		}
+ul.dropdown ul li,
+ul.dropdown ul li a,
+ul.dropdown ul *.dir {
+    background: transparent;
+}
 
-		ul.dropdown ul li a:hover {
-		 background-color: #f6f6f6;
-		}
+ul.dropdown ul li.hover {
+    margin: 0;
+    border: none;
+}
+
+ul.dropdown ul li a:hover {
+    background-color: #f6f6f6;
+}
 
 
 
@@ -68,52 +68,52 @@ ul.dropdown {
 
 
 ul.dropdown *.dir {
- border: none;
+    border: none;
 }
 
-	ul.dropdown ul *.dir {
-	 padding-right: 7px;
-	 background: none;
-	}
+ul.dropdown ul *.dir {
+    padding-right: 7px;
+    background: none;
+}
 
 
 
 
 ul.dropdown li.hover *.open {
- position: relative;
- z-index: 600;
- float: left;
- margin: -1px -1px 0;
- border-width: 1px;
- border-color: #ffa500 #ccc #f6f6f6;
- background-color: #f6f6f6;
+    position: relative;
+    z-index: 600;
+    float: left;
+    margin: -1px -1px 0;
+    border-width: 1px;
+    border-color: #ffa500 #ccc #f6f6f6;
+    background-color: #f6f6f6;
 }
 
 ul.dropdown ul li.hover *.open {
- position: static;
- margin: 0;
- padding-left: 8px;
- border: none;
- background-color: transparent;
+    position: static;
+    margin: 0;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
 }
 
 
-	/* CSS 2 Clone */
+/* CSS 2 Clone */
 
-	ul.dropdown li:hover > *.dir {
-	 position: relative;
-	 z-index: 600;
-	 float: left;
-	 margin: -1px -1px 0;
-	 border-width: 1px;
-	 border-color: #ffa500 #ccc #f6f6f6;
-	 background-color: #f6f6f6;
-	}
+ul.dropdown li:hover > *.dir {
+    position: relative;
+    z-index: 600;
+    float: left;
+    margin: -1px -1px 0;
+    border-width: 1px;
+    border-color: #ffa500 #ccc #f6f6f6;
+    background-color: #f6f6f6;
+}
 
-	ul.dropdown ul li:hover > *.dir {
-	 position: static;
-	 margin: 0;
-	 padding-left: 8px;
-	 border: none;
-	 background-color: transparent;
-	}
+ul.dropdown ul li:hover > *.dir {
+    position: static;
+    margin: 0;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+}

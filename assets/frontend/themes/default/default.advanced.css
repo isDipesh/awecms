@@ -13,53 +13,53 @@
  * @link		http://www.lwis.net/
  * @copyright	2008 Live Web Institute
  *
- */
+*/
 
 @import "default.css";
 
 
 /*-------------------------------------------------/
  * @section		Base Style Extension
- */
+*/
 
 ul.dropdown li a {
- display: block;
- padding: 7px 10px;
+    display: block;
+    padding: 7px 10px;
 }
 
 
 /*-------------------------------------------------/
  * @section		Base Style Override
- */
+*/
 
 ul.dropdown li {
- padding: 0;
+    padding: 0;
 }
 
 
 /*-------------------------------------------------/
  * @section		Base Style Reinitiate: post-override activities
- */
+*/
 
 ul.dropdown li.dir {
- padding: 7px 20px 7px 10px;
+    padding: 7px 20px 7px 10px;
 }
 
 ul.dropdown ul li.dir {
- padding-right: 15px;
+    padding-right: 15px;
 }
 
 
 /*-------------------------------------------------/
  * @section		Custom
- */
+*/
 
 ul.dropdown ul a {
- width: 129px;
+    width: 129px;
 }
 
 ul.dropdown ul a:hover {}
 
 ul.dropdown ul a.dir {
- width: 124px;
+    width: 124px;
 }
