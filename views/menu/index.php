@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Menus') => array('/'.$this->module->id),
+    Yii::t('app', 'Menus') => array('/' . $this->module->id),
 );
 ?>
 
@@ -22,10 +22,18 @@ $this->widget('zii.widgets.grid.CGridView', array(
             'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
         ),
         'theme',
-        'description',
+        array(
+            'name'=>'description',
+            'htmlOptions' => array('style' => 'text-align:center;min-width:200px;')
+            ),
         array(
             'class' => 'CButtonColumn',
-            'template' => '{update} {delete}',
+            'template' => '{update} | {delete}',
+            'updateButtonLabel' => 'Menu Settings',
+            'deleteButtonLabel' => 'Delete Menu',
+            'updateButtonImageUrl' => false,
+            'deleteButtonImageUrl' => false,
+            'htmlOptions' => array('style' => 'text-align:center;min-width:160px;')
         ),
         array(
             'type' => 'html',
