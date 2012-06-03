@@ -13,7 +13,7 @@
 
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css?<?php echo time() ?>" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css?<?php echo time() ?>" />
-        
+
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/common.css?<?php echo time() ?>" />
 
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js?<?php echo time() ?>"></script>
@@ -37,25 +37,8 @@
                 ?>
 
             <div id="mainmenu">
-                <?php
-                $this->widget('ext.emenu.EMenu', array('theme' => 'default',
-                    'items' => array(
-                        array('label' => 'Home', 'url' => array('/site/index')),
-                        array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
-                        array('label' => 'Contact', 'url' => array('/site/contact')),
-                        array('label' => 'Login', 'url' => array('/user/login'), 'visible' => Yii::app()->user->isGuest),
-                        array('label' => 'Dashboard', 'url' => array('/admin'), 'visible' => (Yii::app()->hasModule('user') && Yii::app()->getModule('user')->isAdmin())),
-                        array('label' => 'Products', 'url' => array('product/index'), 'items' => array(
-                                array('label' => 'New Arrivals', 'url' => array('product/new', 'tag' => 'new')),
-                                array('label' => 'Most Popular', 'url' => array('product/index', 'tag' => 'popular')),
-                                array('label' => 'Products', 'url' => array('product/index'), 'items' => array(
-                                        array('label' => 'New Arrivals', 'url' => array('product/new', 'tag' => 'new')),
-                                        array('label' => 'Most Popular', 'url' => array('product/index', 'tag' => 'popular')),
-                                )),
-                        )),
-                    ),
-                ));
-                ?>
+                <?php $this->widget('MenuRenderer',array('id'=>1)); ?>
+
             </div><!-- mainmenu -->
 
             <?php if (isset($this->breadcrumbs)): ?>
