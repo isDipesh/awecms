@@ -66,12 +66,16 @@ class AtHerList extends CWidget {
         }
     }
 
-    public function depthSort($a, $b) {
-        return $a->depth > $b->depth;
+    public static function depthSort($a, $b) {
+        //return $a->depth > $b->depth;
     }
 
-    public function leftSort($a, $b) {
+    public static function leftSort($a, $b) {
         return $a->lft > $b->lft;
+    }
+
+    public static function echoer($a) {
+        print_r($a->id);
     }
 
     public function run() {
@@ -93,8 +97,9 @@ class AtHerList extends CWidget {
             if ($row->children()) {
                 echo "<ol>";
                 $children = $row->children;
-                usort($children, 'self::depthSort');
-                usort($children, 'self::leftSort');
+                //array_map('self::echoer',$children);
+                //usort($children, 'self::depthSort');
+                //usort($children, 'self::leftSort');
                 $this->getchildren($children);
                 echo "</ol>";
             }
@@ -104,6 +109,8 @@ class AtHerList extends CWidget {
     }
 
     public function getchildren($model) {
+        usort($model, 'self::leftSort');
+        //array_map('self::echoer', $model);
         foreach ($model As $row):
             $this->getRender($row);
             if ($row->children()) {

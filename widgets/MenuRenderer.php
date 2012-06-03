@@ -50,6 +50,7 @@ class MenuRenderer extends CMenu {
     protected function renderMenuRecursive($items) {
         $count = 0;
         $n = count($items);
+        echo "hey";
         foreach ($items as $item) {
             if ($item == array())
                 continue;
@@ -93,6 +94,7 @@ class MenuRenderer extends CMenu {
 
             echo CHtml::closeTag('li') . "\n";
         }
+        echo "ha";
     }
 
 }
