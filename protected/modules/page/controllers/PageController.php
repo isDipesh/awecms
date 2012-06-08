@@ -11,7 +11,7 @@ class PageController extends Controller {
         
     public function actionView($id) {
         $this->render('view', array(
-                'model' => $this->loadModel($id, 'Page'),
+                'model' => $this->loadModel($id),
         ));
     }
         
@@ -20,9 +20,8 @@ class PageController extends Controller {
                 if (isset($_POST['Page'])) {
             $model->setAttributes($_POST['Page']);
 
-			$model->parent = $_POST['Page']['parent'];
-			$model->user = $_POST['Page']['user'];
-			$model->zeros = $_POST['Page']['zeros'];
+			 if (isset($_POST['Page']['user'])) $model->user = $_POST['Page']['user'];
+			 if (isset($_POST['Page']['parent'])) $model->parent = $_POST['Page']['parent'];
                 
                 try {
                     if($model->save()) {
@@ -47,9 +46,8 @@ class PageController extends Controller {
         
         if(isset($_POST['Page'])) {
             $model->setAttributes($_POST['Page']);
-			$model->parent = $_POST['Page']['parent'];
 			$model->user = $_POST['Page']['user'];
-			$model->zeros = $_POST['Page']['zeros'];
+			$model->parent = $_POST['Page']['parent'];
                 try {
                     if($model->save()) {
                         if (isset($_GET['returnUrl'])) {
@@ -85,7 +83,7 @@ class PageController extends Controller {
         }
         else
             throw new CHttpException(400,
-                Yii::t('app', 'Invalid request. Please do not repeat this request again.'));
+                Yii::t('app', 'Invalid request.'));
     }
                 
     public function actionAdmin() {
@@ -107,13 +105,4 @@ class PageController extends Controller {
             return $model;
     }
 
-
-
-    public function beforeAction($action) {
-            if ($this->module !== null) {
-                    $this->breadcrumbs[$this->module->Id] = array('/'.$this->module->Id);
-            }
-            return true;
-    }
-        
-}//End of Controller Class
+}

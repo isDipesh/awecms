@@ -1,6 +1,6 @@
 <?php
 
-Yii::import('application.models._base.BasePage');
+Yii::import('application.modules.page.models._base.BasePage');
 
 class Page extends BasePage{
     public static function model($className = __CLASS__) {

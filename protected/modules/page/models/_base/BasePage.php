@@ -22,10 +22,9 @@
       * @property integer $views
  *
  * Relations of table "page" available as properties of the model:
+ * @property User $user
  * @property Page $parent
  * @property Page $page
- * @property User $user
- * @property Zero[] $zeros
  */
 abstract class BasePage extends CActiveRecord {
     
@@ -68,10 +67,9 @@ abstract class BasePage extends CActiveRecord {
 
     public function relations() {
         return array(
+            'user' => array(self::BELONGS_TO, 'User', 'user_id'),
             'parent' => array(self::BELONGS_TO, 'Page', 'parent_id'),
             'page' => array(self::HAS_ONE, 'Page', 'parent_id'),
-            'user' => array(self::BELONGS_TO, 'User', 'user_id'),
-            'zeros' => array(self::MANY_MANY, 'Zero', 'page_nm_zero(page_id, zero_id)'),
         );
     }
 

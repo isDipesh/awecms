@@ -3,14 +3,7 @@
 //collection of helper methods
 class Awecms {
 
-    public static function getSiteName() {
-        if (Settings::get('site', 'name'))
-            return Settings::get('site', 'name');
-        else
-            return Yii::app()->name;
-    }
-    
-    public static function getPrimaryKey($ar){
+    public static function getPrimaryKey($ar) {
         return $ar->primaryKey;
     }
 
@@ -130,16 +123,6 @@ class Awecms {
         return $exists ? true : false;
     }
 
-    public static function zdnd($d) {
-        print_r($d);
-        die();
-    }
-
-    public static function x($m) {
-        print_r($m);
-        echo"<br/>";
-    }
-
     public static function getScriptName($path) {
         return basename($path, ".php");
     }
@@ -152,28 +135,6 @@ class Awecms {
         if ($inNewTab)
             $htmlOptions['target'] = '_blank';
         return CHtml::link(CHtml::encode($value), $url, $htmlOptions);
-    }
-
-    public static function debugHead($o) {
-        echo '<script type="text/javascript">
-window.addEventListener("load",
-function(){
-var a="';
-        ob_start();
-        var_dump($o);
-        $op = ob_get_contents();
-        ob_end_clean();
-        $op = str_replace('"', '\"', str_replace(')', '\\)', str_replace('(', '\\(', $op)));
-        $op = str_replace(array("\n"), '--break--', $op);
-        echo $op;
-        echo '";
-var p=a.split("--break--");
-for (var i=0;i<p.length;i++)
-if (p[i]!="") console.log(p[i]);
-}
-
-,false);
-</script>';
     }
 
 }

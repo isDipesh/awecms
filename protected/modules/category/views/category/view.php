@@ -25,5 +25,7 @@ $this->widget('zii.widgets.CDetailView', array(
         'image',
     ),
 ));
+
+$this->widget('Comments', array('model' => $model));
 ?>
 
