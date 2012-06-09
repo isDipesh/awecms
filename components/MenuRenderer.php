@@ -69,14 +69,16 @@ class MenuRenderer extends CMenu {
                     $options['class'].=' ' . implode(' ', $class);
             }
 
+            echo CHtml::openTag('li', $options);
             if (isset($item['items']) && count($item['items']))
+            {   
                 if (empty($options['class']))
                     $options['class'] = ' ' . $this->dirCssClass;
                 else
                     $options['class'].=' ' . $this->dirCssClass;
+            }
 
-            echo CHtml::openTag('li', $options);
-
+            $item['linkOptions'] = $options;
             $menu = $this->renderMenuItem($item);
             if (isset($this->itemTemplate) || isset($item['template'])) {
                 $template = isset($item['template']) ? $item['template'] : $this->itemTemplate;
