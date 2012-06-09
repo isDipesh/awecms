@@ -42,7 +42,7 @@ $config = array(
             ),
         ),
         'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=yc',
+            'connectionString' => 'mysql:host=localhost;dbname=awecms',
             'emulatePrepare' => true,
             'username' => 'root',
             'password' => 'passweird',

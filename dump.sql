@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 09, 2012 at 04:27 PM
+-- Generation Time: Jun 09, 2012 at 04:40 PM
 -- Server version: 5.5.23
 -- PHP Version: 5.4.3
 
@@ -17,8 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `yc`
+-- Database: `awecms`
 --
+CREATE DATABASE `awecms` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `awecms`;
 
 -- --------------------------------------------------------
 
@@ -26,6 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `category`
 --
 
+DROP TABLE IF EXISTS `category`;
 CREATE TABLE IF NOT EXISTS `category` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -47,6 +50,7 @@ INSERT INTO `category` (`id`, `name`, `description`, `image`) VALUES
 -- Table structure for table `comment`
 --
 
+DROP TABLE IF EXISTS `comment`;
 CREATE TABLE IF NOT EXISTS `comment` (
   `id` int(12) NOT NULL AUTO_INCREMENT,
   `owner_id` int(11) NOT NULL,
@@ -111,6 +115,7 @@ INSERT INTO `comment` (`id`, `owner_id`, `owner_name`, `count`, `parent_id`, `cr
 -- Table structure for table `comment_setting`
 --
 
+DROP TABLE IF EXISTS `comment_setting`;
 CREATE TABLE IF NOT EXISTS `comment_setting` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `model` varchar(50) NOT NULL,
@@ -137,6 +142,7 @@ INSERT INTO `comment_setting` (`id`, `model`, `registeredOnly`, `useCaptcha`, `a
 -- Table structure for table `content`
 --
 
+DROP TABLE IF EXISTS `content`;
 CREATE TABLE IF NOT EXISTS `content` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
@@ -171,6 +177,7 @@ INSERT INTO `content` (`id`, `user_id`, `title`, `status`, `created_at`, `modifi
 -- Table structure for table `dashboard`
 --
 
+DROP TABLE IF EXISTS `dashboard`;
 CREATE TABLE IF NOT EXISTS `dashboard` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category` varchar(50) NOT NULL,
@@ -205,6 +212,7 @@ INSERT INTO `dashboard` (`id`, `category`, `name`, `path`, `enabled`) VALUES
 -- Table structure for table `menu`
 --
 
+DROP TABLE IF EXISTS `menu`;
 CREATE TABLE IF NOT EXISTS `menu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
@@ -234,6 +242,7 @@ INSERT INTO `menu` (`id`, `title`, `enabled`, `vertical`, `rtl`, `upward`, `them
 -- Table structure for table `menu_item`
 --
 
+DROP TABLE IF EXISTS `menu_item`;
 CREATE TABLE IF NOT EXISTS `menu_item` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `menu_id` int(11) DEFAULT NULL,
@@ -273,6 +282,7 @@ INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `n
 -- Table structure for table `node`
 --
 
+DROP TABLE IF EXISTS `node`;
 CREATE TABLE IF NOT EXISTS `node` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
@@ -299,6 +309,7 @@ INSERT INTO `node` (`id`, `title`, `id_parent`, `description`, `position`) VALUE
 -- Table structure for table `page`
 --
 
+DROP TABLE IF EXISTS `page`;
 CREATE TABLE IF NOT EXISTS `page` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
@@ -341,6 +352,7 @@ INSERT INTO `page` (`id`, `user_id`, `title`, `content`, `status`, `created_at`,
 -- Table structure for table `page_nm_category`
 --
 
+DROP TABLE IF EXISTS `page_nm_category`;
 CREATE TABLE IF NOT EXISTS `page_nm_category` (
   `page_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
@@ -353,6 +365,7 @@ CREATE TABLE IF NOT EXISTS `page_nm_category` (
 -- Table structure for table `profile`
 --
 
+DROP TABLE IF EXISTS `profile`;
 CREATE TABLE IF NOT EXISTS `profile` (
   `user_id` int(11) NOT NULL,
   `firstname` varchar(255) NOT NULL DEFAULT '',
@@ -377,6 +390,7 @@ INSERT INTO `profile` (`user_id`, `firstname`) VALUES
 -- Table structure for table `profile_field`
 --
 
+DROP TABLE IF EXISTS `profile_field`;
 CREATE TABLE IF NOT EXISTS `profile_field` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `varname` varchar(50) NOT NULL,
@@ -411,6 +425,7 @@ INSERT INTO `profile_field` (`id`, `varname`, `title`, `field_type`, `field_size
 -- Table structure for table `role`
 --
 
+DROP TABLE IF EXISTS `role`;
 CREATE TABLE IF NOT EXISTS `role` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
@@ -434,6 +449,7 @@ INSERT INTO `role` (`id`, `name`, `description`, `active`) VALUES
 -- Table structure for table `setting`
 --
 
+DROP TABLE IF EXISTS `setting`;
 CREATE TABLE IF NOT EXISTS `setting` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category` varchar(64) NOT NULL DEFAULT 'site',
@@ -465,6 +481,7 @@ INSERT INTO `setting` (`id`, `category`, `key`, `value`, `type`) VALUES
 -- Table structure for table `slug`
 --
 
+DROP TABLE IF EXISTS `slug`;
 CREATE TABLE IF NOT EXISTS `slug` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `slug` varchar(100) NOT NULL,
@@ -494,6 +511,7 @@ INSERT INTO `slug` (`id`, `slug`, `path`, `enabled`) VALUES
 -- Table structure for table `test`
 --
 
+DROP TABLE IF EXISTS `test`;
 CREATE TABLE IF NOT EXISTS `test` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL DEFAULT 'myname',
@@ -530,6 +548,7 @@ INSERT INTO `test` (`id`, `name`, `birthdate`, `birthtime`, `enabled`, `status`,
 -- Table structure for table `user`
 --
 
+DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(20) NOT NULL,
@@ -565,6 +584,7 @@ INSERT INTO `user` (`id`, `username`, `password`, `email`, `activkey`, `createti
 -- Table structure for table `user_rel_role`
 --
 
+DROP TABLE IF EXISTS `user_rel_role`;
 CREATE TABLE IF NOT EXISTS `user_rel_role` (
   `user_id` int(11) NOT NULL,
   `role_id` int(11) NOT NULL,
@@ -590,6 +610,7 @@ INSERT INTO `user_rel_role` (`user_id`, `role_id`) VALUES
 -- Table structure for table `widget`
 --
 
+DROP TABLE IF EXISTS `widget`;
 CREATE TABLE IF NOT EXISTS `widget` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) DEFAULT NULL,
@@ -611,6 +632,7 @@ CREATE TABLE IF NOT EXISTS `widget` (
 -- Table structure for table `widget_setting`
 --
 
+DROP TABLE IF EXISTS `widget_setting`;
 CREATE TABLE IF NOT EXISTS `widget_setting` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category` varchar(64) NOT NULL DEFAULT 'site',
