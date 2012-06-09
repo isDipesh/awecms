@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 03, 2012 at 03:09 PM
+-- Generation Time: Jun 09, 2012 at 04:27 PM
 -- Server version: 5.5.23
 -- PHP Version: 5.4.3
 
@@ -48,10 +48,11 @@ INSERT INTO `category` (`id`, `name`, `description`, `image`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `comment` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `owner_id` int(11) NOT NULL,
   `owner_name` varchar(50) NOT NULL,
-  `owner_id` int(12) NOT NULL,
-  `comment_id` int(12) NOT NULL AUTO_INCREMENT,
-  `parent_comment_id` int(12) DEFAULT NULL,
+  `count` int(11) NOT NULL,
+  `parent_id` int(12) DEFAULT NULL,
   `creator_id` int(12) DEFAULT NULL,
   `user_name` varchar(128) DEFAULT NULL,
   `user_email` varchar(128) DEFAULT NULL,
@@ -59,25 +60,76 @@ CREATE TABLE IF NOT EXISTS `comment` (
   `create_time` int(11) DEFAULT NULL,
   `update_time` int(11) DEFAULT NULL,
   `status` int(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`comment_id`),
-  KEY `owner_name` (`owner_name`,`owner_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+  `link` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=168 ;
 
 --
 -- Dumping data for table `comment`
 --
 
-INSERT INTO `comment` (`owner_name`, `owner_id`, `comment_id`, `parent_comment_id`, `creator_id`, `user_name`, `user_email`, `comment_text`, `create_time`, `update_time`, `status`) VALUES
-('Page', 1, 1, 0, 1, NULL, NULL, 'My Comment', 1337625160, 1337678909, 1),
-('Page', 1, 2, 1, 1, NULL, NULL, 'Hohaa', 1337625171, 1337678906, 1),
-('Page', 1, 3, 1, NULL, 'myname', 'xtranophilist@gmail.com', 'text here', 1337625234, NULL, 0),
-('Page', 1, 4, 3, NULL, 'sdf', 'sdfs@dgfdg.com', 'fdfadf', 1337674651, NULL, 0),
-('Page', 1, 5, 1, 1, NULL, NULL, 'dsfrdsgr', 1337674691, NULL, 0),
-('Page', 1, 6, 4, 1, NULL, NULL, 'waef', 1337674697, NULL, 0),
-('Page', 1, 7, 3, 1, NULL, NULL, 'dsfdg', 1337674704, NULL, 0),
-('Page', 1, 8, 0, 1, NULL, NULL, 'next comment', 1337676761, NULL, 0),
-('Page', 1, 9, 0, NULL, 'username', 'email@email.com', 'anonymous', 1337677352, NULL, 0),
-('Page', 1, 10, 1, 1, NULL, NULL, 'okay', 1337680787, NULL, 0);
+INSERT INTO `comment` (`id`, `owner_id`, `owner_name`, `count`, `parent_id`, `creator_id`, `user_name`, `user_email`, `comment_text`, `create_time`, `update_time`, `status`, `link`) VALUES
+(132, 1, 'Page', 10, NULL, 1, '', '', 'no', 1338879845, 1338913155, 2, '/page/page/view/id/1?sid=3'),
+(133, 1, 'Page', 1, 132, 1, NULL, NULL, 'okay', 1338879871, NULL, 1, '/page/page/view/id/1?sid=3'),
+(135, 1, 'Page', 2, NULL, 1, NULL, NULL, 'dang', 1338881485, NULL, 1, '/page/page/view/id/1?sid=3'),
+(136, 1, 'Page', 3, NULL, 1, NULL, NULL, 'pass', 1338881529, NULL, 1, '/comments/comment/postComment'),
+(137, 1, 'Page', 5, NULL, 1, NULL, NULL, 'lala', 1338881611, NULL, 1, '/page/page/view/id/1?sid=3'),
+(138, 1, 'Page', 11, NULL, 1, NULL, NULL, 'next', 1338881988, NULL, 1, '/comments/comment/postComment'),
+(139, 1, 'Page', 12, 138, 1, NULL, NULL, 'a', 1338895435, NULL, 1, '/page/page/view/id/1'),
+(140, 1, 'Page', 13, NULL, 1, NULL, NULL, 'a', 1338895464, NULL, 1, '/page/page/view/id/1'),
+(141, 1, 'Page', 14, 140, 1, NULL, NULL, 'abcaskhdgsa', 1338895471, NULL, 1, '/page/page/view/id/1'),
+(142, 1, 'Page', 15, 141, 1, NULL, NULL, 'dang', 1338895520, NULL, 1, '/page/page/view/id/1'),
+(143, 1, 'Category', 1, NULL, 1, NULL, NULL, 'a', 1338906313, NULL, 1, '/category/category/view/id/1'),
+(144, 1, 'Category', 2, NULL, 1, NULL, NULL, 'a', 1338906325, NULL, 1, '/category/category/view/id/1'),
+(145, 1, 'Category', 3, NULL, 1, NULL, NULL, 'no', 1338906390, NULL, 1, '/category/category/view/id/1'),
+(146, 1, 'Page', 16, 142, 1, NULL, NULL, 'okey', 1338913470, NULL, 1, '/page/page/view/id/1'),
+(147, 1, 'Page', 17, 146, 1, NULL, NULL, 'no', 1338913474, NULL, 1, '/comments/comment/postComment'),
+(148, 1, 'Page', 18, 147, 1, NULL, NULL, 'ha', 1338913478, NULL, 1, '/comments/comment/postComment'),
+(149, 1, 'Page', 19, 148, 1, NULL, NULL, 'na', 1338913481, NULL, 1, '/comments/comment/postComment'),
+(150, 1, 'Page', 20, 149, 1, NULL, NULL, 'na', 1338913485, NULL, 1, '/comments/comment/postComment'),
+(151, 1, 'Page', 21, 150, 1, NULL, NULL, 'ha', 1338913488, NULL, 1, '/comments/comment/postComment'),
+(152, 1, 'Page', 22, 151, 1, '', '', 'akjdhcas askjdgh asdjkhasd asdjh', 1338913495, 1339225347, 1, '/comments/comment/postComment'),
+(153, 1, 'Page', 23, 152, 1, '', '', 'adsssssssssssssssssssssss', 1338913506, 1339225363, 1, '/comments/comment/postComment'),
+(154, 1, 'Page', 24, 153, 1, NULL, NULL, 'adssssssssssss', 1338913518, NULL, 1, '/comments/comment/postComment'),
+(155, 1, 'Page', 25, NULL, NULL, 'My Name', 'My Email', 'haha', 1338914660, NULL, 0, '/page/page/view/id/1'),
+(156, 1, 'Page', 26, NULL, NULL, '', '', 'comment', 1338914687, 1338917214, 2, '/comments/comment/postComment'),
+(157, 1, 'Page', 27, NULL, NULL, '', '', 'a', 1338916997, 1338917127, 1, '/comments/comment/postComment'),
+(158, 1, 'Page', 28, NULL, NULL, '', '', 'nananananana', 1338917013, 1338917051, 1, '/page/page/view/id/1'),
+(159, 1, 'Page', 29, NULL, NULL, '', '', 'aaa', 1338917438, 1338917448, 1, '/page/page/view/id/1'),
+(160, 1, 'Page', 30, NULL, 1, NULL, NULL, 'app', 1338918155, NULL, 1, '/page/page/view/id/1'),
+(161, 1, 'Page', 31, NULL, 1, NULL, NULL, 'what', 1338930849, NULL, 1, '/page/page/view/id/1'),
+(162, 1, 'Page', 32, NULL, NULL, ' name', 'email@email.com', 'text', 1338931087, NULL, 0, '/comments/comment/postComment'),
+(163, 1, 'Page', 33, NULL, 1, NULL, NULL, 'whatn', 1338931105, NULL, 1, '/page/page/view/id/1'),
+(164, 1, 'Page', 34, NULL, 1, NULL, NULL, 'cool', 1338931111, NULL, 1, '/comments/comment/postComment'),
+(165, 1, 'Page', 35, NULL, NULL, 'myname', 'myemail@email.com', 'Great', 1338931371, NULL, 0, '/page/page/view/id/1'),
+(166, 1, 'Page', 36, NULL, NULL, 'myname', 'myemail@email.com', 'Great', 1338931377, NULL, 0, '/page/page/view/id/1'),
+(167, 1, 'Page', 37, NULL, NULL, 'name', 'email@ema.ico', 'done', 1338931426, 1338931439, 1, '/page/page/view/id/1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comment_setting`
+--
+
+CREATE TABLE IF NOT EXISTS `comment_setting` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `model` varchar(50) NOT NULL,
+  `registeredOnly` tinyint(1) NOT NULL DEFAULT '0',
+  `useCaptcha` tinyint(1) NOT NULL DEFAULT '0',
+  `allowSubcommenting` tinyint(1) NOT NULL DEFAULT '1',
+  `premoderate` tinyint(1) NOT NULL DEFAULT '0',
+  `isSuperuser` text,
+  `orderComments` enum('ASC','DESC') NOT NULL DEFAULT 'ASC',
+  `useGravatar` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `comment_setting`
+--
+
+INSERT INTO `comment_setting` (`id`, `model`, `registeredOnly`, `useCaptcha`, `allowSubcommenting`, `premoderate`, `isSuperuser`, `orderComments`, `useGravatar`) VALUES
+(1, 'default', 0, 0, 1, 1, 'Yii::app()->getModule("user")->isAdmin()', 'ASC', 1);
 
 -- --------------------------------------------------------
 
@@ -500,8 +552,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `email`, `activkey`, `createtime`, `lastvisit`, `superuser`, `status`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', 1261146094, 1338650039, 1, 1),
-(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', 1261146096, 1338047660, 0, 1),
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', 1261146094, 1338917026, 1, 1),
+(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', 1261146096, 1338871936, 0, 1),
 (3, 'myuser', '5d5a582e5adf896ed6e1474c700b481a', 'myuser@email.com', '66a6d51638f2ac8efb88898ec73aeab5', 1335991266, 1335991266, 1, 1),
 (4, 'admina', 'a5d5dd525b4dc07b915448482da44974', 'admina@admina.c', '5c7ad3d0afd32f1353ee6bce1f223552', 1336028059, 1336028059, 0, 0),
 (5, 'dipesh', '28e0cf264ca1722298e317c5c1589739', 'dipesh@dipesh.com', 'f78be23ebbc05c13c8693eef8fa56abb', 1336067906, 1336067906, 1, 1),
