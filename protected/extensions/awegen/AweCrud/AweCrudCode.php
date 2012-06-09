@@ -294,5 +294,9 @@ class AweCrudCode extends CrudCode {
         $controller = $modulePrefix . strtolower(substr($relation[1], 0, 1)) . substr($relation[1], 1);
         return $controller;
     }
+    
+    public function hasBooleanColumns(){
+        
+    }
 
 }
