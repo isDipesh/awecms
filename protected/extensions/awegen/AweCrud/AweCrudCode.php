@@ -10,7 +10,7 @@ class AweCrudCode extends CrudCode {
     public $identificationColumn = '';
     public $isJToggleColumnEnabled = true;
     public $dateTypes = array('datetime', 'date', 'time', 'timestamp');
-    public $booleanTypes = array('tinyint(1)', 'boolean', 'bool');
+    public $booleanTypes = array('tinyint(1)', 'boolean', 'bool', 'bit');
     public $emailFields = array('email', 'e-mail', 'email_address', 'e-mail_address', 'emailaddress', 'e-mailaddress');
     public $imageFields = array('image', 'picture', 'photo', 'pic', 'profile_pic', 'profile_picture', 'avatar', 'profilepic', 'profilepicture');
     public $urlFields = array('url', 'link', 'uri', 'homepage', 'webpage', 'website', 'profile_url', 'profile_link');
@@ -294,9 +294,12 @@ class AweCrudCode extends CrudCode {
         $controller = $modulePrefix . strtolower(substr($relation[1], 0, 1)) . substr($relation[1], 1);
         return $controller;
     }
-    
-    public function hasBooleanColumns(){
-        
+
+    public function hasBooleanColumns($columns) {
+        foreach ($columns as $column)
+            if (in_array(strtolower($column->dbType), $this->booleanTypes))
+                return true;
+        return false;
     }
 
 }
