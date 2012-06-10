@@ -11,8 +11,9 @@ $this->breadcrumbs = array(
 $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
     'id' => 'code_dialog',
     'options' => array(
-        'title' => 'Code for menu generation',
+        'title' => 'Copy the following code to appropriate place in your view or layout file:',
         'autoOpen' => false,
+        'width' => 800
     ),
 ));
 echo "
