@@ -6,6 +6,21 @@ $this->breadcrumbs = array(
 
 <h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Menus'); ?> </h1>
 <?php echo CHtml::link(Yii::t('app', 'Create New Menu'), $this->createUrl('create'), array('class' => 'search-button')); ?>
+
+<?php
+$this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+    'id' => 'code_dialog',
+    'options' => array(
+        'title' => 'Code for menu generation',
+        'autoOpen' => false,
+    ),
+));
+echo "
+    &lt;?php \$this-&gt;widget('MenuRenderer', array('id'=&gt;<span id=\"menu_id\">1</span>)); ?&gt;";
+$this->endWidget('zii.widgets.jui.CJuiDialog');
+?>
+
+
 <?php
 $this->widget('zii.widgets.grid.CGridView', array(
     'id' => 'menu-grid',
@@ -23,9 +38,9 @@ $this->widget('zii.widgets.grid.CGridView', array(
         ),
         'theme',
         array(
-            'name'=>'description',
+            'name' => 'description',
             'htmlOptions' => array('style' => 'text-align:center;min-width:200px;')
-            ),
+        ),
         array(
             'class' => 'CButtonColumn',
             'template' => '{update} | {delete}',
@@ -38,6 +53,11 @@ $this->widget('zii.widgets.grid.CGridView', array(
         array(
             'type' => 'html',
             'value' => 'CHtml::link(MenuModule::t("Edit Menu Items"),"' . $this->createUrl('/' . $this->module->id . '/item') . '/". ' . '$data->id)',
+            'htmlOptions' => array('style' => 'min-width:100px;')
+        ),
+        array(
+            'type' => 'raw',
+            'value' => 'CHtml::link(CHtml::link("Get Code", "#", array("onclick" => "$(\"#code_dialog\").dialog(\"open\"); $(\"#menu_id\").html($data->id); return false;")))',
             'htmlOptions' => array('style' => 'min-width:100px;')
         ),
     ),
