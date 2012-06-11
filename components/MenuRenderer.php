@@ -8,6 +8,7 @@ class MenuRenderer extends CMenu {
     public $firstItemCssClass = 'first';
     public $lastItemCssClass = 'last';
     public $dirCssClass = 'dir';
+    public $append = array();
 
     public function init() {
         $menu = Menu::model()->findByPk($this->id);
@@ -31,7 +32,10 @@ class MenuRenderer extends CMenu {
 
         $this->htmlOptions['class'] = implode(' ', $class);
 
-        $this->items = $menu->items;
+        $this->items = array_merge($menu->items, $this->append);
+
+
+
 
         $basedir = dirname(__FILE__) . '/../assets/frontend';
         $baseUrl = Yii::app()->getAssetManager()->publish($basedir);
@@ -70,8 +74,7 @@ class MenuRenderer extends CMenu {
             }
 
             echo CHtml::openTag('li', $options);
-            if (isset($item['items']) && count($item['items']))
-            {   
+            if (isset($item['items']) && count($item['items'])) {
                 if (empty($options['class']))
                     $options['class'] = ' ' . $this->dirCssClass;
                 else

@@ -54,6 +54,7 @@
         <?php echo $form->textArea($model, 'description', array('rows' => 6, 'cols' => 50)); ?>
         <?php echo $form->error($model, 'description'); ?>
     </div><!-- row -->
+    
     <?php
     echo CHtml::submitButton(Yii::t('app', 'Save'));
     echo CHtml::Button(Yii::t('app', 'Cancel'), array(
