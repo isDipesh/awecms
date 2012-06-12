@@ -20,15 +20,16 @@ a{
 header{
     background: #2F383D;
     box-shadow: 0px 1px 4px #000;
-    left: 0;
-    right: 0;
-    height: 40px;
     padding: 0px 4px;
     color: #fff;
 }
 
 header #title{
     float:left;
+}
+
+#admin_menu{
+    clear:both;
 }
 
 header #title a{

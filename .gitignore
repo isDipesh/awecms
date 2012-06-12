@@ -1,8 +1,6 @@
 assets/*
+!assets/.gitignore
 protected/runtime/*
-protected/data/*.db
+!protected/runtime/.gitignore
 protected/tests/report/*
 *.swp
-/protected/modules/cms/messages/.svn/
-/.quarantine/
-/protected/extensions/atMenu/at-menu/.hg/

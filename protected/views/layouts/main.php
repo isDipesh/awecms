@@ -37,7 +37,7 @@
                 ?>
 
             <div id="mainmenu">
-                <?php $this->widget('MenuRenderer',array('id'=>1)); ?>
+                <?php $this->widget('MenuRenderer', array('id'=>1)); ?>
 
             </div><!-- mainmenu -->
 
