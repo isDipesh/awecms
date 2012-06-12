@@ -79,6 +79,7 @@ $config = array(
     ),
 );
 
+//autoload modules and load config from each module
 $modules_dir = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'modules' . DIRECTORY_SEPARATOR;
 $handle = opendir($modules_dir);
 while (false !== ($file = readdir($handle))) {
@@ -89,5 +90,14 @@ while (false !== ($file = readdir($handle))) {
     }
 }
 closedir($handle);
+
+//$arr = array();
+//foreach (glob(dirname(__FILE__) . '/../modules/*', GLOB_ONLYDIR) as $moduleDirectory) {
+//    $arr[] = $moduleDirectory;
+//    $this->setModules(array(basename($moduleDirectory)));
+//}
+//
+//print_r($arr);
+////die();
 
 return $config;
