@@ -31,7 +31,7 @@ class Awecms extends CWebApplication {
         foreach (glob(dirname(__FILE__) . '/protected/modules/*', GLOB_ONLYDIR) as $moduleDirectory) {
             $this->setModules(array(basename($moduleDirectory)));
             $configFile = $moduleDirectory . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'main.php';
-            //if (file_exists($configFile))
+            if (file_exists($configFile))
                 $modulesConfig = CMap::mergeArray($modulesConfig, require ($configFile));
         }
         $this->configure(CMap::mergeArray($modulesConfig, require($this->config)));
