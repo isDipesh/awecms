@@ -1,3 +1,4 @@
+<?php $start_time = microtime(TRUE); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
@@ -37,7 +38,7 @@
                 ?>
 
             <div id="mainmenu">
-                <?php $this->widget('MenuRenderer', array('id'=>1)); ?>
+                <?php $this->widget('MenuRenderer', array('id' => 1)); ?>
 
             </div><!-- mainmenu -->
 
@@ -60,9 +61,11 @@
             ?> by My Company.<br/>
                 All Rights Reserved.<br/>
                 <?php echo Yii::powered(); ?>
+                <?php echo 'Page generated in ' . round((microtime(TRUE) - $start_time), 4) . ' seconds using ' . round(memory_get_peak_usage(true)/1048576,2) . ' MB of memory!'; ?>
             </div><!-- footer -->
 
         </div><!-- page -->
 
     </body>
 </html>
+
