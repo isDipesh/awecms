@@ -34,20 +34,15 @@ class MenuRenderer extends CMenu {
 
         $this->items = array_merge($menu->items, $this->append);
 
-
-
-
         $basedir = dirname(__FILE__) . '/../assets/frontend';
         $baseUrl = Yii::app()->getAssetManager()->publish($basedir);
 
         Yii::app()->getClientScript()->registerCSSFile($baseUrl . '/css/' . $cssFile)
                 ->registerCSSFile($baseUrl . '/themes/' . $menu->theme . '/default.css');
 
-
         //ToDo: these should added just for IE7, i don't know how to do this
 //            Yii::app()->getClientScript()->registerCoreScript('jquery')
 //                                            ->registerScriptFile($baseUrl.'/js/jquery.dropdown.js');
-
         parent::init();
     }
 
