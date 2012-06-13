@@ -24,6 +24,14 @@ class Controller extends CController {
      */
     public $breadcrumbs = array();
 
+    public function init() {
+        //if the request originates from admin module
+        if (substr(Yii::app()->getRequest()->pathInfo, 0, 5) == 'admin') {
+            $this->layout = 'application.modules.admin.views.layouts.main';
+        }
+        parent::init();
+    }
+
     public function actionToggle($id, $attribute, $model) {
         if (Yii::app()->request->isPostRequest) {
             // we only allow deletion via POST request
@@ -39,18 +47,6 @@ class Controller extends CController {
         else
             throw new CHttpException(400, 'Invalid request. Please do not repeat this request again.');
     }
-
-//    public function getPageTitle() {
-//        if ($this->_pageTitle !== null)
-//            return $this->_pageTitle;
-//        else {
-//            $name = ucfirst(basename($this->getId()));
-//            if ($this->getAction() !== null && strcasecmp($this->getAction()->getId(), $this->defaultAction))
-//                return $this->_pageTitle = Awecms::getSiteName() . ' - ' . ucfirst($this->getAction()->getId()) . ' ' . $name;
-//            else
-//                return $this->_pageTitle = Awecms::getSiteName() . ' - ' . $name;
-//        }
-//    }
 
     protected function performAjaxValidation($model) {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'page-form') {

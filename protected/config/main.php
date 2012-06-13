@@ -18,11 +18,6 @@ $config = array(
         'ext.gtc.components.*',
         'ext.giix-components.*', // giix components
     ),
-    'behaviors' => array(
-    // ...
-    ),
-    'aliases' => array(
-    ),
     // application components
     'components' => array(
         'assetManager' => array(
@@ -78,26 +73,5 @@ $config = array(
         ),
     ),
 );
-
-//autoload modules and load config from each module
-$modules_dir = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'modules' . DIRECTORY_SEPARATOR;
-$handle = opendir($modules_dir);
-while (false !== ($file = readdir($handle))) {
-    if ($file != "." && $file != ".." && is_dir($modules_dir . $file)) {
-        $configFile = $modules_dir . $file . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'main.php';
-        if (file_exists($configFile))
-            $config = CMap::mergeArray($config, require ($configFile));
-    }
-}
-closedir($handle);
-
-//$arr = array();
-//foreach (glob(dirname(__FILE__) . '/../modules/*', GLOB_ONLYDIR) as $moduleDirectory) {
-//    $arr[] = $moduleDirectory;
-//    $this->setModules(array(basename($moduleDirectory)));
-//}
-//
-//print_r($arr);
-////die();
 
 return $config;
