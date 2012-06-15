@@ -17,8 +17,8 @@ class AweUrlManager extends CUrlManager {
             else if (isset($params['manufacturer']))
                 return $params['manufacturer'];
         }
-        $this->rules['login/*'] = 'resellersite/customerLogin';
-        return $route;  // this rule does not apply
+        //$this->rules['login/*'] = 'resellersite/customerLogin';
+        return parent::createUrl($route, $params, $ampersand);
     }
 
     public function parseUrl($request) {
@@ -26,7 +26,8 @@ class AweUrlManager extends CUrlManager {
 //            $finalRoute = str_replace('admin/', '', $request->pathInfo);
 //            return $finalRoute;
 //        }
-        return $request->pathInfo;  // this rule does not apply
+        //return $request->pathInfo;  // this rule does not apply
+        return parent::parseUrl($request);
     }
 
 }

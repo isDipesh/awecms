@@ -18,15 +18,15 @@ return array(
             # automatically login from registration
             'autoLogin' => true,
             # registration path
-            'registrationUrl' => array('/user/registration'),
+            'registrationUrl' => array('/registration'),
             # recovery password path
             'recoveryUrl' => array('/user/recovery'),
             # login form path
-            'loginUrl' => array('/slogin'),
+            'loginUrl' => array('/login'),
             # page after login
-            'returnUrl' => array('/user/profile'),
+            #'returnUrl' => '/index.php',
             # page after logout
-            'returnLogoutUrl' => array('/user/login'),
+            'returnLogoutUrl' => array('/index.php'),
         )
     ),
     'components' => array(
