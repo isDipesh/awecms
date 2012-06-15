@@ -34,7 +34,7 @@ class UserLogin extends CFormModel
 	public function attributeLabels()
 	{
 		return array(
-			'rememberMe'=>UserModule::t("Remember me"),
+			'rememberMe'=>UserModule::t("Remember me next time"),
 			'username'=>UserModule::t("Username or E-mail"),
 			'password'=>UserModule::t("Password"),
 		);
@@ -53,7 +53,7 @@ class UserLogin extends CFormModel
 			switch($identity->errorCode)
 			{
 				case UserIdentity::ERROR_NONE:
-					$duration=$this->rememberMe ? 3600*24*30 : 0; // 30 days
+					$duration=$this->rememberMe ? Yii::app()->controller->module->rememberMeTime : 0;
 					Yii::app()->user->login($identity,$duration);
 					break;
 				case UserIdentity::ERROR_EMAIL_INVALID:

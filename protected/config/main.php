@@ -29,6 +29,7 @@ $config = array(
         'urlManager' => array(
             'showScriptName' => false, //hides index.php in URL
             'caseSensitive' => true,
+            'class'=>'application.components.AweUrlManager',
             'urlFormat' => 'path',
             'rules' => array(
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',

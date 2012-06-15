@@ -1,7 +1,7 @@
 <?php
 
 return array(
-    'modules' => array(
-        'admin'
+    'import' => array(
+        'application.modules.admin.models.*',
     ),
 );

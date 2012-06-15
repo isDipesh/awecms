@@ -26,7 +26,8 @@ class Controller extends CController {
 
     public function init() {
         //if the request originates from admin module
-        if (substr(Yii::app()->getRequest()->pathInfo, 0, 5) == 'admin') {
+        if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/') {
+            Yii::import('application.modules.admin.AdminModule');
             $this->layout = 'application.modules.admin.views.layouts.main';
         }
         parent::init();

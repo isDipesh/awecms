@@ -3,6 +3,7 @@
 class Aweapp extends CWebApplication {
 
     public $config;
+    public $error;
 
     public function __construct($config = null) {
         $this->config = $config;

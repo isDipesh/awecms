@@ -20,7 +20,9 @@ class AdminModule extends CWebModule {
 
     public function beforeControllerAction($controller, $action) {
         if (!Yii::app()->getModule('user')->isAdmin()) {
-            $controller->redirect('/login');
+            if (Yii::app()->user->isGuest)
+                $controller->redirect('/login');
+            throw new AweException(403);
         }
         $controller->layout = 'main';
         return true;

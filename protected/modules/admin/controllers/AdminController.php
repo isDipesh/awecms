@@ -8,7 +8,7 @@ class AdminController extends Controller {
 
     public function actionHandleRequests() {
         //cut off the admin part from requested path and forward to it
-        $this->forward(str_replace('admin', '', Yii::app()->getRequest()->pathInfo));
+        $this->forward(str_replace('admin/', '/', Yii::app()->getRequest()->pathInfo));
     }
 
 }

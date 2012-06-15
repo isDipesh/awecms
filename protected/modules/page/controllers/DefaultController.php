@@ -1,5 +1,5 @@
 <?php
-class PageController extends Controller {
+class DefaultController extends Controller {
 
 
     public function actionIndex() {

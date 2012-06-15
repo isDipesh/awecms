@@ -1,10 +1,18 @@
 <?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Profile");
 $this->breadcrumbs=array(
-	Yii::t('app', 'Profile')=>array('profile'),
-	Yii::t('app', 'Edit'),
+	UserModule::t("Profile")=>array('profile'),
+	UserModule::t("Edit"),
 );
-?><h2><?php echo UserModule::t('Edit profile'); ?></h2>
-<?php echo $this->renderPartial('menu'); ?>
+$this->menu=array(
+	((UserModule::isAdmin())
+		?array('label'=>UserModule::t('Manage Users'), 'url'=>array('/user/admin'))
+		:array()),
+    array('label'=>UserModule::t('List User'), 'url'=>array('/user')),
+    array('label'=>UserModule::t('Profile'), 'url'=>array('/user/profile')),
+    array('label'=>UserModule::t('Change password'), 'url'=>array('changepassword')),
+    array('label'=>UserModule::t('Logout'), 'url'=>array('/user/logout')),
+);
+?><h1><?php echo UserModule::t('Edit profile'); ?></h1>
 
 <?php if(Yii::app()->user->hasFlash('profileMessage')): ?>
 <div class="success">
@@ -12,13 +20,13 @@ $this->breadcrumbs=array(
 </div>
 <?php endif; ?>
 <div class="form">
-<?php $form=$this->beginWidget('UActiveForm', array(
+<?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'profile-form',
 	'enableAjaxValidation'=>true,
 	'htmlOptions' => array('enctype'=>'multipart/form-data'),
 )); ?>
 
-	<p class="note"><?php echo Yii::t('app', 'Fields with <span class="required">*</span> are required.'); ?></p>
+	<p class="note"><?php echo UserModule::t('Fields with <span class="required">*</span> are required.'); ?></p>
 
 	<?php echo $form->errorSummary(array($model,$profile)); ?>
 
@@ -30,8 +38,8 @@ $this->breadcrumbs=array(
 	<div class="row">
 		<?php echo $form->labelEx($profile,$field->varname);
 		
-		if ($field->widgetEdit($profile)) {
-			echo $field->widgetEdit($profile);
+		if ($widgetEdit = $field->widgetEdit($profile)) {
+			echo $widgetEdit;
 		} elseif ($field->range) {
 			echo $form->dropDownList($profile,$field->varname,Profile::range($field->range));
 		} elseif ($field->field_type=="TEXT") {
@@ -58,7 +66,7 @@ $this->breadcrumbs=array(
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('app', 'Save')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? UserModule::t('Create') : UserModule::t('Save')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
