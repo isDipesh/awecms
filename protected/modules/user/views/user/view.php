@@ -4,7 +4,11 @@ $this->breadcrumbs = array(
     $model->username,
 );
 $this->menu = array(
-    array('label' => UserModule::t('List User'), 'url' => array('index')),
+    array('label' => UserModule::t('List Users'), 'url' => array('/user')),
+    array('label' => UserModule::t('Manage Users'), 'url' => array('/user/admin')),
+    array('label' => UserModule::t('Create User'), 'url' => array('/user/admin/create')),
+    array('label' => UserModule::t('Manage Profile Fields'), 'url' => array('/user/profileField')),
+    array('label' => UserModule::t('Create Profile Field'), 'url' => array('/user/profileField/create')),
 );
 ?>
 <h1><?php echo UserModule::t('View User') . ' "' . $model->username . '"'; ?></h1>

@@ -21,31 +21,24 @@
                 <nav id="header_right">
                     <ul id="header_links">
                         <li><?php echo AdminModule::t('Welcome') . ' ' . Yii::app()->user->name; ?></li> |
-                        <li><?php echo CHtml::link(AdminModule::t('Account Settings'), array('/profile/edit')); ?></li> |
-                        <li><?php echo CHtml::link(AdminModule::t('Visit Website'), array('/')); ?></li> |
+                        <li><?php echo CHtml::link(AdminModule::t('Account Settings'), array('/user/profile/edit')); ?></li> |
+                        <li><?php echo CHtml::link(AdminModule::t('Visit Website'), '/'); ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Logout'), array('/user/logout')); ?></li>
                     </ul>
                 </nav>
                 <nav id="admin_menu">
                     <?php
-                    $this->widget('MenuRenderer', array('id' => 3, 'append' => array(array(
-                                'label' => 'Menu',
-                                'url' => '/path'
+                    $this->widget(
+                            'MenuRenderer', array('id' => 3, 'append' => array(
+                            array(
+                                'label' => 'Settings',
+                                'items' => Admin::getSettings(),
                             ),
                             array(
-                                'label' => 'Parent',
-                                'url' => 'a',
-                                'items' => array(
-                                    array(
-                                        'label' => 'Submenu',
-                                        'url' => 'http://google.com',
-                                    ),
-                                    array(
-                                        'label' => 'Super-submenu',
-                                        'url' => 'http://github.com/awecms'
-                                    ),
-                                ),
-                        ))
+                                'label' => 'Modules',
+                                'items' => Admin::getLinkForModules()
+                            ),
+                        )
                             )
                     );
                     ?>

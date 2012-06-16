@@ -7,8 +7,8 @@ class AweUrlManager extends CUrlManager {
     public $connectionID = 'db';
 
     public function createUrl($route, $params = array(), $ampersand = '&') {
-        //return false;
-        if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/') {
+        //for admin and admin/*
+        if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/' || Yii::app()->getRequest()->pathInfo == 'admin') {
             return '/admin' . parent::createUrl($route, $params, $ampersand);
         }
         if ($route === 'car/index') {

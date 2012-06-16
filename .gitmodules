@@ -1,6 +1,12 @@
 [submodule "protected/modules/menu"]
 	path = protected/modules/menu
 	url = git@github.com:awecms/menu.git
-[submodule "protected/modules/admin.git"]
+[submodule "protected/modules/admin"]
 	path = protected/modules/admin
-	url = git@github.com:awecms/admin.git
+	url = protected/modules/admin.git
+[submodule "protected/modules/comments"]
+        path = protected/modules/comments
+        url = git@github.com:awecms/comments.git
+[submodule "protected/modules/role"]
+        path = protected/modules/role
+        url = git@github.com:awecms/role.git

@@ -67,13 +67,13 @@
 	padding-bottom: 2px;
 }
 
-.operations li a
+.operations li
 {
 	font: bold 12px Arial;
 	color: #0066A4;
 	display: block;
 	padding: 2px 0 2px 8px;
-	line-height: 15px;
+	line-height: 30px;
 	text-decoration: none;
 }
 
