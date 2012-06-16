@@ -32,7 +32,7 @@ return array(
     'components' => array(
         'urlManager' => array(
             'rules' => array(
-                '<_a:(login|registration|profile.*|logout)>' => 'user/<_a>',
+                '<_a:(login|registration|logout)>' => 'user/<_a>',
             ),
         ),
         'user' => array(

@@ -6,12 +6,4 @@ class AweAdminController extends Controller {
         $this->render('/index');
     }
 
-    public function actionHandleRequests() {
-        //cut off the admin part from requested path and forward to it
-        $route = str_replace('admin/', '/', Yii::app()->getRequest()->pathInfo);
-        print_r($route);
-//        die();
-        $this->forward($route);
-    }
-
 }

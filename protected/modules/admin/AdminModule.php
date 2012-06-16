@@ -13,7 +13,8 @@ class AdminModule extends CWebModule {
 
         Yii::app()->setComponents(array(
             'errorHandler' => array(
-                'errorAction' => 'admin/AweAdmin/handleRequests',
+                //'errorAction' => 'admin/AweAdmin/handleRequests',
+                'class'=>'application.modules.admin.components.ErrorHandler',
             ),
         ));
     }
