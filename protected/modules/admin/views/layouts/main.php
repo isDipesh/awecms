@@ -57,19 +57,29 @@
             ?>
             <nav id="left_sidebar">
                 <?php
-                $this->widget('zii.widgets.jui.CJuiAccordion', array(
-                    'panels' => Admin::getDashboardMenu(),
-                    'options' => array(
-                        'collapsible' => true,
-                        'active' => 0,
-                        'animated' => 'slide',
-                        'navigation' => true,
-                        'collapsible' => false,
-                    ),
-                    'htmlOptions' => array(
-                        'style' => 'width:220px;'
-                    ),
+//                $this->widget('zii.widgets.jui.CJuiAccordion', array(
+//                    'panels' => Admin::getDashboardMenu(),
+//                    'options' => array(
+//                        'collapsible' => true,
+//                        'active' => 0,
+//                        'animated' => 'slide',
+//                        'navigation' => true,
+//                        'collapsible' => false,
+//                    ),
+//                    'htmlOptions' => array(
+//                        'style' => 'width:220px;'
+//                    ),
+//                ));
+                ?>
+                <?php
+                $this->beginWidget('zii.widgets.CPortlet', array(
+                    'title' => 'Operations',
                 ));
+                $this->widget('zii.widgets.CMenu', array(
+                    'items' => $this->menu,
+                    'htmlOptions' => array('class' => 'operations'),
+                ));
+                $this->endWidget();
                 ?>
 
 
@@ -77,16 +87,7 @@
 
             <div id="main_wrapper">
                 <div class="right" style="overflow: auto">
-                    <?php
-                    $this->beginWidget('zii.widgets.CPortlet', array(
-                        'title' => 'Operations',
-                    ));
-                    $this->widget('zii.widgets.CMenu', array(
-                        'items' => $this->menu,
-                        'htmlOptions' => array('class' => 'operations'),
-                    ));
-                    $this->endWidget();
-                    ?>
+
                 </div>
                 <?php if (isset($this->breadcrumbs)): ?>
                     <?php
