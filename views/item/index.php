@@ -3,6 +3,10 @@ $this->breadcrumbs = array(
     'Menus' => array('/' . $this->module->id),
     Menu::model()->findByPk($id)->name
 );
+$this->menu = array(
+    array('label' => MenuModule::t('Manage Menus'), 'url' => array('/menu')),
+    array('label' => MenuModule::t('Create New Menu'), 'url' => array('/menu/menu/create')),
+);
 ?>
 
 <a href="<?php echo $this->createUrl('/' . $this->module->id . '/item/create/' . $id); ?>"><?php echo MenuModule::t("Create New Menu Item", array(), "actions"); ?></a>

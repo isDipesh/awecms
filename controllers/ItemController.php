@@ -3,7 +3,8 @@
 
 class ItemController extends Controller {
 
-    public function actionIndex($id, $activeId = '') {
+    public function actionIndex($id) {
+        $activeId = isset($_GET['activeId']) ? $_GET['activeId'] : '';
         $model = MenuItem::model()->findAllByAttributes(array('menu_id' => $id));
         $this->render('index', array(
             'model' => $model,

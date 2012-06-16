@@ -4,6 +4,10 @@ $this->breadcrumbs = array(
     Menu::model()->findByPk($model->menu_id)->name => array('/' . $this->module->id . '/item/' . $model->menu_id),
     Yii::t('app', $model->name)
 );
+$this->menu = array(
+    array('label' => MenuModule::t('Manage Menus'), 'url' => array('/menu')),
+    array('label' => MenuModule::t('Create New Menu'), 'url' => array('/menu/menu/create')),
+);
 ?>
 
 <h1> <?php echo Yii::t('app', 'Edit'); ?> <?php echo $model->name; ?> </h1>

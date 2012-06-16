@@ -2,6 +2,10 @@
 $this->breadcrumbs = array(
     Yii::t('app', 'Menus') => array('/' . $this->module->id),
 );
+$this->menu = array(
+    array('label' => MenuModule::t('Manage Menus')),
+    array('label' => MenuModule::t('Create New Menu'), 'url' => array('/menu/menu/create')),
+);
 ?>
 
 <h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Menus'); ?> </h1>
