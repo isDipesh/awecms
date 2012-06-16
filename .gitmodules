@@ -1,3 +1,6 @@
 [submodule "protected/modules/menu"]
 	path = protected/modules/menu
-	url = git@github.com:xtranophilist/yii-menu.git
+	url = git@github.com:awecms/menu.git
+[submodule "protected/modules/admin.git"]
+	path = protected/modules/admin
+	url = git@github.com:awecms/admin.git
