@@ -26,7 +26,7 @@ return array(
             # page after login
             #'returnUrl' => '/index.php',
             # page after logout
-            'returnLogoutUrl' => array('/index.php'),
+            #'returnLogoutUrl' => array('/..'),
         )
     ),
     'components' => array(

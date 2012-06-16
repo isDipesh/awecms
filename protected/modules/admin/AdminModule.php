@@ -3,7 +3,7 @@
 class AdminModule extends CWebModule {
 
     public $menuItems = array();
-    public $defaultController = 'admin';
+    public $defaultController = 'AweAdmin';
 
     public function init() {
         $this->setImport(array(
@@ -13,15 +13,17 @@ class AdminModule extends CWebModule {
 
         Yii::app()->setComponents(array(
             'errorHandler' => array(
-                'errorAction' => 'admin/admin/handleRequests',
+                'errorAction' => 'admin/AweAdmin/handleRequests',
             ),
         ));
     }
 
     public function beforeControllerAction($controller, $action) {
         if (!Yii::app()->getModule('user')->isAdmin()) {
-            if (Yii::app()->user->isGuest)
+            if (Yii::app()->user->isGuest) {
+                Yii::app()->user->returnUrl = '/admin';
                 $controller->redirect('/login');
+            }
             throw new AweException(403);
         }
         $controller->layout = 'main';
