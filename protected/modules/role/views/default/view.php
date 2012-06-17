@@ -20,7 +20,7 @@ $this->menu=array(
 	'attributes' => array(
 array(
                         'name'=>'id',
-                        'visible'=>Yii::app()->getModule('user')->isAdmin()
+                        'visible'=>Yii::app()->user->id=='admin'
                     ),'name','description',array(
                         'name'=>'active',
                         'type'=>'boolean'

@@ -13,14 +13,14 @@ class AweUrlManager extends CUrlManager {
 
         if (Yii::app()->hasModule($parts[0]) && isset($parts[1]) && $parts[1] == Yii::app()->getModule($parts[0])->defaultController) {
             unset($parts[1]);
-            return implode('/', $parts);
+            $route = implode('/', $parts);
         }
 
         if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/' || Yii::app()->getRequest()->pathInfo == 'admin') {
-            return '/admin' . parent::createUrl($route, $params, $ampersand);
+            $route = '/admin' . parent::createUrl($route, $params, $ampersand);
         }
 
-        return parent::createUrl($route, $params, $ampersand);
+        return parent::createUrlDefault($route, $params, $ampersand);
     }
 
     public function parseUrl($request) {

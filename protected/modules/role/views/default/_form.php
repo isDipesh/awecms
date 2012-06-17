@@ -17,19 +17,19 @@
             <?php echo $form->labelEx($model,'name'); ?>
             <?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>64)); ?>
             <?php echo $form->error($model,'name'); ?>
-        </div><!-- row -->
+        </div>
         
         <div class="row">
             <?php echo $form->labelEx($model,'description'); ?>
             <?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
             <?php echo $form->error($model,'description'); ?>
-        </div><!-- row -->
+        </div>
         
         <div class="row">
             <?php echo $form->labelEx($model,'active'); ?>
             <?php echo $form->checkBox($model,'active'); ?>
             <?php echo $form->error($model,'active'); ?>
-        </div><!-- row -->
+        </div>
         <div class="row nm_row">
 <label for="users"><?php echo Yii::t('app', 'Users'); ?></label>
 <?php echo \CHtml::checkBoxList('Role[users]', array_map('Awecms::getPrimaryKey',$model->users),
