@@ -5,7 +5,7 @@ class AweUrlManager extends CUrlManager {
     public function createUrl($route, $params = array(), $ampersand = '&') {
         //for admin and admin/*
         $parts = explode('/', $route);
-        if (Yii::app()->hasModule($parts[0]) && isset($parts[1]) && $parts[1] == 'default') {
+        if (Yii::app()->hasModule($parts[0]) && isset($parts[1]) && $parts[1] == Yii::app()->getModule($parts[0])->defaultController) {
             unset($parts[1]);
             return implode('/', $parts);
         }
