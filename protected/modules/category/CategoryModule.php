@@ -2,8 +2,6 @@
 
 class CategoryModule extends CWebModule {
 
-    public $defaultController = 'category';
-
     public function init() {
         // this method is called when the module is being created
         // you may place code here to customize the module or the application

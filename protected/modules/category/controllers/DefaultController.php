@@ -1,6 +1,6 @@
 <?php
 
-class CategoryController extends GxController {
+class DefaultController extends GxController {
 
     public function filters() {
         return array(

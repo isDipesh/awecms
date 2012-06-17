@@ -10,12 +10,6 @@ class AdminModule extends CWebModule {
             'admin.models.*',
             'admin.components.*',
         ));
-
-        Yii::app()->setComponents(array(
-            'errorHandler' => array(
-                'class' => 'application.modules.admin.components.ErrorHandler',
-            ),
-        ));
     }
 
     public function beforeControllerAction($controller, $action) {

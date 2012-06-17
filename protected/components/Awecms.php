@@ -127,6 +127,10 @@ class Awecms {
         return basename($path, ".php");
     }
 
+    public static function getControllerId($path) {
+        return lcfirst(str_replace('Controller', '', basename($path, ".php")));
+    }
+
     public static function formatUrl($url, $inNewTab = false) {
         $value = $url;
         if (strpos($url, 'http://') !== 0 && strpos($url, 'https://') !== 0)

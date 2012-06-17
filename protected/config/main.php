@@ -30,7 +30,7 @@ $config = array(
         'urlManager' => array(
             'showScriptName' => false, //hides index.php in URL
             'caseSensitive' => true,
-            'class'=>'application.components.AweUrlManager',
+            'class' => 'application.components.AweUrlManager',
             'urlFormat' => 'path',
             'rules' => array(
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
@@ -49,7 +49,8 @@ $config = array(
             'enableParamLogging' => true,
         ),
         'errorHandler' => array(
-            'errorAction' => 'site/error',
+            //'errorAction' => 'site/error',
+            'class' => 'AweErrorHandler',
         ),
         'log' => array(
             'class' => 'CLogRouter',
