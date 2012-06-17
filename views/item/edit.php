@@ -14,7 +14,7 @@ $this->menu = array(
 <?php
 $this->widget('zii.widgets.CMenu', array(
     'items' => array(
-        array('label' => Yii::t('app', 'Delete'), 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Are you sure you want to delete this item?')),
+        array('label' => Yii::t('app', 'Delete'), 'url' => '#', 'linkOptions' => array('class' => 'button', 'submit' => array('delete', 'id' => $model->id), 'confirm' => 'Are you sure you want to delete this item?')),
         )));
 
 $this->renderPartial('_form', array(
