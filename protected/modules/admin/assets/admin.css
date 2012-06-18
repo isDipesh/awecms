@@ -30,6 +30,8 @@ header #title{
 
 #admin_menu{
     clear:both;
+    background-color: #333;
+    height: 33px;
 }
 
 header #title a{

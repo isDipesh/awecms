@@ -29,7 +29,7 @@
                 <nav id="admin_menu">
                     <?php
                     $this->widget(
-                            'MenuRenderer', array('id' => 3, 'append' => array(
+                            'MenuRenderer', array('id' => 2, 'append' => array(
                             array(
                                 'label' => 'Settings',
                                 'items' => Admin::getSettings(),
