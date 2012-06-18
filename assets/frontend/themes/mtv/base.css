@@ -110,7 +110,7 @@ ul.dropdown a:active {
 
 ul.dropdown ul {
     left: auto;
-    right: 0;
+    right: auto;
     width: 150px;
     margin-top: -1px;
     border-top: 1px solid #1a1a1a;
