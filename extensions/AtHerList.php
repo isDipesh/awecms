@@ -128,7 +128,7 @@ class AtHerList extends CWidget {
         ?>
         <div style="height:20px;" class="item-wraper <?php echo ($this->activeId == $row->id) ? 'active' : ''; ?>">
             <b><label><?php echo $row->name; ?></label></b>
-            <div class="right"><a href="<?php echo Yii::app()->createUrl('/' . Yii::app()->getModule('menu')->id . '/item/edit/' . $row->id); ?>">Edit</a></div>
+            <div class="right"><a href="<?php echo Yii::app()->createUrl(Yii::app()->getModule('menu')->id . '/item/edit/' . $row->id); ?>">Edit</a></div>
             <div class="right"><input type="checkbox" disabled="disabled" <?php echo($row->enabled) ? "checked" : ""; ?>/></div>
         </div>
         <?php

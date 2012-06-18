@@ -29,7 +29,7 @@ class ItemController extends Controller {
 
             try {
                 if ($model->save()) {
-                    $this->redirect(array('/' . $this->module->id . '/item', 'id' => $model->menu_id, 'activeId' => $model->id));
+                    $this->redirect(array('/' . $this->module->id . '/item/index', 'id' => $model->menu_id, 'activeId' => $model->id));
                 }
             } catch (Exception $e) {
                 $model->addError('', $e->getMessage());
@@ -49,7 +49,7 @@ class ItemController extends Controller {
             $model->parent = $_POST['MenuItem']['parent'];
             try {
                 if ($model->save()) {
-                    $this->redirect(array('/' . $this->module->id . '/item', 'id' => $model->menu_id, 'activeId' => $model->id));
+                    $this->redirect(array('/' . $this->module->id . '/item/index', 'id' => $model->menu_id, 'activeId' => $model->id));
                 }
             } catch (Exception $e) {
                 $model->addError('', $e->getMessage());
