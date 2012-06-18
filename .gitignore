@@ -5,4 +5,5 @@ protected/runtime/*
 protected/tests/report/*
 *.swp
 *~
-protected/config/db.php/protected/migrations/m120618_195107_dummy_table.php
+/protected/config/db.php
+
