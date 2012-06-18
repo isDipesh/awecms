@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 09, 2012 at 04:40 PM
+-- Generation Time: Jun 18, 2012 at 10:21 PM
 -- Server version: 5.5.23
 -- PHP Version: 5.4.3
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `awecms`
 --
-CREATE DATABASE `awecms` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `awecms`;
 
 -- --------------------------------------------------------
 
@@ -28,12 +26,10 @@ USE `awecms`;
 -- Table structure for table `category`
 --
 
-DROP TABLE IF EXISTS `category`;
 CREATE TABLE IF NOT EXISTS `category` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `description` varchar(255) DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
@@ -41,8 +37,8 @@ CREATE TABLE IF NOT EXISTS `category` (
 -- Dumping data for table `category`
 --
 
-INSERT INTO `category` (`id`, `name`, `description`, `image`) VALUES
-(1, 'qpp', '', '');
+INSERT INTO `category` (`id`, `name`, `description`) VALUES
+(1, 'qpp', '');
 
 -- --------------------------------------------------------
 
@@ -50,7 +46,6 @@ INSERT INTO `category` (`id`, `name`, `description`, `image`) VALUES
 -- Table structure for table `comment`
 --
 
-DROP TABLE IF EXISTS `comment`;
 CREATE TABLE IF NOT EXISTS `comment` (
   `id` int(12) NOT NULL AUTO_INCREMENT,
   `owner_id` int(11) NOT NULL,
@@ -73,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `comment` (
 --
 
 INSERT INTO `comment` (`id`, `owner_id`, `owner_name`, `count`, `parent_id`, `creator_id`, `user_name`, `user_email`, `comment_text`, `create_time`, `update_time`, `status`, `link`) VALUES
-(132, 1, 'Page', 10, NULL, 1, '', '', 'no', 1338879845, 1338913155, 2, '/page/page/view/id/1?sid=3'),
+(132, 1, 'Page', 10, NULL, 1, '', '', 'nope', 1338879845, 1340003947, 1, '/page/page/view/id/1?sid=3'),
 (133, 1, 'Page', 1, 132, 1, NULL, NULL, 'okay', 1338879871, NULL, 1, '/page/page/view/id/1?sid=3'),
 (135, 1, 'Page', 2, NULL, 1, NULL, NULL, 'dang', 1338881485, NULL, 1, '/page/page/view/id/1?sid=3'),
 (136, 1, 'Page', 3, NULL, 1, NULL, NULL, 'pass', 1338881529, NULL, 1, '/comments/comment/postComment'),
@@ -106,7 +101,7 @@ INSERT INTO `comment` (`id`, `owner_id`, `owner_name`, `count`, `parent_id`, `cr
 (163, 1, 'Page', 33, NULL, 1, NULL, NULL, 'whatn', 1338931105, NULL, 1, '/page/page/view/id/1'),
 (164, 1, 'Page', 34, NULL, 1, NULL, NULL, 'cool', 1338931111, NULL, 1, '/comments/comment/postComment'),
 (165, 1, 'Page', 35, NULL, NULL, 'myname', 'myemail@email.com', 'Great', 1338931371, NULL, 0, '/page/page/view/id/1'),
-(166, 1, 'Page', 36, NULL, NULL, 'myname', 'myemail@email.com', 'Great', 1338931377, NULL, 0, '/page/page/view/id/1'),
+(166, 1, 'Page', 36, NULL, NULL, 'myname', 'myemail@email.com', 'Great', 1338931377, 1339574395, 2, '/page/page/view/id/1'),
 (167, 1, 'Page', 37, NULL, NULL, 'name', 'email@ema.ico', 'done', 1338931426, 1338931439, 1, '/page/page/view/id/1');
 
 -- --------------------------------------------------------
@@ -115,7 +110,6 @@ INSERT INTO `comment` (`id`, `owner_id`, `owner_name`, `count`, `parent_id`, `cr
 -- Table structure for table `comment_setting`
 --
 
-DROP TABLE IF EXISTS `comment_setting`;
 CREATE TABLE IF NOT EXISTS `comment_setting` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `model` varchar(50) NOT NULL,
@@ -142,7 +136,6 @@ INSERT INTO `comment_setting` (`id`, `model`, `registeredOnly`, `useCaptcha`, `a
 -- Table structure for table `content`
 --
 
-DROP TABLE IF EXISTS `content`;
 CREATE TABLE IF NOT EXISTS `content` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
@@ -177,7 +170,6 @@ INSERT INTO `content` (`id`, `user_id`, `title`, `status`, `created_at`, `modifi
 -- Table structure for table `dashboard`
 --
 
-DROP TABLE IF EXISTS `dashboard`;
 CREATE TABLE IF NOT EXISTS `dashboard` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category` varchar(50) NOT NULL,
@@ -212,29 +204,27 @@ INSERT INTO `dashboard` (`id`, `category`, `name`, `path`, `enabled`) VALUES
 -- Table structure for table `menu`
 --
 
-DROP TABLE IF EXISTS `menu`;
 CREATE TABLE IF NOT EXISTS `menu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
   `enabled` tinyint(1) NOT NULL DEFAULT '1',
   `vertical` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'makes menu vertical',
   `rtl` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'to make menu right to left vertical, just will be considered if ''vertical'' field set to true',
   `upward` tinyint(1) NOT NULL DEFAULT '0' COMMENT '// to make menu upward',
   `theme` varchar(100) NOT NULL DEFAULT 'default',
   `description` text,
-  `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`),
   KEY `id_2` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `menu`
 --
 
-INSERT INTO `menu` (`id`, `title`, `enabled`, `vertical`, `rtl`, `upward`, `theme`, `description`, `name`) VALUES
-(1, 'Main', 1, 0, 0, 0, 'default', 'The main website mega menu.', 'Main'),
-(2, 'Admin Menu', 1, 1, 0, 0, 'mtv', 'Menu for Admin Dashboard', 'Admin');
+INSERT INTO `menu` (`id`, `name`, `enabled`, `vertical`, `rtl`, `upward`, `theme`, `description`) VALUES
+(1, 'Main', 1, 0, 0, 0, 'default', 'The main website mega menu.'),
+(2, 'Admin', 1, 0, 0, 0, 'mtv', 'Menu for admin/backend dashboard.');
 
 -- --------------------------------------------------------
 
@@ -242,7 +232,6 @@ INSERT INTO `menu` (`id`, `title`, `enabled`, `vertical`, `rtl`, `upward`, `them
 -- Table structure for table `menu_item`
 --
 
-DROP TABLE IF EXISTS `menu_item`;
 CREATE TABLE IF NOT EXISTS `menu_item` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `menu_id` int(11) DEFAULT NULL,
@@ -255,53 +244,45 @@ CREATE TABLE IF NOT EXISTS `menu_item` (
   `content_id` int(11) DEFAULT NULL,
   `description` text,
   `link` text,
+  `visible` text,
   PRIMARY KEY (`id`),
   KEY `menu_id` (`menu_id`),
   KEY `menu_id_2` (`menu_id`),
   KEY `parent_id` (`parent_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=44 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=72 ;
 
 --
 -- Dumping data for table `menu_item`
 --
 
-INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `name`, `enabled`, `content_id`, `description`, `link`) VALUES
-(33, 1, 0, 1, 2, 15, 'Category', 1, NULL, NULL, '/category'),
-(34, 1, 40, 5, 6, 7, 'Home', 1, NULL, NULL, 'home'),
-(35, 1, 33, 2, 3, 14, 'Subcategory', 1, NULL, NULL, 'http://subcategory.com/'),
-(38, 1, 35, 3, 12, 13, 'Super-sub category', 1, NULL, NULL, NULL),
-(39, 1, 35, 3, 4, 11, 'Another Super-sub', 1, NULL, NULL, NULL),
-(40, 1, 39, 4, 5, 10, 'newmenu', 1, NULL, NULL, NULL),
-(41, 1, 40, 5, 8, 9, 'sdsad', 1, NULL, NULL, NULL),
-(42, 2, 0, 1, 2, 5, 'apps', 1, NULL, NULL, NULL),
-(43, 2, 42, 2, 3, 4, 'ducks', 1, NULL, NULL, NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `node`
---
-
-DROP TABLE IF EXISTS `node`;
-CREATE TABLE IF NOT EXISTS `node` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) NOT NULL,
-  `id_parent` int(11) DEFAULT NULL,
-  `description` text,
-  `position` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
-
---
--- Dumping data for table `node`
---
-
-INSERT INTO `node` (`id`, `title`, `id_parent`, `description`, `position`) VALUES
-(1, 'My Node', 0, 'The root node', 1),
-(5, 'a', 1, NULL, 0),
-(6, 'b', 5, NULL, 0),
-(7, 'c', 1, NULL, 1),
-(8, 'd', 6, NULL, 1);
+INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `name`, `enabled`, `content_id`, `description`, `link`, `visible`) VALUES
+(33, 1, 34, 2, 3, 10, 'Category', 1, NULL, NULL, '/category', NULL),
+(34, 1, 0, 1, 2, 11, 'Home', 1, NULL, NULL, '/', 'false'),
+(35, 1, 33, 3, 4, 9, 'Subcategory', 1, NULL, NULL, 'http://subcategory.com/', NULL),
+(38, 1, 35, 4, 5, 6, 'Super-sub category', 1, NULL, NULL, NULL, NULL),
+(39, 1, 35, 4, 7, 8, 'Another Super-sub', 1, NULL, NULL, NULL, NULL),
+(44, 3, 0, 1, 2, 3, 'Dashboard', 1, NULL, NULL, '/', ''),
+(45, 3, 0, 1, 4, 17, 'Users', 1, NULL, NULL, '/user', ''),
+(46, 3, 45, 2, 7, 8, 'Manage Users', 1, NULL, NULL, '/user/admin', NULL),
+(47, 3, 45, 2, 9, 10, 'Create User', 1, NULL, NULL, '/user/admin/create', NULL),
+(48, 3, 45, 2, 11, 12, 'Manage Profile Fields', 1, NULL, NULL, '/user/profileField', NULL),
+(49, 3, 45, 2, 13, 14, 'Create Profile Field', 1, NULL, NULL, '/user/profileField/create', NULL),
+(50, 1, 0, 1, 12, 13, 'Login', 1, NULL, NULL, '/login', NULL),
+(51, 1, 0, 1, 14, 15, 'Logout', 1, NULL, NULL, '/logout', NULL),
+(52, 3, 45, 2, 5, 6, 'List Users', 1, NULL, NULL, '/user', NULL),
+(53, 3, 0, 1, 26, 39, 'Design', 1, NULL, NULL, NULL, NULL),
+(54, 3, 53, 2, 27, 36, 'Menu', 1, NULL, NULL, '/menu', NULL),
+(55, 3, 54, 3, 28, 29, 'Manage Menus', 1, NULL, NULL, '/menu', NULL),
+(56, 3, 54, 3, 30, 31, 'Create New Menu', 1, NULL, NULL, '/menu/menu/create', NULL),
+(59, 3, 53, 2, 37, 38, 'Themes', 1, NULL, NULL, NULL, NULL),
+(60, 3, 0, 1, 18, 25, 'Content', 1, NULL, NULL, NULL, NULL),
+(61, 3, 60, 2, 19, 20, 'Pages', 1, NULL, NULL, '/page', NULL),
+(62, 3, 60, 2, 23, 24, 'Comments', 1, NULL, NULL, '/comments', NULL),
+(63, 3, 45, 2, 15, 16, 'Roles', 1, NULL, NULL, '/role', NULL),
+(64, 3, 60, 2, 21, 22, 'Categories', 1, NULL, NULL, '/category', NULL),
+(66, 3, 54, 3, 32, 33, 'Edit Main Menu', 1, NULL, NULL, '/menu/item/1', NULL),
+(67, 3, 54, 3, 34, 35, 'Edit Admin Menu', 1, NULL, NULL, 'menu/item/3', NULL),
+(71, 1, 0, 1, 16, 17, 'Dashboard', 1, NULL, NULL, '/', NULL);
 
 -- --------------------------------------------------------
 
@@ -309,7 +290,6 @@ INSERT INTO `node` (`id`, `title`, `id_parent`, `description`, `position`) VALUE
 -- Table structure for table `page`
 --
 
-DROP TABLE IF EXISTS `page`;
 CREATE TABLE IF NOT EXISTS `page` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
@@ -329,22 +309,21 @@ CREATE TABLE IF NOT EXISTS `page` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   KEY `parent` (`parent_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `page`
 --
 
 INSERT INTO `page` (`id`, `user_id`, `title`, `content`, `status`, `created_at`, `modified_at`, `parent_id`, `order`, `type`, `comment_status`, `tags_enabled`, `permission`, `password`, `views`) VALUES
-(1, 3, 'Title', 'The content', 'trashed', '2012-05-05 00:00:00', '2012-05-26 21:47:22', 9, 0, 'post', 'open', 1, 'all', 'password', 0),
+(1, 3, 'Title', 'The content\r\nadsadas\r\nadasdasd', 'trashed', '2012-05-05 00:00:00', '2012-06-17 02:44:07', 9, 0, 'post', 'open', 1, 'all', 'password', 0),
 (4, 2, 'Page Title Here', NULL, 'published', '2012-05-05 00:00:00', '2012-05-25 21:19:58', 1, 0, 'post', 'open', 1, 'all', 'password', 0),
 (5, 2, 'Title goes here', 'content', 'published', '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, 'post', 'open', 1, 'all', 'ms4weird', 0),
 (6, 3, 'Title goes here', 'content', 'published', '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, 'post', 'open', 1, 'all', 'ms4weird', 0),
 (7, 3, 'Title goes here', 'content', 'published', '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, 'post', 'open', 1, 'all', 'ms4weird', 0),
 (8, 1, 'Title', 'Content', 'published', '2012-05-18 12:35:18', '2012-05-05 00:00:00', 1, 0, 'post', 'open', 1, 'all', NULL, 1),
 (9, 1, 'New Page Title', 'Content	 ', 'published', '2012-05-21 22:10:59', '2012-05-21 22:11:22', NULL, 0, 'page', 'open', 1, 'all', NULL, 12),
-(10, 4, 'title', NULL, 'published', '2012-05-25 02:22:52', '2012-05-25 03:06:49', 1, 0, 'post', 'open', 1, 'all', NULL, 1),
-(11, 5, 'title', NULL, 'published', '2012-05-25 16:38:24', '2012-05-25 21:54:09', 1, 0, 'post', 'open', 1, 'all', NULL, 1);
+(10, 4, 'title', NULL, 'published', '2012-05-25 02:22:52', '2012-05-25 03:06:49', 1, 0, 'post', 'open', 1, 'all', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -352,7 +331,6 @@ INSERT INTO `page` (`id`, `user_id`, `title`, `content`, `status`, `created_at`,
 -- Table structure for table `page_nm_category`
 --
 
-DROP TABLE IF EXISTS `page_nm_category`;
 CREATE TABLE IF NOT EXISTS `page_nm_category` (
   `page_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
@@ -365,7 +343,6 @@ CREATE TABLE IF NOT EXISTS `page_nm_category` (
 -- Table structure for table `profile`
 --
 
-DROP TABLE IF EXISTS `profile`;
 CREATE TABLE IF NOT EXISTS `profile` (
   `user_id` int(11) NOT NULL,
   `firstname` varchar(255) NOT NULL DEFAULT '',
@@ -390,7 +367,6 @@ INSERT INTO `profile` (`user_id`, `firstname`) VALUES
 -- Table structure for table `profile_field`
 --
 
-DROP TABLE IF EXISTS `profile_field`;
 CREATE TABLE IF NOT EXISTS `profile_field` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `varname` varchar(50) NOT NULL,
@@ -425,14 +401,13 @@ INSERT INTO `profile_field` (`id`, `varname`, `title`, `field_type`, `field_size
 -- Table structure for table `role`
 --
 
-DROP TABLE IF EXISTS `role`;
 CREATE TABLE IF NOT EXISTS `role` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
   `description` text,
   `active` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `role`
@@ -440,8 +415,7 @@ CREATE TABLE IF NOT EXISTS `role` (
 
 INSERT INTO `role` (`id`, `name`, `description`, `active`) VALUES
 (1, 'super', NULL, 1),
-(2, 'moderator', NULL, 1),
-(3, 'normal', NULL, 1);
+(4, 'moderator', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -449,7 +423,6 @@ INSERT INTO `role` (`id`, `name`, `description`, `active`) VALUES
 -- Table structure for table `setting`
 --
 
-DROP TABLE IF EXISTS `setting`;
 CREATE TABLE IF NOT EXISTS `setting` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category` varchar(64) NOT NULL DEFAULT 'site',
@@ -458,7 +431,7 @@ CREATE TABLE IF NOT EXISTS `setting` (
   `type` varchar(20) NOT NULL DEFAULT 'textfield',
   PRIMARY KEY (`id`),
   KEY `category_key` (`category`,`key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=104 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=103 ;
 
 --
 -- Dumping data for table `setting`
@@ -470,10 +443,9 @@ INSERT INTO `setting` (`id`, `category`, `key`, `value`, `type`) VALUES
 (69, 'site', 'admin_email', 'email@admin.net', 'email'),
 (70, 'site', 'maintenance_mode', '0', 'boolean'),
 (71, 'site', 'maintenance_text', 'Sorry folks, the site is under maintenance. Please check back again in 83 seconds!', 'textarea'),
-(96, 'user', 'registration_enabled', '0', 'boolean'),
+(96, 'user', 'registration_enabled', '1', 'boolean'),
 (101, 'news', 'logo', '1', 'integer'),
-(102, 'news', 'sdsa', '1', 'boolean'),
-(103, 'user', 'login_enabled', 'true', 'textfield');
+(102, 'news', 'sdsa', '1', 'boolean');
 
 -- --------------------------------------------------------
 
@@ -481,7 +453,6 @@ INSERT INTO `setting` (`id`, `category`, `key`, `value`, `type`) VALUES
 -- Table structure for table `slug`
 --
 
-DROP TABLE IF EXISTS `slug`;
 CREATE TABLE IF NOT EXISTS `slug` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `slug` varchar(100) NOT NULL,
@@ -508,10 +479,30 @@ INSERT INTO `slug` (`id`, `slug`, `path`, `enabled`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `store`
+--
+
+CREATE TABLE IF NOT EXISTS `store` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text NOT NULL,
+  `unit` int(11) NOT NULL DEFAULT '1',
+  `price` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `store`
+--
+
+INSERT INTO `store` (`id`, `name`, `unit`, `price`) VALUES
+(1, 'Computer\r\nPentium', 2, 25000);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `test`
 --
 
-DROP TABLE IF EXISTS `test`;
 CREATE TABLE IF NOT EXISTS `test` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL DEFAULT 'myname',
@@ -548,15 +539,14 @@ INSERT INTO `test` (`id`, `name`, `birthdate`, `birthtime`, `enabled`, `status`,
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(20) NOT NULL,
   `password` varchar(128) NOT NULL,
   `email` varchar(128) NOT NULL,
   `activkey` varchar(128) NOT NULL DEFAULT '',
-  `createtime` int(10) NOT NULL DEFAULT '0',
-  `lastvisit` int(10) NOT NULL DEFAULT '0',
+  `create_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `lastvisit_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `superuser` int(1) NOT NULL DEFAULT '0',
   `status` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
@@ -570,39 +560,37 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `password`, `email`, `activkey`, `createtime`, `lastvisit`, `superuser`, `status`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', 1261146094, 1338917026, 1, 1),
-(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', 1261146096, 1338871936, 0, 1),
-(3, 'myuser', '5d5a582e5adf896ed6e1474c700b481a', 'myuser@email.com', '66a6d51638f2ac8efb88898ec73aeab5', 1335991266, 1335991266, 1, 1),
-(4, 'admina', 'a5d5dd525b4dc07b915448482da44974', 'admina@admina.c', '5c7ad3d0afd32f1353ee6bce1f223552', 1336028059, 1336028059, 0, 0),
-(5, 'dipesh', '28e0cf264ca1722298e317c5c1589739', 'dipesh@dipesh.com', 'f78be23ebbc05c13c8693eef8fa56abb', 1336067906, 1336067906, 1, 1),
-(6, 'adminas', '5f4dcc3b5aa765d61d8327deb882cf99', 'xtradasf@dsad.com', 'fb87fb607c3c5e901beb90059f54aba7', 1336591156, 1336591156, 0, 1);
+INSERT INTO `user` (`id`, `username`, `password`, `email`, `activkey`, `create_at`, `lastvisit_at`, `superuser`, `status`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2012-06-18 03:33:27', 1, 1),
+(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', '0000-00-00 00:00:00', '2012-06-14 13:33:23', 0, 1),
+(3, 'myuser', '5d5a582e5adf896ed6e1474c700b481a', 'myuser@email.com', '66a6d51638f2ac8efb88898ec73aeab5', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 1),
+(4, 'admina', 'a5d5dd525b4dc07b915448482da44974', 'admina@admina.c', '5c7ad3d0afd32f1353ee6bce1f223552', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0),
+(5, 'dipesh', '28e0cf264ca1722298e317c5c1589739', 'dipesh@dipesh.com', 'f78be23ebbc05c13c8693eef8fa56abb', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 1),
+(6, 'adminas', '5f4dcc3b5aa765d61d8327deb882cf99', 'xtradasf@dsad.com', 'fb87fb607c3c5e901beb90059f54aba7', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_rel_role`
+-- Table structure for table `user_nm_role`
 --
 
-DROP TABLE IF EXISTS `user_rel_role`;
-CREATE TABLE IF NOT EXISTS `user_rel_role` (
-  `user_id` int(11) NOT NULL,
-  `role_id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `user_nm_role` (
+  `user_id` int(11) NOT NULL DEFAULT '0',
+  `role_id` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`user_id`,`role_id`),
   KEY `role_id` (`role_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user_rel_role`
+-- Dumping data for table `user_nm_role`
 --
 
-INSERT INTO `user_rel_role` (`user_id`, `role_id`) VALUES
+INSERT INTO `user_nm_role` (`user_id`, `role_id`) VALUES
 (1, 1),
+(2, 1),
 (4, 1),
-(6, 1),
-(1, 2),
-(2, 2),
-(1, 3);
+(1, 4),
+(4, 4);
 
 -- --------------------------------------------------------
 
@@ -610,7 +598,6 @@ INSERT INTO `user_rel_role` (`user_id`, `role_id`) VALUES
 -- Table structure for table `widget`
 --
 
-DROP TABLE IF EXISTS `widget`;
 CREATE TABLE IF NOT EXISTS `widget` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) DEFAULT NULL,
@@ -632,7 +619,6 @@ CREATE TABLE IF NOT EXISTS `widget` (
 -- Table structure for table `widget_setting`
 --
 
-DROP TABLE IF EXISTS `widget_setting`;
 CREATE TABLE IF NOT EXISTS `widget_setting` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category` varchar(64) NOT NULL DEFAULT 'site',
@@ -662,11 +648,11 @@ ALTER TABLE `page`
   ADD CONSTRAINT `page_ibfk_2` FOREIGN KEY (`parent_id`) REFERENCES `page` (`id`);
 
 --
--- Constraints for table `user_rel_role`
+-- Constraints for table `user_nm_role`
 --
-ALTER TABLE `user_rel_role`
-  ADD CONSTRAINT `user_rel_role_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`),
-  ADD CONSTRAINT `user_rel_role_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`);
+ALTER TABLE `user_nm_role`
+  ADD CONSTRAINT `user_nm_role_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `user_nm_role_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
