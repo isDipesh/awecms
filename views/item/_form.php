@@ -20,6 +20,8 @@
         <?php echo $form->labelEx($model, 'link'); ?>
         <?php echo $form->textField($model, 'link', array('size' => 60)); ?>
         <?php echo $form->error($model, 'link'); ?>
+        /item points to base_url/item, //item points to root_of_server/item, item creates relative to dynamic user location
+        URLs are not touched
     </div><!-- row -->
 
     <div class="row">
@@ -35,6 +37,12 @@
     </div><!-- row -->
 
     <div class="row">
+        <?php echo $form->labelEx($model, 'visible'); ?>
+        <?php echo $form->textArea($model, 'visible', array('rows' => 6, 'cols' => 50)); ?>
+        <?php echo $form->error($model, 'visible'); ?>
+    </div><!-- row -->
+
+    <div class="row">
         <?php echo $form->labelEx($model, 'content_id'); ?>
         <?php echo $form->textField($model, 'content_id'); ?>
         <?php echo $form->error($model, 'content_id'); ?>
@@ -42,9 +50,10 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'parent_id'); ?>
-        <?php //show all menu items but current one
+        <?php
+        //show all menu items but current one
         $allModels = MenuItem::model()->findAll();
-        foreach ($allModels as $key => $aModel){
+        foreach ($allModels as $key => $aModel) {
             if ($aModel->id == $model->id)
                 unset($allModels[$key]);
         }
@@ -61,7 +70,7 @@
         ?>
         <div class="row">
             <?php echo $form->labelEx($model, 'menu_id'); ?>
-        <?php echo $form->dropDownList($model, 'menu', CHtml::listData(Menu::model()->findAll(), 'id', 'name')); ?>
+            <?php echo $form->dropDownList($model, 'menu', CHtml::listData(Menu::model()->findAll(), 'id', 'name')); ?>
         <?php echo $form->error($model, 'menu_id'); ?>
         </div>
         <?php

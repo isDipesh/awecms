@@ -52,6 +52,19 @@ class MenuRenderer extends CMenu {
         foreach ($items as $item) {
             if ($item == array())
                 continue;
+
+            //handle URLs here
+            //convert //foo to /foo
+            if (isset($item['url'])) {
+                if (Awecms::isUrl($item['url'])) {
+                    //NOP
+                } else if (substr($item['url'], 0, 2) == '//') {
+                    $item['url'] = substr($item['url'], 1);
+                } else {
+                    $item['url'] = array($item['url']);
+                }
+            }
+
             $count++;
             $options = isset($item['itemOptions']) ? $item['itemOptions'] : array();
             $class = array();
