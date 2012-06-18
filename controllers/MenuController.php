@@ -19,7 +19,7 @@ class MenuController extends Controller {
                     if (isset($_GET['returnUrl'])) {
                         $this->redirect($_GET['returnUrl']);
                     } else {
-                        $this->redirect(array('/'.$this->module->id));
+                        $this->redirect(array('/' . $this->module->id));
                     }
                 }
             } catch (Exception $e) {
@@ -42,7 +42,7 @@ class MenuController extends Controller {
                     if (isset($_GET['returnUrl'])) {
                         $this->redirect($_GET['returnUrl']);
                     } else {
-                        $this->redirect(array('/'.$this->module->id));
+                        $this->redirect(array('/' . $this->module->id));
                     }
                 }
             } catch (Exception $e) {
@@ -90,7 +90,7 @@ class MenuController extends Controller {
             throw new CHttpException(404, Yii::t('app', 'The requested page does not exist.'));
         return $model;
     }
-    
+
     public function actionToggle($id, $attribute, $model) {
         if (Yii::app()->request->isPostRequest) {
             // we only allow deletion via POST request

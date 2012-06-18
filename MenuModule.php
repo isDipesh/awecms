@@ -18,17 +18,6 @@ class MenuModule extends CWebModule {
         Yii::app()->clientScript->registerCssFile($this->assetsDirectory . '/css/menu/menustyle.css');
     }
 
-    public function beforeControllerAction($controller, $action) {
-        if (parent::beforeControllerAction($controller, $action)) {
-            if (!Yii::app()->getModule('user')->isAdmin()) {
-                throw new CHttpException(403, 'Action is forbidden.');
-            }
-            return true;
-        }
-        else
-            return false;
-    }
-
     public static function t($str = '', $params = array(), $dic = 'menu') {
         return Yii::t("MenuModule." . $dic, $str, $params);
     }
