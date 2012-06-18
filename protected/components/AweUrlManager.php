@@ -2,6 +2,8 @@
 
 class AweUrlManager extends CUrlManager {
 
+    public $appendParams = false;
+
     public function createUrl($route, $params = array(), $ampersand = '&') {
 
         //for admin and admin/*
@@ -17,10 +19,10 @@ class AweUrlManager extends CUrlManager {
         }
 
         if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/' || Yii::app()->getRequest()->pathInfo == 'admin') {
-            $route = '/admin' . parent::createUrl($route, $params, $ampersand);
+            $route = 'admin/' . $route;
         }
 
-        return parent::createUrlDefault($route, $params, $ampersand);
+        return parent::createUrl($route, $params, $ampersand);
     }
 
     public function parseUrl($request) {

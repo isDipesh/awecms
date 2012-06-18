@@ -9,7 +9,7 @@ class Admin {
             $item = array();
             $item['label'] = Awecms::generateFriendlyName($settingsCategory) . ' Settings';
             if ($action != $settingsCategory)
-                $item['url'] = Yii::app()->createUrl('/settings/' . $settingsCategory);
+                $item['url'] = Yii::app()->createUrl('settings/' . $settingsCategory);
             $settings[] = $item;
         }
         return $settings;

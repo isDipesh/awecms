@@ -5,8 +5,8 @@ $this->breadcrumbs = array(
 );
 if(!isset($this->menu) || $this->menu === array())
 $this->menu=array(
-	array('label'=>Yii::t('app', 'List'), 'url'=>array('index')),
-	array('label'=>Yii::t('app', 'Manage'), 'url'=>array('admin')),
+	array('label' => Yii::t('app', 'Manage Roles'), 'url' => array('/role')),
+        array('label' => Yii::t('app', 'Create New Role')),
 );
 ?>
 
