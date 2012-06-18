@@ -1,0 +1,2 @@
+#!/bin/bash -x
+cp protected/config/db.sample.php protected/config/db.php 

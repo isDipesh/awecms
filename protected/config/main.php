@@ -37,16 +37,7 @@ $config = array(
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ),
         ),
-        'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=awecms',
-            'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => 'passweird',
-            'charset' => 'utf8',
-            'tablePrefix' => '',
-            'enableProfiling' => true,
-            'enableParamLogging' => true,
-        ),
+        'db' => require_once ('db.php'),
         'errorHandler' => array(
             //'errorAction' => 'site/error',
             'class' => 'AweErrorHandler',
