@@ -15,7 +15,7 @@ class DefaultController extends Controller {
                     if (isset($_GET['returnUrl'])) {
                         $this->redirect($_GET['returnUrl']);
                     } else {
-                        $this->redirect(array('view', 'id' => $model->id));
+                        $this->redirect(array('/role'));
                     }
                 }
             } catch (Exception $e) {
@@ -39,7 +39,7 @@ class DefaultController extends Controller {
                     if (isset($_GET['returnUrl'])) {
                         $this->redirect($_GET['returnUrl']);
                     } else {
-                        $this->redirect(array('view', 'id' => $model->id));
+                        $this->redirect(array('/role'));
                     }
                 }
             } catch (Exception $e) {
