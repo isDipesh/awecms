@@ -12,6 +12,9 @@ class MenuRenderer extends CMenu {
 
     public function init() {
         $menu = Menu::model()->findByPk($this->id);
+        if (!$menu)
+            return false;
+            //throw new CHttpException(404, 'The specified menu (id=' . $this->id . ') cannot be found.');
 
         $class = array('dropdown');
         if ($menu->vertical) {
