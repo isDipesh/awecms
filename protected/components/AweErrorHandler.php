@@ -12,15 +12,7 @@ class AweErrorHandler extends CErrorHandler {
         //NOP
     }
 
-    public function handle($error) {
-
-
-        if (get_class($error) == 'CErrorEvent') {
-            //ignore the notices
-            //if ($error->code != 8)
-                parent::handle($error);
-            return;
-        }
+    public function handle($exception) {
 
         $path = Yii::app()->getRequest()->pathInfo;
 
@@ -74,6 +66,12 @@ class AweErrorHandler extends CErrorHandler {
         $path = '/' . implode('/', $newSegments);
         $errorController = new Controller('error');
         $errorController->forward($path);
+    }
+    
+    public function showError($e){
+        parent::handleException($e);
+        //print_r($e);
+        die();
     }
 
 }

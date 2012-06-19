@@ -3,12 +3,19 @@
 class Aweapp extends CWebApplication {
 
     public $config;
-    public $error;
+    public $forgiven = 0;
 
     public function __construct($config = null) {
         $this->config = $config;
-        register_shutdown_function(array($this, 'shutdown'));
         parent::__construct($config);
+//        register_shutdown_function(array($this, 'shutdown'));
+    }
+
+    public function shutdown() {
+        if (YII_ENABLE_ERROR_HANDLER && ($error = error_get_last())) {
+            $this->handleError($error['type'], $error['message'], $error['file'], $error['line']);
+            die();
+        }
     }
 
     protected function init() {
@@ -26,10 +33,21 @@ class Aweapp extends CWebApplication {
         return parent::init();
     }
 
-    public function shutdown() {
-        if (YII_ENABLE_ERROR_HANDLER && ($error = error_get_last())) {
-            $this->handleError($error['type'], $error['message'], $error['file'], $error['line']);
-            die();
+    public function runController($route) {
+        if (($ca = $this->createController($route)) !== null) {
+            list($controller, $actionID) = $ca;
+            $oldController = $this->controller;
+            $this->controller = $controller;
+            $controller->init();
+            $controller->run($actionID);
+            $this->controller = $oldController;
+        } else {
+            //we only forgive once
+            if ($this->forgiven) {
+                Yii::app()->getErrorHandler()->showError(new CHttpException(404, Yii::t('yii', 'Unable to resolve the request "{route}".', array('{route}' => $route === '' ? $this->defaultController : $route))));
+            }
+            $this->forgiven++;
+            throw new CHttpException(404, Yii::t('yii', 'Unable to resolve the request "{route}".', array('{route}' => $route === '' ? $this->defaultController : $route)));
         }
     }
 
