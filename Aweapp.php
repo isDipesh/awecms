@@ -7,7 +7,8 @@ class Aweapp extends CWebApplication {
 
     public function __construct($config = null) {
         $this->config = $config;
-        return parent::__construct($config);
+        register_shutdown_function(array($this, 'shutdown'));
+        parent::__construct($config);
     }
 
     protected function init() {
@@ -19,8 +20,17 @@ class Aweapp extends CWebApplication {
             if (file_exists($configFile))
                 $modulesConfig = CMap::mergeArray($modulesConfig, require ($configFile));
         }
-        $this->configure(CMap::mergeArray($modulesConfig, require($this->config)));
+
+        $finalConfig = CMap::mergeArray($modulesConfig, require (dirname(__FILE__) . '/protected/config/db.php'));
+        $this->configure(CMap::mergeArray($finalConfig, require($this->config)));
         return parent::init();
+    }
+
+    public function shutdown() {
+        if (YII_ENABLE_ERROR_HANDLER && ($error = error_get_last())) {
+            $this->handleError($error['type'], $error['message'], $error['file'], $error['line']);
+            die();
+        }
     }
 
 }

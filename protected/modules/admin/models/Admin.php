@@ -8,8 +8,12 @@ class Admin {
         foreach (Settings::getCategories() as $settingsCategory) {
             $item = array();
             $item['label'] = Awecms::generateFriendlyName($settingsCategory) . ' Settings';
-            if ($action != $settingsCategory)
-                $item['url'] = Yii::app()->createUrl('settings/' . $settingsCategory);
+
+            if ($action != $settingsCategory) {
+                $item['url'] = '/settings/' . $settingsCategory;
+                if ($action)
+                    $item['url'] = '/admin' . $item['url'];
+            }
             $settings[] = $item;
         }
         return $settings;
@@ -51,7 +55,7 @@ class Admin {
                 continue;
             $item['label'] = Awecms::generateFriendlyName($module);
             if (!in_array($module, $ignoreToLink))
-                $item['url'] = '/admin/' . $module;
+                $item['url'] = '/' . $module;
             $r[] = $item;
         }
         return $r;

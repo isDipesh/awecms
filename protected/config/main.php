@@ -37,9 +37,8 @@ $config = array(
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ),
         ),
-        'db' => require_once ('db.php'),
         'errorHandler' => array(
-            //'errorAction' => 'site/error',
+        //'errorAction' => 'site/error',
             'class' => 'AweErrorHandler',
         ),
         'log' => array(
