@@ -39,7 +39,7 @@ $config = array(
         ),
         'errorHandler' => array(
         //'errorAction' => 'site/error',
-//            'class' => 'AweErrorHandler',
+            'class' => 'AweErrorHandler',
         ),
         'log' => array(
             'class' => 'CLogRouter',
