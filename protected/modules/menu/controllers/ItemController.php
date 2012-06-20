@@ -22,6 +22,9 @@ class ItemController extends Controller {
             if (isset($_POST['MenuItem']['parent']))
                 $model->parent = $_POST['MenuItem']['parent'];
 
+            if ($model->visible == '')
+                $model->visible = NULL;
+
             //pushing newly added item to last
             $maxRight = $model->getMaxRight();
             $model->lft = $maxRight + 1;
@@ -47,6 +50,9 @@ class ItemController extends Controller {
             $model->setAttributes($_POST['MenuItem']);
             $model->menu = $_POST['MenuItem']['menu'];
             $model->parent = $_POST['MenuItem']['parent'];
+            if ($model->visible == '')
+                $model->visible = NULL;
+
             try {
                 if ($model->save()) {
                     $this->redirect(array('/' . $this->module->id . '/item/index', 'id' => $model->menu_id, 'activeId' => $model->id));

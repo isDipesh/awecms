@@ -14,7 +14,7 @@ class MenuRenderer extends CMenu {
         $menu = Menu::model()->findByPk($this->id);
         if (!$menu)
             return false;
-            //throw new CHttpException(404, 'The specified menu (id=' . $this->id . ') cannot be found.');
+        //throw new CHttpException(404, 'The specified menu (id=' . $this->id . ') cannot be found.');
 
         $class = array('dropdown');
         if ($menu->vertical) {
@@ -50,18 +50,21 @@ class MenuRenderer extends CMenu {
     }
 
     protected function renderMenuRecursive($items) {
+
+
         $count = 0;
         $n = count($items);
         foreach ($items as $item) {
+
             if ($item == array())
                 continue;
 
-            //handle URLs here
-            //convert //foo to /foo
+            //handle links here
             if (isset($item['url'])) {
                 if (Awecms::isUrl($item['url'])) {
                     //NOP
                 } else if (substr($item['url'], 0, 2) == '//') {
+                    //convert //foo to /foo
                     $item['url'] = substr($item['url'], 1);
                 } else {
                     $item['url'] = array($item['url']);
