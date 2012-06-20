@@ -15,7 +15,7 @@ class MenuModule extends CWebModule {
         ));
         $this->assetsDirectory = Yii::app()->assetManager->publish(dirname(__FILE__) . '/assets/backend');
         Yii::setPathOfAlias('mext', dirname(__FILE__) . '/extensions');
-        Yii::app()->clientScript->registerCssFile($this->assetsDirectory . '/css/menu/menustyle.css');
+        Yii::app()->clientScript->registerCssFile($this->assetsDirectory . '/menustyle.css');
     }
 
     public static function t($str = '', $params = array(), $dic = 'menu') {

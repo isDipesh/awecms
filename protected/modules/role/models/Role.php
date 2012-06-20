@@ -13,8 +13,16 @@ class Role extends BaseRole {
     }
 
     public static function is($role) {
-        $isRole = in_array($role, User::model()->findByPk(Yii::app()->user->id)->roles);
-        $isActive = Role::model()->findByAttributes(array('name' => $role))->active;
+        $userId = Yii::app()->user->id;
+        if (!$userId)
+            return false;
+        $isRole = in_array($role, User::model()->findByPk($userId)->roles);
+        $roleObj = Role::model()->findByAttributes(array('name' => $role));
+        if (!$roleObj) {
+//            throw new CHttpException(500, 'No role named ' . $role . ' exists!');
+            return false;
+        }
+        $isActive = $roleObj->active;
         return $isRole && $isActive;
     }
 

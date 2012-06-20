@@ -13,6 +13,7 @@
  * @property integer $content_id
  * @property string $description
  * @property string $link
+ * @property string $role
  *
  * Relations of table "menu_item" available as properties of the model:
  * @property Menu $menu
@@ -39,8 +40,8 @@ class MenuItem extends CActiveRecord {
             array('menu_id, parent_id, enabled, content_id, link', 'default', 'setOnEmpty' => true, 'value' => null),
             array('menu_id, enabled, content_id', 'numerical', 'integerOnly' => true),
             array('name', 'length', 'max' => 128),
-            array('link, visible', 'safe'),
-            array('id, menu_id, parent_id, name, enabled, content_id, description, link, visible', 'safe', 'on' => 'search'),
+            array('link', 'safe'),
+            array('id, menu_id, parent_id, name, enabled, content_id, description, link, role', 'safe', 'on' => 'search'),
         );
     }
 
@@ -72,7 +73,7 @@ class MenuItem extends CActiveRecord {
             'content_id' => Yii::t('app', 'Content'),
             'description' => Yii::t('app', 'Description'),
             'link' => Yii::t('app', 'Link/Path'),
-            'visible' => Yii::t('app', 'Visible'),
+            'role' => Yii::t('app', 'Visible to:'),
         );
     }
 
@@ -87,7 +88,7 @@ class MenuItem extends CActiveRecord {
         $criteria->compare('content_id', $this->content_id);
         $criteria->compare('description', $this->description, true);
         $criteria->compare('link', $this->link, true);
-        $criteria->compare('visible', $this->visible, true);
+        $criteria->compare('role', $this->role, true);
 
         return new CActiveDataProvider(get_class($this), array(
                     'criteria' => $criteria,
@@ -99,6 +100,19 @@ class MenuItem extends CActiveRecord {
                         ->select('MAX(`rgt`)')
                         ->from($this->tableName())
                         ->queryScalar();
+    }
+
+    public function getRoles() {
+        $roles = array(
+            'all' => 'All',
+            'guest' => 'Guest',
+            'loggedIn' => 'Logged In',
+        );
+        if (Yii::app()->hasModule('role')) {
+            //return array_merge($roles, array('Roles'=>CHtml::listData(Role::model()->findAll(), 'name', 'name')));
+            return array_merge($roles, CHtml::listData(Role::model()->findAll(), 'name', 'name'));
+        }
+        return $roles;
     }
 
 }

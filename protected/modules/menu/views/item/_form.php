@@ -20,8 +20,9 @@
         <?php echo $form->labelEx($model, 'link'); ?>
         <?php echo $form->textField($model, 'link', array('size' => 60)); ?>
         <?php echo $form->error($model, 'link'); ?>
-        /item points to base_url/item, //item points to root_of_server/item, item creates relative to dynamic user location
-        URLs are not touched
+        <br/>
+        /item points to base_url/item, //item points to root_of_server/item, item creates relative to dynamic user location, 
+        URLs rendered as is.
     </div><!-- row -->
 
     <div class="row">
@@ -37,16 +38,20 @@
     </div><!-- row -->
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'visible'); ?>
-        <?php echo $form->textArea($model, 'visible', array('rows' => 6, 'cols' => 50)); ?>
-        <?php echo $form->error($model, 'visible'); ?>
+        <?php echo $form->labelEx($model, 'role'); ?>
+        <?php
+        echo CHtml::checkBoxList(get_class($model) . '[role]', explode(',', $model->role), $model->roles, array('selected'=>'all'));
+        ?>
+        <?php echo $form->error($model, 'role'); ?>
     </div><!-- row -->
 
-    <div class="row">
-        <?php echo $form->labelEx($model, 'content_id'); ?>
-        <?php echo $form->textField($model, 'content_id'); ?>
-        <?php echo $form->error($model, 'content_id'); ?>
-    </div><!-- row -->
+    <?php if (Yii::app()->hasModule('page')) { ?>
+        <div class="row">
+            <?php echo $form->labelEx($model, 'content_id'); ?>
+            <?php echo $form->textField($model, 'content_id'); ?>
+            <?php echo $form->error($model, 'content_id'); ?>
+        </div><!-- row -->
+    <?php } ?>
 
     <div class="row">
         <?php echo $form->labelEx($model, 'parent_id'); ?>
@@ -59,7 +64,7 @@
         }
         echo $form->dropDownList($model, 'parent', CHtml::listData($allModels, 'id', 'name'), array('prompt' => 'None'));
         ?>
-<?php echo $form->error($model, 'parent_id'); ?>
+        <?php echo $form->error($model, 'parent_id'); ?>
     </div><!-- row -->
 
     <?php
@@ -71,7 +76,7 @@
         <div class="row">
             <?php echo $form->labelEx($model, 'menu_id'); ?>
             <?php echo $form->dropDownList($model, 'menu', CHtml::listData(Menu::model()->findAll(), 'id', 'name')); ?>
-        <?php echo $form->error($model, 'menu_id'); ?>
+            <?php echo $form->error($model, 'menu_id'); ?>
         </div>
         <?php
     }

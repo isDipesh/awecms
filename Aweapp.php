@@ -27,7 +27,6 @@ class Aweapp extends CWebApplication {
             if (file_exists($configFile))
                 $modulesConfig = CMap::mergeArray($modulesConfig, require ($configFile));
         }
-
         $finalConfig = CMap::mergeArray($modulesConfig, require (dirname(__FILE__) . '/protected/config/db.php'));
         $this->configure(CMap::mergeArray($finalConfig, require($this->config)));
         return parent::init();

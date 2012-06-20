@@ -12,9 +12,10 @@ class MenuRenderer extends CMenu {
 
     public function init() {
         $menu = Menu::model()->findByPk($this->id);
-        if (!$menu)
-            return false;
-        //throw new CHttpException(404, 'The specified menu (id=' . $this->id . ') cannot be found.');
+        if (!$menu) {
+            //return false;
+            throw new CHttpException(404, 'The specified menu (id=' . $this->id . ') cannot be found.');
+        }
 
         $class = array('dropdown');
         if ($menu->vertical) {
@@ -57,6 +58,24 @@ class MenuRenderer extends CMenu {
         foreach ($items as $item) {
 
             if ($item == array())
+                continue;
+
+            //handle roles here
+            $visible = FALSE;
+            $roles = explode(',', $item['role']);
+            if (in_array('all', $roles)) {
+                $visible = TRUE;
+            } else if (Yii::app()->user->isGuest && in_array('guest', $roles)) {
+                $visible = TRUE;
+            } else if (Yii::app()->user->id && in_array('loggedIn', $roles)) {
+                $visible = TRUE;
+            } else if (Yii::app()->hasModule('role')) {
+                foreach ($roles as $role) {
+                    if (Role::is($role))
+                        $visible = TRUE;
+                }
+            }
+            if (!$visible)
                 continue;
 
             //handle links here

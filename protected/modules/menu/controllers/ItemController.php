@@ -22,8 +22,10 @@ class ItemController extends Controller {
             if (isset($_POST['MenuItem']['parent']))
                 $model->parent = $_POST['MenuItem']['parent'];
 
-            if ($model->visible == '')
-                $model->visible = NULL;
+            if (isset($_POST['MenuItem']['role']))
+                $model->role = implode(',', $_POST['MenuItem']['role']);
+            else
+                $model->role = '';
 
             //pushing newly added item to last
             $maxRight = $model->getMaxRight();
@@ -50,8 +52,11 @@ class ItemController extends Controller {
             $model->setAttributes($_POST['MenuItem']);
             $model->menu = $_POST['MenuItem']['menu'];
             $model->parent = $_POST['MenuItem']['parent'];
-            if ($model->visible == '')
-                $model->visible = NULL;
+
+            if (isset($_POST['MenuItem']['role']))
+                $model->role = implode(',', $_POST['MenuItem']['role']);
+            else
+                $model->role = '';
 
             try {
                 if ($model->save()) {
