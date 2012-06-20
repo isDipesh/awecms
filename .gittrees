@@ -1,0 +1,4 @@
+[subtree "protected/modules/menu"]
+	url = git@github.com:awecms/menu.git
+	path = protected/modules/menu
+	branch = master
