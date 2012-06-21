@@ -46,24 +46,22 @@ class SearchController extends CController {
     }
 
     public static function printInfoFromIndex($index) {
-        
+
         echo "<p>Index Generation ID: " . $index->getGeneration() . '</p>';
 
         echo "<p>Total indexed items: " . $index->maxDoc() . '</p>';
 
         echo "<p>Field Names:<br/>";
-        print_r($index->getFieldNames());
+        echo implode(',', $index->getFieldNames());
         echo "</p>";
 
         $a = $index->hasDeletions() ? '' : 'no ';
-        echo "<p>Index has " . $a . 'deletions!</p>';
+        echo "<p>Index has {$a}deletions!</p>";
 
-        
-
-
-
-
-        print_r($index->terms());
+        $terms = $index->terms();
+        echo "<p>First Field: {$terms[0]->field} => {$terms[0]->text}<br/>";
+        $n = count($terms) - 1;
+        echo "Last Field: {$terms[$n]->field} => {$terms[$n]->text}</p>";
     }
 
     public function actionUpdate() {
