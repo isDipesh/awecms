@@ -17,8 +17,8 @@ class SearchController extends CController {
             $query = Zend_Search_Lucene_Search_QueryParser::parse($queryString);
             $this->render('index', compact('results', 'queryString', 'query'));
         } else {
-            //$this->render('index');
-            echo 1;
+            $this->render('advanced');
+            //echo 1;
         }
     }
 
@@ -26,15 +26,23 @@ class SearchController extends CController {
         echo "Search index creation started...<br/>";
         echo "Creating indices on {$this->_indexFile}...<br/>";
 
-
         $index = new Zend_Search_Lucene($this->_indexFile, true);
 
         $items = MenuItem::model()->findAllByAttributes(array('menu_id' => '1'));
+
+        //map fields here, set the field names of model to be indexed as title, link and content
+        //TODO intelligent guessing of field names
+        $fields = array(
+            'title' => 'name',
+            'link' => 'link',
+            'content' => 'role'
+        );
+
         foreach ($items as $item) {
             $doc = new Zend_Search_Lucene_Document();
-            $doc->addField(Zend_Search_Lucene_Field::Text('title', CHtml::encode($item->name), 'utf-8'));
-            $doc->addField(Zend_Search_Lucene_Field::Text('link', CHtml::encode($item->link), 'utf-8'));
-            $doc->addField(Zend_Search_Lucene_Field::Text('content', CHtml::encode($item->role), 'utf-8'));
+            $doc->addField(Zend_Search_Lucene_Field::Text('title', CHtml::encode($item->$fields['title']), 'utf-8'));
+            $doc->addField(Zend_Search_Lucene_Field::Text('link', CHtml::encode($item->$fields['link']), 'utf-8'));
+            $doc->addField(Zend_Search_Lucene_Field::Text('content', CHtml::encode($item->$fields['content']), 'utf-8'));
             $index->addDocument($doc);
         }
 

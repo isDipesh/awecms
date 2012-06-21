@@ -1,19 +1,23 @@
 <?php
 $this->pageTitle = Yii::app()->name . ' - Search results';
 $this->breadcrumbs = array(
-    'Search Results',
+    Yii::t('app', 'Search Results'),
 );
 ?>
 
-<h3>Search Results for: "<?php echo CHtml::encode($queryString); ?>"</h3>
+<?php
+$this->widget('SearchBlock', array('query' => $queryString));
+?>
+
+<h3>Search results for <em><strong><?php echo CHtml::encode($queryString); ?></strong></em></h3>
 <?php if (!empty($results)): ?>
     <?php foreach ($results as $result):
         ?>                  
-        Title: <?php echo $query->highlightMatches(CHtml::encode($result->title)); ?>
+        <a href="<?php echo CHtml::encode($result->link) ?>" title="<?php echo CHtml::encode($result->title); ?>">
+            <?php echo $query->highlightMatches(CHtml::encode($result->title)); ?>
+        </a>
         <br/>
-        Link: <?php echo CHtml::link($query->highlightMatches(CHtml::encode($result->link)), CHtml::encode($result->link)); ?>
-        <br/>
-        Content: <?php echo $query->highlightMatches(CHtml::encode($result->content)); ?>
+        <?php echo CHtml::encode($result->content); ?>
         <br/>
         <hr/>
     <?php endforeach; ?>
