@@ -4,24 +4,6 @@
 <h2><?php echo CHtml::link(CHtml::encode($data->module), array('view', 'id' => $data->id)); ?></h2>
 
     <?php
-    if (!empty($data->role->name)) {
-        ?>
-    <div class="field">
-            <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('role_id')); ?>:</b>
-            </div>
-<div class="field_value">
-
-                <?php
-                echo CHtml::encode($data->role->name);
-                ?>
-
-            </div>
-        </div>
-        <?php
-    }
-    ?>
-    <?php
     if (!empty($data->controller)) {
         ?>
     <div class="field">

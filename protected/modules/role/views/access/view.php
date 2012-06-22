@@ -21,9 +21,12 @@ $this->menu=array(
 array(
                         'name'=>'id',
                         'visible'=>Yii::app()->user->id=='admin'
-                    ),		array(
-			'name'=>'role_id',
-			'value'=>($model->role !== null)?CHtml::link($model->role->name, array('/role/role/view','id'=>$model->role->id)).' ':'n/a',
-			'type'=>'html',
-		),
-'module','controller','action',)));?>
+                    ),'module','controller','action',)));?><h2><?php echo CHtml::link(Yii::t('app','Roles'), array('/role/role'));?></h2>
+<ul>
+			<?php if (is_array($model->roles)) foreach($model->roles as $foreignobj) { 
+
+					echo '<li>';
+					echo CHtml::link($foreignobj->name, array('/role/role/view','id'=>$foreignobj->id));
+							
+					}
+						?></ul>

@@ -37,10 +37,6 @@ return false;
 	'filter' => $model,
 	'columns' => array(
         'id',
-        array(
-                			'name' => 'role_id',
-                                        'value' => 'isset($data->role->name)?$data->role->name:"N/A"'
-                ),
         'module',
         'controller',
         'action',

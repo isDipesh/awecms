@@ -20,7 +20,7 @@ class AccessController extends Controller {
                 if (isset($_POST['Access'])) {
             $model->setAttributes($_POST['Access']);
 
-			 if (isset($_POST['Access']['role'])) $model->role = $_POST['Access']['role'];
+			 if (isset($_POST['Access']['roles'])) $model->roles = $_POST['Access']['roles'];
                 
                 try {
                     if($model->save()) {
@@ -45,7 +45,7 @@ class AccessController extends Controller {
         
         if(isset($_POST['Access'])) {
             $model->setAttributes($_POST['Access']);
-			$model->role = $_POST['Access']['role'];
+			$model->roles = $_POST['Access']['roles'];
                 try {
                     if($model->save()) {
                         if (isset($_GET['returnUrl'])) {

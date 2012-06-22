@@ -11,11 +11,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'role_id'); ?>
-		<?php echo $form->dropDownList($model, 'role', CHtml::listData(Role::model()->findAll(),'id', 'name')); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model, 'module'); ?>
 		<?php echo $form->textField($model,'module',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
