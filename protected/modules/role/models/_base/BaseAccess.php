@@ -9,6 +9,7 @@
       * @property string $module
       * @property string $controller
       * @property string $action
+      * @property integer $enabled
  *
  * Relations of table "access" available as properties of the model:
  * @property Role[] $roles
@@ -26,9 +27,10 @@ abstract class BaseAccess extends CActiveRecord {
     public function rules() {
         return array(
             array('controller, action', 'required'),
-            array('module', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('module, enabled', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('enabled', 'numerical', 'integerOnly' => true),
             array('module, controller, action', 'length', 'max' => 50),
-            array('id, module, controller, action', 'safe', 'on' => 'search'),
+            array('id, module, controller, action, enabled', 'safe', 'on' => 'search'),
         );
     }
     
@@ -54,6 +56,7 @@ abstract class BaseAccess extends CActiveRecord {
             'module' => Yii::t('app', 'Module'),
             'controller' => Yii::t('app', 'Controller'),
             'action' => Yii::t('app', 'Action'),
+            'enabled' => Yii::t('app', 'Enabled'),
         );
     }
 
@@ -64,6 +67,7 @@ abstract class BaseAccess extends CActiveRecord {
         $criteria->compare('module', $this->module, true);
         $criteria->compare('controller', $this->controller, true);
         $criteria->compare('action', $this->action, true);
+        $criteria->compare('enabled', $this->enabled);
 
         return new CActiveDataProvider(get_class($this), array(
                     'criteria' => $criteria,
