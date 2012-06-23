@@ -37,6 +37,8 @@ class MenuRenderer extends CMenu {
         $this->htmlOptions['class'] = implode(' ', $class);
 
         $this->items = array_merge($menu->items, $this->append);
+//        $this->items = $menu->items;
+        //print_r($this->items);
 
         $basedir = dirname(__FILE__) . '/../assets/frontend';
         $baseUrl = Yii::app()->getAssetManager()->publish($basedir);
@@ -60,23 +62,26 @@ class MenuRenderer extends CMenu {
             if ($item == array())
                 continue;
 
+
             //handle roles here
-            $visible = FALSE;
-            $roles = explode(',', $item['role']);
-            if (in_array('all', $roles)) {
-                $visible = TRUE;
-            } else if (Yii::app()->user->isGuest && in_array('guest', $roles)) {
-                $visible = TRUE;
-            } else if (Yii::app()->user->id && in_array('loggedIn', $roles)) {
-                $visible = TRUE;
-            } else if (Yii::app()->hasModule('role')) {
-                foreach ($roles as $role) {
-                    if (Role::is($role))
-                        $visible = TRUE;
+            if (isset($item['role'])) {
+                $visible = FALSE;
+                $roles = explode(',', $item['role']);
+                if (in_array('all', $roles)) {
+                    $visible = TRUE;
+                } else if (Yii::app()->user->isGuest && in_array('guest', $roles)) {
+                    $visible = TRUE;
+                } else if (Yii::app()->user->id && in_array('loggedIn', $roles)) {
+                    $visible = TRUE;
+                } else if (Yii::app()->hasModule('role')) {
+                    foreach ($roles as $role) {
+                        if (Role::is($role))
+                            $visible = TRUE;
+                    }
                 }
+                if (!$visible)
+                    continue;
             }
-            if (!$visible)
-                continue;
 
             //handle links here
             if (isset($item['url'])) {

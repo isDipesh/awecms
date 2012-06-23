@@ -8,7 +8,7 @@ $this->breadcrumbs = array(
 
 
 <div class="right">
-    <?php echo CHtml::link('Create Settings for a Model', Yii::app()->createUrl('/comments/settings/create')); ?>
+    <?php echo CHtml::link('Create Settings for a Model', Yii::app()->createUrl('comments/settings/create')); ?>
 </div>
 <?php
 $this->widget('zii.widgets.grid.CGridView', array(

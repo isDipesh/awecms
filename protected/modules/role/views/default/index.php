@@ -7,6 +7,8 @@ if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
         array('label' => Yii::t('app', 'Manage Roles')),
         array('label' => Yii::t('app', 'Create New Role'), 'url' => array('/role/create')),
+        array('label' => Yii::t('app', 'Manage Access Rules'), 'url' => array('/role/access')),
+        array('label' => Yii::t('app', 'Create Access Rule'), 'url' => array('/role/access/create')),
     );
 ?>
 

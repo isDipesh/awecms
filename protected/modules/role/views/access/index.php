@@ -1,16 +1,18 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Accesses') => array('index'),
+    Yii::t('app', 'Access Rules') => array('/role'),
     Yii::t('app', 'Manage'),
 );
 if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
-        array('label' => Yii::t('app', 'Create'), 'url' => array('create')),
-        array('label' => Yii::t('app', 'List'), 'url' => array('index')),
+        array('label' => Yii::t('app', 'Manage Roles'), 'url' => array('/role')),
+        array('label' => Yii::t('app', 'Create New Role'), 'url' => array('/role/create')),
+        array('label' => Yii::t('app', 'Manage Access Rules')),
+        array('label' => Yii::t('app', 'Create Access Rule'), 'url' => array('/role/access/create')),
     );
 ?>
 
-<h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Accesses'); ?> </h1>
+<h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Access Rules'); ?> </h1>
 
 <?php
 $this->widget('zii.widgets.grid.CGridView', array(
