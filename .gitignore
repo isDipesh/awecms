@@ -7,20 +7,3 @@ protected/tests/report/*
 *~
 /protected/config/db.php
 
-/protected/extensions/gtc/.svn/
-/protected/extensions/gtc/fullCrud/.svn/
-/protected/extensions/gtc/fullCrud/templates/.svn/
-/protected/extensions/gtc/fullCrud/templates/default/.svn/
-/protected/extensions/gtc/fullCrud/views/.svn/
-/protected/extensions/gtc/fullModel/.svn/
-/protected/extensions/gtc/fullModel/model/.svn/
-/protected/extensions/gtc/fullModel/templates/.svn/
-/protected/extensions/gtc/fullModel/templates/default/.svn/
-/protected/extensions/gtc/fullModel/views/.svn/
-/protected/extensions/gtc/vendors/.svn/
-/protected/extensions/gtc/vendors/messages/.svn/
-/protected/extensions/gtc/vendors/messages/de/.svn/
-/protected/extensions/gtc/vendors/messages/es/.svn/
-/protected/extensions/gtc/vendors/messages/fr/.svn/
-/protected/extensions/gtc/vendors/messages/lt/.svn/
-/protected/extensions/gtc/vendors/messages/pt/.svn/

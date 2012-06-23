@@ -3,6 +3,8 @@
 class AccessController extends Controller {
 
     public function actionCreate() {
+        $assetsUrl = Yii::app()->getAssetManager()->publish(dirname(__FILE__) . '/../assets/');
+        Yii::app()->getClientScript()->registerScriptFile($assetsUrl.'/accessForm.js?'.time());
         $model = new Access;
         if (isset($_POST['Access'])) {
             $model->setAttributes($_POST['Access']);
