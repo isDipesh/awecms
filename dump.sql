@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 18, 2012 at 10:21 PM
+-- Generation Time: Jun 23, 2012 at 09:53 AM
 -- Server version: 5.5.23
 -- PHP Version: 5.4.3
 
@@ -19,6 +19,34 @@ SET time_zone = "+00:00";
 --
 -- Database: `awecms`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `access`
+--
+
+CREATE TABLE IF NOT EXISTS `access` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `module` varchar(50) DEFAULT NULL,
+  `controller` varchar(50) NOT NULL,
+  `action` varchar(50) NOT NULL,
+  `enabled` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `access_nm_role`
+--
+
+CREATE TABLE IF NOT EXISTS `access_nm_role` (
+  `access_id` int(11) NOT NULL,
+  `role_id` int(11) NOT NULL,
+  PRIMARY KEY (`access_id`,`role_id`),
+  KEY `role_id` (`role_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -224,7 +252,7 @@ CREATE TABLE IF NOT EXISTS `menu` (
 
 INSERT INTO `menu` (`id`, `name`, `enabled`, `vertical`, `rtl`, `upward`, `theme`, `description`) VALUES
 (1, 'Main', 1, 0, 0, 0, 'default', 'The main website mega menu.'),
-(2, 'Admin', 1, 0, 0, 0, 'mtv', 'Menu for admin/backend dashboard.');
+(3, 'Admin', 1, 0, 0, 0, 'mtv', 'Menu for admin/backend dashboard.');
 
 -- --------------------------------------------------------
 
@@ -244,7 +272,7 @@ CREATE TABLE IF NOT EXISTS `menu_item` (
   `content_id` int(11) DEFAULT NULL,
   `description` text,
   `link` text,
-  `visible` text,
+  `role` text,
   PRIMARY KEY (`id`),
   KEY `menu_id` (`menu_id`),
   KEY `menu_id_2` (`menu_id`),
@@ -255,20 +283,16 @@ CREATE TABLE IF NOT EXISTS `menu_item` (
 -- Dumping data for table `menu_item`
 --
 
-INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `name`, `enabled`, `content_id`, `description`, `link`, `visible`) VALUES
-(33, 1, 34, 2, 3, 10, 'Category', 1, NULL, NULL, '/category', NULL),
-(34, 1, 0, 1, 2, 11, 'Home', 1, NULL, NULL, '/', 'false'),
-(35, 1, 33, 3, 4, 9, 'Subcategory', 1, NULL, NULL, 'http://subcategory.com/', NULL),
-(38, 1, 35, 4, 5, 6, 'Super-sub category', 1, NULL, NULL, NULL, NULL),
-(39, 1, 35, 4, 7, 8, 'Another Super-sub', 1, NULL, NULL, NULL, NULL),
+INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `name`, `enabled`, `content_id`, `description`, `link`, `role`) VALUES
+(34, 1, 0, 1, 2, 3, 'Home', 1, NULL, NULL, '/', 'all'),
 (44, 3, 0, 1, 2, 3, 'Dashboard', 1, NULL, NULL, '/', ''),
 (45, 3, 0, 1, 4, 17, 'Users', 1, NULL, NULL, '/user', ''),
 (46, 3, 45, 2, 7, 8, 'Manage Users', 1, NULL, NULL, '/user/admin', NULL),
 (47, 3, 45, 2, 9, 10, 'Create User', 1, NULL, NULL, '/user/admin/create', NULL),
 (48, 3, 45, 2, 11, 12, 'Manage Profile Fields', 1, NULL, NULL, '/user/profileField', NULL),
 (49, 3, 45, 2, 13, 14, 'Create Profile Field', 1, NULL, NULL, '/user/profileField/create', NULL),
-(50, 1, 0, 1, 12, 13, 'Login', 1, NULL, NULL, '/login', NULL),
-(51, 1, 0, 1, 14, 15, 'Logout', 1, NULL, NULL, '/logout', NULL),
+(50, 1, 0, 1, 6, 7, 'Login', 1, NULL, NULL, '/login', 'guest'),
+(51, 1, 0, 1, 4, 5, 'Logout', 1, NULL, NULL, '/logout', 'loggedIn'),
 (52, 3, 45, 2, 5, 6, 'List Users', 1, NULL, NULL, '/user', NULL),
 (53, 3, 0, 1, 26, 39, 'Design', 1, NULL, NULL, NULL, NULL),
 (54, 3, 53, 2, 27, 36, 'Menu', 1, NULL, NULL, '/menu', NULL),
@@ -282,7 +306,7 @@ INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `n
 (64, 3, 60, 2, 21, 22, 'Categories', 1, NULL, NULL, '/category', NULL),
 (66, 3, 54, 3, 32, 33, 'Edit Main Menu', 1, NULL, NULL, '/menu/item/1', NULL),
 (67, 3, 54, 3, 34, 35, 'Edit Admin Menu', 1, NULL, NULL, 'menu/item/3', NULL),
-(71, 1, 0, 1, 16, 17, 'Dashboard', 1, NULL, NULL, '/', NULL);
+(71, 1, 0, 1, 8, 9, 'Dashboard', 1, NULL, NULL, '/', 'super');
 
 -- --------------------------------------------------------
 
@@ -479,27 +503,6 @@ INSERT INTO `slug` (`id`, `slug`, `path`, `enabled`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `store`
---
-
-CREATE TABLE IF NOT EXISTS `store` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` text NOT NULL,
-  `unit` int(11) NOT NULL DEFAULT '1',
-  `price` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Dumping data for table `store`
---
-
-INSERT INTO `store` (`id`, `name`, `unit`, `price`) VALUES
-(1, 'Computer\r\nPentium', 2, 25000);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `test`
 --
 
@@ -561,8 +564,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `email`, `activkey`, `create_at`, `lastvisit_at`, `superuser`, `status`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2012-06-18 03:33:27', 1, 1),
-(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', '0000-00-00 00:00:00', '2012-06-14 13:33:23', 0, 1),
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2012-06-20 13:33:42', 1, 1),
+(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', '0000-00-00 00:00:00', '2012-06-20 13:06:10', 0, 1),
 (3, 'myuser', '5d5a582e5adf896ed6e1474c700b481a', 'myuser@email.com', '66a6d51638f2ac8efb88898ec73aeab5', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 1),
 (4, 'admina', 'a5d5dd525b4dc07b915448482da44974', 'admina@admina.c', '5c7ad3d0afd32f1353ee6bce1f223552', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0),
 (5, 'dipesh', '28e0cf264ca1722298e317c5c1589739', 'dipesh@dipesh.com', 'f78be23ebbc05c13c8693eef8fa56abb', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 1),
@@ -587,8 +590,8 @@ CREATE TABLE IF NOT EXISTS `user_nm_role` (
 
 INSERT INTO `user_nm_role` (`user_id`, `role_id`) VALUES
 (1, 1),
-(2, 1),
 (4, 1),
+(6, 1),
 (1, 4),
 (4, 4);
 
@@ -632,6 +635,13 @@ CREATE TABLE IF NOT EXISTS `widget_setting` (
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `access_nm_role`
+--
+ALTER TABLE `access_nm_role`
+  ADD CONSTRAINT `access_nm_role_ibfk_1` FOREIGN KEY (`access_id`) REFERENCES `access` (`id`),
+  ADD CONSTRAINT `access_nm_role_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`);
 
 --
 -- Constraints for table `content`
