@@ -24,7 +24,15 @@ class AccessController extends Controller {
         } elseif (isset($_GET['Access'])) {
             $model->attributes = $_GET['Access'];
         }
+        $model->module = (isset($_GET['module'])) ? $_GET['module'] : '';
 
+        if (isset($_GET['controller'])) {
+            $model->controller = $_GET['controller'];
+        } else {
+            $controllers = Yii::app()->metadata->getControllers($model->module);
+            if (count($controllers))
+                $model->controller = reset($controllers);
+        }
         $this->render('create', array('model' => $model));
     }
 

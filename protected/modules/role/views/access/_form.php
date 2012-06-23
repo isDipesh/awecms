@@ -4,15 +4,8 @@
     </p>
 
     <?php
-    $module = (isset($_GET['module'])) ? $_GET['module'] : '';
+    
 
-    if (isset($_GET['controller'])) {
-        $controller = $_GET['controller'];
-    } else {
-        $controllers = Yii::app()->metadata->getControllers($module);
-        if (count($controllers))
-            $controller = reset($controllers);
-    }
 
     $form = $this->beginWidget('CActiveForm', array(
         'id' => 'access-form',
@@ -31,20 +24,20 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'module'); ?>
-        <?php echo $form->dropDownList($model, 'module', RoleModule::getInPair(Yii::app()->metadata->getModules(), array('prompt' => 'None'))); ?>
+        <?php echo $form->dropDownList($model, 'module', RoleModule::getInPair(Yii::app()->metadata->getModules()), array('prompt' => 'None')); ?>
         <?php echo $form->error($model, 'module'); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model, 'controller'); ?>
-        <?php echo $form->dropDownList($model, 'controller', RoleModule::getInPair(Yii::app()->metadata->getControllers($module))); ?>
+        <?php echo $form->dropDownList($model, 'controller', RoleModule::getInPair(Yii::app()->metadata->getControllers($model->module))); ?>
         <?php echo $form->error($model, 'controller'); ?>
     </div>
 
-    <?php if (isset($controller)) { ?>
+    <?php if (isset($model->controller)) { ?>
         <div class="row">
             <?php echo $form->labelEx($model, 'action'); ?>
-            <?php echo $form->dropDownList($model, 'action', RoleModule::getInPair(Yii::app()->metadata->getActions($controller, $module))); ?>
+            <?php echo $form->dropDownList($model, 'action', RoleModule::getInPair(Yii::app()->metadata->getActions($model->controller, $model->module))); ?>
             <?php echo $form->error($model, 'action'); ?>
         </div>
     <?php } ?>
