@@ -90,6 +90,8 @@ class MenuRenderer extends CMenu {
                 } else if (substr($item['url'], 0, 2) == '//') {
                     //convert //foo to /foo
                     $item['url'] = substr($item['url'], 1);
+                } else if ($item['url'] == '/') {
+                    //NOP
                 } else {
                     $item['url'] = array($item['url']);
                 }
