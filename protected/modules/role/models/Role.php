@@ -26,4 +26,20 @@ class Role extends BaseRole {
         return $isRole && $isActive;
     }
 
+    public static function checkAccess() {
+        $userId = Yii::app()->user->id;
+        if (!$userId)
+            return false;
+        $allowedRoles = Access::model()->findByAttributes(array(
+                    'module' => Yii::app()->getController()->getModule(),
+                    //'controller' => Yii::app()->getController()->id,
+                    'controller' => 'SiteController',
+                    'action' => Yii::app()->getController()->getAction()->id,
+                ))->roles;
+        $userRoles = User::model()->findByPk($userId)->roles;
+        if (array_intersect($allowedRoles, $userRoles))
+            return true;
+        return false;
+    }
+
 }

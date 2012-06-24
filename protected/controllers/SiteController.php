@@ -12,7 +12,7 @@ class SiteController extends Controller {
         return array(
             array('allow',
                 'actions' => array('index', 'view'),
-                'expression' => 'true',
+                'expression' => 'Role::checkAccess()',
             ),
             array('deny',
                 'users' => array('*'),

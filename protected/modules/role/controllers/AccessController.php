@@ -4,7 +4,7 @@ class AccessController extends Controller {
 
     public function actionCreate() {
         $assetsUrl = Yii::app()->getAssetManager()->publish(dirname(__FILE__) . '/../assets/');
-        Yii::app()->getClientScript()->registerScriptFile($assetsUrl.'/accessForm.js?'.time());
+        Yii::app()->getClientScript()->registerScriptFile($assetsUrl . '/accessForm.js?' . time());
         $model = new Access;
         if (isset($_POST['Access'])) {
             $model->setAttributes($_POST['Access']);
@@ -28,10 +28,12 @@ class AccessController extends Controller {
         }
         $model->module = (isset($_GET['module'])) ? $_GET['module'] : '';
 
+        //if controller is selected from dropdown set it to model
         if (isset($_GET['controller'])) {
             $model->controller = $_GET['controller'];
         } else {
-            $controllers = Yii::app()->metadata->getControllers($model->module);
+            //find the first one
+            $controllers = RoleModule::getControllers($model->module);
             if (count($controllers))
                 $model->controller = reset($controllers);
         }
@@ -39,6 +41,10 @@ class AccessController extends Controller {
     }
 
     public function actionUpdate($id) {
+        $assetsUrl = Yii::app()->getAssetManager()->publish(dirname(__FILE__) . '/../assets/');
+        Yii::app()->getClientScript()->registerScriptFile($assetsUrl . '/accessForm.js?' . time());
+        $model = new Access;
+        
         $model = $this->loadModel($id);
 
         if (isset($_POST['Access'])) {
@@ -56,6 +62,14 @@ class AccessController extends Controller {
                 $model->addError('', $e->getMessage());
             }
         }
+
+        //if module is selected from drop down, set it to model and nullify controller from old module
+        if (isset($_GET['module'])) {
+            $model->module = $_GET['module'];
+            $model->controller = NULL;
+        }
+        if (isset($_GET['controller']))
+            $model->controller = $_GET['controller'];
 
         $this->render('update', array(
             'model' => $model,
