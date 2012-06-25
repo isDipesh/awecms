@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 23, 2012 at 09:53 AM
+-- Generation Time: Jun 24, 2012 at 10:58 PM
 -- Server version: 5.5.23
 -- PHP Version: 5.4.3
 
@@ -33,7 +33,16 @@ CREATE TABLE IF NOT EXISTS `access` (
   `action` varchar(50) NOT NULL,
   `enabled` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `access`
+--
+
+INSERT INTO `access` (`id`, `module`, `controller`, `action`, `enabled`) VALUES
+(1, NULL, 'SiteController', 'Index', 1),
+(2, 'menu', 'ajax', 'Save', 1),
+(3, 'menu', 'item', 'Edit', 1);
 
 -- --------------------------------------------------------
 
@@ -47,6 +56,16 @@ CREATE TABLE IF NOT EXISTS `access_nm_role` (
   PRIMARY KEY (`access_id`,`role_id`),
   KEY `role_id` (`role_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `access_nm_role`
+--
+
+INSERT INTO `access_nm_role` (`access_id`, `role_id`) VALUES
+(1, 1),
+(2, 1),
+(3, 1),
+(1, 4);
 
 -- --------------------------------------------------------
 
@@ -96,8 +115,8 @@ CREATE TABLE IF NOT EXISTS `comment` (
 --
 
 INSERT INTO `comment` (`id`, `owner_id`, `owner_name`, `count`, `parent_id`, `creator_id`, `user_name`, `user_email`, `comment_text`, `create_time`, `update_time`, `status`, `link`) VALUES
-(132, 1, 'Page', 10, NULL, 1, '', '', 'nope', 1338879845, 1340003947, 1, '/page/page/view/id/1?sid=3'),
-(133, 1, 'Page', 1, 132, 1, NULL, NULL, 'okay', 1338879871, NULL, 1, '/page/page/view/id/1?sid=3'),
+(132, 1, 'Page', 10, NULL, 1, '', '', 'nope', 1338879845, 1340454724, 0, '/page/page/view/id/1?sid=3'),
+(133, 1, 'Page', 1, 132, 1, NULL, NULL, 'okay', 1338879871, 1340454717, 2, '/page/page/view/id/1?sid=3'),
 (135, 1, 'Page', 2, NULL, 1, NULL, NULL, 'dang', 1338881485, NULL, 1, '/page/page/view/id/1?sid=3'),
 (136, 1, 'Page', 3, NULL, 1, NULL, NULL, 'pass', 1338881529, NULL, 1, '/comments/comment/postComment'),
 (137, 1, 'Page', 5, NULL, 1, NULL, NULL, 'lala', 1338881611, NULL, 1, '/page/page/view/id/1?sid=3'),
@@ -285,28 +304,28 @@ CREATE TABLE IF NOT EXISTS `menu_item` (
 
 INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `name`, `enabled`, `content_id`, `description`, `link`, `role`) VALUES
 (34, 1, 0, 1, 2, 3, 'Home', 1, NULL, NULL, '/', 'all'),
-(44, 3, 0, 1, 2, 3, 'Dashboard', 1, NULL, NULL, '/', ''),
-(45, 3, 0, 1, 4, 17, 'Users', 1, NULL, NULL, '/user', ''),
-(46, 3, 45, 2, 7, 8, 'Manage Users', 1, NULL, NULL, '/user/admin', NULL),
-(47, 3, 45, 2, 9, 10, 'Create User', 1, NULL, NULL, '/user/admin/create', NULL),
-(48, 3, 45, 2, 11, 12, 'Manage Profile Fields', 1, NULL, NULL, '/user/profileField', NULL),
-(49, 3, 45, 2, 13, 14, 'Create Profile Field', 1, NULL, NULL, '/user/profileField/create', NULL),
+(44, 3, 0, 1, 4, 5, 'Dashboard', 1, NULL, NULL, '/', ''),
+(45, 3, 0, 1, 6, 19, 'Users', 1, NULL, NULL, '/user', 'super'),
+(46, 3, 45, 2, 9, 10, 'Manage Users', 1, NULL, NULL, '/user/admin', 'super'),
+(47, 3, 45, 2, 11, 12, 'Create User', 1, NULL, NULL, '/user/admin/create', 'super'),
+(48, 3, 45, 2, 13, 14, 'Manage Profile Fields', 1, NULL, NULL, '/user/profileField', 'super'),
+(49, 3, 45, 2, 15, 16, 'Create Profile Field', 1, NULL, NULL, '/user/profileField/create', 'super'),
 (50, 1, 0, 1, 6, 7, 'Login', 1, NULL, NULL, '/login', 'guest'),
 (51, 1, 0, 1, 4, 5, 'Logout', 1, NULL, NULL, '/logout', 'loggedIn'),
-(52, 3, 45, 2, 5, 6, 'List Users', 1, NULL, NULL, '/user', NULL),
-(53, 3, 0, 1, 26, 39, 'Design', 1, NULL, NULL, NULL, NULL),
-(54, 3, 53, 2, 27, 36, 'Menu', 1, NULL, NULL, '/menu', NULL),
-(55, 3, 54, 3, 28, 29, 'Manage Menus', 1, NULL, NULL, '/menu', NULL),
-(56, 3, 54, 3, 30, 31, 'Create New Menu', 1, NULL, NULL, '/menu/menu/create', NULL),
-(59, 3, 53, 2, 37, 38, 'Themes', 1, NULL, NULL, NULL, NULL),
-(60, 3, 0, 1, 18, 25, 'Content', 1, NULL, NULL, NULL, NULL),
-(61, 3, 60, 2, 19, 20, 'Pages', 1, NULL, NULL, '/page', NULL),
-(62, 3, 60, 2, 23, 24, 'Comments', 1, NULL, NULL, '/comments', NULL),
-(63, 3, 45, 2, 15, 16, 'Roles', 1, NULL, NULL, '/role', NULL),
-(64, 3, 60, 2, 21, 22, 'Categories', 1, NULL, NULL, '/category', NULL),
-(66, 3, 54, 3, 32, 33, 'Edit Main Menu', 1, NULL, NULL, '/menu/item/1', NULL),
-(67, 3, 54, 3, 34, 35, 'Edit Admin Menu', 1, NULL, NULL, 'menu/item/3', NULL),
-(71, 1, 0, 1, 8, 9, 'Dashboard', 1, NULL, NULL, '/', 'super');
+(52, 3, 45, 2, 7, 8, 'List Users', 1, NULL, NULL, '/user', 'super'),
+(53, 3, 0, 1, 28, 41, 'Design', 1, NULL, NULL, NULL, 'super'),
+(54, 3, 53, 2, 29, 38, 'Menu', 1, NULL, NULL, '/menu', 'super'),
+(55, 3, 54, 3, 32, 33, 'Manage Menus', 1, NULL, NULL, '/menu', 'super'),
+(56, 3, 54, 3, 30, 31, 'Create New Menu', 1, NULL, NULL, '/menu/menu/create', 'super'),
+(59, 3, 53, 2, 39, 40, 'Themes', 1, NULL, NULL, NULL, NULL),
+(60, 3, 0, 1, 20, 27, 'Content', 1, NULL, NULL, NULL, 'super'),
+(61, 3, 60, 2, 21, 22, 'Pages', 1, NULL, NULL, '/page', 'super'),
+(62, 3, 60, 2, 25, 26, 'Comments', 1, NULL, NULL, '/comments', 'super'),
+(63, 3, 45, 2, 17, 18, 'Roles', 1, NULL, NULL, '/role', 'super'),
+(64, 3, 60, 2, 23, 24, 'Categories', 1, NULL, NULL, '/category', 'super'),
+(66, 3, 54, 3, 34, 35, 'Edit Main Menu', 1, NULL, NULL, '/menu/item/1', NULL),
+(67, 3, 54, 3, 36, 37, 'Edit Admin Menu', 1, NULL, NULL, 'menu/item/3', NULL),
+(71, 1, 0, 1, 8, 9, 'Dashboard', 1, NULL, NULL, '/admin', 'super');
 
 -- --------------------------------------------------------
 
@@ -564,8 +583,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `email`, `activkey`, `create_at`, `lastvisit_at`, `superuser`, `status`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2012-06-20 13:33:42', 1, 1),
-(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', '0000-00-00 00:00:00', '2012-06-20 13:06:10', 0, 1),
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2012-06-24 08:33:06', 1, 1),
+(2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', '0000-00-00 00:00:00', '2012-06-24 08:29:02', 0, 1),
 (3, 'myuser', '5d5a582e5adf896ed6e1474c700b481a', 'myuser@email.com', '66a6d51638f2ac8efb88898ec73aeab5', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 1),
 (4, 'admina', 'a5d5dd525b4dc07b915448482da44974', 'admina@admina.c', '5c7ad3d0afd32f1353ee6bce1f223552', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0),
 (5, 'dipesh', '28e0cf264ca1722298e317c5c1589739', 'dipesh@dipesh.com', 'f78be23ebbc05c13c8693eef8fa56abb', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 1),
@@ -592,7 +611,6 @@ INSERT INTO `user_nm_role` (`user_id`, `role_id`) VALUES
 (1, 1),
 (4, 1),
 (6, 1),
-(1, 4),
 (4, 4);
 
 -- --------------------------------------------------------
