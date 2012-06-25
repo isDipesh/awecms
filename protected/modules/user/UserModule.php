@@ -57,7 +57,7 @@ class UserModule extends CWebModule {
     public $logoutUrl = array("/logout");
     public $profileUrl = array("/user/profile");
 //	public $returnUrl = array("/user/profile");
-    public $returnLogoutUrl = array("/..");
+    public $returnLogoutUrl;
 
     /**
      * @var int
@@ -115,7 +115,7 @@ class UserModule extends CWebModule {
             'user.models.*',
             'user.components.*',
         ));
-        $this->returnLogoutUrl = Yii::app()->baseUrl;
+        $this->returnLogoutUrl = array('../../');
     }
 
     public function getBehaviorsFor($componentName) {

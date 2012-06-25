@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 24, 2012 at 10:58 PM
+-- Generation Time: Jun 25, 2012 at 05:25 PM
 -- Server version: 5.5.23
 -- PHP Version: 5.4.3
 
@@ -33,16 +33,7 @@ CREATE TABLE IF NOT EXISTS `access` (
   `action` varchar(50) NOT NULL,
   `enabled` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
-
---
--- Dumping data for table `access`
---
-
-INSERT INTO `access` (`id`, `module`, `controller`, `action`, `enabled`) VALUES
-(1, NULL, 'SiteController', 'Index', 1),
-(2, 'menu', 'ajax', 'Save', 1),
-(3, 'menu', 'item', 'Edit', 1);
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -56,16 +47,6 @@ CREATE TABLE IF NOT EXISTS `access_nm_role` (
   PRIMARY KEY (`access_id`,`role_id`),
   KEY `role_id` (`role_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `access_nm_role`
---
-
-INSERT INTO `access_nm_role` (`access_id`, `role_id`) VALUES
-(1, 1),
-(2, 1),
-(3, 1),
-(1, 4);
 
 -- --------------------------------------------------------
 
@@ -359,11 +340,11 @@ CREATE TABLE IF NOT EXISTS `page` (
 --
 
 INSERT INTO `page` (`id`, `user_id`, `title`, `content`, `status`, `created_at`, `modified_at`, `parent_id`, `order`, `type`, `comment_status`, `tags_enabled`, `permission`, `password`, `views`) VALUES
-(1, 3, 'Title', 'The content\r\nadsadas\r\nadasdasd', 'trashed', '2012-05-05 00:00:00', '2012-06-17 02:44:07', 9, 0, 'post', 'open', 1, 'all', 'password', 0),
+(1, 2, 'Title', 'The content\r\nadsadas\r\nadasdasd', 'trashed', '2012-05-05 00:00:00', '2012-06-17 02:44:07', 9, 0, 'post', 'open', 1, 'all', 'password', 0),
 (4, 2, 'Page Title Here', NULL, 'published', '2012-05-05 00:00:00', '2012-05-25 21:19:58', 1, 0, 'post', 'open', 1, 'all', 'password', 0),
 (5, 2, 'Title goes here', 'content', 'published', '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, 'post', 'open', 1, 'all', 'ms4weird', 0),
-(6, 3, 'Title goes here', 'content', 'published', '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, 'post', 'open', 1, 'all', 'ms4weird', 0),
-(7, 3, 'Title goes here', 'content', 'published', '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, 'post', 'open', 1, 'all', 'ms4weird', 0),
+(6, NULL, 'Title goes here', 'content', 'published', '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, 'post', 'open', 1, 'all', 'ms4weird', 0),
+(7, NULL, 'Title goes here', 'content', 'published', '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, 'post', 'open', 1, 'all', 'ms4weird', 0),
 (8, 1, 'Title', 'Content', 'published', '2012-05-18 12:35:18', '2012-05-05 00:00:00', 1, 0, 'post', 'open', 1, 'all', NULL, 1),
 (9, 1, 'New Page Title', 'Content	 ', 'published', '2012-05-21 22:10:59', '2012-05-21 22:11:22', NULL, 0, 'page', 'open', 1, 'all', NULL, 12),
 (10, 4, 'title', NULL, 'published', '2012-05-25 02:22:52', '2012-05-25 03:06:49', 1, 0, 'post', 'open', 1, 'all', NULL, 1);
@@ -399,9 +380,7 @@ CREATE TABLE IF NOT EXISTS `profile` (
 INSERT INTO `profile` (`user_id`, `firstname`) VALUES
 (1, ''),
 (2, ''),
-(3, ''),
 (4, ''),
-(5, ''),
 (6, '');
 
 -- --------------------------------------------------------
@@ -450,7 +429,7 @@ CREATE TABLE IF NOT EXISTS `role` (
   `description` text,
   `active` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `role`
@@ -458,7 +437,8 @@ CREATE TABLE IF NOT EXISTS `role` (
 
 INSERT INTO `role` (`id`, `name`, `description`, `active`) VALUES
 (1, 'super', NULL, 1),
-(4, 'moderator', NULL, 1);
+(4, 'moderator', NULL, 1),
+(5, 'normal', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -583,11 +563,9 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `email`, `activkey`, `create_at`, `lastvisit_at`, `superuser`, `status`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2012-06-24 08:33:06', 1, 1),
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2012-06-25 04:17:47', 1, 1),
 (2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', '0000-00-00 00:00:00', '2012-06-24 08:29:02', 0, 1),
-(3, 'myuser', '5d5a582e5adf896ed6e1474c700b481a', 'myuser@email.com', '66a6d51638f2ac8efb88898ec73aeab5', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 1),
 (4, 'admina', 'a5d5dd525b4dc07b915448482da44974', 'admina@admina.c', '5c7ad3d0afd32f1353ee6bce1f223552', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0),
-(5, 'dipesh', '28e0cf264ca1722298e317c5c1589739', 'dipesh@dipesh.com', 'f78be23ebbc05c13c8693eef8fa56abb', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 1),
 (6, 'adminas', '5f4dcc3b5aa765d61d8327deb882cf99', 'xtradasf@dsad.com', 'fb87fb607c3c5e901beb90059f54aba7', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 1);
 
 -- --------------------------------------------------------
@@ -658,8 +636,8 @@ CREATE TABLE IF NOT EXISTS `widget_setting` (
 -- Constraints for table `access_nm_role`
 --
 ALTER TABLE `access_nm_role`
-  ADD CONSTRAINT `access_nm_role_ibfk_1` FOREIGN KEY (`access_id`) REFERENCES `access` (`id`),
-  ADD CONSTRAINT `access_nm_role_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`);
+  ADD CONSTRAINT `access_nm_role_ibfk_12` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
+  ADD CONSTRAINT `access_nm_role_ibfk_11` FOREIGN KEY (`access_id`) REFERENCES `access` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `content`
@@ -672,15 +650,15 @@ ALTER TABLE `content`
 -- Constraints for table `page`
 --
 ALTER TABLE `page`
-  ADD CONSTRAINT `page_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`),
-  ADD CONSTRAINT `page_ibfk_2` FOREIGN KEY (`parent_id`) REFERENCES `page` (`id`);
+  ADD CONSTRAINT `page_ibfk_6` FOREIGN KEY (`parent_id`) REFERENCES `page` (`id`) ON DELETE SET NULL,
+  ADD CONSTRAINT `page_ibfk_5` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE SET NULL;
 
 --
 -- Constraints for table `user_nm_role`
 --
 ALTER TABLE `user_nm_role`
-  ADD CONSTRAINT `user_nm_role_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `user_nm_role_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `user_nm_role_ibfk_4` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION,
+  ADD CONSTRAINT `user_nm_role_ibfk_3` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
