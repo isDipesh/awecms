@@ -31,12 +31,13 @@ class Role extends BaseRole {
         if (!$userId)
             return false;
         $access = Access::model()->findByAttributes(array(
-                    'module' => Yii::app()->getController()->getModule(),
-                    'controller' => Yii::app()->getController()->id,
-                    'action' => Yii::app()->getController()->getAction()->id,
+            'module' => Yii::app()->getController()->getModule(),
+            'controller' => Yii::app()->getController()->id,
+            'action' => Yii::app()->getController()->getAction()->id,
                 ));
         //if there's no rule, allow everyone
-        if(!$access) return true;
+        if (!$access)
+            return true;
         $userRoles = User::model()->findByPk($userId)->roles;
         if (array_intersect($access->roles, $userRoles))
             return true;
