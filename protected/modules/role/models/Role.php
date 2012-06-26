@@ -30,11 +30,13 @@ class Role extends BaseRole {
         $userId = Yii::app()->user->id;
         if (!$userId)
             return false;
-        $access = Access::model()->findByAttributes(array(
-            'module' => Yii::app()->getController()->getModule(),
-            'controller' => Yii::app()->getController()->id,
-            'action' => Yii::app()->getController()->getAction()->id,
-                ));
+        $access = Access::model()->findByAttributes(
+                array(
+                    'module' => Yii::app()->getController()->getModule()->getId(),
+                    'controller' => Yii::app()->getController()->id,
+                    'action' => Yii::app()->getController()->getAction()->id,
+                )
+        );
         //if there's no rule, allow everyone
         if (!$access)
             return true;

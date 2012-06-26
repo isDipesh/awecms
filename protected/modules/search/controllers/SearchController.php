@@ -3,7 +3,7 @@
 Yii::import('search.vendors.*');
 require_once('Zend/Search/Lucene.php');
 
-class SearchController extends CController {
+class SearchController extends Controller {
 
     private $_indexFile = 'protected/runtime/search';
     public $breadcrumbs;
