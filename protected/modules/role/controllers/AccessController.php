@@ -71,8 +71,15 @@ class AccessController extends Controller {
             $model->module = $_GET['module'];
             $model->controller = NULL;
         }
-        if (isset($_GET['controller']))
+        //if controller is selected from dropdown set it to model
+        if (isset($_GET['controller'])) {
             $model->controller = $_GET['controller'];
+        } else {
+            //find the first one
+            $controllers = RoleModule::getControllers($model->module);
+            if (count($controllers))
+                $model->controller = reset($controllers);
+        }
 
         $this->render('update', array(
             'model' => $model,

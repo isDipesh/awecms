@@ -5,7 +5,6 @@ class AweUrlManager extends CUrlManager {
     public $appendParams = false;
 
     public function createUrl($route, $params = array(), $ampersand = '&') {
-
         //for admin and admin/*
         $parts = explode('/', $route);
 
@@ -22,7 +21,7 @@ class AweUrlManager extends CUrlManager {
             $route = 'admin/' . $route;
         }
 
-        return parent::createUrl($route, $params, $ampersand);
+        return parent::createUrlDefault($route, $params, $ampersand);
     }
 
     public function parseUrl($request) {

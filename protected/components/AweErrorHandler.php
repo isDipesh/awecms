@@ -21,10 +21,12 @@ class AweErrorHandler extends CErrorHandler {
             if (isset($exception->exception->statusCode)) {
                 if ($exception->exception->statusCode == '404') {
                     $handle = true;
-                    //die();
                 }
             }
         }
+
+
+
 
         if ($handle) {
             $path = Yii::app()->getRequest()->pathInfo;
@@ -67,17 +69,22 @@ class AweErrorHandler extends CErrorHandler {
                     continue;
                 }
 
+
                 if (Yii::app()->hasModule($segments[$key - 1])) {
                     $newSegments[$c] = Yii::app()->getModule($segments[$key - 1])->defaultController;
                     $newSegments[$c + 1] = $segment;
                     $c++;
                     continue;
                 }
+
+                //TODO parse http://cms/category/1 to http://cms/category/view?id=1
+
                 $newSegments[$c] = $segment;
             }
 
             $path = '/' . implode('/', $newSegments);
             $errorController = new Controller('error');
+
             $errorController->forward($path);
         } else {
             parent::handle($exception);
