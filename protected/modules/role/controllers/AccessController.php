@@ -44,12 +44,15 @@ class AccessController extends Controller {
         $assetsUrl = Yii::app()->getAssetManager()->publish(dirname(__FILE__) . '/../assets/');
         Yii::app()->getClientScript()->registerScriptFile($assetsUrl . '/accessForm.js?' . time());
         $model = new Access;
-        
+
         $model = $this->loadModel($id);
 
         if (isset($_POST['Access'])) {
             $model->setAttributes($_POST['Access']);
-            $model->roles = $_POST['Access']['roles'];
+            if (isset($_POST['Access']['roles']))
+                $model->roles = $_POST['Access']['roles'];
+            else
+                $model->roles = array();
             try {
                 if ($model->save()) {
                     if (isset($_GET['returnUrl'])) {

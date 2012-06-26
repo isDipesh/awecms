@@ -39,6 +39,7 @@ class SiteController extends Controller {
     }
 
     public function actionIndex() {
+        echo Yii::app()->createUrl('/category/category/view/id/2');
         $this->render('index');
     }
 

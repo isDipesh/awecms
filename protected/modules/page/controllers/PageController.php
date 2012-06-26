@@ -63,9 +63,15 @@ public function filters() {
         
         if(isset($_POST['Page'])) {
             $model->setAttributes($_POST['Page']);
-			$model->parent = $_POST['Page']['parent'];
-			$model->user = $_POST['Page']['user'];
-			$model->categories = $_POST['Page']['categories'];
+if (isset($_POST['Page']['parent'])) $model->parent = $_POST['Page']['parent'];
+		else
+		$model->parent = array();
+if (isset($_POST['Page']['user'])) $model->user = $_POST['Page']['user'];
+		else
+		$model->user = array();
+if (isset($_POST['Page']['categories'])) $model->categories = $_POST['Page']['categories'];
+		else
+		$model->categories = array();
                 try {
                     if($model->save()) {
                         if (isset($_GET['returnUrl'])) {
