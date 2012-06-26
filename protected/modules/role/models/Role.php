@@ -31,7 +31,7 @@ class Role extends BaseRole {
         if (!$userId)
             return false;
         $module = Yii::app()->getController()->getModule();
-        if (!empty($module)){
+        if (!empty($module)) {
             $module = Yii::app()->getController()->getModule()->getId();
         }
         $access = Access::model()->findByAttributes(

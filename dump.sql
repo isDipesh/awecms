@@ -346,7 +346,7 @@ INSERT INTO `page` (`id`, `user_id`, `title`, `content`, `status`, `created_at`,
 (6, NULL, 'Title goes here', 'content', 'published', '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, 'post', 'open', 1, 'all', 'ms4weird', 0),
 (7, NULL, 'Title goes here', 'content', 'published', '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 0, 'post', 'open', 1, 'all', 'ms4weird', 0),
 (8, 1, 'Title', 'Content', 'published', '2012-05-18 12:35:18', '2012-05-05 00:00:00', 1, 0, 'post', 'open', 1, 'all', NULL, 1),
-(9, 1, 'New Page Title', 'Content	 ', 'published', '2012-05-21 22:10:59', '2012-05-21 22:11:22', NULL, 0, 'page', 'open', 1, 'all', NULL, 12),
+(9, 1, 'New Page Title', 'Content  ', 'published', '2012-05-21 22:10:59', '2012-05-21 22:11:22', NULL, 0, 'page', 'open', 1, 'all', NULL, 12),
 (10, 4, 'title', NULL, 'published', '2012-05-25 02:22:52', '2012-05-25 03:06:49', 1, 0, 'post', 'open', 1, 'all', NULL, 1);
 
 -- --------------------------------------------------------
