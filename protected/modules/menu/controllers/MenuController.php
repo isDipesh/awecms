@@ -2,12 +2,6 @@
 
 class MenuController extends Controller {
 
-    public function actionView($id) {
-        $this->render('view', array(
-            'model' => $this->loadModel($id, 'Menu'),
-        ));
-    }
-
     public function actionCreate() {
         $model = new Menu;
         if (isset($_POST['Menu'])) {

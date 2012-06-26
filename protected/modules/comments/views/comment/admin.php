@@ -3,11 +3,35 @@ $this->breadcrumbs = array(
     Yii::t('CommentsModule.msg', 'Comments')
 );
 $this->menu = array(
-    array('label' => Yii::t('CommentsModule.msg', 'All Comments')),
-    array('label' => Yii::t('CommentsModule.msg', 'Active Comments'), 'url' => array('/comments/settings')),
+    array('label' => Yii::t('CommentsModule.msg', 'All Comments'), 'url' => isset($model->status) ? array('/comments') : ''),
+    array('label' => Yii::t('CommentsModule.msg', 'Active Comments'), 'url' => (isset($model->status) && $model->status == 1) ? '' : Yii::app()->createUrl('comments/admin?status=1')),
+    array('label' => Yii::t('CommentsModule.msg', 'Pending Comments'), 'url' => (isset($model->status) && $model->status == 0) ? '' : Yii::app()->createUrl('comments/admin?status=0')),
+    array('label' => Yii::t('CommentsModule.msg', 'Trash'), 'url' => (isset($model->status) && $model->status == 2) ? '' : Yii::app()->createUrl('comments/admin?status=2')),
     array('label' => Yii::t('CommentsModule.msg', 'Comment Settings'), 'url' => array('/comments/settings')),
 );
 ?>
+
+<h1>
+    <?php
+    $adj = 'All ';
+    if (isset($model->status)) {
+        switch ($model->status) {
+            case '1':
+                $adj = 'Active ';
+                break;
+            case '0':
+                $adj = 'Pending ';
+                break;
+            case '2':
+                $adj = 'Trashed ';
+                break;
+            default:
+                break;
+        }
+    }
+    echo $adj;
+    ?>
+    Comments</h1>
 <div class="right">
     <?php echo CHtml::link(Yii::t('CommentsModule.msg', 'Comment Settings'), Yii::app()->createUrl('comments/settings/')); ?>
 </div>

@@ -108,20 +108,8 @@ class CommentController extends Controller {
     public function actionAdmin() {
         $model = new Comment('search');
         $model->unsetAttributes();  // clear any default values
-        if (isset($_GET['Comment']))
-            $model->attributes = $_GET['Comment'];
-
-        $this->render('admin', array(
-            'model' => $model,
-        ));
-    }
-    
-    public function actionActive() {
-        $model = Comment::model()->findByAttributes(array(''));
-        $model->unsetAttributes();  // clear any default values
-        if (isset($_GET['Comment']))
-            $model->attributes = $_GET['Comment'];
-
+        if (isset($_GET['status']))
+            $model->status = $_GET['status'];
         $this->render('admin', array(
             'model' => $model,
         ));
@@ -155,7 +143,7 @@ class CommentController extends Controller {
         if (isset($_POST['Comment']) && Yii::app()->request->isAjaxRequest) {
             $comment = new Comment();
             $comment->setAttributes($_POST['Comment']);
-            $comment->count = $comment->getCommentCount($_POST['Comment']['owner_name'],$_POST['Comment']['owner_id']);
+            $comment->count = $comment->getCommentCount($_POST['Comment']['owner_name'], $_POST['Comment']['owner_id']);
             $result = array();
             if ($comment->save()) {
                 //if the comment status is approved or if premoderation is false, send success message

@@ -4,6 +4,13 @@ $this->breadcrumbs = array(
     Yii::t('app', 'Comments') => array('/comments'),
     Yii::t('app', 'Edit'),
 );
+$this->menu = array(
+    array('label' => Yii::t('CommentsModule.msg', 'All Comments'), 'url' => array('/comments')),
+    array('label' => Yii::t('CommentsModule.msg', 'Active Comments'), 'url' => Yii::app()->createUrl('comments/admin?status=1')),
+    array('label' => Yii::t('CommentsModule.msg', 'Pending Comments'), 'url' => Yii::app()->createUrl('comments/admin?status=0')),
+    array('label' => Yii::t('CommentsModule.msg', 'Trash'), 'url' => Yii::app()->createUrl('comments/admin?status=2')),
+    array('label' => Yii::t('CommentsModule.msg', 'Comment Settings'), 'url' => array('/comments/settings')),
+);
 ?>
 
 <h1> <?php echo Yii::t('app', 'Edit Comment'); ?></h1>
@@ -22,7 +29,7 @@ $this->breadcrumbs = array(
     <div class="row">
         <?php echo $form->labelEx($model, 'creator_id'); ?>
         <?php echo $form->dropDownList($model, 'creator_id', array_merge(array('0' => 'None'), CHtml::listData(User::model()->findAll(), 'id', 'username'))); ?>
-<?php echo $form->error($model, 'creator_id'); ?>
+        <?php echo $form->error($model, 'creator_id'); ?>
     </div>
 
     The following two fields are for guest users, used only when the comment is attached to none of the registered users.
@@ -32,31 +39,31 @@ $this->breadcrumbs = array(
         <?php echo $form->error($model, 'user_name'); ?>
         <?php echo $form->labelEx($model, 'user_email'); ?>
         <?php echo $form->textField($model, 'user_email', array('size' => 60, 'maxlength' => 128)); ?>
-<?php echo $form->error($model, 'user_email'); ?>
+        <?php echo $form->error($model, 'user_email'); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model, 'comment_text'); ?>
         <?php echo $form->textArea($model, 'comment_text', array('rows' => 6, 'cols' => 50)); ?>
-<?php echo $form->error($model, 'comment_text'); ?>
+        <?php echo $form->error($model, 'comment_text'); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model, 'status'); ?>
         <?php echo $form->dropDownList($model, 'status', array('0' => 'Pending', '1' => 'Active', '2' => 'Trashed')); ?>
-<?php echo $form->error($model, 'status'); ?>
+        <?php echo $form->error($model, 'status'); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model, 'link'); ?>
         <?php echo $form->textField($model, 'link', array('size' => 60)); ?>
-<?php echo $form->error($model, 'link'); ?>
+        <?php echo $form->error($model, 'link'); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model, 'count'); ?>
         <?php echo $form->textField($model, 'count'); ?>
-<?php echo $form->error($model, 'count'); ?>
+        <?php echo $form->error($model, 'count'); ?>
     </div>
 
     <div class="row">
@@ -70,7 +77,7 @@ $this->breadcrumbs = array(
         }
         echo $form->dropDownList($model, 'parent_id', CHtml::listData($allModels, 'id', 'id'), array('prompt' => 'None'));
         ?>
-<?php echo $form->error($model, 'parent_id'); ?>
+        <?php echo $form->error($model, 'parent_id'); ?>
     </div>
 
     <?php

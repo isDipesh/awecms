@@ -3,6 +3,13 @@ $this->breadcrumbs = array(
     Yii::t('app', 'Comments') => array('/comments'),
     Yii::t('app', 'Settings'),
 );
+$this->menu = array(
+    array('label' => Yii::t('CommentsModule.msg', 'All Comments'), 'url' => array('/comments')),
+    array('label' => Yii::t('CommentsModule.msg', 'Active Comments'), 'url' => Yii::app()->createUrl('comments/admin?status=1')),
+    array('label' => Yii::t('CommentsModule.msg', 'Pending Comments'), 'url' => Yii::app()->createUrl('comments/admin?status=0')),
+    array('label' => Yii::t('CommentsModule.msg', 'Trash'), 'url' => Yii::app()->createUrl('comments/admin?status=2')),
+    array('label' => Yii::t('CommentsModule.msg', 'Comment Settings')),
+);
 ?>
 
 
