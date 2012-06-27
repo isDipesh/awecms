@@ -7,6 +7,12 @@ class Awecms {
         return $ar->primaryKey;
     }
 
+    public static function pluralize($singular, $plural, $count) {
+        if ($count == 1)
+            return $singular;
+        return $plural;
+    }
+
     public static function array_to_object($array) {
         $obj = new stdClass;
         foreach ($array as $k => $v) {

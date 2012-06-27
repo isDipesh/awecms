@@ -39,7 +39,7 @@ abstract class BasePage extends CActiveRecord {
 
     public function rules() {
         return array(
-            array('title, type, views', 'required'),
+            array('title, type', 'required'),
             array('user_id, content, status, parent_id, order, comment_status, tags_enabled, permission, password', 'default', 'setOnEmpty' => true, 'value' => null),
             array('user_id, parent_id, order, tags_enabled, views', 'numerical', 'integerOnly' => true),
             array('title', 'length', 'max' => 255),

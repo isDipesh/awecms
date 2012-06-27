@@ -3,17 +3,16 @@ $this->breadcrumbs = array(
     Yii::t('app', 'Categories') => array('/category'),
     Yii::t('app', 'Create'),
 );
-if(!isset($this->menu) || $this->menu === array())
-$this->menu=array(
-	array('label'=>Yii::t('app', 'List'), 'url'=>array('index')),
-	array('label'=>Yii::t('app', 'Manage'), 'url'=>array('admin')),
-);
+if (!isset($this->menu) || $this->menu === array())
+    $this->menu = array(
+        array('label' => Yii::t('app', 'List'), 'url' => array('index')),
+        array('label' => Yii::t('app', 'Manage'), 'url' => array('admin')),
+    );
 ?>
 
 <h1> Create New Category </h1>
 <?php
 $this->renderPartial('_form', array(
-			'model' => $model,
-			'buttons' => 'create'));
-
+    'model' => $model,
+    'buttons' => 'create'));
 ?>
