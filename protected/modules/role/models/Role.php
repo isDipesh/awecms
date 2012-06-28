@@ -39,6 +39,7 @@ class Role extends BaseRole {
                     'module' => $module,
                     'controller' => Yii::app()->getController()->id,
                     'action' => Yii::app()->getController()->getAction()->id,
+                    'enabled' => 1
                 )
         );
         //if there's no rule, allow everyone

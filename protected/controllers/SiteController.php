@@ -11,7 +11,7 @@ class SiteController extends Controller {
     public function accessRules() {
         return array(
             array('allow',
-                'actions' => array('index', 'view'),
+                'actions' => array('index', 'view', 'json'),
                 'expression' => 'Role::checkAccess()',
             ),
             array('deny',

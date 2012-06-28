@@ -27,7 +27,7 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'controller'); ?>
-        <?php echo $form->dropDownList($model, 'controller', RoleModule::getInPair(RoleModule::getControllers($model->module))); ?>
+        <?php echo $form->dropDownList($model, 'controller', RoleModule::getControllersInPair($model->module)); ?>
         <?php echo $form->error($model, 'controller'); ?>
     </div>
 
