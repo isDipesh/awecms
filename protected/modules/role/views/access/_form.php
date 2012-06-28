@@ -21,7 +21,7 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'module'); ?>
-        <?php echo $form->dropDownList($model, 'module', RoleModule::getInPair(Yii::app()->metadata->getModules()), array('prompt' => 'None')); ?>
+        <?php echo $form->dropDownList($model, 'module', RoleModule::getModulesInPair(), array('prompt' => 'None')); ?>
         <?php echo $form->error($model, 'module'); ?>
     </div>
 
@@ -39,12 +39,28 @@
         </div>
     <?php } ?>
 
-    <div class="row nm_row">
-        <label for="roles"><?php echo Yii::t('app', 'Roles'); ?></label>
+    <div id="roles" class="row nm_row">
+        <label for="roles"><strong><?php echo Yii::t('app', 'Roles'); ?>:</strong></label>
+        <br/>
         <?php
         echo CHtml::checkBoxList('Access[roles]', array_map('Awecms::getPrimaryKey', $model->roles), CHtml::listData(Role::model()->findAll(), 'id', 'name'), array('attributeitem' => 'id', 'checkAll' => 'Select All'));
         ?>
     </div>
+
+    <div id="defaultRoles" class="row">
+        <?php echo $form->checkBox($model, 'all'); ?>
+        <?php echo $form->labelEx($model, 'all'); ?>
+        <?php echo $form->error($model, 'all'); ?>
+
+        <?php echo $form->checkBox($model, 'loggedIn'); ?>
+        <?php echo $form->labelEx($model, 'loggedIn'); ?>
+        <?php echo $form->error($model, 'loggedIn'); ?>
+
+        <?php echo $form->checkBox($model, 'guest'); ?>
+        <?php echo $form->labelEx($model, 'guest'); ?>
+        <?php echo $form->error($model, 'guest'); ?>
+    </div>
+
 
     <?php
     echo CHtml::submitButton(Yii::t('app', 'Save'));

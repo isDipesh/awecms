@@ -21,7 +21,6 @@ class Page extends BasePage {
             if (in_array($page->id, $parsed))
                 break;
             $parsed[] = $page->id;
-
             array_unshift($hierarchy, $page);
             $page = $page->parent;
         } while ($page);

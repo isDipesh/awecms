@@ -10,6 +10,9 @@
       * @property string $controller
       * @property string $action
       * @property integer $enabled
+      * @property integer $all
+      * @property integer $loggedIn
+      * @property integer $guest
  *
  * Relations of table "access" available as properties of the model:
  * @property Role[] $roles
@@ -27,10 +30,10 @@ abstract class BaseAccess extends CActiveRecord {
     public function rules() {
         return array(
             array('controller, action', 'required'),
-            array('module, enabled', 'default', 'setOnEmpty' => true, 'value' => null),
-            array('enabled', 'numerical', 'integerOnly' => true),
+            array('module, enabled, all, loggedIn, guest', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('enabled, all, loggedIn, guest', 'numerical', 'integerOnly' => true),
             array('module, controller, action', 'length', 'max' => 50),
-            array('id, module, controller, action, enabled', 'safe', 'on' => 'search'),
+            array('id, module, controller, action, enabled, all, loggedIn, guest', 'safe', 'on' => 'search'),
         );
     }
     
@@ -57,6 +60,9 @@ abstract class BaseAccess extends CActiveRecord {
             'controller' => Yii::t('app', 'Controller'),
             'action' => Yii::t('app', 'Action'),
             'enabled' => Yii::t('app', 'Enabled'),
+            'all' => Yii::t('app', 'All'),
+            'loggedIn' => Yii::t('app', 'Logged In'),
+            'guest' => Yii::t('app', 'Guest'),
         );
     }
 
@@ -68,6 +74,9 @@ abstract class BaseAccess extends CActiveRecord {
         $criteria->compare('controller', $this->controller, true);
         $criteria->compare('action', $this->action, true);
         $criteria->compare('enabled', $this->enabled);
+        $criteria->compare('all', $this->all);
+        $criteria->compare('loggedIn', $this->loggedIn);
+        $criteria->compare('guest', $this->guest);
 
         return new CActiveDataProvider(get_class($this), array(
                     'criteria' => $criteria,

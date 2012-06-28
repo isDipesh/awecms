@@ -25,9 +25,13 @@ class RoleModule extends CWebModule {
     public static function getInPair($array) {
         $arrayPair = array();
         foreach ($array as $a) {
-            $arrayPair[$a] = $a;
+            $arrayPair[$a] = ucfirst($a);
         }
         return $arrayPair;
+    }
+
+    public static function getModulesInPair() {
+        return self::getInPair(Yii::app()->metadata->getModules());
     }
 
     public static function getControllerId($path) {
@@ -41,15 +45,16 @@ class RoleModule extends CWebModule {
 
     public static function getControllersInPair($module) {
         $controllers = array_map('self::getControllerId', Yii::app()->metadata->getControllers($module));
-        foreach ($controllers as $key => $controller) {
-            if (Yii::app()->getModule($module)->defaultController == $controller) {
-                $controllers[$controller] = $controller . ' (default)';
+        $newControllers = array();
+        foreach ($controllers as $controller) {
+            if (Yii::app()->getModule($module) && strtolower(Yii::app()->getModule($module)->defaultController) == strtolower($controller)) {
+                $default = ucfirst($controller) . ' (Default)';
+                $newControllers = array_merge(array($controller => $default), $newControllers);
             } else {
-                $controllers[$controller] = $controller;
+                $newControllers[$controller] = ucfirst($controller);
             }
-            unset($controllers[$key]);
         }
-        return $controllers;
+        return $newControllers;
     }
 
 }
