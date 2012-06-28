@@ -22,7 +22,7 @@ return array(
             # recovery password path
             'recoveryUrl' => array('/user/recovery'),
             # login form path
-            'loginUrl' => array('/login'),
+            'loginUrl' => array('login'),
             # page after login
             #'returnUrl' => '/index.php',
             # page after logout
@@ -37,7 +37,7 @@ return array(
         ),
         'user' => array(
             'allowAutoLogin' => true,
-            'loginUrl' => array('/login'),
+            'loginUrl' => array('login'),
         ),
     ),
 );

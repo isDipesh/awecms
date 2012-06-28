@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Categories') => array('/category'),
+    Yii::t('app', 'Categories') => array('index'),
     Yii::t('app', $model->name),
 );
 if (!isset($this->menu) || $this->menu === array()) {
@@ -15,22 +15,17 @@ if (!isset($this->menu) || $this->menu === array()) {
 ?>
 
 <h1><?php echo $model->name; ?></h1>
+<?php echo $model->description; ?>
 
-<?php
-$this->widget('zii.widgets.CDetailView', array(
-    'data' => $model,
-    'attributes' => array(
-        array(
-            'name' => 'id',
-            'visible' => Yii::app()->user->id == 'admin'
-        ), 'name', 'description',)));
-?><h2><?php echo CHtml::link(Yii::t('app', 'Pages'), array('/page/page')); ?></h2>
-<ul>
-    <?php
-    if (is_array($model->pages))
-        foreach ($model->pages as $foreignobj) {
+<?php if (count($model->pages)) { ?>
+    <h2><?php echo CHtml::link(Yii::t('app', Awecms::pluralize('Sub-Page', 'Pages', count($model->pages))), array('/page/page')); ?></h2>
+    <ul>
+        <?php
+        if (is_array($model->pages))
+            foreach ($model->pages as $foreignobj) {
 
-            echo '<li>';
-            echo CHtml::link($foreignobj->title, array('/page/page/view', 'id' => $foreignobj->id));
-        }
-    ?></ul>
+                echo '<li>';
+                echo CHtml::link($foreignobj->title, array('/page/page/view', 'id' => $foreignobj->id));
+            }
+        ?></ul>
+<?php } ?>

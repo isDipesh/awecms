@@ -61,9 +61,10 @@ foreach (CActiveRecord::model(Yii::import($this->model))->relations() as $key =>
     if ($relation[0] == 'CManyManyRelation' || $relation[0] == 'CHasManyRelation') {
         $relatedModel = CActiveRecord::model($relation[1]);
         $identificationColumn = AweCrudCode::getIdentificationColumnFromTableSchema($relatedModel->tableSchema);
-        echo "<?php if (count(\$model->{$key})) { ?>
+        echo "
+        <?php if (count(\$model->{$key})) { ?>
                             <h2>";
-        echo "<?php echo CHtml::link(Yii::t('app',' Awecms::pluralize('Sub-Page', '" . ucfirst($key) . "', count(\$model->{$key}))), array('" . $controller . "'));?>";
+        echo "<?php echo CHtml::link(Yii::t('app', Awecms::pluralize('Sub-Page', '" . ucfirst($key) . "', count(\$model->{$key}))), array('" . $controller . "'));?>";
         echo "</h2>\n";
         echo CHtml::openTag('ul');
         echo "
@@ -73,7 +74,8 @@ foreach (CActiveRecord::model(Yii::import($this->model))->relations() as $key =>
 					}
 						?>";
         echo CHtml::closeTag('ul');
-        echo '<?php } ?>';
+        echo '
+            <?php } ?>';
     }
 }
 ?>

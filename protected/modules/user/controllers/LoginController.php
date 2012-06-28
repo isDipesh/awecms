@@ -22,7 +22,7 @@ class LoginController extends Controller {
 //					else
 //						$this->redirect(Yii::app()->user->returnUrl);
                 }
-            } elseif (isset($_SERVER['HTTP_REFERER']) && !strpos($_SERVER['HTTP_REFERER'], '/login')) {
+            } elseif (isset($_SERVER['HTTP_REFERER']) && !strpos($_SERVER['HTTP_REFERER'], 'login')) {
                 //if referrer is available, set it as returnUrl
                 Yii::app()->user->returnUrl = $_SERVER['HTTP_REFERER'];
             }
