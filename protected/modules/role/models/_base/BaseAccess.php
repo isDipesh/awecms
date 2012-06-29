@@ -45,8 +45,8 @@ abstract class BaseAccess extends CActiveRecord {
 
     public function behaviors() {
         return array(
-        'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
-);
+            'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
+        );
     }
 
     public function relations() {

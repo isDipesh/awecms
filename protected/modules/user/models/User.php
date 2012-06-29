@@ -39,6 +39,12 @@ class User extends CActiveRecord {
         return Yii::app()->getModule('user')->tableUsers;
     }
 
+    public function behaviors() {
+        return array(
+            'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
+        );
+    }
+
     /**
      * @return array validation rules for model attributes.
      */
