@@ -16,7 +16,7 @@
         <div id="main_container">
             <header>
                 <h2 id="title">
-                    <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Yii::app()->name, array('/admin')); ?>
+                    <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Settings::get('site','name') , array('/admin')); ?>
                 </h2>
                 <nav id="header_right">
                     <ul id="header_links">
