@@ -39,8 +39,7 @@ class RoleModule extends CWebModule {
     }
 
     public static function getControllers($module) {
-        $controllers = array_map('self::getControllerId', Yii::app()->metadata->getControllers($module));
-        return $controllers;
+        return array_map('self::getControllerId', Yii::app()->metadata->getControllers($module));
     }
 
     public static function getControllersInPair($module) {

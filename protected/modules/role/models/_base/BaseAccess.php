@@ -13,6 +13,7 @@
       * @property integer $all
       * @property integer $loggedIn
       * @property integer $guest
+      * @property string $rule
  *
  * Relations of table "access" available as properties of the model:
  * @property Role[] $roles
@@ -30,10 +31,11 @@ abstract class BaseAccess extends CActiveRecord {
     public function rules() {
         return array(
             array('controller, action', 'required'),
-            array('module, enabled, all, loggedIn, guest', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('module, enabled, all, loggedIn, guest, rule', 'default', 'setOnEmpty' => true, 'value' => null),
             array('enabled, all, loggedIn, guest', 'numerical', 'integerOnly' => true),
             array('module, controller, action', 'length', 'max' => 50),
-            array('id, module, controller, action, enabled, all, loggedIn, guest', 'safe', 'on' => 'search'),
+            array('rule', 'length', 'max' => 5),
+            array('id, module, controller, action, enabled, all, loggedIn, guest, rule', 'safe', 'on' => 'search'),
         );
     }
     
@@ -63,6 +65,7 @@ abstract class BaseAccess extends CActiveRecord {
             'all' => Yii::t('app', 'All'),
             'loggedIn' => Yii::t('app', 'Logged In'),
             'guest' => Yii::t('app', 'Guest'),
+            'rule' => Yii::t('app', 'Rule'),
         );
     }
 
@@ -77,6 +80,7 @@ abstract class BaseAccess extends CActiveRecord {
         $criteria->compare('all', $this->all);
         $criteria->compare('loggedIn', $this->loggedIn);
         $criteria->compare('guest', $this->guest);
+        $criteria->compare('rule', $this->rule, true);
 
         return new CActiveDataProvider(get_class($this), array(
                     'criteria' => $criteria,

@@ -31,21 +31,14 @@
         <?php echo $form->error($model, 'controller'); ?>
     </div>
 
-    <?php if (isset($model->controller)) { ?>
-        <div class="row">
-            <?php echo $form->labelEx($model, 'action'); ?>
-            <?php echo $form->dropDownList($model, 'action', RoleModule::getInPair(Yii::app()->metadata->getActions(ucfirst($model->controller) . 'Controller', $model->module))); ?>
-            <?php echo $form->error($model, 'action'); ?>
-        </div>
-    <?php } ?>
 
-    <div id="roles" class="row nm_row">
-        <label for="roles"><strong><?php echo Yii::t('app', 'Roles'); ?>:</strong></label>
-        <br/>
-        <?php
-        echo CHtml::checkBoxList('Access[roles]', array_map('Awecms::getPrimaryKey', $model->roles), CHtml::listData(Role::model()->findAll(), 'id', 'name'), array('attributeitem' => 'id', 'checkAll' => 'Select All'));
-        ?>
+    <div class="row">
+        <?php echo $form->labelEx($model, 'action'); ?>
+        <?php echo $form->dropDownList($model, 'action', RoleModule::getInPair(Yii::app()->metadata->getActions(ucfirst($model->controller) . 'Controller', $model->module))); ?>
+        <?php echo $form->error($model, 'action'); ?>
     </div>
+
+    <label for="roles"><strong><?php echo Yii::t('app', 'Roles'); ?>:</strong></label>
 
     <div id="defaultRoles" class="row">
         <?php echo $form->checkBox($model, 'all'); ?>
@@ -59,6 +52,28 @@
         <?php echo $form->checkBox($model, 'guest'); ?>
         <?php echo $form->labelEx($model, 'guest'); ?>
         <?php echo $form->error($model, 'guest'); ?>
+    </div>
+
+    <div id="roles" class="row nm_row">
+        <?php
+        echo CHtml::checkBoxList('Access[roles]', array_map('Awecms::getPrimaryKey', $model->roles), CHtml::listData(Role::model()->findAll(), 'id', 'name'), array('attributeitem' => 'id'));
+        ?>
+    </div>
+
+    <div class="row">
+        <?php
+        /*
+          echo $form->labelEx($model, 'rule'); ?>
+          <?php
+          echo CHtml::activeDropDownList($model, 'rule', array(
+          'allow' => Yii::t('app', 'Allow'),
+          'deny' => Yii::t('app', 'Deny'),
+          ));
+          ?>
+          <?php echo $form->error($model, 'rule');
+         */
+        ?>
+
     </div>
 
 

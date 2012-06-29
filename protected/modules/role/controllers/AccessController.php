@@ -69,7 +69,8 @@ class AccessController extends Controller {
         //if module is selected from drop down, set it to model and nullify controller from old module
         if (isset($_GET['module'])) {
             $model->module = $_GET['module'];
-            $model->controller = NULL;
+            $controllers = RoleModule::getControllers($model->module);
+            $model->controller = reset($controllers);
         }
         //if controller is selected from dropdown set it to model
         if (isset($_GET['controller'])) {
