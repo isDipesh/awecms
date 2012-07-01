@@ -14,7 +14,7 @@ $config = array(
         'application.behaviors.*',
         'application.widgets.*',
         'application.extensions.*',
-        'application.extensions.awegen.components.*',
+//        'application.extensions.awegen.components.*',
         'ext.gtc.components.*',
         'ext.giix-components.*', // giix components
     ),

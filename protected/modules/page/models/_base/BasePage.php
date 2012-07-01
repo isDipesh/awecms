@@ -20,11 +20,12 @@
       * @property string $permission
       * @property string $password
       * @property integer $views
+      * @property string $layout
  *
  * Relations of table "page" available as properties of the model:
+ * @property User $user
  * @property Page $parent
  * @property Page[] $pages
- * @property User $user
  * @property Category[] $categories
  */
 abstract class BasePage extends CActiveRecord {
@@ -39,14 +40,15 @@ abstract class BasePage extends CActiveRecord {
 
     public function rules() {
         return array(
-            array('title, type', 'required'),
-            array('user_id, content, status, parent_id, order, comment_status, tags_enabled, permission, password', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('title, type, views', 'required'),
+            array('user_id, content, status, parent_id, order, comment_status, tags_enabled, permission, password, layout', 'default', 'setOnEmpty' => true, 'value' => null),
             array('user_id, parent_id, order, tags_enabled, views', 'numerical', 'integerOnly' => true),
             array('title', 'length', 'max' => 255),
             array('status', 'length', 'max' => 9),
             array('type, comment_status, permission, password', 'length', 'max' => 20),
+            array('layout', 'length', 'max' => 100),
             array('content', 'safe'),
-            array('id, user_id, title, content, status, created_at, modified_at, parent_id, order, type, comment_status, tags_enabled, permission, password, views', 'safe', 'on' => 'search'),
+            array('id, user_id, title, content, status, created_at, modified_at, parent_id, order, type, comment_status, tags_enabled, permission, password, views, layout', 'safe', 'on' => 'search'),
         );
     }
     
@@ -68,9 +70,9 @@ abstract class BasePage extends CActiveRecord {
 
     public function relations() {
         return array(
+            'user' => array(self::BELONGS_TO, 'User', 'user_id'),
             'parent' => array(self::BELONGS_TO, 'Page', 'parent_id'),
             'pages' => array(self::HAS_MANY, 'Page', 'parent_id'),
-            'user' => array(self::BELONGS_TO, 'User', 'user_id'),
             'categories' => array(self::MANY_MANY, 'Category', 'page_nm_category(page_id, category_id)'),
         );
     }
@@ -92,6 +94,7 @@ abstract class BasePage extends CActiveRecord {
             'permission' => Yii::t('app', 'Permission'),
             'password' => Yii::t('app', 'Password'),
             'views' => Yii::t('app', 'Views'),
+            'layout' => Yii::t('app', 'Layout'),
         );
     }
 
@@ -113,6 +116,7 @@ abstract class BasePage extends CActiveRecord {
         $criteria->compare('permission', $this->permission, true);
         $criteria->compare('password', $this->password, true);
         $criteria->compare('views', $this->views);
+        $criteria->compare('layout', $this->layout, true);
 
         return new CActiveDataProvider(get_class($this), array(
                     'criteria' => $criteria,
