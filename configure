@@ -1,2 +1,4 @@
 #!/bin/bash -x
-cp protected/config/db.sample.php protected/config/db.php 
+cp protected/config/db.sample.php protected/config/db.php
+chmod a+w protected/runtime
+chmod a+w assets 
