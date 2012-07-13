@@ -59,39 +59,39 @@
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'order'); ?>
-        <?php echo $form->textField($model, 'order'); ?>
-        <?php echo $form->error($model, 'order'); ?>
+        <?php // echo $form->labelEx($model, 'order'); ?>
+        <?php // echo $form->textField($model, 'order'); ?>
+        <?php // echo $form->error($model, 'order'); ?>
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'type'); ?>
-        <?php echo $form->textField($model, 'type', array('size' => 20, 'maxlength' => 20)); ?>
-        <?php echo $form->error($model, 'type'); ?>
+        <?php // echo $form->labelEx($model, 'type'); ?>
+        <?php // echo $form->textField($model, 'type', array('size' => 20, 'maxlength' => 20)); ?>
+        <?php // echo $form->error($model, 'type'); ?>
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'comment_status'); ?>
-        <?php echo $form->textField($model, 'comment_status', array('size' => 20, 'maxlength' => 20)); ?>
-        <?php echo $form->error($model, 'comment_status'); ?>
+        <?php // echo $form->labelEx($model, 'comment_status'); ?>
+        <?php // echo $form->textField($model, 'comment_status', array('size' => 20, 'maxlength' => 20)); ?>
+        <?php // echo $form->error($model, 'comment_status'); ?>
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'tags_enabled'); ?>
-        <?php echo $form->checkBox($model, 'tags_enabled'); ?>
-        <?php echo $form->error($model, 'tags_enabled'); ?>
+        <?php // echo $form->labelEx($model, 'tags_enabled'); ?>
+        <?php // echo $form->checkBox($model, 'tags_enabled'); ?>
+        <?php // echo $form->error($model, 'tags_enabled'); ?>
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'permission'); ?>
-        <?php echo $form->textField($model, 'permission', array('size' => 20, 'maxlength' => 20)); ?>
-        <?php echo $form->error($model, 'permission'); ?>
+        <?php // echo $form->labelEx($model, 'permission'); ?>
+        <?php // echo $form->textField($model, 'permission', array('size' => 20, 'maxlength' => 20)); ?>
+        <?php // echo $form->error($model, 'permission'); ?>
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'password'); ?>
-        <?php echo $form->passwordField($model, 'password', array('size' => 20, 'maxlength' => 20)); ?>
-        <?php echo $form->error($model, 'password'); ?>
+        <?php // echo $form->labelEx($model, 'password'); ?>
+        <?php // echo $form->passwordField($model, 'password', array('size' => 20, 'maxlength' => 20)); ?>
+        <?php // echo $form->error($model, 'password'); ?>
     </div>
 
     <div class="row nm_row">

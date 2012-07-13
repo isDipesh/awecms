@@ -13,32 +13,7 @@ if (!isset($this->menu) || $this->menu === array()) {
 <h1><?php echo $model->title; ?></h1>
 
 <?php
-$this->widget('zii.widgets.CDetailView', array(
-    'data' => $model,
-    'attributes' => array(
-        array(
-            'name' => 'id',
-            'visible' => Yii::app()->getModule('user')->isAdmin()
-        ), array(
-            'name' => 'user_id',
-            'value' => ($model->user !== null) ? CHtml::link($model->user->username, array('/user/user/view', 'id' => $model->user->id)) . ' ' : 'n/a',
-            'type' => 'html',
-        ),
-        'title', array(
-            'name' => 'content',
-            'type' => 'ntext'
-        ), 'status', 'created_at', 'modified_at', array(
-            'name' => 'parent_id',
-            'value' => ($model->parent !== null) ? CHtml::link($model->parent->title, array('/page/page/view', 'id' => $model->parent->id)) . ' ' : 'n/a',
-            'type' => 'html',
-        ),
-        'order', 'type', 'comment_status', array(
-            'name' => 'tags_enabled',
-            'type' => 'boolean'
-        ), 'permission', array(
-            'name' => 'password',
-            'visible' => Yii::app()->getModule('user')->isAdmin()
-        ), 'views',)));
+echo nl2br($model->content);
 ?>
 
 <?php if (count($model->pages)) { ?>
@@ -66,3 +41,8 @@ $this->widget('zii.widgets.CDetailView', array(
         ?>
     </ul>
 <?php } ?>
+
+<?php
+//increase view count
+$model->views++;
+$model->save();
