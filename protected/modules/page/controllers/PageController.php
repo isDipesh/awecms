@@ -2,25 +2,18 @@
 
 class PageController extends Controller {
 
-    public function filters() {
-        return array(
-            'accessControl',
-        );
-    }
-
-    public function accessRules() {
-        return array(
-            array('allow',
-                'expression' => 'Role::checkAccess()',
-            ),
-            array('deny',
-                'users' => array('*'),
-            ),
-        );
-    }
-
     public function actionIndex() {
         $dataProvider = new CActiveDataProvider('Page');
+        $dataProvider = new CActiveDataProvider('Page', array(
+                    'criteria' => array(
+                        'condition' => "status='published' OR user_id='".Yii::app()->user->id."'",
+//                        'order' => 'create_time DESC',
+//                        'with' => array('author'),
+                    ),
+                    'pagination' => array(
+                        'pageSize' => 20,
+                    ),
+                ));
         $this->render('index', array(
             'dataProvider' => $dataProvider,
         ));

@@ -4,32 +4,34 @@
  * This is the model base class for the table "page".
  *
  * Columns in table "page" available as properties of the model:
- 
-      * @property integer $id
-      * @property integer $user_id
-      * @property string $title
-      * @property string $content
-      * @property string $status
-      * @property string $created_at
-      * @property string $modified_at
-      * @property integer $parent_id
-      * @property integer $order
-      * @property string $type
-      * @property string $comment_status
-      * @property integer $tags_enabled
-      * @property string $permission
-      * @property string $password
-      * @property integer $views
-      * @property string $layout
+
+ * @property integer $id
+ * @property integer $user_id
+ * @property string $title
+ * @property string $content
+ * @property string $status
+ * @property string $created_at
+ * @property string $modified_at
+ * @property integer $parent_id
+ * @property integer $order
+ * @property string $type
+ * @property string $comment_status
+ * @property integer $tags_enabled
+ * @property string $permission
+ * @property string $password
+ * @property integer $views
+ * @property string $layout
+ * @property integer $slug_id
  *
  * Relations of table "page" available as properties of the model:
+ * @property Slug $slug
  * @property User $user
  * @property Page $parent
  * @property Page[] $pages
  * @property Category[] $categories
  */
 abstract class BasePage extends CActiveRecord {
-    
+
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -42,7 +44,7 @@ abstract class BasePage extends CActiveRecord {
         return array(
             array('title, type, views', 'required'),
             array('user_id, content, status, parent_id, order, comment_status, tags_enabled, permission, password, layout', 'default', 'setOnEmpty' => true, 'value' => null),
-            array('user_id, parent_id, order, tags_enabled, views', 'numerical', 'integerOnly' => true),
+            array('user_id, parent_id, order, tags_enabled, views, slug_id', 'numerical', 'integerOnly' => true),
             array('title', 'length', 'max' => 255),
             array('status', 'length', 'max' => 9),
             array('type, comment_status, permission, password', 'length', 'max' => 20),
@@ -51,21 +53,20 @@ abstract class BasePage extends CActiveRecord {
             array('id, user_id, title, content, status, created_at, modified_at, parent_id, order, type, comment_status, tags_enabled, permission, password, views, layout', 'safe', 'on' => 'search'),
         );
     }
-    
+
     public function __toString() {
         return (string) $this->title;
     }
 
     public function behaviors() {
         return array(
-                    'CTimestampBehavior' => array(
-                        'class' => 'zii.behaviors.CTimestampBehavior',
-                        'createAttribute' => 'created_at',
-                        'updateAttribute' => 'modified_at',
-                    ),
-
-        'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
-);
+            'CTimestampBehavior' => array(
+                'class' => 'zii.behaviors.CTimestampBehavior',
+                'createAttribute' => 'created_at',
+                'updateAttribute' => 'modified_at',
+            ),
+            'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
+        );
     }
 
     public function relations() {
@@ -74,6 +75,7 @@ abstract class BasePage extends CActiveRecord {
             'parent' => array(self::BELONGS_TO, 'Page', 'parent_id'),
             'pages' => array(self::HAS_MANY, 'Page', 'parent_id'),
             'categories' => array(self::MANY_MANY, 'Category', 'page_nm_category(page_id, category_id)'),
+            'slug' => array(self::BELONGS_TO, 'Slug', 'slug_id'),
         );
     }
 
@@ -95,6 +97,7 @@ abstract class BasePage extends CActiveRecord {
             'password' => Yii::t('app', 'Password'),
             'views' => Yii::t('app', 'Views'),
             'layout' => Yii::t('app', 'Layout'),
+            'slug_id' => Yii::t('app', 'Slug'),
         );
     }
 
@@ -122,5 +125,5 @@ abstract class BasePage extends CActiveRecord {
                     'criteria' => $criteria,
                 ));
     }
-    
+
 }

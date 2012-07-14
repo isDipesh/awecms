@@ -26,7 +26,6 @@
             'model' => $model,
             'attribute' => 'content',
         ));
-        ;
         ?>
         <?php echo $form->error($model, 'content'); ?>
     </div>
@@ -38,7 +37,6 @@
             'published' => Yii::t('app', 'Published'),
             'trashed' => Yii::t('app', 'Trashed'),
             'draft' => Yii::t('app', 'Draft'),
-            'closed' => Yii::t('app', 'Closed'),
         ));
         ?>
         <?php echo $form->error($model, 'status'); ?>
@@ -53,7 +51,6 @@
                 unset($allModels[$key]);
         }
         echo $form->dropDownList($model, 'parent', CHtml::listData($allModels, 'id', 'title'), array('prompt' => 'None'));
-        ;
         ?>
         <?php echo $form->error($model, 'parent_id'); ?>
     </div>
