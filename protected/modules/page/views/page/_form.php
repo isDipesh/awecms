@@ -30,6 +30,14 @@
         <?php echo $form->error($model, 'content'); ?>
     </div>
 
+    <?php if (Yii::app()->getModule('user')->isAdmin()) { ?>
+        <div class="row">
+            <?php echo $form->labelEx($model, 'user_id'); ?>
+            <?php echo $form->dropDownList($model, 'user', CHtml::listData(User::model()->findAll(), 'id', 'username'), array('prompt' => 'None')); ?>
+            <?php echo $form->error($model, 'user_id'); ?>
+        </div>
+    <?php } ?>
+
     <div class="row">
         <?php echo $form->labelEx($model, 'status'); ?>
         <?php

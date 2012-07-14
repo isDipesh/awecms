@@ -6,8 +6,7 @@ class PageController extends Controller {
         $dataProvider = new CActiveDataProvider('Page');
         $dataProvider = new CActiveDataProvider('Page', array(
                     'criteria' => array(
-                        'condition' => "status='published' OR user_id='".Yii::app()->user->id."'",
-//                        'order' => 'create_time DESC',
+                        'condition' => "status='published' OR user_id='" . Yii::app()->user->id . "'",
 //                        'with' => array('author'),
                     ),
                     'pagination' => array(
@@ -30,7 +29,11 @@ class PageController extends Controller {
         if (isset($_POST['Page'])) {
             $model->setAttributes($_POST['Page']);
 
-            $model->user = Yii::app()->user->id;
+            if (isset($_POST['Page']['user']))
+                $model->user = $_POST['Page']['user'];
+            else
+                $model->user = Yii::app()->user->id;
+
             if (isset($_POST['Page']['parent']))
                 $model->parent = $_POST['Page']['parent'];
 
@@ -51,7 +54,7 @@ class PageController extends Controller {
         } elseif (isset($_GET['Page'])) {
             $model->attributes = $_GET['Page'];
         }
-
+        $model->user = Yii::app()->user->id;
         $this->render('create', array('model' => $model));
     }
 
@@ -64,10 +67,10 @@ class PageController extends Controller {
                 $model->parent = $_POST['Page']['parent'];
             else
                 $model->parent = array();
+
             if (isset($_POST['Page']['user']))
                 $model->user = $_POST['Page']['user'];
-            else
-                $model->user = array();
+
             if (isset($_POST['Page']['categories']))
                 $model->categories = $_POST['Page']['categories'];
             else
