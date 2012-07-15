@@ -14,17 +14,16 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'title'); ?>
-        <?php echo $form->textField($model, 'title', array('size' => 60, 'maxlength' => 255, 'onkeyup' => 'changeSlug();', 'onblur' => 'changeSlug();')); ?>
+        <?php echo $form->textField($model, 'title', array('size' => 60, 'maxlength' => 255)); ?>
         <?php echo $form->error($model, 'title'); ?>
     </div>
 
     <div class="row sticky">
         <?php echo $form->labelEx($model, 'slug'); ?>
-        <?php echo $form->textField($model, 'slug', array('size' => 65)); ?>
-        <div class="tooltip">
-            //TODO
-            Tooltip goes all over here.
+        <div id="slug_holder">
+            &nbsp;
         </div>
+        <?php echo $form->textField($model, 'slug', array('size' => 65, 'style' => 'display:none;')); ?>
         <?php echo $form->error($model, 'slug'); ?>
     </div>
 

@@ -39,9 +39,11 @@ class PageController extends Controller {
 
             if (isset($_POST['Page']['categories']))
                 $model->categories = $_POST['Page']['categories'];
-
             try {
                 if ($model->save()) {
+                    //also save the slug
+                    $model->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $model->id));
+                    $model->save();
                     if (isset($_GET['returnUrl'])) {
                         $this->redirect($_GET['returnUrl']);
                     } else {
@@ -77,6 +79,9 @@ class PageController extends Controller {
                 $model->categories = $_POST['Page']['categories'];
             else
                 $model->categories = array();
+
+
+
             try {
                 if ($model->save()) {
                     if (isset($_GET['returnUrl'])) {

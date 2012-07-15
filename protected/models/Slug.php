@@ -39,6 +39,30 @@ class Slug extends BaseSlug {
         $sl->save();
     }
 
+    public static function create($slug, $path) {
+
+        if (is_array($path)) {
+            $route = isset($path[0]) ? $path[0] : '';
+            $path = Yii::app()->getController()->createUrl($route, array_splice($path, 1));
+        }
+        $s = new self;
+        $s->slug = $slug;
+        $s->path = $path;
+
+        $counter = 0;
+        do {
+            if (!counter)
+                $slug.='-'.++$counter;
+            else
+            ;
+        } while (self::getPath($slug));
+        $s->enabled = 1;
+        $s->save();
+        print_r($s->id);
+        die();
+        return $s->id;
+    }
+
     public static function cleanText($text, $spaceReplacement = "-") {
         $clean = iconv('UTF-8', 'ASCII//TRANSLIT', $text);
         $clean = preg_replace("/[^a-zA-Z0-9\/_| -]/", '', $clean);
