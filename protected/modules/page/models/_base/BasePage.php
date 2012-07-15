@@ -97,7 +97,7 @@ abstract class BasePage extends CActiveRecord {
             'password' => Yii::t('app', 'Password'),
             'views' => Yii::t('app', 'Views'),
             'layout' => Yii::t('app', 'Layout'),
-            'slug_id' => Yii::t('app', 'Slug'),
+            'slug' => Yii::t('app', 'Slug'),
         );
     }
 

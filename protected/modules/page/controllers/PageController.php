@@ -54,6 +54,8 @@ class PageController extends Controller {
         } elseif (isset($_GET['Page'])) {
             $model->attributes = $_GET['Page'];
         }
+        $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.page.assets'));
+        Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/form.js');
         $model->user = Yii::app()->user->id;
         $this->render('create', array('model' => $model));
     }
@@ -87,7 +89,8 @@ class PageController extends Controller {
                 $model->addError('', $e->getMessage());
             }
         }
-
+        $baseUrl = Yii::app()->getAssetManager()->publish('application.modules.user.views.asset');
+        Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/form.js');
         $this->render('update', array(
             'model' => $model,
         ));
