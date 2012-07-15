@@ -50,16 +50,17 @@ class Slug extends BaseSlug {
         $s->path = $path;
 
         $counter = 0;
-        do {
-            if (!counter)
-                $slug.='-'.++$counter;
+        $newSlug = $slug;
+        //handle duplicate slugs - slug, slug-1, slug-2 and so on
+        while (self::getPath($newSlug)) {
+            if (!$counter)
+                $newSlug.='-' . ++$counter;
             else
-            ;
-        } while (self::getPath($slug));
+                $newSlug = $slug . '-' . ++$counter;
+        }
+        $s->slug = $newSlug;
         $s->enabled = 1;
         $s->save();
-        print_r($s->id);
-        die();
         return $s->id;
     }
 
