@@ -3,7 +3,7 @@
 class Aweapp extends CWebApplication {
 
     public $config;
-    public $forgiven = 0;
+    public $punish = 0;
 
     public function __construct($config = null) {
         $this->config = $config;
@@ -41,12 +41,14 @@ class Aweapp extends CWebApplication {
             $controller->run($actionID);
             $this->controller = $oldController;
         } else {
-            //we only forgive once
-            if ($this->forgiven) {
+            //we only forgive twice
+            if ($this->punish) {
                 Yii::app()->getErrorHandler()->showError(new CHttpException(404, Yii::t('yii', 'Unable to resolve the request "{route}".', array('{route}' => $route === '' ? $this->defaultController : $route))));
             }
-            $this->forgiven++;
-            throw new CHttpException(404, Yii::t('yii', 'Unable to resolve the request "{route}".', array('{route}' => $route === '' ? $this->defaultController : $route)));
+            $this->punish++;
+            Yii::app()->getErrorHandler()->parsePath($route);
+//            throw new CHttpException(404, Yii::t('yii', 'Unable to resolve the request "{route}".', array('{route}' => $route === '' ? $this->defaultController : $route)));
+//            Yii::app()->getUrlManager()->parseUrl(Yii::app()->getRequest());
         }
     }
 

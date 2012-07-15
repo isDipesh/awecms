@@ -94,7 +94,7 @@ class PageController extends Controller {
                 $model->addError('', $e->getMessage());
             }
         }
-        $baseUrl = Yii::app()->getAssetManager()->publish('application.modules.user.views.asset');
+        $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.page.assets'));
         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/form.js');
         $this->render('update', array(
             'model' => $model,

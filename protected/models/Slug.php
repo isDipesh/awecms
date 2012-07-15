@@ -17,10 +17,21 @@ class Slug extends BaseSlug {
     }
 
     public static function getPath($slug) {
+        $slug = trim($slug, '/');
         $sl = new self;
         $slug = $sl->findByAttributes(array('slug' => $slug, 'enabled' => 1));
         if ($slug)
             return $slug->path;
+        else
+            return false;
+    }
+
+    public static function getSlug($path) {
+        $path = trim($path, '/');
+        $sl = new self;
+        $slug = $sl->findByAttributes(array('path' => $path, 'enabled' => 1));
+        if ($slug)
+            return $slug->slug;
         else
             return false;
     }
@@ -40,18 +51,19 @@ class Slug extends BaseSlug {
     }
 
     public static function create($slug, $path) {
-
+        $slug=trim($slug,'/');
         if (is_array($path)) {
             $route = isset($path[0]) ? $path[0] : '';
             $path = Yii::app()->getController()->createUrl($route, array_splice($path, 1));
         }
+        $path=trim($path,'/');
         $s = new self;
         $s->slug = $slug;
         $s->path = $path;
 
+        //handle duplicate slugs - slug, slug-1, slug-2 and so on
         $counter = 0;
         $newSlug = $slug;
-        //handle duplicate slugs - slug, slug-1, slug-2 and so on
         while (self::getPath($newSlug)) {
             if (!$counter)
                 $newSlug.='-' . ++$counter;

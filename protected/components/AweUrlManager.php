@@ -2,9 +2,11 @@
 
 class AweUrlManager extends CUrlManager {
 
-    public $appendParams = false;
+    public $appendParams = true;
+    private $_rules = array();
 
     public function createUrl($route, $params = array(), $ampersand = '&') {
+
         //for admin and admin/*
         $parts = explode('/', $route);
 
@@ -21,11 +23,62 @@ class AweUrlManager extends CUrlManager {
             $route = 'admin/' . $route;
         }
 
-        return parent::createUrlDefault($route, $params, $ampersand);
+//        $url = parent::createUrlDefault($route, $params, $ampersand);
+        $url = parent::createUrl($route, $params, $ampersand);
+
+        //handle slugs here
+        if ($slug = Slug::getSlug($url)) {
+            $url = $slug;
+            //if (Settings::get('SEO','externalSlug')
+            $url = '/' . $url;
+        }
+        return $url;
+    }
+
+    protected function processRules() {
+        if (empty($this->rules) || $this->getUrlFormat() === self::GET_FORMAT)
+            return;
+        if ($this->cacheID !== false && ($cache = Yii::app()->getComponent($this->cacheID)) !== null) {
+            $hash = md5(serialize($this->rules));
+            if (($data = $cache->get(self::CACHE_KEY)) !== false && isset($data[1]) && $data[1] === $hash) {
+                $this->_rules = $data[0];
+                return;
+            }
+        }
+        foreach ($this->rules as $pattern => $route)
+            $this->_rules[] = $this->createUrlRule($route, $pattern);
+        if (isset($cache))
+            $cache->set(self::CACHE_KEY, array($this->_rules, $hash));
     }
 
     public function parseUrl($request) {
-        return parent::parseUrl($request);
+
+        if ($this->getUrlFormat() === self::PATH_FORMAT) {
+            $rawPathInfo = $request->getPathInfo();
+
+            if ($p = Slug::getPath($rawPathInfo)) {
+                $rawPathInfo = trim($p,'/');
+                Yii::app()->punish = 0;
+            }
+
+            $pathInfo = $this->removeUrlSuffix($rawPathInfo, $this->urlSuffix);
+            foreach ($this->_rules as $i => $rule) {
+                if (is_array($rule))
+                    $this->_rules[$i] = $rule = Yii::createComponent($rule);
+                if (($r = $rule->parseUrl($this, $request, $pathInfo, $rawPathInfo)) !== false)
+                    return isset($_GET[$this->routeVar]) ? $_GET[$this->routeVar] : $r;
+            }
+            if ($this->useStrictParsing)
+                throw new CHttpException(404, Yii::t('yii', 'Unable to resolve the request "{route}".', array('{route}' => $pathInfo)));
+            else
+                return $pathInfo;
+        }
+        else if (isset($_GET[$this->routeVar]))
+            return $_GET[$this->routeVar];
+        else if (isset($_POST[$this->routeVar]))
+            return $_POST[$this->routeVar];
+        else
+            return '';
     }
 
 }

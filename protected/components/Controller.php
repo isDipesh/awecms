@@ -76,9 +76,9 @@ class Controller extends CController {
         }
     }
 
-    //this is a wild guess, at least show something
-    public function missingAction($param) {
-        $this->actionIndex($param);
-    }
+    //this is a wild guess, at least try to show something
+//    public function missingAction($param) {
+////        $this->actionIndex($param);
+//    }
 
 }
