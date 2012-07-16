@@ -52,12 +52,12 @@ class AweUrlManager extends CUrlManager {
     }
 
     public function parseUrl($request) {
-
+        
         if ($this->getUrlFormat() === self::PATH_FORMAT) {
             $rawPathInfo = $request->getPathInfo();
 
             if ($p = Slug::getPath($rawPathInfo)) {
-                $rawPathInfo = trim($p,'/');
+                $rawPathInfo = trim($p, '/');
                 Yii::app()->punish = 0;
             }
 
@@ -73,6 +73,7 @@ class AweUrlManager extends CUrlManager {
             else
                 return $pathInfo;
         }
+        
         else if (isset($_GET[$this->routeVar]))
             return $_GET[$this->routeVar];
         else if (isset($_POST[$this->routeVar]))

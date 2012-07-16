@@ -23,7 +23,7 @@ $this->widget("ext.ezzeelfinder.ElFinderWidget", array(
                 'driver' => "LocalFileSystem",
                 'path' => $filesPath,
                 'URL' => $filesUrl,
-                'tmbPath' => $filesPath . DIRECTORY_SEPARATOR . ".thumbs",
+                'tmbPath' => $filesPath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "assets" . DIRECTORY_SEPARATOR . ".thumbs",
                 'mimeDetect' => "internal",
                 'accessControl' => "access"
             )

@@ -41,14 +41,12 @@ class Aweapp extends CWebApplication {
             $controller->run($actionID);
             $this->controller = $oldController;
         } else {
-            //we only forgive twice
+            //we only forgive once
             if ($this->punish) {
                 Yii::app()->getErrorHandler()->showError(new CHttpException(404, Yii::t('yii', 'Unable to resolve the request "{route}".', array('{route}' => $route === '' ? $this->defaultController : $route))));
             }
             $this->punish++;
             Yii::app()->getErrorHandler()->parsePath($route);
-//            throw new CHttpException(404, Yii::t('yii', 'Unable to resolve the request "{route}".', array('{route}' => $route === '' ? $this->defaultController : $route)));
-//            Yii::app()->getUrlManager()->parseUrl(Yii::app()->getRequest());
         }
     }
 

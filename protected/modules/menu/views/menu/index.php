@@ -57,7 +57,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
         ),
         array(
             'type' => 'html',
-            'value' => 'CHtml::link(MenuModule::t("Edit Menu Items"),"' . $this->createUrl('/' . $this->module->id . '/item') . '/". ' . '$data->id)',
+            'value' => 'CHtml::link(MenuModule::t("Edit Menu Items"),"' . $this->createUrl('/' . $this->module->id . '/item') . '?id=". ' . '$data->id)',
             'htmlOptions' => array('style' => 'min-width:100px;')
         ),
         array(

@@ -14,7 +14,6 @@ class AweErrorHandler extends CErrorHandler {
     }
 
     public function parsePath($path) {
-
         //cut off the admin part from requested path
         if (substr($path, 0, 6) == 'admin/')
             $path = preg_replace('`admin/`', '/', $path, 1);
