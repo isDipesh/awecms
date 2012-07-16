@@ -58,7 +58,9 @@ class PageController extends Controller {
         }
         $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.page.assets'));
         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/form.js');
+        Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/create_form.js');
         $model->user = Yii::app()->user->id;
+
         $this->render('create', array('model' => $model));
     }
 
@@ -79,8 +81,6 @@ class PageController extends Controller {
                 $model->categories = $_POST['Page']['categories'];
             else
                 $model->categories = array();
-
-
 
             try {
                 if ($model->save()) {
