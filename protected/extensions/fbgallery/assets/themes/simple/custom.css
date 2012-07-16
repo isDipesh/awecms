@@ -1,0 +1,124 @@
+div.gcontainer .gTh {
+    background: none repeat scroll 0 0 #EFF4FA;
+    border: 1px solid #DFEDDD;
+    float: left;
+    margin: 2px;
+}
+
+div.gcontainer .gThTitle{
+	background: url("bg.gif") repeat scroll 0 0 #78B1D2;
+	border-radius: 5px 5px 0 0;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 25px;
+	padding-top: 6px;
+	text-align: center;
+	overflow: hidden;
+}
+
+div.gcontainer .imageItem{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFEDDD;
+    margin: 2px;
+    overflow: hidden;
+    padding: 0;
+}
+
+div.gcontainer .infoItem{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFEDDD;
+    height: 50px;
+    font-size: 0.8em;
+    margin: 6px 2px 8px;
+    overflow: hidden;
+    padding: 4px;
+}
+
+div.gcontainer .gTh img{
+	border: 0 none;
+}
+
+div.gcontainer .gImg img{
+	margin:auto;
+}
+
+.msg li {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid;
+    color: #5B7897;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 3px;
+}
+
+#fancybox-title {
+    font-family: Helvetica;
+    font-size: 12px;
+    z-index: 1102;
+}
+
+#fancybox-title-over {
+    background: none no-repeat scroll 0 0 #FFFFFF;
+    color: #666666;
+    display: block;
+    font-size: 0.9em;
+    opacity: 0.7;
+    padding: 2px;
+}
+
+.fancybox-title-inside {
+    color: #333333;
+    text-align: left;
+}
+
+#fancybox-title-outside {
+    background: none no-repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+    padding: 10px;
+}
+
+.fbtooltip{
+	border-radius:5px 5px 5px 5px;
+	box-shadow:0 5px 15px #AAAAAA;
+	-moz-border-radius:5px 5px 5px 5px;
+	-moz-box-shadow:0 5px 15px #AAAAAA;
+	border:1px solid #aaa;
+	padding:5px 5px;
+	color:#444;
+	position:absolute;
+	display:none;
+	z-index:9999;
+	background:#fff;
+	max-width:350px;
+	opacity:0.9;
+	font-size:0.8em;
+}
+
+.albumInfo{
+    background: none repeat scroll 0 0 #EFF4FA;
+    border: 1px solid #DFEDDD;
+    margin-bottom: 20px;
+    padding: 3px;
+}
+
+div.nameAlbum{}
+div.nameAlbum h2{
+    color: #444444;
+    display: inline;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 15px;
+	
+}
+
+div.descriptionAlbum{
+    padding: 5px;
+}
+
+div.descriptionAlbum h3 {
+    display: inline;
+    font-size: 0.9em;
+}
+

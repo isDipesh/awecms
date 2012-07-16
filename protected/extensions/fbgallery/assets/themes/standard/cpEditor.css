@@ -1,0 +1,290 @@
+div.containerCPFB{
+	width:40px;
+	font-size:0.8em;
+}
+
+div.containerCPFB .cpanelToggle{
+    background: url("cpanel.png") no-repeat scroll 2px 2px #EFF4FA;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    box-shadow:1px 1px 5px #3B8CB2;
+}
+
+div.containerCPFB .cpanelToggle:hover{
+    box-shadow: 1px 2px 5px #3B8CB2;
+}
+
+div.containerCPFB .cpanelFB{
+    background: none no-repeat scroll 2px 2px #EFF4FA;
+    padding: 5px;
+    width: 200px;
+    margin-top: -1px;
+    display:none;
+    box-shadow:1px 2px 5px #3B8CB2;
+}
+
+
+div.containerCPFB .rowFBCp{
+    background: none no-repeat scroll 2px 2px #FFFFFF;
+    border: 1px solid #78B1D2;
+    color: #5B7897;
+    cursor: pointer;
+    height: 20px;
+    margin: 2px 0;
+    padding-left: 25px;
+    padding-top: 3px;
+    width: 173px;
+    box-shadow: 1px 1px 3px #3B8CB2;
+}
+
+div.containerCPFB .adminCpFb{
+	color: #5B7897;
+	font-weight:bold;
+}
+
+div.containerCPFB .rowFBCp:hover{
+    font-weight:bold;
+}
+
+div.containerCPFB .load_files{
+    background: url("upload.png") no-repeat scroll 3px 3px #fff;
+}
+
+div.containerCPFB .create_album{
+    background: url("create.png") no-repeat scroll 3px 3px #fff;
+}
+div.containerCPFB .remove_album{
+    background: url("remove.png") no-repeat scroll 3px 3px #fff;
+}
+
+div.containerCPFB .remove_collection{
+    background: url("remove.png") no-repeat scroll 3px 3px #fff;
+}
+
+div.containerCPFB .delete_checked{
+    background: url("delete.png") no-repeat scroll 3px 3px #fff;
+}
+
+div.containerCPFB .empty_gallery{
+    background: url("clear.png") no-repeat scroll 3px 3px #fff;
+}
+
+div.containerCPFB .showCPanelAdmin{
+    background: url("gallery.png") no-repeat scroll 3px 3px #fff;
+}
+
+
+
+
+
+
+/* ---------- */
+
+.gTh .fbitem_tools{
+    background: none no-repeat scroll 0 0 #EFF4FA;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 1px 8px #000000;
+    min-height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    display:none;
+}
+
+.gTh .checkbox_delete{
+    float: left;
+    width: 30px;
+}
+
+.gTh .checkbox_delete input{
+    margin: 0;
+}
+
+.gTh .deleteIcon{
+    background: url("delete12x12.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    float: left;
+    height: 12px;
+    margin-top: 3px;
+    padding: 0;
+    width: 12px;
+}
+
+.gTh .deleteIcon img{
+	width:16px;
+	height:16px;
+	cursor:pointer;
+}
+
+.gTh .editIcon{
+    background: url("edit.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 20px;
+    margin-left: 15px;
+    width: 20px;
+}
+
+.gTh .coverIcon{
+    background: url("cover.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 20px;
+    margin-left: 15px;
+    width: 20px;
+}
+
+.gTh .coverSelected {
+    background: url("cover-selected.png") no-repeat scroll 0 0 transparent;
+}
+
+.selectorAlbum{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFEDDD;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 0.8em;
+    height: 20px;
+    margin-left: 3px;
+    margin-top: 3px;
+    padding: 0 4px 0 0;
+    position: absolute;
+    display:none;
+}
+
+.notInCollection{
+	background:#ffe6ff;
+}
+
+div.newAlbumContainer .newAlbumLangContainer{
+/* 	border:1px solid red; */
+	    float: left;
+}
+
+
+
+div.newAlbumContainer .row{
+	margin-bottom: 5px;
+	padding: 0 5px;
+	border:1px solid transparent;
+}
+
+div.newAlbumContainer .row:hover{
+	background:#F5F5F5;
+	border:1px solid #ffffff;
+	
+}
+
+div.newAlbumContainer label{
+    float: left;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 170px;
+}
+
+div.newAlbumContainer input{
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #4C9CC8;
+}
+
+div.newAlbumContainer textarea{
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #4C9CC8;
+	height: 20px;
+	width: 293px;
+}
+
+div.newAlbumContainer select{
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #4C9CC8;
+}
+
+div.newAlbumContainer span.required{
+	color:red;
+}
+
+div.newAlbumContainer .flag{
+    float: left;
+    margin-right: 10px;
+}
+
+div.newAlbumContainer .err{
+	border:1px solid red;
+}
+
+
+
+/*.emptyGallery{
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}*/
+
+
+
+
+#dialogDeleteConfirmation .msg ul{
+    list-style-type: disc;
+    margin: 0;
+    padding: 3px 0;
+}
+
+#dialogUploader .fbguploader {
+	background:none repeat scroll 0 0 #EFF4FA;
+	border:1px solid #78B1D2;
+	display:none;
+	float:left;
+	padding:10px;
+	width:600px;
+}
+
+.containerMessage{
+    background: url("bg.png") repeat-x scroll 0 0 #EFF4FA;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 4px #69B2E5;
+    font-size: 0.9em;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.jneditor textarea{
+	border: 1px solid #1887b5;
+	margin: 0px 0 3px;
+	min-width:120px;
+	height:65px;
+}
+
+.jneditor{
+	margin:5px;
+}
+
+.jneditor input[type='button']{
+	border:1px solid #1887B5;
+	background:#fff;
+	margin:2px;
+        box-shadow: 1px 1px 8px #1887B5;
+	cursor:pointer;
+}
+
+.hidden{
+	display:none;
+}
+
+.working{
+	background:url('working.gif') no-repeat 0 0 transparent;
+	height:20px;
+	width:20px;
+}
+
+/*.checkboxLabel{
+    cursor: pointer;
+    float: left;
+    margin-top: 3px;
+}*/
+
+/*.jnlanguage{
+    float: left;
+    margin: -2px 0 0 10px;
+}*/
+

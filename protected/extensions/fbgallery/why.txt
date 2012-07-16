@@ -1,0 +1,6 @@
+Why I haven't any Control Panel, even if I am administrator?
+You must customize libs/general/FBAccess.php to be identified as admin or editor. 
+
+Why javascript give me error?
+You have some scripts which request jquery before it is loaded. 
+Select in Control Panel->Gallery->Options->Core script position to be placed into head, or a better solution is to optimize your page speed, to load jquery at end.

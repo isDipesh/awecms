@@ -1,0 +1,90 @@
+.gcontainer{
+	border:1px solid #efefef;
+	margin-bottom:30px;
+	display:none;
+}
+
+.gcontainer li{
+	float:left;
+}
+
+.gcontainer ul {
+	list-style-type:none;
+}
+
+.gcontainer ul, .gcontainer ol {
+	padding:0;
+}
+
+.itemCollection{
+    background: none repeat scroll 0 0 #EFF4FA;
+    border: 1px solid #DFEDDD;
+    float: left;
+    margin: 2px;
+    width:140px;
+}
+.imageCollection{
+    width:136px;
+    margin:2px;
+}
+
+.imageCollection img{
+	width:136px;
+}
+
+.infoCollection{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFEDDD;
+    font-size: 0.8em;
+    height: 50px;
+    margin: 6px 2px 8px;
+    overflow: auto;
+    padding: 4px;
+}
+
+.fbgrow{
+	margin-bottom: 3px;
+}
+
+.waitForGallery{
+    background: url("ajax-loader.gif") no-repeat scroll 50% 50% transparent;
+    color: red;
+    height: 230px;
+    text-align: center;
+    width: 100%;
+}
+
+.nameAlbumCollection{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFEDDD;
+    font-size: 0.8em;
+    height: 12px;
+    margin: 2px;
+    overflow: hidden;
+    padding: 1px;
+}
+
+.tagsLabel{
+    font-weight: bold;
+}
+
+.tagsAlbum{
+    font-size: 0.8em;
+    margin: 10px 3px 5px;
+}
+
+.tagsBox{
+    font-size: 0.8em;
+    margin: 10px 3px 5px;
+	height:30px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,294 @@
+.containerArticolShop{
+	border:1px solid #efefef;
+}
+
+.gcontainer {
+	float:left;
+	border:0;
+	display:none;
+}
+
+.gcontainer ul, .gcontainer ol {
+    margin: 0;
+}
+
+.fullWidth{
+	width:100%;
+}
+
+.tags{
+    margin: 10px 0;
+}
+
+.vtags{
+    font-size: 0.9em;
+    height: 30px;
+    margin-top: 0;
+    overflow: hidden;
+    width: 146px;
+}
+
+.tagsLabel{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.shopItemImages{
+	margin: 2px 10px 2px 0;
+	float:left;
+	width: 240px;
+}
+
+.shopItemInfo{
+    border-bottom: 1px solid #EFEFEF;
+    float: left;
+    font-size: 0.9em;
+    margin: 2px;
+    padding: 5px;
+    width: 410px;
+}
+
+div.gcontainer .gTh {
+	background: none repeat scroll 0 0 #EFF4FA;
+	border: 1px solid #DFEDDD;
+	float: left;
+	margin: 2px;
+	padding: 2px;
+}
+
+
+div.gcontainer .coverItem {
+    margin: 2px;
+    padding: 2px;
+}
+
+
+div.gcontainer .imageItemCover img {
+    border: 1px solid #DFEDDD;
+    height: 225px;
+    margin: 2px;
+    width: 225px;
+}
+
+
+div.coverItem{
+    background: none repeat scroll 0 0 #EFF4FA;
+    border: 1px solid #DFEDDD;
+    float: left;
+}
+
+div.gcontainer .gThTitle{
+	background: url("bg.gif") repeat scroll 0 0 #78B1D2;
+	border-radius: 5px 5px 0 0;
+	color: #FFFFFF;
+	font-weight: bold;
+	height: 25px;
+	padding-top: 6px;
+	text-align: center;
+	overflow: hidden;
+}
+
+div.albumCover .coverItem{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFEDDD;
+    margin: 2px;
+    overflow: hidden;
+    padding: 0;
+    height: 214px;
+    width: 294px;
+}
+
+div.gcontainer .infoItem{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFEDDD;
+    height: 50px;
+    font-size: 0.8em;
+    margin: 6px 2px 8px;
+    overflow: hidden;
+    padding: 4px;
+}
+
+div.gcontainer .gTh img{
+	border: 0 none;
+}
+
+div.gcontainer .imageItem .gImg img{
+	margin:auto;
+}
+
+.entryShop{
+    border: 1px solid #EFEFEF;
+    margin: 2px 2px 10px;
+    padding: 1px;
+/*     width: 152px; */
+}
+
+.entryShopVertical{
+	border: 1px solid #EFEFEF;
+	margin: 2px 2px 10px;
+	padding: 1px;
+	float:left;
+	width:152px;
+}
+.entryShop:hover, .entryShopVertical:hover{
+	background:#edf5fa;
+}
+
+.itemCollectionFloat{
+    background: none repeat scroll 0 0 #EFF4FA;
+    border: 1px solid #DFEDDD;
+    float: left;
+    margin: 2px;
+    padding: 3px;
+    width: 140px;
+}
+
+.itemCollection{
+    background: none repeat scroll 0 0 #EFF4FA;
+    border: 1px solid #DFEDDD;
+    margin: 2px;
+    padding: 3px;
+    width: 140px;
+}
+
+.infoEntryShopFloat{
+    float: left;
+    margin-left: 6px;
+    min-height: 140px;
+    padding-left: 5px;
+    width: 580px;
+}
+
+.infoEntryShop{
+    float:none;
+}
+
+.nameEntryShop{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFEDDD;
+    font-size: 0.8em;
+    height: 12px;
+    margin: 2px;
+    overflow: hidden;
+    padding: 1px;
+}
+
+.nameEntryShopFloat{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 2px;
+    padding: 1px;
+}
+
+.infoCollection{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DFEDDD;
+    font-size: 0.8em;
+    height: 50px;
+    margin: 6px 2px 8px;
+    overflow: auto;
+    padding: 4px;
+}
+
+.infoCollectionFloat{
+    font-size: 0.8em;
+    margin: 0 2px 8px;
+    padding: 4px 10px;
+}
+
+.msg li {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid;
+    color: #5B7897;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 3px;
+}
+
+#fancybox-title {
+    font-family: Helvetica;
+    font-size: 12px;
+    z-index: 1102;
+}
+
+#fancybox-title-over {
+    background: none no-repeat scroll 0 0 #FFFFFF;
+    color: #666666;
+    display: block;
+    font-size: 0.9em;
+    opacity: 0.7;
+    padding: 2px;
+}
+
+.fancybox-title-inside {
+    color: #333333;
+    text-align: left;
+}
+
+#fancybox-title-outside {
+    background: none no-repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+    padding: 10px;
+}
+
+.fbtooltip{
+	border-radius:5px 5px 5px 5px;
+	box-shadow:0 5px 15px #AAAAAA;
+	-moz-border-radius:5px 5px 5px 5px;
+	-moz-box-shadow:0 5px 15px #AAAAAA;
+	border:1px solid #aaa;
+	padding:5px 5px;
+	color:#444;
+	position:absolute;
+	display:none;
+	z-index:9999;
+	background:#fff;
+	max-width:350px;
+	opacity:0.9;
+	font-size:0.8em;
+}
+
+.albumInfo{
+    background: none repeat scroll 0 0 #EFF4FA;
+    border: 1px solid #DFEDDD;
+    margin-bottom: 20px;
+    padding: 3px;
+}
+
+div.nameAlbum{}
+div.nameAlbum h2{
+    color: #444444;
+    display: inline;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 15px;
+	
+}
+
+div.descriptionAlbum{
+    padding: 5px;
+}
+
+div.descriptionAlbum h3 {
+    display: inline;
+    font-size: 0.9em;
+}
+
+
+div.leftCharsTag{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #4C9CC8;
+    float: left;
+    height: 13px;
+    padding: 1px 0 2px;
+    text-align: center;
+    width: 26px;
+}
+
+
+/*.plupload_header {
+    background: url("../img/backgrounds.gif") repeat-x scroll 0 0 #2A2C2E;
+    display: none;
+}*/

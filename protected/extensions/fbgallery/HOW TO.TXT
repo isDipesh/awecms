@@ -1,0 +1,28 @@
+HOW To...?
+
+Install fbgallery:
+
+    Extract the archive in your protected/extensions folder (or in any other place in your application).
+    In the root of your website create one folder named "galleries" and make it writable. This is default option, but you can use any folder. For this, you need to set its path relative to approot in Control Panel->Gallery->Structure->Container folder for galleries.
+    Import in the database the file fbgallery.sql from sql folder.
+
+
+Use fbgallery:
+Just include in your page next code:
+$this->widget('application.extensions.fbgallery.fbgallery');
+If you install the extension in another place, not in extensions folder, only adjust the above code.
+
+Suggestions:
+When you start to use fbgallery, decide what type of thumbnail will be used: landscape, square or portrait.
+All uploaded pictures will be resized to best fit in thumbnail. If you later will change aspect of the thumbnail, this will affect how images are displayed.
+
+Customize fbgallery if is needed:
+To customize how fbgallery will treat users level, change the function personalisedMode() from /libs/general/FBAccess.php
+To customize how the extension will get the page's metatitle, adjust the function getPageTitle() from fbgallery.php to meet to your need.
+If you will include fbgallery into a cms, which generate automatic pages, you will customize the function getUrlRouteStructure() from fbgallery.php, to be according with your url structure.
+
+Change the name and the information about an album or a collection?
+Click on its title. An text editor will appear. Change the value and click on Save button.
+
+Switch to shop mode?
+In Control panel->Gallery->Shop click on the "Set standard shop" button.

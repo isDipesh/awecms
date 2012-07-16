@@ -7,6 +7,12 @@ class Awecms {
         return $ar->primaryKey;
     }
 
+    public static function getSiteName() {
+        if ($name = Settings::get('site', 'name'))
+            return $name;
+        return Yii::app()->name;
+    }
+
     public static function pluralize($singular, $plural, $count) {
         if ($count == 1)
             return $singular;

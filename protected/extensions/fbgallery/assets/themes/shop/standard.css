@@ -1,0 +1,33 @@
+.gcontainer li{
+	float:left;
+}
+
+.gcontainer ul {
+	list-style-type:none;
+}
+
+.gcontainer ul, .gcontainer ol {
+	padding:0;
+}
+
+.imageCollection{
+    width:136px;
+    margin:2px;
+}
+
+.imageCollection img{
+	width:136px;
+}
+
+.fbgrow{
+	margin-bottom: 3px;
+}
+
+.waitForGallery{
+    background: url("ajax-loader.gif") no-repeat scroll 50% 50% transparent;
+    color: red;
+    height: 230px;
+    text-align: center;
+    width: 100%;
+}
+

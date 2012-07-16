@@ -19,8 +19,10 @@ class PageController extends Controller {
     }
 
     public function actionView($id) {
+        $model = $this->loadModel($id);
+        $this->pageTitle = $model->title . ' - ' . Awecms::getSiteName();
         $this->render('view', array(
-            'model' => $this->loadModel($id),
+            'model' => $model,
         ));
     }
 
