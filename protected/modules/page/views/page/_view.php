@@ -7,14 +7,7 @@
         ?>
         <div class="field">
             <div class="field_value">
-                <?php
-                echo substr($data->content, 0, 500);
-                if (strlen($data->content) > 525)
-                    echo "...";
-                else
-                    echo substr($data->content, 500);
-                ?>
-
+                <?php echo $data->getExcerpt();?>
             </div>
         </div>
         <?php

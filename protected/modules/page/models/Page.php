@@ -12,6 +12,16 @@ class Page extends BasePage {
         return parent::init();
     }
 
+    public function getExcerpt() {
+        $stripped = strip_tags($this->content);
+        $str = substr($stripped, 0, 500);
+        if (strlen($stripped) > 525)
+            $str .= "...";
+        else
+            $str .= substr($stripped, 500);
+        return $str;
+    }
+
     public function getHierarchy() {
         $page = $this;
         $hierarchy = array();
@@ -33,8 +43,7 @@ class Page extends BasePage {
             if ($page === $this)
                 $links[] = $page->title;
             else
-            $links[$page->title] = Yii::app()->createUrl('page/page/view', array('id' => $page->id));
-            
+                $links[$page->title] = Yii::app()->createUrl('page/page/view', array('id' => $page->id));
         }
         return $links;
     }

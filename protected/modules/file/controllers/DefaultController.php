@@ -12,4 +12,9 @@ class DefaultController extends Controller {
         $this->render('index');
     }
 
+    public function actionUploader() {
+        $this->layout = false;
+        $this->render('index');
+    }
+
 }
