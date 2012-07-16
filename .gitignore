@@ -1,10 +1,10 @@
 assets/*
 !assets/.gitignore
+uploads/*
+!uploads/.gitignore
 protected/runtime/*
 !protected/runtime/.gitignore
 protected/tests/report/*
 *.swp
 *~
 /protected/config/db.php
-
-/uploads/.thumbs/

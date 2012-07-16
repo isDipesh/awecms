@@ -1,13 +1,16 @@
 <?php
 $this->breadcrumbs = array(
-    $this->module->id,
+    'Files',
 );
+
 ?>
+
 <div id="file-uploader"></div>
 
 <?php
-$filesPath = realpath(Yii::app()->basePath . "/../upload");
-$filesUrl = Yii::app()->baseUrl . "/upload";
+
+$filesPath = Yii::app()->basePath . "/../uploads";
+$filesUrl = Yii::app()->baseUrl . "/uploads";
 
 $this->widget("ext.ezzeelfinder.ElFinderWidget", array(
     'selector' => "div#file-uploader",
@@ -29,4 +32,6 @@ $this->widget("ext.ezzeelfinder.ElFinderWidget", array(
         )
     )
 ));
+
+
 ?>
