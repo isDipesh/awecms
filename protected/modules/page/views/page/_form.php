@@ -21,19 +21,32 @@
     <div class="row sticky">
         <?php echo $form->labelEx($model, 'slug'); ?>
         <div id="slug_holder">
-            &nbsp;
+            <?php
+            $slug = isset($model->slug) ? $model->slug->slug : '&nbsp;';
+            echo $slug;
+            ?>
         </div>
-        <?php echo $form->textField($model, 'slug', array('size' => 65, 'style' => 'display:none;')); ?>
-        <?php echo $form->error($model, 'slug'); ?>
+<?php echo CHtml::textField("Page[slug]", $slug, array('size' => 65, 'style' => 'display:none;')); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model, 'content'); ?>
         <?php
-        $this->widget('EMarkitupWidget', array(
-            'model' => $model,
-            'attribute' => 'content',
+//        $this->widget('EMarkitupWidget', array(
+//            'model' => $model,
+//            'attribute' => 'content',
+//        ));
+
+
+
+        $this->widget('application.extensions.editor.CKkceditor', array(
+            "model" => $model, # Data-Model
+            "attribute" => 'content', # Attribute in the Data-Model
+            "filespath" => (!$model->isNewRecord) ? Yii::app()->basePath . "/../uploads/" . "/" : "",
+            "filesurl" => (!$model->isNewRecord) ? Yii::app()->baseUrl . "/uploads/" ."/" : "",
         ));
+        
+        
         ?>
         <?php echo $form->error($model, 'content'); ?>
     </div>
@@ -72,37 +85,37 @@
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'order'); ?>
+        <?php // echo $form->labelEx($model, 'order');  ?>
         <?php // echo $form->textField($model, 'order'); ?>
         <?php // echo $form->error($model, 'order'); ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'type'); ?>
+        <?php // echo $form->labelEx($model, 'type');  ?>
         <?php // echo $form->textField($model, 'type', array('size' => 20, 'maxlength' => 20)); ?>
         <?php // echo $form->error($model, 'type'); ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'comment_status'); ?>
+        <?php // echo $form->labelEx($model, 'comment_status');  ?>
         <?php // echo $form->textField($model, 'comment_status', array('size' => 20, 'maxlength' => 20)); ?>
         <?php // echo $form->error($model, 'comment_status'); ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'tags_enabled'); ?>
+        <?php // echo $form->labelEx($model, 'tags_enabled');  ?>
         <?php // echo $form->checkBox($model, 'tags_enabled'); ?>
         <?php // echo $form->error($model, 'tags_enabled'); ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'permission'); ?>
+        <?php // echo $form->labelEx($model, 'permission');  ?>
         <?php // echo $form->textField($model, 'permission', array('size' => 20, 'maxlength' => 20)); ?>
         <?php // echo $form->error($model, 'permission'); ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'password'); ?>
+        <?php // echo $form->labelEx($model, 'password');  ?>
         <?php // echo $form->passwordField($model, 'password', array('size' => 20, 'maxlength' => 20)); ?>
         <?php // echo $form->error($model, 'password'); ?>
     </div>

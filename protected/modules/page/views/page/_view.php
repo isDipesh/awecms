@@ -6,11 +6,7 @@
     if (!empty($data->content)) {
         ?>
         <div class="field">
-            <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
-            </div>
             <div class="field_value">
-
                 <?php
                 echo substr($data->content, 0, 500);
                 if (strlen($data->content) > 525)
@@ -28,16 +24,10 @@
     if (!empty($data->views)) {
         ?>
         <div class="field">
-            <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('views')); ?>:</b>
-            </div>
-            <div class="field_value">
-
+            <?php echo CHtml::encode($data->getAttributeLabel('views')); ?>:
                 <?php
                 echo CHtml::encode($data->views);
                 ?>
-
-            </div>
         </div>
         <?php
     }

@@ -7,3 +7,4 @@ protected/tests/report/*
 *~
 /protected/config/db.php
 
+/uploads/.thumbs/
