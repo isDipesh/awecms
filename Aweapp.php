@@ -3,6 +3,7 @@
 class Aweapp extends CWebApplication {
 
     public $config;
+    public $image;
     public $punish = 0;
 
     public function __construct($config = null) {

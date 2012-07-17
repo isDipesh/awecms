@@ -10,7 +10,7 @@ $this->breadcrumbs = array(
 $filesPath = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "uploads";
 $filesUrl = Yii::app()->baseUrl . DIRECTORY_SEPARATOR . "uploads";
 
-$this->widget("ext.ezzeelfinder.ElFinderWidget", array(
+$this->widget("ext.elfinder.ElFinderWidget", array(
     'selector' => "div#file-uploader",
     'clientOptions' => array(
         'resizable' => false,

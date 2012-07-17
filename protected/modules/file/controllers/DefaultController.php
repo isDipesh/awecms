@@ -4,7 +4,7 @@ class DefaultController extends Controller {
 
     public function actions() {
         return array(
-            'fileUploaderConnector' => "ext.ezzeelfinder.ElFinderConnectorAction",
+            'fileUploaderConnector' => "ext.elfinder.ElFinderConnectorAction",
         );
     }
 
