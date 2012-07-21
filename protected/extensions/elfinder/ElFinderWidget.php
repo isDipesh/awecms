@@ -1,6 +1,6 @@
 <?php
 
-Yii::import("ext.ezzeelfinder.ElFinderConnectorAction");
+Yii::import("ext.elfinder.ElFinderConnectorAction");
 
 /**
  * A widget to integrate ElFinder uploader.
