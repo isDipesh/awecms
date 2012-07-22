@@ -41,8 +41,3 @@ echo nl2br($model->content);
         ?>
     </ul>
 <?php } ?>
-
-<?php
-//increase view count
-$model->views++;
-$model->save();

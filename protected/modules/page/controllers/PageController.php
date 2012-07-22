@@ -20,7 +20,16 @@ class PageController extends Controller {
 
     public function actionView($id) {
         $model = $this->loadModel($id);
+        $model->scenario = 'view';
+        
+        //set page title
         $this->pageTitle = $model->title . ' - ' . Awecms::getSiteName();
+        
+        //increase view count
+        $model->views++;
+        $model->save();
+        
+        //render the view
         $this->render('view', array(
             'model' => $model,
         ));

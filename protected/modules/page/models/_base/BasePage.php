@@ -31,7 +31,7 @@
  * @property Category[] $categories
  */
 abstract class BasePage extends CActiveRecord {
-
+    
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -65,7 +65,8 @@ abstract class BasePage extends CActiveRecord {
                 'createAttribute' => 'created_at',
                 'updateAttribute' => 'modified_at',
             ),
-            'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
+            'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior'),
+            'page-behavior' => array('class' => 'PageBehavior')
         );
     }
 
