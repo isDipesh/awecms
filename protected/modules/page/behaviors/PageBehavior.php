@@ -13,9 +13,7 @@ class PageBehavior extends CActiveRecordBehavior {
     }
 
     public function afterFind($event) {
-        $this->owner->haha = '1';
         echo "afterFind on " . $this->owner->scenario . "<br/>";
-        $this->owner->setAttributes(array('a'=>'b'));
     }
 
 }

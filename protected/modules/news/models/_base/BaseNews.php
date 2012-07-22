@@ -24,7 +24,6 @@ abstract class BaseNews extends Page {
 
     public function rules() {
         return array(
-            array('page_id, source', 'required'),
             array('page_id', 'numerical', 'integerOnly' => true),
             array('source', 'length', 'max' => 255),
             array('id, page_id, source', 'safe', 'on' => 'search'),
