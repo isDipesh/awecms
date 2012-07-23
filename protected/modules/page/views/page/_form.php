@@ -22,7 +22,7 @@
         <?php echo $form->labelEx($model, 'slug'); ?>
         <div id="slug_holder">
             <?php
-            $slug = isset($model->slug) ? $model->slug->slug : '&nbsp;';
+            $slug = isset($model->slug->slug) ? $model->slug->slug : '&nbsp;';
             echo $slug;
             ?>
         </div>

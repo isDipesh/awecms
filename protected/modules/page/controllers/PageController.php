@@ -38,23 +38,8 @@ class PageController extends Controller {
     public function actionCreate() {
         $model = new Page;
         if (isset($_POST['Page'])) {
-            $model->setAttributes($_POST['Page']);
-
-            if (isset($_POST['Page']['user']))
-                $model->user = $_POST['Page']['user'];
-            else
-                $model->user = Yii::app()->user->id;
-
-            if (isset($_POST['Page']['parent']))
-                $model->parent = $_POST['Page']['parent'];
-
-            if (isset($_POST['Page']['categories']))
-                $model->categories = $_POST['Page']['categories'];
             try {
                 if ($model->save()) {
-                    //also save the slug
-                    $model->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $model->id));
-                    $model->save();
                     if (isset($_GET['returnUrl'])) {
                         $this->redirect($_GET['returnUrl']);
                     } else {
@@ -71,7 +56,6 @@ class PageController extends Controller {
         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/form.js');
         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/create_form.js');
         $model->user = Yii::app()->user->id;
-
         $this->render('create', array('model' => $model));
     }
 
@@ -79,19 +63,7 @@ class PageController extends Controller {
         $model = $this->loadModel($id);
 
         if (isset($_POST['Page'])) {
-            $model->setAttributes($_POST['Page']);
-            if (isset($_POST['Page']['parent']))
-                $model->parent = $_POST['Page']['parent'];
-            else
-                $model->parent = array();
-
-            if (isset($_POST['Page']['user']))
-                $model->user = $_POST['Page']['user'];
-
-            if (isset($_POST['Page']['categories']))
-                $model->categories = $_POST['Page']['categories'];
-            else
-                $model->categories = array();
+            
 
             try {
                 if ($model->save()) {
