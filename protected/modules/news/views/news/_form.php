@@ -10,7 +10,7 @@
         'enableClientValidation' => true,
             ));
 
-    echo $form->errorSummary($model);
+    echo CHtml::errorSummary(array($page, $model));
     ?>
 
     <?php
@@ -22,10 +22,9 @@
     ?>
 
     <div class="row">
-        <?php echo CHtml::label('Title', 'Page[title]'); ?>
-
-        <?php echo CHtml::textField('Page[title]', $pageTitle, array('size' => 60, 'maxlength' => 255)); ?>
-        <?php echo CHtml::error($model, 'Page'); ?>
+        <?php echo $form->labelEx($page, 'title'); ?>
+        <?php echo $form->textField($page, 'title', array('size' => 60, 'maxlength' => 255)); ?>
+        <?php echo $form->error($page, 'title'); ?>
     </div>
 
     <div class="row">

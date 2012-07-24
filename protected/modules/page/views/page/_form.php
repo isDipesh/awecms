@@ -16,14 +16,12 @@
         <?php echo $form->labelEx($model, 'title'); ?>
         <?php echo $form->textField($model, 'title', array('size' => 60, 'maxlength' => 255)); ?>
         <?php echo $form->error($model, 'title'); ?>
-        <?php // print_r($model); ?>
     </div>
 
     <div class="row sticky">
         <?php echo $form->labelEx($model, 'slug'); ?>
         <div id="slug_holder">
             <?php
-            
             $slug = isset($model->slug->slug) ? $model->slug->slug : '&nbsp;';
             echo $slug;
             ?>

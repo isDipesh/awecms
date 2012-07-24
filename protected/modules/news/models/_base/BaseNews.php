@@ -37,7 +37,6 @@ abstract class BaseNews extends Page {
     public function behaviors() {
         return array(
             'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior'),
-            'page-behavior' => array('class' => 'PageBehavior')
         );
     }
 

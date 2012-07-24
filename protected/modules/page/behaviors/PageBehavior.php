@@ -9,6 +9,8 @@ class PageBehavior extends CActiveRecordBehavior {
             $model = $this->owner;
         else
             $model = $this->owner->page;
+        
+        
 
         //For create
         if ($this->owner->scenario == 'insert') {
@@ -57,7 +59,7 @@ class PageBehavior extends CActiveRecordBehavior {
             $id = $this->owner->id;
         else
             $id = $this->owner->page->id;
-        if ($this->owner->scenario == 'insert') {
+        if ($this->owner->scenario == 'insert' && isset($_POST['Page']['slug'])) {
             $page = Page::model()->findByPk($id);
             //save the slug
             $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $id));
