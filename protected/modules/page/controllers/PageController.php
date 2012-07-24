@@ -21,14 +21,14 @@ class PageController extends Controller {
     public function actionView($id) {
         $model = $this->loadModel($id);
         $model->scenario = 'view';
-        
+
         //set page title
         $this->pageTitle = $model->title . ' - ' . Awecms::getSiteName();
-        
+
         //increase view count
         $model->views++;
         $model->save();
-        
+
         //render the view
         $this->render('view', array(
             'model' => $model,
@@ -52,10 +52,11 @@ class PageController extends Controller {
         } elseif (isset($_GET['Page'])) {
             $model->attributes = $_GET['Page'];
         }
+        if (!isset($_POST['Page']['user']))
+            $model->user = Yii::app()->user->id;
         $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.page.assets'));
         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/form.js');
         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/create_form.js');
-        $model->user = Yii::app()->user->id;
         $this->render('create', array('model' => $model));
     }
 
@@ -63,8 +64,6 @@ class PageController extends Controller {
         $model = $this->loadModel($id);
 
         if (isset($_POST['Page'])) {
-            
-
             try {
                 if ($model->save()) {
                     if (isset($_GET['returnUrl'])) {

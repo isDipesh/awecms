@@ -1,7 +1,7 @@
 <?php
 
 class PageBehavior extends CActiveRecordBehavior {
-
+    
     public function beforeValidate($event) {
         echo "beforeValidate on " . $this->owner->scenario . "<br/>";
         //get the Page model
@@ -17,7 +17,6 @@ class PageBehavior extends CActiveRecordBehavior {
                 $model->user = $_POST['Page']['user'];
             else
                 $model->user = Yii::app()->user->id;
-
             if (isset($_POST['Page']['parent']))
                 $model->parent = $_POST['Page']['parent'];
 
@@ -59,7 +58,7 @@ class PageBehavior extends CActiveRecordBehavior {
             $model = $this->owner;
         else
             $model = $this->owner->page;
-
+        
         if ($this->owner->scenario == 'insert') {
             //also save the slug
             $model->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $model->id));

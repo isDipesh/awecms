@@ -4,6 +4,7 @@
 class Awecms {
 
     public static function getPrimaryKey($ar) {
+        if (is_numeric($ar)) return $ar;
         return $ar->primaryKey;
     }
 
