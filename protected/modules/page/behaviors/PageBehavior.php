@@ -1,7 +1,7 @@
 <?php
 
 class PageBehavior extends CActiveRecordBehavior {
-    
+
     public function beforeValidate($event) {
         echo "beforeValidate on " . $this->owner->scenario . "<br/>";
         //get the Page model
@@ -52,23 +52,17 @@ class PageBehavior extends CActiveRecordBehavior {
 
     public function afterSave($event) {
         echo "afterSave on " . $this->owner->scenario . "<br/>";
-
-        //get the Page model
+        //get the id of the page
         if (get_class($this->owner) == 'Page')
-            $model = $this->owner;
+            $id = $this->owner->id;
         else
-            $model = $this->owner->page;
-        
+            $id = $this->owner->page->id;
         if ($this->owner->scenario == 'insert') {
-            //also save the slug
-            $model->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $model->id));
+            $page = Page::model()->findByPk($id);
+            //save the slug
+            $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $id));
+            $page->save();
         }
-
-        //write back the page model
-        if (get_class($this->owner) == 'Page')
-            $this->owner->setAttributes($model->getAttributes());
-        else
-            $this->owner->page = $model;
     }
 
     public function afterFind($event) {
