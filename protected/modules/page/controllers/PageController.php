@@ -40,11 +40,9 @@ class PageController extends Controller {
         if (isset($_POST['Page'])) {
             try {
                 if ($page->save()) {
-                    if (isset($_GET['returnUrl'])) {
-                        $this->redirect($_GET['returnUrl']);
-                    } else {
-                        $this->redirect(array('view', 'id' => $page->id));
-                    }
+                    $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $page->id));
+                    $page->save();
+                    $this->redirect(array('view', 'id' => $page->id));
                 }
             } catch (Exception $e) {
                 $page->addError('', $e->getMessage());
@@ -52,11 +50,9 @@ class PageController extends Controller {
         } elseif (isset($_GET['Page'])) {
             $page->attributes = $_GET['Page'];
         }
-        if (!isset($_POST['Page']['user']))
-            $page->user = Yii::app()->user->id;
-        $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.page.assets'));
-        Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/form.js');
-        Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/create_form.js');
+//        if (!isset($_POST['Page']['user']))
+//            $page->user = Yii::app()->user->id;
+
         $this->render('create', array('page' => $page));
     }
 
@@ -66,18 +62,14 @@ class PageController extends Controller {
         if (isset($_POST['Page'])) {
             try {
                 if ($page->save()) {
-                    if (isset($_GET['returnUrl'])) {
-                        $this->redirect($_GET['returnUrl']);
-                    } else {
-                        $this->redirect(array('view', 'id' => $page->id));
-                    }
+                    $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $page->id));
+                    $page->save();
+                    $this->redirect(array('view', 'id' => $page->id));
                 }
             } catch (Exception $e) {
                 $page->addError('', $e->getMessage());
             }
         }
-        $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.page.assets'));
-        Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/form.js');
         $this->render('update', array(
             'page' => $page,
         ));

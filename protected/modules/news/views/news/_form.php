@@ -14,13 +14,13 @@
     ?>
 
     <?php
-    $this->widget('PageForm',array(
+    $this->widget('PageForm', array(
         'model' => $model,
         'form' => $form,
-        'fields'=>array('title','content','user','status')
-        ));
+        'fields' => array('title', 'content', 'user', 'status', 'parent')
+    ));
     ?>
-    
+
     <div class="row">
         <?php echo $form->labelEx($model, 'source'); ?>
         <?php echo $form->textField($model, 'source', array('size' => 60, 'maxlength' => 255)); ?>

@@ -13,5 +13,6 @@ if (!isset($this->menu) || $this->menu === array())
 <h1> Create New Page </h1>
 <?php
 $this->renderPartial('_form', array(
+    'page' => $page,
     'buttons' => 'create'));
 ?>
