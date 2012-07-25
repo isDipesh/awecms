@@ -17,54 +17,32 @@ class NewsController extends Controller {
 
     public function actionCreate() {
         $model = new News;
-        $page = new Page;
         if (isset($_POST['News']) || isset($_POST['Page'])) {
-            if (isset($_POST['News']))
-                $model->setAttributes($_POST['News']);
-            // validate BOTH news and page
-            $valid = $page->validate();
-            if ($valid) {
-                $page->save(false);
-                $model->page_id = $page->id;
-                try {
-                    if ($model->save())
-                        $this->redirect(array('view', 'id' => $model->id));
-                } catch (Exception $e) {
-                    $model->addError('', $e->getMessage());
-                }
+            try {
+                if ($model->save())
+                    $this->redirect(array('view', 'id' => $model->id));
+            } catch (Exception $e) {
+                $model->addError('', $e->getMessage());
             }
         }
 
         $this->render('create', array(
             'model' => $model,
-            'page' => $page
         ));
     }
 
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
-        $page = Page::model()->findByPk($model->page->id);
-        if (isset($_POST['News'])) {
-            $model->setAttributes($_POST['News']);
-            if (isset($_POST['Page']))
-                $model->setAttributes($_POST['Pag']);
-            else
-                $model->page = array();
+        if (isset($_POST['News']) || isset($_POST['Page'])) {
             try {
-                if ($model->save()) {
-                    if (isset($_GET['returnUrl'])) {
-                        $this->redirect($_GET['returnUrl']);
-                    } else {
-                        $this->redirect(array('view', 'id' => $model->id));
-                    }
-                }
+                if ($model->save())
+                    $this->redirect(array('view', 'id' => $model->id));
             } catch (Exception $e) {
                 $model->addError('', $e->getMessage());
             }
         }
         $this->render('update', array(
             'model' => $model,
-            'page' => $page,
         ));
     }
 

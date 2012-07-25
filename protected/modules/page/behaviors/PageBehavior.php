@@ -4,48 +4,38 @@ class PageBehavior extends CActiveRecordBehavior {
 
     public function beforeValidate($event) {
         echo "beforeValidate on " . $this->owner->scenario . "<br/>";
-        //get the Page model
-        if (get_class($this->owner) == 'Page')
-            $model = $this->owner;
+
+        //save the model specific fields (properties not covered by Page)
+        if (isset($_POST[get_class($this->owner)]))
+            $this->owner->setAttributes($_POST[get_class($this->owner)]);
+
+        if ($this->owner->scenario == 'insert')
+            $page = new Page;
         else
-            $model = $this->owner->page;
-        
-        
+            $page = $this->owner->page;
 
-        //For create
-        if ($this->owner->scenario == 'insert') {
-            $model->setAttributes($_POST['Page']);
-            if (isset($_POST['Page']['user']))
-                $model->user = $_POST['Page']['user'];
-            else
-                $model->user = Yii::app()->user->id;
-            if (isset($_POST['Page']['parent']))
-                $model->parent = $_POST['Page']['parent'];
+        //get and save attributes of page
+        if (isset($_POST['Page']))
+            $page->setAttributes($_POST['Page']);
 
-            if (isset($_POST['Page']['categories']))
-                $model->categories = $_POST['Page']['categories'];
-        }
-        else if ($this->owner->scenario == 'update') {
-            $model->setAttributes($_POST['Page']);
-            if (isset($_POST['Page']['parent']))
-                $model->parent = $_POST['Page']['parent'];
-            else
-                $model->parent = array();
-
-            if (isset($_POST['Page']['user']))
-                $model->user = $_POST['Page']['user'];
-
-            if (isset($_POST['Page']['categories']))
-                $model->categories = $_POST['Page']['categories'];
-            else
-                $model->categories = array();
-        }
-
-        //write back the page model
-        if (get_class($this->owner) == 'Page')
-            $this->owner->setAttributes($model->getAttributes());
+        //relation need to be handled separately
+        if (isset($_POST['Page']['user']))
+            $page->user = $_POST['Page']['user'];
         else
-            $this->owner->page = $model;
+            $page->user = Yii::app()->user->id;
+        if (isset($_POST['Page']['parent']))
+            $page->parent = $_POST['Page']['parent'];
+        if (isset($_POST['Page']['categories']))
+            $page->categories = $_POST['Page']['categories'];
+
+        //save the page
+        $page->save();
+
+        //now relate the page to the model
+        $this->owner->page = $page;
+
+//        if (get_class($this->owner) == 'Page')
+//            $model = $this->owner;
     }
 
     public function beforeSave($event) {
@@ -54,6 +44,7 @@ class PageBehavior extends CActiveRecordBehavior {
 
     public function afterSave($event) {
         echo "afterSave on " . $this->owner->scenario . "<br/>";
+
         //get the id of the page
         if (get_class($this->owner) == 'Page')
             $id = $this->owner->id;

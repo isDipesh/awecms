@@ -14,6 +14,5 @@ if (!isset($this->menu) || $this->menu === array())
 <?php
 $this->renderPartial('_form', array(
     'model' => $model,
-    'page' => $page,
     'buttons' => 'create'));
 ?>

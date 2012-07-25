@@ -65,7 +65,7 @@ abstract class BasePage extends CActiveRecord {
                 'createAttribute' => 'created_at',
                 'updateAttribute' => 'modified_at',
             ),
-            'page-behavior' => array('class' => 'PageBehavior'),
+//            'page-behavior' => array('class' => 'PageBehavior'),
             'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior'),
         );
     }
