@@ -18,19 +18,20 @@ class NewsController extends Controller {
     public function actionCreate() {
         $model = new News;
         $page = new Page;
-        if (isset($_POST['News'], $_POST['Page'])) {
-
-            $model->setAttributes($_POST['News']);
-            $page->setAttributes($_POST['Page']);
-
+        if (isset($_POST['News']) || isset($_POST['Page'])) {
+            if (isset($_POST['News']))
+                $model->setAttributes($_POST['News']);
             // validate BOTH news and page
             $valid = $page->validate();
-
             if ($valid) {
                 $page->save(false);
                 $model->page_id = $page->id;
-                if ($model->save())
-                    $this->redirect(array('view', 'id' => $model->id));
+                try {
+                    if ($model->save())
+                        $this->redirect(array('view', 'id' => $model->id));
+                } catch (Exception $e) {
+                    $model->addError('', $e->getMessage());
+                }
             }
         }
 
@@ -42,11 +43,11 @@ class NewsController extends Controller {
 
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
-        $page = News::model()->findByPk($model->page->id);
+        $page = Page::model()->findByPk($model->page->id);
         if (isset($_POST['News'])) {
             $model->setAttributes($_POST['News']);
-            if (isset($_POST['News']['page']))
-                $model->page = $_POST['News']['page'];
+            if (isset($_POST['Page']))
+                $model->setAttributes($_POST['Pag']);
             else
                 $model->page = array();
             try {

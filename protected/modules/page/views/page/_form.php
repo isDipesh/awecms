@@ -9,20 +9,20 @@
         'enableAjaxValidation' => false,
         'enableClientValidation' => true,
             ));
-    echo $form->errorSummary($model);
+    echo $form->errorSummary($page);
     ?>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'title'); ?>
-        <?php echo $form->textField($model, 'title', array('size' => 60, 'maxlength' => 255)); ?>
-        <?php echo $form->error($model, 'title'); ?>
+        <?php echo $form->labelEx($page, 'title'); ?>
+        <?php echo $form->textField($page, 'title', array('size' => 60, 'maxlength' => 255)); ?>
+        <?php echo $form->error($page, 'title'); ?>
     </div>
 
     <div class="row sticky">
-        <?php echo $form->labelEx($model, 'slug'); ?>
+        <?php echo $form->labelEx($page, 'slug'); ?>
         <div id="slug_holder">
             <?php
-            $slug = isset($model->slug->slug) ? $model->slug->slug : '&nbsp;';
+            $slug = isset($page->slug->slug) ? $page->slug->slug : '&nbsp;';
             echo $slug;
             ?>
         </div>
@@ -30,17 +30,17 @@
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'content'); ?>
+        <?php echo $form->labelEx($page, 'content'); ?>
         <?php
 //        $this->widget('EMarkitupWidget', array(
-//            'model' => $model,
+//            'model' => $page,
 //            'attribute' => 'content',
 //        ));
 
         $this->widget('ext.ckeditor.CKEditorWidget', array(
-            "model" => $model,
+            "model" => $page,
             "attribute" => "content",
-            "defaultValue" => $model->content,
+            "defaultValue" => $page->content,
             # Additional Parameter (Check http://docs.cksource.com/ckeditor_api/symbols/CKEDITOR.config.html)
             "config" => array(
                 "height" => "400px",
@@ -49,82 +49,82 @@
             ),
         ));
         ?>
-        <?php echo $form->error($model, 'content'); ?>
+        <?php echo $form->error($page, 'content'); ?>
     </div>
 
     <?php if (Yii::app()->getModule('user')->isAdmin()) { ?>
         <div class="row">
-            <?php echo $form->labelEx($model, 'user_id'); ?>
-            <?php echo $form->dropDownList($model, 'user', CHtml::listData(User::model()->findAll(), 'id', 'username'), array('prompt' => 'None')); ?>
-            <?php echo $form->error($model, 'user_id'); ?>
+            <?php echo $form->labelEx($page, 'user_id'); ?>
+            <?php echo $form->dropDownList($page, 'user', CHtml::listData(User::model()->findAll(), 'id', 'username'), array('prompt' => 'None')); ?>
+            <?php echo $form->error($page, 'user_id'); ?>
         </div>
     <?php } ?>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'status'); ?>
+        <?php echo $form->labelEx($page, 'status'); ?>
         <?php
-        echo CHtml::activeDropDownList($model, 'status', array(
+        echo CHtml::activeDropDownList($page, 'status', array(
             'published' => Yii::t('app', 'Published'),
             'trashed' => Yii::t('app', 'Trashed'),
             'draft' => Yii::t('app', 'Draft'),
         ));
         ?>
-        <?php echo $form->error($model, 'status'); ?>
+        <?php echo $form->error($page, 'status'); ?>
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'parent_id'); ?>
+        <?php echo $form->labelEx($page, 'parent_id'); ?>
         <?php
         $allModels = Page::model()->findAll();
         foreach ($allModels as $key => $aModel) {
-            if ($aModel->id == $model->id)
+            if ($aModel->id == $page->id)
                 unset($allModels[$key]);
         }
-        echo $form->dropDownList($model, 'parent', CHtml::listData($allModels, 'id', 'title'), array('prompt' => 'None'));
+        echo $form->dropDownList($page, 'parent', CHtml::listData($allModels, 'id', 'title'), array('prompt' => 'None'));
         ?>
-        <?php echo $form->error($model, 'parent_id'); ?>
+        <?php echo $form->error($page, 'parent_id'); ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'order');  ?>
-        <?php // echo $form->textField($model, 'order');  ?>
-        <?php // echo $form->error($model, 'order');  ?>
+        <?php // echo $form->labelEx($page, 'order');  ?>
+        <?php // echo $form->textField($page, 'order');  ?>
+        <?php // echo $form->error($page, 'order');  ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'type');  ?>
-        <?php // echo $form->textField($model, 'type', array('size' => 20, 'maxlength' => 20));  ?>
-        <?php // echo $form->error($model, 'type');  ?>
+        <?php // echo $form->labelEx($page, 'type');  ?>
+        <?php // echo $form->textField($page, 'type', array('size' => 20, 'maxlength' => 20));  ?>
+        <?php // echo $form->error($page, 'type');  ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'comment_status');  ?>
-        <?php // echo $form->textField($model, 'comment_status', array('size' => 20, 'maxlength' => 20));  ?>
-        <?php // echo $form->error($model, 'comment_status');  ?>
+        <?php // echo $form->labelEx($page, 'comment_status');  ?>
+        <?php // echo $form->textField($page, 'comment_status', array('size' => 20, 'maxlength' => 20));  ?>
+        <?php // echo $form->error($page, 'comment_status');  ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'tags_enabled');  ?>
-        <?php // echo $form->checkBox($model, 'tags_enabled');  ?>
-        <?php // echo $form->error($model, 'tags_enabled');  ?>
+        <?php // echo $form->labelEx($page, 'tags_enabled');  ?>
+        <?php // echo $form->checkBox($page, 'tags_enabled');  ?>
+        <?php // echo $form->error($page, 'tags_enabled');  ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'permission');  ?>
-        <?php // echo $form->textField($model, 'permission', array('size' => 20, 'maxlength' => 20));  ?>
-        <?php // echo $form->error($model, 'permission');  ?>
+        <?php // echo $form->labelEx($page, 'permission');  ?>
+        <?php // echo $form->textField($page, 'permission', array('size' => 20, 'maxlength' => 20));  ?>
+        <?php // echo $form->error($page, 'permission');  ?>
     </div>
 
     <div class="row">
-        <?php // echo $form->labelEx($model, 'password');  ?>
-        <?php // echo $form->passwordField($model, 'password', array('size' => 20, 'maxlength' => 20));  ?>
-        <?php // echo $form->error($model, 'password');  ?>
+        <?php // echo $form->labelEx($page, 'password');  ?>
+        <?php // echo $form->passwordField($page, 'password', array('size' => 20, 'maxlength' => 20));  ?>
+        <?php // echo $form->error($page, 'password');  ?>
     </div>
 
     <div class="row nm_row">
         <label for="categories"><?php echo Yii::t('app', 'Categories'); ?></label>
         <?php
-        echo CHtml::checkBoxList('Page[categories]', array_map('Awecms::getPrimaryKey', $model->categories), CHtml::listData(Category::model()->findAll(), 'id', 'name'), array('attributeitem' => 'id', 'checkAll' => 'Select All'));
+        echo CHtml::checkBoxList('Page[categories]', array_map('Awecms::getPrimaryKey', $page->categories), CHtml::listData(Category::model()->findAll(), 'id', 'name'), array('attributeitem' => 'id', 'checkAll' => 'Select All'));
         ?></div>
 
     <?php

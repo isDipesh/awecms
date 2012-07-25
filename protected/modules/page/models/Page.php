@@ -48,4 +48,8 @@ class Page extends BasePage {
         return $links;
     }
 
+    public static function findByType($type = 'page') {
+        return self::model()->findAllByAttributes(array('type' => $type));
+    }
+
 }

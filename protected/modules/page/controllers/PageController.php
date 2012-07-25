@@ -19,67 +19,67 @@ class PageController extends Controller {
     }
 
     public function actionView($id) {
-        $model = $this->loadModel($id);
-        $model->scenario = 'view';
+        $page = $this->loadModel($id);
+        $page->scenario = 'view';
 
         //set page title
-        $this->pageTitle = $model->title . ' - ' . Awecms::getSiteName();
+        $this->pageTitle = $page->title . ' - ' . Awecms::getSiteName();
 
         //increase view count
-        $model->views++;
-        $model->save();
+        $page->views++;
+        $page->save();
 
         //render the view
         $this->render('view', array(
-            'model' => $model,
+            'page' => $page,
         ));
     }
 
     public function actionCreate() {
-        $model = new Page;
+        $page = new Page;
         if (isset($_POST['Page'])) {
             try {
-                if ($model->save()) {
+                if ($page->save()) {
                     if (isset($_GET['returnUrl'])) {
                         $this->redirect($_GET['returnUrl']);
                     } else {
-                        $this->redirect(array('view', 'id' => $model->id));
+                        $this->redirect(array('view', 'id' => $page->id));
                     }
                 }
             } catch (Exception $e) {
-                $model->addError('', $e->getMessage());
+                $page->addError('', $e->getMessage());
             }
         } elseif (isset($_GET['Page'])) {
-            $model->attributes = $_GET['Page'];
+            $page->attributes = $_GET['Page'];
         }
         if (!isset($_POST['Page']['user']))
-            $model->user = Yii::app()->user->id;
+            $page->user = Yii::app()->user->id;
         $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.page.assets'));
         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/form.js');
         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/create_form.js');
-        $this->render('create', array('model' => $model));
+        $this->render('create', array('page' => $page));
     }
 
     public function actionUpdate($id) {
-        $model = $this->loadModel($id);
+        $page = $this->loadModel($id);
 
         if (isset($_POST['Page'])) {
             try {
-                if ($model->save()) {
+                if ($page->save()) {
                     if (isset($_GET['returnUrl'])) {
                         $this->redirect($_GET['returnUrl']);
                     } else {
-                        $this->redirect(array('view', 'id' => $model->id));
+                        $this->redirect(array('view', 'id' => $page->id));
                     }
                 }
             } catch (Exception $e) {
-                $model->addError('', $e->getMessage());
+                $page->addError('', $e->getMessage());
             }
         }
         $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.page.assets'));
         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/form.js');
         $this->render('update', array(
-            'model' => $model,
+            'page' => $page,
         ));
     }
 
@@ -101,24 +101,24 @@ class PageController extends Controller {
     }
 
     public function actionAdmin() {
-        $model = new Page('search');
-        $model->unsetAttributes();
+        $page = new Page('search');
+        $page->unsetAttributes();
 
         if (isset($_GET['Page']))
-            $model->setAttributes($_GET['Page']);
+            $page->setAttributes($_GET['Page']);
 
         $this->render('admin', array(
-            'model' => $model,
+            'page' => $page,
         ));
     }
 
-    public function actionToggle($id, $attribute, $model) {
+    public function actionToggle($id, $attribute, $page) {
         if (Yii::app()->request->isPostRequest) {
             // we only allow deletion via POST request
-            $model = $this->loadModel($id, $model);
-            //loadModel($id, $model) from giix
-            ($model->$attribute == 1) ? $model->$attribute = 0 : $model->$attribute = 1;
-            $model->save();
+            $page = $this->loadModel($id, $page);
+            //loadModel($id, $page) from giix
+            ($page->$attribute == 1) ? $page->$attribute = 0 : $page->$attribute = 1;
+            $page->save();
 
             // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
             if (!isset($_GET['ajax']))
@@ -129,10 +129,10 @@ class PageController extends Controller {
     }
 
     public function loadModel($id) {
-        $model = Page::model()->findByPk($id);
-        if ($model === null)
+        $page = Page::model()->findByPk($id);
+        if ($page === null)
             throw new CHttpException(404, Yii::t('app', 'The requested page does not exist.'));
-        return $model;
+        return $page;
     }
 
 }
