@@ -40,10 +40,10 @@ class PageBehavior extends CActiveRecordBehavior {
     }
 
     public function afterSave($event) {
+        //slug for pages are handled in PageController
         if (get_class($this->owner) == 'Page')
             return;
-        else
-            $page = $this->owner->page;
+        $page = $this->owner->page;
         if (isset($_POST['Page']['slug'])) {
             if
             (($this->owner->scenario == 'insert' ||
@@ -51,7 +51,7 @@ class PageBehavior extends CActiveRecordBehavior {
                     && $page->slug
                     && $_POST['Page']['slug'] != $page->slug->slug))
             ) {
-                //get the id of the page
+                //get the page
                 $page = Page::model()->findByPk($page->id);
                 //save the slug
                 $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $page->id));
