@@ -3,10 +3,9 @@
 class PageController extends Controller {
 
     public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('Page');
         $dataProvider = new CActiveDataProvider('Page', array(
                     'criteria' => array(
-                        'condition' => "status='published' OR user_id='" . Yii::app()->user->id . "'",
+                        'condition' => "type='Page' AND (status='published' OR user_id='" . Yii::app()->user->id . "')",
 //                        'with' => array('author'),
                     ),
                     'pagination' => array(
@@ -20,15 +19,6 @@ class PageController extends Controller {
 
     public function actionView($id) {
         $page = $this->loadModel($id);
-        $page->scenario = 'view';
-
-        //set page title
-        $this->pageTitle = $page->title . ' - ' . Awecms::getSiteName();
-
-        //increase view count
-        $page->views++;
-        $page->save();
-
         //render the view
         $this->render('view', array(
             'page' => $page,
