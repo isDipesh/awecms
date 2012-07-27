@@ -31,6 +31,13 @@ class PageBehavior extends CActiveRecordBehavior {
         if (isset($_POST['Page']['categories']))
             $page->categories = $_POST['Page']['categories'];
 
+        //for update, we don't have to wait for it to be saved
+        if ($this->owner->scenario == 'update' && isset($_POST['Page']['slug'])) {
+            if (isset($page->slug->slug) && $_POST['Page']['slug'] != $page->slug->slug) {
+                $page->slug->slug = $_POST['Page']['slug'];
+                $page->slug->save();
+            }
+        }
         //save the page, except when the owner is page itself
         if (!$isPage) {
             $page->type = get_class($this->owner);
@@ -46,12 +53,7 @@ class PageBehavior extends CActiveRecordBehavior {
             return;
         $page = $this->owner->page;
         if (isset($_POST['Page']['slug'])) {
-            if
-            (($this->owner->scenario == 'insert' ||
-                    ($this->owner->scenario == 'update'
-                    && $page->slug
-                    && $_POST['Page']['slug'] != $page->slug->slug))
-            ) {
+            if ($this->owner->scenario == 'insert') {
                 //get the page
                 $page = Page::model()->findByPk($page->id);
                 //save the slug

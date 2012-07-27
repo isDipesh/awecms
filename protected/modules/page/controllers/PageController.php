@@ -18,10 +18,8 @@ class PageController extends Controller {
     }
 
     public function actionView($id) {
-        $page = $this->loadModel($id);
-        //render the view
         $this->render('view', array(
-            'page' => $page,
+            'page' => $this->loadModel($id),
         ));
     }
 
@@ -30,8 +28,10 @@ class PageController extends Controller {
         if (isset($_POST['Page'])) {
             try {
                 if ($page->save()) {
-                    $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $page->id));
-                    $page->save();
+                    if (isset($_POST['Page']['slug'])) {
+                        $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $page->id));
+                        $page->save();
+                    }
                     $this->redirect(array('view', 'id' => $page->id));
                 }
             } catch (Exception $e) {
@@ -50,10 +50,12 @@ class PageController extends Controller {
         $page = $this->loadModel($id);
 
         if (isset($_POST['Page'])) {
+            if (isset($_POST['Page']['slug']) && $_POST['Page']['slug'] != $page->slug->slug) {
+                $page->slug->slug = $_POST['Page']['slug'];
+                $page->slug->save();
+            }
             try {
                 if ($page->save()) {
-                    $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $page->id));
-                    $page->save();
                     $this->redirect(array('view', 'id' => $page->id));
                 }
             } catch (Exception $e) {
