@@ -7,8 +7,6 @@
 
  * @property integer $id
  * @property integer $page_id
- * @property string $source
- *
  * Relations of table "news" available as properties of the model:
  * @property Page $page
  */
@@ -25,13 +23,12 @@ abstract class BaseNews extends Page {
     public function rules() {
         return array(
             array('page_id', 'numerical', 'integerOnly' => true),
-            array('source', 'length', 'max' => 255),
-            array('id, page_id, source', 'safe', 'on' => 'search'),
+            array('id, page_id', 'safe', 'on' => 'search'),
         );
     }
 
     public function __toString() {
-        return (string) $this->source;
+        return (string) $this->page->title;
     }
 
     public function behaviors() {
@@ -51,7 +48,6 @@ abstract class BaseNews extends Page {
         return array(
             'id' => Yii::t('app', 'ID'),
             'page_id' => Yii::t('app', 'Page'),
-            'source' => Yii::t('app', 'Source'),
         );
     }
 
@@ -60,7 +56,6 @@ abstract class BaseNews extends Page {
 
         $criteria->compare('id', $this->id);
         $criteria->compare('page_id', $this->page_id);
-        $criteria->compare('source', $this->source, true);
 
         return new CActiveDataProvider(get_class($this), array(
                     'criteria' => $criteria,

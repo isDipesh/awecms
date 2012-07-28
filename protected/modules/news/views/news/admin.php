@@ -1,12 +1,12 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'News') => array('index'),
+    Yii::t('app', 'News') => array('/news'),
     Yii::t('app', 'Manage'),
 );
 if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
         array('label' => Yii::t('app', 'Create'), 'url' => array('create')),
-        array('label' => Yii::t('app', 'List'), 'url' => array('index')),
+        array('label' => Yii::t('app', 'List'), 'url' => array('/news')),
     );
 
 
@@ -45,7 +45,6 @@ $this->widget('zii.widgets.grid.CGridView', array(
  'value' => 'isset($data->page->title)?$data->page->title:"N/A"',
  'filter' => CHtml::listData(Page::model()->findAll(), 'id', 'title'),
  ),
- 'source',
  array(
 'class' => 'CButtonColumn',
  ),

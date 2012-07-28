@@ -21,12 +21,6 @@
     ));
     ?>
 
-    <div class="row">
-        <?php echo $form->labelEx($model, 'source'); ?>
-        <?php echo $form->textField($model, 'source', array('size' => 60, 'maxlength' => 255)); ?>
-        <?php echo $form->error($model, 'source'); ?>
-    </div>
-
     <?php
     echo CHtml::submitButton(Yii::t('app', 'Save'));
     echo CHtml::Button(Yii::t('app', 'Cancel'), array(

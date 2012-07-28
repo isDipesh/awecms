@@ -15,11 +15,6 @@
 		<?php echo $form->dropDownList($model, 'page', CHtml::listData(Page::model()->findAll(),'id', 'title')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model, 'source'); ?>
-		<?php echo $form->textField($model,'source',array('size'=>60,'maxlength'=>255)); ?>
-	</div>
-
 	<div class="row buttons">
 		<?php echo CHtml::submitButton(Yii::t('app', 'Search')); ?>
 	</div>
