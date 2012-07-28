@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Events') => array('index'),
+    Yii::t('app', 'Events') => array('/event'),
     Yii::t('app', $model->page->title) => array('view','id'=>$model->id),
     Yii::t('app', 'Update'),
 );

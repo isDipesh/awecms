@@ -4,13 +4,16 @@ class EventController extends Controller {
 
     public function actionIndex() {
         $dataProvider = new CActiveDataProvider('Event');
-        
+        $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.event.assets'));
+        Yii::app()->getClientScript()->registerCssFile($baseUrl . '/hotDate.css');
         $this->render('index', array(
             'dataProvider' => $dataProvider,
         ));
     }
 
     public function actionView($id) {
+        $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.event.assets'));
+        Yii::app()->getClientScript()->registerCssFile($baseUrl . '/hotDate.css');
         $this->render('view', array(
             'model' => $this->loadModel($id),
         ));
