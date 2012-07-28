@@ -55,14 +55,15 @@ class CKEditorWidget extends CInputWidget
 	public $ckBasePath;
 	public $defaultValue;
         public $config;
+        public $model;
 
 	public function run()
 	{
 		if(!isset($this->model)){
-			throw new CHttpException(500,'"model" have to be set!');
+			throw new CHttpException(500,'"model" has to be set!');
 		}
 		if(!isset($this->attribute)){
-			throw new CHttpException(500,'"attribute" have to be set!');
+			throw new CHttpException(500,'"attribute" has to be set!');
 		}
 		if(!isset($this->ckEditor)){
 			$this->ckEditor = Yii::app()->basePath."/../ckeditor/ckeditor.php";

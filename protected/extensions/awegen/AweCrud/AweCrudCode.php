@@ -235,7 +235,7 @@ class AweCrudCode extends CrudCode {
 							'model'=>\$model,
                                                         'name'=>'{$modelClass}[{$column->name}]',
 							//'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
-                                                        'language'=> 'en',
+                                                        'language'=> '',
 							'value'=>\$model->{$column->name},
                                                         'mode' => '" . $mode . "',
 							'options'=>array(
@@ -276,6 +276,7 @@ class AweCrudCode extends CrudCode {
                 if ($relation[2] == $columnName) {
                     $relatedModel = CActiveRecord::model($relation[1]);
                     $relatedColumnName = $relationName . '->' . AweCrudCode::getIdentificationColumnFromTableSchema($relatedModel->tableSchema);
+                    $relatedModelName = $relation[1];
                 }
             }
 

@@ -15,7 +15,7 @@ class PageBehavior extends CActiveRecordBehavior {
         else if ($isPage)
             $page = $this->owner;
         else
-            $page = $this->owner->page;
+            $page = Page::model()->findByPk($this->owner->page_id);
 
         //get and save attributes of page
         if (isset($_POST['Page']))

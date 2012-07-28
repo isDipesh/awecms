@@ -9,6 +9,13 @@ class PageForm extends CWidget {
     private $page;
 
     public function init() {
+        
+        //check for required arguments
+        if(!$this->model)
+            throw new CHttpException('500','$model must be provided for PageForm Widget');
+        if(!$this->form)
+            throw new CHttpException('500','$form must be provided for PageForm Widget');
+        
         //users do not tend to use array for single item
         if (!is_array($this->fields)) {
             $tmp = array();

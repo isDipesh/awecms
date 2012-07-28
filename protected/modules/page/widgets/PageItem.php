@@ -8,6 +8,10 @@ class PageItem extends CWidget {
 
     public function init() {
 
+        //check for required arguments
+        if (!$this->data)
+            throw new CHttpException('500', '$data must be provided for PageItem Widget');
+
         //users do not tend to use array for single item
         if (!is_array($this->fields)) {
             $tmp = array();

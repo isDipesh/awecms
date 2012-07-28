@@ -7,6 +7,11 @@ class PageView extends CWidget {
     private $page;
 
     public function init() {
+        
+        //check for required arguments
+        if(!$this->model)
+            throw new CHttpException('500','$model must be provided for PageView Widget');
+        
         //users do not tend to use array for single item
         if (!is_array($this->fields)) {
             $tmp = array();
