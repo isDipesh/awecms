@@ -18,17 +18,8 @@
         <?php
         $this->widget('PageItem', array(
             'data' => $data,
-            'fields' => array('title', 'content')
+            'fields' => array('title')
         ));
-        ?>
-
-        <?php
-        if (isset($data->venue)) {
-            echo CHtml::encode($data->getAttributeLabel('venue'));
-            ?>:
-            <?php
-            echo CHtml::encode($data->venue);
-        }
         ?>
 
         <br/>
@@ -51,6 +42,28 @@
         }
         ?>
 
+        <br/>
+        <br/>
+        <?php
+        if (isset($data->venue)) {
+            echo CHtml::encode($data->getAttributeLabel('venue'));
+            ?>:
+            <?php
+            echo nl2br($data->venue);
+        }
+        ?>
+
+        <br/>
+        <br/>
+        <br/>
+        <?php
+        if (isset($data->page->content)) {
+            echo Yii::t('event', 'Description');
+            ?>:
+            <?php
+            echo nl2br($data->page->content);
+        }
+        ?>
 
     </div>
 </div>
