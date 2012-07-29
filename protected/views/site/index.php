@@ -1,4 +1,5 @@
-<div class="row">
     <?php
+    
+    $this->widget('Events');
+    
     ?>
-</div>
