@@ -5,7 +5,11 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 
 CKEDITOR.editorConfig = function( config )
 {
-	// Define changes to default configuration here. For example:
-	// config.language = 'fr';
-	// config.uiColor = '#AADC6E';
+    // Define changes to default configuration here. For example:
+    // config.language = 'fr';
+    // config.uiColor = '#AADC6E';
+    config.filebrowserBrowseUrl = '/file/uploader';
+    config.filebrowserUploadUrl = '/file/CKUpload';
+    config.filebrowserImageBrowseUrl = '/file/uploader?mode=image';
+    config.filebrowserFlashBrowseUrl = '/file/uploader?mode=flash';
 };

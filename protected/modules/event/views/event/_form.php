@@ -18,6 +18,12 @@
     ?>
 
     <div class="row">
+        <?php // echo $form->labelEx($model, 'whole_day_event'); ?>
+        <?php // echo $form->checkBox($model, 'whole_day_event'); ?>
+        <?php // echo $form->error($model, 'whole_day_event'); ?>
+    </div>
+
+    <div class="row">
         <?php echo $form->labelEx($model, 'start', array('style' => 'display:inline;')); ?>
         <?php
         $this->widget('CJuiDateTimePicker', array(
@@ -37,6 +43,7 @@
         );
         ;
         ?>
+
         <?php echo $form->error($model, 'start'); ?>
 
         <?php echo $form->labelEx($model, 'end', array('style' => 'display:inline;')); ?>
@@ -100,6 +107,12 @@
         <?php echo $form->labelEx($model, 'url'); ?>
         <?php echo $form->textField($model, 'url', array('size' => 60)); ?>
         <?php echo $form->error($model, 'url'); ?>
+    </div>
+
+    <div class="row">
+        <?php echo $form->labelEx($model, 'enabled'); ?>
+        <?php echo $form->checkBox($model, 'enabled'); ?>
+        <?php echo $form->error($model, 'enabled'); ?>
     </div>
 
     <?php

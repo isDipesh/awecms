@@ -84,7 +84,6 @@ class PageForm extends CWidget {
                             "config" => array(
                                 "height" => "400px",
                                 "width" => "100%",
-                                "filebrowserBrowseUrl" => Yii::app()->createUrl("/file/uploader"),
                             ),
                         ));
                         ?>

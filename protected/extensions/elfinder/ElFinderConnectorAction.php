@@ -1,6 +1,6 @@
 <?php
 
-Yii::import("ext.ezzeelfinder.ElFinderWidget");
+Yii::import("ext.elfinder.ElFinderWidget");
 
 include_once dirname(__FILE__) . DIRECTORY_SEPARATOR . "php" . DIRECTORY_SEPARATOR . "elFinderConnector.class.php";
 include_once dirname(__FILE__) . DIRECTORY_SEPARATOR . "php" . DIRECTORY_SEPARATOR . "elFinder.class.php";
