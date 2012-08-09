@@ -33,7 +33,10 @@ class DefaultController extends Controller {
 
         if (isset($_POST['Role'])) {
             $model->setAttributes($_POST['Role']);
-            $model->users = $_POST['Role']['users'];
+
+            if (isset($_POST['Role']['users']))
+                $model->users = $_POST['Role']['users'];
+
             try {
                 if ($model->save()) {
                     if (isset($_GET['returnUrl'])) {
