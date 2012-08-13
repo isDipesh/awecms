@@ -90,10 +90,12 @@ class ECommentsBaseWidget extends CJuiWidget {
      */
 
     protected function getOwnerPK() {
-        if (is_array($this->model->primaryKey))
-            return implode('.', $this->model->primaryKey);
-        else
-            return $this->model->primaryKey;
+        if (isset($this->model)) {
+            if (is_array($this->model->primaryKey))
+                return implode('.', $this->model->primaryKey);
+            else
+                return $this->model->primaryKey;
+        }
     }
 
 }

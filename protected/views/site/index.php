@@ -1,5 +1,5 @@
-    <?php
-    
-    $this->widget('Events');
-    
-    ?>
+<?php
+
+$model = new Page;
+$this->widget('Comments', array('model' => $model));
+?>
