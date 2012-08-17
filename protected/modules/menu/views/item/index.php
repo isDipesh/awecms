@@ -13,9 +13,9 @@ $this->menu = array(
 <br/><br/>
 
 <?php Yii::app()->clientScript->registerScriptFile($this->module->assetsDirectory . "/libs/json/json2.min.js"); ?>
-<?php $this->widget('mext.AtNestedSortable') ?>	
+
 <?php
-$this->widget('mext.AtHerList', array('model' => $model, 'activeId' => $activeId));
+$this->widget('application.modules.menu.extensions.ItemList', array('model' => $model, 'activeId' => $activeId));
 ?>
 
 <script type="text/javascript">

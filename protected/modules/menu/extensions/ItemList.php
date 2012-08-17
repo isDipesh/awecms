@@ -1,10 +1,10 @@
 <?php
 
-class AtHerList extends CWidget {
+class ItemList extends CWidget {
 
     public $model;
     public $activeId = 2;
-    public $id = "at-her-list-1";
+    public $id = "menu-item-list";
     public $css = true;
     private $_processed = array();
 
@@ -62,6 +62,10 @@ class AtHerList extends CWidget {
 			}
 	        ";
 
+            Yii::app()->clientScript->registerCoreScript('jquery');
+            Yii::app()->clientScript->registerCoreScript('jquery.ui');
+            Yii::app()->clientScript->registerScriptFile(Yii::app()->getModule('menu')->assetsDirectory . '/libs/nestedsortable/jquery.ui.nestedSortable.js');
+            //Yii::app()->clientScript->registerCssFile(Yii::app()->getModule('menu')->assetsDirectory.'/libs/nestedsortable/nestedSortable.css');
             Yii::app()->clientScript->registerCss('AtHerList', $css);
         }
     }
