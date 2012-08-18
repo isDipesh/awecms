@@ -15,7 +15,7 @@ $this->menu = array(
 <?php Yii::app()->clientScript->registerScriptFile($this->module->assetsDirectory . "/libs/json/json2.min.js"); ?>
 
 <?php
-$this->widget('application.modules.menu.extensions.ItemList', array('model' => $model, 'activeId' => $activeId));
+$this->widget('application.modules.menu.extensions.ItemList', array('items' => $items, 'activeId' => $activeId));
 ?>
 
 <script type="text/javascript">

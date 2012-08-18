@@ -5,9 +5,9 @@ class ItemController extends Controller {
 
     public function actionIndex($id) {
         $activeId = isset($_GET['activeId']) ? $_GET['activeId'] : '';
-        $model = MenuItem::model()->findAllByAttributes(array('menu_id' => $id));
+        $items = MenuItem::model()->findAllByAttributes(array('menu_id' => $id));
         $this->render('index', array(
-            'model' => $model,
+            'items' => $items,
             'id' => $id,
             'activeId' => $activeId
         ));
