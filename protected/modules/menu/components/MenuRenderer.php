@@ -6,6 +6,7 @@ class MenuRenderer extends CMenu {
 
     public $id = 1;
     public $firstItemCssClass = 'first';
+    public $activeCssClass = 'active';
     public $lastItemCssClass = 'last';
     public $dirCssClass = 'dir';
     public $append = array();
@@ -62,7 +63,6 @@ class MenuRenderer extends CMenu {
             if ($item == array())
                 continue;
 
-
             //handle roles here
             if (isset($item['role'])) {
                 $visible = FALSE;
@@ -83,23 +83,33 @@ class MenuRenderer extends CMenu {
                     continue;
             }
 
+            $class = array();
+
             //handle links here
             if (isset($item['url'])) {
+                //we use $link for finding if current menu item is active
+                $link = $item['url'];
                 if (Awecms::isUrl($item['url'])) {
                     //NOP
                 } else if (substr($item['url'], 0, 2) == '//') {
                     //convert //foo to /foo
                     $item['url'] = substr($item['url'], 1);
                 } else if ($item['url'] == '/') {
-                    //NOP
+                    $item['url'] = Yii::app()->baseUrl ? Yii::app()->baseUrl : '/';
                 } else {
                     $item['url'] = array($item['url']);
                 }
             }
 
+            if (isset($item['url'])) {
+                $link = ltrim($link, '/');
+                if ($link == Yii::app()->request->pathInfo)
+                    $class[] = $this->activeCssClass;
+            }
+
             $count++;
             $options = isset($item['itemOptions']) ? $item['itemOptions'] : array();
-            $class = array();
+
 //            if ($item['active'] && $this->activeCssClass != '')
 //                $class[] = $this->activeCssClass;
             if ($count === 1 && $this->firstItemCssClass != '')
