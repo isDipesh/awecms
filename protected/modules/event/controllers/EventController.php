@@ -14,6 +14,8 @@ class EventController extends Controller {
     public function actionView($id) {
         $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.event.assets'));
         Yii::app()->getClientScript()->registerCssFile($baseUrl . '/hotDate.css');
+        Yii::app()->getClientScript()->registerCssFile($baseUrl . '/events.css');
+
         $this->render('view', array(
             'model' => $this->loadModel($id),
         ));
