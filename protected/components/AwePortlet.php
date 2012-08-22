@@ -4,8 +4,8 @@ class AwePortlet extends CWidget {
 
     public $title;
     public $cssClass = 'portlet';
-    public $headerCssClass = 'header';
-    public $contentCssClass = 'content';
+    public $headerCssClass = 'portlet-header';
+    public $contentCssClass = 'portlet-content';
     public $visible = true;
 
     public function init() {
