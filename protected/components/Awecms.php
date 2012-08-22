@@ -4,7 +4,8 @@
 class Awecms {
 
     public static function getPrimaryKey($ar) {
-        if (is_numeric($ar)) return $ar;
+        if (is_numeric($ar))
+            return $ar;
         return $ar->primaryKey;
     }
 
@@ -152,6 +153,65 @@ class Awecms {
         if ($inNewTab)
             $htmlOptions['target'] = '_blank';
         return CHtml::link(CHtml::encode($value), $url, $htmlOptions);
+    }
+
+    public static function getInPair($array) {
+        $arrayPair = array();
+        foreach ($array as $a) {
+            $arrayPair[$a] = ucfirst($a);
+        }
+        return $arrayPair;
+    }
+
+    public static function getModulesInPair() {
+        return self::getInPair(Yii::app()->metadata->getModules());
+    }
+
+    public static function getModulesWithPath() {
+        $arrayPair = array();
+        foreach (Yii::app()->metadata->getModules() as $a) {
+            $arrayPair['/' . $a] = ucfirst($a);
+        }
+        return $arrayPair;
+    }
+
+    public static function getAllActions() {
+        $fullActions = array();
+        foreach (Yii::app()->metadata->getModules() as $module) {
+            foreach (Yii::app()->metadata->getControllers($module) as $controller) {
+//                foreach (Yii::app()->metadata->getActions($controller, $module) as $action) {
+//                    print_r($action);
+//                }
+            }
+        }
+        die();
+        return $fullActions;
+    }
+
+    public static function getControllers($module) {
+        return array_map('self::getControllerId', Yii::app()->metadata->getControllers($module));
+    }
+
+    public static function getControllersInPair($module) {
+        $controllers = array_map('self::getControllerId', Yii::app()->metadata->getControllers($module));
+        $newControllers = array();
+        foreach ($controllers as $controller) {
+            if (Yii::app()->getModule($module) && strtolower(Yii::app()->getModule($module)->defaultController) == strtolower($controller)) {
+                $default = ucfirst($controller) . ' (Default)';
+                $newControllers = array_merge(array($controller => $default), $newControllers);
+            } else {
+                $newControllers[$controller] = ucfirst($controller);
+            }
+        }
+        return $newControllers;
+    }
+
+    public static function getAllActionsInPair() {
+        
+    }
+
+    public static function getActionsInPair() {
+        
     }
 
 }

@@ -52,4 +52,15 @@ class Page extends BasePage {
         return self::model()->findAllByAttributes(array('type' => $type));
     }
 
+    public function getPath() {
+        if ($this->slug)
+            return '/' . $this->slug->slug;
+        $type = ($this->type);
+        $model = $type::model()->findByAttributes(array('page_id'=>$this->id));
+        if ($model){
+            return '/' . lcfirst($type) . '/view?id=' . $model->id;
+        }
+        return ;
+    }
+
 }

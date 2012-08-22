@@ -17,12 +17,34 @@
     </div><!-- row -->
 
     <div class="row">
+        
+        <?php echo CHtml::radioButton('MenuItem[type]', $model->type == 'module', array('value' => 'module')); ?>
+        <?php echo Yii::t('app', 'Module'); ?>
+        <?php echo Chtml::dropDownList('MenuItem[module]', $model->link, Awecms::getModulesWithPath()); ?>
+        <br/>
+
+        <?php // echo CHtml::radioButton('MenuItem[type]', $model->type == 'action', array('value' => 'action')); ?>
+        <?php
+        // echo Yii::t('app', 'Action'); 
+//        print_r(Awecms::getAllActions());
+        ?>
+        <!--<br/>-->
+        <?php
+        if (Yii::app()->hasModule('page')) {
+            echo CHtml::radioButton('MenuItem[type]', $model->type == 'content', array('value' => 'content'));
+            echo Yii::t('app', 'Content') . ' ';
+            echo CHtml::dropDownList('MenuItem[content]', $model->link, CHtml::listData(Page::model()->findAll(), 'path', 'title'));
+        }
+        ?>
+        <br/>
+        <?php echo CHtml::radioButton('MenuItem[type]', $model->type == 'url', array('value' => 'url')); ?>
         <?php echo $form->labelEx($model, 'link'); ?>
-        <?php echo $form->textField($model, 'link', array('size' => 60)); ?>
+        <?php echo Chtml::textField('MenuItem[url]', $model->link, array('size' => 60)); ?>
         <?php echo $form->error($model, 'link'); ?>
         <br/>
-        /item points to base_url/item, //item points to root_of_server/item, item creates relative to dynamic user location, 
+        /item points to base_url/item, //item points to root_of_server/item, item creates link relative to dynamic user location, 
         URLs rendered as is.
+        
     </div><!-- row -->
 
     <div class="row">
@@ -40,7 +62,7 @@
     <div class="row">
         <?php echo $form->labelEx($model, 'role'); ?>
         <?php
-        echo CHtml::checkBoxList(get_class($model) . '[role]', explode(',', $model->role), $model->roles, array('selected'=>'all'));
+        echo CHtml::checkBoxList(get_class($model) . '[role]', explode(',', $model->role), $model->roles, array('selected' => 'all'));
         ?>
         <?php echo $form->error($model, 'role'); ?>
     </div><!-- row -->

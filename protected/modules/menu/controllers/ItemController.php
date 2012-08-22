@@ -53,6 +53,8 @@ class ItemController extends Controller {
             $model->menu = $_POST['MenuItem']['menu'];
             $model->parent = $_POST['MenuItem']['parent'];
 
+            $model->link = $_POST['MenuItem'][$_POST['MenuItem']['type']];
+
             if (isset($_POST['MenuItem']['role']))
                 $model->role = implode(',', $_POST['MenuItem']['role']);
             else
@@ -96,6 +98,15 @@ class ItemController extends Controller {
         if ($model === null)
             throw new CHttpException(404, Yii::t('app', 'The requested page does not exist.'));
         return $model;
+    }
+
+    public function actionDynamiccities() {
+        $data = Location::model()->findAll('parent_id=:parent_id', array(':parent_id' => (int) $_POST['country_id']));
+
+        $data = CHtml::listData($data, 'id', 'name');
+        foreach ($data as $value => $name) {
+            echo CHtml::tag('option', array('value' => $value), CHtml::encode($name), true);
+        }
     }
 
 }

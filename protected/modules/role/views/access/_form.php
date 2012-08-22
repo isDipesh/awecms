@@ -21,20 +21,20 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'module'); ?>
-        <?php echo $form->dropDownList($model, 'module', RoleModule::getModulesInPair(), array('prompt' => 'None')); ?>
+        <?php echo $form->dropDownList($model, 'module', Awecms::getModulesInPair(), array('prompt' => 'None')); ?>
         <?php echo $form->error($model, 'module'); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model, 'controller'); ?>
-        <?php echo $form->dropDownList($model, 'controller', RoleModule::getControllersInPair($model->module)); ?>
+        <?php echo $form->dropDownList($model, 'controller', Awecms::getControllersInPair($model->module)); ?>
         <?php echo $form->error($model, 'controller'); ?>
     </div>
 
 
     <div class="row">
         <?php echo $form->labelEx($model, 'action'); ?>
-        <?php echo $form->dropDownList($model, 'action', RoleModule::getInPair(Yii::app()->metadata->getActions(ucfirst($model->controller) . 'Controller', $model->module))); ?>
+        <?php echo $form->dropDownList($model, 'action', Awecms::getInPair(Yii::app()->metadata->getActions(ucfirst($model->controller) . 'Controller', $model->module))); ?>
         <?php echo $form->error($model, 'action'); ?>
     </div>
 

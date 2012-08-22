@@ -33,7 +33,7 @@ class AccessController extends Controller {
             $model->controller = $_GET['controller'];
         } else {
             //find the first one
-            $controllers = RoleModule::getControllers($model->module);
+            $controllers = Awecms::getControllers($model->module);
             if (count($controllers))
                 $model->controller = reset($controllers);
         }
@@ -69,7 +69,7 @@ class AccessController extends Controller {
         //if module is selected from drop down, set it to model and nullify controller from old module
         if (isset($_GET['module'])) {
             $model->module = $_GET['module'];
-            $controllers = RoleModule::getControllers($model->module);
+            $controllers = Awecms::getControllers($model->module);
             $model->controller = reset($controllers);
         }
         //if controller is selected from dropdown set it to model

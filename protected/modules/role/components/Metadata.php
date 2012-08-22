@@ -22,7 +22,7 @@ class Metadata extends CApplicationComponent {
 
     /**
      * Get all information about application
-     * if modules of your application have controllers with same name, it will raise fatall error
+     * if modules of your application have controllers with same name, it will raise fatal error
      * 
      */
     public function getAll() {
@@ -160,13 +160,16 @@ class Metadata extends CApplicationComponent {
             $path = 'protected' . DIRECTORY_SEPARATOR . 'models';
         }
 
-        $files = scandir($path);
         $models = array();
-        foreach ($files as $f) {
-            if (stripos($f, '.php') !== false) {
-                $models[] = str_ireplace('.php', '', $f);
-                if ($include_classes) {
-                    include_once($path . DIRECTORY_SEPARATOR . $f);
+
+        if (file_exists($path)) {
+            $files = scandir($path);
+            foreach ($files as $f) {
+                if (stripos($f, '.php') !== false) {
+                    $models[] = str_ireplace('.php', '', $f);
+                    if ($include_classes) {
+                        include_once($path . DIRECTORY_SEPARATOR . $f);
+                    }
                 }
             }
         }

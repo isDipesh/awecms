@@ -13,6 +13,7 @@
  * @property integer $content_id
  * @property string $description
  * @property string $link
+ * @property string $type
  * @property string $role
  *
  * Relations of table "menu_item" available as properties of the model:
@@ -37,11 +38,12 @@ class MenuItem extends CActiveRecord {
     public function rules() {
         return array(
             array('name', 'required'),
-            array('menu_id, parent_id, enabled, content_id, link', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('menu_id, parent_id, enabled, content_id, link, type, role', 'default', 'setOnEmpty' => true, 'value' => null),
             array('menu_id, enabled, content_id', 'numerical', 'integerOnly' => true),
             array('name', 'length', 'max' => 128),
-            array('link', 'safe'),
-            array('id, menu_id, parent_id, name, enabled, content_id, description, link, role', 'safe', 'on' => 'search'),
+            array('type', 'length', 'max' => 50),
+            array('description, link, role', 'safe'),
+            array('id, menu_id, parent_id, depth, lft, rgt, name, enabled, content_id, description, link, type, role', 'safe', 'on' => 'search'),
         );
     }
 
@@ -74,6 +76,7 @@ class MenuItem extends CActiveRecord {
             'description' => Yii::t('app', 'Description'),
             'link' => Yii::t('app', 'Link/Path'),
             'role' => Yii::t('app', 'Visible to:'),
+            'type' => Yii::t('app', 'Type'),
         );
     }
 
@@ -89,6 +92,7 @@ class MenuItem extends CActiveRecord {
         $criteria->compare('description', $this->description, true);
         $criteria->compare('link', $this->link, true);
         $criteria->compare('role', $this->role, true);
+        $criteria->compare('type', $this->type, true);
 
         return new CActiveDataProvider(get_class($this), array(
                     'criteria' => $criteria,
