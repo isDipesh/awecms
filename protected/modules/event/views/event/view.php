@@ -16,57 +16,58 @@ if (!isset($this->menu) || $this->menu === array()) {
 if (isset($model->start)) {
     ?>
     <div class="date">
-        <p>
-            <?php echo date('d', strtotime($model->start)); ?>
-            <span>
-                <?php echo date('M', strtotime($model->start)); ?>
-            </span>
-        </p>
+        <div><?php echo date('d', strtotime($model->start)); ?><span><?php echo date('M', strtotime($model->start)); ?></span></div>
     </div>
 <?php }
 ?>
-
+<div class="event-details">
 <h1><?php echo $model->page->title; ?></h1>
+
+<p class="clear">
 <?php
 if (isset($model->start)) {
-    echo CHtml::encode($model->getAttributeLabel('start'));
+    echo '<b>'.CHtml::encode($model->getAttributeLabel('start')).'</b>';
     ?>:
     <?php
     echo date('D, d M Y H:i:s', strtotime($model->start));
 }
 ?>
-
 <br/>
 <?php
 if (isset($model->end)) {
-    echo CHtml::encode($model->getAttributeLabel('end'));
+    echo '<b>'.CHtml::encode($model->getAttributeLabel('end')).'</b>';
     ?>:
     <?php
     echo date('D, d M Y H:i:s', strtotime($model->end));
 }
 ?>
-<br/>
-<br/>
+</p>
+</div>
+<div class="event-venue">
+<p>
 <?php
 if (isset($model->venue)) {
-    echo CHtml::encode($model->getAttributeLabel('venue'));
-    ?>:
+    echo '<b>'.CHtml::encode($model->getAttributeLabel('venue')).'</b>:<br />';
+    ?>
     <?php
     echo nl2br($model->venue);
 }
 ?>
-<br/>
-<br/>
+</p>
+</div>
+<div class="event-desc clear">
 <?php
 if (isset($model->page->content)) {
-    echo CHtml::encode(Yii::t('event', 'Description'));
-    ?>:
+    echo '<h2>'.CHtml::encode(Yii::t('event', 'Description')).':</h2>';
+    ?>
+    <div class="desc-holder">
     <?php
     echo nl2br($model->page->content);
 }
 ?>
-<br/>
-<br/>
+</div>
+</div>
+<div class="event-org clear">
 <?php
 if (isset($model->organizer)) {
     echo CHtml::encode($model->getAttributeLabel('organizer'));
@@ -75,8 +76,7 @@ if (isset($model->organizer)) {
     echo nl2br($model->organizer);
 }
 ?>
-<br/>
-<br/>
+</div>
 <?php
 if (isset($model->type)) {
     echo CHtml::encode($model->getAttributeLabel('type'));
