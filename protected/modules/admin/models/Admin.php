@@ -37,19 +37,14 @@ class Admin {
         return $menuConfig;
     }
 
-    public static function getModules() {
-        $modules = scandir(Yii::app()->modulePath);
-        // $modules=array_filter($modules,function($a) {return true;});
-        $modules = array_filter($modules, 'self::isModule');
-        return $modules;
-    }
+    
 
     public static function getLinkForModules() {
         //modules to ignore
         $ignoreToList = array('admin');
         $ignoreToLink = array('mail', 'eauth');
         $r = array();
-        foreach (self::getModules() as $module) {
+        foreach (Yii::app()->metadata->getModules() as $module) {
             $item = array();
             if (in_array($module, $ignoreToList))
                 continue;
@@ -65,10 +60,6 @@ class Admin {
      * Used in getModules() to filter array of files & directories
      * @param mixed $a
      */
-    private static function isModule($a) {
-        return $a != '.' and $a != '..' and is_dir(Yii::app()->modulePath . DIRECTORY_SEPARATOR . $a);
-    }
-
 }
 
 ?>
