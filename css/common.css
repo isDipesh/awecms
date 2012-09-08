@@ -280,3 +280,16 @@ table input{
     padding: 4px 0px !important;
     margin: 0px;
 }
+.items{
+    border: 1px solid #ddd;
+    padding: 2px;
+    clear: both;
+}
+.items .view{
+    background: #f2f2f2;
+    padding: 4px 8px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #fff;
+}
+.items .view:first-child{ border-top: 0px;}
+.items .view:last-child{ border-bottom: 0px;}
