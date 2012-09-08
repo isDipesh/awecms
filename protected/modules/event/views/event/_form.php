@@ -41,7 +41,6 @@
             ),
                 )
         );
-        ;
         ?>
 
         <?php echo $form->error($model, 'start'); ?>

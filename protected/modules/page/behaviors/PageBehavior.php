@@ -10,6 +10,12 @@ class PageBehavior extends CActiveRecordBehavior {
         if (isset($_POST[get_class($this->owner)]))
             $this->owner->setAttributes($_POST[get_class($this->owner)]);
 
+        if (isset($_FILES[get_class($this->owner)])) {
+            $attribute_arr = array_keys($_FILES[get_class($this->owner)]['name']);
+            $attribute = $attribute_arr[0];
+            $this->owner->$attribute = CUploadedFile::getInstance($this->owner, $attribute);
+        }
+
         if ($this->owner->scenario == 'insert')
             $page = new Page;
         else if ($isPage)
@@ -17,9 +23,13 @@ class PageBehavior extends CActiveRecordBehavior {
         else
             $page = Page::model()->findByPk($this->owner->page_id);
 
+
         //get and save attributes of page
         if (isset($_POST['Page']))
             $page->setAttributes($_POST['Page']);
+        elseif (isset($this->owner->name)) {
+            $page->title = $this->owner->name;
+        }
 
         //relations need to be handled separately
         if (isset($_POST['Page']['user']))
@@ -38,7 +48,8 @@ class PageBehavior extends CActiveRecordBehavior {
                 $page->slug->save();
             }
         }
-        //save the page, except when the owner is page itself
+
+//        save the page, except when the owner is page itself
         if (!$isPage) {
             $page->type = get_class($this->owner);
             $page->save();

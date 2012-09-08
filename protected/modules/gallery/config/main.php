@@ -3,6 +3,8 @@
 return array(
     'import' => array(
         'application.modules.gallery.models.*',
-        'application.modules.gallery.widgets.*',
+    ),
+    'aliases' => array(
+        'xupload' => 'application.modules.gallery.extensions.xupload'
     ),
 );

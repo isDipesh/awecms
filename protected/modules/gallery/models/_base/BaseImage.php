@@ -4,17 +4,20 @@
  * This is the model base class for the table "image".
  *
  * Columns in table "image" available as properties of the model:
- 
-      * @property integer $id
-      * @property integer $page_id
-      * @property string $path
+
+ * @property integer $id
+ * @property integer $page_id
+ * @property string $file
+ * @property string $mime_type
+ * @property string $size
+ * @property string $name
  *
  * Relations of table "image" available as properties of the model:
  * @property Album[] $albums
  * @property Page $page
  */
 abstract class BaseImage extends CActiveRecord {
-    
+
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -25,21 +28,24 @@ abstract class BaseImage extends CActiveRecord {
 
     public function rules() {
         return array(
-            array('page_id, path', 'required'),
+            array('page_id, file', 'required'),
+            array('mime_type, size, name', 'default', 'setOnEmpty' => true, 'value' => null),
             array('page_id', 'numerical', 'integerOnly' => true),
-            array('path', 'length', 'max' => 255),
-            array('id, page_id, path', 'safe', 'on' => 'search'),
+            array('file', 'safe'),
+            array('file, mime_type, size, name', 'length', 'max' => 255),
+            array('id, page_id, file, mime_type, size, name', 'safe', 'on' => 'search'),
         );
     }
-    
+
     public function __toString() {
-        return (string) $this->path;
+        return (string) $this->file;
     }
 
     public function behaviors() {
         return array(
-        'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
-);
+            'page-behavior' => array('class' => 'PageBehavior'),
+            'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
+        );
     }
 
     public function relations() {
@@ -53,7 +59,10 @@ abstract class BaseImage extends CActiveRecord {
         return array(
             'id' => Yii::t('app', 'ID'),
             'page_id' => Yii::t('app', 'Page'),
-            'path' => Yii::t('app', 'Path'),
+            'file' => Yii::t('app', 'File'),
+            'mime_type' => Yii::t('app', 'Mime Type'),
+            'size' => Yii::t('app', 'Size'),
+            'name' => Yii::t('app', 'Name'),
         );
     }
 
@@ -62,11 +71,14 @@ abstract class BaseImage extends CActiveRecord {
 
         $criteria->compare('id', $this->id);
         $criteria->compare('page_id', $this->page_id);
-        $criteria->compare('path', $this->path, true);
+        $criteria->compare('file', $this->file, true);
+        $criteria->compare('mime_type', $this->mime_type, true);
+        $criteria->compare('size', $this->size, true);
+        $criteria->compare('name', $this->name, true);
 
         return new CActiveDataProvider(get_class($this), array(
                     'criteria' => $criteria,
                 ));
     }
-    
+
 }
