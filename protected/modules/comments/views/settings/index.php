@@ -13,8 +13,8 @@ $this->menu = array(
 ?>
 
 
-
-<div class="right">
+<h1>Comment Settings</h1>
+<div>
     <?php echo CHtml::link('Create Settings for a Model', Yii::app()->createUrl('comments/settings/create')); ?>
 </div>
 <?php
@@ -75,4 +75,5 @@ $this->widget('zii.widgets.grid.CGridView', array(
         ),
     ),
 ));
+
 ?>
