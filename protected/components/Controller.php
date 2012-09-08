@@ -75,6 +75,10 @@ class Controller extends CController {
             Yii::app()->end();
         }
     }
+    
+    protected function block($name){
+        Block::run($name);
+    }
 
     //this is a wild guess, at least try to show something
 //    public function missingAction($param) {
