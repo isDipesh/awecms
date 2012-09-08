@@ -13,9 +13,10 @@ class Event extends BaseEvent {
     }
 
     public function getUpcomingEvents($limit = 10) {
-        $criteria = array(
-            'limit' => $limit,
-        );
+        $criteria = new CDbCriteria;
+        $criteria->limit = $limit;
+        $now = new CDbExpression("NOW()");
+        $criteria->addCondition('end > ' . $now . ' ');
         return $this->findAll($criteria);
     }
 
