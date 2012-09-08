@@ -14,7 +14,7 @@
     <body>
 
         <div id="main_container">
-            <header>
+            <header id="top_header">
                 <h2 id="title">
                     <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Settings::get('site','name') , array('/admin')); ?>
                 </h2>
