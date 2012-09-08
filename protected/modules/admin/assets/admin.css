@@ -86,7 +86,8 @@ header a{
     float: left;
     width: 83%;
     font-size: 1.1em;
-    line-height: 3.3em;
+    line-height: 2.3em;
+    box-shadow: 0px -6px 8px #666;
 }
 
 .right{
@@ -97,8 +98,8 @@ header a{
     padding: 0;
 }
 #main_wrapper h1{
-    color: #333333;
-    margin: 10px 0;
+    color: #236B94;
+    margin: 0;
     font-family: "trebuchet ms", tahoma, arial;
 }
 #yw0 table th{
@@ -117,11 +118,13 @@ header a{
 #main_wrapper, #left_sidebar{
     position: relative;
 }
-form label{
-    width: 20%;
-    float: left;
-}
 .summary{
     float: right;
-    margin-top: 12px;
+    margin: 0px;
+}
+.row.buttons{
+    clear: both
+}
+#user-grid, .grid-view{
+    margin-top: -44px;
 }
