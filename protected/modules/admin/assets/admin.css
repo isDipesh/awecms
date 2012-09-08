@@ -93,7 +93,9 @@ header a{
 .right{
     float:right;
 }
-
+.left{
+    float: left;
+}
 #yw0{
     padding: 0;
 }
@@ -118,13 +120,18 @@ header a{
 #main_wrapper, #left_sidebar{
     position: relative;
 }
-.summary{
+div.summary, .list-view .summary, .grid-view .summary {
     float: right;
-    margin: 0px;
+    margin: 0px 5px;
 }
 .row.buttons{
     clear: both
 }
 #user-grid, .grid-view{
     margin-top: -44px;
+}
+.news-view{
+    border: 1px solid #ccc;
+    padding: 1%;
+    box-shadow: 1px 1px 0px #fff;
 }

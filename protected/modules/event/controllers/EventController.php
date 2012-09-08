@@ -6,6 +6,7 @@ class EventController extends Controller {
         $dataProvider = new CActiveDataProvider('Event');
         $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.event.assets'));
         Yii::app()->getClientScript()->registerCssFile($baseUrl . '/hotDate.css');
+        Yii::app()->getClientScript()->registerCssFile($baseUrl . '/events.css');
         $this->render('index', array(
             'dataProvider' => $dataProvider,
         ));

@@ -9,7 +9,7 @@ $this->menu = array(
 ?>
 
 <h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Menus'); ?> </h1>
-<?php echo CHtml::link(Yii::t('app', 'Create New Menu'), $this->createUrl('create'), array('class' => 'button')); ?>
+<?php echo CHtml::link(Yii::t('app', 'Create New Menu'), $this->createUrl('create')); ?>
 
 <?php
 $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
