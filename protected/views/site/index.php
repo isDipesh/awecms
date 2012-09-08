@@ -1,3 +1,4 @@
 <?php
-$this->block('hey');
+
+$this->block('Introduction');
 ?>

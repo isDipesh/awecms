@@ -4,25 +4,25 @@
  * This is the model base class for the table "block".
  *
  * Columns in table "block" available as properties of the model:
- 
-      * @property integer $id
-      * @property string $title
-      * @property string $content
-      * @property integer $enabled
-      * @property integer $is_widget
-      * @property string $widget_class
-      * @property string $tag_name
-      * @property string $html_options
-      * @property string $decoration_css_class
-      * @property string $title_css_class
-      * @property string $content_css_class
-      * @property integer $hide_on_empty
-      * @property string $skin
+
+ * @property integer $id
+ * @property string $title
+ * @property string $content
+ * @property integer $enabled
+ * @property integer $is_widget
+ * @property string $widget_class
+ * @property string $tag_name
+ * @property string $html_options
+ * @property string $decoration_css_class
+ * @property string $title_css_class
+ * @property string $content_css_class
+ * @property integer $hide_on_empty
+ * @property string $skin
  *
  * There are no model relations.
  */
 abstract class BaseBlock extends CActiveRecord {
-    
+
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -33,7 +33,9 @@ abstract class BaseBlock extends CActiveRecord {
 
     public function rules() {
         return array(
-            array('title, content, enabled, is_widget, widget_class, tag_name, html_options, decoration_css_class, title_css_class, content_css_class, hide_on_empty, skin', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('title', 'required'),
+            array('title', 'unique'),
+            array('content, enabled, is_widget, widget_class, tag_name, html_options, decoration_css_class, title_css_class, content_css_class, hide_on_empty, skin', 'default', 'setOnEmpty' => true, 'value' => null),
             array('enabled, is_widget, hide_on_empty', 'numerical', 'integerOnly' => true),
             array('title', 'length', 'max' => 255),
             array('widget_class, tag_name, decoration_css_class, title_css_class, content_css_class, skin', 'length', 'max' => 100),
@@ -41,7 +43,7 @@ abstract class BaseBlock extends CActiveRecord {
             array('id, title, content, enabled, is_widget, widget_class, tag_name, html_options, decoration_css_class, title_css_class, content_css_class, hide_on_empty, skin', 'safe', 'on' => 'search'),
         );
     }
-    
+
     public function __toString() {
         return (string) $this->title;
     }
@@ -94,5 +96,5 @@ abstract class BaseBlock extends CActiveRecord {
                     'criteria' => $criteria,
                 ));
     }
-    
+
 }
