@@ -10,8 +10,13 @@
             echo CHtml::link($title, array('event/view', 'id' => $event->id));
 
             if (strtotime($event->start) < time())
-                echo " (Running)"
-                ?>
+                echo ' (' . Yii::t('app', 'Running') . ')';
+            ?>
         </li>
     <?php endforeach; ?>
+    <?php
+    if (!$this->getUpComingEvents()) {
+        echo Yii::t('app', 'Sorry, no upcoming events!');
+    }
+    ?>
 </ul>
