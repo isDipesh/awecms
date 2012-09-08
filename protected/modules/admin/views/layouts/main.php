@@ -46,6 +46,14 @@
 
             </header>
             <div class="clear"></div>
+            <?php if (isset($this->breadcrumbs)): ?>
+                    <?php
+                    $this->widget('zii.widgets.CBreadcrumbs', array(
+                        'links' => $this->breadcrumbs,
+                        'homeLink' => '<a href="' . Yii::app()->baseUrl . '/admin">Dashboard</a>'
+                    ));
+                    ?><!-- breadcrumbs -->
+                <?php endif ?>
             <?php
             ?>
             <nav id="left_sidebar">
@@ -79,17 +87,6 @@
             </nav>
 
             <div id="main_wrapper">
-                <div class="right" style="overflow: auto">
-
-                </div>
-                <?php if (isset($this->breadcrumbs)): ?>
-                    <?php
-                    $this->widget('zii.widgets.CBreadcrumbs', array(
-                        'links' => $this->breadcrumbs,
-                        'homeLink' => '<a href="' . Yii::app()->baseUrl . '/admin">Dashboard</a>'
-                    ));
-                    ?><!-- breadcrumbs -->
-                <?php endif ?>
                 <?php
                 echo $content;
                 ?>
