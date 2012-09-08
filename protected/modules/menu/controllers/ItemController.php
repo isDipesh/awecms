@@ -21,6 +21,8 @@ class ItemController extends Controller {
             if (isset($_POST['MenuItem']['parent']))
                 $model->parent = $_POST['MenuItem']['parent'];
 
+            $model->link = $_POST['MenuItem'][$_POST['MenuItem']['type']];
+
             if (isset($_POST['MenuItem']['role']))
                 $model->role = implode(',', $_POST['MenuItem']['role']);
             else
@@ -84,7 +86,7 @@ class ItemController extends Controller {
             }
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
-                $this->redirect(array('/' . $this->module->id . '/item/' . $menuId));
+                $this->redirect(array('/' . $this->module->id . '/item?id=' . $menuId));
             }
         }
         else

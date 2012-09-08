@@ -1,5 +1,4 @@
 <?php
 
-$this->block('Introduction');
-$this->block('Social Links');
+$this->widget('Events');
 ?>
