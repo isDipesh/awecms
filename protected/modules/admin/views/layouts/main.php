@@ -22,7 +22,7 @@
                     <ul id="header_links">
                         <li><?php echo AdminModule::t('Welcome') . ' ' . Yii::app()->user->name; ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Account Settings'), array('/user/profile/edit')); ?></li> |
-                        <li><?php echo CHtml::link(AdminModule::t('Visit Website'), Yii::app()->baseUrl); ?></li> |
+                        <li><?php echo CHtml::link(AdminModule::t('Visit Website'), Yii::app()->baseUrl.'/'); ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Logout'), array('/user/logout')); ?></li>
                     </ul>
                 </nav>
