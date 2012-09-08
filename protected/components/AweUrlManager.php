@@ -23,15 +23,18 @@ class AweUrlManager extends CUrlManager {
             $route = 'admin/' . $route;
         }
 
-//        $url = parent::createUrlDefault($route, $params, $ampersand);
+//      
+//        print_r($route);
+//            $url = parent::createUrlDefault($route, $params, $ampersand);
         $url = parent::createUrl($route, $params, $ampersand);
 
         //handle slugs here
         if ($slug = Slug::getSlug($url)) {
             $url = $slug;
             //if (Settings::get('SEO','externalSlug')
-            $url = '/' . $url;
+            $url = Yii::app()->baseUrl . '/' . $url;
         }
+//        print_r($url);
         return $url;
     }
 
@@ -52,7 +55,7 @@ class AweUrlManager extends CUrlManager {
     }
 
     public function parseUrl($request) {
-        
+
         if ($this->getUrlFormat() === self::PATH_FORMAT) {
             $rawPathInfo = $request->getPathInfo();
 
@@ -73,7 +76,7 @@ class AweUrlManager extends CUrlManager {
             else
                 return $pathInfo;
         }
-        
+
         else if (isset($_GET[$this->routeVar]))
             return $_GET[$this->routeVar];
         else if (isset($_POST[$this->routeVar]))

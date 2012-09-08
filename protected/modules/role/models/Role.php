@@ -1,4 +1,3 @@
-
 <?php
 
 Yii::import('application.modules.role.models._base.BaseRole');
