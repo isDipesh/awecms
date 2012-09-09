@@ -1,35 +1,55 @@
 <?php
 $this->breadcrumbs = array(
-    'Settings',
+    Yii::t('app', 'Settings'),
+    Yii::t('app', 'Add new settings field'),
 );
 
-echo CHtml::beginForm('', 'post', array('onsubmit' => 'return validateForm(this)'));
+$this->menu = Admin::getSettings($action);
 
 echo"<h1>Add new settings field:</h1>";
 
-echo CHtml::label('Category', 'category');
-echo CHtml::dropDownList(
-        'category', $action, Awecms::generatePairs(array_merge(Settings::getCategories(), array('add_new'))), array(
-    'onchange' => 'dropDownChanged(this)',
-));
-echo CHtml::textField('category_value', '', array('size' => '30', 'style' => 'display:none'));
-echo "<br/><br/>";
+echo CHtml::beginForm('', 'post', array('onsubmit' => 'return validateForm(this)', 'class' => 'form'));
+?>
 
-echo CHtml::label('Key', 'key');
-echo CHtml::textField('key', '', array('size' => '50'));
-echo "<br/><br/>";
+<div class="settings row">
+    <?php
+    echo CHtml::label('Category', 'category');
+    echo CHtml::dropDownList(
+            'category', $action, Awecms::generatePairs(array_merge(Settings::getCategories(), array('add_new'))), array(
+        'onchange' => 'dropDownChanged(this)',
+    ));
+    echo CHtml::textField('category_value', '', array('size' => '30', 'style' => 'display:none'));
+    ?>
+</div>
 
-echo CHtml::label('Value', 'value');
-echo CHtml::textField('value', '', array('size' => '50'));
-echo "<br/><br/>";
+<div class="settings row">
+    <?php
+    echo CHtml::label('Key', 'key');
+    echo CHtml::textField('key', '', array('size' => '50'));
+    ?>
+</div>
 
-echo CHtml::label('Type', 'type');
-echo CHtml::textField('type', '', array('size' => '50'));
-echo "Leave this blank for auto-detection!";
-echo "<br/><br/>";
+<div class="settings row">
+    <?php
+    echo CHtml::label('Value', 'value');
+    echo CHtml::textField('value', '', array('size' => '50'));
+    ?>
+</div>
 
-echo CHtml::submitButton('Submit!', array('onsubmit' => 'alert(1)'));
+<div class="settings row">
+    <?php
+    echo CHtml::label('Type', 'type');
+    echo CHtml::textField('type', '', array('size' => '50'));
+    echo '<p class="hint">Leave this blank for auto-detection!</p>';
+    ?>
+</div>
 
+<div class="row buttons">
+    <?php
+    echo CHtml::submitButton('Submit!');
+    ?>
+</div>
+<?php
 echo CHtml::endForm();
 ?>
 <script type="text/javascript">

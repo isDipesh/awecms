@@ -12,13 +12,13 @@ class EDynamicForm extends CWidget {
     public $action = null;
     public $method = 'post';
     public $model = null;
-    public $class = null;
+    public $class;
     public $selector = false;
 
     // you put as many properties as needed
     public function init() {
         if ($this->class)
-            $this->class = $this->class . " dynamicForm";
+            $this->class = $this->class . " dynamicForm form";
         else
             $this->class = "dynamicForm";
     }
@@ -46,40 +46,56 @@ class EDynamicForm extends CWidget {
                 echo CHtml::checkBox('selector_' . $item['key']);
 
             $name = Awecms::generateFriendlyName($item["key"]);
+            ?>
+            <div class="settings row">
+                <?php
+                echo $this->getlabel($item['key']);
 
-            echo $this->getlabel($item['key']);
+                switch ($item['type']) {
+                    //add new types here
+                    case 'textfield':
+                        echo $this->getFullTextField($item);
+                        break;
+                    case 'boolean':
+                        echo CHtml::hiddenField($item['key'], 0);
+                        echo CHtml::checkBox($item['key'], $item['value']);
+                        break;
+                    case 'image_url':
+                        echo $this->getFullTextField($item);
+                        echo "<a class=\"right\" href=\"{$item["value"]}\" target=\"_blank\"><img src=\"{$item["value"]}\" title=\"{$name}\" alt=\"{$name}\" /></a>";
+                        break;
+                    case 'email':
+                        echo $this->getFullTextField($item);
+                        break;
+                    case 'textarea':
+                        echo CHtml::textArea($item['key'], $item['value']);
+                    case 'NULL':
+                        break;
+                    default:
+                        echo "Unsupported type: " . $item['type'] . " of " . $item['key'] . " with value " . $item['value'] . "<br/>";
+                        break;
+                }
+                if (isset($item['hint'])) {
+                    ?>
+                    <p class="hint">
+                        <?php
+                        echo $item['hint'];
+                        ?>
+                    </p>
+                    <?php
+                }
+                ?>
 
-            switch ($item['type']) {
-                //add new types here
-                case 'textfield':
-                    echo $this->getFullTextField($item);
-                    echo "<br/>";
-                    break;
-                case 'boolean':
-                    echo CHtml::hiddenField($item['key'], 0);
-                    echo CHtml::checkBox($item['key'], $item['value']);
-                    echo "<br/>";
-                    break;
-                case 'image_url':
-                    echo $this->getFullTextField($item);
-                    echo "<a class=\"right\" href=\"{$item["value"]}\" target=\"_blank\"><img src=\"{$item["value"]}\" title=\"{$name}\" alt=\"{$name}\" /></a>";
-                    echo "<br/>";
-                    break;
-                case 'email':
-                    echo $this->getFullTextField($item);
-                    echo "<br/>";
-                    break;
-                case 'textarea':
-                    echo CHtml::textArea($item['key'], $item['value']);
-                    echo "<br/>";
-                case 'NULL':
-                    break;
-                default:
-                    echo "Unsupported type: " . $item['type'] . " of " . $item['key'] . " with value " . $item['value'] . "<br/>";
-                    break;
-            }
+            </div>
+            <?php
         }
-        echo CHtml::submitButton('Submit!');
+        ?>
+        <div class="row buttons">
+            <?php
+            echo CHtml::submitButton('Submit!');
+            ?>
+        </div>
+        <?php
         echo CHtml::endForm();
     }
 

@@ -7,11 +7,11 @@ class Settings {
     protected static $_dbComponentId = 'db';
 
     public static function get($category = 'site', $key = null) {
-        $sql = 'SELECT `key`, `value`, `type` FROM ' . self::getSettingsTable() . ' WHERE `' . self::$categoryField . '`=:cat';
+        $sql = 'SELECT `key`, `value`, `type`, `hint` FROM ' . self::getSettingsTable() . ' WHERE `' . self::$categoryField . '`=:cat';
         if ($key) {
             $sql .= " AND `key`='" . $key . "'";
         }
-        
+
         $connection = self::getDbComponent();
         $command = $connection->createCommand($sql);
         $command->bindParam(':cat', $category);
@@ -20,6 +20,7 @@ class Settings {
         foreach ($resultItems as $item) {
             $resultItem['type'] = $item['type'];
             $resultItem['key'] = $item['key'];
+            $resultItem['hint'] = $item['hint'];
             if ($item['type'] == 'array' || $item['type'] == 'object')
                 $resultItem['value'] = @unserialize($item['value']);
             else
@@ -37,19 +38,18 @@ class Settings {
         return $result;
     }
 
-    public static function set($category, $key, $value = null, $forcedType = null) {
+    public static function set($category, $key, $value = null, $hint = null, $forcedType = null) {
         //calling set without value will nullify the value column
         if (is_array($key)) {
             foreach ($key as $index => $keyItem) {
-                self::finalSet($category, $index, $keyItem, $forcedType);
+                self::finalSet($category, $index, $keyItem, $hint, $forcedType);
             }
         } else {
-            self::finalSet($category, $key, $value, $forcedType);
+            self::finalSet($category, $key, $value, $hint, $forcedType);
         }
     }
 
-    public static function finalSet($category, $key, $value, $type) {
-
+    public static function finalSet($category, $key, $value, $hint, $type) {
         $connection = self::getDbComponent();
         $command = $connection->createCommand('SELECT id FROM ' . self::getSettingsTable() . ' WHERE `' . self::$categoryField . '`=:cat AND `key`=:key LIMIT 1');
         $command->bindParam(':cat', $category);
@@ -66,8 +66,9 @@ class Settings {
         if (!empty($result))
             $command = $connection->createCommand('UPDATE ' . self::getSettingsTable() . ' SET `value`=:value WHERE `' . self::$categoryField . '`=:cat AND `key`=:key');
         else {
-            $command = $connection->createCommand('INSERT INTO ' . self::getSettingsTable() . ' (`' . self::$categoryField . '`,`key`,`value`,`type`) VALUES(:cat,:key,:value,:type)');
+            $command = $connection->createCommand('INSERT INTO ' . self::getSettingsTable() . ' (`' . self::$categoryField . '`,`key`,`value`,`type`,`hint`) VALUES(:cat,:key,:value,:type,:hint)');
             $command->bindParam(':type', $type);
+            $command->bindParam(':hint', $hint);
         }
         $command->bindParam(':cat', $category);
         $command->bindParam(':key', $key);
