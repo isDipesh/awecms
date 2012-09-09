@@ -16,8 +16,28 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'path'); ?>
-		<?php echo $form->textField($model,'path',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->label($model, 'album_id'); ?>
+		<?php echo $form->dropDownList($model, 'album', CHtml::listData(Album::model()->findAll(),'id', 'id'), array('prompt' => 'None')); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model, 'file'); ?>
+		<?php echo $form->textField($model,'file',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model, 'mime_type'); ?>
+		<?php echo $form->textField($model,'mime_type',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model, 'size'); ?>
+		<?php echo $form->textField($model,'size',array('size'=>60,'maxlength'=>255)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model, 'name'); ?>
+		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>255)); ?>
 	</div>
 
 	<div class="row buttons">

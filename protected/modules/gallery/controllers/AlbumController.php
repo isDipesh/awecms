@@ -138,24 +138,26 @@ class AlbumController extends Controller {
     }
 
     public function actionUpload($id) {
-        $model = new Image;
-//        $model = new Image;
+        $model = $this->loadModel($id);
         $this->render('upload', array('model' => $model));
     }
 
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
 
-        if (isset($_POST['Album'])) {
-            $model->setAttributes($_POST['Album']);
-            if (isset($_POST['Album']['thumbnail']))
-                $model->thumbnail = $_POST['Album']['thumbnail'];
-            else
-                $model->thumbnail = array();
+        if (isset($_POST['Album']) || isset($_POST['Page'])) {
+
+            if (isset($_POST['Album']))
+                $model->setAttributes($_POST['Album']);
+
             if (isset($_POST['Album']['page']))
                 $model->page = $_POST['Album']['page'];
             else
                 $model->page = array();
+
+            if (isset($_POST['Album']['thumbnail']))
+                $model->thumbnail = $_POST['Album']['thumbnail'];
+
             try {
                 if ($model->save()) {
                     if (isset($_GET['returnUrl'])) {
@@ -167,6 +169,8 @@ class AlbumController extends Controller {
             } catch (Exception $e) {
                 $model->addError('', $e->getMessage());
             }
+        } elseif (isset($_GET['Album'])) {
+            $model->attributes = $_GET['Album'];
         }
 
         $this->render('update', array(
@@ -183,7 +187,7 @@ class AlbumController extends Controller {
             }
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
-                $this->redirect(array('admin'));
+                $this->redirect(array('/gallery/album'));
             }
         }
         else

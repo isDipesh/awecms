@@ -7,6 +7,7 @@
 
  * @property integer $id
  * @property integer $page_id
+ * @property integer $album_id
  * @property string $file
  * @property string $mime_type
  * @property string $size
@@ -14,6 +15,7 @@
  *
  * Relations of table "image" available as properties of the model:
  * @property Album[] $albums
+ * @property Album $album
  * @property Page $page
  */
 abstract class BaseImage extends CActiveRecord {
@@ -29,16 +31,15 @@ abstract class BaseImage extends CActiveRecord {
     public function rules() {
         return array(
             array('page_id, file', 'required'),
-            array('mime_type, size, name', 'default', 'setOnEmpty' => true, 'value' => null),
-            array('page_id', 'numerical', 'integerOnly' => true),
-            array('file', 'safe'),
+            array('album_id, mime_type, size, name', 'default', 'setOnEmpty' => true, 'value' => null),
+            array('page_id, album_id', 'numerical', 'integerOnly' => true),
             array('file, mime_type, size, name', 'length', 'max' => 255),
-            array('id, page_id, file, mime_type, size, name', 'safe', 'on' => 'search'),
+            array('id, page_id, album_id, file, mime_type, size, name', 'safe', 'on' => 'search'),
         );
     }
 
     public function __toString() {
-        return (string) $this->file;
+        return (string) $this->page->title;
     }
 
     public function behaviors() {
@@ -51,6 +52,7 @@ abstract class BaseImage extends CActiveRecord {
     public function relations() {
         return array(
             'albums' => array(self::HAS_MANY, 'Album', 'thumbnail_id'),
+            'album' => array(self::BELONGS_TO, 'Album', 'album_id'),
             'page' => array(self::BELONGS_TO, 'Page', 'page_id'),
         );
     }
@@ -59,6 +61,7 @@ abstract class BaseImage extends CActiveRecord {
         return array(
             'id' => Yii::t('app', 'ID'),
             'page_id' => Yii::t('app', 'Page'),
+            'album_id' => Yii::t('app', 'Album'),
             'file' => Yii::t('app', 'File'),
             'mime_type' => Yii::t('app', 'Mime Type'),
             'size' => Yii::t('app', 'Size'),
@@ -71,6 +74,7 @@ abstract class BaseImage extends CActiveRecord {
 
         $criteria->compare('id', $this->id);
         $criteria->compare('page_id', $this->page_id);
+        $criteria->compare('album_id', $this->album_id);
         $criteria->compare('file', $this->file, true);
         $criteria->compare('mime_type', $this->mime_type, true);
         $criteria->compare('size', $this->size, true);

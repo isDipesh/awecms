@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs = array(
     Yii::t('app', 'Images') => array('index'),
-    Yii::t('app', $model->path),
+    Yii::t('app', $model->name),
 );if(!isset($this->menu) || $this->menu === array()) {
 $this->menu=array(
 array('label'=>Yii::t('app', 'Update') , 'url'=>array('update', 'id'=>$model->id)),
@@ -13,7 +13,7 @@ array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
 }
 ?>
 
-<h1><?php echo $model->path; ?></h1>
+<h1><?php echo $model->name; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 'data' => $model,
@@ -26,7 +26,12 @@ array(
 			'value'=>($model->page !== null)?CHtml::link($model->page->title, array('/page/page/view','id'=>$model->page->id)).' ':'n/a',
 			'type'=>'html',
 		),
-'path',)));?>
+		array(
+			'name'=>'album_id',
+			'value'=>($model->album !== null)?CHtml::link($model->album->id, array('/gallery/album/view','id'=>$model->album->id)).' ':'n/a',
+			'type'=>'html',
+		),
+'file','mime_type','size','name',)));?>
         <?php if (count($model->albums)) { ?>
                             <h2><?php echo CHtml::link(Yii::t('app', Awecms::pluralize('Sub-Page', 'Albums', count($model->albums))), array('/gallery/album'));?></h2>
 <ul>

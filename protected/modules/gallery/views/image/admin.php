@@ -42,7 +42,15 @@ return false;
                       'value'  => 'isset($data->page->title)?$data->page->title:"N/A"',
                       'filter' => CHtml::listData(Page::model()->findAll(),'id','title'),
                 ),
-        'path',
+        array(
+                			'name'   => 'album_id',
+                      'value'  => 'isset($data->album->id)?$data->album->id:"N/A"',
+                      'filter' => CHtml::listData(Album::model()->findAll(),'id','id'),
+                ),
+        'file',
+        'mime_type',
+        'size',
+        'name',
 array(
 			'class' => 'CButtonColumn',
 		),

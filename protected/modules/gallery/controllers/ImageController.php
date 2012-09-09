@@ -20,6 +20,7 @@ class ImageController extends Controller {
                 if (isset($_POST['Image'])) {
             $model->setAttributes($_POST['Image']);
 
+			 if (isset($_POST['Image']['album'])) $model->album = $_POST['Image']['album'];
 			 if (isset($_POST['Image']['page'])) $model->page = $_POST['Image']['page'];
                 
                 try {
@@ -45,6 +46,9 @@ class ImageController extends Controller {
         
         if(isset($_POST['Image'])) {
             $model->setAttributes($_POST['Image']);
+if (isset($_POST['Image']['album'])) $model->album = $_POST['Image']['album'];
+		else
+		$model->album = array();
 if (isset($_POST['Image']['page'])) $model->page = $_POST['Image']['page'];
 		else
 		$model->page = array();

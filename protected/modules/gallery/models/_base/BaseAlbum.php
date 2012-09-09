@@ -32,7 +32,7 @@ abstract class BaseAlbum extends CActiveRecord {
     }
 
     public function __toString() {
-        return (string) $this->id;
+        return (string) $this->page->title;
     }
 
     public function behaviors() {

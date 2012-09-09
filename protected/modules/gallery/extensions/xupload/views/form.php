@@ -3,7 +3,7 @@
 <div class="row fileupload-buttonbar">
 	<div class="span7">
 		<!-- The fileinput-button span is used to style the file input field as button -->
-		<span class="btn btn-success fileinput-button"> <i class="icon-plus icon-white"></i> <span>Add files...</span>
+		<span class="btn btn-success fileinput-button"> <i class="icon-plus icon-white"></i> <span>Select/Add files...</span>
 			<?php
             if ($this -> hasModel()) :
                 echo CHtml::activeFileField($this -> model, $this -> attribute, $htmlOptions) . "\n";
@@ -24,7 +24,7 @@
 			<i class="icon-trash icon-white"></i>
 			<span>Delete</span>
 		</button>
-		<input type="checkbox" class="toggle">
+                <input type="checkbox" class="toggle" id="select-all"> <label for="select-all">Select All</label>
 	</div>
 	<div class="span5">
 		<!-- The global progress bar -->
