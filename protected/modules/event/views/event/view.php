@@ -43,11 +43,11 @@ if (isset($model->end)) {
 ?>
 </p>
 </div>
-<div class="event-venue">
+<div class="event-list-venue right">
 <p>
 <?php
 if (isset($model->venue)) {
-    echo '<b>'.CHtml::encode($model->getAttributeLabel('venue')).'</b>:<br />';
+    echo '<b>'.CHtml::encode($model->getAttributeLabel('venue')).'</b>:';
     ?>
     <?php
     echo nl2br($model->venue);
@@ -55,10 +55,10 @@ if (isset($model->venue)) {
 ?>
 </p>
 </div>
-<div class="event-desc clear">
+<b class="clear left">Event Description:</b>
+<div class="event-desc ">
 <?php
 if (isset($model->page->content)) {
-    echo '<h2>'.CHtml::encode(Yii::t('event', 'Description')).':</h2>';
     ?>
     <div class="desc-holder">
     <?php

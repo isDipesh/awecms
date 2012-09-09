@@ -11,8 +11,10 @@ if (!isset($this->menu) || $this->menu === array()) {
         array('label' => Yii::t('app', 'Manage'), 'url' => array('admin')),
     );
 }
-
+?>
+<?php
 $this->widget('PageView', array(
     'model' => $model,
     'fields' => array('title', 'content', 'sub-pages', 'categories')
 ));
+?>

@@ -3,10 +3,10 @@ $this->breadcrumbs = array(
     Yii::t('CommentsModule.msg', 'Comments')
 );
 $this->menu = array(
-    array('label' => Yii::t('CommentsModule.msg', 'All Comments'), 'url' => isset($model->status) ? array('/comments') : ''),
-    array('label' => Yii::t('CommentsModule.msg', 'Active Comments'), 'url' => (isset($model->status) && $model->status == 1) ? '' : Yii::app()->createUrl('comments/admin?status=1')),
-    array('label' => Yii::t('CommentsModule.msg', 'Pending Comments'), 'url' => (isset($model->status) && $model->status == 0) ? '' : Yii::app()->createUrl('comments/admin?status=0')),
-    array('label' => Yii::t('CommentsModule.msg', 'Trash'), 'url' => (isset($model->status) && $model->status == 2) ? '' : Yii::app()->createUrl('comments/admin?status=2')),
+    array('label' => Yii::t('CommentsModule.msg', 'All Comments'), 'url' => isset($model->status) ? array('/comments') : null),
+    array('label' => Yii::t('CommentsModule.msg', 'Active Comments'), 'url' => (isset($model->status) && $model->status == 1) ? null : Yii::app()->createUrl('comments/admin?status=1')),
+    array('label' => Yii::t('CommentsModule.msg', 'Pending Comments'), 'url' => (isset($model->status) && $model->status == 0) ? null : Yii::app()->createUrl('comments/admin?status=0')),
+    array('label' => Yii::t('CommentsModule.msg', 'Trash'), 'url' => (isset($model->status) && $model->status == 2) ? null : Yii::app()->createUrl('comments/admin?status=2')),
     array('label' => Yii::t('CommentsModule.msg', 'Comment Settings'), 'url' => array('/comments/settings')),
 );
 ?>
@@ -32,10 +32,11 @@ $this->menu = array(
     echo $adj;
     ?>
     Comments</h1>
-<div class="right">
+<div>
     <?php echo CHtml::link(Yii::t('CommentsModule.msg', 'Comment Settings'), Yii::app()->createUrl('comments/settings/')); ?>
-</div>
+</div><p></p>
 <?php
+if (count($model->search()->data)){
 $this->widget('zii.widgets.grid.CGridView', array(
     'id' => 'comment-grid',
     'dataProvider' => $model->search(),
@@ -150,4 +151,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
         ),
     ),
 ));
-?>
+}
+else{
+    echo "No results found!";
+}

@@ -3,17 +3,17 @@
     if (isset($data->start)) {
         ?>
         <div class="date">
-            <p>
+            <div>
                 <?php echo date('d', strtotime($data->start)); ?>
                 <span>
                     <?php echo date('M', strtotime($data->start)); ?>
                 </span>
-            </p>
+            </div>
         </div>
     <?php }
     ?>
 
-    <div class="date-content">
+    <div class="event-details-list left">
 
         <?php
         $this->widget('PageItem', array(
@@ -21,8 +21,6 @@
             'fields' => array('title')
         ));
         ?>
-
-        <br/>
         <?php
         if (isset($data->start)) {
             echo CHtml::encode($data->getAttributeLabel('start'));
@@ -31,7 +29,6 @@
             echo date('D, d M Y H:i:s', strtotime($data->start));
         }
         ?>
-
         <br/>
         <?php
         if (isset($data->end)) {
@@ -41,29 +38,21 @@
             echo date('D, d M Y H:i:s', strtotime($data->end));
         }
         ?>
-
-        <br/>
-        <br/>
+</div>
+        
         <?php
         if (isset($data->venue)) {
+            ?>
+            <div class="event-list-venue right">
+            <?php
             echo CHtml::encode($data->getAttributeLabel('venue'));
             ?>:
             <?php
             echo nl2br($data->venue);
-        }
-        ?>
-
-        <br/>
-        <br/>
-        <br/>
+            ?>
+            </div>
         <?php
-        if (isset($data->page->content)) {
-            echo Yii::t('event', 'Description');
-            ?>:
-            <?php
-            echo nl2br($data->page->content);
         }
         ?>
 
-    </div>
 </div>

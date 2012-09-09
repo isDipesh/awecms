@@ -6,6 +6,8 @@
         <?php $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.admin.assets')) . '/'; ?>
         <link rel="stylesheet" type="text/css" href="<?php echo $assetsUrl; ?>admin.css?<?php echo time() ?>"/>
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/common.css"/>
+                <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css"/>
+
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js?<?php echo time() ?>"></script>
         <style type="text/css">
         </style>
@@ -46,6 +48,14 @@
 
             </header>
             <div class="clear"></div>
+            <?php if (isset($this->breadcrumbs)): ?>
+                    <?php
+                    $this->widget('zii.widgets.CBreadcrumbs', array(
+                        'links' => $this->breadcrumbs,
+                        'homeLink' => '<a href="' . Yii::app()->baseUrl . '/admin">Dashboard</a>'
+                    ));
+                    ?><!-- breadcrumbs -->
+                <?php endif ?>
             <?php
             ?>
             <nav id="left_sidebar">
@@ -79,17 +89,6 @@
             </nav>
 
             <div id="main_wrapper">
-                <div class="right" style="overflow: auto">
-
-                </div>
-                <?php if (isset($this->breadcrumbs)): ?>
-                    <?php
-                    $this->widget('zii.widgets.CBreadcrumbs', array(
-                        'links' => $this->breadcrumbs,
-                        'homeLink' => '<a href="' . Yii::app()->baseUrl . '/admin">Dashboard</a>'
-                    ));
-                    ?><!-- breadcrumbs -->
-                <?php endif ?>
                 <?php
                 echo $content;
                 ?>

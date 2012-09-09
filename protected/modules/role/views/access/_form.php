@@ -40,7 +40,7 @@
 
     <label for="roles"><strong><?php echo Yii::t('app', 'Roles'); ?>:</strong></label>
 
-    <div id="defaultRoles" class="row">
+    <div id="defaultRoles" class="row nm_row">
         <?php echo $form->checkBox($model, 'all'); ?>
         <?php echo $form->labelEx($model, 'all'); ?>
         <?php echo $form->error($model, 'all'); ?>
@@ -76,11 +76,14 @@
 
     </div>
 
-
+    <div class="row buttons">
     <?php
     echo CHtml::submitButton(Yii::t('app', 'Save'));
     echo CHtml::Button(Yii::t('app', 'Cancel'), array(
         'submit' => 'javascript:history.go(-1)'));
+    ?>
+    </div>
+    <?php
     $this->endWidget();
     ?>
 </div> <!-- form -->

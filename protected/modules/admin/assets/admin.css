@@ -38,7 +38,7 @@ header #title{
 #admin_menu{
     clear:both;
     background-color: #333;
-    height: 34px;
+    height: 30px;
     border-top: 1px solid #69C;
 }
 
@@ -75,29 +75,34 @@ header a{
 
 #left_sidebar{
     float: left;
-    padding: 4px;
-    background: #3B74A0;
-    margin: 10px 0 0 4px;
-    border-radius: 4px;
-    box-shadow: 0px 0px 2px rgba(0,0,0,.8);
+    margin: 0%;
+    width: 15%;
 }
 #main_wrapper{
-    margin: 10px auto 20px 240px;
-    padding:10px 15px;
+    margin: 0%;
+    padding: 1%;
     background: #fafafa;
-    color: 036;
+    color: #036;
+    float: left;
+    width: 83%;
+    font-size: 1.1em;
+    line-height: 2.3em;
+    box-shadow: 0px -6px 8px #666;
 }
 
 .right{
     float:right;
 }
-
+.left{
+    float: left;
+}
 #yw0{
     padding: 0;
 }
 #main_wrapper h1{
-    color: #333333;
-    margin: 10px 0;
+    color: #236B94;
+    margin: 0;
+    font-family: "trebuchet ms", tahoma, arial;
 }
 #yw0 table th{
     border: 1px solid #5394BA;
@@ -111,4 +116,22 @@ header a{
 
 #sidebar {
     padding: 20px 20px 20px 0;
+}
+#main_wrapper, #left_sidebar{
+    position: relative;
+}
+div.summary, .list-view .summary, .grid-view .summary {
+    float: right;
+    margin: 0px 5px;
+}
+.row.buttons{
+    clear: both
+}
+#user-grid, .grid-view{
+    margin-top: -44px;
+}
+.news-view{
+    border: 1px solid #ccc;
+    padding: 1%;
+    box-shadow: 1px 1px 0px #fff;
 }
