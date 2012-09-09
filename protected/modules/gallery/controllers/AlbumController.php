@@ -18,9 +18,6 @@ class AlbumController extends Controller {
     }
 
     public function actionGulp() {
-        
-//        print_r($_POST);
-//        die();
 
         //hanlde folders
         if (!isset($this->path)) {
@@ -74,6 +71,8 @@ class AlbumController extends Controller {
                     chmod($path . $model->name, 0777);
                     echo json_encode(array(array(
                             "name" => $model->name,
+                            "title" => $model->page->title,
+                            "description" => $model->page->content,
                             "type" => $model->mime_type,
                             "size" => $model->size,
                             "url" => $publicPath . $model->name,

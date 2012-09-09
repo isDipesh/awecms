@@ -6,16 +6,6 @@ $this->widget('xupload.XUpload', array(
     'model' => $model,
     'attribute' => 'file',
     'multiple' => true,
-    'htmlOptions' => array('name' => 'images'),
-    'options' => array(
-        'beforeSend' => "js:function(event, files, index, xhr, handler, callBack) {
-                        console.log(files);
-                                }",
-        'completed' => 'js:function(event, files, index, xhr, handler, callBack) {
-                        console.log("complete");
-
-                    }',
-    ),
         )
 );
 ?>

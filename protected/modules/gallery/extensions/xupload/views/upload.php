@@ -4,11 +4,15 @@
     {% input=file.name; %}
     {% file.onlyname = input.substr(0, input.lastIndexOf('.')) || input; %}
     aaa
-    <tr>
+    <tr class="template-upload fade" rowspan="10">
         <td class="preview"><span class="fade"></span></td>
-        <td class="name">
-            <span></span>
-            <input type="text" name="example2" value="{%=file.onlyname%}"/>
+        <td class="name" colspan="2">
+            <label for="title"><?php echo Yii::t('app', 'Title'); ?>:</label>
+            <input type="text" name="Page[title]" title="Name of the image" value="{%=file.onlyname%}"/>
+        </td>
+        <td class="image-description" colspan="3">
+            <label for="description">Description</label>
+            <textarea name="Page[content]" value="{%=file.onlyname%}"/>
         </td>
         <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
         {% if (file.error) { %}
@@ -32,8 +36,10 @@
                 <i class="icon-ban-circle icon-white"></i>
                 <span>{%=locale.fileupload.cancel%}</span>
             </button>
-            
+
             {% } %}</td>
+
+
     </tr>
-{% } %}
+    {% } %}
 </script>
