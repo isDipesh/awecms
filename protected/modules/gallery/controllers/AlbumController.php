@@ -18,6 +18,9 @@ class AlbumController extends Controller {
     }
 
     public function actionGulp() {
+        
+//        print_r($_POST);
+//        die();
 
         //hanlde folders
         if (!isset($this->path)) {
@@ -56,14 +59,11 @@ class AlbumController extends Controller {
         } else {
             $model = new Image;
             $model->file = CUploadedFile::getInstance($model, 'file');
-//            
             if ($model->file !== null) {
                 $model->mime_type = $model->file->getType();
                 $model->size = $model->file->getSize();
                 $model->name = $model->file->getName();
-                print_r($model->attributes);
                 if ($model->save()) {
-                    print_r($model->file);
                     $path = ($this->_subfolder != "") ? "{$this->path}/{$this->_subfolder}/" : "{$this->path}/";
                     $publicPath = ($this->_subfolder != "") ? "{$this->publicPath}/{$this->_subfolder}/" : "{$this->publicPath}/";
                     if (!is_dir($path)) {
