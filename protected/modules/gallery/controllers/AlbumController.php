@@ -2,11 +2,6 @@
 
 class AlbumController extends Controller {
 
-    private $path;
-    private $publicPath = '/uploads/';
-    private $subfolderVar;
-    private $_subfolder = "";
-
     public function actions() {
         return array(
             'gulps' => array(
@@ -17,82 +12,6 @@ class AlbumController extends Controller {
         );
     }
 
-    public function actionGulp() {
-
-        //hanlde folders
-        if (!isset($this->path)) {
-            $this->path = realpath(Yii::app()->getBasePath() . "/../uploads");
-        }
-
-        if (!is_dir($this->path)) {
-            mkdir($this->path, 0777, true);
-            chmod($this->path, 0777);
-            //throw new CHttpException(500, "{$this->path} does not exists.");
-        } else if (!is_writable($this->path)) {
-            chmod($this->path, 0777);
-            //throw new CHttpException(500, "{$this->path} is not writable.");
-        }
-
-        if ($this->subfolderVar !== null) {
-            $this->_subfolder = Yii::app()->request->getQuery($this->subfolderVar, date("mdY"));
-        } else if ($this->subfolderVar !== false) {
-            $this->_subfolder = date("mdY");
-        }
-
-
-        //hanlde upload file
-        header('Vary: Accept');
-        if (isset($_SERVER['HTTP_ACCEPT']) && (strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false)) {
-            header('Content-type: application/json');
-        } else {
-            header('Content-type: text/plain');
-        }
-
-        if (isset($_GET["_method"])) {
-            if ($_GET["_method"] == "delete") {
-                $success = is_file($_GET["file"]) && $_GET["file"][0] !== '.' && unlink($_GET["file"]);
-                echo json_encode($success);
-            }
-        } else {
-            $model = new Image;
-            $model->file = CUploadedFile::getInstance($model, 'file');
-            if ($model->file !== null) {
-                $model->mime_type = $model->file->getType();
-                $model->size = $model->file->getSize();
-                $model->name = $model->file->getName();
-                if ($model->save()) {
-                    $path = ($this->_subfolder != "") ? "{$this->path}/{$this->_subfolder}/" : "{$this->path}/";
-                    $publicPath = ($this->_subfolder != "") ? "{$this->publicPath}/{$this->_subfolder}/" : "{$this->publicPath}/";
-                    if (!is_dir($path)) {
-                        mkdir($path, 0777, true);
-                        chmod($path, 0777);
-                    }
-                    $model->file->saveAs($path . $model->name);
-                    chmod($path . $model->name, 0777);
-                    echo json_encode(array(array(
-                            "name" => $model->name,
-                            "title" => $model->page->title,
-                            "description" => $model->page->content,
-                            "type" => $model->mime_type,
-                            "size" => $model->size,
-                            "url" => $publicPath . $model->name,
-                            "thumbnail_url" => $publicPath . $model->name,
-                            "delete_url" => $this->createUrl("upload", array(
-                                "_method" => "delete",
-                                "file" => $path . $model->name
-                            )),
-                            "delete_type" => "POST"
-                            )));
-                } else {
-                    echo json_encode(array(array("error" => $model->getErrors('file'),)));
-                    Yii::log("XUploadAction: " . CVarDumper::dumpAsString($model->getErrors()), CLogger::LEVEL_ERROR, "xupload.actions.XUploadAction");
-                }
-            } else {
-                throw new CHttpException(500, "Could not upload file");
-            }
-        }
-    }
-
     public function actionIndex() {
         $dataProvider = new CActiveDataProvider('Album');
         $this->render('index', array(
@@ -101,8 +20,10 @@ class AlbumController extends Controller {
     }
 
     public function actionView($id) {
+        $images = Image::model()->findAllByAttributes(array('album_id' => $id));
         $this->render('view', array(
             'model' => $this->loadModel($id),
+            'images' => $images
         ));
     }
 

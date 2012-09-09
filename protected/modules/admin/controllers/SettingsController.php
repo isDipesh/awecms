@@ -29,11 +29,9 @@ class SettingsController extends Controller {
             'action' => $actionID,
         );
         $this->render('index', $dataProvider);
-        return true;
     }
 
     public function actionAdd() {
-
         $action = 'site';
         if (count($_GET)) {
             foreach ($_GET as $key => $param) {
@@ -50,8 +48,8 @@ class SettingsController extends Controller {
         $dataProvider = array(
             'action' => $action,
         );
+        Yii::app()->clientScript->registerCoreScript('jquery');
         $this->render('add', $dataProvider);
-        return true;
     }
 
 }

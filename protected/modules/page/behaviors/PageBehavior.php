@@ -6,14 +6,23 @@ class PageBehavior extends CActiveRecordBehavior {
 
         $isPage = (get_class($this->owner) == 'Page') ? true : false;
 
-        //save the model specific fields (properties not covered by Page)
-        if (isset($_POST[get_class($this->owner)]))
-            $this->owner->setAttributes($_POST[get_class($this->owner)]);
+        $attributes = array();
 
         if (isset($_FILES[get_class($this->owner)])) {
             $attribute_arr = array_keys($_FILES[get_class($this->owner)]['name']);
             $attribute = $attribute_arr[0];
-            $this->owner->$attribute = CUploadedFile::getInstance($this->owner, $attribute);
+            //if the attribute already exists, don't override it, else retrieve the file instance and write
+            $attributes[$attribute] =
+                    (isset($this->owner->$attribute)) ?
+                    $this->owner->$attribute : CUploadedFile::getInstance($this->owner, $attribute);
+        }
+
+        //save the model specific fields (properties not covered by Page)
+        if (isset($_POST[get_class($this->owner)]))
+            $this->owner->setAttributes($_POST[get_class($this->owner)]);
+
+        foreach (array_keys($attributes) as $attribute) {
+            $this->owner->$attribute = $attributes[$attribute];
         }
 
         if ($this->owner->scenario == 'insert')

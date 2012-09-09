@@ -15,9 +15,18 @@ if (!isset($this->menu) || $this->menu === array()) {
 }
 ?>
 
-<h1><?php echo $model->page->title; ?></h1>
+<h1><?php echo $model->page->title; ?></h1>(<?php echo count($images)?> images) 
 
 <?php
 if (isset($model->page->content))
     echo $model->page->content;
+?>
+
+
+<?php
+foreach ($images as $image){
+    print_r($image->attributes);
+    echo "<br/>";
+//    die();
+}
 ?>

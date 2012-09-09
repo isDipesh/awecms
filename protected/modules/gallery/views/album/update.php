@@ -6,6 +6,7 @@ $this->breadcrumbs = array(
 );
 if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
+        array('label' => Yii::t('app', 'View album'), 'url' => array('/gallery/album/view', 'id' => $model->id)),
         array('label' => Yii::t('app', 'Upload images'), 'url' => array('/gallery/album/upload', 'id' => $model->id)),
         array('label' => Yii::t('app', 'Delete this album'), 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Are you sure you want to delete this item?')),
         array('label' => Yii::t('app', 'Create new album'), 'url' => array('/gallery/album/create')),
