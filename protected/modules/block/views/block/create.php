@@ -1,19 +1,18 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Blocks') => array('index'),
+    Yii::t('app', 'Blocks') => array('/block'),
     Yii::t('app', 'Create'),
 );
-if(!isset($this->menu) || $this->menu === array())
-$this->menu=array(
-	array('label'=>Yii::t('app', 'List'), 'url'=>array('index')),
-	array('label'=>Yii::t('app', 'Manage'), 'url'=>array('admin')),
-);
+if (!isset($this->menu) || $this->menu === array())
+    $this->menu = array(
+        array('label' => Yii::t('app', 'Create new block')),
+        array('label' => Yii::t('app', 'Manage blocks'), 'url' => array('/block/block')),
+    );
 ?>
 
 <h1> Create New Block </h1>
 <?php
 $this->renderPartial('_form', array(
-			'model' => $model,
-			'buttons' => 'create'));
-
+    'model' => $model,
+    'buttons' => 'create'));
 ?>

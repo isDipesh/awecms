@@ -1,19 +1,18 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Blocks') => array('index'),
-    Yii::t('app', $model->title) => array('view','id'=>$model->id),
-    Yii::t('app', 'Update'),
+    Yii::t('app', 'Blocks') => array('/block'),
+    Yii::t('app', $model->title),
 );
-if(!isset($this->menu) || $this->menu === array())
-$this->menu=array(
-	array('label'=>Yii::t('app', 'Delete') , 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	//array('label'=>Yii::t('app', 'Create') , 'url'=>array('create')),
-	//array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
-);
+if (!isset($this->menu) || $this->menu === array())
+    $this->menu = array(
+        array('label' => Yii::t('app', 'Delete this block'), 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Are you sure you want to delete this item?')),
+        array('label' => Yii::t('app', 'Create new block'), 'url' => array('/block/block/create')),
+        array('label' => Yii::t('app', 'Manage blocks'), 'url' => array('/block/block')),
+    );
 ?>
 
-<h1> <?php echo Yii::t('app', 'Update');?> <?php echo $model->title; ?> </h1>
+<h1> <?php echo Yii::t('app', 'Update'); ?> <?php echo $model->title; ?> </h1>
 <?php
 $this->renderPartial('_form', array(
-			'model'=>$model));
+    'model' => $model));
 ?>
