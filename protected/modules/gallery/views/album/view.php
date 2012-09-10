@@ -15,7 +15,7 @@ if (!isset($this->menu) || $this->menu === array()) {
 }
 ?>
 
-<h1><?php echo $model->page->title; ?></h1>(<?php echo count($images)?> images) 
+<h1><?php echo $model->page->title; ?></h1>(<?php echo count($images) ?> images) 
 
 <?php
 if (isset($model->page->content))
@@ -24,9 +24,19 @@ if (isset($model->page->content))
 
 
 <?php
-foreach ($images as $image){
-    print_r($image->attributes);
-    echo "<br/>";
-//    die();
+foreach ($images as $image) {
+    ?>
+    <p>
+        <a href="<?php echo Yii::app()->createUrl('/gallery/image/view', array('id' => $image->id)); ?>">
+            <img width="100" height="100" src="<?php echo $image->url; ?>" alt="<?php echo $image->title; ?>">
+        </a>
+        <br/>
+        <a href="<?php echo Yii::app()->createUrl('/gallery/image/view', array('id' => $image->id)); ?>">
+            <b><?php echo $image->title; ?></b>
+        </a>
+        <br/>
+        <?php echo $image->description; ?>
+    </p>
+    <?php
 }
 ?>

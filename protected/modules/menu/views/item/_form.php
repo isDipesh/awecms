@@ -17,7 +17,7 @@
     </div><!-- row -->
 
     <div class="row">
-        
+
         <?php echo CHtml::radioButton('MenuItem[type]', $model->type == 'module', array('value' => 'module')); ?>
         <?php echo Yii::t('app', 'Module'); ?>
         <?php echo Chtml::dropDownList('MenuItem[module]', $model->link, Awecms::getModulesWithPath()); ?>
@@ -42,9 +42,11 @@
         <?php echo Chtml::textField('MenuItem[url]', $model->link, array('size' => 60)); ?>
         <?php echo $form->error($model, 'link'); ?>
         <br/>
-        /item points to base_url/item, //item points to root_of_server/item, item creates link relative to dynamic user location, 
-        URLs rendered as is.
-        
+        <p class="hint">
+            /item points to base_url/item, //item points to root_of_server/item, item creates link relative to dynamic user location, 
+            URLs rendered as is.
+        </p>
+
     </div><!-- row -->
 
     <div class="row">

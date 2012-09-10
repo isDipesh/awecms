@@ -1,45 +1,40 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Images') => array('index'),
-    Yii::t('app', $model->name),
-);if(!isset($this->menu) || $this->menu === array()) {
-$this->menu=array(
-array('label'=>Yii::t('app', 'Update') , 'url'=>array('update', 'id'=>$model->id)),
-array('label'=>Yii::t('app', 'Delete') , 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-array('label'=>Yii::t('app', 'Create') , 'url'=>array('create')),
-array('label'=>Yii::t('app', 'Manage') , 'url'=>array('admin')),
-/*array('label'=>Yii::t('app', 'List') , 'url'=>array('index')),*/
+    Yii::t('app', 'Gallery') => array('/gallery')
 );
+if (isset($model->album_id))
+    $this->breadcrumbs[$model->album->page->title] = array('/gallery/album/view', 'id' => $model->album->id);
+
+$this->breadcrumbs[0] = $model->title;
+
+if (!isset($this->menu) || $this->menu === array()) {
+    $this->menu = array(
+        array('label' => Yii::t('app', 'Update'), 'url' => array('update', 'id' => $model->id)),
+        array('label' => Yii::t('app', 'Delete'), 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Are you sure you want to delete this item?')),
+        array('label' => Yii::t('app', 'Create'), 'url' => array('create')),
+        array('label' => Yii::t('app', 'Manage'), 'url' => array('admin')),
+            /* array('label'=>Yii::t('app', 'List') , 'url'=>array('index')), */
+    );
 }
 ?>
 
-<h1><?php echo $model->name; ?></h1>
+<h1><?php echo $model->title; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-'data' => $model,
-'attributes' => array(
-array(
-                        'name'=>'id',
-                        'visible'=>Yii::app()->getModule('user')->isAdmin()
-                    ),		array(
-			'name'=>'page_id',
-			'value'=>($model->page !== null)?CHtml::link($model->page->title, array('/page/page/view','id'=>$model->page->id)).' ':'n/a',
-			'type'=>'html',
-		),
-		array(
-			'name'=>'album_id',
-			'value'=>($model->album !== null)?CHtml::link($model->album->id, array('/gallery/album/view','id'=>$model->album->id)).' ':'n/a',
-			'type'=>'html',
-		),
-'file','mime_type','size','name',)));?>
-        <?php if (count($model->albums)) { ?>
-                            <h2><?php echo CHtml::link(Yii::t('app', Awecms::pluralize('Sub-Page', 'Albums', count($model->albums))), array('/gallery/album'));?></h2>
-<ul>
-			<?php if (is_array($model->albums)) foreach($model->albums as $foreignobj) { 
+<img src="<?php echo $model->url; ?>" alt="<?php echo $model->title; ?>">
 
-					echo '<li>';
-					echo CHtml::link($foreignobj->id, array('/gallery/album/view','id'=>$foreignobj->id));
-							
-					}
-						?></ul>
-            <?php } ?>
+<p>
+    <?php echo $model->description; ?>
+</p>
+
+<p>
+    <?php echo Yii::t('app', 'Type'); ?>:
+    <?php echo $model->mime_type; ?>
+    <br />
+    <?php echo Yii::t('app', 'Size'); ?>:
+    <?php echo $model->readableSize; ?>
+</p>
+
+
+
+
+

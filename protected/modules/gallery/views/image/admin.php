@@ -37,11 +37,8 @@ return false;
 	'filter' => $model,
 	'columns' => array(
         'id',
-        array(
-                			'name'   => 'page_id',
-                      'value'  => 'isset($data->page->title)?$data->page->title:"N/A"',
-                      'filter' => CHtml::listData(Page::model()->findAll(),'id','title'),
-                ),
+        'title',
+        'description',
         array(
                 			'name'   => 'album_id',
                       'value'  => 'isset($data->album->id)?$data->album->id:"N/A"',
