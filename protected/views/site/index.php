@@ -1,7 +1,8 @@
 <?php
 
 $data = new CActiveDataProvider('Image');
-$this->widget('EGalleria', array(
+$this->widget('Galleria', array(
     'dataProvider' => $data,
+    
 ));
 ?>

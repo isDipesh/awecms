@@ -15,11 +15,12 @@ class Image extends BaseImage {
     public function behaviors() {
         return array(
             'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior'),
-            'egalleria' => array(
-                'class' => 'application.modules.gallery.extensions.galleria.EGalleriaBehavior',
+            'galleria' => array(
+                'class' => 'application.modules.gallery.extensions.galleria.GalleriaBehavior',
                 'image' => 'url', //This is a required binding and will be the src of image element
                 'description' => 'description', //Optional
                 'title' => 'title', //Optional
+                'imagePrefix' => '',//optional, not required
             )
         );
     }
