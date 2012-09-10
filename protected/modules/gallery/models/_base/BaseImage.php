@@ -4,22 +4,22 @@
  * This is the model base class for the table "image".
  *
  * Columns in table "image" available as properties of the model:
- 
-      * @property integer $id
-      * @property string $title
-      * @property string $description
-      * @property integer $album_id
-      * @property string $file
-      * @property string $mime_type
-      * @property string $size
-      * @property string $name
+
+ * @property integer $id
+ * @property string $title
+ * @property string $description
+ * @property integer $album_id
+ * @property string $file
+ * @property string $mime_type
+ * @property string $size
+ * @property string $name
  *
  * Relations of table "image" available as properties of the model:
  * @property Album[] $albums
  * @property Album $album
  */
 abstract class BaseImage extends CActiveRecord {
-    
+
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -38,15 +38,9 @@ abstract class BaseImage extends CActiveRecord {
             array('id, title, description, album_id, file, mime_type, size, name', 'safe', 'on' => 'search'),
         );
     }
-    
+
     public function __toString() {
         return (string) $this->title;
-    }
-
-    public function behaviors() {
-        return array(
-        'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
-);
     }
 
     public function relations() {
@@ -85,5 +79,5 @@ abstract class BaseImage extends CActiveRecord {
                     'criteria' => $criteria,
                 ));
     }
-    
+
 }

@@ -1,0 +1,147 @@
+EGalleria
+---------
+Version: 0.2
+Author: Dimitrios Meggidis <tydeas.dr (at) gmail.com>
+
+###Description
+
+Yii extension to support the [Galleria](http://galleria.aino.se/) Javascript image gallery.
+The galleria files that are included are from commit: 373a3a77e83eef919046.
+
+###Install
+
+Extract the zip file under the extension folder and should look like.
+~~~
+    ./webapp/protected/extension/EGalleria
+~~~
+
+or use the github.com and clone the repository under the extension folder.
+~~~
+    git clone https://github.com/dmtra/EGalleria
+~~~
+
+###Configuration
+
+Add import of EGalleria extension in your config/main.php file:
+
+~~~
+[php]
+    'imports'=>array(
+        ...
+        'application.extensions.EGalleria.*'
+        ...
+    ),
+~~~    
+
+###Use
+
+You can use the widget in 2 diff ways. You can attach a dataProvider and the images will 
+be rendered from that provider or you can create the dom structure need for the galleria 
+plugin your own.
+
+####With Dataprovider
+
+To bind a dataprovider with the widget you need to specify at least which of the model attributes 
+is the url for the image.
+
+This can be achieved in 2 ways:
+- By passing "binding" attribute at the initialization of widget.
+- Or adding EGalleriaBehavior in your model behaviors() function.
+
+"Behavior" feature is usefull when you want to use same model for more than 1 EGalleria widget
+so you don't have to define binding again and again.
+
+#####Behavior definition
+
+In your model behaviors() function add:
+
+~~~
+[php]
+    public function behaviors()
+    {
+        ...
+        'egalleria'=>array(
+            'class'=>'application.extensions.EGalleria.EGalleriaBehavior',
+            'image'=>'image_field_name', //This is a required binding and will be the src of image element
+            'description'=>'image_description', //Optional
+            'title'=>'image_title', //Optional
+            'link'=>'image_link', //NOT SUPPORTED IN CURRENT VERSION
+            'author'=>'image's_author' //NOT SUPPORTED IN CURRENT VERSION
+        ),
+        ...
+    }
+~~~
+
+#####Binding in initialization of widget
+
+Check later in example. The available attributes are the same with the behavior above.
+
+####Examples
+
+In your view file add.
+
+1. Use of dataprovider with behavior defined in model.
+
+~~~
+[php]
+$data = new CActiveDataProvider();
+$this->widget('EGalleria', array(
+    'dataProvider'=>$data,    
+));
+~~~
+
+2. Define binding in init with no model behavior
+
+~~~
+[php]
+$data = new CActiveDataProvider();
+$this->widget('EGalleria', array(
+    'dataProvider'=>$data,
+    'binding'=>array(
+        'image'=>'model_image_src_field',
+    ),
+));
+~~~
+
+####Without a Dataprovider
+
+You can use EGalleria widget without dataprovider like:
+
+~~~
+[php]
+<?php
+$this->beginWidget('EGalleria');
+?>
+<ul>
+<img src"/testo.png" alt="Description of image" title="Title of image" />
+<img src"/test1.png" />
+<img src"/test2.png" />
+<img src"/test3.png" />
+<?php 
+$this->endWidget();
+?>
+~~~
+For more information on basic dom structure, [check.](http://galleria.aino.se/getting_started/beginners_guide/)
+
+###More options
+
+There are more options that can be applied to the widget at definition.
+- "galleria"=>array(..) An associative array with all the [options of the galleria plugin.](http://galleria.aino.se/doc/1.2/options/)
+- "srcPrefix"=>"protected/data/..", If this property is defined then it will be preappened in each image src url. $src = $srcPrefix.$image;
+
+###Ending
+
+I have not tested all the galleria options, so i need some help on this by you :). Callback,themes and api features of galleria are not yet 
+implemented, will be under request.
+Any suggestions or contributions are welcome, but please use the repository of github.com for such thinks.
+Please report bugs or leave comments.
+
+###Links
+
+[Repository](http://www.github.com/dmtrs/EGalleria)
+[Galleria repository](https://github.com/aino/galleria)
+[Galleria official site](http://www.http://galleria.aino.se/)
+
+###Changelog
+####Version 0.1
+- Register all scripts

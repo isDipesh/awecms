@@ -12,6 +12,18 @@ class Image extends BaseImage {
         return parent::init();
     }
 
+    public function behaviors() {
+        return array(
+            'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior'),
+            'egalleria' => array(
+                'class' => 'application.modules.gallery.extensions.galleria.EGalleriaBehavior',
+                'image' => 'url', //This is a required binding and will be the src of image element
+                'description' => 'description', //Optional
+                'title' => 'title', //Optional
+            )
+        );
+    }
+
     public function getUrl() {
         return Yii::app()->baseUrl . '/' . trim(Settings::get('gallery', 'uploadUrl'), '/') . '/' . $this->file;
     }
