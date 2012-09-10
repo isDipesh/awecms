@@ -39,7 +39,7 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'thumbnail_id'); ?>
-        <?php echo $form->dropDownList($model, 'thumbnail', CHtml::listData(Image::model()->findAll(), 'id', 'id')); ?>
+        <?php echo $form->dropDownList($model, 'thumbnail', CHtml::listData(Image::model()->findAll(), 'id', 'title')); ?>
         <?php echo $form->error($model, 'thumbnail_id'); ?>
     </div>
 

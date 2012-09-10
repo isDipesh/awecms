@@ -27,7 +27,7 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'album_id'); ?>
-        <?php echo $form->dropDownList($model, 'album', CHtml::listData(Album::model()->findAll(), 'id', 'id'), array('prompt' => 'None')); ?>
+        <?php echo $form->dropDownList($model, 'album', CHtml::listData(Album::model()->findAll(), 'id', 'page.title'), array('prompt' => 'None')); ?>
         <?php echo $form->error($model, 'album_id'); ?>
     </div>
 

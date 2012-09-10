@@ -1,12 +1,15 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Albums') => array('index'),
+    Yii::t('app', 'Albums') => array('/gallery'),
     Yii::t('app', 'Manage'),
 );
 if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
-        array('label' => Yii::t('app', 'Create new album'), 'url' => array('/gallery/album/create')),
         array('label' => Yii::t('app', 'List all albums'), 'url' => array('/gallery/album')),
+        array('label' => Yii::t('app', 'Create new album'), 'url' => array('/gallery/album/create')),
+        array('label' => Yii::t('app', 'Manage albums')),
+        array('label' => Yii::t('app', 'All images'), 'url' => array('/gallery/image')),
+        
     );
 
 

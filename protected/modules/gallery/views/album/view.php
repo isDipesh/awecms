@@ -1,16 +1,19 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Albums') => array('index'),
+    Yii::t('app', 'Albums') => array('/gallery'),
     Yii::t('app', $model->page->title),
 );
 if (!isset($this->menu) || $this->menu === array()) {
     $this->menu = array(
-        array('label' => Yii::t('app', 'Edit this album'), 'url' => array('update', 'id' => $model->id)),
-        array('label' => Yii::t('app', 'Upload images'), 'url' => array('upload', 'id' => $model->id)),
+        array('label' => Yii::t('app', 'View album')),
+        array('label' => Yii::t('app', 'Edit this album'), 'url' => array('/gallery/album/update', 'id' => $model->id)),
+        array('label' => Yii::t('app', 'Upload images'), 'url' => array('/gallery/album/upload', 'id' => $model->id)),
         array('label' => Yii::t('app', 'Delete this album'), 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Are you sure you want to delete this item?')),
-        array('label' => Yii::t('app', 'Create new album'), 'url' => array('create')),
-        array('label' => Yii::t('app', 'Manage all abums'), 'url' => array('admin')),
-            /* array('label'=>Yii::t('app', 'List') , 'url'=>array('index')), */
+        array('label' => Yii::t('app', 'List all albums'), 'url' => array('/gallery/album')),
+        array('label' => Yii::t('app', 'Create new album'), 'url' => array('/gallery/album/create')),
+        array('label' => Yii::t('app', 'Manage all abums'), 'url' => array('/gallery/album/admin')),
+        array('label' => Yii::t('app', 'All images'), 'url' => array('/gallery/image')),
+            
     );
 }
 ?>
