@@ -39,11 +39,11 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'thumbnail_id'); ?>
-        <?php echo $form->dropDownList($model, 'thumbnail', CHtml::listData(Image::model()->findAll(), 'id', 'title')); ?>
+        <?php echo $form->dropDownList($model, 'thumbnail', CHtml::listData(Image::model()->findAllByAttributes(array('album_id' => $model->id)), 'id', 'title')); ?>
         <?php echo $form->error($model, 'thumbnail_id'); ?>
     </div>
 
-    
+
 
     <?php
     echo CHtml::submitButton(Yii::t('app', 'Save'));
