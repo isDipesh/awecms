@@ -21,6 +21,7 @@ class Image extends BaseImage {
                 'description' => 'description', //Optional
                 'title' => 'title', //Optional
                 'imagePrefix' => '',//optional, not required
+                
             )
         );
     }
