@@ -18,20 +18,22 @@ class ImageController extends Controller {
 
         //handle folders
         $this->path = Settings::get('gallery', 'uploadPath');
-        $this->path = realpath(Yii::app()->getBasePath() . Settings::get('gallery', 'uploadPath'));
+        $path = Yii::app()->getBasePath() . Settings::get('gallery', 'uploadPath');
         $this->publicPath = Settings::get('gallery', 'uploadUrl');
 
-        if (!is_dir($this->path)) {
-            mkdir($this->path, 0777, true);
-            chmod($this->path, 0777);
+        if (!is_dir($path)) {
+            mkdir($path, 0777, true);
+            chmod($path, 0777);
             //throw new CHttpException(500, "{$this->path} does not exists.");
-        } else if (!is_writable($this->path)) {
-            chmod($this->path, 0777);
+        } else if (!is_writable($path)) {
+            chmod($path, 0777);
             //throw new CHttpException(500, "{$this->path} is not writable.");
         }
 
-        if ($this->subfolderVar !== null) {
+        if ($this->subfolderVar !== null && Yii::app()->request->getQuery($this->subfolderVar)) {
             $this->_subfolder = Yii::app()->request->getQuery($this->subfolderVar, date("mdY"));
+        } else if (isset($_GET['album_id'])) {
+            $this->_subfolder = Awecms::getCamelCase(Album::model()->findByPk($_GET['album_id'])->page->title);
         } else if ($this->subfolderVar !== false) {
             $this->_subfolder = date("mdY");
         }
@@ -53,32 +55,37 @@ class ImageController extends Controller {
             $model = new Image;
             $file = CUploadedFile::getInstance($model, 'file');
             if ($file !== null) {
-                $path = ($this->_subfolder != "") ? "{$this->path}/{$this->_subfolder}/" : "{$this->path}/";
+                $path = ($this->_subfolder != "") ? "{$path}/{$this->_subfolder}/" : "{$path}/";
+                $this->path = ($this->_subfolder != "") ? "{$this->path}/{$this->_subfolder}/" : "{$this->path}/";
+                $time = time();
                 $model->mime_type = $file->getType();
                 $model->size = $file->getSize();
                 $model->name = $file->getName();
-                $model->file = $path . $model->name;
+                $model->title = $_POST['title'][$model->size . $model->name];
+                $model->description = $_POST['description'][$model->size . $model->name];
+                $model->file = $this->path . $time . $model->name;
+
 
                 if (isset($_GET['album_id']))
                     $model->album_id = $_GET['album_id'];
                 if ($model->save()) {
-                    echo $model->file;
-                    die();
                     $publicPath = ($this->_subfolder != "") ? "{$this->publicPath}/{$this->_subfolder}/" : "{$this->publicPath}/";
                     if (!is_dir($path)) {
+//                        print_r($path);
+//                        die();
                         mkdir($path, 0777, true);
                         chmod($path, 0777);
                     }
-                    $file->saveAs($path . $model->name);
-                    chmod($path . $model->name, 0777);
+                    $file->saveAs($path . $time . $model->name);
+                    chmod($path . $time . $model->name, 0777);
                     echo json_encode(array(array(
-                            "name" => $model->name,
-                            "title" => $model->page->title,
-                            "description" => $model->page->content,
+                            "name" => $time . $model->name,
+                            "title" => $model->title,
+                            "description" => $model->description,
                             "type" => $model->mime_type,
                             "size" => $model->size,
                             "url" => $publicPath . $model->name,
-                            "thumbnail_url" => $publicPath . $model->name,
+                            "thumbnail_url" => $publicPath . $time . $model->name,
                             "delete_url" => $this->createUrl("upload", array(
                                 "_method" => "delete",
                                 "file" => $path . $model->name

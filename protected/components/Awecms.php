@@ -50,6 +50,12 @@ class Awecms {
         return ucwords(trim(strtolower(str_replace(array('-', '_', '.'), ' ', preg_replace('/(?<![A-Z])[A-Z]/', ' \0', $name)))));
     }
 
+    public static function getCamelCase($str) {
+        $str = ucwords($str);
+        $str = str_replace(' ', '', $str);
+        return lcfirst($str);
+    }
+
     public static function isUrl($url) {
         /* Make sure it's a properly formatted URL. */
         // From: http://www.daniweb.com/web-development/php/threads/290866
@@ -213,5 +219,5 @@ class Awecms {
     public static function getActionsInPair() {
         
     }
-    
+
 }

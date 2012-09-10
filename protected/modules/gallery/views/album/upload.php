@@ -23,6 +23,8 @@ $this->widget('xupload.XUpload', array(
     'model' => new Image,
     'attribute' => 'file',
     'multiple' => true,
+    'options' => array(
+    ),
         )
 );
 ?>
