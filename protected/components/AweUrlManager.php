@@ -23,18 +23,14 @@ class AweUrlManager extends CUrlManager {
             $route = 'admin/' . $route;
         }
 
-//      
-//        print_r($route);
-//            $url = parent::createUrlDefault($route, $params, $ampersand);
-        $url = parent::createUrl($route, $params, $ampersand);
+        $url = parent::createUrlDefault($route, $params, $ampersand);
 
         //handle slugs here
-        if ($slug = Slug::getSlug($url)) {
-            $url = $slug;
+        if ($slug = Slug::getSlug(preg_replace('/' . trim(Yii::app()->baseUrl, '/') . '/', '', $url, 1))) {
             //if (Settings::get('SEO','externalSlug')
+            $url = $slug;
             $url = Yii::app()->baseUrl . '/' . $url;
         }
-//        print_r($url);
         return $url;
     }
 

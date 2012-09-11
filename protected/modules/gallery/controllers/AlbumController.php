@@ -100,9 +100,14 @@ class AlbumController extends Controller {
     }
 
     public function actionDelete($id) {
+        $model = $this->loadModel($id);
         if (Yii::app()->request->isPostRequest) {
             try {
-                $this->loadModel($id)->delete();
+                $images = Image::model()->findAllByAttributes(array('album_id' => $id));
+                foreach ($images as $image) {
+                    $image->delete();
+                }
+                $model->delete();
             } catch (Exception $e) {
                 throw new CHttpException(500, $e->getMessage());
             }

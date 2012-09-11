@@ -11,6 +11,7 @@ class Slug extends BaseSlug {
     public static function set($slug, $path, $enabled = true) {
         $sl = new self;
         $sl->slug = self::cleanText($slug);
+
         $sl->path = $path;
         $sl->enabled = $enabled;
         $sl->save();
@@ -62,6 +63,11 @@ class Slug extends BaseSlug {
         $path = trim($path, '/');
         $s = new self;
         $s->slug = $slug;
+
+        if (substr($path, 0, 5) == 'admin') {
+            $path = substr($path, 5);
+        }
+        $path = trim($path, '/');
         $s->path = $path;
 
         //handle duplicate slugs - slug, slug-1, slug-2 and so on
