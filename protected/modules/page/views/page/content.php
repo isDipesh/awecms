@@ -16,7 +16,7 @@ if (!isset($this->menu) || $this->menu === array())
 </h1>
 
 <?php
-if (count($model->search()->data)) {
+if (count($page->search()->data)) {
     $this->widget('zii.widgets.grid.CGridView', array(
         'id' => 'page-grid',
         'dataProvider' => $page->search(),
@@ -47,5 +47,5 @@ if (count($model->search()->data)) {
         ),
     ));
 } else {
-    echo Yii::app('app', 'No results found!');
+    echo Yii::t('app', 'No results found!');
 }
