@@ -1,15 +1,16 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Categories') => array('index'),
+    Yii::t('app', 'Categories') => array('/category'),
     Yii::t('app', $model->name),
 );
 if (!isset($this->menu) || $this->menu === array()) {
     $this->menu = array(
-        array('label' => Yii::t('app', 'Update'), 'url' => array('update', 'id' => $model->id)),
-        array('label' => Yii::t('app', 'Delete'), 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Are you sure you want to delete this item?')),
-        array('label' => Yii::t('app', 'Create'), 'url' => array('create')),
-        array('label' => Yii::t('app', 'Manage'), 'url' => array('admin')),
-            /* array('label'=>Yii::t('app', 'List') , 'url'=>array('index')), */
+        array('label' => Yii::t('app', 'View Category')),
+        array('label' => Yii::t('app', 'Update This Category'), 'url' => array('update', 'id' => $model->id)),
+        array('label' => Yii::t('app', 'Delete This Category'), 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Are you sure you want to delete this item?')),
+        array('label' => Yii::t('app', 'All Categories'), 'url' => array('/category')),
+        array('label' => Yii::t('app', 'Create New Category'), 'url' => array('/category/create')),
+        array('label' => Yii::t('app', 'Manage All Categories'), 'url' => array('/category/admin')),
     );
 }
 ?>

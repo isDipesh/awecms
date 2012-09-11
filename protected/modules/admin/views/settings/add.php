@@ -4,7 +4,7 @@ $this->breadcrumbs = array(
     Yii::t('app', 'Add new settings field'),
 );
 
-$this->menu = Admin::getSettings($action);
+$this->menu = Settings::getCategoriesAsLinks($action);
 
 echo"<h1>Add new settings field:</h1>";
 

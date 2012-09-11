@@ -111,8 +111,21 @@ class Settings {
         return $result;
     }
 
-    public function attributeNames() {
-        
+    public static function getCategoriesAsLinks($action = '') {
+        //url isn't created for $action
+        $settings = array();
+        foreach (Settings::getCategories() as $settingsCategory) {
+            $item = array();
+            $item['label'] = Awecms::generateFriendlyName($settingsCategory) . ' Settings';
+
+            if ($action != $settingsCategory) {
+                $item['url'] = '/settings/' . $settingsCategory;
+                if ($action)
+                    $item['url'] = Yii::app()->baseUrl . '/admin' . $item['url'];
+            }
+            $settings[] = $item;
+        }
+        return $settings;
     }
 
 }

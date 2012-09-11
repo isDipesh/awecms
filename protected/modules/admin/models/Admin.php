@@ -2,23 +2,6 @@
 
 class Admin {
 
-    public static function getSettings($action = '') {
-        //url isn't created for $action
-        $settings = array();
-        foreach (Settings::getCategories() as $settingsCategory) {
-            $item = array();
-            $item['label'] = Awecms::generateFriendlyName($settingsCategory) . ' Settings';
-
-            if ($action != $settingsCategory) {
-                $item['url'] = '/settings/' . $settingsCategory;
-                if ($action)
-                    $item['url'] = '/admin' . $item['url'];
-            }
-            $settings[] = $item;
-        }
-        return $settings;
-    }
-
     public static function getDashboardMenu() {
         $dashboard = new Dashboard;
         $menuItems = $dashboard->getMenuItems();
@@ -36,8 +19,6 @@ class Admin {
         }
         return $menuConfig;
     }
-
-    
 
     public static function getLinkForModules() {
         //modules to ignore

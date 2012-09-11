@@ -128,7 +128,7 @@ div.summary, .list-view .summary, .grid-view .summary {
     clear: both
 }
 #user-grid, .grid-view{
-    margin-top: -44px;
+    margin-top: -30px;
 }
 .news-view{
     border: 1px solid #ccc;

@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Menus') => array('/' . $this->module->id),
+    Yii::t('app', 'Menus'),
 );
 $this->menu = array(
     array('label' => MenuModule::t('Manage Menus')),

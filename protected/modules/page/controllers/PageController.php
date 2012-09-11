@@ -84,13 +84,23 @@ class PageController extends Controller {
                     Yii::t('app', 'Invalid request.'));
     }
 
+    public function actionContent() {
+        $page = new Page('search');
+        $page->unsetAttributes();
+        if (isset($_GET['Page']))
+            $page->setAttributes($_GET['Page']);
+        
+        $this->render('content', array(
+            'page' => $page,
+        ));
+    }
+
     public function actionAdmin() {
         $page = new Page('search');
         $page->unsetAttributes();
-
+        $page->type = 'Page';
         if (isset($_GET['Page']))
             $page->setAttributes($_GET['Page']);
-
         $this->render('admin', array(
             'page' => $page,
         ));

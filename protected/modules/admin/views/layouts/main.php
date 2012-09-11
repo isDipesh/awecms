@@ -6,7 +6,7 @@
         <?php $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.admin.assets')) . '/'; ?>
         <link rel="stylesheet" type="text/css" href="<?php echo $assetsUrl; ?>admin.css?<?php echo time() ?>"/>
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/common.css"/>
-                <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css"/>
 
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js?<?php echo time() ?>"></script>
         <style type="text/css">
@@ -18,13 +18,13 @@
         <div id="main_container">
             <header id="top_header">
                 <h2 id="title">
-                    <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Settings::get('site','name') , array('/admin')); ?>
+                    <?php echo CHtml::link(AdminModule::t('Dashboard') . ' : ' . Settings::get('site', 'name'), array('/admin')); ?>
                 </h2>
                 <nav id="header_right">
                     <ul id="header_links">
                         <li><?php echo AdminModule::t('Signed in as') . ' ' . Yii::app()->user->name; ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Account Settings'), array('/user/profile/edit')); ?></li> |
-                        <li><?php echo CHtml::link(AdminModule::t('Visit Website'), Yii::app()->baseUrl.'/'); ?></li> |
+                        <li><?php echo CHtml::link(AdminModule::t('Visit Website'), Yii::app()->baseUrl . '/'); ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Logout'), array('/user/logout')); ?></li>
                     </ul>
                 </nav>
@@ -34,7 +34,7 @@
                             'MenuRenderer', array('id' => 2, 'append' => array(
                             array(
                                 'label' => 'Settings',
-                                'items' => Admin::getSettings(),
+                                'items' => Settings::getCategoriesAsLinks(),
                             ),
                             array(
                                 'label' => 'Modules',
@@ -49,13 +49,13 @@
             </header>
             <div class="clear"></div>
             <?php if (isset($this->breadcrumbs)): ?>
-                    <?php
-                    $this->widget('zii.widgets.CBreadcrumbs', array(
-                        'links' => $this->breadcrumbs,
-                        'homeLink' => '<a href="' . Yii::app()->baseUrl . '/admin">Dashboard</a>'
-                    ));
-                    ?><!-- breadcrumbs -->
-                <?php endif ?>
+                <?php
+                $this->widget('zii.widgets.CBreadcrumbs', array(
+                    'links' => $this->breadcrumbs,
+                    'homeLink' => '<a href="' . Yii::app()->baseUrl . '/admin">Dashboard</a>'
+                ));
+                ?><!-- breadcrumbs -->
+            <?php endif ?>
             <?php
             ?>
             <nav id="left_sidebar">

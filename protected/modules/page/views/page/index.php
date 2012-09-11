@@ -2,11 +2,13 @@
 $this->breadcrumbs = array(
     Yii::t('app', 'Pages')
 );
-if(!isset($this->menu) || $this->menu === array())
-$this->menu=array(
-	array('label'=>Yii::t('app', 'Create'), 'url'=>array('create')),
-	array('label'=>Yii::t('app', 'Manage'), 'url'=>array('admin')),
-);
+if (!isset($this->menu) || $this->menu === array())
+    $this->menu = array(
+        array('label' => Yii::t('app', 'All Pages')),
+        array('label' => Yii::t('app', 'Create New Page'), 'url' => array('/page/create')),
+        array('label' => Yii::t('app', 'Manage Pages'), 'url' => array('/page/admin')),
+        array('label' => Yii::t('app', 'All Contents'), 'url' => array('/page/content')),
+    );
 ?>
 
 <h1>Pages</h1>

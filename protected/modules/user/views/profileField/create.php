@@ -1,5 +1,6 @@
 <?php
 $this->breadcrumbs = array(
+    UserModule::t('Users') => array('/user/admin'),
     UserModule::t('Profile Fields') => array('admin'),
     UserModule::t('Create'),
 );

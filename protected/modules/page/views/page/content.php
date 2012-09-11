@@ -1,19 +1,18 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Pages') => array('/page'),
-    Yii::t('app', 'Manage'),
+    Yii::t('app', 'Contents'),
 );
 if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
         array('label' => Yii::t('app', 'All Pages'), 'url' => array('/page')),
         array('label' => Yii::t('app', 'Create New Page'), 'url' => array('/page/create')),
-        array('label' => Yii::t('app', 'Manage Pages')),
-        array('label' => Yii::t('app', 'All Contents'), 'url' => array('/page/content')),
+        array('label' => Yii::t('app', 'Manage Pages'), 'url' => array('/page/admin')),
+        array('label' => Yii::t('app', 'All Contents')),
     );
 ?>
 
 <h1>
-    <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Pages'); ?>
+    <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'All Contents'); ?>
 </h1>
 
 <?php
@@ -31,6 +30,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
         'status',
         'created_at',
         'modified_at',
+        'type',
         'comment_status',
         array(
             'class' => 'JToggleColumn',

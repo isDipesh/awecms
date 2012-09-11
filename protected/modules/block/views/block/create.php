@@ -5,8 +5,8 @@ $this->breadcrumbs = array(
 );
 if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
-        array('label' => Yii::t('app', 'Create new block')),
         array('label' => Yii::t('app', 'Manage blocks'), 'url' => array('/block/block')),
+        array('label' => Yii::t('app', 'Create new block')),
     );
 ?>
 

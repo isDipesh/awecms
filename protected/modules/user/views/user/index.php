@@ -14,7 +14,6 @@ if (UserModule::isAdmin()) {
 ?>
 
 <h1><?php echo UserModule::t("User List"); ?></h1>
-<p>Total <?php echo count($dataProvider->data) ?> users</p>
 <?php
 $this->widget('zii.widgets.grid.CGridView', array(
     'dataProvider' => $dataProvider,
