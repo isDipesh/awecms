@@ -7,7 +7,7 @@ if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
         array('label' => Yii::t('app', 'All Categories'), 'url' => array('/category')),
         array('label' => Yii::t('app', 'Create New Category')),
-        array('label' => Yii::t('app', 'Manage All Categories'), 'url' => array('/category/admin')),
+        array('label' => Yii::t('app', 'Manage All Categories'), 'url' => array('/category/manage')),
     );
 ?>
 

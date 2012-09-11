@@ -55,7 +55,7 @@ class NewsController extends Controller {
             }
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
-                $this->redirect(array('admin'));
+                $this->redirect(array('/news'));
             }
         }
         else
@@ -63,12 +63,12 @@ class NewsController extends Controller {
                     Yii::t('app', 'Invalid request.'));
     }
 
-    public function actionAdmin() {
+    public function actionManage() {
         $model = new News('search');
         $model->unsetAttributes();
         if (isset($_GET['News']))
             $model->setAttributes($_GET['News']);
-        $this->render('admin', array(
+        $this->render('manage', array(
             'model' => $model,
         ));
     }

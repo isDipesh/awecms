@@ -91,7 +91,7 @@ class AccessController extends Controller {
             }
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
-                $this->redirect(array('admin'));
+                $this->redirect(array('/role/access'));
             }
         }
         else

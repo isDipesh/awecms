@@ -5,7 +5,7 @@ $this->breadcrumbs = array(
 if(!isset($this->menu) || $this->menu === array())
 $this->menu=array(
 	array('label'=>Yii::t('app', 'Create'), 'url'=>array('create')),
-	array('label'=>Yii::t('app', 'Manage'), 'url'=>array('admin')),
+	array('label'=>Yii::t('app', 'Manage'), 'url'=>array('manage')),
 );
 ?>
 

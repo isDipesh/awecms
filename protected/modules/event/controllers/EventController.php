@@ -84,7 +84,7 @@ class EventController extends Controller {
             }
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
-                $this->redirect(array('admin'));
+                $this->redirect(array('/event'));
             }
         }
         else
@@ -92,14 +92,14 @@ class EventController extends Controller {
                     Yii::t('app', 'Invalid request.'));
     }
 
-    public function actionAdmin() {
+    public function actionManage() {
         $model = new Event('search');
         $model->unsetAttributes();
 
         if (isset($_GET['Event']))
             $model->setAttributes($_GET['Event']);
 
-        $this->render('admin', array(
+        $this->render('manage', array(
             'model' => $model,
         ));
     }

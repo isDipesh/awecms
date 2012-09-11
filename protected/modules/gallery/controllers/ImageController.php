@@ -151,14 +151,14 @@ class ImageController extends Controller {
                     Yii::t('app', 'Invalid request.'));
     }
 
-    public function actionAdmin() {
+    public function actionManage() {
         $model = new Image('search');
         $model->unsetAttributes();
 
         if (isset($_GET['Image']))
             $model->setAttributes($_GET['Image']);
 
-        $this->render('admin', array(
+        $this->render('manage', array(
             'model' => $model,
         ));
     }

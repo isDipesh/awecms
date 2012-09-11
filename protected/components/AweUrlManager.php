@@ -5,30 +5,6 @@ class AweUrlManager extends CUrlManager {
     public $appendParams = true;
     private $_rules = array();
 
-    public function aacreateUrl($route, $params = array(), $ampersand = '&') {
-
-        //for admin and admin/*
-        $parts = explode('/', $route);
-
-        //do not mess with gii
-        if ($parts[0] == 'gii')
-            return parent::createUrl($route, $params, $ampersand);
-
-
-        if (Yii::app()->hasModule($parts[0]) && isset($parts[1]) && $parts[1] == Yii::app()->getModule($parts[0])->defaultController) {
-
-
-            unset($parts[1]);
-            $route = implode('/', $parts);
-        }
-
-        if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/' || Yii::app()->getRequest()->pathInfo == 'admin') {
-            $route = 'admin/' . $route;
-        }
-
-        return parent::createUrlDefault($route, $params, $ampersand);
-    }
-
     public function createUrl($route, $params = array(), $ampersand = '&') {
 //        $url = parent::createUrl($route, $params, $ampersand);
 //        print_r($url);
@@ -39,12 +15,10 @@ class AweUrlManager extends CUrlManager {
         if ($parts[0] == 'gii')
             return parent::createUrl($route, $params, $ampersand);
 
-        if (!in_array('ajax', array_keys($params))) {
-        //ignore defaultController
+//        ignore defaultController
         if (Yii::app()->hasModule($parts[0]) && isset($parts[1]) && $parts[1] == Yii::app()->getModule($parts[0])->defaultController) {
             unset($parts[1]);
             $route = implode('/', $parts);
-        }
         }
 
         if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/' || Yii::app()->getRequest()->pathInfo == 'admin') {
@@ -52,10 +26,7 @@ class AweUrlManager extends CUrlManager {
         }
 
         $url = parent::createUrlDefault($route, $params, $ampersand);
-//        echo "<br/>";
-//        echo "<br/>";
-//        print_r($url);
-//        die();
+
         //handle slugs here
         if ($slug = Slug::getSlug(preg_replace('/' . trim(Yii::app()->baseUrl, '/') . '/', '', $url, 1))) {
             //if (Settings::get('SEO','externalSlug')

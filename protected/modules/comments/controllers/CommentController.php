@@ -11,7 +11,7 @@
  */
 class CommentController extends Controller {
 
-    public $defaultAction = 'admin';
+    public $defaultAction = 'manage';
 
     /**
      * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -53,7 +53,7 @@ class CommentController extends Controller {
                 'users' => array('*'),
             ),
             array('allow',
-                'actions' => array('admin', 'delete', 'approve', 'update', 'disapprove'),
+                'actions' => array('manage', 'delete', 'approve', 'update', 'disapprove'),
                 'users' => array('admin'),
             ),
             array('deny', // deny all users
@@ -105,12 +105,12 @@ class CommentController extends Controller {
     /**
      * Manages all models.
      */
-    public function actionAdmin() {
+    public function actionManage() {
         $model = new Comment('search');
         $model->unsetAttributes();  // clear any default values
         if (isset($_GET['status']))
             $model->status = $_GET['status'];
-        $this->render('admin', array(
+        $this->render('manage', array(
             'model' => $model,
         ));
     }

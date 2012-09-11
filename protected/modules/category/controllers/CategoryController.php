@@ -87,7 +87,7 @@ class CategoryController extends Controller {
             }
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
-                $this->redirect(array('admin'));
+                $this->redirect(array('/category'));
             }
         }
         else
@@ -95,14 +95,14 @@ class CategoryController extends Controller {
                     Yii::t('app', 'Invalid request.'));
     }
 
-    public function actionAdmin() {
+    public function actionManage() {
         $model = new Category('search');
         $model->unsetAttributes();
 
         if (isset($_GET['Category']))
             $model->setAttributes($_GET['Category']);
 
-        $this->render('admin', array(
+        $this->render('manage', array(
             'model' => $model,
         ));
     }

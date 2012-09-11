@@ -121,14 +121,14 @@ class AlbumController extends Controller {
                     Yii::t('app', 'Invalid request.'));
     }
 
-    public function actionAdmin() {
+    public function actionManage() {
         $model = new Album('search');
         $model->unsetAttributes();
 
         if (isset($_GET['Album']))
             $model->setAttributes($_GET['Album']);
 
-        $this->render('admin', array(
+        $this->render('manage', array(
             'model' => $model,
         ));
     }

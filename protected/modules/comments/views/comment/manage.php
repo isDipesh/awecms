@@ -4,9 +4,9 @@ $this->breadcrumbs = array(
 );
 $this->menu = array(
     array('label' => Yii::t('CommentsModule.msg', 'All Comments'), 'url' => isset($model->status) ? array('/comments') : null),
-    array('label' => Yii::t('CommentsModule.msg', 'Active Comments'), 'url' => (isset($model->status) && $model->status == 1) ? null : Yii::app()->createUrl('comments/admin?status=1')),
-    array('label' => Yii::t('CommentsModule.msg', 'Pending Comments'), 'url' => (isset($model->status) && $model->status == 0) ? null : Yii::app()->createUrl('comments/admin?status=0')),
-    array('label' => Yii::t('CommentsModule.msg', 'Trash'), 'url' => (isset($model->status) && $model->status == 2) ? null : Yii::app()->createUrl('comments/admin?status=2')),
+    array('label' => Yii::t('CommentsModule.msg', 'Active Comments'), 'url' => (isset($model->status) && $model->status == 1) ? null : Yii::app()->createUrl('comments/manage?status=1')),
+    array('label' => Yii::t('CommentsModule.msg', 'Pending Comments'), 'url' => (isset($model->status) && $model->status == 0) ? null : Yii::app()->createUrl('comments/manage?status=0')),
+    array('label' => Yii::t('CommentsModule.msg', 'Trash'), 'url' => (isset($model->status) && $model->status == 2) ? null : Yii::app()->createUrl('comments/manage?status=2')),
     array('label' => Yii::t('CommentsModule.msg', 'Comment Settings'), 'url' => array('/comments/settings')),
 );
 ?>

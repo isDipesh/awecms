@@ -76,7 +76,7 @@ class PageController extends Controller {
             }
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
-                $this->redirect(array('admin'));
+                $this->redirect(array('/page'));
             }
         }
         else
@@ -95,13 +95,13 @@ class PageController extends Controller {
         ));
     }
 
-    public function actionAdmin() {
+    public function actionManage() {
         $page = new Page('search');
         $page->unsetAttributes();
         $page->type = 'Page';
         if (isset($_GET['Page']))
             $page->setAttributes($_GET['Page']);
-        $this->render('admin', array(
+        $this->render('manage', array(
             'page' => $page,
         ));
     }
