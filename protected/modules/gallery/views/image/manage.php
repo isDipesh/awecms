@@ -17,26 +17,29 @@ if (!isset($this->menu) || $this->menu === array())
 <h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Images'); ?> </h1>
 
 <?php
-$this->widget('zii.widgets.grid.CGridView', array(
-    'id' => 'image-grid',
-    'dataProvider' => $model->search(),
-    'filter' => $model,
-    'columns' => array(
-        'id',
-        'title',
-        'description',
-        array(
-            'name' => 'album_id',
-            'value' => 'isset($data->album->id)?$data->album->id:"N/A"',
-            'filter' => CHtml::listData(Album::model()->findAll(), 'id', 'id'),
+if (count($model->search()->data)) {
+    $this->widget('zii.widgets.grid.CGridView', array(
+        'id' => 'image-grid',
+        'dataProvider' => $model->search(),
+        'filter' => $model,
+        'columns' => array(
+            'id',
+            'title',
+            'description',
+            array(
+                'name' => 'album_id',
+                'value' => 'isset($data->album->id)?$data->album->id:"N/A"',
+                'filter' => CHtml::listData(Album::model()->findAll(), 'id', 'id'),
+            ),
+            'file',
+            'mime_type',
+            'size',
+            'name',
+            array(
+                'class' => 'CButtonColumn',
+            ),
         ),
-        'file',
-        'mime_type',
-        'size',
-        'name',
-        array(
-            'class' => 'CButtonColumn',
-        ),
-    ),
-));
-?>
+    ));
+} else {
+    echo Yii::app('app', 'No results found!');
+}

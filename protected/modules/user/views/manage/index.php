@@ -58,4 +58,3 @@ if (count($model->search()->data)) {
 } else {
     echo "No results found!";
 }
-?>

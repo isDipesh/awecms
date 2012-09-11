@@ -17,31 +17,35 @@ if (!isset($this->menu) || $this->menu === array())
 </h1>
 
 <?php
-$this->widget('zii.widgets.grid.CGridView', array(
-    'id' => 'page-grid',
-    'dataProvider' => $page->search(),
-    'filter' => $page,
-    'columns' => array(
-        'id',
-        array(
-            'name' => 'user_id',
-            'value' => 'isset($data->user->username)?$data->user->username:"N/A"'
+if (count($model->search()->data)) {
+    $this->widget('zii.widgets.grid.CGridView', array(
+        'id' => 'page-grid',
+        'dataProvider' => $page->search(),
+        'filter' => $page,
+        'columns' => array(
+            'id',
+            array(
+                'name' => 'user_id',
+                'value' => 'isset($data->user->username)?$data->user->username:"N/A"'
+            ),
+            'title',
+            'status',
+            'created_at',
+            'modified_at',
+            'comment_status',
+            array(
+                'class' => 'JToggleColumn',
+                'name' => 'tags_enabled',
+                'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+                'model' => get_class($page),
+                'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
+            ),
+            'views',
+            array(
+                'class' => 'CButtonColumn',
+            ),
         ),
-        'title',
-        'status',
-        'created_at',
-        'modified_at',
-        'comment_status',
-        array(
-            'class' => 'JToggleColumn',
-            'name' => 'tags_enabled',
-            'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
-            'model' => get_class($page),
-            'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
-        ),
-        'views',
-        array(
-            'class' => 'CButtonColumn',
-        ),
-    ),
-));
+    ));
+} else {
+    echo Yii::app('app', 'No results found!');
+}

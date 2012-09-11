@@ -15,25 +15,28 @@ if (!isset($this->menu) || $this->menu === array())
 <h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Albums'); ?> </h1>
 
 <?php
-$this->widget('zii.widgets.grid.CGridView', array(
-    'id' => 'album-grid',
-    'dataProvider' => $model->search(),
-    'filter' => $model,
-    'columns' => array(
-        'id',
-        array(
-            'name' => 'page_id',
-            'value' => 'isset($data->page->title)?$data->page->title:"N/A"',
-            'filter' => CHtml::listData(Page::model()->findAll(), 'id', 'title'),
+if (count($model->search()->data)) {
+    $this->widget('zii.widgets.grid.CGridView', array(
+        'id' => 'album-grid',
+        'dataProvider' => $model->search(),
+        'filter' => $model,
+        'columns' => array(
+            'id',
+            array(
+                'name' => 'page_id',
+                'value' => 'isset($data->page->title)?$data->page->title:"N/A"',
+                'filter' => CHtml::listData(Page::model()->findAll(), 'id', 'title'),
+            ),
+            array(
+                'name' => 'thumbnail_id',
+                'value' => 'isset($data->thumbnail->id)?$data->thumbnail->id:"N/A"',
+                'filter' => CHtml::listData(Image::model()->findAll(), 'id', 'id'),
+            ),
+            array(
+                'class' => 'CButtonColumn',
+            ),
         ),
-        array(
-            'name' => 'thumbnail_id',
-            'value' => 'isset($data->thumbnail->id)?$data->thumbnail->id:"N/A"',
-            'filter' => CHtml::listData(Image::model()->findAll(), 'id', 'id'),
-        ),
-        array(
-            'class' => 'CButtonColumn',
-        ),
-    ),
-));
-?>
+    ));
+} else {
+    echo Yii::app('app', 'No results found!');
+}

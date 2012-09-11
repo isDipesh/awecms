@@ -3,6 +3,8 @@
 //collection of helper methods
 class Awecms {
 
+    public $version = '0.4b';
+
     public static function getPrimaryKey($ar) {
         if (is_numeric($ar))
             return $ar;

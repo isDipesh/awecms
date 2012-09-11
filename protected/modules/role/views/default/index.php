@@ -15,25 +15,28 @@ if (!isset($this->menu) || $this->menu === array())
 <h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Roles'); ?> </h1>
 
 <?php
-$this->widget('zii.widgets.grid.CGridView', array(
-    'id' => 'role-grid',
-    'dataProvider' => $model->search(),
-    'filter' => $model,
-    'columns' => array(
-        'id',
-        'name',
-        'description',
-        array(
-            'class' => 'JToggleColumn',
-            'name' => 'active',
-            'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
-            'model' => get_class($model),
-            'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
+if (count($model->search()->data)) {
+    $this->widget('zii.widgets.grid.CGridView', array(
+        'id' => 'role-grid',
+        'dataProvider' => $model->search(),
+        'filter' => $model,
+        'columns' => array(
+            'id',
+            'name',
+            'description',
+            array(
+                'class' => 'JToggleColumn',
+                'name' => 'active',
+                'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+                'model' => get_class($model),
+                'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
+            ),
+            array(
+                'class' => 'CButtonColumn',
+                'template' => '{update}{delete}'
+            ),
         ),
-        array(
-            'class' => 'CButtonColumn',
-            'template' => '{update}{delete}'
-        ),
-    ),
-));
-?>
+    ));
+} else {
+    echo Yii::app('app', 'No results found!');
+}

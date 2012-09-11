@@ -152,5 +152,5 @@ if (count($model->search()->data)) {
         ),
     ));
 } else {
-    echo "No results found!";
+    echo Yii::t('app', 'No results found!');
 }
