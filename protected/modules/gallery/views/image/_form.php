@@ -31,7 +31,6 @@
         <?php echo $form->error($model, 'album_id'); ?>
     </div>
 
-
     <div class="row buttons">
         <?php
         echo CHtml::submitButton(Yii::t('app', 'Save'));

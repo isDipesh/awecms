@@ -65,13 +65,13 @@
         }
     }
     ?>
-    <?php if (Yii::app()->hasModule('role')) {?>
-    <div class="row nm_row">
-        <label for="roles"><?php echo Yii::t('app', 'Roles'); ?></label>
-        <?php
-        echo CHtml::checkBoxList('User[roles]', array_map('Awecms::getPrimaryKey', $model->roles), CHtml::listData(Role::model()->findAll(), 'id', 'name'), array('attributeitem' => 'id', 'checkAll' => 'Select All'));
-        ?>
-    </div>
+    <?php if (Yii::app()->hasModule('role')) { ?>
+        <div class="row nm_row">
+            <label for="roles"><?php echo Yii::t('app', 'Roles'); ?></label>
+            <?php
+            echo CHtml::checkBoxList('User[roles]', array_map('Awecms::getPrimaryKey', $model->roles), CHtml::listData(Role::model()->findAll(), 'id', 'name'), array('attributeitem' => 'id', 'checkAll' => 'Select All'));
+            ?>
+        </div>
     <?php } ?>
 
     <div class="row buttons">
@@ -80,4 +80,4 @@
 
     <?php $this->endWidget(); ?>
 
-</div><!-- form -->
+</div>

@@ -43,12 +43,14 @@
         <?php echo $form->error($model, 'thumbnail_id'); ?>
     </div>
 
-
-
+    <div class="row buttons">
+        <?php
+        echo CHtml::submitButton(Yii::t('app', 'Save'));
+        echo CHtml::Button(Yii::t('app', 'Cancel'), array(
+            'submit' => 'javascript:history.go(-1)'));
+        ?>
+    </div>
     <?php
-    echo CHtml::submitButton(Yii::t('app', 'Save'));
-    echo CHtml::Button(Yii::t('app', 'Cancel'), array(
-        'submit' => 'javascript:history.go(-1)'));
     $this->endWidget();
     ?>
-</div> <!-- form -->
+</div>
