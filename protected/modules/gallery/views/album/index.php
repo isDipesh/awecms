@@ -8,6 +8,7 @@ if (!isset($this->menu) || $this->menu === array())
         array('label' => Yii::t('app', 'Create new album'), 'url' => array('/gallery/album/create')),
         array('label' => Yii::t('app', 'Manage albums'), 'url' => array('/gallery/album/manage')),
         array('label' => Yii::t('app', 'All images'), 'url' => array('/gallery/image')),
+//        array('label' => Yii::t('app', 'Gallery Settings'), 'url' => array('/settings/Gallery')),
     );
 ?>
 

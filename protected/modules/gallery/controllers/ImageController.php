@@ -90,9 +90,8 @@ class ImageController extends Controller {
                             "size" => $model->size,
                             "url" => $publicPath . $model->name,
                             "thumbnail_url" => $publicPath . $time . $model->name,
-                            "delete_url" => $this->createUrl("upload", array(
-                                "_method" => "delete",
-                                "file" => $path . $model->name
+                            "delete_url" => $this->createUrl("/gallery/image/delete", array(
+                                "id" => $model->id,
                             )),
                             "delete_type" => "POST"
                             )));
