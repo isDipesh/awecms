@@ -1,8 +1,8 @@
 <?php
 
-class AdminController extends Controller {
+class ManageController extends Controller {
 
-    public $defaultAction = 'admin';
+    public $defaultAction = 'manage';
     private $_model;
 
     /**
@@ -21,8 +21,8 @@ class AdminController extends Controller {
      */
     public function accessRules() {
         return array(
-            array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions' => array('admin', 'delete', 'create', 'update', 'view'),
+            array('allow', // allow admin user to perform 'manage' and 'delete' actions
+                'actions' => array('manage', 'delete', 'create', 'update', 'view'),
                 'users' => UserModule::getAdmins(),
             ),
             array('deny', // deny all users
@@ -34,7 +34,7 @@ class AdminController extends Controller {
     /**
      * Manages all models.
      */
-    public function actionAdmin() {
+    public function actionManage() {
         $model = new User('search');
         $model->unsetAttributes();  // clear any default values
         if (isset($_GET['User']))
@@ -145,7 +145,7 @@ class AdminController extends Controller {
             $model->delete();
             // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
             if (!isset($_POST['ajax']))
-                $this->redirect(array('/user/admin'));
+                $this->redirect(array('/user/manage'));
         }
         else
             throw new CHttpException(400, 'Invalid request. Please do not repeat this request again.');

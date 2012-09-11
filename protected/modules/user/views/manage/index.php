@@ -7,7 +7,7 @@ $this->breadcrumbs = array(
 $this->menu = array(
     array('label' => UserModule::t('List Users'), 'url' => array('/user')),
     array('label' => UserModule::t('Manage Users')),
-    array('label' => UserModule::t('Create User'), 'url' => array('/user/admin/create')),
+    array('label' => UserModule::t('Create User'), 'url' => array('/user/manage/create')),
     array('label' => UserModule::t('Manage Profile Fields'), 'url' => array('/user/profileField')),
     array('label' => UserModule::t('Create Profile Field'), 'url' => array('/user/profileField/create')),
 );
@@ -26,12 +26,12 @@ if (count($model->search()->data)) {
             array(
                 'name' => 'id',
                 'type' => 'raw',
-                'value' => 'CHtml::link(CHtml::encode($data->id),array("admin/update","id"=>$data->id))',
+                'value' => 'CHtml::link(CHtml::encode($data->id),array("manage/update","id"=>$data->id))',
             ),
             array(
                 'name' => 'username',
                 'type' => 'raw',
-                'value' => 'CHtml::link(UHtml::markSearch($data,"username"),array("admin/view","id"=>$data->id))',
+                'value' => 'CHtml::link(UHtml::markSearch($data,"username"),array("manage/view","id"=>$data->id))',
             ),
             array(
                 'name' => 'email',

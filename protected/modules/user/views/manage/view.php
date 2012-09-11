@@ -7,8 +7,8 @@ $this->breadcrumbs = array(
 
 $this->menu = array(
     array('label' => UserModule::t('List Users'), 'url' => array('/user')),
-    array('label' => UserModule::t('Manage Users'), 'url' => array('/user/admin')),
-    array('label' => UserModule::t('Create User'), 'url' => array('/user/admin/create')),
+    array('label' => UserModule::t('Manage Users'), 'url' => array('/user/manage')),
+    array('label' => UserModule::t('Create User'), 'url' => array('/user/manage/create')),
     array('label' => UserModule::t('Manage Profile Fields'), 'url' => array('/user/profileField')),
     array('label' => UserModule::t('Create Profile Field'), 'url' => array('/user/profileField/create')),
     //array('label' => UserModule::t('Delete User'), 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => UserModule::t('Are you sure to delete this item?'))),

@@ -7,7 +7,7 @@ $this->menu = array(
     array('label' => UserModule::t('Profile')),
     array('label' => UserModule::t('Edit'), 'url' => array('edit')),
     array('label' => UserModule::t('Change password'), 'url' => array('changepassword')),
-    ((UserModule::isAdmin()) ? array('label' => UserModule::t('Manage Users'), 'url' => array('/user/admin')) : array()),
+    ((UserModule::isAdmin()) ? array('label' => UserModule::t('Manage Users'), 'url' => array('/user/manage')) : array()),
     array('label' => UserModule::t('Logout'), 'url' => array('/user/logout')),
 );
 ?><h1><?php echo UserModule::t('Your profile'); ?></h1>

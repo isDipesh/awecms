@@ -1,12 +1,12 @@
 <?php
 $this->breadcrumbs = array(
-    UserModule::t('Users') => array('/user/admin'),
+    UserModule::t('Users') => array('/user/manage'),
     UserModule::t('Create'),
 );
 
 $this->menu = array(
     array('label' => UserModule::t('List Users'), 'url' => array('/user')),
-    array('label' => UserModule::t('Manage Users'), 'url' => array('/user/admin')),
+    array('label' => UserModule::t('Manage Users'), 'url' => array('/user/manage')),
     array('label' => UserModule::t('Create User')),
     array('label' => UserModule::t('Manage Profile Fields'), 'url' => array('/user/profileField')),
     array('label' => UserModule::t('Create Profile Field'), 'url' => array('/user/profileField/create')),

@@ -7,7 +7,7 @@ class ProfileFieldController extends Controller {
      */
     private $_model;
     private static $_widgets = array();
-    public $defaultAction = 'admin';
+    public $defaultAction = 'manage';
 
     /**
      * @return array action filters
@@ -30,7 +30,7 @@ class ProfileFieldController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions' => array('create', 'update', 'view', 'admin', 'delete'),
+                'actions' => array('create', 'update', 'view', 'manage', 'delete'),
                 'users' => UserModule::getAdmins(),
             ),
             array('deny', // deny all users
@@ -437,7 +437,7 @@ class ProfileFieldController extends Controller {
 
             // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
             if (!isset($_POST['ajax']))
-                $this->redirect(array('admin'));
+                $this->redirect(array('manage'));
         }
         else
             throw new CHttpException(400, 'Invalid request. Please do not repeat this request again.');
@@ -446,13 +446,13 @@ class ProfileFieldController extends Controller {
     /**
      * Manages all models.
      */
-    public function actionAdmin() {
+    public function actionManage() {
         $model = new ProfileField('search');
         $model->unsetAttributes();  // clear any default values
         if (isset($_GET['ProfileField']))
             $model->attributes = $_GET['ProfileField'];
 
-        $this->render('admin', array(
+        $this->render('manage', array(
             'model' => $model,
         ));
         /*
