@@ -10,7 +10,7 @@ if (!isset($this->menu) || $this->menu === array())
     );
 ?>
 
-<h1>Categories</h1>
+<h1><?php echo Yii::t('app', 'Categories'); ?></h1>
 
 <?php
 $this->widget('zii.widgets.CListView', array(
