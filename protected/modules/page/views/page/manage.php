@@ -6,9 +6,9 @@ $this->breadcrumbs = array(
 if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
         array('label' => Yii::t('app', 'All Pages'), 'url' => array('/page')),
-        array('label' => Yii::t('app', 'Create New Page'), 'url' => array('/page/create')),
+        array('label' => Yii::t('app', 'Create New Page'), 'url' => array('/page/page/create')),
         array('label' => Yii::t('app', 'Manage Pages')),
-        array('label' => Yii::t('app', 'All Contents'), 'url' => array('/page/content')),
+        array('label' => Yii::t('app', 'All Contents'), 'url' => array('/page/page/content')),
     );
 ?>
 

@@ -222,4 +222,23 @@ class Awecms {
         
     }
 
+    public static function filterMenu($menu) {
+        $path = self::removeAdmin(Yii::app()->request->pathInfo);
+        foreach ($menu as $key => $item) {
+            if (!isset($item['url'][0]))
+                continue;
+            if ($item['url'][0] == $path) {
+                $menu[$key]['url'] = null;
+            }
+        }
+        return $menu;
+    }
+
+    public static function removeAdmin($path) {
+        if (substr($path, 0, 6) == 'admin/') {
+            return substr($path, 5);
+        }
+        return $path;
+    }
+
 }

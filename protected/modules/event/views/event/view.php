@@ -9,8 +9,8 @@ if (!isset($this->menu) || $this->menu === array()) {
         array('label' => Yii::t('app', 'Update This Event'), 'url' => array('update', 'id' => $model->id)),
         array('label' => Yii::t('app', 'Delete This Event'), 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Are you sure you want to delete this item?')),
         array('label' => Yii::t('app', 'All Events'), 'url' => array('/event')),
-        array('label' => Yii::t('app', 'Create New Event'), 'url' => array('/event/create')),
-        array('label' => Yii::t('app', 'Manage All Events'), 'url' => array('/event/manage')),
+        array('label' => Yii::t('app', 'Create New Event'), 'url' => array('/event/event/create')),
+        array('label' => Yii::t('app', 'Manage All Events'), 'url' => array('/event/event/manage')),
     );
 }
 ?>

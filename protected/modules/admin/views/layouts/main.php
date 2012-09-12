@@ -79,7 +79,7 @@
                     'title' => 'Operations',
                 ));
                 $this->widget('zii.widgets.CMenu', array(
-                    'items' => $this->menu,
+                    'items' => Awecms::filterMenu($this->menu),
                     'htmlOptions' => array('class' => 'operations'),
                 ));
                 $this->endWidget();
