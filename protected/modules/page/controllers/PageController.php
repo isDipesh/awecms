@@ -50,9 +50,14 @@ class PageController extends Controller {
         $page = $this->loadModel($id);
 
         if (isset($_POST['Page'])) {
-            if (isset($_POST['Page']['slug']) && $_POST['Page']['slug'] != $page->slug->slug) {
-                $page->slug->slug = $_POST['Page']['slug'];
-                $page->slug->save();
+            if (isset($page->slug)) {
+                if (isset($_POST['Page']['slug']) && $_POST['Page']['slug'] != $page->slug->slug) {
+                    $page->slug->slug = $_POST['Page']['slug'];
+                    $page->slug->save();
+                }
+            } else {
+                $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $id));
+                $page->save();
             }
             try {
                 if ($page->save()) {
@@ -89,7 +94,7 @@ class PageController extends Controller {
         $page->unsetAttributes();
         if (isset($_GET['Page']))
             $page->setAttributes($_GET['Page']);
-        
+
         $this->render('content', array(
             'page' => $page,
         ));

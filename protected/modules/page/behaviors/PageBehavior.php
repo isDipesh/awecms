@@ -58,7 +58,7 @@ class PageBehavior extends CActiveRecordBehavior {
             }
         }
 
-//        save the page, except when the owner is page itself
+        //save the page, except when the owner is page itself
         if (!$isPage) {
             $page->type = get_class($this->owner);
             $page->save();
@@ -68,12 +68,12 @@ class PageBehavior extends CActiveRecordBehavior {
     }
 
     public function afterSave($event) {
-        //slug for pages are handled in PageController
+        //slug for pages are handled in PageController, to prevent infinite loop
         if (get_class($this->owner) == 'Page')
             return;
         $page = $this->owner->page;
         if (isset($_POST['Page']['slug'])) {
-            if ($this->owner->scenario == 'insert') {
+            if ($this->owner->scenario == 'insert' || ($this->owner->scenario == 'update' && (!isset($page->slug)))) {
                 //get the page
                 $page = Page::model()->findByPk($page->id);
                 //save the slug
