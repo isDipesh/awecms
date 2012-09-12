@@ -101,6 +101,7 @@
     $.fn.commentsList.postComment = function($dialog,id){
         var $form = $("form", $dialog);
         id = (typeof id == 'undefined') ? $dialog.data('widgetID') : id;
+        id = (typeof id == 'object') ? id.id : id;
         $.post(
             $form.attr("action"),
             $form.serialize()

@@ -19,7 +19,7 @@
             'model' => $this->model,
         ));
         echo "</div>";
-        echo CHtml::submitButton('Add!', array('onclick' => '$.fn.commentsList.postComment($(document.getElementById("addComment-' . $this->id . '")),"yw1");return false;'));
+        echo CHtml::submitButton('Add!', array('onclick' => '$.fn.commentsList.postComment($(document.getElementById("addComment-' . $this->id . '")),"' . $this->id . '");return false;'));
     } else {
         echo '<strong>' . Yii::t('CommentsModule.msg', 'You have to login add a new comment.') . '</strong>';
     }
