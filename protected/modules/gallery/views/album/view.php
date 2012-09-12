@@ -13,12 +13,11 @@ if (!isset($this->menu) || $this->menu === array()) {
         array('label' => Yii::t('app', 'Create new album'), 'url' => array('/gallery/album/create')),
         array('label' => Yii::t('app', 'Manage all abums'), 'url' => array('/gallery/album/manage')),
         array('label' => Yii::t('app', 'All images'), 'url' => array('/gallery/image')),
-            
     );
 }
 ?>
 
-<h1><?php echo $model->page->title; ?></h1>(<?php echo count($images) ?> images) 
+<h1><?php echo $model->page->title; ?></h1>(<?php echo count($images) . ' ' . Awecms::pluralize(Yii::t('app', 'image'), Yii::t('app', 'images'), count($images)); ?>) 
 
 <?php
 if (isset($model->page->content))

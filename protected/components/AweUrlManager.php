@@ -22,7 +22,7 @@ class AweUrlManager extends CUrlManager {
         }
 
         if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/' || Yii::app()->getRequest()->pathInfo == 'admin') {
-            $route = 'admin/' . $route;
+            $route = 'admin/' . trim($route, '/');
         }
 
         $url = parent::createUrlDefault($route, $params, $ampersand);
