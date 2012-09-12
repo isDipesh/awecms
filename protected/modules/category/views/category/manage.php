@@ -20,7 +20,6 @@ if (count($model->search()->data)) {
         'dataProvider' => $model->search(),
         'filter' => $model,
         'columns' => array(
-            'id',
             'name',
             'description',
             array(

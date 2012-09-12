@@ -20,25 +20,24 @@ if (count($model->search()->data)) {
         'dataProvider' => $model->search(),
         'filter' => $model,
         'columns' => array(
-            'id',
-            'venue',
-            'start',
-            'end',
             array(
-                'class' => 'JToggleColumn',
-                'name' => 'whole_day_event',
-                'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
-                'model' => get_class($model),
-                'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
-            ),
-            'organizer',
-            'type',
-            'url',
-            array(
+                'header' => 'Title',
                 'name' => 'page_id',
                 'value' => 'isset($data->page->title)?$data->page->title:"N/A"',
                 'filter' => CHtml::listData(Page::model()->findAll(), 'id', 'title'),
             ),
+            'venue',
+            'start',
+            'end',
+//            array(
+//                'class' => 'JToggleColumn',
+//                'name' => 'whole_day_event',
+//                'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+//                'model' => get_class($model),
+//                'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
+//            ),
+            'organizer',
+//            'type',
             array(
                 'class' => 'JToggleColumn',
                 'name' => 'enabled',

@@ -22,16 +22,17 @@ if (count($model->search()->data)) {
         'dataProvider' => $model->search(),
         'filter' => $model,
         'columns' => array(
-            'id',
             array(
+                'header' => 'Title',
                 'name' => 'page_id',
                 'value' => 'isset($data->page->title)?$data->page->title:"N/A"',
                 'filter' => CHtml::listData(Page::model()->findAll(), 'id', 'title'),
             ),
             array(
-                'name' => 'thumbnail_id',
-                'value' => 'isset($data->thumbnail->id)?$data->thumbnail->id:"N/A"',
-                'filter' => CHtml::listData(Image::model()->findAll(), 'id', 'id'),
+                'header' => 'Description',
+//                'name' => 'thumbnail_id',
+                'value' => 'isset($data->page->content)?$data->page->content:"N/A"',
+                'filter' => '',
             ),
             array(
                 'class' => 'CButtonColumn',

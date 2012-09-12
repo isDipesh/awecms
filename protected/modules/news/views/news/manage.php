@@ -20,12 +20,20 @@ if (count($model->search()->data)) {
         'dataProvider' => $model->search(),
         'filter' => $model,
         'columns' => array(
-            'id',
+//            'id',
             array(
+                'header' => Yii::t('app','Title'),
                 'name' => 'page_id',
                 'value' => 'isset($data->page->title)?$data->page->title:"N/A"',
                 'filter' => CHtml::listData(Page::model()->findAll(), 'id', 'title'),
             ),
+            array(
+                'header' => Yii::t('app','Author'),
+                'name' => 'page.user.username',
+            ),
+            'page.created_at',
+            'page.modified_at',
+            'page.views',
             array(
                 'class' => 'CButtonColumn',
             ),

@@ -22,24 +22,23 @@ if (count($page->search()->data)) {
         'dataProvider' => $page->search(),
         'filter' => $page,
         'columns' => array(
-            'id',
+            'title',
+            'type',
             array(
                 'name' => 'user_id',
                 'value' => 'isset($data->user->username)?$data->user->username:"N/A"'
             ),
-            'title',
             'status',
             'created_at',
             'modified_at',
-            'type',
-            'comment_status',
-            array(
-                'class' => 'JToggleColumn',
-                'name' => 'tags_enabled',
-                'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
-                'model' => get_class($page),
-                'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
-            ),
+//            'comment_status',
+//            array(
+//                'class' => 'JToggleColumn',
+//                'name' => 'tags_enabled',
+//                'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+//                'model' => get_class($page),
+//                'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
+//            ),
             'views',
             array(
                 'class' => 'CButtonColumn',

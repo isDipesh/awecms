@@ -23,18 +23,21 @@ if (count($model->search()->data)) {
         'dataProvider' => $model->search(),
         'filter' => $model,
         'columns' => array(
-            'id',
             'title',
-            'description',
+//            'description',
             array(
                 'name' => 'album_id',
-                'value' => 'isset($data->album->id)?$data->album->id:"N/A"',
-                'filter' => CHtml::listData(Album::model()->findAll(), 'id', 'id'),
+                'value' => 'isset($data->album->id)?$data->album->page->title:"N/A"',
+                'filter' => CHtml::listData(Album::model()->findAll(), 'id', 'page.title'),
             ),
             'file',
-            'mime_type',
-            'size',
-            'name',
+//            'mime_type',
+            array(
+                'header' => 'Size',
+                'name' => 'readableSize',
+                'filter' => '',
+            ),
+//            'name',
             array(
                 'class' => 'CButtonColumn',
             ),

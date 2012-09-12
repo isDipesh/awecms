@@ -42,19 +42,19 @@ if (count($model->search()->data)) {
         'dataProvider' => $model->search(),
         'filter' => $model,
         'columns' => array(
-            array(
-                'name' => 'id',
-                'header' => 'ID',
-                'htmlOptions' => array('width' => 2)
-            ),
+//            array(
+//                'name' => 'id',
+//                'header' => 'ID',
+//                'htmlOptions' => array('width' => 2)
+//            ),
             array(
                 'name' => 'owner_name',
                 'htmlOptions' => array('width' => 10),
             ),
-            array(
-                'name' => 'owner_id',
-                'htmlOptions' => array('width' => 10),
-            ),
+//            array(
+//                'name' => 'owner_id',
+//                'htmlOptions' => array('width' => 10),
+//            ),
             array(
                 'name' => 'count',
                 'header' => '#',
