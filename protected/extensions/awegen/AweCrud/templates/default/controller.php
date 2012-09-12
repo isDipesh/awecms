@@ -107,7 +107,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
             }
 
             if (!Yii::app()->getRequest()->getIsAjaxRequest()) {
-                            $this->redirect(array('admin'));
+                            $this->redirect(array('index'));
             }
         }
         else
@@ -115,14 +115,14 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
                 Yii::t('app', 'Invalid request.'));
     }
                 
-    public function actionAdmin() {
+    public function actionManage() {
         $model = new <?php echo $this->modelClass; ?>('search');
         $model->unsetAttributes();
 
         if (isset($_GET['<?php echo $this->modelClass; ?>']))
                 $model->setAttributes($_GET['<?php echo $this->modelClass; ?>']);
 
-        $this->render('admin', array(
+        $this->render('manage', array(
                 'model' => $model,
         ));
     }
@@ -140,7 +140,7 @@ class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseContro
 
             // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
             if (!isset($_GET['ajax']))
-                $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
         }
         else
             throw new CHttpException(400, 'Invalid request. Please do not repeat this request again.');

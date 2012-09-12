@@ -15,7 +15,7 @@ public function accessRules() {
 				'roles'=>array('UserCreator'),
 				),
 			array('allow', 
-				'actions'=>array('admin','delete'),
+				'actions'=>array('manage','delete'),
 				'users'=>array('admin'),
 				),
 			array('deny', 

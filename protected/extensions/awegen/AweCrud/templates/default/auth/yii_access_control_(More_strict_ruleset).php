@@ -11,7 +11,7 @@ public function accessRules() {
 				'users'=>array('@'),
 				),
 			array('allow', 
-				'actions'=>array('minicreate', 'create', 'update', 'admin', 'delete'),
+				'actions'=>array('minicreate', 'create', 'update', 'manage', 'delete'),
 				'users'=>array('admin'),
 				),
 			array('deny', 
