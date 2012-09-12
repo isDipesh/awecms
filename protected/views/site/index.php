@@ -1,12 +1,9 @@
 <?php
 
-$data = new CActiveDataProvider('Image', array(
-            'criteria' => array(
-                'condition' => 'album_id=6',
-            )
-        ));
-$this->widget('Galleria', array(
-    'dataProvider' => $data,
-    'themeName' => 'classic',
-));
-?>
+echo Yii::app()->createUrl('comments/comment/captcha');
+
+//$this->widget('CCaptcha', array(
+////    'captchaAction' => Yii::app()->createUrl('/comments/comment/captcha'),
+//));
+
+

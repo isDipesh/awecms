@@ -18,4 +18,6 @@ $this->widget('PageView', array(
     'fields' => array('title', 'content', 'sub-pages', 'categories')
 ));
 
-$this->widget('Comments', array('model' => $page));
+$this->widget('comments.widgets.ECommentsListWidget', array(
+    'model' => $page,
+));

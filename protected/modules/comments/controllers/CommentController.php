@@ -36,7 +36,7 @@ class CommentController extends Controller {
         return array(
             'captcha' => array(
                 'class' => 'CCaptchaAction',
-                'backColor' => 0xFFFFFF,
+                'backColor' => 0xAAAAAA,
             ),
         );
     }
