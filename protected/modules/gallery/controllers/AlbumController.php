@@ -13,6 +13,8 @@ class AlbumController extends Controller {
     }
 
     public function actionIndex() {
+        $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.gallery.assets'));
+        Yii::app()->getClientScript()->registerCssFile($baseUrl . '/gallery.css');
         $dataProvider = new CActiveDataProvider('Album');
         $this->render('index', array(
             'dataProvider' => $dataProvider,
@@ -20,6 +22,8 @@ class AlbumController extends Controller {
     }
 
     public function actionView($id) {
+        $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.gallery.assets'));
+        Yii::app()->getClientScript()->registerCssFile($baseUrl . '/gallery.css');
         $images = Image::model()->findAllByAttributes(array('album_id' => $id));
         $this->render('view', array(
             'model' => $this->loadModel($id),

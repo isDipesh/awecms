@@ -1,11 +1,13 @@
-<div class="view">
-
-    <h2><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id' => $data->id)); ?></h2>
+<div class="img-view-block">
 
     <a href="<?php echo Yii::app()->createUrl('gallery/image/view', array('id' => $data->id)); ?>">
-        <img width="100" height="100" src="<?php echo $data->url; ?>" alt="<?php echo $data->title; ?>">
+        <img width="120" height="120" src="<?php echo $data->url; ?>" alt="<?php echo $data->title; ?>" title="<?php echo CHtml::encode($data->title); ?>">
     </a>
     <br/>
-    <?php echo $data->description; ?>
+    <?php  if($data->description){
+    	echo $data->description;
+    } else{
+    	echo "Description not set.";
+    }?>
 
 </div>

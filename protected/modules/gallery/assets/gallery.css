@@ -1,0 +1,43 @@
+.album-desc{
+	border: 1px solid #ccc;
+	padding: 6px;
+}
+.img-view-block{
+	display: table;
+	float: left;
+	padding: 8px;
+	margin-right: 10px;
+	border: 1px solid #abc;
+}
+.img-view-block a.img-hold{
+	text-decoration: none;
+}
+.img-view-block a img{
+	border: 1px solid #ccc;
+	padding: 1px;
+	float: left;
+}
+.album-view{
+	display: table;
+	float: left;
+	padding: 8px;
+	margin: 8px;
+}
+.album-view a{
+	text-decoration: none;
+}
+.album-view img{
+	padding: 4px;
+	border: 1px solid #ddd;
+	box-shadow:
+	0 1px 1px rgba(0,0,0,0.15),
+	0 10px 0 -5px #eee,
+	0 10px 1px -4px rgba(0,0,0,0.15),
+	0 20px 0 -10px #eee,
+	0 20px 1px -9px rgba(0,0,0,0.15);
+}
+.album-view h3{
+	border-radius: 34px;
+	font-size: .8em;
+	line-height: 2.2em;
+}

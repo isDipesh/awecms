@@ -22,7 +22,7 @@ if (!isset($this->menu) || $this->menu === array()) {
 ?>
 
 <h1><?php echo $model->title; ?></h1>
-
+<br />
 <img src="<?php echo $model->url; ?>" alt="<?php echo $model->title; ?>">
 
 <p>

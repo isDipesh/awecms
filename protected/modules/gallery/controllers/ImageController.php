@@ -8,6 +8,8 @@ class ImageController extends Controller {
     private $_subfolder = '';
 
     public function actionIndex() {
+        $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.gallery.assets'));
+        Yii::app()->getClientScript()->registerCssFile($baseUrl . '/gallery.css');
         $dataProvider = new CActiveDataProvider('Image');
         $this->render('index', array(
             'dataProvider' => $dataProvider,
