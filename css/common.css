@@ -37,7 +37,7 @@
     font-size: 16px;
     font-weight: bold;
     padding: 10px 10px;
-    background: url("bg.gif") repeat-x scroll left top white;   
+    background: #333;
     color: #fff;
     text-shadow: 0px 1px 0px #666;
 }
@@ -57,8 +57,8 @@
 .portlet-content li span
 {
     padding: 10px 0px 10px 10px;
-    color: #666;
-    background: #ccc;
+    color: #fff;
+    background: #1F7AAE url(active_triangle.png) left center no-repeat;
     font-weight: bold;
     font-style: italic;
     font-size: 16px;
@@ -73,7 +73,7 @@
     color: #369;
     font-size: 14px;
     text-shadow: 0px 1px 0px #eee;
-    background: #e1e1e1;
+    background: #f4f4f4;
 }
 .operations
 {
