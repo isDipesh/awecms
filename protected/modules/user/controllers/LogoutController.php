@@ -10,7 +10,8 @@ class LogoutController extends Controller
 	public function actionLogout()
 	{
 		Yii::app()->user->logout();
-		$this->redirect(Yii::app()->controller->module->returnLogoutUrl);
+		$redirectUrl = trim(Yii::app()->controller->module->returnLogoutUrl,'/');
+		$this->redirect('/'.$redirectUrl);
 	}
 
 }

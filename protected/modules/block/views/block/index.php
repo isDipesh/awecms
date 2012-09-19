@@ -18,7 +18,6 @@ if (count($model->search()->data)) {
         'dataProvider' => $model->search(),
         'filter' => $model,
         'columns' => array(
-            'id',
             'title',
             array(
                 'class' => 'JToggleColumn',
