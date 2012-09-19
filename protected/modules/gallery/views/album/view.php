@@ -17,7 +17,7 @@ if (!isset($this->menu) || $this->menu === array()) {
 }
 ?>
 
-<h1><?php echo $model->page->title; ?></h1>(<?php echo count($images) . ' ' . Awecms::pluralize(Yii::t('app', 'image'), Yii::t('app', 'images'), count($images)); ?>) 
+<h1 class="inline"><?php echo $model->page->title; ?></h1> (<?php echo count($images) . ' ' . Awecms::pluralize(Yii::t('app', 'image'), Yii::t('app', 'images'), count($images)); ?>) 
 <br />
 <p class="album-desc">
 <?php
@@ -31,11 +31,11 @@ foreach ($images as $image)
 {
     ?>
     <div class="img-view-block">
-        <a href="<?php echo Yii::app()->createUrl('/gallery/image/view', array('id' => $image->id)); ?>" class="img-hold">
+        <a href="<?php echo Yii::app()->createUrl('gallery/image/view', array('id' => $image->id)); ?>" class="img-hold">
             <img width="140" src="<?php echo $image->url; ?>" alt="<?php echo $image->title; ?>" />
         </a>
         <br/>
-        <a href="javascript:" title="<?php echo Yii::app()->createUrl('/gallery/image/view', array('id' => $image->id)); ?>" onClick="var text = this.title; window.prompt ('Copy to clipboard: Ctrl+C, Enter', text);">Get link</a>
+        <!--<a href="javascript:" title="<?php echo Yii::app()->createUrl('gallery/image/view', array('id' => $image->id)); ?>" onClick="var text = this.title; window.prompt ('Copy to clipboard: Ctrl+C, Enter', text);">Get link</a>-->
         <br/>
         <?php echo $image->description; ?>
     </div>
