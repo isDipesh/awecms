@@ -6,11 +6,9 @@ class AweUrlManager extends CUrlManager {
     private $_rules = array();
 
     public function createUrl($route, $params = array(), $ampersand = '&') {
-//        $url = parent::createUrl($route, $params, $ampersand);
-//        print_r($url);
+
         //for admin and admin/*
         $parts = explode('/', $route);
-
         //do not mess with gii
         if ($parts[0] == 'gii')
             return parent::createUrl($route, $params, $ampersand);
