@@ -15,8 +15,8 @@ class AdminModule extends CWebModule {
     public function beforeControllerAction($controller, $action) {
         if (!Yii::app()->getModule('user')->isAdmin()) {
             if (Yii::app()->user->isGuest) {
-                Yii::app()->user->returnUrl = Yii::app()->baseUrl.'/admin';
-                $controller->redirect('/login');
+                Yii::app()->user->returnUrl = Yii::app()->baseUrl . '/admin';
+                $controller->redirect(Yii::app()->baseUrl . '/login');
             }
             throw new AweException(403);
         }

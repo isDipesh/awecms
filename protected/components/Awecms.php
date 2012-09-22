@@ -4,6 +4,15 @@
 class Awecms {
 
     public $version = '0.4b';
+    public static $start_time;
+
+    public static function powered($stats = false) {
+        echo Yii::t('app', 'Powered by') . ' ';
+        echo '<a href="http://github.com/awecms" target="_blank">AweCMS</a>.<br />';
+        //show page stats when in development mode or when explicitly asked
+        if ($stats || YII_DEBUG)
+            echo 'Page generated in ' . round((microtime(TRUE) - Awecms::$start_time), 4) . ' seconds using ' . round(memory_get_peak_usage(true) / 1048576, 2) . ' MB of memory!';
+    }
 
     public static function getPrimaryKey($ar) {
         if (is_numeric($ar))

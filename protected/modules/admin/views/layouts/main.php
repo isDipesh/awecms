@@ -22,7 +22,7 @@
                 </h2>
                 <nav id="header_right">
                     <ul id="header_links">
-                        <li><?php echo AdminModule::t('Signed in as') . ' ' . Yii::app()->user->name; ?></li> |
+                        <li><?php echo AdminModule::t('Logged in as') . ' ' . Yii::app()->user->name; ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Account Settings'), array('/user/profile/edit')); ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Visit Website'), Yii::app()->baseUrl . '/'); ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Logout'), array('/user/logout')); ?></li>
