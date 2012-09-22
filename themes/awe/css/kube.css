@@ -1,11 +1,38 @@
-/*
-	Kube Professional CSS-framework
-	
-	Copyright (c) 2012, Imperavi Inc.
+/* =Mobile (Portrait)
+-----------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  h1 { font-size: 30px; }
+  .wrapper #footer { width: 300px; }
+  #header { margin-bottom: 1em; }
+  #header h3, #nav { float: none; }
+  #header h3 { margin-bottom: 1em; }
+  #intro { text-align: center; padding-left: 0; }
+  #features { margin-left: 0; }
+  #nav ul li { float: none; margin: 0; margin-bottom: 1px; background-color: #f6f6f6; }
+  body.indexpage #footer { padding-left: 0; }
 
-	http://imperavi.com/kube/
-	
-	License: free
+  #top, #top li { text-align: center; }
+  #logo { background-position: center; width: auto; }
+  #appendix, #logo, #desc { float: none; }
+  #desc { margin-left: 0; margin-bottom: 5px; }
+  #logo { margin: 15px 0;  }
+  #appendix li { float: none; margin: 0; margin-right: 10px;  }
+}
+
+/* =Mobile (Landscape)
+-----------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .wrapper { width: 420px; }
+
+}
+/*
+  Kube Professional CSS-framework
+  
+  Copyright (c) 2012, Imperavi Inc.
+
+  http://imperavi.com/kube/
+  
+  License: free
 
 */
 /* =Base, reset, normalize
@@ -1249,8 +1276,8 @@ a.error:hover {
     float: none;
   }
   /*
-  		Blocks
-  	*/
+      Blocks
+    */
   .block-two,
   .block-three,
   .block-four,
@@ -1269,8 +1296,8 @@ a.error:hover {
     width: 100%;
   }
   /*
-  		Forms
-  	*/
+      Forms
+    */
   .forms.columnar label {
     float: none;
     text-align: left;

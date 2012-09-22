@@ -5,17 +5,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="en" />
 
-        <!-- blueprint CSS framework -->
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-        <!--[if lt IE 8]>
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-        <![endif]-->
-
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css?<?php echo time() ?>" />
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/kube.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/style.css" />
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow%7COswald%7CNova+Square%7CLobster&amp;subset=latin,latin,latin,latin">
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css?<?php echo time() ?>" />
-
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/common.css?<?php echo time() ?>" />
 
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js?<?php echo time() ?>"></script>
 
@@ -26,63 +19,38 @@
         <div class="wrapper">
             <div >
                 <header id="header">
-                    <h3>AWECMS</h3>
-                    <nav id="nav"><ul><li><span>Home</span></li><li><a href="/typography/">Typography</a></li><li><a href="/grid/">Grid</a></li><li><a href="/forms/">Forms</a></li><li><a href="/tables/">Tables</a></li><li><a href="/goodies/">Goodies</a></li><li><a href="/buttons/">Buttons</a></li></ul></nav>       
+                    <h1 class="head"><?php echo Settings::get('site','name'); ?></h1>
+                    <nav id="nav">
+                        <?php $this->widget('MenuRenderer', array('id' => 1)); ?>
+                    </nav>       
                 </header>
             </div>
-
-            <div class="row">
-                <div class="fifth">
-
-                <ul class="list-toc">
-                <li><a href="#toc-lead">Lead</a></li>
-                <li><a href="#toc-links">Links</a></li>
-                <li><a href="#toc-elements">Elements</a></li>
-                <li><a href="#toc-width">Width</a></li>
-                <li><a href="#toc-colors">Colors</a></li>   
-                <li><a href="#toc-images">Images</a></li>
-                </ul>       
-
-                </div>
-
-                <div class="">
-                    
-                </div>
-            </div>
-
-        </div>
-        <div class="container" id="page">
-
-            <div id="header">
-                <div id="logo"><?php echo Settings::get('site','name'); ?></div>
-                <?php $this->widget('LoginWidget'); ?>
-            </div><!-- header -->
-
-            <?php
-            //TODO Beautify the login widget
-            if (Yii::app()->user->isGuest)
-            //$this->widget('application.modules.user.components.LoginWidget');
-                
-                ?>
-
-            <div id="mainmenu">
-                <?php $this->widget('MenuRenderer', array('id' => 1)); ?>
-
-            </div><!-- mainmenu -->
-
-            <?php if (isset($this->breadcrumbs)): ?>
+                <?php if (isset($this->breadcrumbs)){ ?>
+                <div class="mid-bar row">
+                <?php //TODO: show up some message and breadcrumb like Home /Index when user is not signed in and is in home page ?>
                 <?php
                 $this->widget('zii.widgets.CBreadcrumbs', array(
                     'links' => $this->breadcrumbs,
                 ));
-                ?><!-- breadcrumbs -->
-            <?php endif ?>
+                }
+                ?>
+                <?php $this->widget('LoginWidget'); ?>  
+                </div>
 
-            <?php echo $content; ?>
+            <div class="row">
+                <div class="fifth">
+   
+                <?php $this->widget('LatestNews');  ?>  
+                <?php $this->widget('Events');  ?> 
 
-            
+                </div>
 
-        </div><!-- page -->
+                <div class="fourfifth">
+                    <?php echo $content; ?>
+                </div>
+            </div>
+            <footer id="footer">© <a href="/">Awecms</2012> a</footer>
+        </div>
 
     </body>
 </html>

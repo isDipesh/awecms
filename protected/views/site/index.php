@@ -1,11 +1,9 @@
 <?php
 
-$this->widget('LatestNews');
-
 $this->widget('Galleria', array(
     'dataProvider' => new CActiveDataProvider('Image', array(
         'criteria' => array(
-            'condition' => 'album_id=6',
+            'condition' => 'album_id=11',
         )
     )),
     'themeName' => 'classic',
