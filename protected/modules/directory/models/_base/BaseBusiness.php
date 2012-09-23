@@ -4,17 +4,17 @@
  * This is the model base class for the table "business".
  *
  * Columns in table "business" available as properties of the model:
- 
-      * @property integer $id
-      * @property integer $page_id
-      * @property string $phone
-      * @property string $fax
-      * @property string $email
-      * @property string $website
-      * @property string $address
-      * @property integer $place_id
-      * @property integer $district_id
-      * @property string $image
+
+ * @property integer $id
+ * @property integer $page_id
+ * @property string $phone
+ * @property string $fax
+ * @property string $email
+ * @property string $website
+ * @property string $address
+ * @property integer $place_id
+ * @property integer $district_id
+ * @property string $image
  *
  * Relations of table "business" available as properties of the model:
  * @property Page $page
@@ -23,7 +23,7 @@
  * @property BusinessCategory[] $businessCategories
  */
 abstract class BaseBusiness extends CActiveRecord {
-    
+
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
@@ -34,25 +34,27 @@ abstract class BaseBusiness extends CActiveRecord {
 
     public function rules() {
         return array(
-            array('id, page_id', 'required'),
+            array('page_id', 'required'),
             array('phone, fax, email, website, address, place_id, district_id, image', 'default', 'setOnEmpty' => true, 'value' => null),
-            array('id, page_id, place_id, district_id', 'numerical', 'integerOnly' => true),
+            array('page_id, place_id, district_id', 'numerical', 'integerOnly' => true),
             array('email', 'email'),
             array('website', 'url'),
             array('phone, fax, email, website', 'length', 'max' => 255),
             array('address, image', 'safe'),
+            array('image', 'file', 'types' => 'jpg, gif, png, rpm', 'allowEmpty' => true, 'maxSize' => '999'),
             array('id, page_id, phone, fax, email, website, address, place_id, district_id, image', 'safe', 'on' => 'search'),
         );
     }
-    
+
     public function __toString() {
         return (string) $this->phone;
     }
 
     public function behaviors() {
         return array(
-        'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
-);
+            'page-behavior' => array('class' => 'PageBehavior'),
+            'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
+        );
     }
 
     public function relations() {
@@ -97,5 +99,5 @@ abstract class BaseBusiness extends CActiveRecord {
                     'criteria' => $criteria,
                 ));
     }
-    
+
 }

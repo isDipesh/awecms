@@ -37,14 +37,16 @@ if (count($page->pages)) {
 }
 ?>
 <?php if (count($model->businesses)) { ?>
-    <h2><?php echo CHtml::link(Yii::t('app', Awecms::pluralize('Sub-Page', 'Businesses', count($model->businesses))), array('/directory/business')); ?></h2>
+    <h2><?php echo Yii::t('app', Awecms::pluralize('Business', 'Businesses', $model->businesses)); ?>:</h2>
     <ul>
         <?php
         if (is_array($model->businesses))
             foreach ($model->businesses as $foreignobj) {
 
                 echo '<li>';
-                echo CHtml::link($foreignobj->phone, array('/directory/business/view', 'id' => $foreignobj->id));
+                echo CHtml::link($foreignobj->title, array('/directory/business/view', 'id' => $foreignobj->id));
+                echo '</li>';
             }
-        ?></ul>
+        ?>
+    </ul>
 <?php } ?>

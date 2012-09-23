@@ -145,7 +145,19 @@ class PageBehavior extends CActiveRecordBehavior {
     public function getTitle() {
         if (get_class($this->owner) == 'Page')
             return $this->owner->title;
-        return $this->owner->page->title;
+        if (isset($this->owner->page))
+            return $this->owner->page->title;
+    }
+
+    public function getContent() {
+        if (get_class($this->owner) == 'Page')
+            return $this->owner->content;
+        if (isset($this->owner->page))
+            return $this->owner->page->content;
+    }
+
+    public function getDescription() {
+        return $this->content;
     }
 
     public function getParent() {
@@ -153,14 +165,13 @@ class PageBehavior extends CActiveRecordBehavior {
             return $this->owner->parent;
         $c = get_class($this->owner);
         return $c::model()->findByAttributes(array('page_id' => $this->owner->page->parent_id));
-//        print_r($m);
-//        return $this->owner->page->parent;
     }
 
     public function getPageId() {
         if (get_class($this->owner) == 'Page')
             return $this->owner->id;
-        return $this->owner->page->id;
+        if (isset($this->owner->page))
+            return $this->owner->page->id;
     }
 
 }

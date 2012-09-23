@@ -3,7 +3,7 @@
         <li>
             <?php
             $title = CHtml::encode($news->page->title);
-            echo CHtml::link($title, array('news/view', 'id' => $news->id));
+            echo CHtml::link($title, array('/news/news/view', 'id' => $news->id));
             ?>
         </li>
     <?php endforeach; ?>
