@@ -2,12 +2,51 @@
 
 class PageBehavior extends CActiveRecordBehavior {
 
+    public function getPath() {
+        if (isset(Yii::app()->getController()->module))
+            $module = Yii::app()->getController()->module->id;
+        $controller = Yii::app()->getController()->id;
+        $action = Yii::app()->getController()->getAction()->id;
+        $path = $controller . '/' . $action;
+        if (isset($module)) {
+            $path = $module . '/' . $path;
+        }
+        return $path;
+    }
+
+    public function getP() {
+        return (get_class($this->owner) == 'Page') ? $this->owner : $this->owner->page;
+    }
+
+    public function getHierarchyLinks() {
+        $links = array();
+        foreach ($this->getHierarchy() as $model) {
+            if ($model === $this->owner)
+                $links[] = $model->title;
+            else
+                $links[$model->title] = Yii::app()->createUrl($this->path, array('id' => $model->id));
+        }
+        return $links;
+    }
+
+    public function getHierarchy() {
+        $model = $this->owner;
+        $hierarchy = array();
+        //we record pages parsed already so that we don't go through them again to lock ourselves inside infinite loop
+        $parsed = array();
+        do {
+            if (in_array($model->id, $parsed))
+                break;
+            $parsed[] = $model->id;
+            array_unshift($hierarchy, $model);
+            $model = $model->parent;
+        } while ($model);
+        return $hierarchy;
+    }
+
     public function beforeValidate($event) {
-
         $isPage = (get_class($this->owner) == 'Page') ? true : false;
-
         $attributes = array();
-
         if (isset($_FILES[get_class($this->owner)])) {
             $attribute_arr = array_keys($_FILES[get_class($this->owner)]['name']);
             $attribute = $attribute_arr[0];
@@ -87,10 +126,7 @@ class PageBehavior extends CActiveRecordBehavior {
         //afterFind gets called twice for classes other than Page
         if (get_class($event->sender) != 'Page')
             return;
-        if (get_class($this->owner) == 'Page')
-            $page = $this->owner;
-        else
-            $page = $this->owner->page;
+        $page = $this->p;
         if (Yii::app()->getController()->getAction()->id == 'view') {
             //set page title
             Yii::app()->getController()->pageTitle = $page->title . ' - ' . Awecms::getSiteName();
@@ -104,6 +140,27 @@ class PageBehavior extends CActiveRecordBehavior {
         if (get_class($this->owner) == 'Page')
             return;
         $this->owner->page->delete();
+    }
+
+    public function getTitle() {
+        if (get_class($this->owner) == 'Page')
+            return $this->owner->title;
+        return $this->owner->page->title;
+    }
+
+    public function getParent() {
+        if (get_class($this->owner) == 'Page')
+            return $this->owner->parent;
+        $c = get_class($this->owner);
+        return $c::model()->findByAttributes(array('page_id' => $this->owner->page->parent_id));
+//        print_r($m);
+//        return $this->owner->page->parent;
+    }
+
+    public function getPageId() {
+        if (get_class($this->owner) == 'Page')
+            return $this->owner->id;
+        return $this->owner->page->id;
     }
 
 }

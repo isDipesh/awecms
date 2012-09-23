@@ -1,8 +1,6 @@
 <?php
-$this->breadcrumbs = array(
-    Yii::t('app', 'Business Categories') => array('/directory'),
-    Yii::t('app', $model->page->title),
-);
+$this->breadcrumbs = $model->getHierarchyLinks();
+
 if (!isset($this->menu) || $this->menu === array()) {
     $this->menu = array(
         array('label' => Yii::t('app', 'View')),
@@ -23,13 +21,15 @@ $this->widget('PageView', array(
 $page = $model->page;
 if (count($page->pages)) {
     ?>
-    <h2><?php echo CHtml::link(Yii::t('app', Awecms::pluralize('Subcategory', 'Subcategories', $page->pages)), array('/directory/categories')); ?></h2>
+    <h2><?php echo Yii::t('app', Awecms::pluralize('Subcategory', 'Subcategories', $page->pages)); ?>:</h2>
     <ul class="sub_pages">
         <?php
         if (is_array($page->pages))
             foreach ($page->pages as $foreignobj) {
+                $bizcat = BusinessCategory::model()->findByAttributes(array('page_id' => $foreignobj->id));
                 echo '<li>';
-                echo CHtml::link($foreignobj->title, array('/directory/categories/view', 'id' => $model->id));
+                echo CHtml::link($foreignobj->title, array('/directory/categories/view', 'id' => $bizcat->id));
+                echo '</li>';
             }
         ?>
     </ul>
