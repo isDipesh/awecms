@@ -27,6 +27,7 @@ class Awecms {
     }
 
     public static function pluralize($singular, $plural, $count) {
+        if (!is_integer($count)) $count = count($count);
         if ($count == 1)
             return $singular;
         return $plural;
