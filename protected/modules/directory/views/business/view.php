@@ -8,9 +8,9 @@ if (!isset($this->menu) || $this->menu === array()) {
         array('label' => Yii::t('app', 'View')),
         array('label' => Yii::t('app', 'Update'), 'url' => array('update', 'id' => $model->id)),
         array('label' => Yii::t('app', 'Delete'), 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id), 'confirm' => 'Are you sure you want to delete this item?')),
-        array('label' => Yii::t('app', 'List'), 'url' => array('index')),
-        array('label' => Yii::t('app', 'Create'), 'url' => array('create')),
-        array('label' => Yii::t('app', 'Manage'), 'url' => array('manage')),
+        array('label' => Yii::t('app', 'List All'), 'url' => array('/directory/business')),
+        array('label' => Yii::t('app', 'Add New'), 'url' => array('create')),
+        array('label' => Yii::t('app', 'Manage All'), 'url' => array('manage')),
     );
 }
 ?>
@@ -20,7 +20,7 @@ if (!isset($this->menu) || $this->menu === array()) {
 <?php
 if (isset($model->image)) {
     ?>
-    <img src="<?php echo Yii::app()->baseUrl.'/uploads/directory/'.$model->image;?>" alt="<?php echo $model->title?>"/>
+    <img src="<?php echo Yii::app()->baseUrl . '/uploads/directory/' . $model->image; ?>" alt="<?php echo $model->title ?>"/>
     <?php
 }
 ?>
