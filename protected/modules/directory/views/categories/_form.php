@@ -15,6 +15,24 @@
         'fields' => array('title', 'slug', 'parent')
     ));
     ?>
+
+    <div class="row">
+        <?php echo $form->labelEx($model, 'Description'); ?>
+        <?php
+        $page = isset($model->page) ? $model->page : new Page;
+//        $this->widget('ext.ckeditor.CKEditorWidget', array(
+//            "model" => $page,
+//            "attribute" => "content",
+//            "defaultValue" => $page->content,
+//            "config" => array(
+//                "height" => "50px",
+//                'toolbar' => 'Basic',
+//            ),
+//        ));
+        echo CHtml::textArea('Page[content]', $page->content);
+        ?>
+    </div>
+
     <div class="row buttons">
         <?php
         echo CHtml::submitButton(Yii::t('app', 'Save'));
