@@ -1,4 +1,6 @@
 #!/bin/bash -x
 cp protected/config/db.sample.php protected/config/db.php
+mkdir assets
+mkdir protected/runtime
 chmod a+w protected/runtime
 chmod a+w assets 

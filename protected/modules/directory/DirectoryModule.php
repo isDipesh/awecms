@@ -2,7 +2,7 @@
 
 class DirectoryModule extends CWebModule {
     
-    public $defaultController = 'business';
+    public $defaultController = 'categories';
 
     public function init() {
         // this method is called when the module is being created

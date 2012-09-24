@@ -4,9 +4,9 @@ $this->breadcrumbs = array(
 );
 if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
-        array('label' => Yii::t('app', 'List')),
-        array('label' => Yii::t('app', 'Create'), 'url' => array('create')),
-        array('label' => Yii::t('app', 'Manage'), 'url' => array('manage')),
+        array('label' => Yii::t('app', 'All Categories')),
+        array('label' => Yii::t('app', 'Create New Category'), 'url' => array('/directory/categories/create')),
+        array('label' => Yii::t('app', 'Manage All Categories'), 'url' => array('/directory/categories/manage')),
     );
 ?>
 

@@ -1,13 +1,13 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Business Categories') => array('index'),
+    Yii::t('app', 'Business Categories') => array('/directory/categories'),
     Yii::t('app', 'Manage'),
 );
 if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
-        array('label' => Yii::t('app', 'List'), 'url' => array('index')),
-        array('label' => Yii::t('app', 'Create'), 'url' => array('create')),
-        array('label' => Yii::t('app', 'Manage')),
+        array('label' => Yii::t('app', 'All Categories'), 'url' => array('/directory/categories')),
+        array('label' => Yii::t('app', 'Create New Category'), 'url' => array('/directory/categories/create')),
+        array('label' => Yii::t('app', 'Manage All Categories')),
     );
 ?>
 
