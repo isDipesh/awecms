@@ -16,8 +16,36 @@ if (!isset($this->menu) || $this->menu === array())
 <h1><?php echo Yii::t('app', 'Business Categories'); ?></h1>
 
 <?php
-$this->widget('zii.widgets.CListView', array(
-    'dataProvider' => $dataProvider,
-    'itemView' => '_view',
-));
+$items = array(
+    (object) array('id' => 1, 'title' => 'Software', 'parent_id' => 0),
+    (object) array('id' => 9, 'title' => 'Hardware', 'parent_id' => 0),
+    (object) array('id' => 10, 'title' => 'Linux', 'parent_id' => 1),
+    (object) array('id' => 12, 'title' => 'TV', 'parent_id' => 9),
+    (object) array('id' => 13, 'title' => 'PC', 'parent_id' => 9),
+    (object) array('id' => 14, 'title' => 'Android', 'parent_id' => 1),
+    (object) array('id' => 11, 'title' => 'JellyBean', 'parent_id' => 14),
+    (object) array('id' => 110, 'title' => 'ICS', 'parent_id' => 14),
+);
+
+
+$categories = Awecms::buildTree(Awecms::quickSort(($dataProvider->data)));
+
+writeTree($categories);
+
+function writeTree($items, $depth = 0) {
+
+    if (is_array($items)) {
+        foreach ($items as $key => $item) {
+            //print_r($category->parent_id);
+            echo $depth . $item->title;
+            echo "<br/>";
+            if (isset($item->children))
+                writeTree($item->children, $depth + 1);
+        }
+    }else {
+        echo $depth . $items->title;
+    }
+}
+
+//die();
 ?>

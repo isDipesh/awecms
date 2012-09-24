@@ -173,6 +173,15 @@ class PageBehavior extends CActiveRecordBehavior {
         return $c::model()->findByAttributes(array('page_id' => $this->owner->page->parent_id));
     }
 
+    public function getParent_id() {
+        if (get_class($this->owner) == 'Page')
+            return $this->owner->parent_id;
+        $c = get_class($this->owner);
+        $parent = $c::model()->findByAttributes(array('page_id' => $this->owner->page->parent_id));
+        if ($parent)
+            return $parent->id;
+    }
+
     public function getPageId() {
         if (get_class($this->owner) == 'Page')
             return $this->owner->id;

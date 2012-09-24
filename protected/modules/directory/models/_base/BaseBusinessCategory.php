@@ -13,6 +13,8 @@
  * @property Business[] $businesses
  */
 abstract class BaseBusinessCategory extends CActiveRecord {
+    
+    public $children;
 
     public static function model($className = __CLASS__) {
         return parent::model($className);

@@ -9,18 +9,14 @@ class ItemList extends CWidget {
     private $_processed = array();
 
     public function init() {
-
-
         //$this->id = 'menu-list-item-1';
-
         if ($this->css) {
             $css = "
 	        ";
-
             Yii::app()->clientScript->registerCoreScript('jquery');
             Yii::app()->clientScript->registerCoreScript('jquery.ui');
             Yii::app()->clientScript->registerScriptFile(Yii::app()->getModule('menu')->assetsDirectory . '/libs/nestedsortable/jquery.ui.nestedSortable.js');
-            Yii::app()->clientScript->registerCssFile(Yii::app()->getModule('menu')->assetsDirectory.'/libs/nestedsortable/nestedSortable.css');
+            Yii::app()->clientScript->registerCssFile(Yii::app()->getModule('menu')->assetsDirectory . '/libs/nestedsortable/nestedSortable.css');
             Yii::app()->clientScript->registerCss('AtHerList', $css);
         }
     }

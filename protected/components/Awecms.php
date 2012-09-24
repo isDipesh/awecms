@@ -27,7 +27,8 @@ class Awecms {
     }
 
     public static function pluralize($singular, $plural, $count) {
-        if (!is_integer($count)) $count = count($count);
+        if (!is_integer($count))
+            $count = count($count);
         if ($count == 1)
             return $singular;
         return $plural;
@@ -249,6 +250,73 @@ class Awecms {
             return substr($path, 5);
         }
         return $path;
+    }
+
+    //sort array of objects by an attribute
+    //adapted from http://www.algorithmist.com/index.php/Quicksort_non-recursive.php
+    public static function quickSort(&$array, $attribute = 'title') {
+        $cur = 1;
+        $stack[1]['l'] = 0;
+        $stack[1]['r'] = count($array) - 1;
+
+        do {
+            $l = $stack[$cur]['l'];
+            $r = $stack[$cur]['r'];
+            $cur--;
+
+            do {
+                $i = $l;
+                $j = $r;
+                $tmp = $array[(int) ( ($l + $r) / 2 )];
+
+                // partion the array in two parts.
+                // left from $tmp are with smaller values,
+                // right from $tmp are with bigger ones
+                do {
+                    while ($array[$i]->$attribute < $tmp->$attribute)
+                        $i++;
+
+                    while ($tmp->$attribute < $array[$j]->$attribute)
+                        $j--;
+
+                    // swap elements from the two sides
+                    if ($i <= $j) {
+                        $w = $array[$i];
+                        $array[$i] = $array[$j];
+                        $array[$j] = $w;
+
+                        $i++;
+                        $j--;
+                    }
+                } while ($i <= $j);
+
+                if ($i < $r) {
+                    $cur++;
+                    $stack[$cur]['l'] = $i;
+                    $stack[$cur]['r'] = $r;
+                }
+                $r = $j;
+            } while ($l < $r);
+        } while ($cur != 0);
+        return $array;
+    }
+
+    //builds tree structure from flat array of objects with parent_id
+    //adapted from http://stackoverflow.com/questions/4843945/php-tree-structure-for-categories-and-sub-categories-without-looping-a-query
+    function buildTree($items) {
+
+        $children = array();
+
+        foreach ($items as $item) {
+            $parent_id = ($item->parent_id) ? $item->parent_id : 0;
+            $children[$parent_id][] = $item;
+        }
+
+        foreach ($items as $item)
+            if (isset($children[$item->id]))
+                $item->children = $children[$item->id];
+
+        return $children[0];
     }
 
 }
