@@ -33,18 +33,19 @@ $categories = Awecms::buildTree(Awecms::quickSort(($dataProvider->data)));
 writeTree($categories);
 
 function writeTree($items, $depth = 0) {
-
+    echo '<ul>';
     if (is_array($items)) {
         foreach ($items as $key => $item) {
-            //print_r($category->parent_id);
-            echo $depth . $item->title;
-            echo "<br/>";
+//            $link = '<a href="' . Yii::app()->baseUrl . '/directory/categories/view' . $item->id . '">' . $item->title . '</a>';
+            $link = '<a href="' . Yii::app()->createUrl('directory/categories/view', array('id'=>$item->id)) . '">' . $item->title . '</a>';
+            echo '<li class="depth' . $depth . '">' . $link . '</li>';
             if (isset($item->children))
                 writeTree($item->children, $depth + 1);
         }
     }else {
         echo $depth . $items->title;
     }
+    echo '</ul>';
 }
 
 //die();

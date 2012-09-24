@@ -1,5 +1,7 @@
 <?php
-$this->breadcrumbs = $model->getHierarchyLinks();
+$this->breadcrumbs = array();
+$this->breadcrumbs[Yii::t('app', 'Business Directory')] = array('/directory');
+$this->breadcrumbs = array_merge($this->breadcrumbs, $model->getHierarchyLinks());
 
 if (!isset($this->menu) || $this->menu === array()) {
     $this->menu = array(

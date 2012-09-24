@@ -7,6 +7,8 @@ class AweUrlManager extends CUrlManager {
 
     public function createUrl($route, $params = array(), $ampersand = '&') {
 
+        $route = trim($route, '/');
+
         //for admin and admin/*
         $parts = explode('/', $route);
         //do not mess with gii
@@ -23,7 +25,7 @@ class AweUrlManager extends CUrlManager {
             $route = 'admin/' . trim($route, '/');
         }
 
-        $url = parent::createUrlDefault($route, $params, $ampersand);
+        $url = parent::createUrl($route, $params, $ampersand);
 
         //handle slugs here
         if ($slug = Slug::getSlug(preg_replace('/' . trim(Yii::app()->baseUrl, '/') . '/', '', $url, 1))) {
@@ -31,6 +33,7 @@ class AweUrlManager extends CUrlManager {
             $url = $slug;
             $url = Yii::app()->baseUrl . '/' . $url;
         }
+
         return $url;
     }
 
