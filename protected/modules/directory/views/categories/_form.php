@@ -12,7 +12,7 @@
     $this->widget('PageForm', array(
         'model' => $model,
         'form' => $form,
-        'fields' => array('title', 'slug', 'content', 'parent')
+        'fields' => array('title', 'slug', 'parent')
     ));
     ?>
     <div class="row buttons">
