@@ -23,23 +23,12 @@ $this->widget('PageView', array(
     'model' => $model,
     'fields' => array('title', 'content'),
 ));
-$page = $model->page;
-if (count($page->pages)) {
-    ?>
-    <h2><?php echo Yii::t('app', Awecms::pluralize('Subcategory', 'Subcategories', $page->pages)); ?>:</h2>
-    <ul class="sub_pages">
-        <?php
-        if (is_array($page->pages))
-            foreach ($page->pages as $foreignobj) {
-                $bizcat = BusinessCategory::model()->findByAttributes(array('page_id' => $foreignobj->id));
-                echo '<li>';
-                echo CHtml::link($foreignobj->title, array('/directory/categories/view', 'id' => $bizcat->id));
-                echo '</li>';
-            }
-        ?>
-    </ul>
-    <?php
-}
+
+
+$this->renderPartial('_tree', array(
+    'items' => $model->tree[0]->children,
+    'depth' => 0,
+));
 ?>
 <?php if (count($model->businesses)) { ?>
     <h2><?php echo Yii::t('app', Awecms::pluralize('Business', 'Businesses', $model->businesses)); ?>:</h2>

@@ -16,37 +16,30 @@ if (!isset($this->menu) || $this->menu === array())
 <h1><?php echo Yii::t('app', 'Business Categories'); ?></h1>
 
 <?php
-$items = array(
-    (object) array('id' => 1, 'title' => 'Software', 'parent_id' => 0),
-    (object) array('id' => 9, 'title' => 'Hardware', 'parent_id' => 0),
-    (object) array('id' => 10, 'title' => 'Linux', 'parent_id' => 1),
-    (object) array('id' => 12, 'title' => 'TV', 'parent_id' => 9),
-    (object) array('id' => 13, 'title' => 'PC', 'parent_id' => 9),
-    (object) array('id' => 14, 'title' => 'Android', 'parent_id' => 1),
-    (object) array('id' => 11, 'title' => 'JellyBean', 'parent_id' => 14),
-    (object) array('id' => 110, 'title' => 'ICS', 'parent_id' => 14),
-);
-
-
 $categories = Awecms::buildTree(Awecms::quickSort(($dataProvider->data)));
 
-writeTree($categories);
+$this->renderPartial('_tree', array(
+    'items' => $categories,
+    'depth' => 0,
+));
 
-function writeTree($items, $depth = 0) {
-    echo '<ul>';
-    if (is_array($items)) {
-        foreach ($items as $key => $item) {
-//            $link = '<a href="' . Yii::app()->baseUrl . '/directory/categories/view' . $item->id . '">' . $item->title . '</a>';
-            $link = '<a href="' . Yii::app()->createUrl('directory/categories/view', array('id'=>$item->id)) . '">' . $item->title . '</a>';
-            echo '<li class="depth' . $depth . '">' . $link . '</li>';
-            if (isset($item->children))
-                writeTree($item->children, $depth + 1);
-        }
-    }else {
-        echo $depth . $items->title;
-    }
-    echo '</ul>';
-}
-
-//die();
-?>
+////writeTree($categories);
+//
+//function writeTree($items, $depth = 0) {
+//    echo '<ul>';
+//    if (is_array($items)) {
+//        foreach ($items as $key => $item) {
+////            $link = '<a href="' . Yii::app()->baseUrl . '/directory/categories/view' . $item->id . '">' . $item->title . '</a>';
+//            $link = '<a href="' . Yii::app()->createUrl('directory/categories/view', array('id' => $item->id)) . '">' . $item->title . '</a>';
+//            echo '<li class="depth' . $depth . '">' . $link . '</li>';
+//            if (isset($item->children))
+//                writeTree($item->children, $depth + 1);
+//        }
+//    }else {
+//        echo $depth . $items->title;
+//    }
+//    echo '</ul>';
+//}
+//
+////die();
+//?>
