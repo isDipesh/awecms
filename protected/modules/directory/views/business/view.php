@@ -24,7 +24,7 @@ if (isset($model->image)) {
     <?php
 }
 ?>
-
+<br/>
 <?php
 if (isset($model->phone))
     echo Yii::t('app', 'Phone') . ': ' . $model->phone;

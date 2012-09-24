@@ -21,10 +21,8 @@ class BusinessController extends Controller {
         $model = new Business;
         if (isset($_POST['Business']) || isset($_POST['Page'])) {
             $model->setAttributes($_POST['Business']);
-            if ($_POST['Business']['image']) {
-                $time = time();
-                $image = CUploadedFile::getInstance($model, 'image');
-                $model->image = $time . $image;
+            if ($image = CUploadedFile::getInstance($model, 'image')) {
+                $model->image = time() . $image;
             }
 
             if (isset($_POST['Business']['page']))
@@ -38,7 +36,7 @@ class BusinessController extends Controller {
 
             try {
                 if ($model->save()) {
-                    if ($_POST['Business']['image']) {
+                    if ($image) {
                         $dir = Yii::app()->basePath . $this->imageUploadFolder;
                         if (!is_dir($dir)) {
                             mkdir($dir, 0777, true);
@@ -66,11 +64,8 @@ class BusinessController extends Controller {
         $model = $this->loadModel($id);
         if (isset($_POST['Business']) || isset($_POST['Page'])) {
             $model->setAttributes($_POST['Business']);
-
-            if ($_POST['Business']['image']) {
-                $time = time();
-                $image = CUploadedFile::getInstance($model, 'image');
-                $model->image = $time . $image;
+            if ($image = CUploadedFile::getInstance($model, 'image')) {
+                $model->image = time() . $image;
             }
 
             if (isset($_POST['Business']['page']))
@@ -91,7 +86,7 @@ class BusinessController extends Controller {
                 $model->businessCategories = array();
             try {
                 if ($model->save()) {
-                    if ($_POST['Business']['image']) {
+                    if ($image) {
                         $dir = Yii::app()->basePath . $this->imageUploadFolder;
                         if (!is_dir($dir)) {
                             mkdir($dir, 0777, true);

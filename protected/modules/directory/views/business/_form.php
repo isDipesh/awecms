@@ -84,5 +84,5 @@
             'submit' => 'javascript:history.go(-1)'));
         ?>
     </div>
-<?php $this->endWidget(); ?>
+    <?php $this->endWidget(); ?>
 </div> <!-- form -->
