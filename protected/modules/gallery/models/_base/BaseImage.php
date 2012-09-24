@@ -31,6 +31,7 @@ abstract class BaseImage extends CActiveRecord {
     public function rules() {
         return array(
             array('file', 'required'),
+            array('file', 'file', 'types' => 'jpg, gif, png', 'maxSize' => 5 * 1024 * 1024), //5 MB max size
             array('title, description, album_id, mime_type, size, name', 'default', 'setOnEmpty' => true, 'value' => null),
             array('album_id', 'numerical', 'integerOnly' => true),
             array('title, file, mime_type, size, name', 'length', 'max' => 255),
