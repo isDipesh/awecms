@@ -11,7 +11,7 @@ $this->menu=array(
 );
 ?>
 
-<h1><?php echo Yii::t('app', 'Create New') . ' ' . Yii::t('app', 'Business'); ?></h1>
+<h1><?php echo Yii::t('app', 'Add New') . ' ' . Yii::t('app', 'Entry'); ?></h1>
 <?php
 $this->renderPartial('_form', array(
 			'model' => $model,

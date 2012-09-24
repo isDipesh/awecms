@@ -10,7 +10,7 @@ $this->menu=array(
 );
 ?>
 
-<h1><?php echo Yii::t('app', 'Businesses'); ?></h1>
+<h1><?php echo Yii::t('app', 'Business Directory'); ?></h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
