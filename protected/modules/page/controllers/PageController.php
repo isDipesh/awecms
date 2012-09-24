@@ -51,10 +51,15 @@ class PageController extends Controller {
 
         if (isset($_POST['Page'])) {
             if (isset($page->slug)) {
-                if (isset($_POST['Page']['slug']) && $_POST['Page']['slug'] != $page->slug->slug) {
+                if (isset($page->slug->slug) && $_POST['Page']['slug'] != $page->slug->slug) {
+                if ($_POST['Page']['slug'] == '') {
+                    $page->slug->delete();
+                    $page->slug = NULL;
+                } else {
                     $page->slug->slug = $_POST['Page']['slug'];
                     $page->slug->save();
                 }
+            }
             } else {
                 $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $id));
                 $page->save();

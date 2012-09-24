@@ -21,8 +21,7 @@ class BusinessController extends Controller {
         $model = new Business;
         if (isset($_POST['Business']) || isset($_POST['Page'])) {
             $model->setAttributes($_POST['Business']);
-
-            if (isset($_POST['Business']['image'])) {
+            if ($_POST['Business']['image']) {
                 $time = time();
                 $image = CUploadedFile::getInstance($model, 'image');
                 $model->image = $time . $image;
@@ -39,7 +38,7 @@ class BusinessController extends Controller {
 
             try {
                 if ($model->save()) {
-                    if (isset($_POST['Business']['image'])) {
+                    if ($_POST['Business']['image']) {
                         $dir = Yii::app()->basePath . $this->imageUploadFolder;
                         if (!is_dir($dir)) {
                             mkdir($dir, 0777, true);
@@ -68,7 +67,7 @@ class BusinessController extends Controller {
         if (isset($_POST['Business']) || isset($_POST['Page'])) {
             $model->setAttributes($_POST['Business']);
 
-            if (isset($_POST['Business']['image'])) {
+            if ($_POST['Business']['image']) {
                 $time = time();
                 $image = CUploadedFile::getInstance($model, 'image');
                 $model->image = $time . $image;
@@ -92,7 +91,7 @@ class BusinessController extends Controller {
                 $model->businessCategories = array();
             try {
                 if ($model->save()) {
-                    if (isset($_POST['Business']['image'])) {
+                    if ($_POST['Business']['image']) {
                         $dir = Yii::app()->basePath . $this->imageUploadFolder;
                         if (!is_dir($dir)) {
                             mkdir($dir, 0777, true);
@@ -110,7 +109,6 @@ class BusinessController extends Controller {
                 $model->addError('', $e->getMessage());
             }
         }
-
         $this->render('update', array(
             'model' => $model,
         ));

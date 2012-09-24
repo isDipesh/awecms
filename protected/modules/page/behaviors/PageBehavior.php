@@ -91,9 +91,15 @@ class PageBehavior extends CActiveRecordBehavior {
 
         //for update, we don't have to wait for it to be saved
         if ($this->owner->scenario == 'update' && isset($_POST['Page']['slug'])) {
+
             if (isset($page->slug->slug) && $_POST['Page']['slug'] != $page->slug->slug) {
-                $page->slug->slug = $_POST['Page']['slug'];
-                $page->slug->save();
+                if ($_POST['Page']['slug'] == '') {
+                    $page->slug->delete();
+                    $page->slug = NULL;
+                } else {
+                    $page->slug->slug = $_POST['Page']['slug'];
+                    $page->slug->save();
+                }
             }
         }
 

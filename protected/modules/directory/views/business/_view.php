@@ -1,18 +1,18 @@
 <div class="view">
 
     <h2><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id' => $data->id)); ?></h2>
-
+    <div class="left">
     <?php
     if (!empty($data->phone)) {
         ?>
         <div class="field">
             <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('email')); ?>:</b>
+                <b><?php echo CHtml::encode($data->getAttributeLabel('phone')); ?>:</b>
             </div>
             <div class="field_value">
 
                 <?php
-                echo CHtml::mailto($data->email);
+                echo $data->phone;
                 ?>
 
             </div>
@@ -56,70 +56,37 @@
         <?php
     }
     ?>
-    <?php
-    if (!empty($data->address)) {
-        ?>
-        <div class="field">
-            <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('address')); ?>:</b>
-            </div>
-            <div class="field_value">
-
-                <?php
-                echo CHtml::encode($data->address);
-                ?>
-
-            </div>
-        </div>
+</div>
+    <div class="right">
         <?php
-    }
-    ?>
-    <?php
-    if (!empty($data->place->other_names)) {
+        if (!empty($data->address)) {
+            ?>
+            <div class="field">
+                <div class="field_name">
+                    <b><?php echo CHtml::encode($data->getAttributeLabel('address')); ?>:</b>
+                </div>
+                <div class="field_value">
+                    <?php
+                    echo nl2br($data->address);
+                    ?>
+                </div>
+            </div>
+            <?php
+        }
         ?>
-        <div class="field">
-            <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('place_id')); ?>:</b>
-            </div>
-            <div class="field_value">
 
-                <?php
-                echo CHtml::encode($data->place->other_names);
-                ?>
-
-            </div>
-        </div>
         <?php
-    }
-    ?>
-    <?php
-    if (!empty($data->district->name)) {
+        if (!empty($data->district->name)) {
+            ?>
+            <div class="field">
+                <div class="field_value">
+                    <?php
+                    echo CHtml::encode($data->district->name);
+                    ?>
+                </div>
+            </div>
+            <?php
+        }
         ?>
-        <div class="field">
-            <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('district_id')); ?>:</b>
-            </div>
-            <div class="field_value">
-
-                <?php
-                echo CHtml::encode($data->district->name);
-                ?>
-
-            </div>
-        </div>
-        <?php
-    }
-    ?>
-    <?php
-    if (!empty($data->image)) {
-        ?>
-        <div class="field">
-            <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
-            </div>
-            <div class="field_value">
-                <img alt="<?php echo $data->phone ?>" title="<?php echo $data->phone ?>" src="<?php echo $data->image ?>" /></div></div>
-        <?php
-    }
-    ?>
+    </div>
 </div>

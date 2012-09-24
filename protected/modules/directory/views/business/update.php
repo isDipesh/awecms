@@ -1,9 +1,11 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Businesses') => array('index'),
-    Yii::t('app', $model->phone) => array('view', 'id' => $model->id),
+    Yii::t('app', 'Business Directory') => array('/directory/business'),
+    Yii::t('app', $model->title) => array('view', 'id' => $model->id),
     Yii::t('app', 'Update'),
 );
+//print_r($model);
+//die();
 if (!isset($this->menu) || $this->menu === array())
     $this->menu = array(
         array('label' => Yii::t('app', 'View'), 'url' => array('view', 'id' => $model->id)),

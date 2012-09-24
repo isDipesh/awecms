@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Businesses') => array('index'),
-    Yii::t('app', 'Create'),
+    Yii::t('app', 'Business Directory') => array('/directory/business'),
+    Yii::t('app', 'Add New'),
 );
 if(!isset($this->menu) || $this->menu === array())
 $this->menu=array(
@@ -11,7 +11,7 @@ $this->menu=array(
 );
 ?>
 
-<h1><?php echo Yii::t('app', 'Add New') . ' ' . Yii::t('app', 'Entry'); ?></h1>
+<h1><?php echo Yii::t('app', 'Add New') . ' ' . Yii::t('app', 'Business'); ?></h1>
 <?php
 $this->renderPartial('_form', array(
 			'model' => $model,

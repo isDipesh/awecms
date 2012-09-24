@@ -8,14 +8,14 @@ class Slug extends BaseSlug {
         return parent::model($className);
     }
 
-    public static function set($slug, $path, $enabled = true) {
-        $sl = new self;
-        $sl->slug = self::cleanText($slug);
-
-        $sl->path = $path;
-        $sl->enabled = $enabled;
-        $sl->save();
-    }
+//    public static function set($slug, $path, $enabled = true) {
+//        $sl = new self;
+//        $sl->slug = self::cleanText($slug);
+//
+//        $sl->path = $path;
+//        $sl->enabled = $enabled;
+//        $sl->save();
+//    }
 
     public static function getPath($slug) {
         $slug = trim($slug, '/');
@@ -93,12 +93,12 @@ class Slug extends BaseSlug {
         return $clean;
     }
 
-    //TODO make unique, add counter to end for repeated slug
     /*
      * Ensures the given slug is unique in the database
      * @param string $text The text to check
      * @return string The unique slug
      */
+
     public function checkUniqueSlug($text) {
         $sql = "SELECT COUNT(" . $this->owner->getMetaData()->tableSchema->primaryKey . ") FROM " . $this->owner->tableName() . " WHERE " . $this->slugAttribute . " = :slug";
         $cmd = yii::app()->db->createCommand($sql);

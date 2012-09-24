@@ -8,6 +8,10 @@ $(document).ready(function(){
         toggleSlugEditor();
     });
     
+    $('#slug_label').click(function() {
+        toggleSlugEditor();
+    });
+    
     $('#Page_slug').blur(function() {
         toggleSlugEditor();
     });

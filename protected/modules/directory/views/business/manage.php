@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Businesses') => array('index'),
+    Yii::t('app', 'Business Directory') => array('/directory/business'),
     Yii::t('app', 'Manage'),
 );
 if (!isset($this->menu) || $this->menu === array())
@@ -11,7 +11,7 @@ if (!isset($this->menu) || $this->menu === array())
     );
 ?>
 
-<h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Businesses'); ?> </h1>
+<h1> <?php echo Yii::t('app', 'Manage'); ?> <?php echo Yii::t('app', 'Business Directory'); ?> </h1>
 
 <?php
 if (count($model->search()->data)) {

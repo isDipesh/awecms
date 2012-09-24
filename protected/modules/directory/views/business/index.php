@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-    Yii::t('app', 'Businesses')
+    Yii::t('app', 'Business Directory')
 );
 if(!isset($this->menu) || $this->menu === array())
 $this->menu=array(

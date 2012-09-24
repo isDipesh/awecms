@@ -9,13 +9,13 @@ class PageForm extends CWidget {
     private $page;
 
     public function init() {
-        
+
         //check for required arguments
-        if(!$this->model)
-            throw new CHttpException('500','$model must be provided for PageForm Widget');
-        if(!$this->form)
-            throw new CHttpException('500','$form must be provided for PageForm Widget');
-        
+        if (!$this->model)
+            throw new CHttpException('500', '$model must be provided for PageForm Widget');
+        if (!$this->form)
+            throw new CHttpException('500', '$form must be provided for PageForm Widget');
+
         //users do not tend to use array for single item
         if (!is_array($this->fields)) {
             $tmp = array();
@@ -30,6 +30,7 @@ class PageForm extends CWidget {
             $this->page = $this->model->page; //for update
         else
             $this->page = new Page; //for create
+
 
             
 //get scenario
@@ -49,7 +50,7 @@ class PageForm extends CWidget {
                     <div class="row">
                         <?php echo $form->labelEx($page, 'title'); ?>
                         <?php echo $form->textField($page, 'title', array('size' => 60, 'maxlength' => 255)); ?>
-                        <?php echo $form->error($page, 'title'); ?>
+                    <?php echo $form->error($page, 'title'); ?>
                     </div>
                     <?php
                     break;
@@ -60,14 +61,14 @@ class PageForm extends CWidget {
                         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/create_slug.js');
                     ?>
                     <div class="row sticky">
-                        <?php echo $form->labelEx($page, 'slug'); ?>
-                        <div id="slug_holder">
+                            <?php echo $form->labelEx($page, 'slug', array('id' => 'slug_label', 'style' => 'display:inline;')); ?>
+                        <div id="slug_holder" style="display:inline">
                             <?php
-                            $slug = isset($page->slug->slug) ? $page->slug->slug : '&nbsp;';
+                            $slug = isset($page->slug->slug) ? $page->slug->slug : '';
                             echo $slug;
                             ?>
                         </div>
-                        <?php echo CHtml::textField("Page[slug]", $slug, array('size' => 65, 'style' => 'display:none;')); ?>
+                    <?php echo CHtml::textField("Page[slug]", $slug, array('size' => 65, 'style' => 'display:none;')); ?>
                     </div>
                     <?php
                     break;
@@ -87,7 +88,7 @@ class PageForm extends CWidget {
                             ),
                         ));
                         ?>
-                        <?php echo $form->error($page, 'content'); ?>
+                    <?php echo $form->error($page, 'content'); ?>
                     </div>
                     <?php
                     break;
@@ -99,7 +100,7 @@ class PageForm extends CWidget {
                         <div class="row">
                             <?php echo $form->labelEx($page, 'user_id'); ?>
                             <?php echo $form->dropDownList($page, 'user', CHtml::listData(User::model()->findAll(), 'id', 'username'), array('prompt' => 'None')); ?>
-                            <?php echo $form->error($page, 'user_id'); ?>
+                        <?php echo $form->error($page, 'user_id'); ?>
                         </div>
                         <?php
                     }
@@ -115,7 +116,7 @@ class PageForm extends CWidget {
                             'draft' => Yii::t('app', 'Draft'),
                         ));
                         ?>
-                        <?php echo $form->error($page, 'status'); ?>
+                    <?php echo $form->error($page, 'status'); ?>
                     </div>
                     <?php
                     break;
@@ -131,7 +132,7 @@ class PageForm extends CWidget {
                         }
                         echo $form->dropDownList($page, 'parent', CHtml::listData($allModels, 'id', 'title'), array('prompt' => 'None'));
                         ?>
-                        <?php echo $form->error($page, 'parent_id'); ?>
+                    <?php echo $form->error($page, 'parent_id'); ?>
                     </div>
                     <?php
                     break;

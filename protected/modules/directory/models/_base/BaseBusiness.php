@@ -41,7 +41,7 @@ abstract class BaseBusiness extends CActiveRecord {
             array('website', 'url'),
             array('phone, fax, email, website', 'length', 'max' => 255),
             array('address, image', 'safe'),
-            array('image', 'file', 'types' => 'jpg, gif, png, rpm', 'allowEmpty' => true, 'maxSize' => '999'),
+            array('image', 'file', 'types' => 'jpg, gif, png', 'allowEmpty' => true, 'maxSize' => 5*1024*1024), //5 MB max size
             array('id, page_id, phone, fax, email, website, address, place_id, district_id, image', 'safe', 'on' => 'search'),
         );
     }
