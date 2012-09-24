@@ -12,20 +12,27 @@ class BusinessCategory extends BaseBusinessCategory {
         return parent::init();
     }
 
+    public function getAllBusinesses() {
+        $dataProvider = new CActiveDataProvider('BusinessCategory');
+        $tree = $this->getTree();
+        //all children w/o duplicates
+        $allChildren = array_map("unserialize", array_unique(array_map("serialize", Awecms::getAllChildren($tree))));
+        $businesses = array();
+        foreach ($allChildren as $cat) {
+            if ($cat->businesses)
+                $businesses[] = $cat->businesses;
+        }
+        return $businesses;
+    }
+
+    public function getCount() {
+        return count($this->allBusinesses);
+    }
+
     public function getTree() {
         $dataProvider = new CActiveDataProvider('BusinessCategory');
-//        $items = array(
-//            (object) array('id' => 1, 'title' => 'Software', 'parent_id' => 0),
-//            (object) array('id' => 9, 'title' => 'Hardware', 'parent_id' => 0),
-//            (object) array('id' => 10, 'title' => 'Linux', 'parent_id' => 1),
-//            (object) array('id' => 7, 'title' => 'TV', 'parent_id' => 9),
-//            (object) array('id' => 13, 'title' => 'PC', 'parent_id' => 9),
-//            (object) array('id' => 12, 'title' => 'Android', 'parent_id' => 1),
-//            (object) array('id' => 11, 'title' => 'JellyBean', 'parent_id' => 12),
-//            (object) array('id' => 110, 'title' => 'ICS', 'parent_id' => 12),
-//        );
+
         $whole = Awecms::buildTree(Awecms::quickSort(($dataProvider->data)));
-//        $whole = Awecms::buildTree(Awecms::quickSort(($items)));
         $part = self::getNode($whole, $this->id);
 //        print_r($part);
         return array($part);

@@ -19,10 +19,6 @@ if (!isset($this->menu) || $this->menu === array()) {
 ?>
 
 <?php
-$this->widget('PageView', array(
-    'model' => $model,
-    'fields' => array('title', 'content'),
-));
 
 
 $this->renderPartial('_tree', array(
@@ -30,7 +26,15 @@ $this->renderPartial('_tree', array(
     'depth' => 0,
 ));
 ?>
-<?php if (count($model->businesses)) { ?>
+<?php
+print_r($model->allBusinesses);
+
+echo "haha";
+
+//print_r($model);
+
+if (count($model->businesses)) {
+    ?>
     <h2><?php echo Yii::t('app', Awecms::pluralize('Business', 'Businesses', $model->businesses)); ?>:</h2>
     <ul>
         <?php

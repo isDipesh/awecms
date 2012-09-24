@@ -5,6 +5,7 @@ class Awecms {
 
     public $version = '0.4b';
     public static $start_time;
+    public static $tmp;
 
     public static function powered($stats = false) {
         echo Yii::t('app', 'Powered by') . ' ';
@@ -317,6 +318,23 @@ class Awecms {
                 $item->children = $children[$item->id];
 
         return $children[0];
+    }
+
+    public static function getAllChildren($a) {
+//        print_r($a);
+        $results = array();
+        if (is_array($a)) {
+            foreach ($a as $item) {
+                $results[] = $item;
+                $results = array_merge($results, self::getAllChildren($item));
+            }
+        } elseif (isset($a->children)) {
+            $results[] = $a;
+            $results = array_merge($results, self::getAllChildren($a->children));
+        } else {
+            $results[] = $a;
+        }
+        return $results;
     }
 
 }
