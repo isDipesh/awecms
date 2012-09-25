@@ -128,19 +128,25 @@ class PageBehavior extends CActiveRecordBehavior {
         }
     }
 
-    public function afterFind($event) {
-        //afterFind gets called twice for classes other than Page
-        if (get_class($event->sender) != 'Page')
-            return;
-        $page = $this->p;
-        if (Yii::app()->getController()->getAction()->id == 'view') {
-            //set page title
-            Yii::app()->getController()->pageTitle = $page->title . ' - ' . Awecms::getSiteName();
-            //increase view count
-            $page->views++;
-            $page->save();
-        }
-    }
+//    public function afterFind($event) {
+//        //afterFind gets called twice for classes other than Page
+//        if (get_class($event->sender) != 'Page')
+//            return;
+//        $page = $this->p;
+//        $params = Yii::app()->getController()->actionParams;
+//        $class = get_class($this->owner);
+//        echo $class;
+//        echo $params['id'];
+//        echo $page->id;
+//        if (Yii::app()->getController()->getAction()->id == 'view') {
+//            //set page title
+//            Yii::app()->getController()->pageTitle = $page->title . Awecms::getTitlePrefix();
+//            //increase view count
+//
+//            $page->views++;
+//            $page->save();
+//        }
+//    }
 
     public function afterDelete($event) {
         if (get_class($this->owner) == 'Page')

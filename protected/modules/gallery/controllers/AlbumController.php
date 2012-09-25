@@ -25,8 +25,15 @@ class AlbumController extends Controller {
         $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.gallery.assets'));
         Yii::app()->getClientScript()->registerCssFile($baseUrl . '/gallery.css');
         $images = Image::model()->findAllByAttributes(array('album_id' => $id));
+        $model = $this->loadModel($id);
+        $page = $model->page;
+        //set page title
+        Yii::app()->getController()->pageTitle = $page->title . Awecms::getTitlePrefix();
+        //increase view count
+        $page->views++;
+        $page->save();
         $this->render('view', array(
-            'model' => $this->loadModel($id),
+            'model' => $model,
             'images' => $images
         ));
     }

@@ -12,8 +12,15 @@ class BusinessController extends Controller {
     }
 
     public function actionView($id) {
+        $model = $this->loadModel($id);
+        $page = $model->page;
+        //set page title
+        Yii::app()->getController()->pageTitle = $page->title . Awecms::getTitlePrefix();
+        //increase view count
+        $page->views++;
+        $page->save();
         $this->render('view', array(
-            'model' => $this->loadModel($id),
+            'model' => $model,
         ));
     }
 

@@ -18,8 +18,14 @@ class PageController extends Controller {
     }
 
     public function actionView($id) {
+        $page = $this->loadModel($id);
+        //set page title
+        Yii::app()->getController()->pageTitle = $page->title . Awecms::getTitlePrefix();
+        //increase view count
+        $page->views++;
+        $page->save();
         $this->render('view', array(
-            'page' => $this->loadModel($id),
+            'page' => $page,
         ));
     }
 
@@ -52,14 +58,14 @@ class PageController extends Controller {
         if (isset($_POST['Page'])) {
             if (isset($page->slug)) {
                 if (isset($page->slug->slug) && $_POST['Page']['slug'] != $page->slug->slug) {
-                if ($_POST['Page']['slug'] == '') {
-                    $page->slug->delete();
-                    $page->slug = NULL;
-                } else {
-                    $page->slug->slug = $_POST['Page']['slug'];
-                    $page->slug->save();
+                    if ($_POST['Page']['slug'] == '') {
+                        $page->slug->delete();
+                        $page->slug = NULL;
+                    } else {
+                        $page->slug->slug = $_POST['Page']['slug'];
+                        $page->slug->save();
+                    }
                 }
-            }
             } else {
                 $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $id));
                 $page->save();

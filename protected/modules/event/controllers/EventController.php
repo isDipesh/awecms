@@ -16,9 +16,15 @@ class EventController extends Controller {
         $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.event.assets'));
         Yii::app()->getClientScript()->registerCssFile($baseUrl . '/hotDate.css');
         Yii::app()->getClientScript()->registerCssFile($baseUrl . '/events.css');
-
+        $model = $this->loadModel($id);
+        $page = $model->page;
+        //set page title
+        Yii::app()->getController()->pageTitle = $page->title . Awecms::getTitlePrefix();
+        //increase view count
+        $page->views++;
+        $page->save();
         $this->render('view', array(
-            'model' => $this->loadModel($id),
+            'model' => $model,
         ));
     }
 

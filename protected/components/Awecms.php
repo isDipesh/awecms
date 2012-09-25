@@ -26,6 +26,10 @@ class Awecms {
             return $name;
         return Yii::app()->name;
     }
+    
+    public static function getTitlePrefix(){
+        return ' - ' . Awecms::getSiteName();
+    }
 
     public static function pluralize($singular, $plural, $count) {
         if (!is_integer($count))
