@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 24, 2012 at 04:31 PM
+-- Generation Time: Sep 25, 2012 at 04:16 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.6
 
@@ -162,29 +162,15 @@ CREATE TABLE IF NOT EXISTS `business` (
   KEY `place_id` (`place_id`),
   KEY `district_id` (`district_id`),
   KEY `id` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
 -- Dumping data for table `business`
 --
 
 INSERT INTO `business` (`id`, `page_id`, `phone`, `fax`, `email`, `website`, `address`, `place_id`, `district_id`, `image`) VALUES
-(1, 505, '98765', '987', 'info@nepzilla.com', 'http://nepzilla.com', 'Prayag Marga\r\nbaneshwor', NULL, 35, '1348503707slide1.jpg'),
-(2, 509, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'donatelife.jpg'),
-(3, 510, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'donatelife.jpg'),
-(4, 511, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'donatelife.jpg'),
-(5, 512, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'donatelife.jpg'),
-(6, 513, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1348432801slide3.jpg'),
-(7, 514, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1348432812slide3.jpg'),
-(8, 515, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1348433055slide3.jpg'),
-(9, 517, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1348433422slide3.jpg'),
-(10, 524, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1348433794'),
-(11, 525, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1348467518'),
-(12, 526, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1348467589'),
-(13, 527, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1348467628'),
-(14, 528, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1348467635'),
-(15, 529, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(16, 530, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(17, 540, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(18, 541, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -197,16 +183,21 @@ CREATE TABLE IF NOT EXISTS `business_category` (
   `page_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `page_id` (`page_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `business_category`
 --
 
 INSERT INTO `business_category` (`id`, `page_id`) VALUES
-(2, 501),
-(3, 502),
-(5, 506);
+(6, 532),
+(7, 533),
+(8, 534),
+(9, 535),
+(10, 536),
+(11, 537),
+(12, 538),
+(13, 539);
 
 -- --------------------------------------------------------
 
@@ -226,12 +217,8 @@ CREATE TABLE IF NOT EXISTS `business_nm_category` (
 --
 
 INSERT INTO `business_nm_category` (`business_id`, `category_id`) VALUES
-(1, 2),
-(2, 2),
-(3, 2),
-(4, 2),
-(5, 2),
-(1, 3);
+(18, 11),
+(17, 12);
 
 -- --------------------------------------------------------
 
@@ -321,40 +308,6 @@ CREATE TABLE IF NOT EXISTS `comment_setting` (
 
 INSERT INTO `comment_setting` (`id`, `model`, `registeredOnly`, `useCaptcha`, `allowSubcommenting`, `premoderate`, `isSuperuser`, `orderComments`, `useGravatar`) VALUES
 (1, 'default', 0, 1, 1, 1, 'Yii::app()->getModule("user")->isAdmin()', 'ASC', 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `content`
---
-
-CREATE TABLE IF NOT EXISTS `content` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) DEFAULT NULL,
-  `title` text CHARACTER SET latin1 NOT NULL,
-  `status` varchar(20) CHARACTER SET latin1 NOT NULL DEFAULT 'published',
-  `created_at` datetime NOT NULL,
-  `modified_at` datetime NOT NULL,
-  `parent` int(11) DEFAULT NULL,
-  `order` int(11) NOT NULL DEFAULT '0',
-  `type` varchar(20) CHARACTER SET latin1 NOT NULL,
-  `comment_status` varchar(20) CHARACTER SET latin1 NOT NULL DEFAULT 'open',
-  `tags_enabled` tinyint(1) NOT NULL DEFAULT '1',
-  `permission` varchar(20) CHARACTER SET latin1 NOT NULL DEFAULT 'all',
-  `password` varchar(20) CHARACTER SET latin1 DEFAULT NULL,
-  `views` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `user_id` (`user_id`),
-  KEY `parent` (`parent`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
-
---
--- Dumping data for table `content`
---
-
-INSERT INTO `content` (`id`, `user_id`, `title`, `status`, `created_at`, `modified_at`, `parent`, `order`, `type`, `comment_status`, `tags_enabled`, `permission`, `password`, `views`) VALUES
-(1, 1, 'Title', 'published', '2012-05-05 00:00:00', '2012-05-05 00:00:00', 1, 0, 'post', 'open', 1, 'all', 'password', 0),
-(4, NULL, 'Page Title Here', 'published', '2012-05-05 00:00:00', '2012-05-05 00:00:00', 1, 0, 'post', 'open', 1, 'all', 'password', 0);
 
 -- --------------------------------------------------------
 
@@ -593,7 +546,7 @@ CREATE TABLE IF NOT EXISTS `menu_item` (
   `rgt` int(11) NOT NULL,
   `name` varchar(128) NOT NULL,
   `enabled` tinyint(1) NOT NULL DEFAULT '1',
-  `content_id` int(11) DEFAULT NULL,
+  `target` varchar(10) DEFAULT NULL,
   `description` text,
   `link` text,
   `type` varchar(50) NOT NULL DEFAULT 'url',
@@ -602,13 +555,13 @@ CREATE TABLE IF NOT EXISTS `menu_item` (
   KEY `menu_id` (`menu_id`),
   KEY `menu_id_2` (`menu_id`),
   KEY `parent_id` (`parent_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=78 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=79 ;
 
 --
 -- Dumping data for table `menu_item`
 --
 
-INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `name`, `enabled`, `content_id`, `description`, `link`, `type`, `role`) VALUES
+INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `name`, `enabled`, `target`, `description`, `link`, `type`, `role`) VALUES
 (34, 1, 0, 1, 2, 3, 'Home', 1, NULL, '', '/', 'url', 'all'),
 (45, 2, 0, 1, 4, 17, 'Users', 1, NULL, NULL, '/user', 'url', 'super'),
 (46, 2, 45, 2, 7, 8, 'Manage Users', 1, NULL, NULL, '/user/admin', 'url', 'super'),
@@ -634,7 +587,8 @@ INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `n
 (72, 2, 60, 2, 27, 28, 'Files', 1, NULL, NULL, '/file', 'url', 'super'),
 (74, 2, 60, 2, 21, 22, 'Blocks', 1, NULL, '', '/block', 'module', 'all'),
 (76, 1, 0, 1, 10, 11, 'Event', 1, NULL, '', '/event', 'module', NULL),
-(77, 3, 0, 1, 44, 45, 'E-mail', 1, NULL, 'Check you e-mail', 'http://webmail.hotc.org.np/', 'url', 'all');
+(77, 3, 0, 1, 44, 45, 'E-mail', 1, NULL, 'Check you e-mail', 'http://webmail.hotc.org.np/', 'url', 'all'),
+(78, 1, 0, 1, 46, 47, 'Name', 1, NULL, '', '/comments', 'module', NULL);
 
 -- --------------------------------------------------------
 
@@ -647,19 +601,7 @@ CREATE TABLE IF NOT EXISTS `news` (
   `page_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `page_id` (`page_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
-
---
--- Dumping data for table `news`
---
-
-INSERT INTO `news` (`id`, `page_id`) VALUES
-(4, 475),
-(6, 477),
-(7, 478),
-(10, 496),
-(11, 499),
-(12, 500);
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 -- --------------------------------------------------------
 
@@ -689,59 +631,52 @@ CREATE TABLE IF NOT EXISTS `page` (
   KEY `user_id` (`user_id`),
   KEY `parent` (`parent_id`),
   KEY `slug` (`slug_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=532 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=544 ;
 
 --
 -- Dumping data for table `page`
 --
 
 INSERT INTO `page` (`id`, `user_id`, `title`, `content`, `status`, `created_at`, `modified_at`, `parent_id`, `order`, `type`, `comment_status`, `tags_enabled`, `permission`, `password`, `views`, `layout`, `slug_id`) VALUES
-(199, 1, 'Another Event', '<p>\r\n	Everybody is welcome!</p>\r\n', 'published', '2012-07-28 01:14:45', '2012-07-29 12:35:49', NULL, 0, 'Event', 'open', 1, 'all', NULL, 3, NULL, NULL),
-(204, 1, 'Moz Fest', '<p>\r\n	This is the description</p>\r\n', 'published', '2012-07-28 01:21:46', '2012-09-24 00:27:35', NULL, 0, 'Event', 'open', 1, 'all', NULL, 68, NULL, NULL),
+(199, 1, 'Another Event', '<p>\r\n	Everybody is welcome!</p>\r\n', 'published', '2012-07-28 01:14:45', '2012-09-25 21:17:17', NULL, 0, 'Event', 'open', 1, 'all', NULL, 5, NULL, NULL),
+(204, 1, 'Moz Fest', '<p>\r\n	This is the description</p>\r\n', 'published', '2012-07-28 01:21:46', '2012-09-25 21:17:10', NULL, 0, 'Event', 'open', 1, 'all', NULL, 70, NULL, NULL),
 (209, 1, 'tits', NULL, 'published', '2012-07-28 16:36:57', '2012-07-28 20:59:50', NULL, 0, 'Event', 'open', 1, 'all', NULL, 9, NULL, NULL),
 (210, 1, 'tada', '<p>\r\n	nana</p>\r\n', 'published', '2012-07-28 19:49:32', '2012-07-29 13:20:53', NULL, 0, 'Event', 'open', 1, 'all', NULL, 5, NULL, NULL),
 (219, 1, 'new event', NULL, 'published', '2012-09-07 21:53:29', '2012-09-09 21:07:29', NULL, 0, 'Event', 'open', 1, 'all', NULL, 11, NULL, NULL),
-(458, 1, 'Slideshow', 'Album Description', 'published', '2012-09-11 01:42:25', '2012-09-24 22:00:40', NULL, 0, 'Album', 'open', 1, 'all', NULL, 150, NULL, NULL),
+(458, 1, 'Slideshow', 'Album Description', 'published', '2012-09-11 01:42:25', '2012-09-25 15:06:59', NULL, 0, 'Album', 'open', 1, 'all', NULL, 152, NULL, NULL),
 (471, 1, 'Another album', NULL, 'published', '2012-09-11 23:11:38', '2012-09-12 12:34:31', NULL, 0, 'Album', 'open', 1, 'all', NULL, 7, NULL, NULL),
 (474, 1, 'New album here', 'Description here', 'published', '2012-09-12 03:53:29', '2012-09-12 12:12:27', NULL, 0, 'Album', 'open', 1, 'all', NULL, 5, NULL, NULL),
-(475, 1, 'poiyt', '<p>\r\n	rtyuioasdcs</p>\r\n', 'published', '2012-09-12 12:47:23', '2012-09-24 22:00:41', NULL, 0, 'News', 'open', 1, 'all', NULL, 300, NULL, NULL),
+(475, 1, 'event', '<p>\r\n	rtyuioasdcs</p>\r\n', 'published', '2012-09-12 12:47:23', '2012-09-25 15:34:09', NULL, 0, 'News', 'open', 1, 'all', NULL, 486, NULL, 720),
 (476, 1, 'aasdsdads', '<p>\r\n	asdasda</p>\r\n', 'published', '2012-09-12 13:15:05', '0000-00-00 00:00:00', NULL, 0, 'News', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(477, 1, 'aasdsdads', '<p>\r\n	asdasda</p>\r\n', 'published', '2012-09-12 13:15:27', '2012-09-24 22:00:41', NULL, 0, 'News', 'open', 1, 'all', NULL, 289, NULL, NULL),
-(478, 1, 'titlessss', '<p>\r\n	no</p>\r\n', 'published', '2012-09-12 13:17:26', '2012-09-24 22:00:41', NULL, 0, 'News', 'open', 1, 'all', NULL, 292, NULL, NULL),
-(488, 1, 'first page haha', '<p>\r\n	COntent</p>\r\n', 'published', '2012-09-12 13:46:54', '2012-09-24 13:36:07', NULL, 0, 'Page', 'open', 1, 'all', NULL, 71, NULL, NULL),
-(496, 1, 'trick', NULL, 'published', '2012-09-12 13:58:59', '2012-09-24 22:00:40', NULL, 0, 'News', 'open', 1, 'all', NULL, 294, NULL, NULL),
-(498, 1, 'new new page', NULL, 'published', '2012-09-12 21:41:38', '2012-09-24 13:36:07', 488, 0, 'Page', 'open', 1, 'all', NULL, 40, NULL, NULL),
-(499, 1, 'new news', '<p>\r\n	what new huh?</p>\r\n', 'published', '2012-09-23 01:58:53', '2012-09-24 22:00:40', NULL, 0, 'News', 'open', 1, 'all', NULL, 302, NULL, NULL),
-(500, 1, 'new news fine', '<p>\r\n	what no works fine</p>\r\n', 'published', '2012-09-23 02:40:23', '2012-09-24 22:00:40', NULL, 0, 'News', 'open', 1, 'all', NULL, 268, NULL, NULL),
-(501, 1, 'olds', '<p>\r\n	Olds</p>\r\n', 'published', '2012-09-23 12:33:12', '2012-09-24 22:15:30', NULL, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 230, NULL, NULL),
-(502, 1, 'Another Category', NULL, 'published', '2012-09-23 12:43:48', '2012-09-24 22:15:30', 501, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 219, NULL, NULL),
-(505, 1, 'page title goes heres', '<p>\r\n	ahdbahsdbahsdbhjasd</p>\r\n<p>\r\n	<strong>ajdhasdj</strong></p>\r\n<p>\r\n	&nbsp;</p>\r\n<p>\r\n	ASDadasddasd</p>\r\n', 'published', '2012-09-24 00:57:07', '2012-09-24 22:15:31', NULL, 0, 'Business', 'open', 1, 'all', NULL, 141, NULL, 703),
-(506, 1, 'login', '<p>\r\n	haha</p>\r\n', 'published', '2012-09-24 01:51:29', '2012-09-24 02:12:36', NULL, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 3, NULL, NULL),
-(507, 1, 'qwerty', '<p>\r\n	1</p>\r\n', 'published', '2012-09-24 01:57:54', '2012-09-24 01:58:26', NULL, 0, 'Page', 'open', 1, 'all', NULL, 3, NULL, 671),
-(508, 1, 'qwerty', '<p>\r\n	2</p>\r\n', 'published', '2012-09-24 01:58:20', '2012-09-24 01:58:37', NULL, 0, 'Page', 'open', 1, 'all', NULL, 2, NULL, 672),
-(509, 1, 'New haha', '<p>\r\n	what</p>\r\n', 'published', '2012-09-24 02:14:36', '2012-09-24 22:08:46', NULL, 0, 'Business', 'open', 1, 'all', NULL, 4, NULL, 673),
-(510, 1, 'New haha', '<p>\r\n	what</p>\r\n', 'published', '2012-09-24 02:15:09', '2012-09-24 22:08:46', NULL, 0, 'Business', 'open', 1, 'all', NULL, 2, NULL, 674),
-(511, 1, 'New haha', '<p>\r\n	what</p>\r\n', 'published', '2012-09-24 02:15:21', '2012-09-24 22:08:46', NULL, 0, 'Business', 'open', 1, 'all', NULL, 2, NULL, 675),
-(512, 1, 'New haha', '<p>\r\n	what</p>\r\n', 'published', '2012-09-24 02:16:02', '2012-09-24 22:08:46', NULL, 0, 'Business', 'open', 1, 'all', NULL, 4, NULL, 676),
-(513, 1, 'nepal rocks', '<p>\r\n	does it?</p>\r\n', 'published', '2012-09-24 02:25:01', '2012-09-24 02:25:01', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, 677),
-(514, 1, 'nepal rocks', '<p>\r\n	does it?</p>\r\n', 'published', '2012-09-24 02:25:12', '2012-09-24 02:25:12', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, 678),
-(515, 1, 'nepal rocks', '<p>\r\n	does it?</p>\r\n', 'published', '2012-09-24 02:29:15', '2012-09-24 02:33:13', NULL, 0, 'Business', 'open', 1, 'all', NULL, 2, NULL, 679),
+(477, 1, 'new title', '<p>\r\n	New Content</p>\r\n', 'published', '2012-09-12 13:15:27', '2012-09-25 15:36:33', 496, 0, 'News', 'open', 1, 'all', NULL, 468, NULL, 725),
+(478, 1, 'titlessss', '<p>\r\n	no</p>\r\n', 'published', '2012-09-12 13:17:26', '2012-09-25 14:07:25', NULL, 0, 'News', 'open', 1, 'all', NULL, 453, NULL, NULL),
+(488, 1, 'first page twat', '<p>\r\n	Coooooooooontent</p>\r\n', 'published', '2012-09-12 13:46:54', '2012-09-25 15:37:12', 531, 0, 'Page', 'open', 1, 'all', NULL, 77, NULL, NULL),
+(496, 1, 'trick', NULL, 'published', '2012-09-12 13:58:59', '2012-09-25 15:41:52', NULL, 0, 'News', 'open', 1, 'all', NULL, 458, NULL, NULL),
+(498, 1, 'new new page', NULL, 'published', '2012-09-12 21:41:38', '2012-09-25 15:25:13', 488, 0, 'Page', 'open', 1, 'all', NULL, 42, NULL, 723),
+(499, 1, 'new news', '<p>\r\n	what new huh?</p>\r\n', 'published', '2012-09-23 01:58:53', '2012-09-25 14:07:25', NULL, 0, 'News', 'open', 1, 'all', NULL, 462, NULL, NULL),
+(500, 1, 'new news fine', '<p>\r\n	what no works fine</p>\r\n', 'published', '2012-09-23 02:40:23', '2012-09-25 15:29:32', NULL, 0, 'News', 'open', 1, 'all', NULL, 435, NULL, 718),
+(507, 1, 'qwerty', '<p>\r\n	1</p>\r\n', 'published', '2012-09-24 01:57:54', '2012-09-24 01:58:26', NULL, 0, 'Page', 'open', 1, 'all', NULL, 3, NULL, NULL),
+(508, 1, 'qwerty', '<p>\r\n	2</p>\r\n', 'published', '2012-09-24 01:58:20', '2012-09-24 01:58:37', NULL, 0, 'Page', 'open', 1, 'all', NULL, 2, NULL, NULL),
 (516, 1, 'next up', NULL, 'published', '2012-09-24 02:35:08', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(517, 1, 'what the fuck', NULL, 'published', '2012-09-24 02:35:22', '2012-09-24 02:35:22', NULL, 0, 'Business', 'open', 1, 'all', NULL, 1, NULL, 680),
 (518, 1, 'next is', NULL, 'published', '2012-09-24 02:36:10', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
 (519, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:36:32', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
 (520, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:38:59', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
 (521, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:39:17', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
 (522, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:40:37', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
 (523, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:40:48', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(524, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:41:34', '2012-09-24 02:48:15', NULL, 0, 'Business', 'open', 1, 'all', NULL, 2, NULL, 681),
-(525, 1, 'dang bang', '<p>\r\n	dang bang</p>\r\n', 'published', '2012-09-24 12:03:38', '2012-09-24 12:03:38', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, 682),
-(526, 1, 'dang bang', '<p>\r\n	dang bang</p>\r\n', 'published', '2012-09-24 12:04:49', '2012-09-24 12:04:49', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, 683),
-(527, 1, 'dang bang', '<p>\r\n	dang bang</p>\r\n', 'published', '2012-09-24 12:05:28', '2012-09-24 12:05:28', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, 684),
-(528, 1, 'dang bang', '<p>\r\n	dang bang</p>\r\n', 'published', '2012-09-24 12:05:35', '2012-09-24 12:05:35', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, 685),
-(529, 1, 'dang bang', '<p>\r\n	dang bang</p>\r\n', 'published', '2012-09-24 12:05:54', '2012-09-24 12:05:55', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, 686),
-(530, 1, 'dang bang', '<p>\r\n	dang bang</p>\r\n', 'published', '2012-09-24 12:06:11', '2012-09-24 12:06:12', NULL, 0, 'Business', 'open', 1, 'all', NULL, 1, NULL, 687),
-(531, 1, 'My New Page', NULL, 'published', '2012-09-24 12:52:33', '2012-09-24 12:55:49', NULL, 0, 'Page', 'open', 1, 'all', NULL, 4, NULL, 689);
+(531, 1, 'My New Page', NULL, 'published', '2012-09-24 12:52:33', '2012-09-24 12:55:49', NULL, 0, 'Page', 'open', 1, 'all', NULL, 4, NULL, NULL),
+(532, 1, 'Hardware', NULL, 'published', '2012-09-24 23:27:50', '2012-09-25 14:11:18', NULL, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 604, NULL, 713),
+(533, 1, 'Laptop', NULL, 'published', '2012-09-24 23:28:04', '2012-09-25 14:11:15', 532, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 536, NULL, NULL),
+(534, 1, 'TV', NULL, 'published', '2012-09-24 23:28:14', '2012-09-25 14:12:00', 532, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 537, NULL, NULL),
+(535, 1, 'Software', NULL, 'published', '2012-09-24 23:28:26', '2012-09-25 14:07:24', NULL, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 706, NULL, NULL),
+(536, 1, 'Linux', NULL, 'published', '2012-09-24 23:28:48', '2012-09-25 14:07:24', 535, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 525, NULL, NULL),
+(537, 1, 'Python', NULL, 'published', '2012-09-24 23:28:57', '2012-09-25 14:24:30', 535, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 562, NULL, NULL),
+(538, 1, 'Android', NULL, 'published', '2012-09-24 23:31:13', '2012-09-25 14:07:24', 535, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 571, NULL, NULL),
+(539, 1, 'Django', NULL, 'published', '2012-09-25 00:59:26', '2012-09-25 14:07:24', 537, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 527, NULL, NULL),
+(540, 1, 'Nexus 7', NULL, 'published', '2012-09-25 01:31:12', '2012-09-25 13:44:35', NULL, 0, 'Business', 'open', 1, 'all', NULL, 15, NULL, 714),
+(541, 1, 'GAE', NULL, 'published', '2012-09-25 01:31:30', '2012-09-25 14:25:52', NULL, 0, 'Business', 'open', 1, 'all', NULL, 28, NULL, 715),
+(542, 1, 'news', '<p>\r\n	what the heck!</p>\r\n', 'published', '2012-09-25 14:36:46', '2012-09-25 14:44:08', NULL, 0, 'News', 'open', 1, 'all', NULL, 4, NULL, 716),
+(543, 1, 'news', NULL, 'published', '2012-09-25 14:44:26', '2012-09-25 14:49:21', NULL, 0, 'News', 'open', 1, 'all', NULL, 5, NULL, 717);
 
 -- --------------------------------------------------------
 
@@ -755,6 +690,13 @@ CREATE TABLE IF NOT EXISTS `page_nm_category` (
   PRIMARY KEY (`page_id`,`category_id`),
   KEY `category_id` (`category_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `page_nm_category`
+--
+
+INSERT INTO `page_nm_category` (`page_id`, `category_id`) VALUES
+(488, 4);
 
 -- --------------------------------------------------------
 
@@ -902,68 +844,22 @@ CREATE TABLE IF NOT EXISTS `slug` (
   `enabled` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `slug` (`slug`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=705 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=731 ;
 
 --
 -- Dumping data for table `slug`
 --
 
 INSERT INTO `slug` (`id`, `slug`, `path`, `enabled`) VALUES
-(671, 'qwerty', 'page/view/id/507', 1),
-(672, 'qwerty-1', 'page/view/id/508', 1),
-(673, 'new-haha', 'directory/business/view/id/2', 1),
-(674, 'new-haha-1', 'directory/business/view/id/3', 1),
-(675, 'new-haha-2', 'directory/business/view/id/4', 1),
-(676, 'new-haha-3', 'directory/business/view/id/5', 1),
-(677, 'nepal-rocks', 'directory/business/view/id/6', 1),
-(678, 'nepal-rocks-1', 'directory/business/view/id/7', 1),
-(679, 'nepal-rocks-2', 'directory/business/view/id/8', 1),
-(680, 'what-the-fuck', 'directory/business/view/id/9', 1),
-(681, 'titlesssssssssssss', 'directory/business/view/id/10', 1),
-(682, 'dang-bang', 'directory/view/id/11', 1),
-(683, 'dang-bang-1', 'directory/view/id/12', 1),
-(684, 'dang-bang-2', 'directory/view/id/13', 1),
-(685, 'dang-bang-3', 'directory/view/id/14', 1),
-(686, 'dang-bang-4', 'directory/view/id/15', 1),
-(687, 'dang-bang-5', 'directory/view/id/16', 1),
-(689, 'my-new-pages', 'page/view/id/531', 1),
-(703, 'b', 'directory/view/id/1', 1);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_comments`
---
-
-CREATE TABLE IF NOT EXISTS `tbl_comments` (
-  `owner_name` varchar(50) NOT NULL,
-  `owner_id` int(12) NOT NULL,
-  `comment_id` int(12) NOT NULL AUTO_INCREMENT,
-  `parent_comment_id` int(12) DEFAULT NULL,
-  `creator_id` int(12) DEFAULT NULL,
-  `user_name` varchar(128) DEFAULT NULL,
-  `user_email` varchar(128) DEFAULT NULL,
-  `comment_text` text,
-  `create_time` int(11) DEFAULT NULL,
-  `update_time` int(11) DEFAULT NULL,
-  `status` int(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`comment_id`),
-  KEY `owner_name` (`owner_name`,`owner_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
-
---
--- Dumping data for table `tbl_comments`
---
-
-INSERT INTO `tbl_comments` (`owner_name`, `owner_id`, `comment_id`, `parent_comment_id`, `creator_id`, `user_name`, `user_email`, `comment_text`, `create_time`, `update_time`, `status`) VALUES
-('Page', 488, 1, 0, 1, NULL, NULL, 'adsadsadsa', 1347461148, NULL, 0),
-('Page', 488, 2, 0, 1, NULL, NULL, 'sdasdsad', 1347462988, NULL, 0),
-('Page', 488, 3, 0, 1, NULL, NULL, 'nah', 1347463017, NULL, 0),
-('Page', 488, 4, 0, 1, NULL, NULL, 'crap', 1347463081, NULL, 0),
-('Page', 488, 5, 0, 1, NULL, NULL, 'poi', 1347463331, NULL, 0),
-('Page', 488, 6, 0, 1, NULL, NULL, '3', 1347463570, NULL, 0),
-('Page', 488, 7, 0, 1, NULL, NULL, 'app', 1347467185, NULL, 0),
-('Page', 488, 8, 0, 1, NULL, NULL, 'asdsad', 1347469155, NULL, 0);
+(713, 'hardware', 'directory/view/id/6', 1),
+(714, 'nexus-7', 'directory/business/view/id/17', 1),
+(715, 'gae', 'directory/business/view/id/18', 1),
+(716, 'tramp', 'news/view/id/13', 1),
+(717, 'news-1', 'news/view/id/14', 1),
+(718, 'page-1', 'news/view/id/12', 1),
+(720, 'twat', 'news/view/id/4', 1),
+(723, 'event-1', 'page/view/id/498', 1),
+(725, '-1', 'news/view/id/6', 1);
 
 -- --------------------------------------------------------
 
@@ -1095,21 +991,14 @@ ALTER TABLE `business`
 -- Constraints for table `business_category`
 --
 ALTER TABLE `business_category`
-  ADD CONSTRAINT `business_category_ibfk_1` FOREIGN KEY (`page_id`) REFERENCES `page` (`id`);
+  ADD CONSTRAINT `business_category_ibfk_2` FOREIGN KEY (`page_id`) REFERENCES `page` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `business_nm_category`
 --
 ALTER TABLE `business_nm_category`
-  ADD CONSTRAINT `business_nm_category_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `business_category` (`id`),
-  ADD CONSTRAINT `business_nm_category_ibfk_1` FOREIGN KEY (`business_id`) REFERENCES `business` (`id`);
-
---
--- Constraints for table `content`
---
-ALTER TABLE `content`
-  ADD CONSTRAINT `content_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`),
-  ADD CONSTRAINT `content_ibfk_2` FOREIGN KEY (`parent`) REFERENCES `content` (`id`);
+  ADD CONSTRAINT `business_nm_category_ibfk_4` FOREIGN KEY (`category_id`) REFERENCES `business_category` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `business_nm_category_ibfk_3` FOREIGN KEY (`business_id`) REFERENCES `business` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `event`
@@ -1122,6 +1011,12 @@ ALTER TABLE `event`
 --
 ALTER TABLE `image`
   ADD CONSTRAINT `image_ibfk_2` FOREIGN KEY (`album_id`) REFERENCES `album` (`id`);
+
+--
+-- Constraints for table `menu_item`
+--
+ALTER TABLE `menu_item`
+  ADD CONSTRAINT `menu_item_ibfk_1` FOREIGN KEY (`menu_id`) REFERENCES `menu` (`id`);
 
 --
 -- Constraints for table `news`
