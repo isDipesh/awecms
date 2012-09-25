@@ -62,8 +62,7 @@ class PageController extends Controller {
                         $page->slug->delete();
                         $page->slug = NULL;
                     } else {
-                        $page->slug->slug = $_POST['Page']['slug'];
-                        $page->slug->save();
+                        $page->slug->change($_POST['Page']['slug']);
                     }
                 }
             } else {

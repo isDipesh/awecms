@@ -42,8 +42,9 @@ class NewsController extends Controller {
         $model = $this->loadModel($id);
         if (isset($_POST['News']) || isset($_POST['Page'])) {
             try {
-                if ($model->save())
+                if ($model->save()){
                     $this->redirect(array('view', 'id' => $model->id));
+                }
             } catch (Exception $e) {
                 $model->addError('', $e->getMessage());
             }

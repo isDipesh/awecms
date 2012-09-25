@@ -46,6 +46,11 @@ class PageBehavior extends CActiveRecordBehavior {
 
     public function beforeValidate($event) {
         $isPage = (get_class($this->owner) == 'Page') ? true : false;
+        if ($isPage) {
+            if ($this->owner->type != 'Page')
+                return;
+        }
+
         $attributes = array();
         if (isset($_FILES[get_class($this->owner)])) {
             $attribute_arr = array_keys($_FILES[get_class($this->owner)]['name']);
@@ -97,8 +102,7 @@ class PageBehavior extends CActiveRecordBehavior {
                     $page->slug->delete();
                     $page->slug = NULL;
                 } else {
-                    $page->slug->slug = $_POST['Page']['slug'];
-                    $page->slug->save();
+                    $page->slug->change($_POST['Page']['slug']);
                 }
             }
         }

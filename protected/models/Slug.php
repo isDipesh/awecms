@@ -73,16 +73,39 @@ class Slug extends BaseSlug {
         //handle duplicate slugs - slug, slug-1, slug-2 and so on
         $counter = 0;
         $newSlug = $slug;
-        while (self::getPath($newSlug)) {
+        while (self::pathExists($newSlug)) {
             if (!$counter)
                 $newSlug.='-' . ++$counter;
             else
                 $newSlug = $slug . '-' . ++$counter;
         }
-        $s->slug = $newSlug;
+        $s->slug = self::cleanText($newSlug);
         $s->enabled = 1;
         $s->save();
         return $s->id;
+    }
+
+    public function change($slug) {
+        //no actions required if the new slug is same as the old
+        if ($slug == $this->slug)
+            return;
+        $counter = 0;
+        $newSlug = $slug;
+        while (self::pathExists($newSlug)) {
+            if (!$counter)
+                $newSlug.='-' . ++$counter;
+            else
+                $newSlug = $slug . '-' . ++$counter;
+        }
+        $this->slug = self::cleanText($newSlug);
+        $this->save();
+    }
+
+    //check if path or the slug already exists
+    public static function pathExists($s) {
+        if (($controller = Yii::app()->createController($s)) || self::getPath($s))
+            return true;
+        return false;
     }
 
     public static function cleanText($text, $spaceReplacement = "-") {
