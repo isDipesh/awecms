@@ -121,7 +121,7 @@ class PageBehavior extends CActiveRecordBehavior {
         if (get_class($this->owner) == 'Page')
             return;
         $page = $this->owner->page;
-        if (isset($_POST['Page']['slug'])) {
+        if (isset($_POST['Page']['slug']) && $_POST['Page']['slug'] != '') {
             if ($this->owner->scenario == 'insert' || ($this->owner->scenario == 'update' && (!isset($page->slug)))) {
                 //get the page
                 $page = Page::model()->findByPk($page->id);
@@ -139,9 +139,6 @@ class PageBehavior extends CActiveRecordBehavior {
 //        $page = $this->p;
 //        $params = Yii::app()->getController()->actionParams;
 //        $class = get_class($this->owner);
-//        echo $class;
-//        echo $params['id'];
-//        echo $page->id;
 //        if (Yii::app()->getController()->getAction()->id == 'view') {
 //            //set page title
 //            Yii::app()->getController()->pageTitle = $page->title . Awecms::getTitlePrefix();

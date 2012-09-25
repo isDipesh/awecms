@@ -53,7 +53,6 @@ class Slug extends BaseSlug {
 
     public static function create($slug, $path) {
         $slug = trim($slug, '/');
-
         if (is_array($path)) {
             $route = isset($path[0]) ? $path[0] : '';
             $path = Yii::app()->getController()->createUrl($route, array_splice($path, 1));
