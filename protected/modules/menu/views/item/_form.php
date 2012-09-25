@@ -18,9 +18,9 @@
 
     <div class="row">
 
-        <?php echo CHtml::radioButton('MenuItem[type]', $model->type == 'module', array('value' => 'module')); ?>
-        <?php echo Yii::t('app', 'Module'); ?>
-        <?php echo Chtml::dropDownList('MenuItem[module]', $model->link, Awecms::getModulesWithPath()); ?>
+        <?php echo CHtml::radioButton('MenuItem[type]', $model->type == 'module', array('value' => 'module', 'id' => 'radio_module')); ?>
+        <?php echo Yii::t('app', 'Module') . ' '; ?>
+        <?php echo Chtml::dropDownList('MenuItem[module]', $model->link, Awecms::getModulesWithPath(), array('onfocus' => 'js:$("#radio_module").attr("checked", "checked");'));?>
         <br/>
 
         <?php // echo CHtml::radioButton('MenuItem[type]', $model->type == 'action', array('value' => 'action')); ?>
@@ -31,22 +31,21 @@
         <!--<br/>-->
         <?php
         if (Yii::app()->hasModule('page')) {
-            echo CHtml::radioButton('MenuItem[type]', $model->type == 'content', array('value' => 'content'));
+            echo CHtml::radioButton('MenuItem[type]', $model->type == 'content', array('value' => 'content', 'id' => 'radio_content'));
             echo Yii::t('app', 'Content') . ' ';
-            echo CHtml::dropDownList('MenuItem[content]', $model->link, CHtml::listData(Page::model()->findAll(), 'path', 'title'));
+            echo CHtml::dropDownList('MenuItem[content]', $model->link, CHtml::listData(Page::model()->findAll(), 'path', 'title'), array('onfocus' => 'js:$("#radio_content").attr("checked", "checked");'));
         }
         ?>
         <br/>
-        <?php echo CHtml::radioButton('MenuItem[type]', $model->type == 'url', array('value' => 'url')); ?>
-        <?php echo $form->labelEx($model, 'link'); ?>
-        <?php echo Chtml::textField('MenuItem[url]', $model->link, array('size' => 60)); ?>
+        <?php echo CHtml::radioButton('MenuItem[type]', $model->type == 'url', array('value' => 'url', 'id' => 'radio_url')); ?>
+        <?php echo Yii::t('app', 'Link') . ' '; ?>
+        <?php echo Chtml::textField('MenuItem[url]', $model->link, array('size' => 60, 'onfocus' => 'js:$("#radio_url").attr("checked", "checked");')); ?>
         <?php echo $form->error($model, 'link'); ?>
         <br/>
         <p class="hint">
             /item points to base_url/item, //item points to root_of_server/item, item creates link relative to dynamic user location, 
             URLs rendered as is.
         </p>
-
     </div><!-- row -->
 
     <div class="row">
