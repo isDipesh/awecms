@@ -18,31 +18,25 @@ if (!isset($this->menu) || $this->menu === array()) {
 }
 ?>
 
+
+<h1><?php echo $model->title; ?> (<?php echo $model->count; ?>)</h1>
+
 <?php
-
-
 $this->renderPartial('_tree', array(
     'items' => $model->tree[0]->children,
     'depth' => 0,
 ));
 ?>
 <?php
-print_r($model->allBusinesses);
-
-echo "haha";
-
-//print_r($model);
-
-if (count($model->businesses)) {
+if (count($model->allBusinesses)) {
     ?>
-    <h2><?php echo Yii::t('app', Awecms::pluralize('Business', 'Businesses', $model->businesses)); ?>:</h2>
+    <h2><?php echo Yii::t('app', Awecms::pluralize('Business', 'Businesses', $model->allBusinesses)); ?>:</h2>
     <ul>
         <?php
-        if (is_array($model->businesses))
-            foreach ($model->businesses as $foreignobj) {
-
+        if (is_array($model->allBusinesses))
+            foreach ($model->allBusinesses as $foreignobj) {
                 echo '<li>';
-                echo CHtml::link($foreignobj->title, array('/directory/business/view', 'id' => $foreignobj->id));
+                echo CHtml::link($foreignobj[0]->title, array('/directory/business/view', 'id' => $foreignobj[0]->id));
                 echo '</li>';
             }
         ?>
