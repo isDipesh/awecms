@@ -51,6 +51,9 @@ class ItemController extends Controller {
         $model = $this->loadModel(key($_GET));
         if (isset($_POST['MenuItem'])) {
             $model->setAttributes($_POST['MenuItem']);
+            if (!isset($_POST['MenuItem']['target'])) {
+                $model->target = NULL;
+            }
             $model->menu = $_POST['MenuItem']['menu'];
             $model->parent = $_POST['MenuItem']['parent'];
 

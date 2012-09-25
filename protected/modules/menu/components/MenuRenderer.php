@@ -37,6 +37,9 @@ class MenuRenderer extends CMenu {
 
         $this->htmlOptions['class'] = implode(' ', $class);
 
+        //print_r($menu->items);
+        $items = $menu->items;
+
         $this->items = array_merge($menu->items, $this->append);
 //        $this->items = $menu->items;
         //print_r($this->items);
@@ -55,11 +58,9 @@ class MenuRenderer extends CMenu {
 
     protected function renderMenuRecursive($items) {
 
-
         $count = 0;
         $n = count($items);
         foreach ($items as $item) {
-
             if ($item == array())
                 continue;
 
@@ -130,6 +131,10 @@ class MenuRenderer extends CMenu {
                 else
                     $options['class'].=' ' . $this->dirCssClass;
             }
+
+            //handle open-in-in-new-tab
+            if (isset($item['target']))
+                $options['target'] = $item['target'];
 
             $item['linkOptions'] = $options;
             $menu = $this->renderMenuItem($item);

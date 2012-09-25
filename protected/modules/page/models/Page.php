@@ -30,6 +30,7 @@ class Page extends BasePage {
         if ($this->slug)
             return '/' . $this->slug->slug;
         $type = ($this->type);
+        if ($type=='Page') return '/' . lcfirst($type) . '/view?id=' . $this->id;
         $model = $type::model()->findByAttributes(array('page_id' => $this->id));
         if ($model) {
             return '/' . lcfirst($type) . '/view?id=' . $model->id;

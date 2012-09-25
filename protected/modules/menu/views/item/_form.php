@@ -69,13 +69,13 @@
         <?php echo $form->error($model, 'role'); ?>
     </div><!-- row -->
 
-    <?php if (Yii::app()->hasModule('page')) { ?>
-        <div class="row">
-            <?php echo $form->labelEx($model, 'content_id'); ?>
-            <?php echo $form->textField($model, 'content_id'); ?>
-            <?php echo $form->error($model, 'content_id'); ?>
-        </div><!-- row -->
-    <?php } ?>
+
+    <div class="row">
+        <?php echo $form->labelEx($model, 'Open in new tab?'); ?>
+        <?php echo CHtml::checkBox('MenuItem[target]', $model->target == '_blank', array('value' => '_blank')); ?>
+        <?php echo $form->error($model, 'target'); ?>
+    </div>
+
 
     <div class="row">
         <?php echo $form->labelEx($model, 'parent_id'); ?>

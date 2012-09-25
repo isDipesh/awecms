@@ -50,6 +50,7 @@ class Menu extends CActiveRecord {
                 $menuItem['label'] = $item->name;
                 $menuItem['url'] = $item->link;
                 $menuItem['role'] = $item->role;
+                $menuItem['target'] = $item->target;
                 if (!$item->parent_id) {
                     $tree[$item->id] = $menuItem;
                     $ref[$item->id] = &$tree[$item->id];
