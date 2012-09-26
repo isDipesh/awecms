@@ -6,6 +6,8 @@
  */
 class Controller extends CController {
 
+    protected $assetPath;
+    
     /**
      * @var string the default layout for the controller view. Defaults to '//layouts/column1',
      * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
@@ -78,6 +80,10 @@ class Controller extends CController {
     
     protected function block($name){
         Block::run($name);
+    }
+    
+    protected function publishAssets(){
+        $this->assetPath = Yii::app()->getAssetManager()->publish($this->viewPath.'/assets').'/';
     }
 
     //this is a wild guess, at least try to show something
