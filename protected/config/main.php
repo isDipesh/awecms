@@ -21,6 +21,7 @@ $config = array(
     ),
     // application components
     'components' => array(
+        'metadata' => array('class' => 'Metadata'),
         'assetManager' => array(
             'linkAssets' => true,
         ),
