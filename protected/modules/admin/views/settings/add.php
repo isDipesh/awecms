@@ -38,6 +38,13 @@ echo CHtml::beginForm('', 'post', array('onsubmit' => 'return validateForm(this)
 
 <div class="settings row">
     <?php
+    echo CHtml::label('Hint', 'hint');
+    echo CHtml::textField('hint', '', array('size' => '50'));
+    ?>
+</div>
+
+<div class="settings row">
+    <?php
     echo CHtml::label('Type', 'type');
     echo CHtml::textField('type', '', array('size' => '50'));
     echo '<p class="hint">Leave this blank for auto-detection!</p>';

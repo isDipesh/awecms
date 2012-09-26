@@ -42,7 +42,7 @@ class SettingsController extends Controller {
 
         if (!empty($_POST)) {
             $category = ($_POST['category'] == 'add_new') ? $_POST['category_value'] : $_POST['category'];
-            Settings::set($category, $_POST['key'], $_POST['value'], $_POST['type']);
+            Settings::set($category, $_POST['key'], $_POST['value'], $_POST['value'], $_POST['type']);
             $this->redirect(array('/admin/settings/' . $category));
         }
         $dataProvider = array(
