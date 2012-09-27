@@ -146,6 +146,10 @@ class MenuRenderer extends CMenu {
             //handle open-in-in-new-tab
             if (isset($item['target']))
                 $options['target'] = $item['target'];
+            
+            //set description as title
+            if (isset($item['description']))
+                $options['title'] = $item['description'];
 
             $item['linkOptions'] = $options;
             $menu = $this->renderMenuItem($item);
