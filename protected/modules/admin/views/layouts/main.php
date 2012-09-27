@@ -31,7 +31,7 @@
                 <nav id="admin_menu">
                     <?php
                     $this->widget(
-                            'MenuRenderer', array('id' => 2, 'append' => array(
+                            'MenuRenderer', array('name' => 'admin', 'append' => array(
                             array(
                                 'label' => 'Settings',
                                 'items' => Settings::getCategoriesAsLinks(),

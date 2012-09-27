@@ -21,7 +21,7 @@
                 <header id="header">
                     <h1 class="head"><?php echo Settings::get('site', 'name'); ?></h1>
                     <nav id="nav">
-                        <?php $this->widget('MenuRenderer', array('id' => 1)); ?>
+                        <?php $this->widget('MenuRenderer'); ?>
                     </nav>       
                 </header>
             </div>

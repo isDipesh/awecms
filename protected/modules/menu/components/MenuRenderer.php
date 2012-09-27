@@ -4,7 +4,8 @@ Yii::import('zii.widgets.CMenu');
 
 class MenuRenderer extends CMenu {
 
-    public $id = 1;
+    public $id;
+    public $name;
     public $firstItemCssClass = 'first';
     public $activeCssClass = 'active';
     public $lastItemCssClass = 'last';
@@ -12,10 +13,20 @@ class MenuRenderer extends CMenu {
     public $append = array();
 
     public function init() {
-        $menu = Menu::model()->findByPk($this->id);
+
+        if ($this->name) {
+            $menu = Menu::model()->findByAttributes(array('name' => $this->name));
+        } elseif ($this->id) {
+            $menu = Menu::model()->findByPk($this->id);
+        } elseif ($menu = Menu::model()->findByAttributes(array('name' => 'Main'))) {
+            //NOP, assignment done within the codition above
+        } else {//find the first one
+            $menu = Menu::model()->find();
+        }
+
         if (!$menu) {
-            //return false;
-            throw new CHttpException(404, 'The specified menu (id=' . $this->id . ') cannot be found.');
+            return false;
+            //throw new CHttpException(404, 'The specified menu (id=' . $this->id . ') cannot be found.');
         }
 
         $class = array('dropdown');
