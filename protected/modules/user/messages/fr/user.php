@@ -23,7 +23,7 @@ return array(
 				'Old Password' => 'Ancien mot de passe',
 				'Old Password is incorrect.' => 'Ancien mot de passe est incorrect.',
         'Retype Password' => 'Retaper mot de passe',
-        'Retype Password is incorrect.' => 'Retaper mot de passe est incorrect.',
+        'Passwords do not match!' => 'Retaper mot de passe est incorrect.',
         'Incorrect password (minimal length 4 symbols).' => 'Mot de passe incorrect (longueur minimale 4 symboles).',
         'Incorrect username (length between 3 and 20 characters).' => "Nom d'utilisateur incorrect (longueur entre 3 et 20 caractères).",
         'Incorrect symbol\'s. (A-z0-9)' => 'Incorrect symbole. (A-z0-9)',

@@ -23,7 +23,7 @@ return array(
     'E-mail' => 'Email',
     'Verification Code' => 'Código de verificação',
     'Retype Password' => 'Redigite a senha',
-    'Retype Password is incorrect.' => 'A redigitação de senha está incorreta.',
+    'Passwords do not match!' => 'A redigitação de senha está incorreta.',
     'Incorrect password (minimal length 4 symbols).' => 'Senha incorreta (mínimo 4 caracteres).',
     'Incorrect username (length between 3 and 20 characters).' => "Login incorreto (entre 4 e 20 caracteres).",
     'Incorrect symbol\'s. (A-z0-9)' => 'Caracteres incorretos. (A-z0-9)',

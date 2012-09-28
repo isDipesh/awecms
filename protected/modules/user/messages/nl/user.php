@@ -21,7 +21,7 @@ return array(
 	'E-mail' => 'E-mail',
 	'Verification Code' => 'Verificatiecode',
 	'Retype Password' => 'Wachtwoord opnieuw invoeren',
-	'Retype Password is incorrect.' => 'Opnieuw wachtwoord invoeren is niet correct.',
+	'Passwords do not match!' => 'Opnieuw wachtwoord invoeren is niet correct.',
 	'Incorrect password (minimal length 4 symbols).' => 'Ongeldig wachtwoord (minimaal 4 karakters).',
 	'Incorrect username (length between 3 and 20 characters).' => 'Ongeldige gebruikersnaam (lengte tussen 3 en 20 karakters).',
 	'Incorrect symbol\'s. (A-z0-9)' => 'In uw gebruikersnaam mag u alleen letters en getallen gebruiken.',

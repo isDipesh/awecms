@@ -38,7 +38,7 @@ $this->breadcrumbs=array(
 	<?php echo $form->passwordField($model,'password'); ?>
 	<?php echo $form->error($model,'password'); ?>
 	<p class="hint">
-	<?php echo UserModule::t("Minimal password length 4 symbols."); ?>
+	<?php echo UserModule::t("Minimum password length is 4 characters."); ?>
 	</p>
 	</div>
 	

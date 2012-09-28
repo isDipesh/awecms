@@ -18,7 +18,7 @@ $this->breadcrumbs=array(
 	<?php echo CHtml::activeLabelEx($form,'password'); ?>
 	<?php echo CHtml::activePasswordField($form,'password'); ?>
 	<p class="hint">
-	<?php echo UserModule::t("Minimal password length 4 symbols."); ?>
+	<?php echo UserModule::t("Minimum password length is 4 characters."); ?>
 	</p>
 	</div>
 	

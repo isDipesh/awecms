@@ -24,7 +24,7 @@ return array(
 	'E-mail' => 'Електронна пошта',
 	'Verification Code' => 'Перевірочний код',
 	'Retype Password' => 'Повторіть пароль',
-	'Retype Password is incorrect.' => 'Паролі не співпадають',
+	'Passwords do not match!' => 'Паролі не співпадають',
 	'Incorrect password (minimal length 4 symbols).' => 'Мінімальна довжина паролю 4 символи',
 	'Incorrect username (length between 3 and 20 characters).' => 'Довжина імені користувача від 3 до 20 символів',
 	"Incorrect symbol's. (A-z0-9)" => 'В імені користувача допускаються лише латинські літери та цифри',

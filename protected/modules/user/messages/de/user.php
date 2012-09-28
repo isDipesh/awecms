@@ -21,7 +21,7 @@ return array(
 	'E-mail' => 'E-mail',
 	'Verification Code' => 'Verification Code',
 	'Retype Password' => 'Passwort wiederholen',
-	'Retype Password is incorrect.' => 'Wiederholtes Passwort ist falsch.',
+	'Passwords do not match!' => 'Wiederholtes Passwort ist falsch.',
 	'Incorrect password (minimal length 4 symbols).' => 'Falsches Passwort (minimale Länge 4 Zeichen).',
 	'Incorrect username (length between 3 and 20 characters).' => 'Falscher Benutzername (Länge zwischen 3 und 20 Zeichen).',
 	'Incorrect symbol\'s. (A-z0-9)' => 'Im Benutzernamen sind nur Buchstaben und Zahlen erlaubt.',

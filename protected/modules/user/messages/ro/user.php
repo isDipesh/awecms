@@ -21,7 +21,7 @@ return array(
 	'E-mail' => 'E-mail',
 	'Verification Code' => 'Cod de verificare',
 	'Retype Password' => 'Reintroduceti parola',
-	'Retype Password is incorrect.' => 'Parola reintrodusa este gresita.',
+	'Passwords do not match!' => 'Parola reintrodusa este gresita.',
 	'Incorrect password (minimal length 4 symbols).' => 'Parola incorecta (minim 4 caractere).',
 	'Incorrect username (length between 3 and 20 characters).' => 'Nume utilizator incorect (Intre 3 si 20 caractere).',
 	'Incorrect symbol\'s. (A-z0-9)' => 'Utilizati doar litere si cifre.',

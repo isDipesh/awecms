@@ -21,7 +21,7 @@ return array(
 	'E-mail' => 'e-mail',
 	'Verification Code' => 'Ellenőrző kód',
 	'Retype Password' => 'Jelszó újra',
-	'Retype Password is incorrect.' => 'A két jelszó nem egyezik',
+	'Passwords do not match!' => 'A két jelszó nem egyezik',
 	'Incorrect password (minimal length 4 symbols).' => 'Helytelen jelszó (legalább 4 karakter).',
 	'Incorrect username (length between 3 and 20 characters).' => 'Helytelen felhasználónév (minimum 3 és maximum 20 karakter).',
 	'Incorrect symbol\'s. (A-z0-9)' => 'Érvénytelen karakterek (A-z0-9)',

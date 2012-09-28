@@ -26,7 +26,7 @@ return array(
         'E-mail' => 'E-mail',
         'Verification Code' => 'Kod weryfikacyjny',
         'Retype Password' => 'Hasło ponownie',
-        'Retype Password is incorrect.' => 'Przepisane hasło jest inne.',
+        'Passwords do not match!' => 'Przepisane hasło jest inne.',
         'Incorrect password (minimal length 4 symbols).' => 'Niepoprawne hasło (minimalna długość to 4 znaki).',
         'Incorrect username (length between 3 and 20 characters).' => "Niewłaściwa nazwa użytkownika (wpis powienien mieć od 3 do 20 znaków).",
         'Incorrect symbol\'s. (A-z0-9)' => 'Niepoprawny wpis. (A-z0-9)',

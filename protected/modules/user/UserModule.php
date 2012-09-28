@@ -255,4 +255,13 @@ class UserModule extends CWebModule {
         return User;
     }
 
+    public function guessReturnUrl() {
+        if (isset(Yii::app()->controller->module->returnUrl))
+            return Yii::app()->controller->module->returnUrl;
+        elseif (isset($_SERVER['HTTP_REFERER']) && !strpos($_SERVER['HTTP_REFERER'], 'login'))
+            return $_SERVER['HTTP_REFERER'];
+        else
+            return Yii::app()->baseUrl;
+    }
+
 }

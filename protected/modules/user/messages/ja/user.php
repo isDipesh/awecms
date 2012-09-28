@@ -21,7 +21,7 @@ return array(
 	'E-mail' => 'E-mail',
 	'Verification Code' => '検証コード',
 	'Retype Password' => 'パスワード(確認)',
-	'Retype Password is incorrect.' => 'パスワード(確認)が正しくありません。',
+	'Passwords do not match!' => 'パスワード(確認)が正しくありません。',
 	'Incorrect password (minimal length 4 symbols).' => 'パスワードが正しくありません。(4 文字以上)',
 	'Incorrect username (length between 3 and 20 characters).' => 'ユーザー名が正しくありません。(3 文字以上、20 文字以下)',
 	'Incorrect symbol\'s. (A-z0-9)' => '使用できない文字です。(A-z0-9)',

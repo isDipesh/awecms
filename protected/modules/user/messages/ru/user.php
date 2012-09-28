@@ -23,7 +23,7 @@ return array(
 	'Old Password' => 'Старый пароль',
 	'Old Password is incorrect.' => 'Неправильный старый пароль',
 	'Retype Password' => 'Подтверждение пароля',
-	'Retype Password is incorrect.' => 'Пароли не совпадают.',
+	'Passwords do not match!' => 'Пароли не совпадают.',
 	'Incorrect password (minimal length 4 symbols).' => 'Минимальная длина пароля 4 символа.',
 	'Incorrect username (length between 3 and 20 characters).' => 'Длина имени пользователя от 3 до 20 символов.',
 	"Incorrect symbols (A-z0-9)." => 'В имени пользователя допускаются только латинские буквы и цифры.',

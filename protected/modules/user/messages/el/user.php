@@ -21,7 +21,7 @@ return array(
 	'E-mail' => 'email',
 	'Verification Code' => 'Κώδικας επαλήθευσης.',
 	'Retype Password' => 'Πληκτρολογήστε ξανά το συνθηματικό',
-	'Retype Password is incorrect.' => 'Πληκτρολογήσατε λάθος την επαλήθευση του συνθηματικού.',
+	'Passwords do not match!' => 'Πληκτρολογήσατε λάθος την επαλήθευση του συνθηματικού.',
 	'Incorrect password (minimal length 4 symbols).' => 'Μη αποδεκτό συνθηματικό (τουλάχιστον 4 χαρακτήρες).',
 	'Incorrect username (length between 3 and 20 characters).' => 'Μη αποδεκτό όνομα χρήστη  (από 3 έως 20 χαρακτήρες).',
       'Incorrect First Name (length between 3 and 50 characters).' => 'Μη αποδεκτό όνομα χρήστη  (από 3 έως 20 χαρακτήρες).',
