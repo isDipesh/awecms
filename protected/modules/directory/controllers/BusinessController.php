@@ -95,8 +95,9 @@ class BusinessController extends Controller {
     }
 
     public function actionUpdate($id) {
-        
         $model = $this->loadModel($id);
+        if ($model->page->user_id != Yii::app()->user->id)
+            throw new AweException(403);
         if (isset($_POST['Business']) || isset($_POST['Page'])) {
             $model->setAttributes($_POST['Business']);
             if ($image = CUploadedFile::getInstance($model, 'image')) {

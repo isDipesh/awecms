@@ -19,6 +19,11 @@ if (!isset($this->menu) || $this->menu === array()) {
 ?>
 
 <h1><?php echo $model->title; ?></h1>
+<?php
+if ($model->page->user_id == Yii::app()->user->id) {
+    echo CHtml::link(Yii::t('app','Edit this entry'), array('/directory/business/update','id'=>$model->id));
+}
+?>
 
 <?php
 if (isset($model->image)) {
@@ -27,38 +32,30 @@ if (isset($model->image)) {
     <?php
 }
 ?>
-<br/>
 <?php
 if (isset($model->phone))
-    echo Yii::t('app', 'Phone') . ': ' . $model->phone;
+    echo Yii::t('app', 'Phone') . ': ' . $model->phone . '<br/>';
 ?>
-<br/>
 <?php
 if (isset($model->fax))
-    echo Yii::t('app', 'Fax') . ': ' . $model->fax;
+    echo Yii::t('app', 'Fax') . ': ' . $model->fax . '<br/>';;
 ?>
-<br/>
 <?php
 if (isset($model->email))
-    echo Yii::t('app', 'Email') . ': ' . CHtml::mailto($model->email);
+    echo Yii::t('app', 'Email') . ': ' . CHtml::mailto($model->email) . '<br/>';;
 ?>
-<br/>
 <?php
 if (isset($model->website))
-    echo Yii::t('app', 'Website') . ': ' . CHtml::link($model->website, $model->website, array("target" => "_blank"));
+    echo Yii::t('app', 'Website') . ': ' . CHtml::link($model->website, $model->website, array("target" => "_blank")) . '<br/>';;
 ?>
-<br/>
-<br/>
 <?php
 if (isset($model->address))
-    echo Yii::t('app', 'Address') . ':<br/>' . nl2br($model->address);
+    echo Yii::t('app', 'Address') . ':<br/>' . nl2br($model->address) . '<br/>';;
 ?>
-<br/>
 <?php
 if (isset($model->district_id))
-    echo Yii::t('app', 'District') . ': ' . $model->district;
+    echo Yii::t('app', 'District') . ': ' . $model->district . '<br/>';;
 ?>
-<br/>
 <br/>
 <?php echo $model->description; ?>
 
