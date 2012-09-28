@@ -14,6 +14,12 @@ class AweErrorHandler extends CErrorHandler {
     }
 
     public function parsePath($path) {
+
+        if ($path == 'admin/login') {
+            $errorController = new Controller('error');
+            $errorController->forward('/user/login');
+        }
+
         //cut off the admin part from requested path
         if (substr($path, 0, 6) == 'admin/')
             $path = preg_replace('`admin/`', '/', $path, 1);

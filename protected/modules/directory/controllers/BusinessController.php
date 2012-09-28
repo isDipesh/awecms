@@ -2,6 +2,33 @@
 
 class BusinessController extends Controller {
 
+    public function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow',
+                'actions' => array('index', 'view', 'create'),
+                'users' => array('*'),
+            ),
+            //only logged in users can update
+            array('allow',
+                'actions' => array('update'),
+                'users' => array('@'),
+            ),
+            array('allow',
+                'actions' => array('manage', 'delete'),
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
+
     public $imageUploadFolder = '/../uploads/directory/';
 
     public function actionIndex() {
@@ -68,6 +95,7 @@ class BusinessController extends Controller {
     }
 
     public function actionUpdate($id) {
+        
         $model = $this->loadModel($id);
         if (isset($_POST['Business']) || isset($_POST['Page'])) {
             $model->setAttributes($_POST['Business']);

@@ -55,6 +55,7 @@ class AweUrlManager extends CUrlManager {
 
     public function parseUrl($request) {
 
+
         if ($this->getUrlFormat() === self::PATH_FORMAT) {
             $rawPathInfo = $request->getPathInfo();
 
@@ -71,7 +72,7 @@ class AweUrlManager extends CUrlManager {
                     return isset($_GET[$this->routeVar]) ? $_GET[$this->routeVar] : $r;
             }
             if ($this->useStrictParsing)
-                throw new CHttpException(404, Yii::t('yii', 'Unable to resolve the request "{route}".', array('{route}' => $pathInfo)));
+                throw new AweException(404, Yii::t('yii', 'Unable to resolve the request "{route}".', array('{route}' => $pathInfo)));
             else
                 return $pathInfo;
         }

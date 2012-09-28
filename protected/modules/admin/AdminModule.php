@@ -40,5 +40,6 @@ class AdminModule extends CWebModule {
         }
         return $menuItems;
     }
+    
 
 }

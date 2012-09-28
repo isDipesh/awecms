@@ -15,6 +15,17 @@ if (!isset($this->menu) || $this->menu === array())
 ?>
 
 <h1><?php echo Yii::t('app', 'Add New') . ' ' . Yii::t('app', 'Business'); ?></h1>
+
+<?php
+if (Yii::app()->user->isGuest) {
+    ?>
+    <p class="alert">
+        You are adding a new entry as a Guest. <a href="<?php echo Yii::app()->createUrl('/registration') ?>">Register</a> or <a href="<?php echo Yii::app()->createUrl('/login') ?>">Login</a> to add new business entry so that you can update this in future.
+    </p>
+    <?php
+}
+?>
+
 <?php
 $this->renderPartial('_form', array(
     'model' => $model,
