@@ -259,11 +259,10 @@ class Awecms {
 
     //sort array of objects by an attribute
     //adapted from http://www.algorithmist.com/index.php/Quicksort_non-recursive.php
-    public static function quickSort(&$array, $attribute = 'title') {
+    public static function quickSort($array, $attribute = 'title') {
         $cur = 1;
         $stack[1]['l'] = 0;
         $stack[1]['r'] = count($array) - 1;
-
         do {
             $l = $stack[$cur]['l'];
             $r = $stack[$cur]['r'];
@@ -308,7 +307,7 @@ class Awecms {
 
     //builds tree structure from flat array of objects with parent_id
     //adapted from http://stackoverflow.com/questions/4843945/php-tree-structure-for-categories-and-sub-categories-without-looping-a-query
-    function buildTree($items) {
+    public static function buildTree($items) {
 
         $children = array();
 

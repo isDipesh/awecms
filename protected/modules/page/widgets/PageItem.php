@@ -98,10 +98,14 @@ class PageItem extends CWidget {
                     if (!empty($page->views)) {
                         ?>
                         <div class="field">
-                            <?php echo CHtml::encode($page->getAttributeLabel('views')); ?>:
-                            <?php
-                            echo CHtml::encode($page->views);
-                            ?>
+                            <div class="field_name">
+                                <?php echo CHtml::encode($page->getAttributeLabel('views')); ?>:
+                            </div>
+                            <div class="field_value">
+                                <?php
+                                echo CHtml::encode($page->views);
+                                ?>
+                            </div>
                         </div>
                         <?php
                     }
