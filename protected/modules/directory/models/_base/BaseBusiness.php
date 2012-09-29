@@ -34,15 +34,15 @@ abstract class BaseBusiness extends CActiveRecord {
 
     public function rules() {
         return array(
-            array('page_id', 'required'),
-            array('phone, fax, email, website, address, place_id, district_id, image', 'default', 'setOnEmpty' => true, 'value' => null),
-            array('page_id, place_id, district_id', 'numerical', 'integerOnly' => true),
-            array('email', 'email'),
-            array('website', 'url'),
-            array('phone, fax, email, website', 'length', 'max' => 255),
-            array('address, image', 'safe'),
-            array('image', 'file', 'types' => 'jpg, gif, png', 'allowEmpty' => true, 'maxSize' => 5*1024*1024), //5 MB max size
-            array('id, page_id, phone, fax, email, website, address, place_id, district_id, image', 'safe', 'on' => 'search'),
+        array('page_id', 'required'),
+        array('phone, fax, email, website, address, place_id, district_id, image', 'default', 'setOnEmpty' => true, 'value' => null),
+        array('page_id, place_id, district_id', 'numerical', 'integerOnly' => true),
+        array('email', 'email'),
+        array('website', 'url', 'defaultScheme' => 'http'),
+        array('phone, fax, email, website', 'length', 'max' => 255),
+        array('address, image', 'safe'),
+        array('image', 'file', 'types' => 'jpg, gif, png', 'allowEmpty' => true, 'maxSize' => 5*1024*1024), //5 MB max size
+        array('id, page_id, phone, fax, email, website, address, place_id, district_id, image', 'safe', 'on' => 'search'),
         );
     }
 

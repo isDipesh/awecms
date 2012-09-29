@@ -172,7 +172,7 @@ class AweModelCode extends ModelCode {
         if ($email !== array())
             $rules[] = "array('" . implode(', ', $email) . "', 'email')";
         if ($url !== array())
-            $rules[] = "array('" . implode(', ', $url) . "', 'url')";
+            $rules[] = "array('" . implode(', ', $url) . "', 'url', 'defaultScheme' => 'http')";
         if ($length !== array()) {
             foreach ($length as $len => $cols)
                 $rules[] = "array('" . implode(', ', $cols) . "', 'length', 'max' => $len)";
