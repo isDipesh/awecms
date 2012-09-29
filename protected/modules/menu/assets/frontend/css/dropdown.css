@@ -26,7 +26,7 @@ ul.dropdown ul {
 
 ul.dropdown {
  position: relative;
- z-index: 597;
+ z-index: 2;
  float: left;
 }
 

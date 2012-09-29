@@ -86,7 +86,7 @@ header a{
     float: left;
     width: 83%;
     font-size: 1.1em;
-    line-height: 2.3em;
+    line-height: 1.9em;
     box-shadow: 0px -6px 8px #666;
 }
 
@@ -101,7 +101,7 @@ header a{
 }
 #main_wrapper h1{
     color: #236B94;
-    margin: 0;
+    margin: 10px 0px 20px 0px;
     font-family: "trebuchet ms", tahoma, arial;
 }
 #yw0 table th{

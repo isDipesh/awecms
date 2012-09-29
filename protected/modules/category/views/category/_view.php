@@ -6,9 +6,7 @@
     if (!empty($data->description)) {
         ?>
     <div class="field">
-            <div class="field_name">
-                <b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
-            </div>
+   
 <div class="field_value">
 
                 <?php

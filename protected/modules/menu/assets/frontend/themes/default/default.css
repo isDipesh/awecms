@@ -43,7 +43,10 @@ ul.dropdown {
 	 background-color: #eee;
 	 color: #000;
 	}
-
+	ul.dropdown li:hover ul{
+		display: block;
+		visibility: visible;
+	}
 	ul.dropdown a:link,
 	ul.dropdown a:visited	{ color: #000; text-decoration: none; }
 	ul.dropdown a:hover		{ color: #000; }
