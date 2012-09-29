@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Created on 10.10.2010
  *
@@ -48,43 +49,50 @@
  *   ) ); ?>
  */
 
-class CKEditorWidget extends CInputWidget
-{
+class CKEditorWidget extends CInputWidget {
 
-	public $ckEditor;
-	public $ckBasePath;
-	public $defaultValue;
-        public $config;
-        public $model;
+    public $ckEditor;
+    public $ckBasePath;
+    public $defaultValue;
+    public $config;
+    public $model;
 
-	public function run()
-	{
-		if(!isset($this->model)){
-			throw new CHttpException(500,'"model" has to be set!');
-		}
-		if(!isset($this->attribute)){
-			throw new CHttpException(500,'"attribute" has to be set!');
-		}
-		if(!isset($this->ckEditor)){
-			$this->ckEditor = Yii::app()->basePath."/../ckeditor/ckeditor.php";
-		}
-		if(!isset($this->ckBasePath)){
-			$this->ckBasePath = Yii::app()->baseUrl."/ckeditor/";
-		}
-                if(!isset($this->defaultValue)){
-			$this->defaultValue = "";
-		}
+    public function init() {
+        if (!isset($this->config['filebrowserBrowseUrl']))
+            $this->config['filebrowserBrowseUrl'] = Yii::app()->getBaseUrl() . '/file/uploader';
+        if (!isset($this->config['filebrowserUploadUrl']))
+            $this->config['filebrowserUploadUrl'] = Yii::app()->getBaseUrl() . '/file/CKUpload';
+    }
 
-		$controller=$this->controller;
-		$action=$controller->action;
-		$this->render('CKEditorView',array(
-			"ckBasePath"=>$this->ckBasePath,
-			"ckEditor"=>$this->ckEditor,
-			"model"=>$this->model,
-			"attribute"=>$this->attribute,
-			"defaultValue"=>$this->defaultValue,
-			"config"=>$this->config,
-		));
-	}
+    public function run() {
+        if (!isset($this->model)) {
+            throw new CHttpException(500, '"model" has to be set!');
+        }
+        if (!isset($this->attribute)) {
+            throw new CHttpException(500, '"attribute" has to be set!');
+        }
+        if (!isset($this->ckEditor)) {
+            $this->ckEditor = Yii::app()->basePath . "/../ckeditor/ckeditor.php";
+        }
+        if (!isset($this->ckBasePath)) {
+            $this->ckBasePath = Yii::app()->baseUrl . "/ckeditor/";
+        }
+        if (!isset($this->defaultValue)) {
+            $this->defaultValue = "";
+        }
+
+        $controller = $this->controller;
+        $action = $controller->action;
+        $this->render('CKEditorView', array(
+            "ckBasePath" => $this->ckBasePath,
+            "ckEditor" => $this->ckEditor,
+            "model" => $this->model,
+            "attribute" => $this->attribute,
+            "defaultValue" => $this->defaultValue,
+            "config" => $this->config,
+        ));
+    }
+
 }
+
 ?>
