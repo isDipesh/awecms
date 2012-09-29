@@ -259,25 +259,31 @@ table input{
     margin: 0px;
 }
 .items{
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
     padding: 2px;
     clear: both;
     float: left;
     width: 100%;
 }
 .items div.view{
-    background: #f2f2f2;
     padding: 6px 8px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
     border-top: 1px solid #fff;
     width: 98.5%;
     float: left;
 }
+.items div.view h2{
+    margin-bottom: 0px;
+}
+.items div.view h2 a{
+    text-decoration: none;
+}
+.items .field{
+    color: #666;
+}
 .items .view:first-child{ border-top: 0px;}
 .items .view:last-child{ border-bottom: 0px;}
 div.view .field{
-    border: 1px solid #ccc;
-    padding: 1%;
     box-shadow: 1px 1px 0px #fff;
 }
 div.view .field:last-child{
@@ -288,3 +294,19 @@ div.view .field:last-child{
 .inline{
     display: inline;
 }
+.rte-text{
+    color: #333;
+}
+.label{
+    margin-right: 10px;
+    background: #eee;
+    border: 1px solid #ccc;
+}
+.label a{
+    padding: 0px 8px;
+ }
+ .thumb{
+    height: 128px;
+    padding: 2px;
+    border: 1px solid #ccc;
+ }

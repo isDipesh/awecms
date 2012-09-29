@@ -15,7 +15,7 @@ echo count($images) . ' ' . Awecms::pluralize(Yii::t('app', 'image'), Yii::t('ap
         if ($data->thumbnail) {
             ?>
             <a href="<?php echo Yii::app()->createUrl('gallery/album/view', array('id' => $data->id)) ?>">
-                <img width="160" src="<?php echo $data->thumbnail->url; ?>" alt="<?php echo $data->thumbnail->title; ?>">
+                <img height="160" src="<?php echo $data->thumbnail->url; ?>" alt="<?php echo $data->thumbnail->title; ?>">
             </a>
             <br />
             <?php

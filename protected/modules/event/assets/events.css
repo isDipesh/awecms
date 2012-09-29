@@ -36,7 +36,9 @@
 	margin-left: 20px;
 }
 .event-list-venue{
-	background: #FEF6D4;
+	background: #F6F6F6;
 	padding: 1% 2%;
 	box-shadow: 1px 1px 4px #999;
+	width: 180px;
+	overflow: hidden;
 }
