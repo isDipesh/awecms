@@ -183,7 +183,9 @@ h1.head{
 /* =Header
 -----------------------------------------------------------------------------*/
 #header {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  float: left;
+  width: 100%;
 }
 #header h3 {
   float: left;
