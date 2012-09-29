@@ -21,11 +21,15 @@ body {
   padding: 14px 30px;
 }
 .mid-bar{
+  clear: both;
   background: #eee;
   margin-bottom: 20px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 8px 4px;
+}
+.portlet{
+  clear: both;
 }
 .portlet-header{
   font-size: 1.4em;
@@ -44,7 +48,9 @@ body {
 }
 .view{
   clear: both;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  float: left;
+  width: 100%;
 }
 /* =Links
 -----------------------------------------------------------------------------*/
@@ -177,8 +183,7 @@ h1.head{
 /* =Header
 -----------------------------------------------------------------------------*/
 #header {
-  overflow: hidden;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 #header h3 {
   float: left;
