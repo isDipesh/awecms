@@ -18,6 +18,7 @@ class SearchController extends Controller {
             //format : array('modelName','titleField','contentField','linkFormat')
             //linkFormat is optional and you may wrap attributes to be evaluated with {} to get the attribute value in runtime
             array('Album', 'title', 'content', '/gallery/album/view/id/{id}'),
+            array('Business', 'title', 'content', '/directory/business/view/id/{id}'),
             array('Image', 'title', 'description'),
         );
 
@@ -41,7 +42,11 @@ class SearchController extends Controller {
     }
 
     public function actionIndex() {
-        if (isset($_GET['q']) || isset($_GET['type'])) {
+        $type = '';
+        if (isset($_GET['type'])) {
+            $type = $_GET['type'];
+        }
+        if (isset($_GET['q'])) {
 //            $originalQuery = $_GET['q'];
 
             $queryString = $originalQuery = isset($_GET['q']) ? $_GET['q'] : '';
@@ -51,16 +56,15 @@ class SearchController extends Controller {
                 $queryString = "title:$queryString OR content:$queryString";
             }
 
-            $type = '';
-            if (isset($_GET['type'])) {
-                $type = $_GET['type'];
+            if ($type) {
                 $queryString.=' AND type:' . $type;
             }
+
             $results = $index->find($queryString);
             $query = Zend_Search_Lucene_Search_QueryParser::parse($queryString);
             $this->render('index', compact('results', 'originalQuery', 'query', 'type'));
         } else {
-            $this->render('advanced');
+            $this->render('advanced', array('type' => $type));
         }
     }
 
@@ -136,6 +140,7 @@ class SearchController extends Controller {
     }
 
     public function missingAction($actionID) {
+        //echo class_exists($actionID, false);
         $_GET['type'] = $actionID;
         $this->actionIndex();
     }

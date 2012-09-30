@@ -21,7 +21,7 @@ if (!isset($this->menu) || $this->menu === array()) {
 <h1><?php echo $model->title; ?></h1>
 <?php
 if ($model->page->user_id == Yii::app()->user->id) {
-    echo CHtml::link(Yii::t('app','Edit this entry'), array('/directory/business/update','id'=>$model->id));
+    echo CHtml::link(Yii::t('app', 'Edit this entry'), array('/directory/business/update', 'id' => $model->id));
 }
 ?>
 <hr />
@@ -57,20 +57,20 @@ if (isset($model->address))
 if (isset($model->district_id))
     echo Yii::t('app', '<b>District</b>') . ': ' . $model->district . '<br/>';;
 ?>
-<strong>Description: </strong>
+
 <div class="rte-text">
-<?php echo $model->description; ?>
+    <?php echo $model->description; ?>
 </div>
 
 <?php if (count($model->businessCategories)) { ?>
     <h3><?php echo Yii::t('app', Awecms::pluralize('Category', 'Categories', $model->businessCategories)); ?>:</h3>
-        <?php
-        if (is_array($model->businessCategories))
-            foreach ($model->businessCategories as $foreignobj) {
+    <?php
+    if (is_array($model->businessCategories))
+        foreach ($model->businessCategories as $foreignobj) {
 
-                echo '<div class="label left">';
-                echo CHtml::link($foreignobj->title, array('/directory/categories/view', 'id' => $foreignobj->id));
-                echo '</div>';
-            }
-        ?>
+            echo '<div class="label left">';
+            echo CHtml::link($foreignobj->title, array('/directory/categories/view', 'id' => $foreignobj->id));
+            echo '</div>';
+        }
+    ?>
 <?php } ?>

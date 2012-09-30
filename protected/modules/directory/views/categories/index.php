@@ -16,6 +16,8 @@ if (!isset($this->menu) || $this->menu === array())
 <h1><?php echo Yii::t('app', 'Business Categories'); ?></h1>
 
 <?php
+$this->widget('SearchBlock', array('type' => 'directory'));
+
 $categories = Awecms::buildTree(Awecms::quickSort(($dataProvider->data)));
 
 $this->renderPartial('_tree', array(
@@ -42,4 +44,5 @@ $this->renderPartial('_tree', array(
 //}
 //
 ////die();
-//?>
+//
+?>
