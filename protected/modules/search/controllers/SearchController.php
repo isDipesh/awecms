@@ -7,69 +7,99 @@ class SearchController extends Controller {
 
     private $_indexFile = 'protected/runtime/search';
     public $breadcrumbs;
+    public $index;
+
+    public function actionCreate() {
+
+
+        $otherModels = array(
+            array('Album', 'title', 'content', '/gallery/album/view/id/{id}'),
+            array('Image', 'title', 'description'),
+        );
+        //provide model name or array of models, implementing page behavior
+        $pageModels = array('Page', 'News', Event::model()->findAll());
+
+        echo "Search index creation started.<br/>";
+        echo "Creating indices on {$this->_indexFile}<br/><br/>";
+        $this->index = new Zend_Search_Lucene($this->_indexFile, true);
+
+        foreach ($otherModels as $otherModel) {
+            $link = isset($otherModel[3]) ? $otherModel[3] : NULL;
+            $this->addIndex($otherModel[0], $otherModel[1], $otherModel[2], $link);
+        }
+        echo '<br/>';
+
+        echo "Creating indices for models with Page behavior...<br/>";
+        foreach ($pageModels as $model) {
+            $this->addIndex($model, 'title', 'content');
+        }
+
+        self::printInfoFromIndex($this->index);
+    }
 
     public function actionIndex() {
         if (isset($_GET['q'])) {
             $queryString = $_GET['q'];
             $index = new Zend_Search_Lucene($this->_indexFile);
             $results = $index->find($queryString);
-            //print_r($results);
             $query = Zend_Search_Lucene_Search_QueryParser::parse($queryString);
             $this->render('index', compact('results', 'queryString', 'query'));
         } else {
             $this->render('advanced');
-            //echo 1;
         }
     }
 
-    public function actionCreate() {
-        echo "Search index creation started...<br/>";
-        echo "Creating indices on {$this->_indexFile}...<br/>";
-
-        $index = new Zend_Search_Lucene($this->_indexFile, true);
-
-        $items = MenuItem::model()->findAllByAttributes(array('menu_id' => '1'));
-
-        //map fields here, set the field names of model to be indexed as title, link and content
-        //TODO intelligent guessing of field names
-        $fields = array(
-            'title' => 'name',
-            'link' => 'link',
-            'content' => 'role'
-        );
-
+    private function addIndex($model, $title, $content, $link = NULL) {
+        $items = array();
+        //if model name is provided, get models
+        if (gettype($model) == 'string') {
+            $items = $model::model()->findAll();
+        } else {
+            $items = $model;
+        }
+        if (isset($items[0]))
+            echo "Creating indices for " . get_class($items[0]) . " model<br/>";
+//            print_r(get_class($items[0]));
         foreach ($items as $item) {
+            if (get_class($item) == 'Page' && $item->type != 'Page')
+                continue;
+            if ($link) {
+                //key replacements
+                $pattern = '/{(.+)}/e';
+                $replace = "self::getAttr(\$item,'$1')";
+                $l = preg_replace($pattern, $replace, $link);
+            } else {//guess the view url
+                $l = '/' . strtolower(get_class($item)) . '/view/id/' . $item->id;
+//                $l = Yii::app()->createUrl('/'.strtolower(get_class($item)).'/view',array('id'=>$item->id));
+            }
+            //real shit happens here
             $doc = new Zend_Search_Lucene_Document();
-            $doc->addField(Zend_Search_Lucene_Field::Text('title', CHtml::encode($item->$fields['title']), 'utf-8'));
-            $doc->addField(Zend_Search_Lucene_Field::Text('link', CHtml::encode($item->$fields['link']), 'utf-8'));
-            $doc->addField(Zend_Search_Lucene_Field::Text('content', CHtml::encode($item->$fields['content']), 'utf-8'));
-            $index->addDocument($doc);
+            $doc->addField(Zend_Search_Lucene_Field::Text('title', CHtml::encode($item->$title), 'utf-8'));
+            $doc->addField(Zend_Search_Lucene_Field::Text('link', CHtml::encode($l), 'utf-8'));
+            $doc->addField(Zend_Search_Lucene_Field::Text('content', $item->$content, 'utf-8'));
+            $this->index->addDocument($doc);
         }
 
-        $index->commit();
-        //$this->render('create');
-        //print_r($index->getCount());
-
-        self::printInfoFromIndex($index);
+        $this->index->commit();
     }
 
     public static function printInfoFromIndex($index) {
 
-        echo "<p>Index Generation ID: " . $index->getGeneration() . '</p>';
-
-        echo "<p>Total indexed items: " . $index->maxDoc() . '</p>';
-
-        echo "<p>Field Names:<br/>";
-        echo implode(',', $index->getFieldNames());
-        echo "</p>";
+        echo "<br/>Index generation complete.<br/>";
+        echo "Index Generation ID: " . $index->getGeneration() . '<br/>';
+        echo "Total indexed items: " . $index->maxDoc() . '<br/>';
 
         $a = $index->hasDeletions() ? '' : 'no ';
-        echo "<p>Index has {$a}deletions!</p>";
+        echo "Index has {$a}deletions!<br/>";
+
+//        echo "<p>Field Names:<br/>";
+//        echo implode(',', $index->getFieldNames());
+//        echo "</p>";
 
         $terms = $index->terms();
-        echo "<p>First Field: {$terms[0]->field} => {$terms[0]->text}<br/>";
+        echo "First Field: {$terms[0]->field} => {$terms[0]->text}<br/>";
         $n = count($terms) - 1;
-        echo "Last Field: {$terms[$n]->field} => {$terms[$n]->text}</p>";
+        echo "Last Field: {$terms[$n]->field} => {$terms[$n]->text}";
     }
 
     public function actionUpdate() {
@@ -84,6 +114,10 @@ class SearchController extends Controller {
 
         // Add document to the index.
         $index->addDocument($doc);
+    }
+
+    public static function getAttr($model, $in) {
+        return $model->$in;
     }
 
 }

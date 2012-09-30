@@ -13,7 +13,7 @@ $this->widget('SearchBlock', array('query' => $queryString));
 <?php if (!empty($results)): ?>
     <?php foreach ($results as $result):
         ?>                  
-        <a href="<?php echo CHtml::encode($result->link) ?>" title="<?php echo CHtml::encode($result->title); ?>">
+        <a href="<?php echo Yii::app()->createUrl($result->link) ?>" title="<?php echo CHtml::encode($result->title); ?>">
             <?php echo $query->highlightMatches(CHtml::encode($result->title)); ?>
         </a>
         <br/>

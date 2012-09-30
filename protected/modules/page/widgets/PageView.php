@@ -39,7 +39,7 @@ class PageView extends CWidget {
                     <?php
                     break;
                 case 'content':
-                    echo "<div class='rte-text'>".nl2br($page->content)."</div>";
+                    echo "<div class='rte-text'>".$page->content."</div>";
                     break;
                 case 'excerpt':
                     if (!empty($data->content)) {

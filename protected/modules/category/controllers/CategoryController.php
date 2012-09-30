@@ -8,17 +8,6 @@ class CategoryController extends Controller {
         );
     }
 
-    public function accessRules() {
-        return array(
-            array('allow',
-                'expression' => 'Role::checkAccess()',
-            ),
-            array('deny',
-                'users' => array('*'),
-            ),
-        );
-    }
-
     public function actionIndex() {
         $dataProvider = new CActiveDataProvider('Category');
         $this->render('index', array(

@@ -12,4 +12,5 @@ CKEDITOR.editorConfig = function( config )
 //    config.filebrowserUploadUrl = '/file/CKUpload';
 //    config.filebrowserImageBrowseUrl = '/file/uploader?mode=image';
 //    config.filebrowserFlashBrowseUrl = '/file/uploader?mode=flash';
+//config.enterMode = CKEDITOR.ENTER_BR;
 };
