@@ -11,13 +11,16 @@ class SearchController extends Controller {
 
     public function actionCreate() {
 
-
+        //provide model name or array of models, implementing page behavior
+        $pageModels = array('Page', 'News', Event::model()->findAll());
+        //for models other than implementing Page behavior
         $otherModels = array(
+            //format : array('modelName','titleField','contentField','linkFormat')
+            //linkFormat is optional and you may wrap attributes to be evaluated with {} to get the attribute value in runtime
             array('Album', 'title', 'content', '/gallery/album/view/id/{id}'),
             array('Image', 'title', 'description'),
         );
-        //provide model name or array of models, implementing page behavior
-        $pageModels = array('Page', 'News', Event::model()->findAll());
+
 
         echo "Search index creation started.<br/>";
         echo "Creating indices on {$this->_indexFile}<br/><br/>";
@@ -38,12 +41,24 @@ class SearchController extends Controller {
     }
 
     public function actionIndex() {
-        if (isset($_GET['q'])) {
-            $queryString = $_GET['q'];
+        if (isset($_GET['q']) || isset($_GET['type'])) {
+//            $originalQuery = $_GET['q'];
+
+            $queryString = $originalQuery = isset($_GET['q']) ? $_GET['q'] : '';
             $index = new Zend_Search_Lucene($this->_indexFile);
+            //only look for queryString in title and content, well if advanced search techniques aren't used
+            if (!(strpos(strtolower($queryString), 'and') || strpos(strtolower($queryString), 'or') || strpos(strtolower($queryString), ':'))) {
+                $queryString = "title:$queryString OR content:$queryString";
+            }
+
+            $type = '';
+            if (isset($_GET['type'])) {
+                $type = $_GET['type'];
+                $queryString.=' AND type:' . $type;
+            }
             $results = $index->find($queryString);
             $query = Zend_Search_Lucene_Search_QueryParser::parse($queryString);
-            $this->render('index', compact('results', 'queryString', 'query'));
+            $this->render('index', compact('results', 'originalQuery', 'query', 'type'));
         } else {
             $this->render('advanced');
         }
@@ -77,9 +92,9 @@ class SearchController extends Controller {
             $doc->addField(Zend_Search_Lucene_Field::Text('title', CHtml::encode($item->$title), 'utf-8'));
             $doc->addField(Zend_Search_Lucene_Field::Text('link', CHtml::encode($l), 'utf-8'));
             $doc->addField(Zend_Search_Lucene_Field::Text('content', $item->$content, 'utf-8'));
+            $doc->addField(Zend_Search_Lucene_Field::Text('type', get_class($item), 'utf-8'));
             $this->index->addDocument($doc);
         }
-
         $this->index->commit();
     }
 
@@ -92,9 +107,9 @@ class SearchController extends Controller {
         $a = $index->hasDeletions() ? '' : 'no ';
         echo "Index has {$a}deletions!<br/>";
 
-//        echo "<p>Field Names:<br/>";
-//        echo implode(',', $index->getFieldNames());
-//        echo "</p>";
+        echo "<p>Field Names:<br/>";
+        echo implode(',', $index->getFieldNames());
+        echo "</p>";
 
         $terms = $index->terms();
         echo "First Field: {$terms[0]->field} => {$terms[0]->text}<br/>";
@@ -118,6 +133,11 @@ class SearchController extends Controller {
 
     public static function getAttr($model, $in) {
         return $model->$in;
+    }
+
+    public function missingAction($actionID) {
+        $_GET['type'] = $actionID;
+        $this->actionIndex();
     }
 
 }

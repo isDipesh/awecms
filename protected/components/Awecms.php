@@ -339,5 +339,15 @@ class Awecms {
         }
         return $results;
     }
+    
+    public static function summarize($str,$len=500){
+        $stripped = strip_tags($str);
+        $str = substr($stripped, 0, $len);
+        if (strlen($stripped) > $len+25)
+            $str .= "...";
+        else
+            $str .= substr($stripped, $len);
+        return $str;
+    }
 
 }

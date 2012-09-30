@@ -13,13 +13,7 @@ class Page extends BasePage {
     }
 
     public function getExcerpt() {
-        $stripped = strip_tags($this->content);
-        $str = substr($stripped, 0, 500);
-        if (strlen($stripped) > 525)
-            $str .= "...";
-        else
-            $str .= substr($stripped, 500);
-        return $str;
+        return Awecms::summarize($this->content);
     }
 
     public static function findByType($type = 'Page') {
