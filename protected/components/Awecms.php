@@ -26,8 +26,8 @@ class Awecms {
             return $name;
         return Yii::app()->name;
     }
-    
-    public static function getTitlePrefix(){
+
+    public static function getTitlePrefix() {
         return ' - ' . Awecms::getSiteName();
     }
 
@@ -339,15 +339,46 @@ class Awecms {
         }
         return $results;
     }
-    
-    public static function summarize($str,$len=500){
+
+    public static function summarize($str, $len = 500) {
         $stripped = strip_tags($str);
         $str = substr($stripped, 0, $len);
-        if (strlen($stripped) > $len+25)
+        if (strlen($stripped) > $len + 25)
             $str .= "...";
         else
             $str .= substr($stripped, $len);
         return $str;
+    }
+
+    public static function rglob($path = '', $pattern = '*', $flags = 0) {
+        $paths = glob($path . '*', GLOB_MARK | GLOB_ONLYDIR | GLOB_NOSORT);
+        $files = glob($path . $pattern, $flags);
+        foreach ($paths as $path) {
+            $files = array_merge($files, self::rglob($path, $pattern, $flags));
+        }
+        return $files;
+    }
+
+    public static function directoryToArray($directory, $recursive) {
+        $array_items = array();
+        if ($handle = opendir($directory)) {
+            while (false !== ($file = readdir($handle))) {
+                if ($file != "." && $file != "..") {
+                    if (is_dir($directory . "/" . $file)) {
+                        if ($recursive) {
+                            $array_items = array_merge($array_items, self::directoryToArray($directory . "/" . $file, $recursive));
+                        }
+                        $file = $directory . "/" . $file;
+                        $array_items[] = preg_replace("/\/\//si", "/", $file);
+                    } else {
+                        $file = $directory . "/" . $file;
+                        $array_items[] = preg_replace("/\/\//si", "/", $file);
+                    }
+                }
+            }
+            closedir($handle);
+        }
+        return $array_items;
     }
 
 }

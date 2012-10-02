@@ -34,6 +34,9 @@ class PageForm extends CWidget {
 
 
 
+
+
+
             
 //get scenario
         $this->scenario = $this->model->scenario;
@@ -82,6 +85,10 @@ class PageForm extends CWidget {
                         $this->widget('ext.redactor.ERedactorWidget', array(
                             "model" => $page,
                             "attribute" => "content",
+                            'options' => array(
+                                'imageUpload' => Yii::app()->createAbsoluteUrl('/file/redactorUpload'),
+                                //'imageGetJson' => Yii::app()->createAbsoluteUrl('file/listImages'),
+                            ),
                         ));
                         ?>
                     <?php echo $form->error($page, 'content'); ?>
