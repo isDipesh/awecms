@@ -32,6 +32,8 @@ class PageForm extends CWidget {
             $this->page = new Page; //for create
 
 
+
+
             
 //get scenario
         $this->scenario = $this->model->scenario;
@@ -77,15 +79,9 @@ class PageForm extends CWidget {
                     <div class="row">
                         <?php echo $form->labelEx($page, 'content'); ?>
                         <?php
-                        $this->widget('ext.ckeditor.CKEditorWidget', array(
+                        $this->widget('ext.redactor.ERedactorWidget', array(
                             "model" => $page,
                             "attribute" => "content",
-                            "defaultValue" => $page->content,
-                            # Additional Parameter (Check http://docs.cksource.com/ckeditor_api/symbols/CKEDITOR.config.html)
-                            "config" => array(
-                                "height" => "400px",
-                                "width" => "100%",
-                            ),
                         ));
                         ?>
                     <?php echo $form->error($page, 'content'); ?>
