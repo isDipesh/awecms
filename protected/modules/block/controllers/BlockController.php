@@ -13,7 +13,7 @@ class BlockController extends Controller {
                     if (isset($_GET['returnUrl'])) {
                         $this->redirect($_GET['returnUrl']);
                     } else {
-                        $this->redirect(array('view', 'id' => $model->id));
+                        $this->redirect(array('/block'));
                     }
                 }
             } catch (Exception $e) {
@@ -36,7 +36,7 @@ class BlockController extends Controller {
                     if (isset($_GET['returnUrl'])) {
                         $this->redirect($_GET['returnUrl']);
                     } else {
-                        $this->redirect(array('view', 'id' => $model->id));
+                        $this->redirect(array('/block'));
                     }
                 }
             } catch (Exception $e) {

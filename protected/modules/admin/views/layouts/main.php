@@ -38,7 +38,7 @@
                             ),
                             array(
                                 'label' => 'Modules',
-                                'items' => Admin::getLinkForModules()
+                                'items' => AdminModule::getLinkForModules()
                             ),
                         )
                             )
@@ -61,7 +61,7 @@
             <nav id="left_sidebar">
                 <?php
 //                $this->widget('zii.widgets.jui.CJuiAccordion', array(
-//                    'panels' => Admin::getDashboardMenu(),
+//                    'panels' => AdminModule::getDashboardMenu(),
 //                    'options' => array(
 //                        'collapsible' => true,
 //                        'active' => 0,

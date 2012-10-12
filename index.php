@@ -5,7 +5,7 @@ $yii = dirname(__FILE__) . '/../../yii/framework/yii.php';
 date_default_timezone_set('GMT');
 
 // remove the following line when in production mode
-defined('YII_DEBUG') or define('YII_DEBUG', false);
+defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 $mainConfig = dirname(__FILE__) . '/protected/config/main.php';
 
