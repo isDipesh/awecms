@@ -1,3 +1,4 @@
+<?php header('Access-Control-Allow-Origin: http://disqus.com'); ?>
 <?php Awecms::$start_time = microtime(TRUE); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -7,12 +8,14 @@
 
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/kube.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/style.css" />
-        <!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow%7COswald%7CNova+Square%7CLobster&amp;subset=latin,latin,latin,latin">-->
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css?<?php echo time() ?>" />
 
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js?<?php echo time() ?>"></script>
 
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        <script type="text/javascript">
+            var disqus_developer = 1;
+        </script>
     </head>
 
     <body>
@@ -52,7 +55,7 @@
             </div>
             <?php include_once '_footer.php'; ?>
         </div>
-
+        <?php $this->widget('Disqus'); ?>
     </body>
 </html>
 
