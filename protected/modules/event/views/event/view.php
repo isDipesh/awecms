@@ -45,30 +45,36 @@ if (isset($model->start)) {
         ?>
     </p>
 </div>
-<div class="event-list-venue right">
-    <p>
-        <?php
-        if (isset($model->venue)) {
-            echo '<b>' . CHtml::encode($model->getAttributeLabel('venue')) . '</b>:';
-            ?>
-            <?php
-            echo nl2br($model->venue);
-        }
-        ?>
-    </p>
-</div>
-<b class="clear left">Event Description:</b>
-<div class="event-desc ">
+
+<p>
     <?php
-    if (isset($model->page->content)) {
+    if (isset($model->venue)) {
         ?>
-        <div class="desc-holder">
-            <?php
-            echo nl2br($model->page->content);
-        }
+    <div class="event-list-venue right">
+        <?php
+        echo '<b>' . CHtml::encode($model->getAttributeLabel('venue')) . '</b>:';
+        ?>
+        <?php
+        echo nl2br($model->venue);
         ?>
     </div>
+    <?php
+}
+?>
+</p>
+
+
+
+<?php
+if (isset($model->page->content)) {
+    ?>
+    <div class="event-desc">
+        <?php
+        echo nl2br($model->page->content);
+    }
+    ?>
 </div>
+
 <div class="event-org clear">
     <?php
     if (isset($model->organizer)) {

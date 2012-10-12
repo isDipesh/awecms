@@ -29,7 +29,7 @@
 //                'toolbar' => 'Basic',
 //            ),
 //        ));
-        echo CHtml::textArea('Page[content]', $page->content);
+        echo CHtml::textArea('Page[content]', $page->content, array('class'=>'description'));
         ?>
     </div>
 

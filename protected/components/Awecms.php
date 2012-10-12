@@ -260,6 +260,8 @@ class Awecms {
     //sort array of objects by an attribute
     //adapted from http://www.algorithmist.com/index.php/Quicksort_non-recursive.php
     public static function quickSort($array, $attribute = 'title') {
+        if (!count($array))
+            return $array;
         $cur = 1;
         $stack[1]['l'] = 0;
         $stack[1]['r'] = count($array) - 1;
@@ -319,8 +321,9 @@ class Awecms {
         foreach ($items as $item)
             if (isset($children[$item->id]))
                 $item->children = $children[$item->id];
-
-        return $children[0];
+        if (count($children))
+            return $children[0];
+        return array();
     }
 
     public static function getAllChildren($a) {

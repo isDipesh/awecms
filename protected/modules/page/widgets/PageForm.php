@@ -66,7 +66,8 @@ class PageForm extends CWidget {
                         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/create_slug.js');
                     ?>
                     <div class="row sticky">
-                        <span id="slug_label" style="display:inline;"><strong><?php echo Yii::t('app','Link:'); ?></strong><?php echo 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/'; ?></span><span id="slug_holder" style="display:inline">
+                        <span id="slug_label" style="display:inline;"><strong><?php echo Yii::t('app','Link:'); ?></strong>
+                            <?php echo 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/'; ?></span><span id="slug_holder" style="display:inline">
                             <?php
                             $slug = isset($page->slug->slug) ? $page->slug->slug : '';
                             echo $slug;

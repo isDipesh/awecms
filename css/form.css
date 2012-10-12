@@ -159,3 +159,8 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
     clear: left;
     padding-left: 110px;
 }
+
+.description{
+    height : 60px;
+    width: 320px;
+}

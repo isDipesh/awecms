@@ -32,15 +32,19 @@
 //                'imageUpload' => Yii::app()->createAbsoluteUrl('/file/redactorUpload'),
 //            ),
 //        ));
-        echo CHtml::textArea('Page[content]', $page->content);
+        echo CHtml::textArea('Page[content]', $page->content, array('class'=>'description'));
         ?>
     </div>
 
-    <div class="row">
-        <?php echo $form->labelEx($model, 'thumbnail_id'); ?>
-        <?php echo $form->dropDownList($model, 'thumbnail', CHtml::listData(Image::model()->findAllByAttributes(array('album_id' => $model->id)), 'id', 'title')); ?>
-        <?php echo $form->error($model, 'thumbnail_id'); ?>
-    </div>
+    <?php
+    if (!$model->isNewRecord) {
+        ?>
+        <div class="row">
+            <?php echo $form->labelEx($model, 'thumbnail_id'); ?>
+            <?php echo $form->dropDownList($model, 'thumbnail', CHtml::listData(Image::model()->findAllByAttributes(array('album_id' => $model->id)), 'id', 'title')); ?>
+            <?php echo $form->error($model, 'thumbnail_id'); ?>
+        </div>
+    <?php } ?>
 
     <div class="row buttons">
         <?php
