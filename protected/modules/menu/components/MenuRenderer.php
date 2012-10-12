@@ -75,9 +75,9 @@ class MenuRenderer extends CMenu {
             if ($item == array())
                 continue;
 
+            $visible = FALSE;
             //handle roles here
             if (isset($item['role'])) {
-                $visible = FALSE;
                 $roles = explode(',', $item['role']);
                 if (in_array('all', $roles)) {
                     $visible = TRUE;
@@ -91,9 +91,10 @@ class MenuRenderer extends CMenu {
                             $visible = TRUE;
                     }
                 }
-                if (!$visible)
-                    continue;
             }
+
+            if (!$visible)
+                continue;
 
             $class = array();
 
@@ -146,7 +147,7 @@ class MenuRenderer extends CMenu {
             //handle open-in-in-new-tab
             if (isset($item['target']))
                 $options['target'] = $item['target'];
-            
+
             //set description as title
             if (isset($item['description']))
                 $options['title'] = $item['description'];
