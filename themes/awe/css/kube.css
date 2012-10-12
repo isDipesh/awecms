@@ -1164,7 +1164,7 @@ input.big {
   clear: both;
 }
 .last {
-  margin-right: 0 !important;
+  margin-right: 0 ;
 }
 .end {
   margin-bottom: 0 !important;

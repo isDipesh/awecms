@@ -212,17 +212,8 @@ h1.head{
   margin: 0;
   list-style: none;
 }
-#nav ul li {
-  float: left;
-  font-weight: bold;
-}
 #nav li a, #nav li span {
-  padding: 1px 8px;
   display: block;
-}
-#nav li a {
-  color: #000;
-  text-decoration: none;
 }
 #nav li b a {
   color: #369;
@@ -230,17 +221,6 @@ h1.head{
 }
 #nav li span {
   color: #bbb;  
-}
-#nav li a:hover {
-  color: #555;
-  text-decoration: underline;
-}
-#nav .red-link a {
-  color: #fff;
-  background-color: #d74a32;
-}
-#nav .red-link a:hover {
-  color: #fff;
 }
 
 
@@ -310,7 +290,6 @@ h1.head{
 .list-toc, .portlet-content ul {
   margin-left: 0;
   list-style: none;
-  padding-right: 2em;
 }
 .list-toc li, .portlet-content ul li {
   border-bottom: 1px solid #e5e5e5;
