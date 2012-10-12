@@ -30,6 +30,7 @@
         ?>
         <!--<br/>-->
         <?php
+        
         if (Yii::app()->hasModule('page')) {
             echo CHtml::radioButton('MenuItem[type]', $model->type == 'content', array('value' => 'content', 'id' => 'radio_content'));
             echo Yii::t('app', 'Content') . ' ';

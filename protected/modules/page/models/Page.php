@@ -26,12 +26,15 @@ class Page extends BasePage {
         $type = ($this->type);
         if ($type == 'Page')
             return '/' . lcfirst($type) . '/view?id=' . $this->id;
+        $model = '';
         if (class_exists($type, false)) {
             $model = $type::model()->findByAttributes(array('page_id' => $this->id));
         }
-        if (isset($model)) {
+        if ($model) {
             return '/' . lcfirst($type) . '/view?id=' . $model->id;
         }
+//        echo class_exists('News');
+//        die();
         return;
     }
 
