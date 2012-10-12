@@ -6,8 +6,6 @@
     <br/>
     <?php  if($data->description){
     	echo $data->description;
-    } else{
-    	echo "Description not set.";
     }?>
 
 </div>

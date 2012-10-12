@@ -35,27 +35,27 @@ if (isset($model->image)) {
 <br>
 <?php
 if (isset($model->phone))
-    echo Yii::t('app', '<b>Phone</b>') . ': ' . $model->phone . '<br/>';
+    echo '<b>'.Yii::t('app', 'Phone') . '</b>: ' . $model->phone . '<br/>';
 ?>
 <?php
 if (isset($model->fax))
-    echo Yii::t('app', '<b>Fax</b>') . ': ' . $model->fax . '<br/>';;
+    echo '<b>'.Yii::t('app', 'Fax') . '</b>: ' . $model->fax . '<br/>';;
 ?>
 <?php
 if (isset($model->email))
-    echo Yii::t('app', '<b>Email</b>') . ': ' . CHtml::mailto($model->email) . '<br/>';;
+    echo '<b>'.Yii::t('app', 'Email') . '</b>: ' . CHtml::mailto($model->email) . '<br/>';;
 ?>
 <?php
 if (isset($model->website))
-    echo Yii::t('app', '<b>Website</b>') . ': ' . CHtml::link($model->website, $model->website, array("target" => "_blank")) . '<br/>';;
+    echo '<b>'.Yii::t('app', 'Website') . '</b>: ' . CHtml::link($model->website, $model->website, array("target" => "_blank")) . '<br/>';;
 ?>
 <?php
 if (isset($model->address))
-    echo Yii::t('app', '<b>Address</b>') . ':<br/>' . nl2br($model->address) . '<br/>';;
+    echo '<b>'.Yii::t('app', 'Address') . '</b>:<br/>' . nl2br($model->address) . '<br/>';;
 ?>
 <?php
 if (isset($model->district_id))
-    echo Yii::t('app', '<b>District</b>') . ': ' . $model->district . '<br/>';;
+    echo '<b>'.Yii::t('app', 'District') . '</b>: ' . $model->district . '<br/>';;
 ?>
 
 <div class="rte-text">

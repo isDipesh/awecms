@@ -18,17 +18,16 @@ if (!isset($this->menu) || $this->menu === array()) {
 ?>
 
 <h1 class="inline"><?php echo $model->page->title; ?></h1> (<?php echo count($images) . ' ' . Awecms::pluralize(Yii::t('app', 'image'), Yii::t('app', 'images'), count($images)); ?>) 
-<br />
 
 <?php
 if ($model->page->content)
 {
 ?>
-<p class="album-desc">
+<div class="album-desc">
 <?php
     echo $model->page->content;
 ?>
-</p>
+</div>
 <?php  } else { echo "<br>";}?>
 
 
