@@ -77,13 +77,11 @@
         <?php echo $form->labelEx($model, 'Description'); ?>
         <?php
         $page = isset($model->page) ? $model->page : new Page;
-        $this->widget('ext.ckeditor.CKEditorWidget', array(
+        $this->widget('ext.redactor.ERedactorWidget', array(
             "model" => $page,
             "attribute" => "content",
-            "defaultValue" => $page->content,
-            "config" => array(
-                "height" => "200px",
-                'toolbar' => 'Basic',
+            'options' => array(
+                'imageUpload' => Yii::app()->createAbsoluteUrl('/file/redactorUpload'),
             ),
         ));
         ?>

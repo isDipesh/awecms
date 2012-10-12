@@ -14,7 +14,7 @@ $this->widget("ext.elfinder.ElFinderWidget", array(
     'selector' => "div#file-uploader",
     'clientOptions' => array(
         'resizable' => false,
-        'wysiwyg' => "ckeditor"
+        'wysiwyg' => "redactor"
     ),
     'connectorRoute' => "file/fileUploaderConnector",
     'connectorOptions' => array(

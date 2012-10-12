@@ -22,13 +22,11 @@
     <div class="row">
         <?php echo $form->labelEx($model, 'content'); ?>
         <?php
-        $this->widget('ext.ckeditor.CKEditorWidget', array(
-            "model" => $model,
+        $this->widget('ext.redactor.ERedactorWidget', array(
+            "model" => $page,
             "attribute" => "content",
-            "defaultValue" => $model->content,
-            "config" => array(
-                "height" => "200px",
-                'toolbar' => 'Basic',
+            'options' => array(
+                'imageUpload' => Yii::app()->createAbsoluteUrl('/file/redactorUpload'),
             ),
         ));
         ?>
