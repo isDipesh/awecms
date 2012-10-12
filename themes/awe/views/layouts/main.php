@@ -22,6 +22,7 @@
                     <h1 class="head"><?php echo Settings::get('site', 'name'); ?></h1>
                     <nav id="nav">
                         <?php $this->widget('MenuRenderer'); ?>
+                        <?php $this->widget('GAnalytics'); ?>
                     </nav>       
                 </header>
             </div>

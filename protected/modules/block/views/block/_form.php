@@ -23,7 +23,7 @@
         <?php echo $form->labelEx($model, 'content'); ?>
         <?php
         $this->widget('ext.redactor.ERedactorWidget', array(
-            "model" => $page,
+            "model" => $model,
             "attribute" => "content",
             'options' => array(
                 'imageUpload' => Yii::app()->createAbsoluteUrl('/file/redactorUpload'),
