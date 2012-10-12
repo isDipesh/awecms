@@ -92,6 +92,10 @@ class MenuRenderer extends CMenu {
                     }
                 }
             }
+            else
+                $visible = TRUE; //makes menu items visible if they have no roles index, e.g. with appended menu items
+
+
 
             if (!$visible)
                 continue;
