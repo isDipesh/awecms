@@ -389,14 +389,14 @@ table input{
     width: 100%;
 }
 .items div.view{
-    padding: 6px 8px;
+    padding: 10px 8px;
     border-bottom: 1px solid #eee;
     border-top: 1px solid #fff;
     width: 98.5%;
     float: left;
 }
 .items div.view h2{
-    margin-bottom: 0px;
+    margin: 0px;
 }
 .items div.view h2 a{
     text-decoration: none;

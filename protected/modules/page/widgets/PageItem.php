@@ -52,7 +52,7 @@ class PageItem extends CWidget {
                     echo nl2br($page->content);
                     break;
                 case 'created_at':
-                    echo "<div class='post-time'>" . Yii::t('app', 'Posted on ') . '<time>' . date('F d, Y h:m A', strtotime($page->created_at)) . "</time></div>";
+                    echo "<div class='post-time meta'>" . Yii::t('app', 'Posted on ') . '<time>' . date('F d, Y h:m A', strtotime($page->created_at)) . "</time></div>";
                     break;
                 case 'excerpt':
                     if (!empty($page->content)) {
