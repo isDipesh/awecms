@@ -150,6 +150,7 @@ class PageBehavior extends CActiveRecordBehavior {
 //    }
 
     public function afterDelete($event) {
+        $this->getP()->slug->delete();
         if (get_class($this->owner) == 'Page')
             return;
         $this->owner->page->delete();

@@ -39,9 +39,11 @@ ul.dropdown {
 		background: #eee;
 		border: 1px solid #ccc;
 		top: 80% !important;
-		width: auto;
+		width: 130%;
 	}
-
+        #nav ul.dropdown ul ul{
+            top: 10px !important;
+        }
 		ul.dropdown ul li {
 		 font-weight: normal;
 		}
@@ -69,7 +71,7 @@ ul.dropdown {
 		display: block;
 	}
 	ul.dropdown a:link,
-	ul.dropdown a:visited	{ color: #333; text-decoration: none; padding: 4px 0px; margin: 0px 6px; border-bottom: 2px solid #fff; }
+	ul.dropdown a:visited, ul.dropdown li span	{ color: #333; text-decoration: none; padding: 4px 0px; margin: 0px 6px; border-bottom: 2px solid #fff; }
 	ul.dropdown a:hover		{ color: #000; text-decoration: none; border-bottom: 2px solid #666; }
 	ul.dropdown a:active	{ color: #ffa500; }
 

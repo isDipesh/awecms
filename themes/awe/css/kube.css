@@ -648,7 +648,6 @@ input[type="password"],
 input[type="email"],
 textarea {
   position: relative;
-  z-index: 2;
   font-family: Helvetica, Arial, Tahoma, sans-serif;
   height: 23px;
   border: 1px solid #ccc;

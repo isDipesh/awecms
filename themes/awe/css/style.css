@@ -213,7 +213,8 @@ h1.head{
     line-height: 1.4em;
     width: auto;
     margin-right: 2%;
-    margin-left: 0.5%
+    margin-left: 0.5%;
+    font-weight: normal;
 }
 .nm_row input{
     float: left;
@@ -236,8 +237,8 @@ h1.head{
     padding: 0px 8px;
 }
 .span-19{
-overflow: hidden;
-padding-bottom: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
 }
 .list-view .summary{
     color: #999;
@@ -335,7 +336,7 @@ padding-bottom: 20px;
     border-bottom: 1px solid #e5e5e5;
     padding: .2em 0em;
 }
-.list-toc li a, .list-toc li span,, .portlet-content ul li a, .portlet-content ul li span {
+.list-toc li a, .list-toc li span, .portlet-content ul li a, .portlet-content ul li span {
     padding: 7px 0;
     display: block;
 }
