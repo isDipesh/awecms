@@ -38,8 +38,7 @@ ul.dropdown {
 		width: 150px;
 		background: #eee;
 		border: 1px solid #ccc;
-		margin-top: 1px;
-		top: 92%;
+		top: 80% !important;
 		width: auto;
 	}
 
