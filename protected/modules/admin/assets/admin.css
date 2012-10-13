@@ -123,6 +123,7 @@ header a{
 div.summary, .list-view .summary, .grid-view .summary {
     float: right;
     margin: 0px 5px;
+    color: #999;
 }
 .row.buttons{
     clear: both

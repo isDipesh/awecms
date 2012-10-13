@@ -72,6 +72,7 @@
 
     <div class="row nm_row">
         <label for="businessCategories"><?php echo Yii::t('app', 'BusinessCategories'); ?></label>
+        <br />
         <?php
         echo CHtml::checkBoxList('Business[businessCategories]', array_map('Awecms::getPrimaryKey', $model->businessCategories), CHtml::listData(BusinessCategory::model()->findAll(), 'id', 'title'), array('attributeitem' => 'id', 'checkAll' => 'Select All'));
         ?>

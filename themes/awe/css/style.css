@@ -207,7 +207,41 @@ h1.head{
 #header h3 a:hover {
     text-decoration: underline;
 }
-
+.nm_row span label,.nm_row label{
+    display: inline;
+    float: left;
+    line-height: 1.4em;
+    width: auto;
+    margin-right: 2%;
+    margin-left: 0.5%
+}
+.nm_row input{
+    float: left;
+}
+.nm_row{
+    clear: both;
+}
+#Business_businessCategories{
+    margin-top: 10px;
+}
+#Business_businessCategories input{
+    clear: both;
+}
+.label{
+    margin-right: 10px;
+    background: #eee;
+    border: 1px solid #ccc;
+}
+.label a{
+    padding: 0px 8px;
+}
+.span-19{
+overflow: hidden;
+padding-bottom: 20px;
+}
+.list-view .summary{
+    color: #999;
+}
 /* =Nav
 -----------------------------------------------------------------------------*/
 #nav {
