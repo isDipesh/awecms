@@ -160,7 +160,7 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
     padding-left: 110px;
 }
 
-.description{
+.textarea{
     height : 60px;
     width: 320px;
 }

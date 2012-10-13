@@ -69,7 +69,7 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'venue'); ?>
-        <?php echo $form->textArea($model, 'venue', array('class' => 'description')); ?>
+        <?php echo $form->textArea($model, 'venue', array('class' => 'textarea')); ?>
         <?php echo $form->error($model, 'venue'); ?>
     </div>
 
