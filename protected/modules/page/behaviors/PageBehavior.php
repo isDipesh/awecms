@@ -196,4 +196,18 @@ class PageBehavior extends CActiveRecordBehavior {
             return $this->owner->page->id;
     }
 
+    public function getModified_at() {
+        if (get_class($this->owner) == 'Page')
+            return $this->owner->modified_at;
+        if (isset($this->owner->page))
+            return $this->owner->page->modified_at;
+    }
+
+    public function getCreated_at() {
+        if (get_class($this->owner) == 'Page')
+            return $this->owner->created_at;
+        if (isset($this->owner->page))
+            return $this->owner->page->created_at;
+    }
+
 }

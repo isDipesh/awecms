@@ -1,161 +1,161 @@
 /* =Typography
 -----------------------------------------------------------------------------*/
 body {
-  font-family: 'PT Sans Narrow', Helvetica, Arial, sans-serif;
-  font-size: 15px;
+    font-family: 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    font-size: 15px;
 }
 
 ::selection {
-  color: #fff;
-  background-color: #c04345;
-  text-shadow: none;
+    color: #fff;
+    background-color: #c04345;
+    text-shadow: none;
 }
 .right{
-  float: right;
+    float: right;
 }
 .left{
-  float: left;
+    float: left;
 }
 .btn-bigger {
-  font-size: 18px;
-  padding: 14px 30px;
+    font-size: 18px;
+    padding: 14px 30px;
 }
 .mid-bar{
-  clear: both;
-  background: #eee;
-  margin-bottom: 20px;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  padding: 8px 4px;
+    clear: both;
+    background: #eee;
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 4px;
 }
 .portlet{
-  clear: both;
+    clear: both;
 }
 .portlet-header{
-  font-size: 1.4em;
-  font-weight: bold;
-  margin-bottom: .5em;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: .5em;
 }
 .breadcrumbs{
-  float: left;
+    float: left;
 }
 .portlet-title{
-  font-size: 1.2em;
-  border-bottom: 1px solid #666;
-  padding-bottom: .2em;
-  margin-bottom: .2em;
-  font-weight: bold;
+    font-size: 1.2em;
+    border-bottom: 1px solid #666;
+    padding-bottom: .2em;
+    margin-bottom: .2em;
+    font-weight: bold;
 }
 .view{
-  clear: both;
-  margin-bottom: 2em;
-  float: left;
-  width: 100%;
+    clear: both;
+    margin-bottom: 2em;
+    float: left;
+    width: 100%;
 }
 /* =Links
 -----------------------------------------------------------------------------*/
 a {
-  color: #369;
+    color: #369;
 }
 a:hover {
-  color: #c72020;
+    color: #c72020;
 }
 
 /* =Layout
 -----------------------------------------------------------------------------*/
 .wrapper { 
-  margin: auto; 
-  max-width: 1000px;
-  padding: 0 10px;
-  _width: 940px;  
+    margin: auto; 
+    max-width: 1000px;
+    padding: 0 10px;
+    _width: 940px;  
 }
 #top_inner {
-  margin: auto;
-  padding: 0 20px;
+    margin: auto;
+    padding: 0 20px;
 }
 #page {
-  position: relative;
-  border-radius: 3px;
-  padding: 1.5em 0; 
-  margin: 0 auto 1.5em auto;
+    position: relative;
+    border-radius: 3px;
+    padding: 1.5em 0; 
+    margin: 0 auto 1.5em auto;
 }
 #main-head {
-  padding: 2em 0 4em 0;
-  margin-bottom: 2em; 
-  border-bottom: 1px solid #eee;
-  text-align: center;
-  font-size: 20px;
+    padding: 2em 0 4em 0;
+    margin-bottom: 2em; 
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 20px;
 }
 
 
 /* =Top
 -----------------------------------------------------------------------------*/
 #top {
-  background: #111;
-  color: #eee;
-  overflow: hidden;
-  padding: 7px 0 5px 0;
-  margin-bottom: 1.5em;
+    background: #111;
+    color: #eee;
+    overflow: hidden;
+    padding: 7px 0 5px 0;
+    margin-bottom: 1.5em;
 }
 #top a {
-  color: #eee;
-  text-decoration: none;
+    color: #eee;
+    text-decoration: none;
 }
 #top a:hover {
-  color: #eee !important;
-  text-decoration: underline;
+    color: #eee !important;
+    text-decoration: underline;
 }
 #logo {
-  float: left;
-  background: url(../img/logo.png) no-repeat;
-  width: 108px;
-  height: 24px;
-  margin-top: 2px;
+    float: left;
+    background: url(../img/logo.png) no-repeat;
+    width: 108px;
+    height: 24px;
+    margin-top: 2px;
 }
 #logo a {
-  zoom: 1;
-  display: block;
-  height: 24px;
+    zoom: 1;
+    display: block;
+    height: 24px;
 }
 #desc {
-  float: left;
-  margin-top: 4px;
-  margin-left: 30px;
-  font-size: 13px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 30px;
+    font-size: 13px;
 }
 #desc a {
-  color: #eee;
-  text-decoration: none;
+    color: #eee;
+    text-decoration: none;
 }
 #desc a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 #appendix {
-  margin: 0;
-  list-style: none;
-  float: right;
-  font-size: .85em;
-  line-height: 30px;
+    margin: 0;
+    list-style: none;
+    float: right;
+    font-size: .85em;
+    line-height: 30px;
 }
 #appendix li {
-  float: left;
-  margin-left: 2em;
+    float: left;
+    margin-left: 2em;
 }
 #appendix li span {
-  color: #000;
-  display: block;
-  border-radius: 3px;
-  padding: 0 5px;
-  line-height: 20px;
-  position: relative;
-  top: 5px;
-  background-color: #ddd;
+    color: #000;
+    display: block;
+    border-radius: 3px;
+    padding: 0 5px;
+    line-height: 20px;
+    position: relative;
+    top: 5px;
+    background-color: #ddd;
 }
 #twitterlink {
-  padding-left: 20px;
-  background: url(../img/ico_twitter.png) no-repeat;
-  background-position: 0 -1px;
+    padding-left: 20px;
+    background: url(../img/ico_twitter.png) no-repeat;
+    background-position: 0 -1px;
 }
 
 
@@ -163,123 +163,123 @@ a:hover {
 /* =Intro
 -----------------------------------------------------------------------------*/
 #intro {
-  margin: 4.5em 0 2em 0;
-  padding-left: 35px;
+    margin: 4.5em 0 2em 0;
+    padding-left: 35px;
 }
 #intro h1 {
-  margin-bottom: 12px;
-  font-size: 48px;
+    margin-bottom: 12px;
+    font-size: 48px;
 }
 #intro p {
-  color: #888;
-  margin-bottom: 0;
+    color: #888;
+    margin-bottom: 0;
 }
 h1.head{
-  float: left;
-  margin-top: .4em;
-  margin-bottom: .2em;
+    float: left;
+    margin-top: .4em;
+    margin-bottom: .2em;
 }
 
 /* =Header
 -----------------------------------------------------------------------------*/
 #header {
-  margin-bottom: 1em;
-  float: left;
-  width: 100%;
+    margin-bottom: 1em;
+    float: left;
+    width: 100%;
 }
 #header h3 {
-  float: left;
-  margin: 0;
-  font-size: 24px;
-  padding-left: 35px;
-  background: url(../img/kube.png) no-repeat;
+    float: left;
+    margin: 0;
+    font-size: 24px;
+    padding-left: 35px;
+    background: url(../img/kube.png) no-repeat;
 }
 #header h3 a {
-  color: #000;
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
 #header h3 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* =Nav
 -----------------------------------------------------------------------------*/
 #nav {
-  float: right;
-  margin-top: 24px;
+    float: right;
+    margin-top: 24px;
 }
 #nav ul {
-  margin: 0;
-  list-style: none;
+    margin: 0;
+    list-style: none;
 }
 #nav li a, #nav li span {
-  display: block;
+    display: block;
 }
 #nav li b a {
-  color: #369;
-  text-decoration: underline;
+    color: #369;
+    text-decoration: underline;
 }
 #nav li span {
-  color: #bbb;  
+    color: #bbb;  
 }
 
 
 /* =Misc 
 -----------------------------------------------------------------------------*/
 #features {
-  margin-left: 35px;
-  padding-top: 3.5em;
-  border-top: 1px solid #eee;
+    margin-left: 35px;
+    padding-top: 3.5em;
+    border-top: 1px solid #eee;
 }
 #features pre {
-  padding: 1em;
-  font-size: 12px;  
+    padding: 1em;
+    font-size: 12px;  
 }
 #features p {
-  line-height: 1.6em;
-  margin-bottom: 1em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
 }
 .inner-features, .inner-back {
-  background-color: #f6f6f6;
+    background-color: #f6f6f6;
 }
 .inner-nobottom {
-  padding-bottom: 1px;
+    padding-bottom: 1px;
 }
 .btn-block {
-  padding: 3em 0 0 0;
-  margin-bottom: 1.5em;
+    padding: 3em 0 0 0;
+    margin-bottom: 1.5em;
 }
 .btn-block div {
-  margin-top: 10px;
-  font-size: 13px;
+    margin-top: 10px;
+    font-size: 13px;
 }
 .btn-block div a {
-  color: #555;
+    color: #555;
 }
 .btn-block div a:hover {
-  color: #c72020;
+    color: #c72020;
 }
 
 /* =Lists
 -----------------------------------------------------------------------------*/
 .list-mdash {
-  margin-left: 0;
+    margin-left: 0;
 }
 .list-mdash li {
-  list-style: none;
-  line-height: 1.7em;
+    list-style: none;
+    line-height: 1.7em;
 }
 .list-mdash li:before {
-  content:"\2014\a0";
+    content:"\2014\a0";
 }
 .list-browser {
-  margin-left: 0;
-  list-style: none; 
+    margin-left: 0;
+    list-style: none; 
 }
 .list-browser li {
-  padding-left: 24px;
-  line-height: 26px;  
-  background-position: 0 2px !important;
+    padding-left: 24px;
+    line-height: 26px;  
+    background-position: 0 2px !important;
 }
 .list-browser li.ico_browser_chrome { background: url(../img/ico_browser_chrome.png) no-repeat; }
 .list-browser li.ico_browser_firefox { background: url(../img/ico_browser_firefox.png) no-repeat; }
@@ -288,35 +288,35 @@ h1.head{
 .list-browser li.ico_browser_ie { background: url(../img/ico_browser_ie.png) no-repeat; }
 
 .list-toc, .portlet-content ul {
-  margin-left: 0;
-  list-style: none;
+    margin-left: 0;
+    list-style: none;
 }
 .list-toc li, .portlet-content ul li {
-  border-bottom: 1px solid #e5e5e5;
-  padding: .2em 0em;
+    border-bottom: 1px solid #e5e5e5;
+    padding: .2em 0em;
 }
 .list-toc li a, .list-toc li span,, .portlet-content ul li a, .portlet-content ul li span {
-  padding: 7px 0;
-  display: block;
+    padding: 7px 0;
+    display: block;
 }
 .list-toc li a, .portlet-content ul li a{
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
 }
 .list-toc li a:hover, .portlet-content ul li a:hover{
-  text-decoration: underline;
+    text-decoration: underline;
 }
 .list-toc li span, .portlet-content ul li span {
-  font-weight: bold;
-  color: #a8a8a8;
+    font-weight: bold;
+    color: #a8a8a8;
 }
 
 .list-stack {
-  margin-left: 0;
-  list-style: none;
+    margin-left: 0;
+    list-style: none;
 }
 .list-stack li {
-  padding: 4px 0;
+    padding: 4px 0;
 }
 
 
@@ -324,20 +324,20 @@ h1.head{
 /* =Footer
 -----------------------------------------------------------------------------*/
 #footer {
-  padding-top: 1.5em;
-  border-top: 1px solid #eee;
-  font-size: .85em;
-  color: #555;
-  padding-bottom: 90px;
+    padding-top: 1.5em;
+    border-top: 1px solid #eee;
+    font-size: .85em;
+    color: #555;
+    padding-bottom: 90px;
 }
 body.indexpage #footer {
-  margin-left: 35px;  
+    margin-left: 35px;  
 }
 #footer a {
-  color: #000;
+    color: #000;
 }
 #footer a:hover {
-  color: #555;
+    color: #555;
 }
 
 /* =Prettyprint
@@ -352,16 +352,16 @@ body.indexpage #footer {
 .pln { color: #444; }
 
 .prettyprint.linenums {
-  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
 }
 ol.linenums {
-  margin: 0 0 0 33px;
+    margin: 0 0 0 33px;
 } 
 ol.linenums li {
-  color: #bebec5;
-  text-shadow: 0 1px 0 #fff;
+    color: #bebec5;
+    text-shadow: 0 1px 0 #fff;
 }
 li.L1, li.L3, li.L5, li.L7, li.L9 {
     background: #fcfcfc;
@@ -372,20 +372,20 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 /* =Demo
 -----------------------------------------------------------------------------*/
 .swatch {
-  display: inline-block;
-  border-radius: 3px;
-  width: 16px;
-  height: 16px;
-  line-height: 18px;
+    display: inline-block;
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    line-height: 18px;
 }
 .box-demo {
-  padding: 5px 0;
+    padding: 5px 0;
 }
 .griddemo .inner {
-  background-color: #4d698c;
+    background-color: #4d698c;
 }
 .griddemo .row {
-  background-color: #f3f3f3;
+    background-color: #f3f3f3;
 }
 .griddemo .row,
 .griddemo .block-two > li,
@@ -393,18 +393,18 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 .griddemo .block-four > li,
 .griddemo .block-five > li,
 .griddemo .block-six > li { 
-  color: #fff;
-  line-height: 60px;
-  font-size: 13px;
-  text-align: center;
+    color: #fff;
+    line-height: 60px;
+    font-size: 13px;
+    text-align: center;
 }
 .bg-lightblue {background-color:#b0c4de}
 .bg-blue {background-color:#7e9ec7}
 .cut {
-  text-align: center;
-  font-size: 24px;
-  color: #aaa;
-  margin: 3em 0;
+    text-align: center;
+    font-size: 24px;
+    color: #aaa;
+    margin: 3em 0;
 }
 
 /* =Tablet (Portrait)
@@ -413,3 +413,6 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
     .wrapper { width: 748px; }
 }
 
+.view h2{
+    margin-bottom: 0;
+}

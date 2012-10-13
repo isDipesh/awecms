@@ -7,11 +7,11 @@ class PageView extends CWidget {
     private $page;
 
     public function init() {
-        
+
         //check for required arguments
-        if(!$this->model)
-            throw new CHttpException('500','$model must be provided for PageView Widget');
-        
+        if (!$this->model)
+            throw new CHttpException('500', '$model must be provided for PageView Widget');
+
         //users do not tend to use array for single item
         if (!is_array($this->fields)) {
             $tmp = array();
@@ -39,7 +39,10 @@ class PageView extends CWidget {
                     <?php
                     break;
                 case 'content':
-                    echo "<div class='rte-text'>".$page->content."</div>";
+                    echo "<div class='rte-text'>" . $page->content . "</div>";
+                    break;
+                case 'created_at':
+                    echo "<div class='post-time'>" . Yii::t('app','Posted on ') . '<time>'. date('F d, Y h:m A', strtotime($page->created_at)) . "</time></div>";
                     break;
                 case 'excerpt':
                     if (!empty($data->content)) {

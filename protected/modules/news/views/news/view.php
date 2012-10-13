@@ -1,7 +1,8 @@
 <?php
+
 $this->breadcrumbs = array(
     Yii::t('app', 'News') => array('/news'),
-    Yii::t('app', $model->page->title),
+    Yii::t('app', $model->title),
 );
 if (!isset($this->menu) || $this->menu === array()) {
     $this->menu = array(
@@ -15,8 +16,9 @@ if (!isset($this->menu) || $this->menu === array()) {
 }
 ?>
 <?php
+
 $this->widget('PageView', array(
     'model' => $model,
-    'fields' => array('title', 'content', 'sub-pages', 'categories')
+    'fields' => array('title', 'created_at', 'content', 'sub-pages', 'categories')
 ));
 ?>

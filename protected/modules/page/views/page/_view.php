@@ -2,9 +2,9 @@
 
     <?php
     $this->widget('PageItem', array(
-    'data' => $data,
-    'fields' => array('title', 'excerpt', 'views')
-));
+        'data' => $data,
+        'fields' => array('title', 'excerpt', 'views')
+    ));
     ?>
-    
+
 </div>

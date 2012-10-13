@@ -45,11 +45,14 @@ class PageItem extends CWidget {
             switch ($field) {
                 case 'title':
                     ?>
-                    <?php echo CHtml::encode($page->title); ?><br/>
+                    <?php // echo CHtml::encode($page->title); ?><br/>
                     <?php
                     break;
                 case 'content':
                     echo nl2br($page->content);
+                    break;
+                case 'created_at':
+                    echo "<div class='post-time'>" . Yii::t('app', 'Posted on ') . '<time>' . date('F d, Y h:m A', strtotime($page->created_at)) . "</time></div>";
                     break;
                 case 'excerpt':
                     if (!empty($page->content)) {
@@ -97,16 +100,16 @@ class PageItem extends CWidget {
                 case 'views':
                     if (!empty($page->views)) {
                         ?>
-                        <div class="field">
-                            <div class="field_name">
+                        <span class="field">
+                            <span class="field_name">
                                 <?php echo CHtml::encode($page->getAttributeLabel('views')); ?>:
-                            </div>
-                            <div class="field_value">
+                            </pan>
+                            <span class="field_value">
                                 <?php
                                 echo CHtml::encode($page->views);
                                 ?>
-                            </div>
-                        </div>
+                            </span>
+                        </span>
                         <?php
                     }
                     break;

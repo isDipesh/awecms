@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 25, 2012 at 04:16 PM
+-- Generation Time: Oct 12, 2012 at 10:36 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.6
 
@@ -80,16 +80,14 @@ CREATE TABLE IF NOT EXISTS `album` (
   PRIMARY KEY (`id`),
   KEY `page_id` (`page_id`),
   KEY `thumbnail_id` (`thumbnail_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `album`
 --
 
 INSERT INTO `album` (`id`, `page_id`, `thumbnail_id`) VALUES
-(6, 458, 238),
-(8, 471, NULL),
-(9, 474, NULL);
+(10, 552, NULL);
 
 -- --------------------------------------------------------
 
@@ -120,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `block` (
 --
 
 INSERT INTO `block` (`id`, `title`, `content`, `enabled`, `is_widget`, `widget_class`, `tag_name`, `html_options`, `decoration_css_class`, `title_css_class`, `content_css_class`, `hide_on_empty`, `skin`) VALUES
-(5, 'Introduction', '<p>\r\n	<em><strong>Hello there</strong></em></p>\r\n', 1, 0, 'CWidget', 'div', NULL, 'portlet-decoration', 'portlet-title', 'portlet-content', 0, 'default'),
+(5, 'Introduction', '<p>\r\n	<em><strong>Hello there</strong></em><br></p>\r\n', 1, 1, 'CWidget', 'div', NULL, 'portlet-decoration', 'portlet-title', 'portlet-content', 0, 'default'),
 (6, 'Social Links', NULL, 1, 1, 'CWidget', 'div', NULL, 'portlet-decoration', 'portlet-title', 'portlet-content', 1, 'default'),
 (7, 'home', '<p>\r\n	adxdghjsakdlsad</p>\r\n', 1, 0, 'CWidget', 'div', NULL, 'portlet-decoration', 'portlet-title', 'portlet-content', 1, 'default');
 
@@ -162,15 +160,7 @@ CREATE TABLE IF NOT EXISTS `business` (
   KEY `place_id` (`place_id`),
   KEY `district_id` (`district_id`),
   KEY `id` (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
-
---
--- Dumping data for table `business`
---
-
-INSERT INTO `business` (`id`, `page_id`, `phone`, `fax`, `email`, `website`, `address`, `place_id`, `district_id`, `image`) VALUES
-(17, 540, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(18, 541, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
 
 -- --------------------------------------------------------
 
@@ -183,21 +173,16 @@ CREATE TABLE IF NOT EXISTS `business_category` (
   `page_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `page_id` (`page_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `business_category`
 --
 
 INSERT INTO `business_category` (`id`, `page_id`) VALUES
-(6, 532),
-(7, 533),
-(8, 534),
-(9, 535),
-(10, 536),
-(11, 537),
-(12, 538),
-(13, 539);
+(14, 549),
+(15, 550),
+(16, 551);
 
 -- --------------------------------------------------------
 
@@ -211,14 +196,6 @@ CREATE TABLE IF NOT EXISTS `business_nm_category` (
   PRIMARY KEY (`business_id`,`category_id`),
   KEY `category_id` (`category_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `business_nm_category`
---
-
-INSERT INTO `business_nm_category` (`business_id`, `category_id`) VALUES
-(18, 11),
-(17, 12);
 
 -- --------------------------------------------------------
 
@@ -458,16 +435,14 @@ CREATE TABLE IF NOT EXISTS `event` (
   `enabled` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `page_id` (`page_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `event`
 --
 
 INSERT INTO `event` (`id`, `venue`, `start`, `end`, `whole_day_event`, `organizer`, `type`, `url`, `page_id`, `enabled`) VALUES
-(1, 'Prayag Marga,\r\nNew Baneshwor,\r\nKathmandu,\r\nBagmati,\r\nNepal.', '2012-09-08 17:19:00', '2012-09-08 15:19:00', 0, 'Nepzilla Solutions', NULL, NULL, 204, 1),
-(2, 'Islington College,\r\nKamalpokhari,\r\nKathmandu', '2012-07-04 00:00:00', '2012-07-05 00:00:00', 0, 'Islington College', NULL, 'http://islington.edu.np', 199, 1),
-(3, NULL, '2012-09-06 00:00:00', '2012-09-13 00:00:00', 0, NULL, NULL, NULL, 219, 1);
+(5, 'Venue', NULL, NULL, 0, NULL, NULL, NULL, 553, 1);
 
 -- --------------------------------------------------------
 
@@ -487,20 +462,6 @@ CREATE TABLE IF NOT EXISTS `image` (
   PRIMARY KEY (`id`),
   KEY `album_id` (`album_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=244 ;
-
---
--- Dumping data for table `image`
---
-
-INSERT INTO `image` (`id`, `title`, `description`, `album_id`, `file`, `mime_type`, `size`, `name`) VALUES
-(232, 'Desert', 'A place', 6, 'slideshow/1347307784Desert.jpg', 'image/jpeg', '845941', 'Desert.jpg'),
-(237, 'donatelife', NULL, 8, 'anotherAlbum/1347430468donatelife.jpg', 'image/jpeg', '37293', 'donatelife.jpg'),
-(238, 'slide1', NULL, 6, 'slideshow/1347431265slide1.jpg', 'image/jpeg', '212499', 'slide1.jpg'),
-(239, 'Nepal_Government', NULL, 6, 'slideshow/1347861132Nepal_Government.jpg', 'image/jpeg', '27016', 'Nepal_Government.jpg'),
-(240, 'slide1', NULL, 6, 'slideshow/1347861132slide1.jpg', 'image/jpeg', '212499', 'slide1.jpg'),
-(241, 'IMG_20120919_192329', NULL, 6, 'slideshow/1348078882IMG_20120919_192329.jpg', 'image/jpeg', '242351', 'IMG_20120919_192329.jpg'),
-(242, 'IMG_20120919_192411', NULL, 6, 'slideshow/1348078883IMG_20120919_192411.jpg', 'image/jpeg', '220086', 'IMG_20120919_192411.jpg'),
-(243, 'main', NULL, 6, 'slideshow/1348473323main.php', 'application/x-php', '2883', 'main.php');
 
 -- --------------------------------------------------------
 
@@ -527,7 +488,7 @@ CREATE TABLE IF NOT EXISTS `menu` (
 --
 
 INSERT INTO `menu` (`id`, `name`, `enabled`, `vertical`, `rtl`, `upward`, `theme`, `description`) VALUES
-(1, 'Main', 1, 0, 0, 0, 'default', 'The main website mega menu.'),
+(1, 'Main', 1, 0, 0, 0, 'flickr', 'The main website mega menu.'),
 (2, 'Admin', 1, 0, 0, 0, 'mtv', 'Menu for admin/backend dashboard.'),
 (3, 'Left Menu', 1, 1, 0, 0, 'default', 'The Left Sidebar Menu');
 
@@ -550,12 +511,12 @@ CREATE TABLE IF NOT EXISTS `menu_item` (
   `description` text,
   `link` text,
   `type` varchar(50) NOT NULL DEFAULT 'url',
-  `role` text,
+  `role` varchar(255) DEFAULT 'all',
   PRIMARY KEY (`id`),
   KEY `menu_id` (`menu_id`),
   KEY `menu_id_2` (`menu_id`),
   KEY `parent_id` (`parent_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=79 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 --
 -- Dumping data for table `menu_item`
@@ -563,13 +524,13 @@ CREATE TABLE IF NOT EXISTS `menu_item` (
 
 INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `name`, `enabled`, `target`, `description`, `link`, `type`, `role`) VALUES
 (34, 1, 0, 1, 2, 3, 'Home', 1, NULL, '', '/', 'url', 'all'),
-(45, 2, 0, 1, 4, 17, 'Users', 1, NULL, NULL, '/user', 'url', 'super'),
-(46, 2, 45, 2, 7, 8, 'Manage Users', 1, NULL, NULL, '/user/admin', 'url', 'super'),
+(45, 2, 0, 1, 4, 17, 'Users', 1, NULL, 'User related stuffs', '/user', 'url', 'super'),
+(46, 2, 45, 2, 7, 8, 'Manage Users', 1, NULL, '', '/user/manage', 'url', 'super'),
 (47, 2, 45, 2, 9, 10, 'Create User', 1, NULL, NULL, '/user/admin/create', 'url', 'super'),
 (48, 2, 45, 2, 11, 12, 'Manage Profile Fields', 1, NULL, NULL, '/user/profileField', 'url', 'super'),
 (49, 2, 45, 2, 13, 14, 'Create Profile Field', 1, NULL, NULL, '/user/profileField/create', 'url', 'super'),
-(50, 1, 0, 1, 8, 9, 'Login', 1, NULL, NULL, '/login', 'url', 'guest'),
-(51, 1, 0, 1, 6, 7, 'Logout', 1, NULL, NULL, '/logout', 'url', 'loggedIn'),
+(50, 1, 0, 1, 10, 11, 'Login', 0, NULL, '', '/login', 'url', 'guest'),
+(51, 1, 0, 1, 8, 9, 'Logout', 0, NULL, '', '/logout', 'url', 'loggedIn'),
 (52, 2, 45, 2, 5, 6, 'List Users', 1, NULL, NULL, '/user', 'url', 'super'),
 (53, 2, 0, 1, 30, 43, 'Design', 1, NULL, NULL, NULL, 'url', 'super'),
 (54, 2, 53, 2, 31, 40, 'Menu', 1, NULL, NULL, '/menu', 'url', 'super'),
@@ -583,12 +544,15 @@ INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `n
 (64, 2, 60, 2, 23, 24, 'Categories', 1, NULL, NULL, '/category', 'url', 'super'),
 (66, 2, 54, 3, 36, 37, 'Edit Main Menu', 1, NULL, NULL, '/menu/item?id=1', 'url', 'super'),
 (67, 2, 54, 3, 38, 39, 'Edit Admin Menu', 1, NULL, NULL, '/menu/item?id=3', 'url', 'super'),
-(71, 1, 0, 1, 4, 5, 'Dashboard', 1, NULL, '', '/admin', 'module', 'super'),
+(71, 1, 0, 1, 4, 7, 'Dashboard', 0, NULL, '', '/admin', 'module', 'super'),
 (72, 2, 60, 2, 27, 28, 'Files', 1, NULL, NULL, '/file', 'url', 'super'),
 (74, 2, 60, 2, 21, 22, 'Blocks', 1, NULL, '', '/block', 'module', 'all'),
-(76, 1, 0, 1, 10, 11, 'Event', 1, NULL, '', '/event', 'module', NULL),
+(76, 1, 0, 1, 12, 13, 'Event', 0, NULL, '', '/event', 'module', 'all'),
 (77, 3, 0, 1, 44, 45, 'E-mail', 1, NULL, 'Check you e-mail', 'http://webmail.hotc.org.np/', 'url', 'all'),
-(78, 1, 0, 1, 46, 47, 'Name', 1, NULL, '', '/comments', 'module', NULL);
+(78, 1, 0, 1, 14, 15, 'Name', 1, NULL, '', NULL, 'content', NULL),
+(79, 1, 71, 2, 5, 6, 'testarea', 1, NULL, '', '/comments', 'module', 'all'),
+(80, 1, 0, 1, 46, 47, 'New Item', 1, NULL, '', '/bhaskarsssss', 'content', NULL),
+(81, 1, 0, 1, 48, 49, 'New Event', 1, NULL, '', '/event/view?id=4', 'content', 'all');
 
 -- --------------------------------------------------------
 
@@ -601,7 +565,7 @@ CREATE TABLE IF NOT EXISTS `news` (
   `page_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `page_id` (`page_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 -- --------------------------------------------------------
 
@@ -631,52 +595,18 @@ CREATE TABLE IF NOT EXISTS `page` (
   KEY `user_id` (`user_id`),
   KEY `parent` (`parent_id`),
   KEY `slug` (`slug_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=544 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=554 ;
 
 --
 -- Dumping data for table `page`
 --
 
 INSERT INTO `page` (`id`, `user_id`, `title`, `content`, `status`, `created_at`, `modified_at`, `parent_id`, `order`, `type`, `comment_status`, `tags_enabled`, `permission`, `password`, `views`, `layout`, `slug_id`) VALUES
-(199, 1, 'Another Event', '<p>\r\n	Everybody is welcome!</p>\r\n', 'published', '2012-07-28 01:14:45', '2012-09-25 21:17:17', NULL, 0, 'Event', 'open', 1, 'all', NULL, 5, NULL, NULL),
-(204, 1, 'Moz Fest', '<p>\r\n	This is the description</p>\r\n', 'published', '2012-07-28 01:21:46', '2012-09-25 21:17:10', NULL, 0, 'Event', 'open', 1, 'all', NULL, 70, NULL, NULL),
-(209, 1, 'tits', NULL, 'published', '2012-07-28 16:36:57', '2012-07-28 20:59:50', NULL, 0, 'Event', 'open', 1, 'all', NULL, 9, NULL, NULL),
-(210, 1, 'tada', '<p>\r\n	nana</p>\r\n', 'published', '2012-07-28 19:49:32', '2012-07-29 13:20:53', NULL, 0, 'Event', 'open', 1, 'all', NULL, 5, NULL, NULL),
-(219, 1, 'new event', NULL, 'published', '2012-09-07 21:53:29', '2012-09-09 21:07:29', NULL, 0, 'Event', 'open', 1, 'all', NULL, 11, NULL, NULL),
-(458, 1, 'Slideshow', 'Album Description', 'published', '2012-09-11 01:42:25', '2012-09-25 15:06:59', NULL, 0, 'Album', 'open', 1, 'all', NULL, 152, NULL, NULL),
-(471, 1, 'Another album', NULL, 'published', '2012-09-11 23:11:38', '2012-09-12 12:34:31', NULL, 0, 'Album', 'open', 1, 'all', NULL, 7, NULL, NULL),
-(474, 1, 'New album here', 'Description here', 'published', '2012-09-12 03:53:29', '2012-09-12 12:12:27', NULL, 0, 'Album', 'open', 1, 'all', NULL, 5, NULL, NULL),
-(475, 1, 'event', '<p>\r\n	rtyuioasdcs</p>\r\n', 'published', '2012-09-12 12:47:23', '2012-09-25 15:34:09', NULL, 0, 'News', 'open', 1, 'all', NULL, 486, NULL, 720),
-(476, 1, 'aasdsdads', '<p>\r\n	asdasda</p>\r\n', 'published', '2012-09-12 13:15:05', '0000-00-00 00:00:00', NULL, 0, 'News', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(477, 1, 'new title', '<p>\r\n	New Content</p>\r\n', 'published', '2012-09-12 13:15:27', '2012-09-25 15:36:33', 496, 0, 'News', 'open', 1, 'all', NULL, 468, NULL, 725),
-(478, 1, 'titlessss', '<p>\r\n	no</p>\r\n', 'published', '2012-09-12 13:17:26', '2012-09-25 14:07:25', NULL, 0, 'News', 'open', 1, 'all', NULL, 453, NULL, NULL),
-(488, 1, 'first page twat', '<p>\r\n	Coooooooooontent</p>\r\n', 'published', '2012-09-12 13:46:54', '2012-09-25 15:37:12', 531, 0, 'Page', 'open', 1, 'all', NULL, 77, NULL, NULL),
-(496, 1, 'trick', NULL, 'published', '2012-09-12 13:58:59', '2012-09-25 15:41:52', NULL, 0, 'News', 'open', 1, 'all', NULL, 458, NULL, NULL),
-(498, 1, 'new new page', NULL, 'published', '2012-09-12 21:41:38', '2012-09-25 15:25:13', 488, 0, 'Page', 'open', 1, 'all', NULL, 42, NULL, 723),
-(499, 1, 'new news', '<p>\r\n	what new huh?</p>\r\n', 'published', '2012-09-23 01:58:53', '2012-09-25 14:07:25', NULL, 0, 'News', 'open', 1, 'all', NULL, 462, NULL, NULL),
-(500, 1, 'new news fine', '<p>\r\n	what no works fine</p>\r\n', 'published', '2012-09-23 02:40:23', '2012-09-25 15:29:32', NULL, 0, 'News', 'open', 1, 'all', NULL, 435, NULL, 718),
-(507, 1, 'qwerty', '<p>\r\n	1</p>\r\n', 'published', '2012-09-24 01:57:54', '2012-09-24 01:58:26', NULL, 0, 'Page', 'open', 1, 'all', NULL, 3, NULL, NULL),
-(508, 1, 'qwerty', '<p>\r\n	2</p>\r\n', 'published', '2012-09-24 01:58:20', '2012-09-24 01:58:37', NULL, 0, 'Page', 'open', 1, 'all', NULL, 2, NULL, NULL),
-(516, 1, 'next up', NULL, 'published', '2012-09-24 02:35:08', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(518, 1, 'next is', NULL, 'published', '2012-09-24 02:36:10', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(519, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:36:32', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(520, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:38:59', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(521, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:39:17', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(522, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:40:37', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(523, 1, 'titlesssssssssssss', NULL, 'published', '2012-09-24 02:40:48', '0000-00-00 00:00:00', NULL, 0, 'Business', 'open', 1, 'all', NULL, 0, NULL, NULL),
-(531, 1, 'My New Page', NULL, 'published', '2012-09-24 12:52:33', '2012-09-24 12:55:49', NULL, 0, 'Page', 'open', 1, 'all', NULL, 4, NULL, NULL),
-(532, 1, 'Hardware', NULL, 'published', '2012-09-24 23:27:50', '2012-09-25 14:11:18', NULL, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 604, NULL, 713),
-(533, 1, 'Laptop', NULL, 'published', '2012-09-24 23:28:04', '2012-09-25 14:11:15', 532, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 536, NULL, NULL),
-(534, 1, 'TV', NULL, 'published', '2012-09-24 23:28:14', '2012-09-25 14:12:00', 532, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 537, NULL, NULL),
-(535, 1, 'Software', NULL, 'published', '2012-09-24 23:28:26', '2012-09-25 14:07:24', NULL, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 706, NULL, NULL),
-(536, 1, 'Linux', NULL, 'published', '2012-09-24 23:28:48', '2012-09-25 14:07:24', 535, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 525, NULL, NULL),
-(537, 1, 'Python', NULL, 'published', '2012-09-24 23:28:57', '2012-09-25 14:24:30', 535, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 562, NULL, NULL),
-(538, 1, 'Android', NULL, 'published', '2012-09-24 23:31:13', '2012-09-25 14:07:24', 535, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 571, NULL, NULL),
-(539, 1, 'Django', NULL, 'published', '2012-09-25 00:59:26', '2012-09-25 14:07:24', 537, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 527, NULL, NULL),
-(540, 1, 'Nexus 7', NULL, 'published', '2012-09-25 01:31:12', '2012-09-25 13:44:35', NULL, 0, 'Business', 'open', 1, 'all', NULL, 15, NULL, 714),
-(541, 1, 'GAE', NULL, 'published', '2012-09-25 01:31:30', '2012-09-25 14:25:52', NULL, 0, 'Business', 'open', 1, 'all', NULL, 28, NULL, 715),
-(542, 1, 'news', '<p>\r\n	what the heck!</p>\r\n', 'published', '2012-09-25 14:36:46', '2012-09-25 14:44:08', NULL, 0, 'News', 'open', 1, 'all', NULL, 4, NULL, 716),
-(543, 1, 'news', NULL, 'published', '2012-09-25 14:44:26', '2012-09-25 14:49:21', NULL, 0, 'News', 'open', 1, 'all', NULL, 5, NULL, 717);
+(549, 1, 'Hospital and Health Services', 'Category Description goes here!', 'published', '2012-10-13 02:21:17', '2012-10-13 02:22:20', NULL, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 3, NULL, 733),
+(550, 1, 'Educational Institutes', NULL, 'published', '2012-10-13 02:22:52', '2012-10-13 02:22:52', NULL, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 1, NULL, 734),
+(551, 1, 'IT Companies', NULL, 'published', '2012-10-13 02:23:21', '2012-10-13 02:23:22', NULL, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 1, NULL, 735),
+(552, 1, 'New Gallery', 'Description goes here', 'published', '2012-10-13 02:40:00', '2012-10-13 02:42:04', NULL, 0, 'Album', 'open', 1, 'all', NULL, 3, NULL, 736),
+(553, 1, 'New Event', '<p><b>&nbsp;Haha</b></p>', 'published', '2012-10-13 02:54:03', '2012-10-13 02:58:05', NULL, 0, 'Event', 'open', 1, 'all', NULL, 6, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -690,13 +620,6 @@ CREATE TABLE IF NOT EXISTS `page_nm_category` (
   PRIMARY KEY (`page_id`,`category_id`),
   KEY `category_id` (`category_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `page_nm_category`
---
-
-INSERT INTO `page_nm_category` (`page_id`, `category_id`) VALUES
-(488, 4);
 
 -- --------------------------------------------------------
 
@@ -740,7 +663,9 @@ INSERT INTO `profile` (`user_id`, `firstname`) VALUES
 (4, ''),
 (6, ''),
 (7, ''),
-(8, 'adsfg');
+(8, 'adsfg'),
+(9, 'Dipesh Acharya'),
+(10, '');
 
 -- --------------------------------------------------------
 
@@ -815,7 +740,7 @@ CREATE TABLE IF NOT EXISTS `setting` (
   `hint` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `category_key` (`category`,`key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=108 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=115 ;
 
 --
 -- Dumping data for table `setting`
@@ -829,7 +754,14 @@ INSERT INTO `setting` (`id`, `category`, `key`, `value`, `type`, `hint`) VALUES
 (96, 'user', 'registration_enabled', '1', 'boolean', NULL),
 (105, 'Gallery', 'uploadPath', '/../uploads', 'textfield', 'The path were uploaded images are stored. Usually /../uploads'),
 (106, 'Gallery', 'uploadUrl', '/uploads/', 'textfield', NULL),
-(107, 'site', 'name', 'Awecms Beta', 'textfield', 'The name of the Site');
+(107, 'site', 'name', 'Awecms Beta', 'textfield', 'The name of the Site'),
+(108, 'place', 'name', 'Bhairahawa', 'textfield', ''),
+(109, 'place', 'other_names', 'Bhairawa, Siddharthanagar', 'textfield', ''),
+(110, 'place', 'search_key', 'Bhairahawa OR Bhairawa', 'textfield', ''),
+(111, 'place', 'location_code', 'ASI%7CNP%7CNP000%7CBHAIRAHAWA%7C', 'textfield', ''),
+(112, 'place', 'jkhjk', 'jhjk', 'textfield', ''),
+(113, 'place', 'new key', 'haha', 'textfield', 'haha'),
+(114, 'site', 'google_analytics_tracking_id', '', 'textfield', 'Tracking ID available from https://www.google.com/analytics');
 
 -- --------------------------------------------------------
 
@@ -844,7 +776,7 @@ CREATE TABLE IF NOT EXISTS `slug` (
   `enabled` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `slug` (`slug`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=731 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=737 ;
 
 --
 -- Dumping data for table `slug`
@@ -859,7 +791,17 @@ INSERT INTO `slug` (`id`, `slug`, `path`, `enabled`) VALUES
 (718, 'page-1', 'news/view/id/12', 1),
 (720, 'twat', 'news/view/id/4', 1),
 (723, 'event-1', 'page/view/id/498', 1),
-(725, '-1', 'news/view/id/6', 1);
+(725, '-1', 'news/view/id/6', 1),
+(726, 'nepzilla', 'directory/business/view/id/19', 1),
+(727, 'titlesssssssssssssss', 'page/view/id/545', 1),
+(729, 'another', 'gallery/view/id/8', 1),
+(730, 'patient', 'news/view/id/1', 1),
+(731, 'app', 'page/view/id/488', 1),
+(732, 'bhaskarsssss', 'page/view/id/547', 1),
+(733, 'hospitals', 'directory/view/id/14', 1),
+(734, 'educational-institutes', 'directory/view/id/15', 1),
+(735, 'it-companies', 'directory/view/id/16', 1),
+(736, 'new-gallery', 'gallery/view/id/10', 1);
 
 -- --------------------------------------------------------
 
@@ -921,19 +863,21 @@ CREATE TABLE IF NOT EXISTS `user` (
   UNIQUE KEY `email` (`email`),
   KEY `status` (`status`),
   KEY `superuser` (`superuser`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `email`, `activkey`, `create_at`, `lastvisit_at`, `superuser`, `status`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2012-09-23 14:24:17', 1, 1),
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2012-10-12 10:46:06', 1, 1),
 (2, 'demo', 'fe01ce2a7fbac8fafaed7c982a04e229', 'demo@example.com', '099f825543f7850cc038b90aaff39fac', '0000-00-00 00:00:00', '2012-07-28 01:37:40', 0, 1),
 (4, 'admina', 'a5d5dd525b4dc07b915448482da44974', 'admina@admina.c', '5c7ad3d0afd32f1353ee6bce1f223552', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 0),
 (6, 'adminas', '5f4dcc3b5aa765d61d8327deb882cf99', 'xtradasf@dsad.com', 'fb87fb607c3c5e901beb90059f54aba7', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 1),
 (7, 'myname', 'a029d0df84eb5549c641e04a9ef389e5', 'my@ghj.com', '66052ff289b9d7fc25a9c1d8fdec7a86', '2012-06-29 10:59:31', '0000-00-00 00:00:00', 0, 0),
-(8, 'newUsers', '5f4dcc3b5aa765d61d8327deb882cf99', 'xdsf@dasf.com', '7c0ba2b9ca5fb1a65a5af8b9201d6293', '2012-06-29 11:18:33', '0000-00-00 00:00:00', 1, 1);
+(8, 'newUsers', '5f4dcc3b5aa765d61d8327deb882cf99', 'xdsf@dasf.com', '7c0ba2b9ca5fb1a65a5af8b9201d6293', '2012-06-29 11:18:33', '0000-00-00 00:00:00', 1, 1),
+(9, 'dipson', 'a73bb2654e75dd0449078254e29b7ac8', 'xtranophilist+11@gmail.com', '9f8877c9fd8d807a7e80350fca76a6b7', '2012-09-28 15:17:52', '0000-00-00 00:00:00', 0, 0),
+(10, 'dipesh', '1c1d15237b2433f18f588d8bf6984751', 'dipesh@dip.com', '2b9ba8e6f0285a90cb96df44efd93952', '2012-09-28 16:04:41', '0000-00-00 00:00:00', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -997,8 +941,8 @@ ALTER TABLE `business_category`
 -- Constraints for table `business_nm_category`
 --
 ALTER TABLE `business_nm_category`
-  ADD CONSTRAINT `business_nm_category_ibfk_4` FOREIGN KEY (`category_id`) REFERENCES `business_category` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `business_nm_category_ibfk_3` FOREIGN KEY (`business_id`) REFERENCES `business` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `business_nm_category_ibfk_3` FOREIGN KEY (`business_id`) REFERENCES `business` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `business_nm_category_ibfk_4` FOREIGN KEY (`category_id`) REFERENCES `business_category` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `event`
