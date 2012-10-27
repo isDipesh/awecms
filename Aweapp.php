@@ -17,7 +17,6 @@ class Aweapp extends CWebApplication {
             die();
         }
     }
-    
 
     protected function init() {
         $modulesConfig = array();

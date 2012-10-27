@@ -44,6 +44,10 @@ class Controller extends CController {
     }
 
     public function init() {
+        $appName = Settings::get('site', 'name');
+        if ($appName)
+            Yii::app()->name = $appName;
+        $this->pageTitle = $this->getTitle();
         //if the request originates from admin module
         if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/') {
             Yii::import('application.modules.admin.AdminModule');
@@ -53,6 +57,18 @@ class Controller extends CController {
 //                $this->defaultAction = 'admin';
         }
         parent::init();
+    }
+
+    public function getTitle() {
+        $separator = ' >> ';
+        $title = Settings::get('site', 'name');
+        if ($this->module)
+            $title.= $separator . ucfirst($this->module->getName());
+        if ($this->module && ($this->module->getName() != $this->id))
+            $title.= $separator . ucfirst($this->id);
+        if ($this->action && ($this->action->id != 'index'))
+            $title.= $separator . ucfirst($this->action->id);
+        return $title;
     }
 
     public function actionToggle($id, $attribute, $model) {
@@ -82,8 +98,22 @@ class Controller extends CController {
         Block::run($name);
     }
 
-    protected function publishAssets(){
-        $this->assetPath = Yii::app()->getAssetManager()->publish($this->viewPath.'/assets').'/';
+    public function getaPageTitle() {
+
+        $separator = ' >> ';
+        $title = Settings::get('site', 'name');
+        if ($this->module)
+            $title.= $separator . ucfirst($this->module->getName());
+        if ($this->module->getName() != $this->id)
+            $title.= $separator . ucfirst($this->id);
+        if ($this->action->id != 'index')
+            $title.= $separator . ucfirst($this->action->id);
+        return $title;
+        parent::getPageTitle();
+    }
+
+    protected function publishAssets() {
+        $this->assetPath = Yii::app()->getAssetManager()->publish($this->viewPath . '/assets') . '/';
         Yii::app()->clientScript->registerScript('assetpath', '
             window.assetPath = "' . $this->assetPath . '";
         ', CClientScript::POS_READY);
