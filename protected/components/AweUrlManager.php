@@ -27,11 +27,13 @@ class AweUrlManager extends CUrlManager {
 
         $url = parent::createUrl($route, $params, $ampersand);
 
-        //handle slugs here
-        if ($slug = Slug::getSlug(preg_replace('/' . trim(Yii::app()->baseUrl, '/') . '/', '', $url, 1))) {
-            //if (Settings::get('SEO','externalSlug')
-            $url = $slug;
-            $url = Yii::app()->baseUrl . '/' . $url;
+        if (Settings::get('site', 'slugs_enabled')) {
+            //handle slugs here
+            if ($slug = Slug::getSlug(preg_replace('/' . trim(Yii::app()->baseUrl, '/') . '/', '', $url, 1))) {
+                //if (Settings::get('SEO','externalSlug')
+                $url = $slug;
+                $url = Yii::app()->baseUrl . '/' . $url;
+            }
         }
 
         return $url;
@@ -59,7 +61,7 @@ class AweUrlManager extends CUrlManager {
         if ($this->getUrlFormat() === self::PATH_FORMAT) {
             $rawPathInfo = $request->getPathInfo();
 
-            if ($p = Slug::getPath($rawPathInfo)) {
+            if (Settings::get('site', 'slugs_enabled') && $p = Slug::getPath($rawPathInfo)) {
                 $rawPathInfo = trim($p, '/');
                 Yii::app()->punish = 0;
             }

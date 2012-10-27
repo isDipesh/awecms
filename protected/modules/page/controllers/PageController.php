@@ -34,7 +34,7 @@ class PageController extends Controller {
         if (isset($_POST['Page'])) {
             try {
                 if ($page->save()) {
-                    if (isset($_POST['Page']['slug'])) {
+                    if (Settings::get('site', 'slugs_enabled') && isset($_POST['Page']['slug'])) {
                         $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $page->id));
                         $page->save();
                     }
@@ -56,18 +56,20 @@ class PageController extends Controller {
         $page = $this->loadModel($id);
 
         if (isset($_POST['Page'])) {
-            if (isset($page->slug)) {
-                if (isset($page->slug->slug) && $_POST['Page']['slug'] != $page->slug->slug) {
-                    if ($_POST['Page']['slug'] == '') {
-                        $page->slug->delete();
-                        $page->slug = NULL;
-                    } else {
-                        $page->slug->change($_POST['Page']['slug']);
+            if (Settings::get('site', 'slugs_enabled')) {
+                if (isset($page->slug)) {
+                    if (isset($page->slug->slug) && $_POST['Page']['slug'] != $page->slug->slug) {
+                        if ($_POST['Page']['slug'] == '') {
+                            $page->slug->delete();
+                            $page->slug = NULL;
+                        } else {
+                            $page->slug->change($_POST['Page']['slug']);
+                        }
                     }
+                } else {
+                    $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $id));
+                    $page->save();
                 }
-            } else {
-                $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $id));
-                $page->save();
             }
             try {
                 if ($page->save()) {

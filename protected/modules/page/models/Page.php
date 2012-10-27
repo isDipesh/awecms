@@ -21,7 +21,7 @@ class Page extends BasePage {
     }
 
     public function getPath() {
-        if ($this->slug)
+        if (Settings::get('site', 'slugs_enabled') && $this->slug)
             return '/' . $this->slug->slug;
         $type = ($this->type);
         if ($type == 'Page')

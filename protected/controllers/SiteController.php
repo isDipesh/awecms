@@ -45,20 +45,20 @@ class SiteController extends Controller {
         }
     }
 
-    public function actionError() {
-        if ($path = Slug::getPath(Yii::app()->getRequest()->pathInfo))
-            $this->forward($path);
-        else {
-            if ($error = Yii::app()->errorHandler->error) {
-                if (Yii::app()->request->isAjaxRequest)
-                    echo $error['message'];
-                else {
-                    $this->pageTitle = 'Error';
-                    $this->render('/error', $error);
-                }
-            }
-        }
-    }
+//    public function actionError() {
+//        if ($path = Slug::getPath(Yii::app()->getRequest()->pathInfo))
+//            $this->forward($path);
+//        else {
+//            if ($error = Yii::app()->errorHandler->error) {
+//                if (Yii::app()->request->isAjaxRequest)
+//                    echo $error['message'];
+//                else {
+//                    $this->pageTitle = 'Error';
+//                    $this->render('/error', $error);
+//                }
+//            }
+//        }
+//    }
 
     public function actionContact() {
         $model = new ContactForm;

@@ -95,7 +95,8 @@ class PageBehavior extends CActiveRecordBehavior {
             $page->categories = $_POST['Page']['categories'];
 
         //for update, we don't have to wait for it to be saved
-        if ($this->owner->scenario == 'update' && isset($_POST['Page']['slug'])) {
+
+        if (Settings::get('site', 'slugs_enabled') && $this->owner->scenario == 'update' && isset($_POST['Page']['slug'])) {
 
             if (isset($page->slug->slug) && $_POST['Page']['slug'] != $page->slug->slug) {
                 if ($_POST['Page']['slug'] == '') {
@@ -121,7 +122,7 @@ class PageBehavior extends CActiveRecordBehavior {
         if (get_class($this->owner) == 'Page')
             return;
         $page = $this->owner->page;
-        if (isset($_POST['Page']['slug']) && $_POST['Page']['slug'] != '') {
+        if (Settings::get('site', 'slugs_enabled') && isset($_POST['Page']['slug']) && $_POST['Page']['slug'] != '') {
             if ($this->owner->scenario == 'insert' || ($this->owner->scenario == 'update' && (!isset($page->slug)))) {
                 //get the page
                 $page = Page::model()->findByPk($page->id);
@@ -150,7 +151,8 @@ class PageBehavior extends CActiveRecordBehavior {
 //    }
 
     public function afterDelete($event) {
-        $this->getP()->slug->delete();
+        if (Settings::get('site', 'slugs_enabled'))
+            $this->getP()->slug->delete();
         if (get_class($this->owner) == 'Page')
             return;
         $this->owner->page->delete();
