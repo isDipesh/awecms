@@ -13,16 +13,15 @@
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js?<?php echo time() ?>"></script>
 
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
-        <script type="text/javascript">
-            var disqus_developer = 1;
-        </script>
     </head>
 
     <body>
         <div class="wrapper">
             <div >
                 <header id="header">
-                    <h1 class="head"><?php echo Settings::get('site', 'name'); ?></h1>
+                    <a href="<?php echo Yii::app()->baseUrl; ?>/">
+                        <h1 class="head"><?php echo Settings::get('site', 'name'); ?></h1>
+                    </a>
                     <nav id="nav">
                         <?php $this->widget('MenuRenderer'); ?>
                         <?php $this->widget('GAnalytics'); ?>
@@ -43,10 +42,8 @@
 
             <div class="row">
                 <div class="fifth">
-
                     <?php $this->widget('LatestNews'); ?>  
                     <?php $this->widget('Events'); ?> 
-
                 </div>
 
                 <div class="fourfifth">
@@ -55,7 +52,6 @@
             </div>
             <?php include_once '_footer.php'; ?>
         </div>
-        <?php $this->widget('Disqus'); ?>
     </body>
 </html>
 

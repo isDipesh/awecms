@@ -17,7 +17,7 @@ class SettingsController extends Controller {
     public function accessRules() {
         return array(
             array('allow',
-                'actions' => array('site'),
+                'actions' => array('site','add'),
                 'users' => array('admin'),
             ),
             array('deny',
