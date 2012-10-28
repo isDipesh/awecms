@@ -8,6 +8,22 @@ class CategoryController extends Controller {
         );
     }
 
+    public function accessRules() {
+        return array(
+            array('allow',
+                'actions' => array('index', 'view'),
+                'users' => array('*'),
+            ),
+            array('allow',
+                'actions' => array('minicreate', 'create', 'update', 'manage', 'delete'),
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
+
     public function actionIndex() {
         $dataProvider = new CActiveDataProvider('Category');
         $this->render('index', array(

@@ -7,6 +7,24 @@ class SettingsController extends Controller {
     public function actionSite() {
         $this->showSettings('site');
     }
+    
+    public function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow',
+                'actions' => array('site'),
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
 
     public function missingAction($actionID) {
         $categories = Settings::getCategories();

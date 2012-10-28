@@ -2,6 +2,23 @@
 
 class BlockController extends Controller {
 
+    public function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow',
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
+
     public function actionCreate() {
         $model = new Block;
         if (isset($_POST['Block'])) {

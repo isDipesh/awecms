@@ -2,6 +2,23 @@
 
 class ItemController extends Controller {
 
+    public function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow',
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
+
     public function actionIndex($id) {
         $activeId = isset($_GET['activeId']) ? $_GET['activeId'] : '';
         $items = MenuItem::model()->findAllByAttributes(array('menu_id' => $id));
@@ -102,15 +119,6 @@ class ItemController extends Controller {
         if ($model === null)
             throw new CHttpException(404, Yii::t('app', 'The requested page does not exist.'));
         return $model;
-    }
-
-    public function actionDynamiccities() {
-        $data = Location::model()->findAll('parent_id=:parent_id', array(':parent_id' => (int) $_POST['country_id']));
-
-        $data = CHtml::listData($data, 'id', 'name');
-        foreach ($data as $value => $name) {
-            echo CHtml::tag('option', array('value' => $value), CHtml::encode($name), true);
-        }
     }
 
 }

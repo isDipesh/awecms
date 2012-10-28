@@ -2,6 +2,28 @@
 
 class NewsController extends Controller {
 
+    public function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow',
+                'actions' => array('index', 'view'),
+                'users' => array('*'),
+            ),
+            array('allow',
+                'actions' => array('minicreate', 'create', 'update', 'manage', 'delete', 'toggle'),
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
+
     public function actionIndex() {
         $dataProvider = new CActiveDataProvider('News');
         $this->render('index', array(
@@ -42,7 +64,7 @@ class NewsController extends Controller {
         $model = $this->loadModel($id);
         if (isset($_POST['News']) || isset($_POST['Page'])) {
             try {
-                if ($model->save()){
+                if ($model->save()) {
                     $this->redirect(array('view', 'id' => $model->id));
                 }
             } catch (Exception $e) {

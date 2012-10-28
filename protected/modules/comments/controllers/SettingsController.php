@@ -16,10 +16,9 @@ class SettingsController extends Controller {
     public function accessRules() {
         return array(
             array('allow',
-                'actions' => array('create', 'delete', 'index', 'update', 'toggle'),
                 'users' => array('admin'),
             ),
-            array('deny', // deny all users
+            array('deny',
                 'users' => array('*'),
             ),
         );

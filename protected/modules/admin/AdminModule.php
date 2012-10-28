@@ -10,16 +10,16 @@ class AdminModule extends CWebModule {
             'admin.models.*',
             'admin.components.*',
         ));
-    }
-
-    public function beforeControllerAction($controller, $action) {
         if (!Yii::app()->getModule('user')->isAdmin()) {
             if (Yii::app()->user->isGuest) {
                 Yii::app()->user->returnUrl = Yii::app()->baseUrl . '/admin';
-                $controller->redirect(Yii::app()->baseUrl . '/login');
+                Yii::app()->request->redirect(Yii::app()->baseUrl . '/login');
             }
-            throw new AweException(403);
+            throw new AweException(404);
         }
+    }
+
+    public function beforeControllerAction($controller, $action) {
         $controller->layout = 'main';
         return true;
     }
@@ -40,7 +40,7 @@ class AdminModule extends CWebModule {
         }
         return $menuItems;
     }
- 
+
     public static function getDashboardMenu() {
         $dashboard = new Dashboard;
         $menuItems = $dashboard->getMenuItems();

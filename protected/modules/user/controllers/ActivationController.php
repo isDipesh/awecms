@@ -3,7 +3,6 @@
 class ActivationController extends Controller
 {
 	public $defaultAction = 'activation';
-
 	
 	/**
 	 * Activation user account

@@ -28,20 +28,36 @@ class Controller extends CController {
 
     public function filters() {
         return array(
-            'accessControl',
+            'accessControl - login, logout',
         );
     }
 
     public function accessRules() {
         return array(
             array('allow',
-                'expression' => 'Role::checkAccess()',
+                'actions' => array('index', 'view'),
+                'users' => array('*'),
+            ),
+            array('allow',
+                'actions' => array('minicreate', 'create', 'update', 'manage', 'delete', 'toggle'),
+                'users' => array('admin'),
             ),
             array('deny',
                 'users' => array('*'),
             ),
         );
     }
+
+//    public function accessRules() {
+//        return array(
+//            array('allow',
+//                'expression' => 'Role::checkAccess()',
+//            ),
+//            array('deny',
+//                'users' => array('*'),
+//            ),
+//        );
+//    }
 
     public function init() {
         $appName = Settings::get('site', 'name');
@@ -60,7 +76,7 @@ class Controller extends CController {
     }
 
     public function getTitle() {
-        $separator = ' >> ';
+        $separator = ' - ';
         $title = Settings::get('site', 'name');
         if ($this->module)
             $title.= $separator . ucfirst($this->module->getName());

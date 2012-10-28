@@ -2,6 +2,23 @@
 
 class AccessController extends Controller {
 
+    public function filters() {
+        return array(
+            'accessControl - login, logout',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow',
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
+
     public function actionCreate() {
         $assetsUrl = Yii::app()->getAssetManager()->publish(dirname(__FILE__) . '/../assets/');
         Yii::app()->getClientScript()->registerScriptFile($assetsUrl . '/accessForm.js?' . time());

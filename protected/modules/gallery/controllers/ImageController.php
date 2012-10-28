@@ -6,6 +6,28 @@ class ImageController extends Controller {
     private $path;
     private $publicPath;
     private $_subfolder = '';
+    
+    public function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow',
+                'actions' => array('index', 'view'),
+                'users' => array('*'),
+            ),
+            array('allow',
+                'actions' => array('upload', 'create', 'update', 'manage', 'delete', 'toggle'),
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
 
     public function actionIndex() {
         $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.gallery.assets'));

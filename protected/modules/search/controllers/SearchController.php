@@ -8,6 +8,28 @@ class SearchController extends Controller {
     private $_indexFile = 'protected/runtime/search';
     public $breadcrumbs;
     public $index;
+    
+    public function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow',
+                'actions' => array('index'),
+                'users' => array('*'),
+            ),
+            array('allow',
+                'actions' => array('create', 'update'),
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
 
     public function actionCreate() {
 

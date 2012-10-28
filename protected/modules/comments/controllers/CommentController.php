@@ -28,7 +28,7 @@ class CommentController extends Controller {
             'ajaxOnly + PostComment, Delete, Approve',
         );
     }
-
+    
     /**
      * Declares class-based actions.
      */

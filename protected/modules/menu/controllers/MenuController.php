@@ -2,6 +2,23 @@
 
 class MenuController extends Controller {
 
+    public function filters() {
+        return array(
+            'accessControl',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow',
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
+
     public function actionCreate() {
         $model = new Menu;
         if (isset($_POST['Menu'])) {

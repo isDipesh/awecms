@@ -2,6 +2,23 @@
 
 class DefaultController extends Controller {
 
+    public function filters() {
+        return array(
+            'accessControl - login, logout',
+        );
+    }
+
+    public function accessRules() {
+        return array(
+            array('allow',
+                'users' => array('admin'),
+            ),
+            array('deny',
+                'users' => array('*'),
+            ),
+        );
+    }
+
     public function actionCreate() {
         $model = new Role;
         if (isset($_POST['Role'])) {
