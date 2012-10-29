@@ -458,3 +458,7 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 .view h2{
     margin-bottom: 0;
 }
+
+.share-portlet .portlet-content a{
+    padding: 3px;
+}

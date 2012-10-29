@@ -33,4 +33,9 @@ class Page extends BasePage {
         return;
     }
 
+    public function getUrl() {
+        $protocol = isset($_SERVER['HTTPS']) ? 'https://' : 'http://';
+        return $protocol . $_SERVER['HTTP_HOST'] . $this->getPath();
+    }
+
 }
