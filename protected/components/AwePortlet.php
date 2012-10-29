@@ -11,7 +11,7 @@ class AwePortlet extends CWidget {
     public function init() {
         if (!$this->visible)
             return;
-        $class = strtolower(get_class($this)).'-portlet';
+        $class = strtolower(get_class($this)) . '-portlet';
         echo "<div class=\"{$this->cssClass} {$class}\">\n";
         if ($this->title !== null) {
             echo "<div class=\"{$this->headerCssClass}\" style=\"position:relative;\">{$this->title}\n";
@@ -22,9 +22,8 @@ class AwePortlet extends CWidget {
     }
 
     public function run() {
-        if (!$this->visible)
-            return;
-        $this->renderContent();
+        if ($this->visible)
+            $this->renderContent();
         echo "</div><!-- {$this->contentCssClass} -->\n";
         echo "</div><!-- {$this->cssClass} -->";
     }
