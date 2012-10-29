@@ -8,7 +8,7 @@ class SearchController extends Controller {
     private $_indexFile = 'protected/runtime/search';
     public $breadcrumbs;
     public $index;
-    
+
     public function filters() {
         return array(
             'accessControl',

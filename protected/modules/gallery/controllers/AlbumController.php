@@ -15,7 +15,7 @@ class AlbumController extends Controller {
                 'users' => array('*'),
             ),
             array('allow',
-                'actions' => array('minicreate', 'create', 'update', 'manage', 'delete', 'toggle'),
+                'actions' => array('minicreate', 'create', 'update', 'manage', 'delete', 'toggle', 'upload'),
                 'users' => array('admin'),
             ),
             array('deny',

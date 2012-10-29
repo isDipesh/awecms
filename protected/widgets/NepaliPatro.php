@@ -3,7 +3,7 @@
 class NepaliPatro extends AwePortlet {
 
     public $info;
-    public $format = '{date-np} {month-np} {year-np} {event-np}';
+    public $format = '<u>{date-np} {month-np} {year-np}</u> {event-np}';
 
     public function init() {
         $this->info = NPatro::getInfo();
