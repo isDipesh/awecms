@@ -18,10 +18,9 @@ if (!isset($this->menu) || $this->menu === array())
 <?php
 $this->widget('SearchBlock', array('type' => 'directory'));
 
-$categories = Awecms::buildTree(Awecms::quickSort(($dataProvider->data)));
-
+$categories = Awecms::buildTree(Awecms::quickSort(($allCategories)));
 $this->renderPartial('_tree', array(
-    'items' => $categories,
+    'categories' => $categories,
     'depth' => 0,
 ));
 

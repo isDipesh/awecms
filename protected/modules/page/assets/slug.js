@@ -28,7 +28,7 @@ function toggleSlugEditor(){
     $('#Page_slug').focus();
 }
 
-//http://dense13.com/blog/2009/05/03/converting-string-to-slug-javascript/
+//adapated from http://dense13.com/blog/2009/05/03/converting-string-to-slug-javascript/
 function string_to_slug(str) {
     str = str.replace(/^\s+|\s+$/g, ''); // trim
     str = str.toLowerCase();

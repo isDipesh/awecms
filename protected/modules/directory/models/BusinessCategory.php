@@ -19,7 +19,7 @@ class BusinessCategory extends BaseBusinessCategory {
         $allChildren = array_map("unserialize", array_unique(array_map("serialize", Awecms::getAllChildren($tree))));
         $businesses = array();
         foreach ($allChildren as $cat) {
-            if ($cat->businesses)
+            if ($cat && $cat->businesses)
                 $businesses[] = $cat->businesses;
         }
         return $businesses;
@@ -30,13 +30,20 @@ class BusinessCategory extends BaseBusinessCategory {
     }
 
     public function getTree() {
-        $dataProvider = new CActiveDataProvider('BusinessCategory');
-        $whole = Awecms::buildTree(Awecms::quickSort(($dataProvider->data)));
+        $allCategories = BusinessCategory::model()->findAll();
+        $whole = Awecms::buildTree(Awecms::quickSort(($allCategories)));
+
         $part = self::getNode($whole, $this->id);
+//        print_r($part);
+//        die();
         return array($part);
     }
 
     public static function getNode($tree, $id) {
+//        print_r($tree);
+//        die();
+//        print_r($tree);
+//        die();
         if (is_array($tree)) {
             foreach ($tree as $item) {
                 $result = self::getNode($item, $id);
@@ -50,6 +57,7 @@ class BusinessCategory extends BaseBusinessCategory {
             if ($result)
                 return $result;
         }
+        return false;
     }
 
 }

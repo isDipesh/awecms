@@ -22,10 +22,11 @@ if (!isset($this->menu) || $this->menu === array()) {
 <h1><?php echo $model->title; ?> (<?php echo $model->count; ?>)</h1>
 
 <?php
-$this->renderPartial('_tree', array(
-    'items' => $model->tree[0]->children,
-    'depth' => 0,
-));
+
+    $this->renderPartial('_tree', array(
+        'items' => $model->tree[0]->children,
+        'depth' => 0,
+    ));
 ?>
 <?php
 if (count($model->allBusinesses)) {

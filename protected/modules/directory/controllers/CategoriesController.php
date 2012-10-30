@@ -12,7 +12,7 @@ class CategoriesController extends Controller {
         return array(
             array('allow',
                 'actions' => array('index', 'view'),
-                'users' => array('@'),
+                'users' => array('*'),
             ),
             array('allow',
                 'actions' => array('minicreate', 'create', 'update', 'manage', 'delete', 'toggle'),
@@ -25,9 +25,9 @@ class CategoriesController extends Controller {
     }
 
     public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('BusinessCategory');
+        $allCategories = BusinessCategory::model()->findAll();
         $this->render('index', array(
-            'dataProvider' => $dataProvider,
+            'allCategories' => $allCategories,
         ));
     }
 
