@@ -7,7 +7,7 @@ class GAnalytics extends CWidget {
     public function init() {
 
         if (!$this->id)
-            $this->id = Settings::get('site', 'google_analytics_tracking_id');
+            $this->id = Settings::get('site', 'google_analytics_tracking_ID');
         if (!$this->id)
             return false;
         $this->renderContent();

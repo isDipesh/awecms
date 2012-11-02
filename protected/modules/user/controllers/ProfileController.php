@@ -8,6 +8,10 @@ class ProfileController extends Controller {
      * @var CActiveRecord the currently loaded data model instance.
      */
     private $_model;
+    
+    public function filters() {
+        
+    }
 
     /**
      * Shows a particular model.

@@ -7,7 +7,7 @@ class SearchBlock extends CWidget {
 
     public function run() {
         $placeholder = ($this->type) ? Yii::t('app', 'Search') . ' ' . ucfirst($this->type) . '...' : Yii::t('app', 'Search') . '...';
-        echo CHtml::beginForm(array('/search/' . $this->type), 'get', array('style' => 'inline'));
+        echo CHtml::beginForm(array('/search/' . $this->type), 'get', array('style' => 'display:inline', 'class' => 'search-form'));
         echo CHtml::textField('q', $this->query, array('placeholder' => $placeholder, 'style' => 'width:140px;'));
         if ($this->query != '')
             echo CHtml::submitButton('Search!', array('name' => ''));

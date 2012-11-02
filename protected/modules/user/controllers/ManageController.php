@@ -106,13 +106,13 @@ class ManageController extends Controller {
         $this->performAjaxValidation(array($model, $profile));
         if (isset($_POST['User'])) {
             $model->attributes = $_POST['User'];
-            $profile->attributes = $_POST['Profile'];
-            $model->roles = array();
+            if (isset($_POST['Profile']))
+                $profile->attributes = $_POST['Profile'];
+            if (isset($model->roles))
+                $model->roles = array();
             if (isset($_POST['User']['roles'])) {
                 $model->roles = $_POST['User']['roles'];
-                print_r($model->roles);
             }
-            print_r($model->roles);
             if ($model->validate() && $profile->validate()) {
                 $old_password = User::model()->notsafe()->findByPk($model->id);
                 if ($old_password->password != $model->password) {

@@ -114,25 +114,44 @@ class Controller extends CController {
         Block::run($name);
     }
 
-    public function getaPageTitle() {
-
-        $separator = ' >> ';
-        $title = Settings::get('site', 'name');
-        if ($this->module)
-            $title.= $separator . ucfirst($this->module->getName());
-        if ($this->module->getName() != $this->id)
-            $title.= $separator . ucfirst($this->id);
-        if ($this->action->id != 'index')
-            $title.= $separator . ucfirst($this->action->id);
-        return $title;
-        parent::getPageTitle();
-    }
+//    public function getaPageTitle() {
+//
+//        $separator = ' >> ';
+//        $title = Settings::get('site', 'name');
+//        if ($this->module)
+//            $title.= $separator . ucfirst($this->module->getName());
+//        if ($this->module->getName() != $this->id)
+//            $title.= $separator . ucfirst($this->id);
+//        if ($this->action->id != 'index')
+//            $title.= $separator . ucfirst($this->action->id);
+//        return $title;
+//        parent::getPageTitle();
+//    }
 
     protected function publishAssets() {
         $this->assetPath = Yii::app()->getAssetManager()->publish($this->viewPath . '/assets') . '/';
         Yii::app()->clientScript->registerScript('assetpath', '
             window.assetPath = "' . $this->assetPath . '";
         ', CClientScript::POS_READY);
+    }
+
+    public function beforeAction($action) {
+
+
+
+        if (Settings::get('SEO', 'enable_meta_description_for_all_pages')) {
+            $meta_description = Settings::get('SEO', 'meta_description');
+            if (!empty($meta_description))
+                Yii::app()->clientScript->registerMetaTag($meta_description, 'description');
+        }
+
+        if (Settings::get('SEO', 'enable_meta_keywords')) {
+            $meta_keywords = Settings::get('SEO', 'meta_keywords');
+            if (!empty($meta_keywords))
+                Yii::app()->clientScript->registerMetaTag($meta_keywords, 'keywords');
+        }
+
+        return true;
     }
 
     //this is a wild guess, at least try to show something

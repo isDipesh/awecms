@@ -36,7 +36,7 @@ $this->menu = array(
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'password'); ?>
+        <?php echo $form->labelEx($model, 'Password'); ?>
         <?php echo $form->passwordField($model, 'password'); ?>
         <?php echo $form->error($model, 'password'); ?>
         <p class="hint">

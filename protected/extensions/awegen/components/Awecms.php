@@ -33,7 +33,7 @@ class Awecms {
     }
 
     public static function generateFriendlyName($name) {
-        return ucwords(trim(strtolower(str_replace(array('-', '_', '.'), ' ', preg_replace('/(?<![A-Z])[A-Z]/', ' \0', $name)))));
+        return ucfirst(trim((str_replace(array('-', '_', '.'), ' ', preg_replace('/(?<![A-Z])[A-Z]/', ' \0', $name)))));
     }
 
     public static function isUrl($url) {

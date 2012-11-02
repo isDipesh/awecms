@@ -22,6 +22,13 @@ class SiteController extends Controller {
 
     public function actionIndex() {
 
+        if (Settings::get('SEO', 'enable_meta_description_for_homepage')) {
+            $meta_description = Settings::get('SEO', 'meta_description');
+            if (!empty($meta_description))
+                Yii::app()->clientScript->registerMetaTag($meta_description, 'description');
+        }
+
+
         $this->render('index');
     }
 
