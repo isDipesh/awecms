@@ -6,7 +6,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <?php //TODO ?>
         <meta name="language" content="en" />
-        <meta name="generator" content="AweCMS <?php echo Awecms::version; ?>" />
+
+        <?php $this->seo_tags(); ?>
 
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/kube.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/style.css" />

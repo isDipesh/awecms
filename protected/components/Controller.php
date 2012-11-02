@@ -25,6 +25,7 @@ class Controller extends CController {
      * for more details on how to specify this property.
      */
     public $breadcrumbs = array();
+    public $pageRobotsIndex = true;
 
     public function filters() {
         return array(
@@ -135,9 +136,11 @@ class Controller extends CController {
         ', CClientScript::POS_READY);
     }
 
-    public function beforeAction($action) {
+    public function seo_tags() {
 
-
+        if ($this->pageRobotsIndex == false) {
+            echo '<meta name="robots" content="noindex">' . PHP_EOL;
+        }
 
         if (Settings::get('SEO', 'enable_meta_description_for_all_pages')) {
             $meta_description = Settings::get('SEO', 'meta_description');
@@ -151,7 +154,7 @@ class Controller extends CController {
                 Yii::app()->clientScript->registerMetaTag($meta_keywords, 'keywords');
         }
 
-        return true;
+        Yii::app()->clientScript->registerMetaTag('AweCMS ' . Awecms::version, 'generator');
     }
 
     //this is a wild guess, at least try to show something
