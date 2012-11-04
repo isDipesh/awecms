@@ -2,8 +2,8 @@
 
 return array(
     'import' => array(
-        'application.modules.tags.models.*',
-        'application.modules.tags.components.*',
-        'application.modules.tags.widgets.*',
+        'application.modules.tag.models.*',
+        'application.modules.tag.components.*',
+        'application.modules.tag.widgets.*',
     ),
 );

@@ -41,7 +41,7 @@ class TagWidget extends CWidget {
     {
         $this->tags = json_encode($this->tags);
         // this method is called by CController::endWidget()
-        $this->render('tag/TagView', array(
+        $this->render('TagView', array(
             'id' => $this->id,
             'tags' => $this->tags,
             'url' => $this->url

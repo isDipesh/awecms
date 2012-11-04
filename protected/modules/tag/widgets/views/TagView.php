@@ -1,6 +1,6 @@
 <?php
-$tag_it = Yii::app()->getAssetManager()->publish(__DIR__ . '/tag-it.js');
-$tag_it_css = Yii::app()->getAssetManager()->publish(__DIR__ . '/tag-it.css');
+$tag_it = Yii::app()->getAssetManager()->publish(__DIR__ . '/../assets/tag-it.js');
+$tag_it_css = Yii::app()->getAssetManager()->publish(__DIR__ . '/../assets/tag-it.css');
 $cs = Yii::app()->clientScript;
 $cs->registerCoreScript('jquery.ui');
 $cs->registerCoreScript('jquery.autocomplete');

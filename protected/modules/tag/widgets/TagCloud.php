@@ -36,7 +36,7 @@ class TagCloud extends AwePortlet {
         asort($tags);
         foreach ($tags as $tag) {
             if ($tag['count'] >= 1) {
-                $link = CHtml::link(CHtml::encode($tag['name']), array('/tags/'.$tag['name']));
+                $link = CHtml::link(CHtml::encode($tag['name']), array('/tag/'.$tag['name']));
                 echo CHtml::tag('span', array(
                     'class' => 'tagcloud',
                     'style' => "font-size:" . (2 + $weight[$tag['name']]) . "pt",
