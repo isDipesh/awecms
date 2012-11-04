@@ -23,8 +23,8 @@ class RecentPages extends AwePortlet{
         </li>
     <?php endforeach; ?>
     <?php
-    if (!$page) {
-        echo Yii::t('app', 'Sorry, no latest news!');
+    if (!$pages) {
+        echo Yii::t('app', 'Sorry, no recent pages!');
     }
     ?>
 	</ul>

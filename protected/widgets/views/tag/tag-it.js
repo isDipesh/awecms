@@ -4,25 +4,19 @@
 
 		var el = this;
 
-		var BACKSPACE		= 8;
-		var ENTER			= 13;
-		var SPACE			= 32;
-		var COMMA			= 44;
+		const BACKSPACE		= 8;
+		const ENTER			= 13;
+		const SPACE			= 32;
+		const COMMA			= 44;
 
 		// add the tagit CSS class.
 		el.addClass("tagit");
 
-		tag_input = el.children(".tagit-new").children(".tagit-input");
+		// create the input field.
+		var html_input_field = "<li class=\"tagit-new\"><input class=\"tagit-input\" type=\"text\" /></li>\n";
+		el.html (html_input_field);
 
-		if(options.tags !== undefined)
-		{
-			$.each(
-				options.tags,
-				function( index, value ){
-					create_choice(value);
-				}
-			);
-		}
+		tag_input		= el.children(".tagit-new").children(".tagit-input");
 
 		$(this).click(function(e){
 			if (e.target.tagName == 'A') {
@@ -54,7 +48,7 @@
 
 				if (typed != "") {
 					if (is_new (typed)) {
-						create_choice(typed);
+						create_choice (typed);
 					}
 					// Cleaning the input.
 					tag_input.val("");
@@ -62,20 +56,8 @@
 			}
 		});
 
-		function split(val) {
-			return val.split(/,\s*/);
-		}
-
-		function extractLast(term) {
-			return split(term).pop();
-		}
-
 		tag_input.autocomplete({
-			source: function(request, response) {
-				$.getJSON(options.url, {
-					tag: extractLast(request.term)
-				}, response);
-			},
+			source: options.availableTags, 
 			select: function(event,ui){
 				if (is_new (ui.item.value)) {
 					create_choice (ui.item.value);
@@ -98,12 +80,12 @@
 			})
 			return is_new;
 		}
-		function create_choice(value){
+		function create_choice (value){
 			var el = "";
 			el  = "<li class=\"tagit-choice\">\n";
 			el += value + "\n";
 			el += "<a class=\"close\">x</a>\n";
-			el += "<input type=\"hidden\" style=\"display:none;\" value=\""+value+"\" name=\"Tags[]\">\n";
+			el += "<input type=\"hidden\" style=\"display:none;\" value=\""+value+"\" name=\"item[tags][]\">\n";
 			el += "</li>\n";
 			var li_search_tags = this.tag_input.parent();
 			$(el).insertBefore (li_search_tags);

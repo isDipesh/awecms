@@ -15,6 +15,18 @@
         'fields' => array('title', 'slug', 'content', 'user', 'status', 'parent', 'categories')
     ));
     ?>
+    
+    <div class="row">
+        <?php 
+        $page->addTags('a','b')->save();
+        $page->addTags('c','d')->save();
+        print_r($page->getTags());
+        $this->widget('TagWidget', array(
+            'url'=> Yii::app()->request->baseUrl.'/tags/json/',
+            'tags' => $page->getTags()
+        ));
+        ?>
+    </div>
 
     <div class="row">
         <?php // echo $form->labelEx($page, 'order');  ?>
