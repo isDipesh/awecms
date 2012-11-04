@@ -20,7 +20,7 @@ class TagsController extends Controller {
     }
 
     public function missingAction($actionID) {
-        
+        echo '<h1>' . Yii::t('app', 'Contents with tag') . ' "' . $actionID . '":</h1>';
     }
 
 }
