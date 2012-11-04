@@ -19,6 +19,6 @@ if (!isset($this->menu) || $this->menu === array()) {
 
 $this->widget('PageView', array(
     'model' => $model,
-    'fields' => array('title', 'created_at', 'content', 'sub-pages', 'categories')
+    'fields' => array('title', 'created_at', 'content', 'sub-pages', 'categories', 'tags')
 ));
 ?>

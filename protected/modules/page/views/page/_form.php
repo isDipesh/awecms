@@ -12,17 +12,9 @@
     $this->widget('PageForm', array(
         'model' => $page,
         'form' => $form,
-        'fields' => array('title', 'slug', 'content', 'user', 'status', 'parent', 'categories')
+        'fields' => array('title', 'slug', 'content', 'user', 'status', 'parent', 'categories', 'tags')
     ));
     ?>
-
-    <div class="row">
-        <?php
-        $this->widget('TagWidget', array(
-            'model' => $page
-        ));
-        ?>
-    </div>
 
     <div class="row">
         <?php // echo $form->labelEx($page, 'order');  ?>

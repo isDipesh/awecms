@@ -15,7 +15,7 @@ class ETaggableBehavior extends CActiveRecordBehavior {
 	/**
 	 * @var string tags table name.
 	 */
-	public $tagTable = 'Tag';
+	public $tagTable = 'tag';
 	/**
 	 * @var string tag table field that contains tag name.
 	 */
@@ -28,11 +28,11 @@ class ETaggableBehavior extends CActiveRecordBehavior {
 	 * @var string tag to Model binding table name.
 	 * Defaults to `{model table name}Tag`.
 	 */
-	public $tagBindingTable;
+	public $tagBindingTable = 'page_nm_tag';
 	/**
 	 * @var string binding table tagId name.
 	 */
-	public $tagBindingTableTagId = 'tagId';
+	public $tagBindingTableTagId = 'tag_id';
 	/**
 	 * @var string|null tag table count field. If null don't uses database.
 	 */
@@ -41,7 +41,7 @@ class ETaggableBehavior extends CActiveRecordBehavior {
 	 * @var string binding table model FK name.
 	 * Defaults to `{model table name with first lowercased letter}Id`.
 	 */
-	public $modelTableFk;
+	public $modelTableFk = 'page_id';
 	/**
 	 * @var boolean which create tags automatically or throw exception if tag does not exist.
 	 */
@@ -50,7 +50,7 @@ class ETaggableBehavior extends CActiveRecordBehavior {
 	 * @var string|boolean caching component Id. If false don't use cache.
 	 * Defaults to false.
 	 */
-	public $cacheID = false;
+	public $cacheID = 'cache';
 
 	private $tags = array();
 	private $originalTags = array();
@@ -74,8 +74,8 @@ class ETaggableBehavior extends CActiveRecordBehavior {
 	 * @var CDbCriteria|null scope CDbCriteria cache.
 	 */
 	private $scopeCriteria = null;
-
-	/**
+        
+        /**
 	 * Get DB connection.
 	 * @return CDbConnection
 	 */

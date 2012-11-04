@@ -1,7 +1,7 @@
 <?php
 
 class PageController extends Controller {
-    
+
     public function filters() {
         return array(
             'accessControl',
@@ -43,6 +43,9 @@ class PageController extends Controller {
         $page = $this->loadModel($id);
         //set page title
         Yii::app()->getController()->pageTitle = $page->title . Awecms::getTitlePrefix();
+        if (Settings::get('SEO', 'use_page_tags_for_keywords')) {
+            $this->pageKeywords = implode(', ', $page->getTags());
+        }
         //increase view count
         $page->increaseViewCount();
         $this->render('view', array(

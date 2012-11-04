@@ -59,10 +59,6 @@ class PageBehavior extends CActiveRecordBehavior {
             $this->owner->$attribute = $attributes[$attribute];
         }
 
-        //save tags
-        if (isset($_POST['Tags'])) {
-            $this->owner->setTags($_POST['Tags']);
-        }
 
         if ($this->owner->scenario == 'insert')
             $page = new Page;
@@ -71,6 +67,12 @@ class PageBehavior extends CActiveRecordBehavior {
         else
             $page = Page::model()->findByPk($this->owner->page_id);
 
+        //save tags
+        if (isset($_POST['Tags'])) {
+            $page->setTags($_POST['Tags']);
+        } else {
+            $page->removeAllTags();
+        }
 
         //get and save attributes of page
         if (isset($_POST['Page']))

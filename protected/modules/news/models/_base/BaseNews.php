@@ -35,6 +35,7 @@ abstract class BaseNews extends CActiveRecord {
         return array(
             'page-behavior' => array('class' => 'PageBehavior'),
             'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior'),
+            'tags' => array('class' => 'ext.taggable.ETaggableBehavior'),
         );
     }
 

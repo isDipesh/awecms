@@ -26,6 +26,7 @@ class Controller extends CController {
      */
     public $breadcrumbs = array();
     public $pageRobotsIndex = true;
+    public $pageKeywords;
 
     public function filters() {
         return array(
@@ -136,10 +137,9 @@ class Controller extends CController {
         ', CClientScript::POS_READY);
     }
 
-    public function seo_tags() {
-
+    public function beforeRender($view) {
         if ($this->pageRobotsIndex == false) {
-            echo '<meta name="robots" content="noindex">' . PHP_EOL;
+            Yii::app()->clientScript->registerMetaTag('noindex', 'robots');
         }
 
         if (Settings::get('SEO', 'enable_meta_description_for_all_pages')) {
@@ -149,12 +149,15 @@ class Controller extends CController {
         }
 
         if (Settings::get('SEO', 'enable_meta_keywords')) {
-            $meta_keywords = Settings::get('SEO', 'meta_keywords');
-            if (!empty($meta_keywords))
-                Yii::app()->clientScript->registerMetaTag($meta_keywords, 'keywords');
+            if (empty($this->pageKeywords))
+                $this->pageKeywords = Settings::get('SEO', 'meta_keywords');
         }
 
+        if ($this->pageKeywords)
+            Yii::app()->clientScript->registerMetaTag($this->pageKeywords, 'keywords');
+
         Yii::app()->clientScript->registerMetaTag('AweCMS ' . Awecms::version, 'generator');
+        return parent::beforeRender($view);
     }
 
     //this is a wild guess, at least try to show something

@@ -67,41 +67,7 @@ abstract class BasePage extends CActiveRecord {
             ),
             'page-behavior' => array('class' => 'PageBehavior'),
             'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior'),
-            'tags' => array(
-                'class' => 'ext.taggable.ETaggableBehavior',
-                // Table where tags are stored
-                'tagTable' => 'tag',
-                // Cross-table that stores tag-model connections.
-                // By default it's your_model_tableTag
-                'tagBindingTable' => 'page_nm_tag',
-                // Foreign key in cross-table.
-                // By default it's your_model_tableId
-                'modelTableFk' => 'page_id',
-                // Tag table PK field
-                'tagTablePk' => 'id',
-                // Tag name field
-                'tagTableName' => 'name',
-                // Tag counter field
-                // if null (default) does not write tag counts to DB
-                'tagTableCount' => 'count',
-                // Tag binding table tag ID
-                'tagBindingTableTagId' => 'tag_id',
-                // Caching component ID. If false don't use cache.
-                // Defaults to false.
-                'cacheID' => 'cache',
-                // Save nonexisting tags.
-                // When false, throws exception when saving nonexisting tag.
-                'createTagsAutomatically' => true,
-                // Default tag selection criteria
-                'scope' => array(
-                    'condition' => ' t.user_id = :user_id ',
-                    'params' => array(':user_id' => Yii::app()->user->id),
-                ),
-                // Values to insert to tag table on adding tag
-                'insertValues' => array(
-                    'user_id' => Yii::app()->user->id,
-                ),
-            )
+            'tags' => array('class' => 'ext.taggable.ETaggableBehavior'),
         );
     }
 

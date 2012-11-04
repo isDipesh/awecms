@@ -30,14 +30,6 @@ class PageForm extends CWidget {
             $this->page = $this->model->page; //for update
         else
             $this->page = new Page; //for create
-
-
-
-
-
-
-
-            
 //get scenario
         $this->scenario = $this->model->scenario;
     }
@@ -55,26 +47,27 @@ class PageForm extends CWidget {
                     <div class="row">
                         <?php echo $form->labelEx($page, 'title'); ?>
                         <?php echo $form->textField($page, 'title', array('size' => 60, 'maxlength' => 255)); ?>
-                    <?php echo $form->error($page, 'title'); ?>
+                        <?php echo $form->error($page, 'title'); ?>
                     </div>
                     <?php
                     break;
                 case 'slug':
-                    if (!Settings::get('SEO', 'slugs_enabled')) break;
+                    if (!Settings::get('SEO', 'slugs_enabled'))
+                        break;
                     $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.page.assets'));
                     Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/slug.js');
                     if ($this->scenario == 'insert')
                         Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/create_slug.js');
                     ?>
                     <div class="row sticky">
-                        <span id="slug_label" style="display:inline;"><strong><?php echo Yii::t('app','Link:'); ?></strong>
-                            <?php echo 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/'; ?></span><span id="slug_holder" style="display:inline">
+                        <span id="slug_label" style="display:inline;"><strong><?php echo Yii::t('app', 'Link:'); ?></strong>
+                            <?php echo 'http://' . $_SERVER['HTTP_HOST'] . Yii::app()->baseUrl . '/'; ?></span><span id="slug_holder" style="display:inline">
                             <?php
                             $slug = isset($page->slug->slug) ? $page->slug->slug : '';
                             echo $slug;
                             ?>
                         </span>
-                    <?php echo CHtml::textField("Page[slug]", $slug, array('size' => 65, 'style' => 'display:none;')); ?>
+                        <?php echo CHtml::textField("Page[slug]", $slug, array('size' => 65, 'style' => 'display:none;')); ?>
                     </div>
                     <?php
                     break;
@@ -88,11 +81,11 @@ class PageForm extends CWidget {
                             "attribute" => "content",
                             'options' => array(
                                 'imageUpload' => Yii::app()->createAbsoluteUrl('/file/redactorUpload'),
-                                //'imageGetJson' => Yii::app()->createAbsoluteUrl('file/listImages'),
+                            //'imageGetJson' => Yii::app()->createAbsoluteUrl('file/listImages'),
                             ),
                         ));
                         ?>
-                    <?php echo $form->error($page, 'content'); ?>
+                        <?php echo $form->error($page, 'content'); ?>
                     </div>
                     <?php
                     break;
@@ -104,7 +97,7 @@ class PageForm extends CWidget {
                         <div class="row">
                             <?php echo $form->labelEx($page, 'user_id'); ?>
                             <?php echo $form->dropDownList($page, 'user', CHtml::listData(User::model()->findAll(), 'id', 'username'), array('prompt' => 'None')); ?>
-                        <?php echo $form->error($page, 'user_id'); ?>
+                            <?php echo $form->error($page, 'user_id'); ?>
                         </div>
                         <?php
                     }
@@ -120,7 +113,7 @@ class PageForm extends CWidget {
                             'draft' => Yii::t('app', 'Draft'),
                         ));
                         ?>
-                    <?php echo $form->error($page, 'status'); ?>
+                        <?php echo $form->error($page, 'status'); ?>
                     </div>
                     <?php
                     break;
@@ -136,7 +129,7 @@ class PageForm extends CWidget {
                         }
                         echo $form->dropDownList($page, 'parent', CHtml::listData($allModels, 'id', 'title'), array('prompt' => 'None'));
                         ?>
-                    <?php echo $form->error($page, 'parent_id'); ?>
+                        <?php echo $form->error($page, 'parent_id'); ?>
                     </div>
                     <?php
                     break;
@@ -146,6 +139,17 @@ class PageForm extends CWidget {
                         <label for="categories"><?php echo Yii::t('app', 'Categories'); ?></label>
                         <?php
                         echo CHtml::checkBoxList('Page[categories]', array_map('Awecms::getPrimaryKey', $page->categories), CHtml::listData(Category::model()->findAll(), 'id', 'name'), array('attributeitem' => 'id', 'checkAll' => 'Select All'));
+                        ?>
+                    </div>
+                    <?php
+                    break;
+                case 'tags':
+                    ?>
+                    <div class="row">
+                        <?php
+                        Yii::app()->getController()->widget('TagWidget', array(
+                            'model' => $page
+                        ));
                         ?>
                     </div>
                     <?php

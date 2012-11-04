@@ -42,7 +42,7 @@ class PageView extends CWidget {
                     echo "<div class='rte-text'>" . $page->content . "</div>";
                     break;
                 case 'created_at':
-                    echo "<div class='post-time'>" . Yii::t('app','Posted on ') . '<time>'. date('F d, Y h:m A', strtotime($page->created_at)) . "</time></div>";
+                    echo "<div class='post-time'>" . Yii::t('app', 'Posted on ') . '<time>' . date('F d, Y h:m A', strtotime($page->created_at)) . "</time></div>";
                     break;
                 case 'excerpt':
                     if (!empty($data->content)) {
@@ -88,12 +88,23 @@ class PageView extends CWidget {
                     }
                     break;
                 case 'views':
-                    if (!empty($data->views)) {
+                    if (!empty($page->views)) {
                         ?>
                         <div class="field">
-                            <?php echo CHtml::encode($data->getAttributeLabel('views')); ?>:
+                            <?php echo CHtml::encode($page->getAttributeLabel('views')); ?>:
+                            <?php echo $page->views; ?>
+                        </div>
+                        <?php
+                    }
+                    break;
+                case 'tags':
+                    $tags = $page->getTags();
+                    if (!empty($tags)) {
+                        ?>
+                        <div class="field">
+                            <?php echo Yii::t('app', 'Tags'); ?>:
                             <?php
-                            echo CHtml::encode($data->views);
+                            echo implode(', ', $tags);
                             ?>
                         </div>
                         <?php
