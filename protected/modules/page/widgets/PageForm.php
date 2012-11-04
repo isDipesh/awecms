@@ -60,7 +60,7 @@ class PageForm extends CWidget {
                     <?php
                     break;
                 case 'slug':
-                    if (!Settings::get('site', 'slugs_enabled')) break;
+                    if (!Settings::get('SEO', 'slugs_enabled')) break;
                     $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.page.assets'));
                     Yii::app()->getClientScript()->registerScriptFile($baseUrl . '/slug.js');
                     if ($this->scenario == 'insert')

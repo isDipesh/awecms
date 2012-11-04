@@ -56,6 +56,9 @@ class PageBehavior extends CActiveRecordBehavior {
         foreach (array_keys($attributes) as $attribute) {
             $this->owner->$attribute = $attributes[$attribute];
         }
+        
+        //save tags
+        die();
 
         if ($this->owner->scenario == 'insert')
             $page = new Page;
@@ -84,7 +87,7 @@ class PageBehavior extends CActiveRecordBehavior {
 
         //for update, we don't have to wait for it to be saved
 
-        if (Settings::get('site', 'slugs_enabled') && $this->owner->scenario == 'update' && isset($_POST['Page']['slug'])) {
+        if (Settings::get('SEO', 'slugs_enabled') && $this->owner->scenario == 'update' && isset($_POST['Page']['slug'])) {
 
             if (isset($page->slug->slug) && $_POST['Page']['slug'] != $page->slug->slug) {
                 if ($_POST['Page']['slug'] == '') {
@@ -110,7 +113,7 @@ class PageBehavior extends CActiveRecordBehavior {
         if (get_class($this->owner) == 'Page')
             return;
         $page = $this->owner->page;
-        if (Settings::get('site', 'slugs_enabled') && isset($_POST['Page']['slug']) && $_POST['Page']['slug'] != '') {
+        if (Settings::get('SEO', 'slugs_enabled') && isset($_POST['Page']['slug']) && $_POST['Page']['slug'] != '') {
             if ($this->owner->scenario == 'insert' || ($this->owner->scenario == 'update' && (!isset($page->slug)))) {
                 //get the page
                 $page = Page::model()->findByPk($page->id);
@@ -139,7 +142,7 @@ class PageBehavior extends CActiveRecordBehavior {
 //    }
 
     public function afterDelete($event) {
-        if (Settings::get('site', 'slugs_enabled'))
+        if (Settings::get('SEO', 'slugs_enabled'))
             $this->getP()->slug->delete();
         if (get_class($this->owner) == 'Page')
             return;
@@ -204,7 +207,7 @@ class PageBehavior extends CActiveRecordBehavior {
     public function getPath() {
         $page = $this->getP();
         $isPage = (get_class($this->owner) == 'Page') ? true : false;
-        if (Settings::get('site', 'slugs_enabled') && $page->slug)
+        if (Settings::get('SEO', 'slugs_enabled') && $page->slug)
             return Yii::app()->baseUrl . '/' . $page->slug->slug;
         if ($isPage)
             return Yii::app()->baseUrl . '/page' . '/view?id=' . $page->id;

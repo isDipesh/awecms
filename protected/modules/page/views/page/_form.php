@@ -18,9 +18,6 @@
     
     <div class="row">
         <?php 
-        $page->addTags('a','b')->save();
-        $page->addTags('c','d')->save();
-        print_r($page->getTags());
         $this->widget('TagWidget', array(
             'url'=> Yii::app()->request->baseUrl.'/tags/json/',
             'tags' => $page->getTags()

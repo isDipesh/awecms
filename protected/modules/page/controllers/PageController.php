@@ -56,7 +56,7 @@ class PageController extends Controller {
         if (isset($_POST['Page'])) {
             try {
                 if ($page->save()) {
-                    if (Settings::get('site', 'slugs_enabled') && isset($_POST['Page']['slug'])) {
+                    if (Settings::get('SEO', 'slugs_enabled') && isset($_POST['Page']['slug'])) {
                         $page->slug = Slug::create($_POST['Page']['slug'], array('view', 'id' => $page->id));
                         $page->save();
                     }
@@ -78,7 +78,7 @@ class PageController extends Controller {
         $page = $this->loadModel($id);
 
         if (isset($_POST['Page'])) {
-            if (Settings::get('site', 'slugs_enabled')) {
+            if (Settings::get('SEO', 'slugs_enabled')) {
                 if (isset($page->slug)) {
                     if (isset($page->slug->slug) && $_POST['Page']['slug'] != $page->slug->slug) {
                         if ($_POST['Page']['slug'] == '') {
