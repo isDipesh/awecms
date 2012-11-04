@@ -44,8 +44,7 @@ class PageController extends Controller {
         //set page title
         Yii::app()->getController()->pageTitle = $page->title . Awecms::getTitlePrefix();
         //increase view count
-        $page->views++;
-        $page->save();
+        $page->increaseViewCount();
         $this->render('view', array(
             'page' => $page,
         ));

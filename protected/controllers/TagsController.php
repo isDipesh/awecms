@@ -26,9 +26,9 @@ class TagsController extends Controller {
                 $total = count($tags) - 1;
                 foreach ($tags as $i => $tag) {
                     echo '{';
-                    echo '"id": "' . $tag->tag . '",';
-                    echo '"label": "' . $tag->tag . '",';
-                    echo '"value": "' . $tag->slug . '"';
+                    echo '"id": "' . $tag->name . '",';
+                    echo '"label": "' . $tag->name . '",';
+                    echo '"value": "' . $tag->name . '"';
                     echo '}';
                     if ($total !== $i) {
                         echo ',';

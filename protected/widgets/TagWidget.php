@@ -19,6 +19,8 @@ class TagWidget extends CWidget {
      * @var array
      */
     public $tags;
+    
+    public $model;
 
     /**
      * The url to get json data
@@ -29,6 +31,10 @@ class TagWidget extends CWidget {
     public function init()
     {
         // this method is called by CController::beginWidget()
+        if (!$this->url)
+            $this->url = Yii::app()->request->baseUrl.'/tags/json/';
+        if (!$this->tags && $this->model)
+            $this->tags = $this->model->getTags();
     }
 
     public function run()

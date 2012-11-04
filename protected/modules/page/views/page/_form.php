@@ -15,12 +15,11 @@
         'fields' => array('title', 'slug', 'content', 'user', 'status', 'parent', 'categories')
     ));
     ?>
-    
+
     <div class="row">
-        <?php 
+        <?php
         $this->widget('TagWidget', array(
-            'url'=> Yii::app()->request->baseUrl.'/tags/json/',
-            'tags' => $page->getTags()
+            'model' => $page
         ));
         ?>
     </div>

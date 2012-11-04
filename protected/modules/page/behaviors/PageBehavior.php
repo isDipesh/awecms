@@ -33,6 +33,8 @@ class PageBehavior extends CActiveRecordBehavior {
     }
 
     public function beforeValidate($event) {
+        if ($this->owner->scenario == 'view')
+            return;
         $isPage = (get_class($this->owner) == 'Page') ? true : false;
         if ($isPage) {
             if ($this->owner->type != 'Page')
@@ -56,9 +58,11 @@ class PageBehavior extends CActiveRecordBehavior {
         foreach (array_keys($attributes) as $attribute) {
             $this->owner->$attribute = $attributes[$attribute];
         }
-        
+
         //save tags
-        die();
+        if (isset($_POST['Tags'])) {
+            $this->owner->setTags($_POST['Tags']);
+        }
 
         if ($this->owner->scenario == 'insert')
             $page = new Page;
@@ -122,6 +126,13 @@ class PageBehavior extends CActiveRecordBehavior {
                 $page->save();
             }
         }
+    }
+
+    public function increaseViewCount() {
+        $p = $this->getP();
+        $this->owner->scenario = 'view';
+        $p->views++;
+        $p->save();
     }
 
 //    public function afterFind($event) {
@@ -235,5 +246,4 @@ class PageBehavior extends CActiveRecordBehavior {
     //     }
     //     return $path;
     // }
-
 }
