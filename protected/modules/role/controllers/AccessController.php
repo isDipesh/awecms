@@ -21,7 +21,7 @@ class AccessController extends Controller {
 
     public function actionCreate() {
         $assetsUrl = Yii::app()->getAssetManager()->publish(dirname(__FILE__) . '/../assets/');
-        Yii::app()->getClientScript()->registerScriptFile($assetsUrl . '/accessForm.js?' . time());
+        Yii::app()->getClientScript()->registerScriptFile($assetsUrl . '/accessForm.js');
         $model = new Access;
         if (isset($_POST['Access'])) {
             $model->setAttributes($_POST['Access']);
@@ -59,7 +59,7 @@ class AccessController extends Controller {
 
     public function actionUpdate($id) {
         $assetsUrl = Yii::app()->getAssetManager()->publish(dirname(__FILE__) . '/../assets/');
-        Yii::app()->getClientScript()->registerScriptFile($assetsUrl . '/accessForm.js?' . time());
+        Yii::app()->getClientScript()->registerScriptFile($assetsUrl . '/accessForm.js');
         $model = new Access;
 
         $model = $this->loadModel($id);

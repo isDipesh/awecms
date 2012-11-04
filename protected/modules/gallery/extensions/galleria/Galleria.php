@@ -94,7 +94,7 @@ class Galleria extends CWidget
 		$cs->registerCoreScript('jquery');
 
 		//load theme CSS
-		$cs->registerCssFile($this->assets . '/themes/' . $this->themeName . '/galleria.' . $this->themeName . '.css?'.time());
+		$cs->registerCssFile($this->assets . '/themes/' . $this->themeName . '/galleria.' . $this->themeName . '.css');
 
 		$ext = defined('YII_DEBUG') ? '.js?'.time() : '.min.js';
 		#$ext = '.min.js';

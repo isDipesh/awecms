@@ -52,8 +52,7 @@ class AlbumController extends Controller {
         //set page title
         Yii::app()->getController()->pageTitle = $page->title . Awecms::getTitlePrefix();
         //increase view count
-        $page->views++;
-        $page->save();
+        $model->increaseViewCount();
         $this->render('view', array(
             'model' => $model,
             'images' => $images

@@ -179,7 +179,7 @@ div.summary, .list-view .summary, .grid-view .summary {
     padding: 10px 0px 8px 14px;
     color: #fff;
     background: #1F7AAE
-        url(active_triangle.png) left center no-repeat
+        /*url(active_triangle.png) left center no-repeat*/
         ;
     font-weight: bold;
     font-style: italic;
