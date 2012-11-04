@@ -50,6 +50,7 @@ class SettingsController extends Controller {
     }
 
     public function actionAdd() {
+        
         $action = 'site';
         if (count($_GET)) {
             foreach ($_GET as $key => $param) {

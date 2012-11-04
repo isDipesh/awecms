@@ -6,7 +6,7 @@ $this->breadcrumbs = array(
 
 $this->menu = Settings::getCategoriesAsLinks($action);
 
-echo"<h1>Add new settings field:</h1>";
+echo '<h1>' . Yii::t('app', 'Add new settings field') . ':</h1>';
 
 echo CHtml::beginForm('', 'post', array('onsubmit' => 'return validateForm(this)', 'class' => 'form'));
 ?>
@@ -46,8 +46,13 @@ echo CHtml::beginForm('', 'post', array('onsubmit' => 'return validateForm(this)
 <div class="settings row">
     <?php
     echo CHtml::label('Type', 'type');
-    echo CHtml::textField('type', '', array('size' => '50'));
-    echo '<p class="hint">Leave this blank for auto-detection!</p>';
+//    echo CHtml::textField('type', '', array('size' => '50'));
+    echo CHtml::dropDownList(
+            'type', '', array_merge(array('' => 'Autodetect'), Awecms::generatePairs(
+                            array(
+                                'textfield', 'boolean', 'image_url', 'email', 'textarea'))
+            ));
+    echo '<p class="hint">' . Yii::t('app', 'Leave this blank for auto-detection!') . '</p>';
     ?>
 </div>
 

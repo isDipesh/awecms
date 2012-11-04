@@ -4,6 +4,7 @@
 class Awecms {
 
     const version = '0.4b';
+
     public static $start_time;
     public static $tmp;
 
@@ -121,6 +122,8 @@ class Awecms {
                 }
                 return 'url';
             }
+            if (strlen($var) > 99)
+                return 'textarea';
             return 'textfield';
         }
         return (gettype($var));
