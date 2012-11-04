@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="fifth">
                     <?php $this->widget('RecentPages'); ?>  
-                    <?php $this->widget('Events'); ?> 
+                    <?php $this->widget('TagCloud'); ?> 
                 </div>
 
                 <div class="fourfifth">

@@ -19,4 +19,8 @@ class TagsController extends Controller {
         }
     }
 
+    public function missingAction($actionID) {
+        
+    }
+
 }
