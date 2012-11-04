@@ -7,34 +7,15 @@ class TagsController extends Controller {
     }
 
     public function actionJson() {
-        header('Cache-Control: no-cache, must-revalidate');
-        header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
         header('Content-type: application/json');
-
         $this->layout = false;
-        if (isset($_GET['tag'])) {
-
+        if (isset($_POST['tag'])) {
             $criteria = new CDbCriteria(array(
                         'limit' => 10
                     ));
-
-            $criteria->addSearchCondition('name', $_GET['tag']);
-
+            $criteria->addSearchCondition('name', $_POST['tag']);
             $tags = Tag::model()->findAll($criteria);
-
-            if ($tags) {
-                $total = count($tags) - 1;
-                foreach ($tags as $i => $tag) {
-                    echo '{';
-                    echo '"id": "' . $tag->name . '",';
-                    echo '"label": "' . $tag->name . '",';
-                    echo '"value": "' . $tag->name . '"';
-                    echo '}';
-                    if ($total !== $i) {
-                        echo ',';
-                    }
-                }
-            }
+            echo json_encode(array_map(create_function('$o', 'return $o->name;'), $tags));
         }
     }
 

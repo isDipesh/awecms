@@ -10,7 +10,17 @@ $cs->registerCssFile($tag_it_css);
 $cs->registerScript($id, '
     $("#' . $id . '").tagit({
         tags: ' . $tags . ',
-        url: "' . $url . '"
+        tagSource: function(request, response) {
+                $.ajax({
+                    type: "POST",
+                    url: "'.$url.'",
+                    dataType: "json",
+                    data: { tag: request.term, count: 10 },
+                    success: function(data) {
+                        response(data);
+                    }
+                });
+            },
     });
 ', CClientScript::POS_READY);
 ?>
