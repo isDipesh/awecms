@@ -45,7 +45,7 @@
 
             <div class="row">
                 <div class="fifth">
-                    <?php $this->widget('LatestNews'); ?>  
+                    <?php $this->widget('RecentPages'); ?>  
                     <?php $this->widget('Events'); ?> 
                 </div>
 

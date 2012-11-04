@@ -20,22 +20,12 @@ class Page extends BasePage {
         return self::model()->findAllByAttributes(array('type' => $type));
     }
 
-    public function getPath() {
-        if (Settings::get('site', 'slugs_enabled') && $this->slug)
-            return '/' . $this->slug->slug;
-        $type = ($this->type);
-        if ($type == 'Page')
-            return '/' . lcfirst($type) . '/view?id=' . $this->id;
-        $model = $type::model()->findByAttributes(array('page_id' => $this->id));
-        if ($model) {
-            return '/' . lcfirst($type) . '/view?id=' . $model->id;
-        }
-        return;
-    }
-
-    public function getUrl() {
-        $protocol = isset($_SERVER['HTTPS']) ? 'https://' : 'http://';
-        return $protocol . $_SERVER['HTTP_HOST'] . $this->getPath();
+    public function getRecentPages($limit = 10) {
+        $criteria = new CDbCriteria;
+        $criteria->limit = $limit;
+        $criteria->compare('type','Page');
+        $criteria->order = 'id DESC';
+        return $this->findAll($criteria);
     }
 
 }

@@ -2,18 +2,6 @@
 
 class PageBehavior extends CActiveRecordBehavior {
 
-    public function getPath() {
-        if (isset(Yii::app()->getController()->module))
-            $module = Yii::app()->getController()->module->id;
-        $controller = Yii::app()->getController()->id;
-        $action = Yii::app()->getController()->getAction()->id;
-        $path = $controller . '/' . $action;
-        if (isset($module)) {
-            $path = $module . '/' . $path;
-        }
-        return $path;
-    }
-
     public function getP() {
         return (get_class($this->owner) == 'Page') ? $this->owner : $this->owner->page;
     }
@@ -212,5 +200,37 @@ class PageBehavior extends CActiveRecordBehavior {
         if (isset($this->owner->page))
             return $this->owner->page->created_at;
     }
+
+    public function getPath() {
+        $page = $this->getP();
+        $isPage = (get_class($this->owner) == 'Page') ? true : false;
+        if (Settings::get('site', 'slugs_enabled') && $page->slug)
+            return Yii::app()->baseUrl . '/' . $page->slug->slug;
+        if ($isPage)
+            return Yii::app()->baseUrl . '/page' . '/view?id=' . $page->id;
+        $type = $page->type;
+        $model = $type::model()->findByAttributes(array('page_id' => $page->id));
+        if ($model) {
+            return Yii::app()->baseUrl . '/' . lcfirst($type) . '/view?id=' . $model->id;
+        }
+        return;
+    }
+
+    public function getUrl() {
+        $protocol = isset($_SERVER['HTTPS']) ? 'https://' : 'http://';
+        return $protocol . $_SERVER['HTTP_HOST'] . $this->getPath();
+    }
+
+    // public function getPath() {
+    //     if (isset(Yii::app()->getController()->module))
+    //         $module = Yii::app()->getController()->module->id;
+    //     $controller = Yii::app()->getController()->id;
+    //     $action = Yii::app()->getController()->getAction()->id;
+    //     $path = $controller . '/' . $action;
+    //     if (isset($module)) {
+    //         $path = $module . '/' . $path;
+    //     }
+    //     return $path;
+    // }
 
 }

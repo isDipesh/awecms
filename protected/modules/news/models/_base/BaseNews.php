@@ -10,7 +10,7 @@
  * Relations of table "news" available as properties of the model:
  * @property Page $page
  */
-abstract class BaseNews extends Page {
+abstract class BaseNews extends CActiveRecord {
 
     public static function model($className = __CLASS__) {
         return parent::model($className);
