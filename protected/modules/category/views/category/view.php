@@ -24,9 +24,9 @@ if (!isset($this->menu) || $this->menu === array()) {
         <?php
         if (is_array($model->pages))
             foreach ($model->pages as $foreignobj) {
-
                 echo '<li>';
-                echo CHtml::link($foreignobj->title, array('/page/page/view', 'id' => $foreignobj->id));
+                echo CHtml::link($foreignobj->title, $foreignobj->getPath());
+                echo '</li>';
             }
         ?></ul>
 <?php } ?>

@@ -12,7 +12,7 @@ if (!isset($this->menu) || $this->menu === array()) {
     );
 }
 ?>
-<article itemscope itemtype="http://schema.org/NewsArticle">
+<article itemscope itemtype="http://schema.org/Article">
     <?php
     $this->widget('PageView', array(
         'model' => $page,

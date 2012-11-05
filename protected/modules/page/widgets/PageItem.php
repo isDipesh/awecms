@@ -45,14 +45,14 @@ class PageItem extends CWidget {
             switch ($field) {
                 case 'title':
                     ?>
-                    <?php echo CHtml::encode($page->title); ?><br/>
+                    <span itemprop="headline"><?php echo $page->title; ?></span>
                     <?php
                     break;
                 case 'content':
-                    echo nl2br($page->content);
+                    echo '<div class="rte-text" itemprop="articleBody">' . $page->content . "</div>";
                     break;
                 case 'created_at':
-                    echo "<div class='post-time meta'>" . Yii::t('app', 'Posted on ') . '<time>' . date('F d, Y h:m A', strtotime($page->created_at)) . "</time></div>";
+                    echo '<div class="post-time">' . Yii::t('app', 'Posted on ') . '<span itemprop="datePublished">' . date('F d, Y h:m A', strtotime($page->created_at)) . "</span></div>";
                     break;
                 case 'excerpt':
                     if (!empty($page->content)) {
@@ -89,8 +89,11 @@ class PageItem extends CWidget {
                             <?php
                             if (is_array($page->categories))
                                 foreach ($page->categories as $foreignobj) {
-                                    echo '<li>';
-                                    echo CHtml::link($foreignobj->name, array('/category/category/view', 'id' => $foreignobj->id));
+                                    echo '<li>
+                                        <a href="' . Yii::app()->createUrl('/category/category/view', array('id' => $foreignobj->id)) . '">
+                                        <span itemprop="articleSection">' . $foreignobj->name . '</span>
+                                        </a>
+                                        </li>';
                                 }
                             ?>
                         </ul>
@@ -111,6 +114,21 @@ class PageItem extends CWidget {
                                 </span>
                             </span>
                             <?php
+                        }
+                        break;
+                    case 'tags':
+                        if (Yii::app()->hasModule('tag')) {
+                            $tags = $page->getTags();
+                            if (!empty($tags)) {
+                                ?>
+                                <div class="field">
+                                    <?php echo Yii::t('app', 'Tags'); ?>:
+                                    <?php
+                                    echo '<span class="tags" itemprop="keywords">' . implode(', ', $tags) . '</span>';
+                                    ?>
+                                </div>
+                                <?php
+                            }
                         }
                         break;
                     default :

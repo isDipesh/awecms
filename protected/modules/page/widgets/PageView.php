@@ -35,7 +35,7 @@ class PageView extends CWidget {
             switch ($field) {
                 case 'title':
                     ?>
-                    <h1 itemprop="name"><?php echo $page->title; ?></h1>
+                    <h1 itemprop="headline"><?php echo $page->title; ?></h1>
                     <?php
                     break;
                 case 'content':
