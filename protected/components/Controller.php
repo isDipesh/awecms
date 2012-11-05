@@ -138,6 +138,8 @@ class Controller extends CController {
     }
 
     public function beforeRender($view) {
+        //some SEO stuffs here
+
         if ($this->pageRobotsIndex == false) {
             Yii::app()->clientScript->registerMetaTag('noindex', 'robots');
         }
@@ -151,6 +153,20 @@ class Controller extends CController {
         if (Settings::get('SEO', 'enable_meta_keywords')) {
             if (empty($this->pageKeywords))
                 $this->pageKeywords = Settings::get('SEO', 'meta_keywords');
+        }
+
+        if (Settings::get('SEO', 'enable_open_graph_meta_tags')) {
+            $site_name = Awecms::getSiteName();
+            if (!empty($site_name))
+                Yii::app()->clientScript->registerMetaTag($site_name, NULL, NULL, array('property' => 'og:site_name'));
+            if (!empty($this->pageTitle))
+                Yii::app()->clientScript->registerMetaTag($this->pageTitle, NULL, NULL, array('property' => 'og:title'));
+
+            $protocol = isset($_SERVER['HTTPS']) ? 'https://' : 'http://';
+            Yii::app()->clientScript->registerMetaTag($protocol . $_SERVER['HTTP_HOST'] . Yii::app()->request->requestUri, NULL, NULL, array('property' => 'og:url'));
+
+            if (!empty($meta_description))
+                Yii::app()->clientScript->registerMetaTag($meta_description, NULL, NULL, array('property' => 'og:description'));
         }
 
         if ($this->pageKeywords)
