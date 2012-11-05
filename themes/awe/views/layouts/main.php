@@ -14,7 +14,7 @@
     <body itemscope itemtype="http://schema.org/WebPage">
         <div class="wrapper">
             <div >
-                <header id="header">
+                <header itemtype="http://schema.org/WPHeader">
                     <a href="<?php echo Yii::app()->baseUrl; ?>/">
                         <h1 class="head"><?php echo Settings::get('site', 'name'); ?></h1>
                     </a>
@@ -41,7 +41,7 @@
                     <?php $this->widget('TagCloud'); ?> 
                 </div>
 
-                <div class="fourfifth">
+                <div class="fourfifth" itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
                     <?php echo $content; ?>
                 </div>
             </div>

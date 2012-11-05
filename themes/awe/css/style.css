@@ -1,4 +1,4 @@
-/* =Typography
+foo/* =Typography
 -----------------------------------------------------------------------------*/
 body {
     font-family: 'PT Sans Narrow', Helvetica, Arial, sans-serif;
@@ -188,23 +188,23 @@ h1.head{
 
 /* =Header
 -----------------------------------------------------------------------------*/
-#header {
+header {
     margin-bottom: 1em;
     float: left;
     width: 100%;
 }
-#header h3 {
+header h3 {
     float: left;
     margin: 0;
     font-size: 24px;
     padding-left: 35px;
     background: url(../img/kube.png) no-repeat;
 }
-#header h3 a {
+header h3 a {
     color: #000;
     text-decoration: none;
 }
-#header h3 a:hover {
+header h3 a:hover {
     text-decoration: underline;
 }
 .nm_row span label,.nm_row label{
@@ -364,7 +364,7 @@ h1.head{
 
 /* =Footer
 -----------------------------------------------------------------------------*/
-#footer {
+footer {
     padding-top: 1.5em;
     border-top: 1px solid #eee;
     font-size: .85em;
@@ -372,13 +372,13 @@ h1.head{
     padding-bottom: 90px;
     text-align: center;
 }
-body.indexpage #footer {
+body.indexpage footer {
     margin-left: 35px;  
 }
-#footer a {
+footer a {
     color: #000;
 }
-#footer a:hover {
+footer a:hover {
     color: #555;
 }
 
