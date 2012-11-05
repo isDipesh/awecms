@@ -2,7 +2,7 @@
 
 class TagModule extends CWebModule {
 
-    public $defaultController = 'Tag';
+    public $defaultController = 'tag';
     
     public function init() {
     }

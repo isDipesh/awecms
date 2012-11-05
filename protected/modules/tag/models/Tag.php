@@ -1,6 +1,6 @@
 <?php
 
-Yii::import('application.models._base.BaseTag');
+Yii::import('application.modules.tag.models._base.BaseTag');
 
 class Tag extends BaseTag{
     public static function model($className = __CLASS__) {

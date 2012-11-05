@@ -7,8 +7,11 @@
  
       * @property string $id
       * @property string $name
+      * @property integer $user_id
+      * @property integer $count
  *
- * There are no model relations.
+ * Relations of table "tag" available as properties of the model:
+ * @property Page[] $pages
  */
 abstract class BaseTag extends CActiveRecord {
     
@@ -22,9 +25,10 @@ abstract class BaseTag extends CActiveRecord {
 
     public function rules() {
         return array(
-            array('name', 'required'),
+            array('name, user_id, count', 'required'),
+            array('user_id, count', 'numerical', 'integerOnly' => true),
             array('name', 'length', 'max' => 255),
-            array('id, name', 'safe', 'on' => 'search'),
+            array('id, name, user_id, count', 'safe', 'on' => 'search'),
         );
     }
     
@@ -33,11 +37,14 @@ abstract class BaseTag extends CActiveRecord {
     }
 
     public function behaviors() {
-        return array();
+        return array(
+        'activerecord-relation' => array('class' => 'EActiveRecordRelationBehavior')
+);
     }
 
     public function relations() {
         return array(
+            'pages' => array(self::MANY_MANY, 'Page', 'page_nm_tag(tag_id, page_id)'),
         );
     }
 
@@ -45,6 +52,8 @@ abstract class BaseTag extends CActiveRecord {
         return array(
             'id' => Yii::t('app', 'ID'),
             'name' => Yii::t('app', 'Name'),
+            'user_id' => Yii::t('app', 'User'),
+            'count' => Yii::t('app', 'Count'),
         );
     }
 
@@ -53,6 +62,8 @@ abstract class BaseTag extends CActiveRecord {
 
         $criteria->compare('id', $this->id, true);
         $criteria->compare('name', $this->name, true);
+        $criteria->compare('user_id', $this->user_id);
+        $criteria->compare('count', $this->count);
 
         return new CActiveDataProvider(get_class($this), array(
                     'criteria' => $criteria,
