@@ -68,10 +68,12 @@ class PageBehavior extends CActiveRecordBehavior {
             $page = Page::model()->findByPk($this->owner->page_id);
 
         //save tags
-        if (isset($_POST['Tags'])) {
-            $page->setTags($_POST['Tags']);
-        } else {
-            $page->removeAllTags();
+        if (Yii::app()->hasModule('tag')){
+            if (isset($_POST['Tags'])) {
+                $page->setTags($_POST['Tags']);
+            } else {
+                $page->removeAllTags();
+            }
         }
 
         //get and save attributes of page

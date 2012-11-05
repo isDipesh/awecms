@@ -15,7 +15,7 @@ if (!isset($this->menu) || $this->menu === array()) {
 
 $this->widget('PageView', array(
     'model' => $page,
-    'fields' => array('title', 'content', 'sub-pages', 'categories')
+    'fields' => array('title', 'content', 'sub-pages', 'categories', 'tags')
 ));
 
 $this->widget('Share');

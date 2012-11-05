@@ -147,9 +147,11 @@ class PageForm extends CWidget {
                     ?>
                     <div class="row">
                         <?php
-                        Yii::app()->getController()->widget('TagWidget', array(
-                            'model' => $page
-                        ));
+                        if (Yii::app()->hasModule('tag')) {
+                            Yii::app()->getController()->widget('TagWidget', array(
+                                'model' => $page
+                            ));
+                        }
                         ?>
                     </div>
                     <?php

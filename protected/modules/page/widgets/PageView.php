@@ -98,16 +98,18 @@ class PageView extends CWidget {
                     }
                     break;
                 case 'tags':
-                    $tags = $page->getTags();
-                    if (!empty($tags)) {
-                        ?>
-                        <div class="field">
-                            <?php echo Yii::t('app', 'Tags'); ?>:
-                            <?php
-                            echo implode(', ', $tags);
+                    if (Yii::app()->hasModule('tag')) {
+                        $tags = $page->getTags();
+                        if (!empty($tags)) {
                             ?>
-                        </div>
-                        <?php
+                            <div class="field">
+                                <?php echo Yii::t('app', 'Tags'); ?>:
+                                <?php
+                                echo implode(', ', $tags);
+                                ?>
+                            </div>
+                            <?php
+                        }
                     }
                     break;
                 default :
