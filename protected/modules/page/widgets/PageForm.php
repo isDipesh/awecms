@@ -134,14 +134,16 @@ class PageForm extends CWidget {
                     <?php
                     break;
                 case 'categories':
-                    ?>
-                    <div class="row nm_row">
-                        <label for="categories"><?php echo Yii::t('app', 'Categories'); ?></label>
-                        <?php
-                        echo CHtml::checkBoxList('Page[categories]', array_map('Awecms::getPrimaryKey', $page->categories), CHtml::listData(Category::model()->findAll(), 'id', 'name'), array('attributeitem' => 'id', 'checkAll' => 'Select All'));
+                    if (Yii::app()->hasModule('category')) {
                         ?>
-                    </div>
-                    <?php
+                        <div class="row nm_row">
+                            <label for="categories"><?php echo Yii::t('app', 'Categories'); ?></label>
+                            <?php
+                            echo CHtml::checkBoxList('Page[categories]', array_map('Awecms::getPrimaryKey', $page->categories), CHtml::listData(Category::model()->findAll(), 'id', 'name'), array('attributeitem' => 'id', 'checkAll' => 'Select All'));
+                            ?>
+                        </div>
+                        <?php
+                    }
                     break;
                 case 'tags':
                     ?>

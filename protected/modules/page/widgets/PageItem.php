@@ -82,7 +82,7 @@ class PageItem extends CWidget {
                     }
                     break;
                 case 'categories':
-                    if (count($page->categories)) {
+                    if (Yii::app()->hasModule('category') && count($page->categories)) {
                         ?>
                         <h2><?php echo CHtml::link(Yii::t('app', Awecms::pluralize('Category', 'Categories', count($page->categories))), array('/category/category')); ?></h2>
                         <ul class="categories">
@@ -103,20 +103,20 @@ class PageItem extends CWidget {
                         <span class="field">
                             <span class="field_name">
                                 <?php echo CHtml::encode($page->getAttributeLabel('views')); ?>:
-                            </pan>
-                            <span class="field_value">
-                                <?php
-                                echo CHtml::encode($page->views);
-                                ?>
+                                </pan>
+                                <span class="field_value">
+                                    <?php
+                                    echo CHtml::encode($page->views);
+                                    ?>
+                                </span>
                             </span>
-                        </span>
-                        <?php
-                    }
-                    break;
-                default :
-                    break;
+                            <?php
+                        }
+                        break;
+                    default :
+                        break;
+                }
             }
         }
-    }
 
-}
+    }

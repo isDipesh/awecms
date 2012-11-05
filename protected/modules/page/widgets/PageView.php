@@ -72,7 +72,7 @@ class PageView extends CWidget {
                     }
                     break;
                 case 'categories':
-                    if (count($page->categories)) {
+                    if (Yii::app()->hasModule('category') && count($page->categories)) {
                         ?>
                         <h2><?php echo CHtml::link(Yii::t('app', Awecms::pluralize('Category', 'Categories', count($page->categories))), array('/category/category')); ?></h2>
                         <ul class="categories">

@@ -15,7 +15,6 @@ class Disqus extends CWidget {
 
     public function renderContent() {
         ?>
-
         <div id="disqus_thread"></div>
         <script type="text/javascript">
             var disqus_shortname = '<?php echo $this->id; ?>'; // required: replace example with your forum shortname
