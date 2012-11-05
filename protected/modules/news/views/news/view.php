@@ -1,5 +1,4 @@
 <?php
-
 $this->breadcrumbs = array(
     Yii::t('app', 'News') => array('/news'),
     Yii::t('app', $model->title),
@@ -15,10 +14,13 @@ if (!isset($this->menu) || $this->menu === array()) {
     );
 }
 ?>
-<?php
+<article itemscope itemtype="http://schema.org/NewsArticle">
 
-$this->widget('PageView', array(
-    'model' => $model,
-    'fields' => array('title', 'created_at', 'content', 'sub-pages', 'categories', 'tags')
-));
-?>
+    <?php
+    $this->widget('PageView', array(
+        'model' => $model,
+        'fields' => array('title', 'created_at', 'content', 'sub-pages', 'categories', 'tags')
+    ));
+    ?>
+
+</article>

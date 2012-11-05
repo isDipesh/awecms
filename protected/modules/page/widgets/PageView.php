@@ -35,21 +35,21 @@ class PageView extends CWidget {
             switch ($field) {
                 case 'title':
                     ?>
-                    <h1><?php echo $page->title; ?></h1>
+                    <h1 itemprop="name"><?php echo $page->title; ?></h1>
                     <?php
                     break;
                 case 'content':
-                    echo "<div class='rte-text'>" . $page->content . "</div>";
+                    echo '<div class="rte-text" itemprop="articleBody">' . $page->content . "</div>";
                     break;
                 case 'created_at':
-                    echo "<div class='post-time'>" . Yii::t('app', 'Posted on ') . '<time>' . date('F d, Y h:m A', strtotime($page->created_at)) . "</time></div>";
+                    echo '<div class="post-time">' . Yii::t('app', 'Posted on ') . '<span itemprop="datePublished">' . date('F d, Y h:m A', strtotime($page->created_at)) . "</span></div>";
                     break;
                 case 'excerpt':
-                    if (!empty($data->content)) {
+                    if (!empty($page->content)) {
                         ?>
                         <div class="field">
                             <div class="field_value">
-                                <?php echo $data->getExcerpt(); ?>
+                                <?php echo $page->getExcerpt(); ?>
                             </div>
                         </div>
                         <?php
@@ -79,8 +79,11 @@ class PageView extends CWidget {
                             <?php
                             if (is_array($page->categories))
                                 foreach ($page->categories as $foreignobj) {
-                                    echo '<li>';
-                                    echo CHtml::link($foreignobj->name, array('/category/category/view', 'id' => $foreignobj->id));
+                                    echo '<li>
+                                        <a href="' . Yii::app()->createUrl('/category/category/view', array('id' => $foreignobj->id)) . '">
+                                        <span itemprop="articleSection">' . $foreignobj->name . '</span>
+                                        </a>
+                                        </li>';
                                 }
                             ?>
                         </ul>
@@ -105,7 +108,7 @@ class PageView extends CWidget {
                             <div class="field">
                                 <?php echo Yii::t('app', 'Tags'); ?>:
                                 <?php
-                                echo implode(', ', $tags);
+                                echo '<span class="tags" itemprop="keywords">' . implode(', ', $tags) . '</span>';
                                 ?>
                             </div>
                             <?php

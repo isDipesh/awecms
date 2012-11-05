@@ -17,7 +17,7 @@
     $this->widget('PageForm', array(
         'model' => $model,
         'form' => $form,
-        'fields' => array('title', 'slug', 'content', 'user', 'status', 'parent', 'tags')
+        'fields' => array('title', 'slug', 'content', 'user', 'status', 'parent', 'categories', 'tags')
     ));
     ?>
 

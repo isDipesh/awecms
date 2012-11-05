@@ -1,5 +1,4 @@
 <?php
-
 $this->breadcrumbs = $page->getHierarchyLinks();
 if (!isset($this->menu) || $this->menu === array()) {
     $this->menu = array(
@@ -12,10 +11,14 @@ if (!isset($this->menu) || $this->menu === array()) {
         array('label' => Yii::t('app', 'All Contents'), 'url' => array('/page/page/content')),
     );
 }
+?>
+<article itemscope itemtype="http://schema.org/NewsArticle">
+    <?php
+    $this->widget('PageView', array(
+        'model' => $page,
+        'fields' => array('title', 'content', 'sub-pages', 'categories', 'tags')
+    ));
 
-$this->widget('PageView', array(
-    'model' => $page,
-    'fields' => array('title', 'content', 'sub-pages', 'categories', 'tags')
-));
-
-$this->widget('Share');
+    $this->widget('Share');
+    ?>
+</article>

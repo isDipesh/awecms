@@ -19,7 +19,7 @@ if (!isset($this->menu) || $this->menu === array()) {
 <?php echo $model->description; ?>
 
 <?php if (count($model->pages)) { ?>
-    <h2><?php echo CHtml::link(Yii::t('app', Awecms::pluralize('Sub-Page', 'Pages', count($model->pages))), array('/page/page')); ?></h2>
+    <h2><?php echo Yii::t('app', Awecms::pluralize('Page', 'Pages', count($model->pages))); ?></h2>
     <ul>
         <?php
         if (is_array($model->pages))

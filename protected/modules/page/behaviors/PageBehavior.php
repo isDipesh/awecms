@@ -218,6 +218,13 @@ class PageBehavior extends CActiveRecordBehavior {
         if (isset($this->owner->page))
             return $this->owner->page->created_at;
     }
+    
+    public function getCategories() {
+        if (get_class($this->owner) == 'Page')
+            return $this->owner->categories;
+        if (isset($this->owner->page))
+            return $this->owner->page->categories;
+    }
 
     public function getPath() {
         $page = $this->getP();
