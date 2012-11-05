@@ -38,6 +38,14 @@ abstract class BaseEvent extends CActiveRecord {
             array('type', 'length', 'max' => 255),
             array('venue, start, end, organizer, url', 'safe'),
             array('id, venue, start, end, whole_day_event, organizer, type, url, page_id, enabled', 'safe', 'on' => 'search'),
+            array(
+                'end',
+                'compare',
+                'compareAttribute' => 'start',
+                'operator' => '>',
+                'allowEmpty' => true,
+                'message' => Yii::t('app', 'End Time can not be earlier than Start Time!'),
+            ),
         );
     }
 

@@ -37,8 +37,7 @@
 
             <div class="row">
                 <div class="fifth">
-                    <?php $this->widget('RecentPages'); ?>  
-                    <?php $this->widget('TagCloud'); ?> 
+                    <?php $this->widget('Events'); ?>  
                 </div>
 
                 <div class="fourfifth" itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
