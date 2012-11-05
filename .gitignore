@@ -8,3 +8,4 @@ protected/tests/report/*
 *.swp
 *~
 /protected/config/db.php
+nbproject
