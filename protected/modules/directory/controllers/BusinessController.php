@@ -89,7 +89,28 @@ class BusinessController extends Controller {
         } elseif (isset($_GET['Business'])) {
             $model->attributes = $_GET['Business'];
         }
-
+        if (!$model->latitude) {
+            $latitude = Settings::get('place', 'latitude');
+            if ($latitude)
+                $model->latitude = $latitude;
+            else
+                $model->latitude = 27.694054920759466;
+        }
+        if (!$model->longitude) {
+            $longitude = Settings::get('place', 'longitude');
+            if ($longitude)
+                $model->longitude = $longitude;
+            else
+                $model->longitude = 85.32395631713871;
+        }
+        $baseUrl = Yii::app()->assetManager->publish(dirname(__FILE__) . '/../assets');
+        Yii::app()->clientScript->registerScriptFile('http://maps.googleapis.com/maps/api/js?sensor=false');
+        Yii::app()->clientScript->registerScriptFile($baseUrl . '/gmap.js');
+        Yii::app()->clientScript->registerScript('mapLoader', '
+            $(document).ready(function() {
+            map_initialize(' . $model->latitude . ', ' . $model->longitude . ');
+                });
+            ');
         $this->render('create', array('model' => $model));
     }
 
@@ -139,6 +160,14 @@ class BusinessController extends Controller {
                 $model->addError('', $e->getMessage());
             }
         }
+        $baseUrl = Yii::app()->assetManager->publish(dirname(__FILE__) . '/../assets');
+        Yii::app()->clientScript->registerScriptFile('http://maps.googleapis.com/maps/api/js?sensor=false');
+        Yii::app()->clientScript->registerScriptFile($baseUrl . '/gmap.js');
+        Yii::app()->clientScript->registerScript('mapLoader', '
+            $(document).ready(function() {
+            map_initialize(' . $model->latitude . ', ' . $model->longitude . ');
+                });
+            ');
         $this->render('update', array(
             'model' => $model,
         ));
