@@ -11,7 +11,7 @@
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
 
-    <body>
+    <body itemscope itemtype="http://schema.org/WebPage">
         <div class="wrapper">
             <div >
                 <header id="header">
@@ -27,7 +27,7 @@
                 <div class="mid-bar row">
                     <?php //TODO: show up some message and breadcrumb like Home /Index when user is not signed in and is in home page ?>
                     <?php
-                    $this->widget('zii.widgets.CBreadcrumbs', array(
+                    $this->widget('Breadcrumbs', array(
                         'links' => $this->breadcrumbs,
                     ));
                 }

@@ -6,7 +6,8 @@ class TagCloud extends AwePortlet {
     public $maxTags = 20;
 
     public function init() {
-        if (!$this->title) $this->title = Yii::t('app','Tag Cloud');
+        if (!$this->title)
+            $this->title = Yii::t('app', 'Tag Cloud');
         parent::init();
     }
 
@@ -36,7 +37,14 @@ class TagCloud extends AwePortlet {
         asort($tags);
         foreach ($tags as $tag) {
             if ($tag['count'] >= 1) {
-                $link = CHtml::link(CHtml::encode($tag['name']), array('/tag/'.$tag['name']));
+                $lnk = '';
+                if (!in_array($tag['name'], array('tag', 'index', 'json', 'view', 'delete'))) {
+                    $lnk = array('/tag/' . $tag['name']);
+                } else {
+                    $id = Tag::model()->findByAttributes(array('name' => $tag['name']))->id;
+                    $lnk = array('/tag/tag/view', 'id' => $id);
+                }
+                $link = CHtml::link(CHtml::encode($tag['name']), $lnk);
                 echo CHtml::tag('span', array(
                     'class' => 'tagcloud',
                     'style' => "font-size:" . (2 + $weight[$tag['name']]) . "pt",
