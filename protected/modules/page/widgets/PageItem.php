@@ -59,7 +59,7 @@ class PageItem extends CWidget {
                         ?>
                         <div class="field">
                             <div class="field_value">
-                                <?php echo $page->getExcerpt(); ?>
+                                <?php echo nl2br($page->getExcerpt()); ?>
                             </div>
                         </div>
                         <?php

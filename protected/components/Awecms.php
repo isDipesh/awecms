@@ -347,7 +347,8 @@ class Awecms {
     }
 
     public static function summarize($str, $len = 500) {
-        $stripped = strip_tags($str);
+        $str = str_replace(array('<p>', '</p>', '<br>', '<br />', '<br/>'), ' ', $str);
+        $stripped = strip_tags($str, '<br>');
         $str = substr($stripped, 0, $len);
         if (strlen($stripped) > $len + 25)
             $str .= "...";
