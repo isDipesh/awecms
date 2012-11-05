@@ -14,53 +14,56 @@ if (!isset($this->menu) || $this->menu === array()) {
     );
 }
 ?>
-<?php
-if (isset($model->start)) {
+<div itemscope itemtype="http://schema.org/Event">
+    <?php
+    if (isset($model->start)) {
+        ?>
+        <div class="date">
+            <div><?php echo date('d', strtotime($model->start)); ?><span><?php echo date('M', strtotime($model->start)); ?></span></div>
+        </div>
+    <?php }
     ?>
-    <div class="date">
-        <div><?php echo date('d', strtotime($model->start)); ?><span><?php echo date('M', strtotime($model->start)); ?></span></div>
-    </div>
-<?php }
-?>
-<div class="event-details">
-    <h1><?php echo $model->page->title; ?></h1>
+    <div class="event-details">
+        <h1 itemprop="name"><?php echo $model->page->title; ?></h1>
 
-    <p class="clear">
-        <?php
-        if (isset($model->start)) {
-            echo '<b>' . CHtml::encode($model->getAttributeLabel('start')) . '</b>';
-            ?>:
+        <p class="clear">
             <?php
-            echo date('D, d M Y H:i:s', strtotime($model->start));
-        }
-        ?>
-        <br/>
-        <?php
-        if (isset($model->end)) {
-            echo '<b>' . CHtml::encode($model->getAttributeLabel('end')) . '</b>';
-            ?>:
+            if (isset($model->start)) {
+                echo '<b>' . CHtml::encode($model->getAttributeLabel('start')) . '</b>';
+                ?>:
+                <?php
+                echo '<meta itemprop="startDate" content="' . date('Y-m-d\TH:i:s', strtotime($model->start)) . '">';
+                echo date('D, d M Y H:i:s', strtotime($model->start));
+            }
+            ?>
+            <br/>
             <?php
-            echo date('D, d M Y H:i:s', strtotime($model->end));
-        }
-        ?>
-    </p>
-</div>
-
-<p>
-    <?php
-    if (isset($model->venue)) {
-        ?>
-    <div class="event-list-venue right">
-        <?php
-        echo '<b>' . CHtml::encode($model->getAttributeLabel('venue')) . '</b>:';
-        ?>
-        <?php
-        echo nl2br($model->venue);
-        ?>
+            if (isset($model->end)) {
+                echo '<b>' . CHtml::encode($model->getAttributeLabel('end')) . '</b>';
+                ?>:
+                <?php
+                echo '<meta itemprop="endDate" content="' . date('Y-m-d\TH:i:s', strtotime($model->end)) . '">';
+                echo date('D, d M Y H:i:s', strtotime($model->end));
+            }
+            ?>
+        </p>
     </div>
-    <?php
-}
-?>
+
+    <p>
+        <?php
+        if (isset($model->venue)) {
+            ?>
+        <div class="event-list-venue right" itemprop="location"s>
+            <?php
+            echo '<b>' . CHtml::encode($model->getAttributeLabel('venue')) . '</b>:';
+            ?>
+            <?php
+            echo nl2br($model->venue);
+            ?>
+        </div>
+        <?php
+    }
+    ?>
 </p>
 
 
@@ -68,7 +71,7 @@ if (isset($model->start)) {
 <?php
 if (isset($model->page->content)) {
     ?>
-    <div class="event-desc">
+    <div class="event-desc" itemprop="description">
         <?php
         echo nl2br($model->page->content);
     }
@@ -90,6 +93,17 @@ if (isset($model->type)) {
     echo CHtml::encode($model->getAttributeLabel('type'));
     ?>:
     <?php
-    echo nl2br($model->type);
+    echo $model->type;
 }
 ?>
+<div class="url">
+    <?php
+    if (isset($model->url)) {
+        echo Yii::t('app', 'URL');
+        ?>:
+        <?php
+        echo CHtml::link($model->url, $model->url, array('itemprop' => 'url'));
+    }
+    ?>
+</div>
+</div>

@@ -45,7 +45,7 @@ class PageItem extends CWidget {
             switch ($field) {
                 case 'title':
                     ?>
-                    <?php // echo CHtml::encode($page->title); ?><br/>
+                    <?php echo CHtml::encode($page->title); ?><br/>
                     <?php
                     break;
                 case 'content':

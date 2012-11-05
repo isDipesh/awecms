@@ -1,4 +1,4 @@
-<div class="view">
+<div class="view" itemscope itemtype="http://schema.org/Event">
     <?php
     if (isset($data->start)) {
         ?>
@@ -15,17 +15,17 @@
 
     <div class="event-details-list left">
 
-        <?php
-        $this->widget('PageItem', array(
-            'data' => $data,
-            'fields' => array('title')
-        ));
-        ?>
+        <h2>
+            <a itemprop="url" href="<?php echo Yii::app()->createUrl('/event/event/view', array('id' => $data->id)); ?>">
+                <span itemprop="name"><?php echo CHtml::encode($data->title); ?></span>
+            </a>
+        </h2>
         <?php
         if (isset($data->start)) {
             echo CHtml::encode($data->getAttributeLabel('start'));
             ?>:
             <?php
+            echo '<meta itemprop="startDate" content="' . date('Y-m-d\TH:i:s', strtotime($data->start)) . '">';
             echo date('D, d M Y H:i:s', strtotime($data->start));
         }
         ?>
@@ -35,24 +35,25 @@
             echo CHtml::encode($data->getAttributeLabel('end'));
             ?>:
             <?php
+            echo '<meta itemprop="endDate" content="' . date('Y-m-d\TH:i:s', strtotime($data->end)) . '">';
             echo date('D, d M Y H:i:s', strtotime($data->end));
         }
         ?>
-</div>
-        
-        <?php
-        if (isset($data->venue)) {
-            ?>
-            <div class="event-list-venue right">
+    </div>
+
+    <?php
+    if (isset($data->venue)) {
+        ?>
+        <div class="event-list-venue right" itemprop="location">
             <?php
             echo CHtml::encode($data->getAttributeLabel('venue'));
             ?>:
             <?php
             echo nl2br($data->venue);
             ?>
-            </div>
+        </div>
         <?php
-        }
-        ?>
+    }
+    ?>
 
 </div>
