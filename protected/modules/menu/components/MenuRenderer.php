@@ -156,6 +156,8 @@ class MenuRenderer extends CMenu {
             if (isset($item['description']))
                 $options['title'] = $item['description'];
 
+            $options['itemprop'] = 'url';
+
             $item['linkOptions'] = $options;
             $menu = $this->renderMenuItem($item);
             if (isset($this->itemTemplate) || isset($item['template'])) {
@@ -173,6 +175,16 @@ class MenuRenderer extends CMenu {
 
             echo CHtml::closeTag('li') . "\n";
         }
+    }
+
+    protected function renderMenuItem($item) {
+        if (isset($item['url'])) {
+            $label = $this->linkLabelWrapper === null ? $item['label'] : '<' . $this->linkLabelWrapper . '>' . $item['label'] . '</' . $this->linkLabelWrapper . '>';
+            $label = CHtml::tag('b', array('itemprop' => 'name'), $label);
+            return CHtml::link($label, $item['url'], isset($item['linkOptions']) ? $item['linkOptions'] : array());
+        }
+        else
+            return CHtml::tag('span', isset($item['linkOptions']) ? $item['linkOptions'] : array(), $item['label']);
     }
 
 }

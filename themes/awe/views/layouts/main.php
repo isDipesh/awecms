@@ -18,7 +18,7 @@
                     <a href="<?php echo Yii::app()->baseUrl; ?>/">
                         <h1 class="head"><?php echo Settings::get('site', 'name'); ?></h1>
                     </a>
-                    <nav id="nav">
+                    <nav id="nav" itemscope itemtype="http://schema.org/SiteNavigationElement" >
                         <?php $this->widget('MenuRenderer'); ?>
                     </nav>       
                 </header>
@@ -36,7 +36,7 @@
             </div>
 
             <div class="row">
-                <div class="fifth">
+                <div class="fifth" itemtype="http://schema.org/WPSideBar">
                     <?php $this->widget('Events'); ?>  
                 </div>
 
