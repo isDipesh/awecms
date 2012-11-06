@@ -60,10 +60,6 @@ class BusinessController extends Controller {
 
             if (isset($_POST['Business']['page']))
                 $model->page = $_POST['Business']['page'];
-            if (isset($_POST['Business']['place']))
-                $model->place = $_POST['Business']['place'];
-            if (isset($_POST['Business']['district']))
-                $model->district = $_POST['Business']['district'];
             if (isset($_POST['Business']['businessCategories']))
                 $model->businessCategories = $_POST['Business']['businessCategories'];
 
@@ -128,14 +124,6 @@ class BusinessController extends Controller {
                 $model->page = $_POST['Business']['page'];
             else
                 $model->page = array();
-            if (isset($_POST['Business']['place']))
-                $model->place = $_POST['Business']['place'];
-            else
-                $model->place = array();
-            if (isset($_POST['Business']['district']))
-                $model->district = $_POST['Business']['district'];
-            else
-                $model->district = array();
             if (isset($_POST['Business']['businessCategories']))
                 $model->businessCategories = $_POST['Business']['businessCategories'];
             else

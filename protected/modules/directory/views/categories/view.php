@@ -24,7 +24,7 @@ if (!isset($this->menu) || $this->menu === array()) {
 
 <?php
 $this->renderPartial('_tree', array(
-    'items' => $model->tree[0]->children,
+    'categories' => $model->tree[0]->children,
     'depth' => 0,
 ));
 ?>

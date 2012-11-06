@@ -60,18 +60,6 @@
     
     <div id="map_canvas" style="width:600px;height:400px;border:solid black 1px;"></div>
 
-<!--        <div class="row">
-    <?php echo $form->labelEx($model, 'place_id'); ?>
-    <?php echo $form->dropDownList($model, 'place', CHtml::listData(Place::model()->findAll(), 'id', 'other_names'), array('prompt' => 'None')); ?>
-    <?php echo $form->error($model, 'place_id'); ?>
-        </div>
-
-    <div class="row">
-        <?php echo $form->labelEx($model, 'district_id'); ?>
-        <?php echo $form->dropDownList($model, 'district', CHtml::listData(District::model()->findAll(), 'id', 'name'), array('prompt' => 'None')); ?>
-        <?php echo $form->error($model, 'district_id'); ?>
-    </div>-->
-
     <div class="row">
         <?php echo $form->labelEx($model, 'image'); ?>
         <?php

@@ -51,7 +51,7 @@ class MenuRenderer extends CMenu {
         //print_r($menu->items);
         $items = $menu->items;
 
-        $this->items = array_merge($menu->items, $this->append);
+        $this->items = array_merge($items, $this->append);
 //        $this->items = $menu->items;
         //print_r($this->items);
 

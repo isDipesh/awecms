@@ -1,26 +1,20 @@
-// Map Initialize function
 function map_initialize(lat, lng)
 {
-    // Make an instance of Geocoder
-    geocoder = new google.maps.Geocoder();
-    // Set static latitude, longitude value
     var latlng = new google.maps.LatLng(lat, lng);
-    // Set map options
     var myOptions = {
-        zoom: 16,
+        zoom: 10,
         center: latlng,
         panControl: true,
         zoomControl: true,
         scaleControl: true,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
-    // Create map object with options
     map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-    // Create and set the marker
     marker = new google.maps.Marker({
         map: map,
         draggable:true,
-        position: latlng
+        position: latlng,
+        title: 'Drag me'
     });
     // Register Custom "dragend" Event
     google.maps.event.addListener(marker, 'dragend', function() {
