@@ -3,6 +3,7 @@
 class Disqus extends CWidget {
 
     public $id;
+    public $model;
 
     public function init() {
 
@@ -17,8 +18,12 @@ class Disqus extends CWidget {
         ?>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
-            var disqus_shortname = '<?php echo $this->id; ?>'; // required: replace example with your forum shortname
-
+            var disqus_shortname = '<?php echo $this->id; ?>';
+        <?php
+        if ($this->model)
+            $identifier = get_class($this->model) . '--' . $this->model->id;
+        echo "var disqus_identifier = '{$identifier}';"
+        ?>
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -26,7 +31,6 @@ class Disqus extends CWidget {
             })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
         <?php
     }
 
