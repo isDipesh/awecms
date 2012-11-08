@@ -16,7 +16,6 @@ if (!isset($this->menu) || $this->menu === array()) {
     );
 }
 ?>
-<article itemscope itemtype="http://schema.org/ImageGallery">
     <h1 class="inline" itemprop="name"><?php echo $model->page->title; ?></h1> (<?php echo count($images) . ' ' . Awecms::pluralize(Yii::t('app', 'image'), Yii::t('app', 'images'), count($images)); ?>) 
 
     <?php
@@ -49,4 +48,3 @@ if (!isset($this->menu) || $this->menu === array()) {
         <?php
     }
     ?>
-</article>

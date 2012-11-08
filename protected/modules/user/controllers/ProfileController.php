@@ -8,7 +8,7 @@ class ProfileController extends Controller {
      * @var CActiveRecord the currently loaded data model instance.
      */
     private $_model;
-    
+
     public function filters() {
         
     }
@@ -17,6 +17,7 @@ class ProfileController extends Controller {
      * Shows a particular model.
      */
     public function actionProfile() {
+        $this->webpageType = 'ProfilePage';
         $model = $this->loadUser();
         $this->render('profile', array(
             'model' => $model,

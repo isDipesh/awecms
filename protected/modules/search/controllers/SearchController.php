@@ -64,6 +64,7 @@ class SearchController extends Controller {
     }
 
     public function actionIndex() {
+        $this->webpageType = 'SearchResultsPage';
         $type = '';
         if (isset($_GET['type'])) {
             $type = $_GET['type'];

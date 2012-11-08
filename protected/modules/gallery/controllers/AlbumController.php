@@ -44,6 +44,7 @@ class AlbumController extends Controller {
     }
 
     public function actionView($id) {
+        $this->webpageType = 'ImageGallery';
         $baseUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.gallery.assets'));
         Yii::app()->getClientScript()->registerCssFile($baseUrl . '/gallery.css');
         $images = Image::model()->findAllByAttributes(array('album_id' => $id));

@@ -11,13 +11,14 @@
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
 
-    <body itemscope itemtype="http://schema.org/WebPage">
+    <body itemscope itemtype="http://schema.org/<?php echo $this->webpageType; ?>">
         <div class="wrapper">
             <div >
                 <header itemtype="http://schema.org/WPHeader">
                     <a href="<?php echo Yii::app()->baseUrl; ?>/">
                         <h1 class="head"><?php echo Settings::get('site', 'name'); ?></h1>
                     </a>
+                    <?php $this->widget('SearchBlock'); ?>
                     <nav id="nav" itemscope itemtype="http://schema.org/SiteNavigationElement" >
                         <?php $this->widget('MenuRenderer'); ?>
                     </nav>       

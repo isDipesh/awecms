@@ -1,6 +1,6 @@
 <div class="album-view" itemscope itemtype="http://schema.org/ImageGallery">
     <h2>
-        <a href="<?php echo Yii::app()->createUrl('view', array('id' => $data->id)); ?>" itemprop="url">
+        <a href="<?php echo Yii::app()->createUrl('/gallery/album/view', array('id' => $data->id)); ?>" itemprop="url">
             <span itemprop="name">
                 <?php echo $data->title; ?>
             </span>
@@ -20,7 +20,7 @@
             $data->thumbnail = Image::model()->findByAttributes(array('album_id' => $data->id));
         if ($data->thumbnail) {
             ?>
-            <a href="<?php echo Yii::app()->createUrl('gallery/album/view', array('id' => $data->id)) ?>">
+            <a href="<?php echo Yii::app()->createUrl('/gallery/album/view', array('id' => $data->id)) ?>">
                 <img height="160" src="<?php echo $data->thumbnail->url; ?>" alt="<?php echo $data->thumbnail->title; ?>" itemprop="image" />
             </a>
             <br />

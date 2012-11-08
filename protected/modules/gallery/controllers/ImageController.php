@@ -6,7 +6,7 @@ class ImageController extends Controller {
     private $path;
     private $publicPath;
     private $_subfolder = '';
-    
+
     public function filters() {
         return array(
             'accessControl',
@@ -95,10 +95,11 @@ class ImageController extends Controller {
                 $model->description = $_POST['description'][$model->size . $model->name];
                 $model->file = $this->_subfolder . '/' . $time . $model->name;
 
-
                 if (isset($_GET['album_id']))
                     $model->album_id = $_GET['album_id'];
+
                 if ($model->save()) {
+                    $this->publicPath = rtrim($this->publicPath, '/');
                     $publicPath = ($this->_subfolder != "") ? "{$this->publicPath}/{$this->_subfolder}/" : "{$this->publicPath}/";
                     if (!is_dir($path)) {
                         mkdir($path, 0777, true);
@@ -112,7 +113,7 @@ class ImageController extends Controller {
                             "description" => $model->description,
                             "type" => $model->mime_type,
                             "size" => $model->size,
-                            "url" => $publicPath . $model->name,
+                            "url" => $publicPath . $time . $model->name,
                             "thumbnail_url" => $publicPath . $time . $model->name,
                             "delete_url" => $this->createUrl("/gallery/image/delete", array(
                                 "id" => $model->id,
