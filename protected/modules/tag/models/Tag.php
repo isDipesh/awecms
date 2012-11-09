@@ -14,9 +14,9 @@ class Tag extends BaseTag {
 
     public function getLink() {
         if (!in_array($this->name, array('tag', 'index', 'json', 'view', 'delete')))
-            return array('/tag/' . $this->name);
+            return '/tag/' . $this->name;
         else
-            return array('/tag/tag/view', 'id' => $this->id);
+            return '/tag/tag/view/id/' . $this->id;
     }
 
 }
