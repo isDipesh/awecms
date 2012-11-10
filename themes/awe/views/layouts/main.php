@@ -24,10 +24,11 @@
                     </nav>       
                 </header>
             </div>
-            <?php if (isset($this->breadcrumbs)) { ?>
-                <div class="mid-bar row">
-                    <?php //TODO: show up some message and breadcrumb like Home /Index when user is not signed in and is in home page ?>
-                    <?php
+
+            <div class="mid-bar row">
+                <?php //TODO: show up some message and breadcrumb like Home /Index when user is not signed in and is in home page  ?>
+                <?php
+                if (((Settings::get('site', 'enable_breadcrumbs') == '') || (Settings::get('site', 'enable_breadcrumbs') == 1)) && isset($this->breadcrumbs)) {
                     $this->widget('Breadcrumbs', array(
                         'links' => $this->breadcrumbs,
                     ));
