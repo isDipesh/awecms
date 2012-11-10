@@ -77,7 +77,8 @@ class ManageController extends Controller {
             if (isset($_POST['User']['roles']))
                 $model->roles = $_POST['User']['roles'];
             $model->activkey = Yii::app()->controller->module->encrypting(microtime() . $model->password);
-            $profile->attributes = $_POST['Profile'];
+            if (isset($_POST['Profile']))
+                $profile->attributes = $_POST['Profile'];
             $profile->user_id = 0;
             if ($model->validate() && $profile->validate()) {
                 $model->password = Yii::app()->controller->module->encrypting($model->password);
