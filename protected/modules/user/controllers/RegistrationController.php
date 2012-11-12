@@ -16,6 +16,10 @@ class RegistrationController extends Controller {
         );
     }
 
+    public function filters() {
+        
+    }
+
     /**
      * Registration user
      */
