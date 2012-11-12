@@ -32,7 +32,7 @@ class TagWidget extends CWidget {
     {
         // this method is called by CController::beginWidget()
         if (!$this->url)
-            $this->url = Yii::app()->request->baseUrl.'/tags/json/';
+            $this->url = Yii::app()->request->baseUrl.'/tag/json/';
         if (!$this->tags && $this->model)
             $this->tags = $this->model->getTags();
     }

@@ -12,7 +12,7 @@
     $this->widget('PageForm', array(
         'model' => $page,
         'form' => $form,
-        'fields' => array('title', 'slug', 'content', 'user', 'status', 'parent', 'categories', 'tags')
+        'fields' => array('title', 'slug', 'content', 'user', 'status', 'parent', 'categories', 'tags', 'comment_status')
     ));
     ?>
 
@@ -28,11 +28,7 @@
         <?php // echo $form->error($page, 'type');  ?>
     </div>
 
-    <div class="row">
-        <?php // echo $form->labelEx($page, 'comment_status');  ?>
-        <?php // echo $form->textField($page, 'comment_status', array('size' => 20, 'maxlength' => 20));  ?>
-        <?php // echo $form->error($page, 'comment_status');  ?>
-    </div>
+    
 
     <div class="row">
         <?php // echo $form->labelEx($page, 'tags_enabled');  ?>

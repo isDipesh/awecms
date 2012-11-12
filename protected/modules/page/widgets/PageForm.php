@@ -158,6 +158,15 @@ class PageForm extends CWidget {
                     </div>
                     <?php
                     break;
+                case 'comment_status':
+                    ?>
+                    <div class="row">
+                        <?php echo $form->labelEx($page, 'Comments'); ?>
+                        <?php echo $form->dropDownList($page, 'comment_status', array('enabled' => 'Enabled', 'disabled' => 'Disabled')); ?>
+                        <?php echo $form->error($page, 'comment_status'); ?>
+                    </div>
+                    <?php
+                    break;
                 default :
                     break;
             }
