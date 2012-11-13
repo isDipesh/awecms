@@ -101,7 +101,6 @@ class SearchController extends Controller {
         }
         if (isset($items[0]))
             echo "Creating indices for " . get_class($items[0]) . " model<br/>";
-//            print_r(get_class($items[0]));
         foreach ($items as $item) {
             if (get_class($item) == 'Page' && $item->type != 'Page')
                 continue;
