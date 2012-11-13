@@ -6,4 +6,11 @@ return array(
         'application.modules.page.behaviors.*',
         'application.modules.page.widgets.*',
     ),
+    'components' => array(
+        'urlManager' => array(
+            'rules' => array(
+                'feed' => 'page/feed',
+            ),
+        ),
+    ),
 );

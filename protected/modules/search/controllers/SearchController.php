@@ -41,7 +41,7 @@ class SearchController extends Controller {
             //linkFormat is optional and you may wrap attributes to be evaluated with {} to get the attribute value in runtime
             array('Album', 'title', 'content', '/gallery/album/view/id/{id}'),
             array('Business', 'title', 'content', '/directory/business/view/id/{id}'),
-            array('Image', 'title', 'description'),
+            array('Image', 'title', 'description', '/gallery/image/view/id/{id}'),
         );
 
 

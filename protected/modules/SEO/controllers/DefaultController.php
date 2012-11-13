@@ -29,7 +29,7 @@ class DefaultController extends Controller {
             array('Business', 0.9, '/directory/business/view/id/{id}', 'monthly'),
             array('BusinessCategory', 0.8),
             array('Album', 0.9, '/gallery/album/view/id/{id}'),
-            array('Image', 0.9),
+            array('Image', 0.9, '/gallery/image/view/id/{id}'),
             array('Tag', 0.8, '{link}'),
 //            array('User', 0.5, '/user/profile/view/id/{id}'),
         );
