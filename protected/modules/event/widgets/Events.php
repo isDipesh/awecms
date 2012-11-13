@@ -2,7 +2,11 @@
 
 class Events extends AwePortlet {
 
-    public $title = "Upcoming Events";
+    public function init() {
+        if (!$this->title)
+            $this->title = Yii::t('app', 'Upcoming Events');
+        parent::init();
+    }
 
     public function getUpcomingEvents() {
         return Event::model()->getUpcomingEvents();

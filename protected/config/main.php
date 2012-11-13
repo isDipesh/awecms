@@ -2,7 +2,8 @@
 
 $config = array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'language' => 'en',
+    'sourceLanguage' => 'en',
+    'language' => 'ne',
     'theme' => 'awe',
     // preloading 'log' component
     'preload' => array(

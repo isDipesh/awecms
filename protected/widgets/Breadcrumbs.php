@@ -1,7 +1,7 @@
 <?php
 
 /**
- *http://www.yiiframework.com/extension/ac-breadcrumbs-microdata/
+ * http://www.yiiframework.com/extension/ac-breadcrumbs-microdata/
  */
 class Breadcrumbs extends CWidget {
 
@@ -68,7 +68,7 @@ class Breadcrumbs extends CWidget {
         echo CHtml::openTag($this->tagName, $this->htmlOptions) . "\n";
         $links = array();
         if ($this->homeLink === null)
-            $links[] = CHtml::link(Yii::t('zii', '<span itemprop="title">Home</span>'), Yii::app()->homeUrl, $htmlOptionsLinks);
+            $links[] = CHtml::link('<span itemprop="title">' . Yii::t('app', 'Home') . '</span>', Yii::app()->homeUrl, $htmlOptionsLinks);
         else if ($this->homeLink !== false)
             $links[] = $this->homeLink;
         foreach ($this->links as $label => $url) {

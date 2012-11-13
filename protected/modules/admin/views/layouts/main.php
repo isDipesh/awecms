@@ -45,11 +45,11 @@
             <div class="clear"></div>
             <?php if (isset($this->breadcrumbs)): ?>
                 <?php
-                $this->widget('zii.widgets.CBreadcrumbs', array(
+                $this->widget('Breadcrumbs', array(
                     'links' => $this->breadcrumbs,
                     'homeLink' => '<a href="' . Yii::app()->baseUrl . '/admin">Dashboard</a>'
                 ));
-                ?><!-- breadcrumbs -->
+                ?>
             <?php endif ?>
             <?php
             ?>
