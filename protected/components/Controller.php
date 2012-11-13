@@ -63,6 +63,7 @@ class Controller extends CController {
 //    }
 
     public function init() {
+        LanguagePicker::setLanguage();
         $appName = Settings::get('site', 'name');
         if ($appName)
             Yii::app()->name = $appName;
