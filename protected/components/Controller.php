@@ -179,7 +179,8 @@ class Controller extends CController {
     }
 
     //this is a wild guess, at least try to show something
-//    public function missingAction($param) {
-////        $this->actionIndex($param);
-//    }
+    public function missingAction($param) {
+        throw new AweException(404);
+    }
+
 }
