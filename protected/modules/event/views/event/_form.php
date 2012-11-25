@@ -74,7 +74,7 @@
     </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model, 'Description'); ?>
+        <?php echo Yii::t('app', 'Description'); ?>
         <?php
         $page = isset($model->page) ? $model->page : new Page;
         $this->widget('ext.redactor.ERedactorWidget', array(

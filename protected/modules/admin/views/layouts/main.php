@@ -20,7 +20,7 @@
                         <li><?php echo AdminModule::t('Logged in as') . ' ' . Yii::app()->user->name; ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Account Settings'), array('/user/profile/edit')); ?></li> |
                         <li><?php echo CHtml::link(AdminModule::t('Visit Website'), Yii::app()->baseUrl . '/'); ?></li> |
-                        <li><?php echo CHtml::link(AdminModule::t('Logout'), array('/user/logout')); ?></li>
+                        <li><?php echo CHtml::link(AdminModule::t('Log out'), array('/user/logout')); ?></li>
                     </ul>
                 </nav>
                 <nav id="admin_menu">
@@ -28,11 +28,11 @@
                     $this->widget(
                             'MenuRenderer', array('name' => 'admin', 'append' => array(
                             array(
-                                'label' => 'Settings',
+                                'label' => Yii::t('app', 'Settings'),
                                 'items' => Settings::getCategoriesAsLinks(),
                             ),
                             array(
-                                'label' => 'Modules',
+                                'label' => Yii::t('app', 'Modules'),
                                 'items' => AdminModule::getLinkForModules()
                             ),
                         )

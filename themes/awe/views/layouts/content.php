@@ -9,7 +9,7 @@
         <?php
         if (((Settings::get('site', 'enable_operations_menu') == '') || (Settings::get('site', 'enable_operations_menu') == 1)) && isset($this->menu)) {
             $this->beginWidget('zii.widgets.CPortlet', array(
-                'title' => 'Operations',
+                'title' => Yii::t('app', 'Operations'),
             ));
             $this->widget('zii.widgets.CMenu', array(
                 'items' => $this->menu,

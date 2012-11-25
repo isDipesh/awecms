@@ -116,7 +116,7 @@ class Settings {
         $settings = array();
         foreach (Settings::getCategories() as $settingsCategory) {
             $item = array();
-            $item['label'] = Awecms::generateFriendlyName($settingsCategory) . ' Settings';
+            $item['label'] = Yii::t('app', Awecms::generateFriendlyName($settingsCategory)) . ' ' . Yii::t('app', 'Settings');
 
             if ($action != $settingsCategory) {
                 $item['url'] = '/settings/' . $settingsCategory;

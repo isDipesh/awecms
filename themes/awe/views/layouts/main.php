@@ -34,6 +34,7 @@
                     ));
                 }
                 ?>
+                <?php $this->widget('LanguagePicker'); ?>  
                 <?php $this->widget('LoginWidget'); ?>  
             </div>
 

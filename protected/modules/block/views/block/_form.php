@@ -46,7 +46,7 @@
     </div>
 
     <a href="javascript:void()" onclick="javascript:$('#advanced-options').toggle();">
-        Advanced Options
+        <?php echo Yii::t('app','Advanced Options'); ?>
     </a>
 
     <div id="advanced-options" style="display: none;">

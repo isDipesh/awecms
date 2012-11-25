@@ -81,6 +81,7 @@ class LanguagePicker extends CWidget {
         foreach ($directoryIterator as $item)
             if ($item->isDir() && !$item->isDot())
                 $translations[$item->getFilename()] = $item->getFilename();
+        //$translations[$item->getFilename()] = Yii::t('app', $item->getFilename());
         $translations[Yii::app()->sourceLanguage] = Yii::app()->sourceLanguage;
         return $translations;
     }

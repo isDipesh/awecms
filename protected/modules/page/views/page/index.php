@@ -11,9 +11,11 @@ if (!isset($this->menu) || $this->menu === array())
     );
 ?>
 
-<h1>Pages</h1>
+<h1><?php echo Yii::t('app', 'Pages'); ?></h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+<?php
+$this->widget('zii.widgets.CListView', array(
+    'dataProvider' => $dataProvider,
+    'itemView' => '_view',
+));
+?>

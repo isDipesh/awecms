@@ -5,10 +5,6 @@ $config = array(
     'sourceLanguage' => 'en',
     'language' => 'ne',
     'theme' => 'awe',
-    // preloading 'log' component
-    'preload' => array(
-        'log',
-    ),
     // autoloading model and component classes
     'import' => array(
         'application.models.*',
