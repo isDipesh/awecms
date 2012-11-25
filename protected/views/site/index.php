@@ -12,3 +12,8 @@ $this->widget('Galleria', array(
 $this->block('Introduction');
 
 $this->widget('NepaliPatro');
+
+
+
+?>
+<a href="http://cms/ashdbhsabds">a</a>

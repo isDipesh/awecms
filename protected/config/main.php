@@ -37,7 +37,7 @@ $config = array(
             ),
         ),
         'errorHandler' => array(
-            //'errorAction' => 'site/error',
+            'errorAction' => 'error',
             'class' => 'AweErrorHandler',
         ),
         'log' => array(

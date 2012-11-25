@@ -31,21 +31,6 @@ class SiteController extends Controller {
         $this->render('index');
     }
 
-//    public function actionError() {
-//        if ($path = Slug::getPath(Yii::app()->getRequest()->pathInfo))
-//            $this->forward($path);
-//        else {
-//            if ($error = Yii::app()->errorHandler->error) {
-//                if (Yii::app()->request->isAjaxRequest)
-//                    echo $error['message'];
-//                else {
-//                    $this->pageTitle = 'Error';
-//                    $this->render('/error', $error);
-//                }
-//            }
-//        }
-//    }
-
     public function actionContact() {
         $this->webpageType = 'ContactPage';
         $model = new ContactForm;

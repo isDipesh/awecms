@@ -8,9 +8,8 @@ class AweException extends Exception {
         if ($httpStatusCode === 0 && $errorCode === 0 && is_integer($message)) {
             $httpStatusCode = $message;
             $message = self::getDefinitionFromCode($httpStatusCode);
-            if ($message===null)
+            if ($message === null)
                 $message = 'Unknown HTTP Exception';
-                
         }
 
         //if no parameters are sent at all
@@ -26,7 +25,7 @@ class AweException extends Exception {
         //set HTTP Status Code to 500, if nothing is sent
         if ($httpStatusCode === 0)
             $httpStatusCode = 500;
-        //and then process ti
+        //and then process it
         $this->processHttpStatusCode($httpStatusCode);
 
         //if error code isn't passed, use HTTP status code
@@ -35,7 +34,7 @@ class AweException extends Exception {
 
         if ($message)
             $message = 'Error ' . $errorCode . ' : ' . $message;
-
+        
         parent::__construct($message, (int) $errorCode);
     }
 

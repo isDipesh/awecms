@@ -1183,7 +1183,7 @@ input.big {
 .req,
 .required {
   font-weight: normal;
-  color: #da3e5a;
+  /*color: #da3e5a;*/
 }
 .highlight {
   background-color: #e5ecf5 !important;

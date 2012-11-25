@@ -15,14 +15,16 @@ class AdminModule extends CWebModule {
                 Yii::app()->user->returnUrl = Yii::app()->baseUrl . '/admin';
                 Yii::app()->request->redirect(Yii::app()->baseUrl . '/login');
             }
+//            Yii::app()->getController()->layout='haha';
             throw new AweException(404);
+            
         }
     }
 
-    public function beforeControllerAction($controller, $action) {
-        $controller->layout = 'main';
-        return true;
-    }
+//    public function beforeControllerAction($controller, $action) {
+////        $controller->layout = 'main';
+//        return true;
+//    }
 
     public static function t($str = '', $params = array()) {
         return Yii::t('app', $str, $params);
