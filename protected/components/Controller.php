@@ -70,7 +70,6 @@ class Controller extends CController {
         $this->pageTitle = $this->getTitle();
         //if the request originates from admin module
         if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/') {
-//            Yii::import('application.modules.admin.AdminModule');
             $this->layout = 'application.modules.admin.views.layouts.main';
             //if the controller has admin action, set it to be default action for admin module
 //            if (method_exists($this, 'actionAdmin'))

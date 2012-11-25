@@ -29,7 +29,7 @@ class Awecms {
     }
 
     public static function getTitlePrefix() {
-        return ' - ' . Awecms::getSiteName();
+        return ' | ' . Awecms::getSiteName();
     }
 
     public static function pluralize($singular, $plural, $count) {

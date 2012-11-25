@@ -1,4 +1,5 @@
 <?php
+$this->pageTitle = $model->name . Awecms::getTitlePrefix();
 $this->breadcrumbs = array(
     Yii::t('app', 'All Tags') => array('/tag'),
     Yii::t('app', $model->name),
