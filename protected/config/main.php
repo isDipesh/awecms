@@ -2,8 +2,8 @@
 
 $config = array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'sourceLanguage' => 'en',
-    'language' => 'ne',
+//    'sourceLanguage' => 'en',
+//    'language' => 'en',
     'theme' => 'awe',
     // autoloading model and component classes
     'import' => array(

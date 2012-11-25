@@ -73,7 +73,6 @@ return array(
 'Primary'=>'प्राथमिक',
 'General'=>'साधारण',
 
-
 //Date/Time
 'Sunday'=>'आईतवार',
 'Monday'=>'सोमवार',
@@ -85,16 +84,6 @@ return array(
 'ago'=>'अघि',
 'Time'=>'समय',
 'Date'=>'मिति',
-'Forum'=>'फोरम',
-'No'=>'हुँदैन',
-'Forum'=>'फोरम',
-'No'=>'हुँदैन',
-
-
-
-
-
-
 
 //common technical words
 'Home' => 'गृह पृष्ठ',
@@ -124,7 +113,6 @@ return array(
 'Account Settings'=>'खाता ब्यवस्थापन',
 'Log out'=>'बाहिर निस्कनुहोस्',
 'Logout'=>'बाहिर निस्कनुहोस्',
-
 
 //Operations
 'Operations'=>'क्रियाहरू',
@@ -171,7 +159,6 @@ return array(
 'Photos'=>'तस्वीरहरू',
 'Privacy'=>'गोपनीयता',
 
-
 //Events
 'Upcoming Events' => 'आगामी घटनाक्रम',
 'Sorry, no upcoming events!'=>'कुनै आगामी घटना भेटिएन!',
@@ -182,4 +169,3 @@ return array(
 'Delete This Tag'=>'यो ट्याग हटाउनुहोस्',
 
 );
-?>

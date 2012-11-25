@@ -17,7 +17,23 @@ class RegistrationController extends Controller {
     }
 
     public function filters() {
-        
+        return array('accessControl');
+    }
+
+    public function accessRules() {
+        return array(
+            array(
+                'allow',
+                'actions' => array('registration', 'captcha'),
+                'users' => array('*')
+            )
+        );
+    }
+
+    public function rules() {
+        return array(
+            
+        );
     }
 
     /**
