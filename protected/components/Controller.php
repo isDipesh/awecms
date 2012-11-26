@@ -67,7 +67,7 @@ class Controller extends CController {
         $appName = Settings::get('site', 'name');
         if ($appName)
             Yii::app()->name = $appName;
-        $this->pageTitle = $this->getTitle();
+
         //if the request originates from admin module
         if (substr(Yii::app()->getRequest()->pathInfo, 0, 6) == 'admin/') {
             $this->layout = 'application.modules.admin.views.layouts.main';
@@ -78,15 +78,25 @@ class Controller extends CController {
         parent::init();
     }
 
-    public function getTitle() {
-        $separator = ' - ';
-        $title = Settings::get('site', 'name');
-        if ($this->module)
-            $title.= $separator . ucfirst($this->module->getName());
+    public function beforeAction($action) {
+        $separator = ' | ';
+        $title = '';
+        if ($action && ($action->id != 'index'))
+            $title.= ucfirst($action->id) . ' < ';
         if ($this->module && ($this->module->getName() != $this->id))
-            $title.= $separator . ucfirst($this->id);
-        if ($this->action && ($this->action->id != 'index'))
-            $title.= $separator . ucfirst($this->action->id);
+            $title.= ucfirst($this->id) . ' ' . $separator;
+        if ($this->module)
+            $title.= ucfirst($this->module->getName()) . ' ' . $separator;
+        $title .= Settings::get('site', 'name');
+        $this->pageTitle = $title;
+        return true;
+    }
+
+    public function getaTitle() {
+
+//        print_r($this->getAction());
+//        die();
+
         return $title;
     }
 
