@@ -82,7 +82,7 @@ class Controller extends CController {
         $separator = ' | ';
         $title = '';
         if ($action && ($action->id != 'index'))
-            $title.= ucfirst($action->id) . ' < ';
+            $title.= ucfirst($action->id) . ' - ';
         if ($this->module && ($this->module->getName() != $this->id))
             $title.= ucfirst($this->id) . ' ' . $separator;
         if ($this->module)
@@ -90,14 +90,6 @@ class Controller extends CController {
         $title .= Settings::get('site', 'name');
         $this->pageTitle = $title;
         return true;
-    }
-
-    public function getaTitle() {
-
-//        print_r($this->getAction());
-//        die();
-
-        return $title;
     }
 
     public function actionToggle($id, $attribute, $model) {

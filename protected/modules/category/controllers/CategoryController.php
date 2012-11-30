@@ -25,6 +25,7 @@ class CategoryController extends Controller {
     }
 
     public function actionIndex() {
+        $this->pageTitle = Yii::t('app', 'Categories') . Awecms::getTitlePrefix();
         $dataProvider = new CActiveDataProvider('Category');
         $this->render('index', array(
             'dataProvider' => $dataProvider,
@@ -32,8 +33,10 @@ class CategoryController extends Controller {
     }
 
     public function actionView($id) {
+        $model = $this->loadModel($id);
+        $this->pageTitle = $model->name . ' - ' . Yii::t('app', 'Categories') . Awecms::getTitlePrefix();
         $this->render('view', array(
-            'model' => $this->loadModel($id),
+            'model' => $model,
         ));
     }
 
