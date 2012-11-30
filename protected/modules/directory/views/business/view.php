@@ -73,10 +73,10 @@ if (!isset($this->menu) || $this->menu === array()) {
             };
             var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
             var marker = new google.maps.Marker({
-				position: latlng,
-				map: map,
-				title: "'.$model->title.'"
-			});
+                position: latlng,
+                map: map,
+                title: "'.$model->title.'"
+            });
         ', CClientScript::POS_READY);
         ?>
         <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">

@@ -28,10 +28,10 @@ class WebUser extends CWebUser
 //    }
 
     protected function afterLogin($fromCookie)
-	{
+    {
         parent::afterLogin($fromCookie);
         $this->updateSession();
-	}
+    }
 
     public function updateSession() {
         $user = Yii::app()->getModule('user')->user($this->id);

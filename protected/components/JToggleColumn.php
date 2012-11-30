@@ -145,15 +145,15 @@ class JToggleColumn extends CGridColumn {
 
         $this->toggle_button['click'] = <<<EOD
 function() {
-	var th=this;
-	$.fn.yiiGridView.update('{$this->grid->id}', {
-		type:'POST',
-		url:$(this).attr('href'),$csrf
-		success:function(data) {
-			$.fn.yiiGridView.update('{$this->grid->id}');
-		}
-	});
-	return false;
+    var th=this;
+    $.fn.yiiGridView.update('{$this->grid->id}', {
+        type:'POST',
+        url:$(this).attr('href'),$csrf
+        success:function(data) {
+            $.fn.yiiGridView.update('{$this->grid->id}');
+        }
+    });
+    return false;
 }
 EOD;
     }

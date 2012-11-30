@@ -12,7 +12,7 @@ $this->menu = array(
 <h1> Create New Menu </h1>
 <?php
 $this->renderPartial('_form', array(
-			'model' => $model,
-			'buttons' => 'create'));
+            'model' => $model,
+            'buttons' => 'create'));
 
 ?>

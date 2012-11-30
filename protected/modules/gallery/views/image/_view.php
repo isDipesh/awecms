@@ -5,7 +5,7 @@
     </a>
     <br/>
     <?php  if($data->description){
-    	echo $data->description;
+        echo $data->description;
     }?>
 
 </div>

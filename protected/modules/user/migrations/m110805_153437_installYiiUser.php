@@ -2,11 +2,11 @@
 
 class m110805_153437_installYiiUser extends CDbMigration
 {
-	protected $MySqlOptions = 'ENGINE=InnoDB CHARSET=utf8';
+    protected $MySqlOptions = 'ENGINE=InnoDB CHARSET=utf8';
     private $_model;
     
-	public function safeUp()
-	{
+    public function safeUp()
+    {
         if (!Yii::app()->getModule('user')) {
             echo "\n\nAdd to console.php :\n"
                  ."'modules'=>array(\n"
@@ -132,7 +132,7 @@ class m110805_153437_installYiiUser extends CDbMigration
             "last_name" => "Admin",
         ));
 
-		$this->insert(Yii::app()->getModule('user')->tableProfileFields, array(
+        $this->insert(Yii::app()->getModule('user')->tableProfileFields, array(
             "id" => "1",
             "varname" => "first_name",
             "title" => "First Name",
@@ -150,7 +150,7 @@ class m110805_153437_installYiiUser extends CDbMigration
             "position" => "1",
             "visible" => "3",
         ));
-		$this->insert(Yii::app()->getModule('user')->tableProfileFields, array(
+        $this->insert(Yii::app()->getModule('user')->tableProfileFields, array(
             "id" => "2",
             "varname" => "last_name",
             "title" => "Last Name",
@@ -168,14 +168,14 @@ class m110805_153437_installYiiUser extends CDbMigration
             "position" => "2",
             "visible" => "3",
         ));
-	}
+    }
 
-	public function safeDown()
-	{
+    public function safeDown()
+    {
         $this->dropTable(Yii::app()->getModule('user')->tableProfileFields);
         $this->dropTable(Yii::app()->getModule('user')->tableProfiles);
         $this->dropTable(Yii::app()->getModule('user')->tableUsers);
-	}
+    }
 
     public function dbType()
     {

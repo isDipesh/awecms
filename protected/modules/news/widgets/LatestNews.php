@@ -5,13 +5,13 @@ class LatestNews extends AwePortlet {
     public $title;
 
     public function init(){
-    	if (!$this->title)
-			$this->title = Yii::t('app','Latest News');
-		parent::init();
+        if (!$this->title)
+            $this->title = Yii::t('app','Latest News');
+        parent::init();
     }
 
     protected function renderContent() {
-    	$news_items = News::model()->getLatestNews();
+        $news_items = News::model()->getLatestNews();
         ?>
         <ul>
     <?php foreach ($news_items as $news): ?>

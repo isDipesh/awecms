@@ -79,238 +79,238 @@ class ProfileFieldController extends Controller {
         //echo '<pre>'; print_r($widgets[1]); die();
         $js = "
 
-	var name = $('#name'),
-	value = $('#value'),
-	allFields = $([]).add(name).add(value),
-	tips = $('.validateTips');
-	
-	var listWidgets = jQuery.parseJSON('" . str_replace("'", "\'", CJavaScript::jsonEncode($widgets[0])) . "');
-	var widgets = jQuery.parseJSON('" . str_replace("'", "\'", CJavaScript::jsonEncode($widgets[1])) . "');
-	var wgByType = jQuery.parseJSON('" . str_replace("'", "\'", CJavaScript::jsonEncode($wgByTypes)) . "');
-	
-	var fieldType = {
-			'INTEGER':{
-				'hide':['match','other_validator','widgetparams'],
-				'val':{
-					'field_size':10,
-					'default':'0',
-					'range':'',
-					'widgetparams':''
-				}
-			},
-			'VARCHAR':{
-				'hide':['widgetparams'],
-				'val':{
-					'field_size':255,
-					'default':'',
-					'range':'',
-					'widgetparams':''
-				}
-			},
-			'TEXT':{
-				'hide':['field_size','range','widgetparams'],
-				'val':{
-					'field_size':0,
-					'default':'',
-					'range':'',
-					'widgetparams':''
-				}
-			},
-			'DATE':{
-				'hide':['field_size','field_size_min','match','range','widgetparams'],
-				'val':{
-					'field_size':0,
-					'default':'0000-00-00',
-					'range':'',
-					'widgetparams':''
-				}
-			},
-			'FLOAT':{
-				'hide':['match','other_validator','widgetparams'],
-				'val':{
-					'field_size':'10.2',
-					'default':'0.00',
-					'range':'',
-					'widgetparams':''
-				}
-			},
-			'DECIMAL':{
-				'hide':['match','other_validator','widgetparams'],
-				'val':{
-					'field_size':'10,2',
-					'default':'0',
-					'range':'',
-					'widgetparams':''
-				}
-			},
-			'BOOL':{
-				'hide':['field_size','field_size_min','match','widgetparams'],
-				'val':{
-					'field_size':0,
-					'default':0,
-					'range':'1==" . UserModule::t('Yes') . ";0==" . UserModule::t('No') . "',
-					'widgetparams':''
-				}
-			},
-			'BLOB':{
-				'hide':['field_size','field_size_min','match','widgetparams'],
-				'val':{
-					'field_size':0,
-					'default':'',
-					'range':'',
-					'widgetparams':''
-				}
-			},
-			'BINARY':{
-				'hide':['field_size','field_size_min','match','widgetparams'],
-				'val':{
-					'field_size':0,
-					'default':'',
-					'range':'',
-					'widgetparams':''
-				}
-			}
-		};
-			
-	function showWidgetList(type) {
-		$('div.widget select').empty();
-		$('div.widget select').append('<option value=\"\">" . UserModule::t('No') . "</option>');
-		if (wgByType[type]) {
-			for (var k in wgByType[type]) {
-				$('div.widget select').append('<option value=\"'+wgByType[type][k]+'\">'+widgets[wgByType[type][k]]['label']+'</option>');
-			}
-		}
-	}
-		
-	function setFields(type) {
-		if (fieldType[type]) {
-			if (" . ((isset($_GET['id'])) ? 0 : 1) . ") {
-				showWidgetList(type);
-				$('#widgetlist option:first').attr('selected', 'selected');
-			}
-			
-			$('div.row').addClass('toshow').removeClass('tohide');
-			if (fieldType[type].hide.length) $('div.'+fieldType[type].hide.join(', div.')).addClass('tohide').removeClass('toshow');
-			if ($('div.widget select').val()) {
-				$('div.widgetparams').removeClass('tohide');
-			}
-			$('div.toshow').show(500);
-			$('div.tohide').hide(500);
-			" . ((!isset($_GET['id'])) ? "
-			for (var k in fieldType[type].val) { 
-				$('div.'+k+' input').val(fieldType[type].val[k]);
-			}" : '') . "
-		}
-	}
-	
-	function isArray(obj) {
-		if (obj.constructor.toString().indexOf('Array') == -1)
-			return false;
-		else
-			return true;
-	}
-		
-	$('#dialog-form').dialog({
-		autoOpen: false,
-		height: 400,
-		width: 400,
-		modal: true,
-		buttons: {
-			'" . UserModule::t('Save') . "': function() {
-				var wparam = {};
-				var fparam = {};
-				$('#dialog-form fieldset .wparam').each(function(){
-					if ($(this).val()) wparam[$(this).attr('name')] = $(this).val();
-				});
-				
-				var tab = $('#tabs ul li.ui-tabs-selected').text();
-				fparam[tab] = {};
-				$('#dialog-form fieldset .tab-'+tab).each(function(){
-					if ($(this).val()) fparam[tab][$(this).attr('name')] = $(this).val();
-				});
-				
-				if ($.JSON.encode(wparam)!='{}') $('div.widgetparams input').val($.JSON.encode(wparam));
-				if ($.JSON.encode(fparam[tab])!='{}') $('div.other_validator input').val($.JSON.encode(fparam)); 
-				
-				$(this).dialog('close');
-			},
-			'" . UserModule::t('Cancel') . "': function() {
-				$(this).dialog('close');
-			}
-		},
-		close: function() {
-		}
-	});
+    var name = $('#name'),
+    value = $('#value'),
+    allFields = $([]).add(name).add(value),
+    tips = $('.validateTips');
+    
+    var listWidgets = jQuery.parseJSON('" . str_replace("'", "\'", CJavaScript::jsonEncode($widgets[0])) . "');
+    var widgets = jQuery.parseJSON('" . str_replace("'", "\'", CJavaScript::jsonEncode($widgets[1])) . "');
+    var wgByType = jQuery.parseJSON('" . str_replace("'", "\'", CJavaScript::jsonEncode($wgByTypes)) . "');
+    
+    var fieldType = {
+            'INTEGER':{
+                'hide':['match','other_validator','widgetparams'],
+                'val':{
+                    'field_size':10,
+                    'default':'0',
+                    'range':'',
+                    'widgetparams':''
+                }
+            },
+            'VARCHAR':{
+                'hide':['widgetparams'],
+                'val':{
+                    'field_size':255,
+                    'default':'',
+                    'range':'',
+                    'widgetparams':''
+                }
+            },
+            'TEXT':{
+                'hide':['field_size','range','widgetparams'],
+                'val':{
+                    'field_size':0,
+                    'default':'',
+                    'range':'',
+                    'widgetparams':''
+                }
+            },
+            'DATE':{
+                'hide':['field_size','field_size_min','match','range','widgetparams'],
+                'val':{
+                    'field_size':0,
+                    'default':'0000-00-00',
+                    'range':'',
+                    'widgetparams':''
+                }
+            },
+            'FLOAT':{
+                'hide':['match','other_validator','widgetparams'],
+                'val':{
+                    'field_size':'10.2',
+                    'default':'0.00',
+                    'range':'',
+                    'widgetparams':''
+                }
+            },
+            'DECIMAL':{
+                'hide':['match','other_validator','widgetparams'],
+                'val':{
+                    'field_size':'10,2',
+                    'default':'0',
+                    'range':'',
+                    'widgetparams':''
+                }
+            },
+            'BOOL':{
+                'hide':['field_size','field_size_min','match','widgetparams'],
+                'val':{
+                    'field_size':0,
+                    'default':0,
+                    'range':'1==" . UserModule::t('Yes') . ";0==" . UserModule::t('No') . "',
+                    'widgetparams':''
+                }
+            },
+            'BLOB':{
+                'hide':['field_size','field_size_min','match','widgetparams'],
+                'val':{
+                    'field_size':0,
+                    'default':'',
+                    'range':'',
+                    'widgetparams':''
+                }
+            },
+            'BINARY':{
+                'hide':['field_size','field_size_min','match','widgetparams'],
+                'val':{
+                    'field_size':0,
+                    'default':'',
+                    'range':'',
+                    'widgetparams':''
+                }
+            }
+        };
+            
+    function showWidgetList(type) {
+        $('div.widget select').empty();
+        $('div.widget select').append('<option value=\"\">" . UserModule::t('No') . "</option>');
+        if (wgByType[type]) {
+            for (var k in wgByType[type]) {
+                $('div.widget select').append('<option value=\"'+wgByType[type][k]+'\">'+widgets[wgByType[type][k]]['label']+'</option>');
+            }
+        }
+    }
+        
+    function setFields(type) {
+        if (fieldType[type]) {
+            if (" . ((isset($_GET['id'])) ? 0 : 1) . ") {
+                showWidgetList(type);
+                $('#widgetlist option:first').attr('selected', 'selected');
+            }
+            
+            $('div.row').addClass('toshow').removeClass('tohide');
+            if (fieldType[type].hide.length) $('div.'+fieldType[type].hide.join(', div.')).addClass('tohide').removeClass('toshow');
+            if ($('div.widget select').val()) {
+                $('div.widgetparams').removeClass('tohide');
+            }
+            $('div.toshow').show(500);
+            $('div.tohide').hide(500);
+            " . ((!isset($_GET['id'])) ? "
+            for (var k in fieldType[type].val) { 
+                $('div.'+k+' input').val(fieldType[type].val[k]);
+            }" : '') . "
+        }
+    }
+    
+    function isArray(obj) {
+        if (obj.constructor.toString().indexOf('Array') == -1)
+            return false;
+        else
+            return true;
+    }
+        
+    $('#dialog-form').dialog({
+        autoOpen: false,
+        height: 400,
+        width: 400,
+        modal: true,
+        buttons: {
+            '" . UserModule::t('Save') . "': function() {
+                var wparam = {};
+                var fparam = {};
+                $('#dialog-form fieldset .wparam').each(function(){
+                    if ($(this).val()) wparam[$(this).attr('name')] = $(this).val();
+                });
+                
+                var tab = $('#tabs ul li.ui-tabs-selected').text();
+                fparam[tab] = {};
+                $('#dialog-form fieldset .tab-'+tab).each(function(){
+                    if ($(this).val()) fparam[tab][$(this).attr('name')] = $(this).val();
+                });
+                
+                if ($.JSON.encode(wparam)!='{}') $('div.widgetparams input').val($.JSON.encode(wparam));
+                if ($.JSON.encode(fparam[tab])!='{}') $('div.other_validator input').val($.JSON.encode(fparam)); 
+                
+                $(this).dialog('close');
+            },
+            '" . UserModule::t('Cancel') . "': function() {
+                $(this).dialog('close');
+            }
+        },
+        close: function() {
+        }
+    });
 
 
-	$('#widgetparams').focus(function() {
-		var widget = widgets[$('#widgetlist').val()];
-		var html = '';
-		var wparam = ($('div.widgetparams input').val())?$.JSON.decode($('div.widgetparams input').val()):{};
-		var fparam = ($('div.other_validator input').val())?$.JSON.decode($('div.other_validator input').val()):{};
-		
-		// Class params
-		for (var k in widget.params) {
-			html += '<label for=\"name\">'+((widget.paramsLabels[k])?widget.paramsLabels[k]:k)+'</label>';
-			html += '<input type=\"text\" name=\"'+k+'\" id=\"widget_'+k+'\" class=\"text wparam ui-widget-content ui-corner-all\" value=\"'+((wparam[k])?wparam[k]:widget.params[k])+'\" />';
-		}
-		// Validator params		
-		if (widget.other_validator) {
-			var tabs = '';
-			var li = '';
-			for (var t in widget.other_validator) {
-				tabs += '<div id=\"tab-'+t+'\" class=\"tab\">';
-				li += '<li'+((fparam[t])?' class=\"ui-tabs-selected\"':'')+'><a href=\"#tab-'+t+'\">'+t+'</a></li>';
-				
-				for (var k in widget.other_validator[t]) {
-					tabs += '<label for=\"name\">'+((widget.paramsLabels[k])?widget.paramsLabels[k]:k)+'</label>';
-					if (isArray(widget.other_validator[t][k])) {
-						tabs += '<select type=\"text\" name=\"'+k+'\" id=\"filter_'+k+'\" class=\"text fparam ui-widget-content ui-corner-all tab-'+t+'\">';
-						for (var i in widget.other_validator[t][k]) {
-							tabs += '<option value=\"'+widget.other_validator[t][k][i]+'\"'+((fparam[t]&&fparam[t][k])?' selected=\"selected\"':'')+'>'+widget.other_validator[t][k][i]+'</option>';
-						}
-						tabs += '</select>';
-					} else {
-						tabs += '<input type=\"text\" name=\"'+k+'\" id=\"filter_'+k+'\" class=\"text fparam ui-widget-content ui-corner-all tab-'+t+'\" value=\"'+((fparam[t]&&fparam[t][k])?fparam[t][k]:widget.other_validator[t][k])+'\" />';
-					}
-				}
-				tabs += '</div>';
-			}
-			html += '<div id=\"tabs\"><ul>'+li+'</ul>'+tabs+'</div>';
-		}
-		
-		$('#dialog-form fieldset').html(html);
-		
-		$('#tabs').tabs();
-		
-		// Show form
-		$('#dialog-form').dialog('open');
-	});
-	
-	$('#field_type').change(function() {
-		setFields($(this).val());
-	});
-	
-	$('#widgetlist').change(function() {
-		if ($(this).val()) {
-			$('div.widgetparams').show(500);
-		} else {
-			$('div.widgetparams').hide(500);
-		}
-		
-	});
-	
-	// show all function 
-	$('div.form p.note').append('<br/><a href=\"#\" id=\"showAll\">" . UserModule::t('Show all') . "</a>');
- 	$('#showAll').click(function(){
-		$('div.row').show(500);
-		return false;
-	});
-	
-	// init
-	setFields($('#field_type').val());
-	
-	";
+    $('#widgetparams').focus(function() {
+        var widget = widgets[$('#widgetlist').val()];
+        var html = '';
+        var wparam = ($('div.widgetparams input').val())?$.JSON.decode($('div.widgetparams input').val()):{};
+        var fparam = ($('div.other_validator input').val())?$.JSON.decode($('div.other_validator input').val()):{};
+        
+        // Class params
+        for (var k in widget.params) {
+            html += '<label for=\"name\">'+((widget.paramsLabels[k])?widget.paramsLabels[k]:k)+'</label>';
+            html += '<input type=\"text\" name=\"'+k+'\" id=\"widget_'+k+'\" class=\"text wparam ui-widget-content ui-corner-all\" value=\"'+((wparam[k])?wparam[k]:widget.params[k])+'\" />';
+        }
+        // Validator params		
+        if (widget.other_validator) {
+            var tabs = '';
+            var li = '';
+            for (var t in widget.other_validator) {
+                tabs += '<div id=\"tab-'+t+'\" class=\"tab\">';
+                li += '<li'+((fparam[t])?' class=\"ui-tabs-selected\"':'')+'><a href=\"#tab-'+t+'\">'+t+'</a></li>';
+                
+                for (var k in widget.other_validator[t]) {
+                    tabs += '<label for=\"name\">'+((widget.paramsLabels[k])?widget.paramsLabels[k]:k)+'</label>';
+                    if (isArray(widget.other_validator[t][k])) {
+                        tabs += '<select type=\"text\" name=\"'+k+'\" id=\"filter_'+k+'\" class=\"text fparam ui-widget-content ui-corner-all tab-'+t+'\">';
+                        for (var i in widget.other_validator[t][k]) {
+                            tabs += '<option value=\"'+widget.other_validator[t][k][i]+'\"'+((fparam[t]&&fparam[t][k])?' selected=\"selected\"':'')+'>'+widget.other_validator[t][k][i]+'</option>';
+                        }
+                        tabs += '</select>';
+                    } else {
+                        tabs += '<input type=\"text\" name=\"'+k+'\" id=\"filter_'+k+'\" class=\"text fparam ui-widget-content ui-corner-all tab-'+t+'\" value=\"'+((fparam[t]&&fparam[t][k])?fparam[t][k]:widget.other_validator[t][k])+'\" />';
+                    }
+                }
+                tabs += '</div>';
+            }
+            html += '<div id=\"tabs\"><ul>'+li+'</ul>'+tabs+'</div>';
+        }
+        
+        $('#dialog-form fieldset').html(html);
+        
+        $('#tabs').tabs();
+        
+        // Show form
+        $('#dialog-form').dialog('open');
+    });
+    
+    $('#field_type').change(function() {
+        setFields($(this).val());
+    });
+    
+    $('#widgetlist').change(function() {
+        if ($(this).val()) {
+            $('div.widgetparams').show(500);
+        } else {
+            $('div.widgetparams').hide(500);
+        }
+        
+    });
+    
+    // show all function 
+    $('div.form p.note').append('<br/><a href=\"#\" id=\"showAll\">" . UserModule::t('Show all') . "</a>');
+     $('#showAll').click(function(){
+        $('div.row').show(500);
+        return false;
+    });
+    
+    // init
+    setFields($('#field_type').val());
+    
+    ";
         $cs->registerScript(__CLASS__ . '#dialog', $js);
     }
 

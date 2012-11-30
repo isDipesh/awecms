@@ -231,14 +231,14 @@ class AweCrudCode extends CrudCode {
             } else if (in_array(strtolower($column->dbType), $this->dateTypes)) {
                 $mode = strtolower(($column->dbType == 'timestamp') ? 'datetime' : $column->dbType);
                 return ("\$this->widget('CJuiDateTimePicker',
-						 array(
-							'model'=>\$model,
+                         array(
+                            'model'=>\$model,
                                                         'name'=>'{$modelClass}[{$column->name}]',
-							//'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
+                            //'language'=> substr(Yii::app()->language,0,strpos(Yii::app()->language,'_')),
                                                         'language'=> '',
-							'value'=>\$model->{$column->name},
+                            'value'=>\$model->{$column->name},
                                                         'mode' => '" . $mode . "',
-							'options'=>array(
+                            'options'=>array(
                                                                         'showAnim'=>'fold', // 'show' (the default), 'slideDown', 'fadeIn', 'fold'
                                                                         'showButtonPanel'=>true,
                                                                         'changeYear'=>true,
@@ -246,8 +246,8 @@ class AweCrudCode extends CrudCode {
                                                                         'dateFormat'=>'yy-mm-dd',
                                                                         ),
                                                     )
-					);
-					");
+                    );
+                    ");
             } else {
                 if (in_array(strtolower($column->name), $this->passwordFields))
                     $inputField = 'passwordField';
@@ -289,7 +289,7 @@ class AweCrudCode extends CrudCode {
             }
 
               return "array(
-                			'name'   => '{$column->name}',
+                            'name'   => '{$column->name}',
                       'value'  => 'isset(\$data->{$relatedColumnName})?\$data->{$relatedColumnName}:\"N/A\"',
                       'filter' => $filter,
                 )";
@@ -306,17 +306,17 @@ class AweCrudCode extends CrudCode {
             if ($this->isJToggleColumnEnabled) {
                 return "array(
                                         'class' => 'JToggleColumn',
-					'name' => '{$column->name}',
-					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+                    'name' => '{$column->name}',
+                    'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
                                         'model' => get_class(\$model),
                                         'htmlOptions' => array('style' => 'text-align:center;min-width:60px;')
-					)";
+                    )";
             }else
                 return "array(
-					'name' => '{$column->name}',
-					'value' => '(\$data->{$column->name} === 0) ? Yii::t(\\'app\\', \\'No\\') : Yii::t(\\'app\\', \\'Yes\\')',
-					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
-					)";
+                    'name' => '{$column->name}',
+                    'value' => '(\$data->{$column->name} === 0) ? Yii::t(\\'app\\', \\'No\\') : Yii::t(\\'app\\', \\'Yes\\')',
+                    'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+                    )";
         } else // Common column.
             return "'{$column->name}'";
     }

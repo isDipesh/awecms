@@ -2,8 +2,8 @@
 
 class m110810_162301_userTimestampFix extends CDbMigration
 {
-	public function safeUp()
-	{
+    public function safeUp()
+    {
         if (!Yii::app()->getModule('user')) {
             echo "\n\nAdd to console.php :\n"
                  ."'modules'=>array(\n"
@@ -46,10 +46,10 @@ class m110810_162301_userTimestampFix extends CDbMigration
                     $this->dropTable(__CLASS__.'_'.Yii::app()->getModule('user')->tableUsers);
                 break;
         }
-	}
+    }
 
-	public function safeDown()
-	{
+    public function safeDown()
+    {
 
         switch ($this->dbType()) {
             case "mysql":
@@ -80,7 +80,7 @@ class m110810_162301_userTimestampFix extends CDbMigration
                 $this->execute('DROP TABLE "'.__CLASS__.'_'.Yii::app()->getModule('user')->tableUsers.'"');
                 break;
         }
-	}
+    }
 
     public function dbType()
     {

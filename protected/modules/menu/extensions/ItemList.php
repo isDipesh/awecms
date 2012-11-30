@@ -12,7 +12,7 @@ class ItemList extends CWidget {
         //$this->id = 'menu-list-item-1';
         if ($this->css) {
             $css = "
-	        ";
+            ";
             Yii::app()->clientScript->registerCoreScript('jquery');
             Yii::app()->clientScript->registerCoreScript('jquery.ui');
             Yii::app()->clientScript->registerScriptFile(Yii::app()->getModule('menu')->assetsDirectory . '/libs/nestedsortable/jquery.ui.nestedSortable.js');

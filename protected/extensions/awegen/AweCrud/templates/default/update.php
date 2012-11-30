@@ -27,5 +27,5 @@ printf('<h1> %s %s </h1>',
 
 <?php echo "<?php\n"; ?>
 $this->renderPartial('_form', array(
-			'model'=>$model));
+            'model'=>$model));
 ?>

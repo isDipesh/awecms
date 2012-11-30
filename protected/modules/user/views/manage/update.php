@@ -1,8 +1,8 @@
 <?php
 $this->breadcrumbs=array(
-	(UserModule::t('Users'))=>array('/user/manage'),
-	$model->username=>array('view','id'=>$model->id),
-	(UserModule::t('Update')),
+    (UserModule::t('Users'))=>array('/user/manage'),
+    $model->username=>array('view','id'=>$model->id),
+    (UserModule::t('Update')),
 );
 $this->menu=array(
     array('label' => UserModule::t('List Users'), 'url' => array('/user')),
@@ -16,5 +16,5 @@ $this->menu=array(
 <h1><?php echo  UserModule::t('Update ')." ".$model->username; ?></h1>
 
 <?php
-	echo $this->renderPartial('_form', array('model'=>$model,'profile'=>$profile));
+    echo $this->renderPartial('_form', array('model'=>$model,'profile'=>$profile));
 ?>

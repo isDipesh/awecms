@@ -143,7 +143,7 @@ class YiiGravatar extends CWidget
         if (false === in_array($value, $this->_ratings))
         {
             throw new CException(Yii::t('application','Invalid rating value "{value}". Please make sure it is among ({enum}).',
-				array('{value}'=>$value, '{enum}'=>implode(', ',$this->_ratings))));
+                array('{value}'=>$value, '{enum}'=>implode(', ',$this->_ratings))));
         }
 
         $this->_rating = $value;
@@ -170,7 +170,7 @@ class YiiGravatar extends CWidget
         if (false === (strpos($value, '://')) && false === in_array($value, $this->_defaultImages))
         {
             throw new CException(Yii::t('application','Invalid default image value "{value}". Please make sure it is among ({enum}) or it is absolute URL to the image file.',
-				array('{value}'=>$value, '{enum}'=>implode(', ',$this->_defaultImages))));
+                array('{value}'=>$value, '{enum}'=>implode(', ',$this->_defaultImages))));
         }
         $this->_defaultImage = $value;
     }
@@ -232,7 +232,7 @@ class YiiGravatar extends CWidget
         if ($value < 1 || $value > 512)
         {
             throw new CException(Yii::t('application','Invalid Gravatar size value "{value}". Please make sure it is between {min} and {max} (inclusive).',
-				array('{value}'=>$value, '{min}'=>1, '{max}'=>512)));
+                array('{value}'=>$value, '{min}'=>1, '{max}'=>512)));
         }
 
         $this->_size = $value;
