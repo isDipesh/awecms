@@ -1,0 +1,33 @@
+{
+    "name": "awecode/awecms",
+    "description": "Awesome CMS built on Yii Framework",
+    "keywords": ["cms", "yii"],
+    "homepage": "http://awecode.com/",
+    "license": "LGPL-2.0+",
+    "authors": [
+    {
+        "name": "Dipesh Acharya",
+        "email": "dipesh@motorscript.com",
+        "homepage": "http://motorscript.comi",
+        "role": "developer"
+    }
+    ],
+
+    "support": {
+        "email": "support@awecode.com",
+        "irc": "irc://irc.freenode.org/awecms",
+        "issues": "http://github.com/awecode/awecms",
+        "source": "http://github.com/awecode/awecms",
+        "source": "http://github.com/awecode/awecms/wiki"
+    },
+
+    "repositories": [
+    {
+        "type":"composer",
+        "url": "http://packages.awecode.com"
+    }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    }
+}
