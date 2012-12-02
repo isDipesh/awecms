@@ -21,7 +21,7 @@
                     <?php // $this->widget('LanguagePicker'); ?>
                     <nav id="nav" itemscope itemtype="http://schema.org/SiteNavigationElement" >
                         <?php $this->widget('MenuRenderer'); ?>
-                    </nav>       
+                    </nav>   
                 </header>
             </div>
 
