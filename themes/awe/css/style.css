@@ -1,4 +1,4 @@
-foo/* =Typography
+/* =Typography
 -----------------------------------------------------------------------------*/
 body {
     font-family: 'PT Sans Narrow', Helvetica, Arial, sans-serif;
@@ -26,7 +26,8 @@ body {
     margin-bottom: 20px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    padding: 8px 4px;
+    padding: 4px 4px;
+    font-size: .9em;
 }
 .portlet{
     clear: both;
@@ -67,7 +68,7 @@ a:hover {
     margin: auto; 
     max-width: 1000px;
     padding: 0 10px;
-    _width: 940px;  
+    width: 940px;  
 }
 #top_inner {
     margin: auto;
@@ -89,6 +90,11 @@ a:hover {
 .meta,.post-time{
     margin-bottom: 20px;
     color: #999;
+}
+.search-form{
+    float: right;
+    margin-bottom: 0;
+    margin-top: 14px;
 }
 /* =Top
 -----------------------------------------------------------------------------*/
@@ -179,6 +185,7 @@ a:hover {
 h1.head{
     float: left;
     margin-top: .4em;
+    font-size: 2em;
     margin-bottom: .2em;
 }
 .view .event-details-list h2{
@@ -246,15 +253,22 @@ header h3 a:hover {
 /* =Nav
 -----------------------------------------------------------------------------*/
 #nav {
-    float: right;
-    margin-top: 24px;
+    float: left;
+    clear: both;
+    margin-top: 12px;
 }
 #nav ul {
     margin: 0;
     list-style: none;
 }
+#nav > ul > li:first-child, #nav > ul > li > a:first-child{
+    padding-left: 0px;
+}
 #nav li a, #nav li span {
     display: block;
+}
+#nav ul li{
+    padding-bottom: 0px;
 }
 #nav li b a {
     color: #369;
@@ -263,8 +277,6 @@ header h3 a:hover {
 #nav li span {
     color: #bbb;  
 }
-
-
 /* =Misc 
 -----------------------------------------------------------------------------*/
 #features {

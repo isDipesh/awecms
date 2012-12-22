@@ -1,137 +1,137 @@
 @charset "UTF-8";
 
 /** 
- * Default CSS Drop-Down Menu Theme
- *
- * @file		default.css
- * @name		Default
- * @version		0.1.1
- * @type		transitional
- * @browsers	Windows: IE5+, Opera7+, Firefox1+
- *				Mac OS: Safari2+, Firefox2+
- *
- * @link		http://www.lwis.net/
- * @copyright	2008 Live Web Institute
- *
- * Module Classes: *.dir {} *.on {} *.open {} li.hover {} li.first {} li.last {}
- * Expected directory tag - li
- *
- */
+* Default CSS Drop-Down Menu Theme
+*
+* @file     default.css
+* @name     Default
+* @version      0.1.1
+* @type     transitional
+* @browsers Windows: IE5+, Opera7+, Firefox1+
+*               Mac OS: Safari2+, Firefox2+
+*
+* @link     http://www.lwis.net/
+* @copyright    2008 Live Web Institute
+*
+* Module Classes: *.dir {} *.on {} *.open {} li.hover {} li.first {} li.last {}
+* Expected directory tag - li
+*
+*/
 
 
 /*-------------------------------------------------/
- * @section		Base Drop-Down Styling
- * @structure	ul (unordered list)
- *				ul li (list item)
- *				ul li a (links)
- *				/*\.class|(li|a):hover/
- * @level sep	ul
- */
+* @section      Base Drop-Down Styling
+* @structure    ul (unordered list)
+*               ul li (list item)
+*               ul li a (links)
+*               /*\.class|(li|a):hover/
+* @level sep    ul
+*/
 
 
 ul.dropdown {
- font-weight: bold;
+font-weight: bold;
 }
 
-	#nav ul.dropdown ul {
-		display: none;
-		width: 150px;
-		background: #eee;
-		border: 1px solid #ccc;
-		top: 80% !important;
-		width: 130%;
-	}
-        #nav ul.dropdown ul ul{
-            top: 10px !important;
-        }
-		ul.dropdown ul li {
-		 font-weight: normal;
-		}
-		ul.dropdown ul li a:link{
-			border-bottom: none;
-			display: block;
-			font-size: 14px;
-			font-weight: bold;
-			padding: 6px 16px;
-			margin: 0px;
-		}
-		ul.dropdown ul li a:hover{
-			background: #ddd;
-		}
-	ul.dropdown li {
-	 padding: 7px 10px;
-	 color: #000;
-	}
-
-	ul.dropdown li.hover,
-	ul.dropdown li:hover {
-	 color: #000;
-	}
-	#nav ul.dropdown li:hover ul{
-		display: block;
-	}
-	ul.dropdown a:link,
-	ul.dropdown a:visited, ul.dropdown li span	{ color: #333; text-decoration: none; padding: 4px 0px; margin: 0px 6px; border-bottom: 2px solid #fff; }
-	ul.dropdown a:hover		{ color: #000; text-decoration: none; border-bottom: 2px solid #666; }
-	ul.dropdown a:active	{ color: #ffa500; }
-
-
+#nav ul.dropdown ul {
+display: none;
+background: #efefef;
+border: 1px solid #aaa;
+top: 100% !important;
+left: 16px;
+}
+#nav ul.dropdown ul ul{
+top: 10px !important;
+}
+ul.dropdown ul li {
+font-weight: normal;
+}
+ul.dropdown li ul li a:link, ul.dropdown li ul li a{
+display: block;
+font-size: 13px;
+font-weight: bold;
+padding: 6px 16px;
+margin: 0px;
+}
+ul.dropdown ul li:hover{
+background: #999;
+}
+ul.dropdown li {
+padding: 0px 10px;
+color: #000;
+}
+ul.dropdown > li{
+    position: relative;
+    padding-bottom: 10px;
+}
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+color: #000;
+}
+#nav ul.dropdown li:hover ul{
+display: block;
+}
+ul.dropdown a:link,
+ul.dropdown a:visited, ul.dropdown li span  { text-decoration: none; padding: 0px; margin: 0px 6px; }
+ul.dropdown > li > a:hover      { color: #000; text-decoration: none; }
+ul.dropdown a:active    { color: #ffa500; }
+ul.dropdown ul li:hover a, ul.dropdown ul li a:hover{ color: #fff;}
 
 
 /*-------------------------------------------------/
- * @section		Support Class `dir`
- * @level sep	ul, .class
- */
+* @section      Support Class `dir`
+* @level sep    ul, .class
+*/
 
 
 ul.dropdown *.dir {
- padding-right: 20px;
- background-image: url(images/nav-arrow-down.png);
- background-position: 100% 50%;
- background-repeat: no-repeat;
+padding-right: 20px;
+background-image: url(images/nav-arrow-down.png);
+background-position: 100% 50%;
+background-repeat: no-repeat;
 }
 a.dir{
-	padding-right: 20px !important;
+padding-right: 20px !important;
 }
 
 /* -- Components override -- */
 
 ul.dropdown-horizontal ul *.dir {
- padding-right: 15px;
- background-image: url(images/nav-arrow-right.png);
- background-position: 100% 50%;
- background-repeat: no-repeat;
+padding-right: 15px;
+background-image: url(images/nav-arrow-right.png);
+background-position: 100% 50%;
+background-repeat: no-repeat;
 }
 
 ul.dropdown-upward *.dir {
- background-image: url(images/nav-arrow-top.png);
+background-image: url(images/nav-arrow-top.png);
 }
 
 ul.dropdown-vertical *.dir,
 ul.dropdown-upward ul *.dir {
- background-image: url(images/nav-arrow-right.png);
+background-image: url(images/nav-arrow-right.png);
 }
 
 ul.dropdown-vertical-rtl *.dir {
- padding-right: 10px;
- padding-left: 15px;
- background-image: url(images/nav-arrow-left.png);
- background-position: 0 50%;
+padding-right: 10px;
+padding-left: 15px;
+background-image: url(images/nav-arrow-left.png);
+background-position: 0 50%;
 }
 ul.dropdown.dropdown-vertical{
-	width: 100%;
+width: 100%;
 }
 ul.dropdown.dropdown-vertical li{
-	display: block;
-	border-bottom: 1px solid #eee;
+display: block;
+border-bottom: 1px solid #eee;
 }
 ul.dropdown.dropdown-vertical a:link{
-	display: inline-block;
-	padding: 8px 4px;
-	margin-left: 0px;
-	border: none;
+display: inline-block;
+padding: 8px 4px;
+margin-left: 0px;
+border: none;
 }
 ul.dropdown.dropdown-vertical a:hover{
-	border: none;
-	text-decoration: underline;
+border: none;
+text-decoration: underline;
 }
