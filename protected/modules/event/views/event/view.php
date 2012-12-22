@@ -104,6 +104,7 @@ if (isset($model->type)) {
         <?php
         echo CHtml::link($model->url, $model->url, array('itemprop' => 'url'));
     }
+    
     ?>
 </div>
 </div>

@@ -17,7 +17,7 @@ class CommentsModule extends CWebModule {
      * captcha action route
      */
 
-    const CAPTCHA_ACTION_ROUTE = 'comments/comment/captcha';
+    const CAPTCHA_ACTION_ROUTE = '/comments/comment/captcha';
 
     /*
      * delete comment action route
