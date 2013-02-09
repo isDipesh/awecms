@@ -29,7 +29,7 @@ class MenuRenderer extends CMenu {
             //throw new CHttpException(404, 'The specified menu (id=' . $this->id . ') cannot be found.');
         }
 
-        $class = array('dropdown');
+        $class = array('dropdown', $menu->theme.'-theme');
         if ($menu->vertical) {
             $class[] = 'dropdown-vertical';
             if ($menu->rtl) {

@@ -39,8 +39,9 @@
 
             <div class="row">
                 <div class="fifth" itemtype="http://schema.org/WPSideBar">
+                     <?php $this->widget('MenuRenderer', array('id'=>3)); ?>
                     <?php $this->widget('Events'); ?>
-                    <?php $this->widget('TagCloud'); ?>
+                    
                 </div>
 
                 <div class="fourfifth" itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
