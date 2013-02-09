@@ -211,7 +211,7 @@ class Comment extends CActiveRecord {
         if ($attribute === 'verifyCode' && $this->config['useCaptcha']) {
             $captchaValidator = new CCaptchaValidator();
             $captchaValidator->caseSensitive = false;
-            $captchaValidator->captchaAction = Yii::app()->urlManager->createUrl(CommentsModule::CAPTCHA_ACTION_ROUTE);
+            $captchaValidator->captchaAction = CommentsModule::CAPTCHA_ACTION_ROUTE;
             $captchaValidator->allowEmpty = !CCaptcha::checkRequirements();
             $captchaValidator->attributes = array('verifyCode');
             $captchaValidator->validate($this);

@@ -53,7 +53,7 @@ if (!isset($this->menu) || $this->menu === array()) {
         <?php
         if (isset($model->venue)) {
             ?>
-        <div class="event-list-venue right" itemprop="location"s>
+        <div class="event-list-venue right" itemprop="location">
             <?php
             echo '<b>' . CHtml::encode($model->getAttributeLabel('venue')) . '</b>:';
             ?>
@@ -104,7 +104,6 @@ if (isset($model->type)) {
         <?php
         echo CHtml::link($model->url, $model->url, array('itemprop' => 'url'));
     }
-    
     ?>
 </div>
 </div>
