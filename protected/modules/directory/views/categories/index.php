@@ -20,7 +20,7 @@ $this->widget('SearchBlock', array('type' => 'directory'));
 
 $categories = Awecms::buildTree(Awecms::quickSort(($allCategories)));
 $this->renderPartial('_tree', array(
-    'categories' => $categories,
+    'items' => $categories,
     'depth' => 0,
 ));
 

@@ -1,6 +1,6 @@
 <?php
 
-writeTree($categories, $depth);
+writeTree($items, $depth);
 
 function writeTree($items, $depth) {
 

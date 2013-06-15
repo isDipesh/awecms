@@ -12,7 +12,6 @@
 
     <body itemscope itemtype="http://schema.org/<?php echo $this->webpageType; ?>">
         <div class="wrapper">
-            <div >
                 <header itemtype="http://schema.org/WPHeader">
                     <a href="<?php echo Yii::app()->baseUrl; ?>/">
                         <h1 class="head"><?php echo Settings::get('site', 'name'); ?></h1>
@@ -21,9 +20,8 @@
                     <?php // $this->widget('LanguagePicker'); ?>
                     <nav id="nav" itemscope itemtype="http://schema.org/SiteNavigationElement" >
                         <?php $this->widget('MenuRenderer'); ?>
-                    </nav>   
+                    </nav>
                 </header>
-            </div>
 
             <div class="mid-bar row">
                 <?php //TODO: show up some message and breadcrumb like Home /Index when user is not signed in and is in home page  ?>
@@ -34,14 +32,14 @@
                     ));
                 }
                 ?>
-                <?php $this->widget('LoginWidget'); ?>  
+                <?php //$this->widget('LoginWidget'); ?>
             </div>
 
             <div class="row">
                 <div class="fifth" itemtype="http://schema.org/WPSideBar">
                      <?php $this->widget('MenuRenderer', array('id'=>3)); ?>
                     <?php $this->widget('Events'); ?>
-                    
+
                 </div>
 
                 <div class="fourfifth" itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
