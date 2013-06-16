@@ -1,19 +1,6 @@
-<?php
+<p>
+    This is the homepage.
+</p>
 
-$this->widget('Galleria', array(
-    'dataProvider' => new CActiveDataProvider('Image', array(
-        'criteria' => array(
-            'condition' => 'album_id=11',
-        )
-    )),
-    'themeName' => 'classic',
-));
+Controller : protected/controllers/SiteController.php
 
-$this->block('Introduction');
-
-$this->widget('NepaliPatro');
-
-
-
-?>
-<a href="http://cms/ashdbhsabds">a</a>

@@ -32,7 +32,6 @@
                     ));
                 }
                 ?>
-                <?php //$this->widget('LoginWidget'); ?>
             </div>
 
             <div class="row">
@@ -51,4 +50,3 @@
         <?php $this->widget('GAnalytics'); ?>
     </body>
 </html>
-
