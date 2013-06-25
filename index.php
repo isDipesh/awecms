@@ -1,5 +1,4 @@
 <?php
-
 $yii = '/var/www/yii/framework/yii.php';
 
 date_default_timezone_set('GMT');
