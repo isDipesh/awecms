@@ -112,6 +112,7 @@ class MenuItem extends CActiveRecord {
             'all' => 'All',
             'guest' => 'Guest',
             'loggedIn' => 'Logged In',
+            'super' => 'Super',
         );
         if (Yii::app()->hasModule('role')) {
             return array_merge($roles, CHtml::listData(Role::model()->findAll(), 'name', 'name'));

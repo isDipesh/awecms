@@ -59,7 +59,7 @@ class MenuRenderer extends CMenu {
         $baseUrl = Yii::app()->getAssetManager()->publish($basedir);
 
         Yii::app()->getClientScript()->registerCSSFile($baseUrl . '/css/' . $cssFile)
-                ->registerCSSFile($baseUrl . '/themes/' . $menu->theme . '/default.css');
+        ->registerCSSFile($baseUrl . '/themes/' . $menu->theme . '/default.css');
 
         //ToDo: these should added just for IE7, i don't know how to do this
 //            Yii::app()->getClientScript()->registerCoreScript('jquery')
@@ -77,6 +77,7 @@ class MenuRenderer extends CMenu {
 
             $visible = FALSE;
             //handle roles here
+
             if (isset($item['role'])) {
                 $roles = explode(',', $item['role']);
                 if (in_array('all', $roles)) {
@@ -84,6 +85,8 @@ class MenuRenderer extends CMenu {
                 } else if (Yii::app()->user->isGuest && in_array('guest', $roles)) {
                     $visible = TRUE;
                 } else if (Yii::app()->user->id && in_array('loggedIn', $roles)) {
+                    $visible = TRUE;
+                } else if (Yii::app()->getModule('user')->isAdmin() && in_array('super', $roles)) {
                     $visible = TRUE;
                 } else if (Yii::app()->hasModule('role')) {
                     foreach ($roles as $role) {
