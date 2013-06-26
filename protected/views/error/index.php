@@ -29,7 +29,7 @@ if (!$errorCode)
         echo CHtml::link('Go back to where you came from.', $_SERVER['HTTP_REFERER']) . '</br>';
     }
 
-    echo CHtml::link('Go back home.', Yii::app()->createAbsoluteUrl(Yii::app()->baseUrl)) . '</br>';
+    echo CHtml::link('Go back home.', Yii::app()->baseUrl) . '</br>';
 
     echo CHtml::link('If you feel we are the one who screwed it this time, please contact us.', Yii::app()->createAbsoluteUrl('/site/contact')) . '</br>';
 
