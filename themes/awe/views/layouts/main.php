@@ -17,6 +17,7 @@
                         <h1 class="head"><?php echo Settings::get('site', 'name'); ?></h1>
                     </a>
                     <?php $this->widget('SearchBlock'); ?>
+                    <?php $this->widget('LoginWidget'); ?>
                     <?php // $this->widget('LanguagePicker'); ?>
                     <nav id="nav" itemscope itemtype="http://schema.org/SiteNavigationElement" >
                         <?php $this->widget('MenuRenderer'); ?>
