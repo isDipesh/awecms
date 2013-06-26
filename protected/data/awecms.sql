@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2.2
+-- version 3.5.4
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 21, 2012 at 01:05 PM
--- Server version: 5.5.27
--- PHP Version: 5.4.7
+-- Generation Time: Jun 26, 2013 at 04:19 PM
+-- Server version: 5.5.29
+-- PHP Version: 5.4.12
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -382,7 +382,7 @@ INSERT INTO `menu_item` (`id`, `menu_id`, `parent_id`, `depth`, `lft`, `rgt`, `n
 (71, 1, 0, 1, 4, 5, 'Dashboard', 1, NULL, '', '/admin', 'module', 'super'),
 (72, 2, 60, 2, 25, 26, 'Files', 1, NULL, NULL, '/file', 'url', 'super'),
 (74, 2, 60, 2, 19, 20, 'Blocks', 1, NULL, '', '/block', 'module', 'all'),
-(77, 3, 0, 1, 44, 45, 'E-mail', 1, NULL, 'Check you e-mail', 'http://webmail.hotc.org.np/', 'url', 'all');
+(77, 3, 0, 1, 44, 45, 'E-mail', 1, NULL, 'Check you e-mail', 'http://mail.awecode.com', 'url', 'all');
 
 -- --------------------------------------------------------
 
@@ -440,7 +440,7 @@ CREATE TABLE IF NOT EXISTS `page` (
 
 INSERT INTO `page` (`id`, `user_id`, `title`, `content`, `status`, `created_at`, `modified_at`, `parent_id`, `order`, `type`, `comment_status`, `tags_enabled`, `permission`, `password`, `views`, `layout`, `slug_id`) VALUES
 (568, 1, 'New Event', '<p>The Description <br></p>', 'published', '2012-11-05 23:56:24', '2012-11-17 12:55:23', NULL, 0, 'Event', 'open', 1, 'all', NULL, 51, NULL, NULL),
-(569, 1, 'New news', '<p>&nbsp;fxcgvhjbnkml</p><p>ghjkl;''</p><p>ghjkl;''</p><p>ghjkl;''</p><p>ghjkl;''</p><p>hjkl;''</p><p><br></p>', 'published', '2012-11-06 00:36:42', '2012-11-06 01:55:55', NULL, 0, 'News', 'open', 1, 'all', NULL, 26, NULL, 12),
+(569, 1, 'New news', '<p>&nbsp;fxcgvhjbnkml</p><p>ghjkl;''</p><p>ghjkl;''</p><p>ghjkl;''</p><p>ghjkl;''</p><p>hjkl;''</p><p><br></p>', 'published', '2012-11-06 00:36:42', '2013-02-20 11:58:47', NULL, 0, 'News', 'open', 1, 'all', NULL, 27, NULL, 12),
 (570, 1, 'My New Category', 'hahaha\r\nThe description.', 'published', '2012-11-06 02:23:58', '2012-11-12 20:10:08', NULL, 0, 'BusinessCategory', 'open', 1, 'all', NULL, 10, NULL, 13),
 (571, 1, 'New Business', '<p>&nbsp;Content goes</p><p>all</p><p>over</p><p>here!</p><p><br></p>', 'published', '2012-11-06 02:34:22', '2012-11-06 19:30:44', NULL, 0, 'Business', 'open', 1, 'all', NULL, 3, NULL, 14),
 (572, 1, 'Apple', NULL, 'published', '2012-11-06 03:04:17', '2012-11-06 03:08:52', NULL, 0, 'Business', 'open', 1, 'all', NULL, 2, NULL, 15),
@@ -507,6 +507,7 @@ INSERT INTO `page_nm_tag` (`page_id`, `tag_id`) VALUES
 CREATE TABLE IF NOT EXISTS `profile` (
   `user_id` int(11) NOT NULL,
   `firstname` varchar(255) NOT NULL DEFAULT '',
+  `new_field` int(10) NOT NULL DEFAULT '0',
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -514,10 +515,8 @@ CREATE TABLE IF NOT EXISTS `profile` (
 -- Dumping data for table `profile`
 --
 
-INSERT INTO `profile` (`user_id`, `firstname`) VALUES
-(1, ''),
-(2, ''),
-(3, '');
+INSERT INTO `profile` (`user_id`, `firstname`, `new_field`) VALUES
+(1, '', 0);
 
 -- --------------------------------------------------------
 
@@ -544,7 +543,14 @@ CREATE TABLE IF NOT EXISTS `profile_field` (
   `visible` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `varname` (`varname`,`widget`,`visible`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `profile_field`
+--
+
+INSERT INTO `profile_field` (`id`, `varname`, `title`, `field_type`, `field_size`, `field_size_min`, `required`, `match`, `range`, `error_message`, `other_validator`, `default`, `widget`, `widgetparams`, `position`, `visible`) VALUES
+(1, 'new_field', 'New Field', 'INTEGER', 10, 0, 0, '', '', '', '', '0', '', '', 0, 3);
 
 -- --------------------------------------------------------
 
@@ -691,16 +697,14 @@ CREATE TABLE IF NOT EXISTS `user` (
   UNIQUE KEY `email` (`email`),
   KEY `status` (`status`),
   KEY `superuser` (`superuser`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `email`, `activkey`, `create_at`, `lastvisit_at`, `superuser`, `status`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2012-11-12 12:56:40', 1, 1),
-(2, 'newuser', '5f4dcc3b5aa765d61d8327deb882cf99', 'ap@pasd.com', 'b5675acccbd6fa5ddcaa4f9a622eaf5c', '2012-11-10 00:08:23', '0000-00-00 00:00:00', 0, 1),
-(3, 'rohit', '1db2cd81f19741d67e4c7aef245a689e', 'rohit@gmail.com', '145aefa1e264fae29cd2c868b038a892', '2012-11-12 17:55:57', '0000-00-00 00:00:00', 0, 1);
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'xtranophilist@gmail.com', '9a24eff8c15a6a141ece27eb6947da0f', '0000-00-00 00:00:00', '2013-06-16 08:40:56', 1, 1);
 
 -- --------------------------------------------------------
 
