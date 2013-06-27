@@ -2,11 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <?php //TODO ?>
     <meta name="language" content="<?php echo Yii::app()->language ?>" />
-    <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/kube.css" />
-    <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/style.css" />
-    <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/form.css" />
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -39,7 +35,6 @@
             <div class="fifth" itemtype="http://schema.org/WPSideBar">
                <?php $this->widget('MenuRenderer', array('id'=>3)); ?>
                <?php $this->widget('Events'); ?>
-
            </div>
 
            <div class="fourfifth" itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">

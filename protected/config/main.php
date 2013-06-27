@@ -4,7 +4,7 @@ $config = array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
 //    'sourceLanguage' => 'en',
 //    'language' => 'en',
-    'theme' => 'awe',
+    'theme' => 'found',
     // autoloading model and component classes
     'import' => array(
         'application.models.*',
@@ -56,8 +56,8 @@ $config = array(
             'password' => 'password',
             'generatorPaths' => array(
                 'ext.giix-core', // giix generators
-                'ext.gtc', // extensions/Gii Template 
-                'ext.awegen', // extensions/Gii Template 
+                'ext.gtc', // extensions/Gii Template
+                'ext.awegen', // extensions/Gii Template
             ),
         // If removed, Gii defaults to localhost only. Edit carefully to taste.
         //'ipFilters' => array('127.0.0.1', '::1'),
