@@ -1,5 +1,5 @@
-Options +FollowSymLinks
-#Options +SymLinksIfOwnerMatch
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
 IndexIgnore */*
 RewriteEngine on
 

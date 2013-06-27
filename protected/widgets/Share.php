@@ -85,7 +85,7 @@ class Share extends AwePortlet {
 
     public function run() {
         $iconsDir = Yii::app()->assetManager->publish(
-                __DIR__ . DIRECTORY_SEPARATOR . 'icons', false, -1, YII_DEBUG
+                __DIR__ . DIRECTORY_SEPARATOR . 'icons', false, -1
         );
         $rep = array(
             'url' => $this->url,

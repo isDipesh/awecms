@@ -6,7 +6,7 @@
         <meta name="language" content="<?php echo Yii::app()->language ?>" />
         <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/kube.css" />
         <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/style.css" />
-        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+        <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/form.css" />
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
 
