@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="<?php echo Yii::app()->language ?>">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="<?php echo Yii::app()->language ?>" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
+    <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/normalize.css">
+    <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/foundation.css">
+
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/js/vendor/custom.modernizr.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/<?php echo $this->webpageType; ?>">
