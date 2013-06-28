@@ -32,7 +32,7 @@ class Events extends AwePortlet {
             <?php endforeach; ?>
             <?php
             if (!$this->getUpComingEvents()) {
-                echo Yii::t('app', 'Sorry, no upcoming events!');
+                echo Yii::t('app', '<li>Sorry, no upcoming events!</li>');
             }
             ?>
         </ul>
