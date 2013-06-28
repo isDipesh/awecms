@@ -99,56 +99,53 @@ class LoginWidget extends CWidget {
         if (Yii::app()->user->isGuest) {
 
             ?>
-            <div class="right">
-                <div class="span-8">
-                    <div class="form box">
-                        <?php echo CHtml::beginForm(); ?>
-                        <?php echo CHtml::errorSummary($model); ?>
+            <div class="span-8">
+                <div class="form box">
+                    <?php echo CHtml::beginForm(); ?>
+                    <?php echo CHtml::errorSummary($model); ?>
 
-                        <span>
-                            <?php echo CHtml::activeTextField($model,'username', array('size'=>15, 'placeholder'=>'Username')) ?>
-                        </span>
-                        <span>
-                            <?php echo CHtml::activePasswordField($model,'password', array('size'=>15, 'placeholder'=>'Password')) ?>
-                        </span>
-                        <span class="submit">
-                            <?php echo CHtml::submitButton(UserModule::t("Login")); ?>
-                        </span>
-                        <?php echo CHtml::endForm(); ?>
-                    </div><!-- form -->
-                </div>
+                    <span>
+                        <?php echo CHtml::activeTextField($model,'username', array('size'=>15, 'placeholder'=>'Username')) ?>
+                    </span>
+                    <span>
+                        <?php echo CHtml::activePasswordField($model,'password', array('size'=>15, 'placeholder'=>'Password')) ?>
+                    </span>
+                    <span class="submit">
+                        <?php echo CHtml::submitButton(UserModule::t("Login")); ?>
+                    </span>
+                    <?php echo CHtml::endForm(); ?>
+                </div><!-- form -->
+            </div>
 
-                <?php
-                $form = new CForm(array(
-                    'elements'=>array(
-                        'username'=>array(
-                            'type'=>'text',
-                            'maxlength'=>32,
-                            ),
-                        'password'=>array(
-                            'type'=>'password',
-                            'maxlength'=>32,
-                            ),
-                        'rememberMe'=>array(
-                            'type'=>'checkbox',
-                            )
+            <?php
+            $form = new CForm(array(
+                'elements'=>array(
+                    'username'=>array(
+                        'type'=>'text',
+                        'maxlength'=>32,
                         ),
-
-                    'buttons'=>array(
-                        'login'=>array(
-                            'type'=>'submit',
-                            'label'=>'Login',
-                            ),
+                    'password'=>array(
+                        'type'=>'password',
+                        'maxlength'=>32,
                         ),
-                    ), $model);
-                    ?>
-                </div>
+                    'rememberMe'=>array(
+                        'type'=>'checkbox',
+                        )
+                    ),
+
+                'buttons'=>array(
+                    'login'=>array(
+                        'type'=>'submit',
+                        'label'=>'Login',
+                        ),
+                    ),
+                ), $model);
+                ?>
                 <?php
             } else {
                 ?>
-                <div class="right">
-                    <?php echo UserModule::t('Logged in as {username}',array('{username}'=>CHtml::link($module->user()->username, $module->profileUrl)))?>
-                </div>
+
+                <?php echo UserModule::t('Logged in as {username}',array('{username}'=>CHtml::link($module->user()->username, $module->profileUrl)))?>
                 <?php
             }
 

@@ -15,17 +15,7 @@
 
 <body itemscope itemtype="http://schema.org/<?php echo $this->webpageType; ?>">
 
-    <header itemscope itemtype="http://schema.org/WPHeader" class="row">
-        <a href="<?php echo Yii::app()->baseUrl; ?>/">
-            <h1 class="head"><?php echo Settings::get('site', 'name'); ?></h1>
-        </a>
-        <?php $this->widget('SearchBlock'); ?>
-        <?php $this->widget('LoginWidget'); ?>
-        <?php // $this->widget('LanguagePicker'); ?>
-        <nav id="nav" itemscope itemtype="http://schema.org/SiteNavigationElement" >
-            <?php $this->widget('MenuRenderer'); ?>
-        </nav>
-    </header>
+    <?php include_once '_header.php'; ?>
 
     <div class="row crumb">
         <?php //TODO: show up some message and breadcrumb like Home /Index when user is not signed in and is in home page  ?>

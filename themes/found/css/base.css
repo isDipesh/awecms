@@ -1,3 +1,50 @@
+
+/*AweCMS*/
+.search-form input{
+    width: 150px;
+}
+
+
+/* Reset Foundation*/
+
 body{
     cursor: auto;
 }
+
+
+/* Header */
+
+header form input[type="text"], input[type="password"]{
+    display: inline-block;
+    width: auto;
+    margin:0;
+}
+
+.site-title, .site-slogan, .site-logo{
+    padding-left: 0px;
+}
+
+.site-logo{
+    margin-bottom: 0.3em;
+}
+
+header h1{
+    font-size: 1.95em;
+    margin: 0;
+}
+
+header form{
+    margin: 0 0 0.5em;
+}
+
+header hr{
+    margin: 0.3em 0;
+}
+
+#main-nav ul{
+    padding: 0 0.6em;
+}
+
+/*Debug*/
+
+/*.column{ border: 1px dotted; }*/

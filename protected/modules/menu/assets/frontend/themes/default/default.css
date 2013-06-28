@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/** 
+/**
 * Default CSS Drop-Down Menu Theme
 *
 * @file     default.css
@@ -62,7 +62,7 @@ color: #000;
 }
 ul.dropdown > li{
     position: relative;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 ul.dropdown li.hover,
 ul.dropdown li:hover {
