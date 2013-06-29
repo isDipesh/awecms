@@ -35,7 +35,7 @@
            <?php $this->widget('Events'); ?>
        </div>
 
-       <div itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement" class="column small-9">
+       <div itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement" class="column small-13">
         <?php echo $content; ?>
     </div>
 

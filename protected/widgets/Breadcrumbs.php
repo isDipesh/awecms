@@ -51,7 +51,7 @@ class Breadcrumbs extends CWidget {
     /**
      * @var string the separator between links in the breadcrumbs. Defaults to ' &raquo; '.
      */
-    public $separator = ' &raquo; ';
+    public $separator = '<span class="breadcrumb-separator"> &raquo; </span>';
 
     /**
      * Renders the content of the portlet.

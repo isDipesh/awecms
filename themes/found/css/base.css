@@ -54,6 +54,17 @@ header hr{
     /*padding: 0 0.6em;*/
 }
 
+/**/
+
+.main{
+    margin-top: 1em;
+}
+
+.breadcrumb-separator{
+    display: none;
+}
+
+
 
 
 

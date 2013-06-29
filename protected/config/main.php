@@ -5,6 +5,7 @@ $config = array(
 //    'sourceLanguage' => 'en',
 //    'language' => 'en',
     'theme' => 'found',
+    // 'theme' => 'awe',
     // autoloading model and component classes
     'import' => array(
         'application.models.*',
