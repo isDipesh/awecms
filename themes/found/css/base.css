@@ -1,26 +1,3 @@
-
-/*AweCMS*/
-
-.center{
-    text-align: center;
-}
-
-footer{
-    padding: 2em;
-}
-
-#content{
-    font-family: 'PT Sans';
-    line-height: 1.5em;
-    word-spacing: 0.07em;
-    letter-spacing: 0.04em;
-    /*text-rendering: optimizeLegibility;*/
-    color: #666666;
-    font-size: large;
-    font-weight: 500;
-
-}
-
 /* Reset Foundation*/
 
 body{
@@ -31,7 +8,6 @@ body{
 h1, h2, h3, h4, h5, h6 {
     font-family: 'PT Sans Narrow';
 }
-
 
 /* Header */
 
@@ -66,15 +42,36 @@ header hr{
     padding: 0 0.6em;
 }
 
-/**/
+/*Foundation uses it's own separator, so hide it*/
+.breadcrumb-separator{
+    display: none;
+}
+
+/*AweCMS main layout*/
 
 .main{
     margin-top: 1em;
 }
 
-.breadcrumb-separator{
-    display: none;
+.content{
+    float: right;
+    line-height: 1.5em;
+    word-spacing: 0.07em;
+    letter-spacing: 0.04em;
+    text-rendering: optimizeLegibility;
+    color: #666666;
+    /*font-size: large;*/
 }
+
+.center{
+    text-align: center;
+}
+
+footer{
+    padding: 2em;
+}
+
+
 
 /*Portlet*/
 
