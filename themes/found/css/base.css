@@ -1,5 +1,14 @@
 
 /*AweCMS*/
+
+.center{
+    text-align: center;
+}
+
+footer{
+    padding: 2em;
+}
+
 .search-form input{
     width: 150px;
 }
@@ -25,12 +34,12 @@ header form input[type="text"], input[type="password"]{
 }
 
 .site-logo{
-    margin-bottom: 0.3em;
+    /*margin-bottom: 0.3em;*/
 }
 
 header h1{
     font-size: 1.95em;
-    margin: 0;
+    margin-top: 0;
 }
 
 header form{
@@ -42,8 +51,11 @@ header hr{
 }
 
 #main-nav ul{
-    padding: 0 0.6em;
+    /*padding: 0 0.6em;*/
 }
+
+
+
 
 /*Debug*/
 
