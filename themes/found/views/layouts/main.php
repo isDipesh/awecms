@@ -30,12 +30,12 @@
 
     <div class="row main">
 
-        <div itemscope itemtype="http://schema.org/WPSideBar" class="column small-3">
+        <div itemscope itemtype="http://schema.org/WPSideBar" class="column large-3 hide-for-medium-down">
            <?php //$this->widget('MenuRenderer', array('id'=>3)); ?>
            <?php $this->widget('Events'); ?>
        </div>
 
-       <div itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement" class="column small-13">
+       <div itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement" class="column large-13">
         <?php echo $content; ?>
     </div>
 

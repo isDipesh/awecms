@@ -9,14 +9,23 @@ footer{
     padding: 2em;
 }
 
+#content{
+    font-family: 'PT Sans';
+    line-height: 1.5em;
+    word-spacing: 0.07em;
+    letter-spacing: 0.04em;
+    /*text-rendering: optimizeLegibility;*/
+    color: #666666;
+    font-size: large;
+    font-weight: 500;
 
-
+}
 
 /* Reset Foundation*/
 
 body{
     cursor: auto;
-    font-family: 'PT Sans Narrow';
+    font-family: 'PT Sans';
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +42,7 @@ header form input[type="text"], input[type="password"]{
 }
 
 .site-title, .site-slogan, .site-logo{
-    padding-left: 0px;
+    /*padding-left: 0px;*/
 }
 
 .site-logo{
@@ -50,11 +59,11 @@ header form{
 }
 
 header hr{
-    margin: 0.3em 0;
+    margin: 0.3em 0.9em;
 }
 
 #main-nav ul{
-    /*padding: 0 0.6em;*/
+    padding: 0 0.6em;
 }
 
 /**/
