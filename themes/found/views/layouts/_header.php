@@ -4,7 +4,7 @@
     if ($logo) {
         ?>
         <div class="site-logo small-3 column">
-            <img src="<?php echo Settings::get('site', 'logo'); ?>">
+            <img alt="" src="<?php echo Settings::get('site', 'logo'); ?>">
         </div>
         <?php
     }

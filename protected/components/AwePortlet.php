@@ -4,7 +4,8 @@ class AwePortlet extends CWidget {
 
     public $title;
     public $cssClass = 'portlet';
-    public $headerCssClass = 'portlet-header';
+    public $decorationCssClass = 'portlet-decoration';
+    public $headerCssClass = 'portlet-title';
     public $contentCssClass = 'portlet-content';
     public $visible = true;
 
@@ -14,9 +15,11 @@ class AwePortlet extends CWidget {
         $class = strtolower(get_class($this)) . '-portlet';
         echo "<div class=\"{$this->cssClass} {$class}\">\n";
         if ($this->title !== null) {
-            echo "<div class=\"{$this->headerCssClass}\" style=\"position:relative;\">{$this->title}\n";
-            echo "  <div class=\"expandButton\" style=\"width:18px;height:18px;top:-1px;right:4px;background-repeat:no-repeat;position:absolute;\"></div></div>\n";
-//            echo "  <div class=\"expandButton\" style=\"width:18px;height:18px;top:-1px;right:4px;background-image:url(" . Yii::app()->request->baseUrl . "/systemImages/widgetCollapseIcon.png);background-repeat:no-repeat;position:absolute;\" class=\"expandButton\"></div></div>\n";
+            echo "<div class=\"{$this->decorationCssClass}\">\n";
+            echo "<div class=\"{$this->headerCssClass}\">{$this->title}\n";
+            // echo "<div class=\"expandButton\">+</div>\n";
+            echo "</div></div>";
+
         }
         echo "<div class=\"{$this->contentCssClass}\">\n";
     }

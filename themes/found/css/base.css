@@ -9,15 +9,18 @@ footer{
     padding: 2em;
 }
 
-.search-form input{
-    width: 150px;
-}
+
 
 
 /* Reset Foundation*/
 
 body{
     cursor: auto;
+    font-family: 'PT Sans Narrow';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans Narrow';
 }
 
 
@@ -64,7 +67,23 @@ header hr{
     display: none;
 }
 
+/*Portlet*/
 
+.portlet{
+    clear: both;
+}
+
+.portlet-title{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.portlet-content ul li{
+    list-style: none;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 0.1em;
+}
 
 
 
