@@ -19,13 +19,7 @@
 
     <div class="row crumb">
         <?php //TODO: show up some message and breadcrumb like Home /Index when user is not signed in and is in home page  ?>
-        <?php
-        if (((Settings::get('site', 'enable_breadcrumbs') == '') || (Settings::get('site', 'enable_breadcrumbs') == 1)) && isset($this->breadcrumbs)) {
-            $this->widget('Breadcrumbs', array(
-                'links' => $this->breadcrumbs,
-                ));
-        }
-        ?>
+
     </div>
 
     <div class="row main">

@@ -37,7 +37,9 @@
             </div>
 
             <div class="column large-8 small-6 site-search">
-                <?php $this->widget('SearchBlock'); ?>
+                <nav class="right main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                    <?php $this->widget('MenuRenderer'); ?>
+                </nav>
             </div>
 
         </div>
@@ -45,9 +47,16 @@
 
     <hr/>
 
-    <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-        <?php $this->widget('MenuRenderer'); ?>
-    </nav>
+    <?php
+    if (((Settings::get('site', 'enable_breadcrumbs') == '') || (Settings::get('site', 'enable_breadcrumbs') == 1)) && isset($this->breadcrumbs)) {
+        $this->widget('Breadcrumbs', array(
+            'links' => $this->breadcrumbs,
+            ));
+    }
+    ?>
+
+    <?php $this->widget('SearchBlock'); ?>
+
 
     <hr/>
 </header>

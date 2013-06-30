@@ -2,11 +2,11 @@
 
 body{
     cursor: auto;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", Verdana, "Droid Sans", sans-serif;;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'PT Sans Narrow';
+    font-family: "PT Sans Narrow";
 }
 
 /*Generalized Classes*/
@@ -61,6 +61,12 @@ header hr{
 /*Foundation uses it's own separator, so hide it*/
 .breadcrumb-separator{
     display: none;
+}
+
+.breadcrumbs{
+    background-color: inherit;
+    border: none;
+    display: inline-block;
 }
 
 /*AweCMS main layout*/
