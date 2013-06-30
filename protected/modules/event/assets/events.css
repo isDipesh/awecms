@@ -1,38 +1,31 @@
-.date, .event-details{
-    float: left;
+.date-icon{
+    float: right;
+    text-align: center;
+    font-weight: bold;
 }
-.event-details{
-	padding: 0em 2em;	
+
+.date-month{
+    padding: 0.5em 0.5em 0 0.5em;
+    border: 1px solid #d2d2d2;
+    border-radius: 0.5em 0.5em 0 0;
+    background: #fcfcfc;
+    background: linear-gradient(top, #fcfcfc 0%,#dad8d8 100%);
+    background: -moz-linear-gradient(top, #fcfcfc 0%, #dad8d8 100%);
+    background: -webkit-linear-gradient(top, #fcfcfc 0%,#dad8d8 100%);
+
 }
-.event-details h1{
-	margin: 0px 0px 10px 0px;
-}
-.event-desc{
-	border-radius: 4px;
-	float: left;
-	width: 100%;
-	color: #666;
-}
-.event-desc h2{
-	font-size: 18px;
-	margin: 12px 0px 0px 10px;
-	float: left;
-}
-.event-desc .desc-holder{
-	float: left;
-	padding: .5em;
-	margin-top: 3px;
-}
-.event-org{
-	text-align: right;
-	font-size: 12px;
-	font-weight: bold;
-	color: #333;
-}
-.event-details-list{
-	margin-left: 20px;
-}
-.event-list-venue{
-	width: 180px;
-	overflow: hidden;
+
+.date-day{
+    padding: 0 0.5em 0.5em 0.5em;
+    border-radius: 0 0 0.5em 0.5em;
+    background: rgb(69,72,77);
+    background: -moz-linear-gradient(top, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+    color: #fff;
+    text-transform: uppercase;
 }

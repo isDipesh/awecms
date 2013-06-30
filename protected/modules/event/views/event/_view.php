@@ -2,18 +2,15 @@
     <?php
     if (isset($data->start)) {
         ?>
-        <div class="date">
-            <div>
-                <?php echo date('d', strtotime($data->start)); ?>
-                <span>
-                    <?php echo date('M', strtotime($data->start)); ?>
-                </span>
-            </div>
+        <div class="date-icon">
+            <div class="date-month"><?php echo date('d', strtotime($data->start)); ?></div>
+                <div class="date-day"><?php echo date('M', strtotime($data->start)); ?></div>
+
         </div>
     <?php }
     ?>
 
-    <div class="event-details-list left">
+    <div class="event-details-list">
 
         <h2>
             <a itemprop="url" href="<?php echo Yii::app()->createUrl('/event/event/view', array('id' => $data->id)); ?>">
@@ -44,7 +41,7 @@
     <?php
     if (isset($data->venue)) {
         ?>
-        <div class="event-list-venue right" itemprop="location">
+        <div class="event-list-venue" itemprop="location">
             <?php
             echo CHtml::encode($data->getAttributeLabel('venue'));
             ?>:
