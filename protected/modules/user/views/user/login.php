@@ -2,12 +2,12 @@
 $this->pageTitle = Yii::app()->name . ' - ' . UserModule::t("Login");
 $this->breadcrumbs = array(
     UserModule::t("Login"),
-);
-?>
+    );
+    ?>
 
-<h1><?php echo UserModule::t("Login"); ?></h1>
+    <h1><?php echo UserModule::t("Login"); ?></h1>
 
-<?php if (Yii::app()->user->hasFlash('loginMessage')): ?>
+    <?php if (Yii::app()->user->hasFlash('loginMessage')): ?>
 
     <div class="success">
         <?php echo Yii::app()->user->getFlash('loginMessage'); ?>
@@ -20,59 +20,53 @@ $this->breadcrumbs = array(
 
     <?php echo CHtml::errorSummary($model); ?>
 
-    <div class="row">
-        <?php echo CHtml::activeLabelEx($model, 'username'); ?>
-        <?php echo CHtml::activeTextField($model, 'username') ?>
-    </div>
+    <?php echo CHtml::activeLabelEx($model, 'username'); ?>
+    <?php echo CHtml::activeTextField($model, 'username') ?>
 
-    <div class="row">
-        <?php echo CHtml::activeLabelEx($model, 'password'); ?>
-        <?php echo CHtml::activePasswordField($model, 'password') ?>
-    </div>
+    <?php echo CHtml::activeLabelEx($model, 'password'); ?>
+    <?php echo CHtml::activePasswordField($model, 'password') ?>
 
-    <div class="row rememberMe">
+    <div class="rememberMe">
         <?php echo CHtml::activeCheckBox($model, 'rememberMe'); ?>
         <?php echo CHtml::activeLabelEx($model, 'rememberMe'); ?>
     </div>
 
-    <div class="row submit">
+    <div class="submit">
         <?php echo CHtml::submitButton(UserModule::t("Login")); ?>
     </div>
 
-    <div class="row">
-        <p class="hint">
-            <?php echo CHtml::link(UserModule::t("Register"), Yii::app()->getModule('user')->registrationUrl); ?> | <?php echo CHtml::link(UserModule::t("Lost Password?"), Yii::app()->getModule('user')->recoveryUrl); ?>
-        </p>
-    </div>
+    <p class="hint">
+        <?php echo CHtml::link(UserModule::t("Register"), Yii::app()->getModule('user')->registrationUrl); ?> | <?php echo CHtml::link(UserModule::t("Lost Password?"), Yii::app()->getModule('user')->recoveryUrl); ?>
+    </p>
 
     <?php echo CHtml::endForm(); ?>
 </div><!-- form -->
 
 <script type="text/javascript" language="javascript">
-    document.getElementById('UserLogin_username').focus();
+document.getElementById('UserLogin_username').focus();
 </script>
 
 
 <?php
 $form = new CForm(array(
-            'elements' => array(
-                'username' => array(
-                    'type' => 'text',
-                    'maxlength' => 32,
-                ),
-                'password' => array(
-                    'type' => 'password',
-                    'maxlength' => 32,
-                ),
-                'rememberMe' => array(
-                    'type' => 'checkbox',
-                )
+    'elements' => array(
+        'username' => array(
+            'type' => 'text',
+            'maxlength' => 32,
             ),
-            'buttons' => array(
-                'login' => array(
-                    'type' => 'submit',
-                    'label' => 'Login',
-                ),
+        'password' => array(
+            'type' => 'password',
+            'maxlength' => 32,
             ),
-                ), $model);
+        'rememberMe' => array(
+            'type' => 'checkbox',
+            )
+        ),
+    'buttons' => array(
+        'login' => array(
+            'type' => 'submit',
+            'label' => 'Login',
+            ),
+        ),
+    ), $model);
 ?>
