@@ -5,7 +5,6 @@
         <div class="date-icon">
             <div class="date-month"><?php echo date('d', strtotime($data->start)); ?></div>
                 <div class="date-day"><?php echo date('M', strtotime($data->start)); ?></div>
-
         </div>
     <?php }
     ?>

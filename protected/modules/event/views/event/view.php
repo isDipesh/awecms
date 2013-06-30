@@ -18,8 +18,9 @@ if (!isset($this->menu) || $this->menu === array()) {
     <?php
     if (isset($model->start)) {
         ?>
-        <div class="date">
-            <div><?php echo date('d', strtotime($model->start)); ?><span><?php echo date('M', strtotime($model->start)); ?></span></div>
+        <div class="date-icon">
+            <div class="date-month"><?php echo date('d', strtotime($model->start)); ?></div>
+                <div class="date-day"><?php echo date('M', strtotime($model->start)); ?></div>
         </div>
     <?php }
     ?>
@@ -53,7 +54,7 @@ if (!isset($this->menu) || $this->menu === array()) {
         <?php
         if (isset($model->venue)) {
             ?>
-        <div class="event-list-venue right" itemprop="location">
+        <div class="event-list-venue" itemprop="location">
             <?php
             echo '<b>' . CHtml::encode($model->getAttributeLabel('venue')) . '</b>:';
             ?>
