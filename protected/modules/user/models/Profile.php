@@ -8,7 +8,7 @@ class Profile extends UActiveRecord
      * @var boolean $regMode
      */
     public $regMode = false;
-    
+
     private $_model;
     private $_modelReg;
     private $_rules = array();
@@ -38,12 +38,12 @@ class Profile extends UActiveRecord
         if (!$this->_rules) {
             $required = array();
             $numerical = array();
-            $float = array();		
+            $float = array();
             $decimal = array();
             $rules = array();
-            
+
             $model=$this->getFields();
-            
+
             foreach ($model as $field) {
                 $field_rule = array();
                 if ($field->required==ProfileField::REQUIRED_YES_NOT_SHOW_REG||$field->required==ProfileField::REQUIRED_YES_SHOW_REG)
@@ -89,7 +89,7 @@ class Profile extends UActiveRecord
                     array_push($rules,$field_rule);
                 }
             }
-            
+
             array_push($rules,array(implode(',',$required), 'required'));
             array_push($rules,array(implode(',',$numerical), 'numerical', 'integerOnly'=>true));
             array_push($rules,array(implode(',',$float), 'type', 'type'=>'float'));
@@ -122,20 +122,20 @@ class Profile extends UActiveRecord
             'user_id' => UserModule::t('User ID'),
         );
         $model=$this->getFields();
-        
+
         foreach ($model as $field)
             $labels[$field->varname] = ((Yii::app()->getModule('user')->fieldsMessage)?UserModule::t($field->title,array(),Yii::app()->getModule('user')->fieldsMessage):UserModule::t($field->title));
-            
+
         return $labels;
     }
-    
+
     private function rangeRules($str) {
         $rules = explode(';',$str);
         for ($i=0;$i<count($rules);$i++)
             $rules[$i] = current(explode("==",$rules[$i]));
         return $rules;
     }
-    
+
     static public function range($str,$fieldValue=NULL) {
         $rules = explode(';',$str);
         $array = array();
@@ -143,32 +143,32 @@ class Profile extends UActiveRecord
             $item = explode("==",$rules[$i]);
             if (isset($item[0])) $array[$item[0]] = ((isset($item[1]))?$item[1]:$item[0]);
         }
-        if (isset($fieldValue)) 
+        if (isset($fieldValue))
             if (isset($array[$fieldValue])) return $array[$fieldValue]; else return '';
         else
             return $array;
     }
-    
+
     public function widgetAttributes() {
         $data = array();
         $model=$this->getFields();
-        
+
         foreach ($model as $field) {
             if ($field->widget) $data[$field->varname]=$field->widget;
         }
         return $data;
     }
-    
+
     public function widgetParams($fieldName) {
         $data = array();
         $model=$this->getFields();
-        
+
         foreach ($model as $field) {
             if ($field->widget) $data[$field->varname]=$field->widgetparams;
         }
         return $data[$fieldName];
     }
-    
+
     public function getFields() {
         if ($this->regMode) {
             if (!$this->_modelReg)
