@@ -9,6 +9,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'PT Sans Narrow';
 }
 
+/*Generalized Classes*/
+
+.center{
+    text-align: center;
+}
+
+.inline{
+    display: inline;
+}
+
 /* Header */
 
 header form input[type="text"], input[type="password"]{
@@ -17,12 +27,8 @@ header form input[type="text"], input[type="password"]{
     margin:0;
 }
 
-.site-title, .site-slogan, .site-logo{
-    /*padding-left: 0px;*/
-}
-
-.site-logo{
-    /*margin-bottom: 0.3em;*/
+.site-slogan{
+    float: left;
 }
 
 header h1{
@@ -49,7 +55,7 @@ header hr{
 
 /*AweCMS main layout*/
 
-.main{
+.content, .sidebar{
     margin-top: 1em;
 }
 
@@ -61,10 +67,6 @@ header hr{
     text-rendering: optimizeLegibility;
     color: #666666;
     /*font-size: large;*/
-}
-
-.center{
-    text-align: center;
 }
 
 footer{
@@ -91,8 +93,32 @@ footer{
     padding: 0.1em;
 }
 
+/*Forms*/
+
+input[type="text"]{
+    width: auto;
+}
+
+input[type="checkbox"]{
+    float: left;
+    margin: 0.4em 0.4em 0 0;
+}
+
+​/*input[type=checkbox] + label {
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 2em;
+    line-height: 1em;
+}*/
 
 
-/*Debug*/
+ /*Media Queries*/
+
+ @media only screen and (max-width: 767px) {
+
+ }
+
+
+/*Debug
 
 /*.column{ border: 1px dotted; }*/

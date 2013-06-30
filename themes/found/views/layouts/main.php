@@ -30,9 +30,13 @@
 
     <div class="row main">
 
-     <div itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement" class="column large-13 content">
+    <!-- Main content comes before left sidebar in HTML such that sidebar can be pushed after it for small screens, also provides SEO advantages-->
+     <div itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement" class="column large-13 small-16 content">
         <?php echo $content; ?>
     </div>
+
+    <!-- Add a horizontal line between main content and sidebar pushed to bottom, for small screens-->
+    <hr class="show-for-small"/>
 
     <div itemscope itemtype="http://schema.org/WPSideBar" class="column large-3 sidebar">
      <?php //$this->widget('MenuRenderer', array('id'=>3)); ?>
