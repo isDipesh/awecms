@@ -21,40 +21,40 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 
-header form input[type="text"], input[type="password"]{
+header h1{
+    font-size: 1.95em;
+    margin-top: 0;
+}
+
+.site-logo{
+    margin-bottom: 0.1em;
+}
+
+header form{
+    float: right;
+}
+
+header form, form input[type="text"], input[type="password"]{
     margin:0;
 }
 
-.login-widget form{
-    float: right;
+.login-widget{
+    padding-right: 0;
 }
 
 .login-widget .column{
     padding: 0.1em;
 }
 
-.site-slogan{
-    float: left;
-}
-
-header h1{
-    font-size: 1.95em;
-    margin-top: 0;
-}
-
-header form{
+/*header form{
     margin: 0 0 0.5em;
-}
+}*/
 
 header hr{
     margin: 0.3em 0.9em;
 }
 
-header .search-form{
-    float: right;
-}
-
-#main-nav ul{
+.main-nav ul{
     padding: 0 0.6em;
 }
 
