@@ -68,7 +68,7 @@ if (isset($model->district_id))
     if (is_array($model->businessCategories))
         foreach ($model->businessCategories as $foreignobj) {
 
-            echo '<div class="label left">';
+            echo '<div class="left">';
             echo CHtml::link($foreignobj->title, array('/directory/categories/view', 'id' => $foreignobj->id));
             echo '</div>';
         }

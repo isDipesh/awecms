@@ -25,7 +25,7 @@
     <div class="row main">
 
     <!-- Main content comes before left sidebar in HTML such that sidebar can be pushed after it for small screens, also provides SEO advantages-->
-     <div itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement" class="column large-13 small-16 content">
+     <div itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement" class="column large-13 small-15 content">
         <?php echo $content; ?>
     </div>
 

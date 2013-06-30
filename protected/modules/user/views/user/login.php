@@ -32,7 +32,7 @@ $this->breadcrumbs = array(
     </div>
 
     <div class="submit">
-        <?php echo CHtml::submitButton(UserModule::t("Login")); ?>
+        <?php echo CHtml::submitButton(UserModule::t("Login"), array('class' => 'tiny secondary radius button')); ?>
     </div>
 
     <p class="hint">

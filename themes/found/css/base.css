@@ -35,7 +35,7 @@ header form{
     float: right;
 }
 
-header form, form input[type="text"], input[type="password"]{
+header form, header form input[type="text"], header form input[type="password"]{
     margin:0;
 }
 
@@ -47,14 +47,8 @@ header form, form input[type="text"], input[type="password"]{
     padding: 0.1em;
 }
 
-
-
 header hr{
     margin: 0.3em 0.9em;
-}
-
-.main-nav ul{
-    padding: 0 0.6em;
 }
 
 /*Foundation uses it's own separator, so hide it*/
@@ -88,7 +82,33 @@ footer{
     padding: 2em;
 }
 
+/*Forms*/
 
+label{
+    display: inline-block;
+}
+
+.form form input[type="text"], .form form input[type="password"], .form form select, .form form textarea{
+    width: auto;
+}
+
+label + input[type="checkbox"], input[type="hidden"] + input[type="checkbox"]{
+    display: inline-block;
+    margin: 0.4em 0.4em 0 0;
+}
+
+.row label{
+    font-weight: bold;
+}
+
+.errorMessage, span.required{
+    color: red;
+    display: inline;
+}
+
+.success label{
+    color:#18A011;
+}
 
 /*Portlet*/
 
@@ -109,12 +129,7 @@ footer{
 }
 
 
-input[type="checkbox"]{
-    float: left;
-    margin: 0.4em 0.4em 0 0;
-}
-
-.view {
+div.view {
     background: none repeat scroll 0 0 #F2F2F2;
     border-color: #D9D9D9;
     border-style: solid;
@@ -136,15 +151,51 @@ input[type="checkbox"]{
 */
 @media only screen and (max-width: 550px) {
     .site-slogan{
-        margin-top: -1.5em;
+        /*margin-top: -1.5em;*/
     }
 
-    header .site-search{
-        width: auto;
-        float: left !important;
+    header .bottom-right{
+        float: none !important;
+    }
+
+    .bottom-right nav{
+        float: none !important;
+    }
+
+    .right{
+        float: none !important;
+    }
+
+    header form{
+        /*float: none !important;*/
+    }
+
+    .menu{
+        float: none !important;
+    }
+
+    nav ul li {
+        border-bottom: 1px solid silver;
     }
 }
 
 
 /*Debug*/
 /*.column{ border: 1px dotted; }*/
+
+.share-portlet{
+    padding-top: 1em;
+}
+
+.share-portlet .portlet-content a{
+    padding: 0.3em;
+}
+
+.field-name{
+    font-weight: bold;
+    display: inline;
+}
+
+.field-value{
+    display: inline;
+}

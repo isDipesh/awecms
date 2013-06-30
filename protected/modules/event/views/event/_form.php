@@ -74,7 +74,7 @@
     </div>
 
     <div class="row">
-        <?php echo Yii::t('app', 'Description'); ?>
+        <b><?php echo Yii::t('app', 'Description'); ?></b>
         <?php
         $page = isset($model->page) ? $model->page : new Page;
         $this->widget('ext.redactor.ERedactorWidget', array(

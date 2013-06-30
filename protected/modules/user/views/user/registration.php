@@ -80,7 +80,7 @@ $this->breadcrumbs=array(
     <?php endif; ?>
 
     <div class="submit">
-        <?php echo CHtml::submitButton(UserModule::t("Register")); ?>
+        <?php echo CHtml::submitButton(UserModule::t("Register"), array('class' => 'small secondary radius button')); ?>
     </div>
 
 <?php $this->endWidget(); ?>

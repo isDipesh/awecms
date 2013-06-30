@@ -23,7 +23,7 @@ $this->breadcrumbs=array(
         <p class="hint"><?php echo UserModule::t("Please enter your login or email address."); ?></p>
 
     <div class="submit">
-        <?php echo CHtml::submitButton(UserModule::t("Restore")); ?>
+        <?php echo CHtml::submitButton(UserModule::t("Restore"), array('class' => 'small secondary radius button')); ?>
     </div>
 
 <?php echo CHtml::endForm(); ?>
