@@ -56,7 +56,7 @@ return array(
     'Thank you for your registration. Please {{login}}.' => 'Регистрация завершена. {{login}}.',
     'Thank you for your registration. Contact Admin to activate your account.' => 'Регистрация завершена. Пожалуйста свяжитесь с администрацией сайта для активации аккаунта.',
     'Restore' => 'Восстановить',
-    'Please enter your login or email addres.' => 'Пожалуйста, введите Ваш логин или адрес электронной почты.',
+    'Please enter your login or email address.' => 'Пожалуйста, введите Ваш логин или адрес электронной почты.',
     'Incorrect recovery link.' => 'Неправильная ссылка востановления пароля.',
     'Already exists.' => 'Уже существует.',
     'First Name' => 'Имя',

@@ -54,7 +54,7 @@ return array(
     'Thank you for your registration. Please {{login}}.' =>  'Va multumim pentru inregistrare. Va rugam sa treceti la {{login}}.',
     'Thank you for your registration. Contact Admin to activate your account.' =>  'Va multumim pentru inregistrare. Contactati administratorul pentru a va activa contul.',
     'Restore' => 'Restaurare',
-    'Please enter your login or email addres.' => 'Va rugam introduceti numele utilizator sau adresa de e-mail.',
+    'Please enter your login or email address.' => 'Va rugam introduceti numele utilizator sau adresa de e-mail.',
     'Incorrect recovery link.' => 'Link de restaurare incorect.',
     'Already exists.' => 'Deja exista.',
     'First Name' => 'Prenumele',

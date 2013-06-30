@@ -49,15 +49,15 @@ return array(
     'Save' => 'Зберегти',
     'Cancel'=> 'Відмінити',
     'New password is saved.' => 'Новий пароль збережено',
-    'Change password' => 'Змінити пароль',	
+    'Change password' => 'Змінити пароль',
     'Your profile' => 'Ваш профіль',
     'Thank you for your registration. Please check your email or login.' => 'Реєстрацію завершено. Будь ласка, перевірте свою електронну пошту або увійдіть на сайт',
     'Thank you for your registration. Please check your email.' => 'Реєстрацію завершено. Будь ласка, перевірте свою електронну пошту',
     'Please check your email. An instructions was sent to your email address.' => 'На Вашу електронну пошту було надіслано лист з інструкціями',
     'Thank you for your registration. Please {{login}}.' => 'Реєстрацію завершено. {{login}}.',
-    'Thank you for your registration. Contact Admin to activate your account.' => 'Реєстрацію завершено. Будь ласка, зв\'яжіться з адміністрацією сайту для активації вашого аккаунта',    
-    'Restore' => 'Відновити',    
-    'Please enter your login or email addres.' => 'Будь ласка, введіть Ваш логін або електронну пошту',    
+    'Thank you for your registration. Contact Admin to activate your account.' => 'Реєстрацію завершено. Будь ласка, зв\'яжіться з адміністрацією сайту для активації вашого аккаунта',
+    'Restore' => 'Відновити',
+    'Please enter your login or email address.' => 'Будь ласка, введіть Ваш логін або електронну пошту',
     'Incorrect recovery link.' => 'Неправильне посилання відновлення паролю',
     'Already exists.' => 'Вже існує',
     'First Name' => 'Ім\'я',
@@ -121,16 +121,16 @@ return array(
     'Field size column in the database.' => 'Розмір поля колонки в базі даних',
     'The minimum value of the field (form validator).' => 'Мінімальне значення поля (перевірка форми).',
     'Required field (form validator).' => 'Обов\'язкове поле (перевірка форми).',
-    "Regular expression (example: '/^[A-Za-z0-9\s,]+$/u')." => "Регулярні вирази (приклад: '/^[A-Za-z0-9\s,]+$/u')",	
+    "Regular expression (example: '/^[A-Za-z0-9\s,]+$/u')." => "Регулярні вирази (приклад: '/^[A-Za-z0-9\s,]+$/u')",
     'Predefined values (example: 1;2;3;4;5 or 1==One;2==Two;3==Three;4==Four;5==Five).' => 'Допустимі значения (приклад: 1;2;3;4;5 або 1==Один;2==Два;3==Три;4==Чотири;5==П\'ять).',
     'Error message when you validate the form.' => 'Повідомлення про помилку при перевірці форми.',
     'The value of the default field (database).' => 'Значення поля за замовчуванням (база даних).',
     'Display order of fields.' => 'Порядок відображення полів.',
     'Not visited' => 'Користувач не відвідував сайт',
 
-    
-    
-    
-    
-    
+
+
+
+
+
 );

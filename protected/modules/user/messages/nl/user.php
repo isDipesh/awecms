@@ -54,7 +54,7 @@ return array(
     'Thank you for your registration. Please {{login}}.' =>  'Dank u wel voor uw registratie. U kunt nu {{login}}.',
     'Thank you for your registration. Contact Admin to activate your account.' =>  'Dank u wel voor uw registratie. Neem contact op met de Systeembeheerder om uw account te activeren.',
     'Restore' => 'Herstellen',
-    'Please enter your login or email addres.' => 'Voer uw login of emailadres in.',
+    'Please enter your login or email address.' => 'Voer uw login of emailadres in.',
     'Incorrect recovery link.' => 'Ongeldige herstel-link.',
     'Already exists.' => 'Bestaat reeds.',
     'First Name' => 'Voornaam',

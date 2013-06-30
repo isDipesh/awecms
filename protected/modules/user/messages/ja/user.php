@@ -54,7 +54,7 @@ return array(
     'Thank you for your registration. Please {{login}}.' =>  'ユーザー登録ありがとうございます。{{login}}してください。',
     'Thank you for your registration. Contact Admin to activate your account.' =>  'ユーザー登録ありがとうございます。アカウント認証を完了するために、管理者に連絡を取ってください。',
     'Restore' => 'パスワード再設定',
-    'Please enter your login or email addres.' => 'ユーザー名またはメール・アドレスを入力して下さい。',
+    'Please enter your login or email address.' => 'ユーザー名またはメール・アドレスを入力して下さい。',
     'Incorrect recovery link.' => 'リカバリー・リンクが正しくありません。',
     'Already exists.' => '既に存在します。',
     'First Name' => '名',

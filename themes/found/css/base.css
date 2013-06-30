@@ -22,9 +22,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Header */
 
 header form input[type="text"], input[type="password"]{
-    display: inline-block;
-    width: auto;
     margin:0;
+}
+
+.login-widget form{
+    float: right;
+}
+
+.login-widget .column{
+    padding: 0.1em;
 }
 
 .site-slogan{
@@ -42,6 +48,10 @@ header form{
 
 header hr{
     margin: 0.3em 0.9em;
+}
+
+header .search-form{
+    float: right;
 }
 
 #main-nav ul{
@@ -94,29 +104,40 @@ footer{
 }
 
 /*Forms*/
-
+/*
 input[type="text"]{
     width: auto;
-}
+    }*/
 
-input[type="checkbox"]{
-    float: left;
-    margin: 0.4em 0.4em 0 0;
-}
+    input[type="checkbox"]{
+        float: left;
+        margin: 0.4em 0.4em 0 0;
+    }
 
 ​/*input[type=checkbox] + label {
     display: inline-block;
     margin-left: 0.5em;
     margin-right: 2em;
     line-height: 1em;
-}*/
+    }*/
 
 
- /*Media Queries*/
+    /*Media Queries*/
 
- @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 767px) {
 
- }
+    }
+
+    @media only screen and (max-width: 550px) {
+        .site-slogan{
+            margin-top: -1.5em;
+        }
+
+        header .site-search{
+            width: auto;
+            float: left !important;
+        }
+    }
 
 
 /*Debug

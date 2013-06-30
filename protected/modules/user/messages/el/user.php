@@ -56,7 +56,7 @@ return array(
     'Thank you for your registration. Please {{login}}.' =>  'Ευχαριστούμε για την εγγραφή σας.Παρακαλούμε συνδεθείτε {{login}}.',
     'Thank you for your registration. Contact Admin to activate your account.' =>  'Ευχαριστούμε για την εγγραφή σας.Επικοινωνείστε με τον Διαχειριστή για να ενεργοποιήσει το λογαριασμό σας.',
     'Restore' => 'Επανάκτηση',
-    'Please enter your login or email addres.' => 'Παρακαλούμε εισάγετε το όνομα χρήστη ή το email σας.',
+    'Please enter your login or email address.' => 'Παρακαλούμε εισάγετε το όνομα χρήστη ή το email σας.',
     'Incorrect recovery link.' => 'Λάθος σύνδεσμος επανάκτησης συνθηματικού.',
     'Already exists.' => 'Υπάρχει ήδη.',
     'First Name' => 'Όνομα',

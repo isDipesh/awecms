@@ -1,7 +1,7 @@
 <?php
 /*
  *
- * Quick and initial translation by Aleksander Fafuła 
+ * Quick and initial translation by Aleksander Fafuła
  *
  */
 
@@ -59,7 +59,7 @@ return array(
         'Thank you for your registration. Please {{login}}.' =>  'Dziękujemy za rejestrację. Prosimy się zalogować {{login}}.',
         'Thank you for your registration. Contact Admin to activate your account.' =>  'Nous vous remercions de votre inscription. Contact Admin pour activer votre compte.',
         'Restore' => 'Przywróć',
-        'Please enter your login or email addres.' => "Wpisz swój login lub adres e-mail.",
+        'Please enter your login or email address.' => "Wpisz swój login lub adres e-mail.",
         'Incorrect recovery link.' => 'Niepoprawny link resetujący hasło.',
         'Already exists.' => 'Już istnieje.',
         'First Name' => 'Imię',
@@ -117,7 +117,7 @@ return array(
         'Update Profile Field' => 'Zaktualizuj pole profilu',
         'Widget'=>'Gadżet',
         'Widget parametrs'=>'Parametry gadżetów',
-        'Widget name.'=>'Nazwa gadżetu.', 
+        'Widget name.'=>'Nazwa gadżetu.',
         'Allowed lowercase letters and digits.' => 'Dozwolone małe litery oraz cyfry.',
         'Field name on the language of "sourceLanguage".' => 'Nazwa pola w języku "sourceLanguage".',
         'Field type column in the database.' => 'Typ kolumny w bazie danych.',

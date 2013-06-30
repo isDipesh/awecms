@@ -54,7 +54,7 @@ return array(
     'Thank you for your registration. Please {{login}}.' =>  'Köszönjük a regisztrációt. Kérlek {{login}}.',
     'Thank you for your registration. Contact Admin to activate your account.' =>  'Köszönjük a regisztrációt. Lépj kapcsolatba az Adminokkal hozzáférésed aktiválásáért.',
     'Restore' => 'Visszaállítás',
-    'Please enter your login or email addres.' => 'Kérlek add meg a felhasználónevet vagy e-mail címet.',
+    'Please enter your login or email address.' => 'Kérlek add meg a felhasználónevet vagy e-mail címet.',
     'Incorrect recovery link.' => 'Érvénytelen visszaállítási link',
     'Already exists.' => 'Már létezik.',
     'First Name' => 'Utónév',

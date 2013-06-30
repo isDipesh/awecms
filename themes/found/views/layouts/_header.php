@@ -16,16 +16,16 @@
                     <h1><?php echo Settings::get('site', 'name'); ?></h1>
                 </a>
             </div>
-            <div class="column large-8">
-                <div class="right hide-for-small"><?php $this->widget('LoginWidget'); ?></div>
+            <div class="column large-8 hide-for-small login-widget">
+                <?php $this->widget('LoginWidget'); ?>
             </div>
         </div>
         <div class="row">
-            <div class="column large-8 small-16  site-slogan">
+            <div class="column large-8 small-10  site-slogan">
                 <h6><?php echo Settings::get('site', 'slogan'); ?></h6>
             </div>
-            <div class="column large-8">
-                <div class="right"><?php $this->widget('SearchBlock'); ?></div>
+            <div class="column large-8 small-6 site-search">
+                <?php $this->widget('SearchBlock'); ?>
             </div>
         </div>
     </div>
