@@ -176,6 +176,8 @@ div.view {
 
     nav ul li {
         border-bottom: 1px solid silver;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -198,4 +200,13 @@ div.view {
 
 .field-value{
     display: inline;
+}
+
+li.active a{
+    border-bottom: 2px solid silver;
+}
+
+a:active {
+  position: relative;
+  top: 1px;
 }
