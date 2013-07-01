@@ -193,7 +193,7 @@ div.summary, .list-view .summary, .grid-view .summary {
         border-right: 5px solid whitesmoke;
         width:0;
         height:0;
-} 
+}
 
 .portlet-content li span:before{
     content:'▶';
@@ -334,7 +334,7 @@ div.form input[type="submit"], .form input[type="button"]{
     box-shadow: inset 0 1px 0 0 #62b1e9;
     cursor: pointer;
     text-shadow: 0 -1px 1px #1d62ab;
-    -webkit-background-clip: padding-box; 
+    -webkit-background-clip: padding-box;
 }
 .btn:active, input[type="submit"]:active, form input[type="button"]:active {
     background: #3282d3;
@@ -344,15 +344,15 @@ div.form input[type="submit"], .form input[type="button"]{
     -moz-box-shadow: inset 0 0 6px 3px #1657b5, 0 1px 0 0 white;
     box-shadow: inset 0 0 6px 3px #1657b5, 0 1px 0 0 white;
     text-shadow: 0 -1px 1px #2361a4;
-    -webkit-background-clip: padding-box; 
+    -webkit-background-clip: padding-box;
 }
 
 button[disabled].btn,
 button[disabled].btn:hover,
 button[disabled].btn:active,
-input[type="submit"][disabled], 
-input[type="submit"][disabled]:hover, 
-input[type="submit"][disabled]:active, 
+input[type="submit"][disabled],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:active,
 form input[type="button"][disabled],
 form input[type="button"][disabled]:hover,
 form input[type="button"][disabled]:active {
@@ -376,7 +376,7 @@ form input[type="button"][disabled]:active {
 
 .btn::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, form input[type="button"]::-moz-focus-inner {
     border: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 table input{
@@ -433,4 +433,23 @@ div.view .field:last-child{
     height: 128px;
     padding: 2px;
     border: 1px solid #ccc;
+}
+
+/*Boxes*/
+
+.box {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 0.25em 0.25em 0.25em 0.25em;
+    box-shadow: 0 0 0 1px #F8F8F8 inset, 0 0 0 1px #CCCCCC;
+    float: left;
+    font-size: 16px;
+    margin: 0.75em 1.5em 0.75em 0;
+    padding: 0.75em;
+    text-align: center;
+    width: 7.5em;
+}
+
+.box-icon{
+    font-size: 2em;
+    display: block;
 }
