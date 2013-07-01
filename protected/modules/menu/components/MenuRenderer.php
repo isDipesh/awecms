@@ -183,7 +183,7 @@ class MenuRenderer extends CMenu {
     protected function renderMenuItem($item) {
         if (isset($item['url'])) {
             $label = $this->linkLabelWrapper === null ? $item['label'] : '<' . $this->linkLabelWrapper . '>' . $item['label'] . '</' . $this->linkLabelWrapper . '>';
-            $label = CHtml::tag('span', array('itemprop' => 'name'), $label);
+            $label = CHtml::tag('b', array('itemprop' => 'name'), $label);
             return CHtml::link($label, $item['url'], isset($item['linkOptions']) ? $item['linkOptions'] : array());
         }
         else

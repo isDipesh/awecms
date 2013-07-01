@@ -5,7 +5,7 @@
         <title>Dashboard : <?php echo Yii::app()->name ?></title>
         <?php $assetsUrl = Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('application.modules.admin.assets')) . '/'; ?>
         <link rel="stylesheet" type="text/css" href="<?php echo $assetsUrl; ?>admin.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $assetsUrl; ?>form.css" />
     </head>
 
     <body>
