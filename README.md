@@ -3,7 +3,7 @@
 
 Awecms is an awesome CMS built on top of Yii Framework.
 
-*Note: The CMS isn't maintained anymore.*
+**Note: The CMS isn't maintained anymore.**
 
 Modules
 --------------
